@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="光回線・ホームルーター・ポケット型WiFiの3タイプ比較" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="720" fill="#ffffff"/>
+  <text x="600" y="60" text-anchor="middle" font-size="40" font-weight="800" fill="#0b2c5f">自宅のネット回線は3タイプ</text>
+
+  <!-- タイプ1:光回線 -->
+  <g transform="translate(40,100)">
+    <rect width="360" height="560" rx="16" fill="#eaf1fd" stroke="#1558d6" stroke-width="3"/>
+    <rect y="0" width="360" height="70" rx="16" fill="#1558d6"/>
+    <text x="180" y="46" text-anchor="middle" font-size="30" font-weight="800" fill="#ffffff">光回線</text>
+    <!-- 家アイコン -->
+    <g transform="translate(120,100)">
+      <path d="M10 55 L60 15 L110 55 V120 H10 Z" fill="#ffffff" stroke="#1558d6" stroke-width="4"/>
+      <rect x="45" y="80" width="30" height="40" fill="#1558d6"/>
+      <path d="M-10 90 C 20 90, 30 60, 60 60" fill="none" stroke="#f5b301" stroke-width="6" stroke-dasharray="2 12" stroke-linecap="round"/>
+    </g>
+    <g font-size="24" fill="#26303e">
+      <text x="40" y="290">速度:<tspan font-weight="800" fill="#0e9f6e">◎ 最速・安定</tspan></text>
+      <text x="40" y="335">工事:<tspan font-weight="800" fill="#d64545">必要(1〜2ヶ月)</tspan></text>
+      <text x="40" y="380">月額目安:4,000〜5,700円</text>
+      <text x="40" y="425">データ:無制限</text>
+    </g>
+    <rect x="30" y="460" width="300" height="76" rx="12" fill="#ffffff" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="180" y="492" text-anchor="middle" font-size="21" font-weight="800" fill="#1558d6">向いている人</text>
+    <text x="180" y="522" text-anchor="middle" font-size="20" fill="#26303e">在宅ワーク・動画・ゲーム</text>
+  </g>
+
+  <!-- タイプ2:ホームルーター -->
+  <g transform="translate(420,100)">
+    <rect width="360" height="560" rx="16" fill="#f4f8fe" stroke="#4b8bf5" stroke-width="3"/>
+    <rect y="0" width="360" height="70" rx="16" fill="#4b8bf5"/>
+    <text x="180" y="46" text-anchor="middle" font-size="30" font-weight="800" fill="#ffffff">ホームルーター</text>
+    <g transform="translate(145,95)">
+      <rect x="0" y="30" width="70" height="105" rx="14" fill="#ffffff" stroke="#4b8bf5" stroke-width="4"/>
+      <circle cx="35" cy="55" r="6" fill="#0e9f6e"/>
+      <g fill="none" stroke="#f5b301" stroke-width="6" stroke-linecap="round">
+        <path d="M22 18 a18 18 0 0 1 26 0"/>
+        <path d="M12 2 a34 34 0 0 1 46 0"/>
+      </g>
+      <path d="M35 135 v18" stroke="#4b8bf5" stroke-width="6"/>
+      <rect x="23" y="153" width="24" height="14" rx="4" fill="#f5b301"/>
+    </g>
+    <g font-size="24" fill="#26303e">
+      <text x="40" y="290">速度:<tspan font-weight="800" fill="#1558d6">○ 十分速い</tspan></text>
+      <text x="40" y="335">工事:<tspan font-weight="800" fill="#0e9f6e">不要(挿すだけ)</tspan></text>
+      <text x="40" y="380">月額目安:4,000〜5,000円</text>
+      <text x="40" y="425">データ:実質無制限</text>
+    </g>
+    <rect x="30" y="460" width="300" height="76" rx="12" fill="#ffffff" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="180" y="492" text-anchor="middle" font-size="21" font-weight="800" fill="#1558d6">向いている人</text>
+    <text x="180" y="522" text-anchor="middle" font-size="20" fill="#26303e">工事NG物件・すぐ使いたい</text>
+  </g>
+
+  <!-- タイプ3:ポケット型 -->
+  <g transform="translate(800,100)">
+    <rect width="360" height="560" rx="16" fill="#f4f8fe" stroke="#94a0ac" stroke-width="3"/>
+    <rect y="0" width="360" height="70" rx="16" fill="#94a0ac"/>
+    <text x="180" y="46" text-anchor="middle" font-size="30" font-weight="800" fill="#ffffff">ポケット型WiFi</text>
+    <g transform="translate(140,105)">
+      <rect x="0" y="25" width="90" height="60" rx="12" fill="#ffffff" stroke="#94a0ac" stroke-width="4"/>
+      <rect x="14" y="41" width="40" height="28" rx="4" fill="#c9d6e8"/>
+      <circle cx="72" cy="55" r="6" fill="#0e9f6e"/>
+      <g fill="none" stroke="#f5b301" stroke-width="6" stroke-linecap="round">
+        <path d="M32 12 a18 18 0 0 1 26 0"/>
+      </g>
+    </g>
+    <g font-size="24" fill="#26303e">
+      <text x="40" y="290">速度:<tspan font-weight="800" fill="#d97706">△ 場所次第</tspan></text>
+      <text x="40" y="335">工事:<tspan font-weight="800" fill="#0e9f6e">不要・持ち運び可</tspan></text>
+      <text x="40" y="380">月額目安:3,000〜4,500円</text>
+      <text x="40" y="425">データ:容量制限あり多め</text>
+    </g>
+    <rect x="30" y="460" width="300" height="76" rx="12" fill="#ffffff" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="180" y="492" text-anchor="middle" font-size="21" font-weight="800" fill="#1558d6">向いている人</text>
+    <text x="180" y="522" text-anchor="middle" font-size="20" fill="#26303e">外出先メイン・単身赴任</text>
+  </g>
+</svg>

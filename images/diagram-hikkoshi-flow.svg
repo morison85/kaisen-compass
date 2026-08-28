@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="引越し時のネット回線の判断フローチャート" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="600" y="56" text-anchor="middle" font-size="38" font-weight="800" fill="#0b2c5f">引越し時のネット回線 判断フロー</text>
+
+  <!-- Q1 -->
+  <rect x="400" y="90" width="400" height="80" rx="14" fill="#1558d6"/>
+  <text x="600" y="128" text-anchor="middle" font-size="24" font-weight="800" fill="#ffffff">今の回線に不満はある?</text>
+  <text x="600" y="158" text-anchor="middle" font-size="18" fill="#cfe0ff">(速度・料金・サポート)</text>
+
+  <!-- 分岐線 -->
+  <path d="M480 170 L300 230" stroke="#94a0ac" stroke-width="5" stroke-linecap="round"/>
+  <path d="M720 170 L900 230" stroke="#94a0ac" stroke-width="5" stroke-linecap="round"/>
+  <rect x="270" y="180" width="90" height="38" rx="19" fill="#eefaf4" stroke="#0e9f6e" stroke-width="2"/>
+  <text x="315" y="206" text-anchor="middle" font-size="19" font-weight="800" fill="#0e9f6e">ない</text>
+  <rect x="840" y="180" width="90" height="38" rx="19" fill="#fdf3f0" stroke="#d64545" stroke-width="2"/>
+  <text x="885" y="206" text-anchor="middle" font-size="19" font-weight="800" fill="#d64545">ある</text>
+
+  <!-- 左ルート Q2 -->
+  <rect x="100" y="240" width="400" height="80" rx="14" fill="#4b8bf5"/>
+  <text x="300" y="278" text-anchor="middle" font-size="23" font-weight="800" fill="#ffffff">新居は現回線の提供エリア内?</text>
+  <text x="300" y="308" text-anchor="middle" font-size="18" fill="#dcebff">(公式サイトで住所検索)</text>
+
+  <path d="M200 320 L200 400" stroke="#94a0ac" stroke-width="5" stroke-linecap="round"/>
+  <path d="M400 320 L600 400" stroke="#94a0ac" stroke-width="5" stroke-linecap="round"/>
+  <rect x="155" y="340" width="90" height="38" rx="19" fill="#eefaf4" stroke="#0e9f6e" stroke-width="2"/>
+  <text x="200" y="366" text-anchor="middle" font-size="19" font-weight="800" fill="#0e9f6e">エリア内</text>
+  <rect x="470" y="340" width="100" height="38" rx="19" fill="#fdf3f0" stroke="#d64545" stroke-width="2"/>
+  <text x="520" y="366" text-anchor="middle" font-size="19" font-weight="800" fill="#d64545">エリア外</text>
+
+  <!-- 右ルート直行 -->
+  <path d="M900 230 L900 400" stroke="#94a0ac" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 結論A:継続(移転手続き) -->
+  <g transform="translate(60,420)">
+    <rect width="300" height="220" rx="16" fill="#eefaf4" stroke="#0e9f6e" stroke-width="3"/>
+    <rect width="300" height="60" rx="16" fill="#0e9f6e"/>
+    <text x="150" y="40" text-anchor="middle" font-size="25" font-weight="800" fill="#ffffff">継続(移転手続き)</text>
+    <text x="30" y="100" font-size="19" fill="#26303e">・手続きは1回で完結</text>
+    <text x="30" y="136" font-size="19" fill="#26303e">・移転費用がかかる場合あり</text>
+    <text x="30" y="172" font-size="19" fill="#26303e">・設定もほぼそのまま</text>
+    <text x="150" y="205" text-anchor="middle" font-size="17" fill="#5f6b7a">1〜1.5ヶ月前に連絡</text>
+  </g>
+
+  <!-- 結論B:乗り換え -->
+  <g transform="translate(450,420)">
+    <rect width="300" height="220" rx="16" fill="#fff4ea" stroke="#f26f1d" stroke-width="3"/>
+    <rect width="300" height="60" rx="16" fill="#f26f1d"/>
+    <text x="150" y="40" text-anchor="middle" font-size="25" font-weight="800" fill="#ffffff">乗り換え(解約→新規)</text>
+    <text x="30" y="100" font-size="19" fill="#26303e">・キャッシュバック対象に</text>
+    <text x="30" y="136" font-size="19" fill="#26303e">・違約金は特典で相殺可</text>
+    <text x="30" y="172" font-size="19" fill="#26303e">・引越しは絶好の見直し機会</text>
+    <text x="150" y="205" text-anchor="middle" font-size="17" fill="#b8482c" font-weight="700">一番お得になりやすい</text>
+  </g>
+
+  <!-- 結論C:新規に近い乗り換え -->
+  <g transform="translate(840,420)">
+    <rect width="300" height="220" rx="16" fill="#eaf1fd" stroke="#1558d6" stroke-width="3"/>
+    <rect width="300" height="60" rx="16" fill="#1558d6"/>
+    <text x="150" y="40" text-anchor="middle" font-size="25" font-weight="800" fill="#ffffff">別回線へ乗り換え</text>
+    <text x="30" y="100" font-size="19" fill="#26303e">・不満の原因から逆算して</text>
+    <text x="30" y="136" font-size="19" fill="#26303e">  回線を選び直すチャンス</text>
+    <text x="30" y="172" font-size="19" fill="#26303e">・スマホのセット割も再確認</text>
+    <text x="150" y="205" text-anchor="middle" font-size="17" fill="#5f6b7a">比較記事で最適解を探す</text>
+  </g>
+
+  <rect x="240" y="680" width="720" height="52" rx="26" fill="#fff7e2" stroke="#f0c14e" stroke-width="2"/>
+  <text x="600" y="714" text-anchor="middle" font-size="21" font-weight="800" fill="#8a6d1a">⚠ どのルートでも申し込みは引越しの1〜1.5ヶ月前が理想</text>
+</svg>

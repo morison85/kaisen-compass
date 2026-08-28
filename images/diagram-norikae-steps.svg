@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="光回線乗り換えの5ステップと期間の目安" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="600" y="58" text-anchor="middle" font-size="38" font-weight="800" fill="#0b2c5f">乗り換えは「先に申込・後から解約」が鉄則</text>
+  <text x="600" y="96" text-anchor="middle" font-size="23" fill="#5f6b7a">ネットが使えない空白期間を作らない順番</text>
+
+  <!-- タイムライン -->
+  <path d="M100 300 H1100" stroke="#c3d7f7" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- STEP1 -->
+  <g transform="translate(100,0)">
+    <circle cx="0" cy="300" r="34" fill="#1558d6"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">1</text>
+    <rect x="-85" y="150" width="170" height="96" rx="12" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="0" y="190" text-anchor="middle" font-size="21" font-weight="800" fill="#0b2c5f">現契約の確認</text>
+    <text x="0" y="222" text-anchor="middle" font-size="17" fill="#5f6b7a">違約金・更新月</text>
+    <text x="0" y="374" text-anchor="middle" font-size="17" font-weight="700" fill="#1558d6">当日</text>
+  </g>
+  <!-- STEP2 -->
+  <g transform="translate(330,0)">
+    <circle cx="0" cy="300" r="34" fill="#1558d6"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">2</text>
+    <rect x="-85" y="356" width="170" height="96" rx="12" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="0" y="396" text-anchor="middle" font-size="21" font-weight="800" fill="#0b2c5f">新回線を申込</text>
+    <text x="0" y="428" text-anchor="middle" font-size="17" fill="#5f6b7a">CB条件をメモ</text>
+    <text x="0" y="262" text-anchor="middle" font-size="17" font-weight="700" fill="#1558d6">当日〜3日</text>
+  </g>
+  <!-- STEP3 -->
+  <g transform="translate(560,0)">
+    <circle cx="0" cy="300" r="34" fill="#1558d6"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">3</text>
+    <rect x="-85" y="150" width="170" height="96" rx="12" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="0" y="190" text-anchor="middle" font-size="21" font-weight="800" fill="#0b2c5f">開通工事</text>
+    <text x="0" y="222" text-anchor="middle" font-size="17" fill="#5f6b7a">立ち会い1〜2時間</text>
+    <text x="0" y="374" text-anchor="middle" font-size="17" font-weight="700" fill="#1558d6">2週間〜2ヶ月後</text>
+  </g>
+  <!-- STEP4 -->
+  <g transform="translate(790,0)">
+    <circle cx="0" cy="300" r="34" fill="#1558d6"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">4</text>
+    <rect x="-85" y="356" width="170" height="96" rx="12" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="0" y="396" text-anchor="middle" font-size="21" font-weight="800" fill="#0b2c5f">動作確認</text>
+    <text x="0" y="428" text-anchor="middle" font-size="17" fill="#5f6b7a">速度・Wi-Fi設定</text>
+    <text x="0" y="262" text-anchor="middle" font-size="17" font-weight="700" fill="#1558d6">開通当日</text>
+  </g>
+  <!-- STEP5 -->
+  <g transform="translate(1020,0)">
+    <circle cx="0" cy="300" r="34" fill="#f26f1d"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">5</text>
+    <rect x="-85" y="150" width="170" height="96" rx="12" fill="#fdf0e5" stroke="#f6c9a0" stroke-width="2"/>
+    <text x="0" y="190" text-anchor="middle" font-size="21" font-weight="800" fill="#b8482c">旧回線を解約</text>
+    <text x="0" y="222" text-anchor="middle" font-size="17" fill="#5f6b7a">機器返却も忘れず</text>
+    <text x="0" y="374" text-anchor="middle" font-size="17" font-weight="700" fill="#f26f1d">開通確認後</text>
+  </g>
+
+  <rect x="240" y="490" width="720" height="52" rx="26" fill="#fff7e2" stroke="#f0c14e" stroke-width="2"/>
+  <text x="600" y="524" text-anchor="middle" font-size="21" font-weight="800" fill="#8a6d1a">⚠ 解約を先にすると「ネットなし期間」が生まれるので注意</text>
+</svg>

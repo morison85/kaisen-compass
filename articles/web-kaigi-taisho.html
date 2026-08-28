@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web会議が途切れる・固まる原因と対処法|5分でできる切り分け手順 | 回線コンパス</title>
+<meta name="description" content="Web会議(Zoom・Teams・Meet)が途切れる・固まる・声が聞こえないときの原因は「回線」「Wi-Fi」「PC」の3層に分かれます。会議中でもできる応急処置と、5分の切り分け手順、原因別の根本対策を順に解説します。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://example.com/articles/web-kaigi-taisho.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web会議が途切れる・固まる原因と対処法|5分でできる切り分け手順">
+<meta property="og:description" content="原因は回線・Wi-Fi・PCの3層。応急処置から根本解決まで、切り分け手順つきで解説。">
+<meta property="og:url" content="https://example.com/articles/web-kaigi-taisho.html">
+<meta property="og:image" content="https://example.com/images/eyecatch-webkaigi.svg">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-08-08">
+<meta property="article:modified_time" content="2026-08-29">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Web会議が途切れる・固まる原因と対処法|5分でできる切り分け手順",
+  "description": "Web会議が途切れる原因を回線・Wi-Fi・PCの3層で切り分け、応急処置から根本対策まで解説。",
+  "image": "https://example.com/images/eyecatch-webkaigi.svg",
+  "author": { "@type": "Person", "name": "もりそん", "url": "https://example.com/about.html" },
+  "publisher": { "@type": "Organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://example.com/images/logo.svg" } },
+  "datePublished": "2026-08-08",
+  "dateModified": "2026-08-29",
+  "mainEntityOfPage": "https://example.com/articles/web-kaigi-taisho.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Web会議に必要な通信速度はどれくらいですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "HD画質のビデオ会議なら上り・下りとも10〜15Mbpsあれば安定します。重要なのは平均速度ではなく、会議をする時間帯に安定してこの速度が出ているかどうかです。特に自分の映像・音声を送る「上り」の速度と安定性が、相手にどう聞こえるかを決めます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "会議中に映像が固まったとき、すぐできることはありますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "①自分のカメラをオフにする(帯域を大幅節約)②他のアプリ・タブを閉じる③同じWi-Fiで動画を見ている家族に一時停止をお願いする④スマホのテザリングに切り替える、の順で試してください。多くの場合①だけで音声は持ち直します。" }
+    },
+    {
+      "@type": "Question",
+      "name": "毎回途切れる場合の根本対策は何ですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "切り分けの結果によります。有線接続でも遅いなら回線自体の見直し(光回線への乗り換えや配線方式の確認)、有線なら速いのにWi-Fiで遅いならルーターの買い替えや設置場所の改善が根本対策になります。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://example.com/" },
+    { "@type": "ListItem", "position": 2, "name": "WiFi・ホームルーター", "item": "https://example.com/category/wifi.html" },
+    { "@type": "ListItem", "position": 3, "name": "Web会議が途切れる原因と対処法" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="../index.html" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="../index.html">ホーム</a></li>
+      <li><a href="../category/hikari.html">光回線</a></li>
+      <li><a href="../category/wifi.html">WiFi・ルーター</a></li>
+      <li><a href="../category/sim.html">格安SIM</a></li>
+      <li><a href="../about.html">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume.html">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="../index.html">ホーム</a></li>
+    <li><a href="../category/wifi.html">WiFi・ホームルーター</a></li>
+    <li>Web会議が途切れる原因と対処法</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">トラブル解決</span>
+    <h1 class="article-title">Web会議が途切れる・固まる原因と対処法|5分でできる切り分け手順</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-08-29">2026年8月29日</time></span>
+      <span>公開日:<time datetime="2026-08-08">2026年8月8日</time></span>
+      <span>執筆:<a href="../about.html">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy.html">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-webkaigi.svg" alt="Web会議が途切れる原因と今すぐできる対処法" width="1200" height="630">
+  </figure>
+
+  <div class="article-body">
+    <p>「あ、〇〇さん固まってます」「すみません、聞こえてなかったです」——Web会議のこのやりとり、当事者になるとかなりのストレスですし、商談や面接なら実害も出ます。</p>
+    <p>この記事では、<strong>会議中にすぐできる応急処置</strong>と、<strong>二度と起こさないための切り分け→根本対策</strong>を分けて解説します。犯人は「回線」「Wi-Fi」「PC」の3層のどれかにいます。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>いま会議中なら:<strong>カメラをオフ → 他のアプリを閉じる → ダメならスマホのテザリングに切り替え</strong>。</p>
+      <p>再発防止なら:速度測定と有線接続テストで犯人を特定してから対策を。<strong>有線でも遅い→回線の問題(乗り換え検討)、有線なら速い→Wi-Fi(ルーター)の問題</strong>です。</p>
+    </div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#kinkyu">【会議中】30秒でできる応急処置</a></li>
+        <li><a href="#hitsuyou">そもそもWeb会議に必要な速度は?</a></li>
+        <li><a href="#kiriwake">【会議後】5分でできる犯人の切り分け</a></li>
+        <li><a href="#taisaku">原因別の根本対策</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <h2 id="kinkyu">【会議中】30秒でできる応急処置</h2>
+    <p>効果の大きい順です。上から試してください。</p>
+    <ol>
+      <li><strong>自分のカメラをオフにする</strong>:映像は音声の何倍も帯域を食います。音声さえ通れば会議は成立します</li>
+      <li><strong>他のアプリ・ブラウザのタブを閉じる</strong>:クラウド同期(OneDrive等)や動画タブが裏で帯域を奪っていることは多いです</li>
+      <li><strong>家族の動画・ゲームを一時停止してもらう</strong>:同じWi-Fiの帯域は取り合いです</li>
+      <li><strong>スマホのテザリングに切り替える</strong>:自宅回線と携帯回線は別物なので、切り替えれば大抵復活します。「いざという時はテザリング」を覚えておくだけで心の余裕が違います</li>
+    </ol>
+
+    <h2 id="hitsuyou">そもそもWeb会議に必要な速度は?</h2>
+    <figure>
+      <img src="../images/chart-speed.svg" alt="用途別に必要なインターネット速度の目安。Web会議は上下10〜15Mbps" width="1200" height="620">
+      <figcaption>Web会議自体は大食いではない。問題は「安定して」出るかどうか</figcaption>
+    </figure>
+    <p>HD画質の会議で上下10〜15Mbpsあれば十分です。つまり<strong>「平均では足りているのに途切れる」=瞬間的な低下や不安定さが犯人</strong>ということ。そしてもう1つ重要なのが、自分の声と映像を送る<strong>上り(アップロード)</strong>。下りは速いのに上りが細い環境(集合住宅のVDSLやモバイル回線)では、「相手の声は聞こえるのに、自分の声だけ途切れて聞こえている」現象が起きます。</p>
+
+    <h2 id="kiriwake">【会議後】5分でできる犯人の切り分け</h2>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">会議する時間帯に速度を測る</div>
+        <p>Speedtest等で<strong>下り・上り・Ping</strong>を記録。上下10Mbps未満やPing 50ms超が頻発するなら回線層が怪しいです。昼と夜で差が大きい場合は混雑の影響。</p>
+      </li>
+      <li>
+        <div class="steps__t">LANケーブルで直結して再測定</div>
+        <p><strong>有線で速い→Wi-Fi(ルーター)が犯人。有線でも遅い→回線が犯人</strong>。この1手で対策の方向が確定します。ノートPCにLANポートがなければUSB-LANアダプタ(1,000円台)で。</p>
+      </li>
+      <li>
+        <div class="steps__t">別のデバイスでも試す</div>
+        <p>スマホでは快適なのにPCだけ遅いなら、PC側(常駐アプリ・古い無線規格・セキュリティソフト)の問題の可能性が高いです。</p>
+      </li>
+    </ol>
+
+    <h2 id="taisaku">原因別の根本対策</h2>
+
+    <h3>犯人が「Wi-Fi」だった場合(有線なら速い)</h3>
+    <ul>
+      <li><strong>ルーターの置き場所を変える</strong>:床置き・棚の奥・水槽や電子レンジの近くはNG。部屋の高くて開けた場所へ</li>
+      <li><strong>5GHz帯に接続する</strong>:SSID末尾が「-5G」「-A」等のほう。2.4GHz帯は干渉だらけです</li>
+      <li><strong>5年以上前のルーターは買い替え</strong>:Wi-Fi 6対応機で数千円〜。体感が変わります</li>
+      <li><strong>仕事部屋が遠いなら中継機かメッシュWi-Fi</strong>を検討</li>
+    </ul>
+
+    <h3>犯人が「回線」だった場合(有線でも遅い)</h3>
+    <ul>
+      <li><strong>IPv6(IPoE)接続に切り替える</strong>:契約中の回線が対応していれば無料。夜の混雑に効きます</li>
+      <li><strong>マンションで夜だけ遅いなら配線方式を確認</strong>:VDSL方式なら構造的な問題です。<a href="mansion-internet.html">マンション回線の記事</a>で確認方法から解説しています</li>
+      <li><strong>モバイルWi-Fi・無料ネットで仕事をしているなら、光回線への切り替えが根本解決</strong>:Web会議が生命線の働き方なら、ここはケチらない方が精神衛生上も安い買い物です</li>
+    </ul>
+
+    <h3>犯人が「PC」だった場合(このPCだけ遅い)</h3>
+    <ul>
+      <li>会議前に<strong>再起動</strong>し、不要な常駐アプリを止める</li>
+      <li>クラウド同期(OneDrive・Googleドライブ等)を<strong>会議中は一時停止</strong></li>
+      <li>ブラウザ版ではなく<strong>アプリ版</strong>の会議ツールを使う(負荷が軽いことが多い)</li>
+    </ul>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん"></div>
+      <div>
+        <div class="voice__body">私の場合、犯人は「VDSLマンション×夜の会議」でした。応急処置で数ヶ月しのいだ末に回線を替えたら、悩みごと消滅。もっと早く切り分けておけば、毎回の「聞こえますか?」に費やした時間は返ってきたなと思います。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <div class="cta__t">🧭 回線が犯人だったあなたへ</div>
+      <p>Web会議に強い回線を、料金・実測・セット割で比較できます。</p>
+      <a class="btn btn--cv" href="hikari-osusume.html">光回線7社比較を見る<small>上りに強い独自回線も紹介しています</small></a>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>Web会議に必要な速度は?</summary>
+        <div class="faq__a">HD画質なら上下10〜15Mbpsで安定します。ポイントは会議の時間帯に「安定して」出ているか。特に上り(アップロード)が相手への聞こえ方を決めます。</div>
+      </details>
+      <details>
+        <summary>会議中に固まったら、まず何をすべき?</summary>
+        <div class="faq__a">カメラオフが最速・最効果です。それでもダメなら他アプリを閉じ、最後はテザリングへ切り替え。この3段構えを覚えておけば会議は乗り切れます。</div>
+      </details>
+      <details>
+        <summary>ルーターと回線、どちらを先に見直すべき?</summary>
+        <div class="faq__a">LANケーブル直結テストの結果次第です。有線で速ければルーター(数千円〜)、有線でも遅ければ回線(乗り換え)。テストせずに買い替えると、私のようにお金を無駄にします。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:切り分けてから、お金と時間を使う</h2>
+    <ul>
+      <li>会議中は<strong>カメラオフ→アプリ整理→テザリング</strong>の3段構え</li>
+      <li>再発防止は<strong>「時間帯別の実測」と「有線テスト」</strong>で犯人特定から</li>
+      <li>Wi-Fiが犯人ならルーター対策(数千円)、回線が犯人なら<a href="hikari-osusume.html">乗り換え</a>が根本解決</li>
+      <li>マンションで夜だけ遅いなら<a href="mansion-internet.html">配線方式の確認</a>を最優先で</li>
+    </ul>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>Zoom・Microsoft Teams・Google Meet 公式ヘルプの推奨帯域</li>
+        <li>運営者自身のVDSL環境での実測・改善の経験</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about.html">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="mansion-internet.html">マンションのネットが遅い原因と解決策|配線方式の確認から乗り換えまで</a></li>
+      <li><a href="hikari-osusume.html">光回線おすすめ7社比較【2026年8月】迷わない選び方を図解でやさしく解説</a></li>
+      <li><a href="home-router.html">工事不要WiFiおすすめ比較|ホームルーター3社+ポケット型の選び方</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h3>カテゴリ</h3>
+        <ul>
+          <li><a href="../category/hikari.html">光回線</a></li>
+          <li><a href="../category/wifi.html">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim.html">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>サイト情報</h3>
+        <ul>
+          <li><a href="../about.html">運営者情報</a></li>
+          <li><a href="../policy.html">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy.html">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js" defer></script>
+</body>
+</html>

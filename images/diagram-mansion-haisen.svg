@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="マンションの配線方式3種類(光配線方式・VDSL方式・LAN配線方式)の違い" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <text x="600" y="58" text-anchor="middle" font-size="38" font-weight="800" fill="#0b2c5f">マンションの速度は「配線方式」で決まる</text>
+  <text x="600" y="96" text-anchor="middle" font-size="23" fill="#5f6b7a">共用部から部屋までの配線が3タイプに分かれる</text>
+
+  <!-- 光配線方式 -->
+  <g transform="translate(50,130)">
+    <rect width="340" height="500" rx="16" fill="#eefaf4" stroke="#0e9f6e" stroke-width="3"/>
+    <rect width="340" height="64" rx="16" fill="#0e9f6e"/>
+    <text x="170" y="42" text-anchor="middle" font-size="27" font-weight="800" fill="#ffffff">光配線方式</text>
+    <text x="170" y="112" text-anchor="middle" font-size="24" font-weight="800" fill="#0e9f6e">最大 1Gbps〜</text>
+    <!-- 図:共用部→部屋 全部光 -->
+    <g transform="translate(50,150)">
+      <rect x="0" y="0" width="100" height="66" rx="8" fill="#ffffff" stroke="#94a0ac" stroke-width="2"/>
+      <text x="50" y="30" text-anchor="middle" font-size="17" fill="#26303e">共用部</text>
+      <text x="50" y="52" text-anchor="middle" font-size="15" fill="#5f6b7a">(MDF室)</text>
+      <path d="M100 33 H160" stroke="#f5b301" stroke-width="8" stroke-linecap="round"/>
+      <rect x="160" y="0" width="80" height="66" rx="8" fill="#ffffff" stroke="#94a0ac" stroke-width="2"/>
+      <text x="200" y="40" text-anchor="middle" font-size="17" fill="#26303e">部屋</text>
+      <text x="120" y="100" font-size="16" fill="#0e9f6e" font-weight="700" text-anchor="middle">全区間 光ファイバー</text>
+    </g>
+    <g font-size="20" fill="#26303e">
+      <text x="34" y="320" font-weight="800" fill="#0e9f6e">◎ 速度低下しにくい</text>
+      <text x="34" y="356">部屋まで光のまま届く</text>
+      <text x="34" y="392">最も新しい方式</text>
+    </g>
+    <rect x="26" y="424" width="288" height="52" rx="10" fill="#ffffff" stroke="#bfe8d4" stroke-width="2"/>
+    <text x="170" y="457" text-anchor="middle" font-size="18" font-weight="700" fill="#0e9f6e">このままでOK。設定を見直そう</text>
+  </g>
+
+  <!-- VDSL -->
+  <g transform="translate(430,130)">
+    <rect width="340" height="500" rx="16" fill="#fdf3f0" stroke="#d64545" stroke-width="3"/>
+    <rect width="340" height="64" rx="16" fill="#d64545"/>
+    <text x="170" y="42" text-anchor="middle" font-size="27" font-weight="800" fill="#ffffff">VDSL方式</text>
+    <text x="170" y="112" text-anchor="middle" font-size="24" font-weight="800" fill="#d64545">最大 100Mbps</text>
+    <g transform="translate(50,150)">
+      <rect x="0" y="0" width="100" height="66" rx="8" fill="#ffffff" stroke="#94a0ac" stroke-width="2"/>
+      <text x="50" y="30" text-anchor="middle" font-size="17" fill="#26303e">共用部</text>
+      <text x="50" y="52" text-anchor="middle" font-size="15" fill="#5f6b7a">(MDF室)</text>
+      <path d="M100 33 H160" stroke="#94a0ac" stroke-width="8" stroke-linecap="round" stroke-dasharray="10 8"/>
+      <rect x="160" y="0" width="80" height="66" rx="8" fill="#ffffff" stroke="#94a0ac" stroke-width="2"/>
+      <text x="200" y="40" text-anchor="middle" font-size="17" fill="#26303e">部屋</text>
+      <text x="120" y="100" font-size="16" fill="#d64545" font-weight="700" text-anchor="middle">部屋までは電話線</text>
+    </g>
+    <g font-size="20" fill="#26303e">
+      <text x="34" y="320" font-weight="800" fill="#d64545">△ 夜に遅くなりがち</text>
+      <text x="34" y="356">築年数が古い物件に多い</text>
+      <text x="34" y="392">理論値も100Mbps止まり</text>
+    </g>
+    <rect x="26" y="424" width="288" height="52" rx="10" fill="#ffffff" stroke="#f0d2c8" stroke-width="2"/>
+    <text x="170" y="457" text-anchor="middle" font-size="18" font-weight="700" fill="#d64545">乗り換え・打開策の検討を</text>
+  </g>
+
+  <!-- LAN -->
+  <g transform="translate(810,130)">
+    <rect width="340" height="500" rx="16" fill="#f4f8fe" stroke="#4b8bf5" stroke-width="3"/>
+    <rect width="340" height="64" rx="16" fill="#4b8bf5"/>
+    <text x="170" y="42" text-anchor="middle" font-size="27" font-weight="800" fill="#ffffff">LAN配線方式</text>
+    <text x="170" y="112" text-anchor="middle" font-size="24" font-weight="800" fill="#1558d6">最大 100Mbps〜1Gbps</text>
+    <g transform="translate(50,150)">
+      <rect x="0" y="0" width="100" height="66" rx="8" fill="#ffffff" stroke="#94a0ac" stroke-width="2"/>
+      <text x="50" y="30" text-anchor="middle" font-size="17" fill="#26303e">共用部</text>
+      <text x="50" y="52" text-anchor="middle" font-size="15" fill="#5f6b7a">(MDF室)</text>
+      <path d="M100 33 H160" stroke="#4b8bf5" stroke-width="8" stroke-linecap="round"/>
+      <rect x="160" y="0" width="80" height="66" rx="8" fill="#ffffff" stroke="#94a0ac" stroke-width="2"/>
+      <text x="200" y="40" text-anchor="middle" font-size="17" fill="#26303e">部屋</text>
+      <text x="120" y="100" font-size="16" fill="#1558d6" font-weight="700" text-anchor="middle">部屋まではLANケーブル</text>
+    </g>
+    <g font-size="20" fill="#26303e">
+      <text x="34" y="320" font-weight="800" fill="#1558d6">○ 比較的安定</text>
+      <text x="34" y="356">壁のLAN差込口に接続</text>
+      <text x="34" y="392">設備次第で速度が変わる</text>
+    </g>
+    <rect x="26" y="424" width="288" height="52" rx="10" fill="#ffffff" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="170" y="457" text-anchor="middle" font-size="18" font-weight="700" fill="#1558d6">実測して判断しよう</text>
+  </g>
+</svg>

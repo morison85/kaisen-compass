@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="回線コンパス ロゴ">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1558d6"/>
+      <stop offset="1" stop-color="#0b2c5f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#lg)"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/>
+  <!-- コンパスの針 -->
+  <polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/>
+  <polygon points="32,12 38,32 32,32" fill="#ffd76a"/>
+  <polygon points="32,52 26,32 32,32" fill="#c9d6e8"/>
+  <circle cx="32" cy="32" r="4.5" fill="#0b2c5f" stroke="#fff" stroke-width="2"/>
+  <!-- 方位目盛り -->
+  <g stroke="#ffffff" stroke-opacity=".7" stroke-width="2" stroke-linecap="round">
+    <line x1="32" y1="5" x2="32" y2="9"/>
+    <line x1="32" y1="55" x2="32" y2="59"/>
+    <line x1="5" y1="32" x2="9" y2="32"/>
+    <line x1="55" y1="32" x2="59" y2="32"/>
+  </g>
+</svg>

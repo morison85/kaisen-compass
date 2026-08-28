@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-label="スマホキャリア別・最適な光回線の対応表" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="660" fill="#ffffff"/>
+  <text x="600" y="64" text-anchor="middle" font-size="40" font-weight="800" fill="#0b2c5f">スマホのキャリアで選ぶのが基本</text>
+  <text x="600" y="104" text-anchor="middle" font-size="24" fill="#5f6b7a">セット割はスマホ1台あたり最大1,100円/月×家族分</text>
+
+  <!-- 左見出し -->
+  <text x="240" y="166" text-anchor="middle" font-size="26" font-weight="800" fill="#1558d6">いま使っているスマホ</text>
+  <text x="960" y="166" text-anchor="middle" font-size="26" font-weight="800" fill="#1558d6">相性のいい光回線</text>
+
+  <!-- 行1 -->
+  <g>
+    <rect x="60" y="190" width="360" height="90" rx="14" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="240" y="245" text-anchor="middle" font-size="30" font-weight="800" fill="#26303e">ドコモ / irumo</text>
+    <path d="M440 235 H720" stroke="#1558d6" stroke-width="6" stroke-linecap="round"/>
+    <path d="M700 220 L724 235 L700 250" fill="none" stroke="#1558d6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="750" y="190" width="390" height="90" rx="14" fill="#1558d6"/>
+    <text x="945" y="245" text-anchor="middle" font-size="30" font-weight="800" fill="#ffffff">ドコモ光</text>
+  </g>
+  <!-- 行2 -->
+  <g>
+    <rect x="60" y="300" width="360" height="90" rx="14" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="240" y="355" text-anchor="middle" font-size="30" font-weight="800" fill="#26303e">au / UQモバイル</text>
+    <path d="M440 345 H720" stroke="#1558d6" stroke-width="6" stroke-linecap="round"/>
+    <path d="M700 330 L724 345 L700 360" fill="none" stroke="#1558d6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="750" y="300" width="390" height="90" rx="14" fill="#1558d6"/>
+    <text x="945" y="355" text-anchor="middle" font-size="30" font-weight="800" fill="#ffffff">auひかり</text>
+  </g>
+  <!-- 行3 -->
+  <g>
+    <rect x="60" y="410" width="360" height="90" rx="14" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="240" y="452" text-anchor="middle" font-size="28" font-weight="800" fill="#26303e">ソフトバンク /</text>
+    <text x="240" y="486" text-anchor="middle" font-size="28" font-weight="800" fill="#26303e">ワイモバイル</text>
+    <path d="M440 455 H720" stroke="#1558d6" stroke-width="6" stroke-linecap="round"/>
+    <path d="M700 440 L724 455 L700 470" fill="none" stroke="#1558d6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="750" y="410" width="390" height="90" rx="14" fill="#1558d6"/>
+    <text x="945" y="452" text-anchor="middle" font-size="27" font-weight="800" fill="#ffffff">ソフトバンク光</text>
+    <text x="945" y="486" text-anchor="middle" font-size="23" font-weight="600" fill="#cfe0ff">(速度重視なら NURO光)</text>
+  </g>
+  <!-- 行4 -->
+  <g>
+    <rect x="60" y="520" width="360" height="90" rx="14" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="240" y="562" text-anchor="middle" font-size="28" font-weight="800" fill="#26303e">格安SIM</text>
+    <text x="240" y="596" text-anchor="middle" font-size="22" fill="#5f6b7a">(楽天・ahamo・IIJmio等)</text>
+    <path d="M440 565 H720" stroke="#f26f1d" stroke-width="6" stroke-linecap="round"/>
+    <path d="M700 550 L724 565 L700 580" fill="none" stroke="#f26f1d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="750" y="520" width="390" height="90" rx="14" fill="#f26f1d"/>
+    <text x="945" y="562" text-anchor="middle" font-size="27" font-weight="800" fill="#ffffff">GMOとくとくBB光</text>
+    <text x="945" y="596" text-anchor="middle" font-size="22" font-weight="600" fill="#ffe4cf">(セット割不要でも安い回線)</text>
+  </g>
+</svg>

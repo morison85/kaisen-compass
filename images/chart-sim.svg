@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-label="大手キャリアと格安SIM各社の月額料金比較(目安)" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="620" fill="#ffffff"/>
+  <text x="600" y="56" text-anchor="middle" font-size="38" font-weight="800" fill="#0b2c5f">スマホ月額の比較(税込・執筆時点の目安)</text>
+  <text x="600" y="94" text-anchor="middle" font-size="22" fill="#5f6b7a">同じ「普段使い」でもここまで差がつく</text>
+
+  <!-- スケール: 1000円 = 100px, x=340起点 -->
+  <g font-size="22" fill="#26303e">
+    <text x="320" y="170" text-anchor="end" font-weight="700">大手キャリア標準</text>
+    <rect x="340" y="146" width="730" height="38" rx="19" fill="#d64545"/>
+    <text x="1060" y="172" text-anchor="end" font-size="21" font-weight="800" fill="#ffffff">約7,300円〜</text>
+
+    <text x="320" y="240" text-anchor="end" font-weight="700">ahamo(30GB)</text>
+    <rect x="340" y="216" width="297" height="38" rx="19" fill="#1558d6"/>
+    <text x="650" y="242" font-size="20" font-weight="800" fill="#0f43a8">約2,970円</text>
+
+    <text x="320" y="310" text-anchor="end" font-weight="700">UQモバイル</text>
+    <rect x="340" y="286" width="236" height="38" rx="19" fill="#1558d6"/>
+    <text x="590" y="312" font-size="20" font-weight="800" fill="#0f43a8">約2,400円〜</text>
+
+    <text x="320" y="380" text-anchor="end" font-weight="700">楽天モバイル(3GB)</text>
+    <rect x="340" y="356" width="108" height="38" rx="19" fill="#0e9f6e"/>
+    <text x="462" y="382" font-size="20" font-weight="800" fill="#0b7a54">約1,078円</text>
+
+    <text x="320" y="450" text-anchor="end" font-weight="700">IIJmio(5GB)</text>
+    <rect x="340" y="426" width="99" height="38" rx="19" fill="#0e9f6e"/>
+    <text x="453" y="452" font-size="20" font-weight="800" fill="#0b7a54">約990円</text>
+
+    <text x="320" y="520" text-anchor="end" font-weight="700">LINEMO(3GB)</text>
+    <rect x="340" y="496" width="99" height="38" rx="19" fill="#0e9f6e"/>
+    <text x="453" y="522" font-size="20" font-weight="800" fill="#0b7a54">約990円</text>
+  </g>
+
+  <rect x="240" y="560" width="720" height="46" rx="23" fill="#fff7e2" stroke="#f0c14e" stroke-width="2"/>
+  <text x="600" y="591" text-anchor="middle" font-size="20" font-weight="800" fill="#8a6d1a">差額は年間で5〜7万円規模。料金は必ず公式サイトで最新を確認</text>
+</svg>
