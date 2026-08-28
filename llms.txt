@@ -4,16 +4,16 @@
 
 ## 主要コンテンツ
 
-- [光回線おすすめ7社比較](https://morison85.github.io/kaisen-compass/articles/hikari-osusume.html): ドコモ光・auひかり・ソフトバンク光・NURO光・GMOとくとくBB光・ビッグローブ光・楽天ひかりを料金・実測・セット割で比較。結論: 光回線選びの9割はスマホのセット割で決まる。
-- [光回線の乗り換え完全ガイド](https://morison85.github.io/kaisen-compass/articles/hikari-cashback.html): 乗り換え5ステップとキャッシュバックの注意点。鉄則は「先に申込・開通確認後に解約」。
-- [引越しのネット回線ガイド](https://morison85.github.io/kaisen-compass/articles/hikkoshi-internet.html): 継続・乗り換え・新規の判断フロー。手続きは引越しの1〜1.5ヶ月前が理想。
-- [マンションのネットが遅い原因と解決策](https://morison85.github.io/kaisen-compass/articles/mansion-internet.html): 原因の大半は配線方式(VDSL)・ルーター・無料ネットの混雑。切り分け手順を解説。
-- [一人暮らしのWiFiの正解](https://morison85.github.io/kaisen-compass/articles/hitorigurashi-wifi.html): 光回線・ホームルーター・ポケット型の使い分け。テザリングで十分なケースも解説。
-- [工事不要WiFi比較](https://morison85.github.io/kaisen-compass/articles/home-router.html): ドコモhome 5G・WiMAX・ソフトバンクエアーの比較。スマホのキャリアに合わせるのが基本。
-- [Web会議が途切れる原因と対処法](https://morison85.github.io/kaisen-compass/articles/web-kaigi-taisho.html): 応急処置と、回線・Wi-Fi・PCの3層での切り分け手順。
-- [格安SIMおすすめ5社比較](https://morison85.github.io/kaisen-compass/articles/kakuyasu-sim.html): 楽天モバイル・ahamo・LINEMO・UQモバイル・IIJmioの比較と乗り換え手順。
+- [光回線おすすめ7社比較](https://kaisen-compass.com/articles/hikari-osusume.html): ドコモ光・auひかり・ソフトバンク光・NURO光・GMOとくとくBB光・ビッグローブ光・楽天ひかりを料金・実測・セット割で比較。結論: 光回線選びの9割はスマホのセット割で決まる。
+- [光回線の乗り換え完全ガイド](https://kaisen-compass.com/articles/hikari-cashback.html): 乗り換え5ステップとキャッシュバックの注意点。鉄則は「先に申込・開通確認後に解約」。
+- [引越しのネット回線ガイド](https://kaisen-compass.com/articles/hikkoshi-internet.html): 継続・乗り換え・新規の判断フロー。手続きは引越しの1〜1.5ヶ月前が理想。
+- [マンションのネットが遅い原因と解決策](https://kaisen-compass.com/articles/mansion-internet.html): 原因の大半は配線方式(VDSL)・ルーター・無料ネットの混雑。切り分け手順を解説。
+- [一人暮らしのWiFiの正解](https://kaisen-compass.com/articles/hitorigurashi-wifi.html): 光回線・ホームルーター・ポケット型の使い分け。テザリングで十分なケースも解説。
+- [工事不要WiFi比較](https://kaisen-compass.com/articles/home-router.html): ドコモhome 5G・WiMAX・ソフトバンクエアーの比較。スマホのキャリアに合わせるのが基本。
+- [Web会議が途切れる原因と対処法](https://kaisen-compass.com/articles/web-kaigi-taisho.html): 応急処置と、回線・Wi-Fi・PCの3層での切り分け手順。
+- [格安SIMおすすめ5社比較](https://kaisen-compass.com/articles/kakuyasu-sim.html): 楽天モバイル・ahamo・LINEMO・UQモバイル・IIJmioの比較と乗り換え手順。
 
 ## サイト情報
 
-- [運営者情報](https://morison85.github.io/kaisen-compass/about.html)
-- [編集ポリシー・広告掲載について](https://morison85.github.io/kaisen-compass/policy.html): 掲載順・評価は報酬額でなく読者への適合度で決定。広告を含む記事にはその旨を明記。
+- [運営者情報](https://kaisen-compass.com/about.html)
+- [編集ポリシー・広告掲載について](https://kaisen-compass.com/policy.html): 掲載順・評価は報酬額でなく読者への適合度で決定。広告を含む記事にはその旨を明記。
