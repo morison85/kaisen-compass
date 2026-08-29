@@ -51,6 +51,45 @@
     a.addEventListener("click", function (e) { e.preventDefault(); });
   });
 
+  // ヒーロー背景の視差(スクロール + カーソル追従)
+  // ※ 動きを減らす設定・タッチ端末では動かさない
+  var hero = document.querySelector(".hero");
+  var heroBg = hero && hero.querySelector(".hero__bg");
+  var canMove = window.matchMedia && !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (heroBg && canMove) {
+    var sy = 0, mx = 0, my = 0, queued = false;
+    var apply = function () {
+      queued = false;
+      hero.style.setProperty("--sy", sy + "px");
+      hero.style.setProperty("--mx", mx.toFixed(3));
+      hero.style.setProperty("--my", my.toFixed(3));
+    };
+    var request = function () {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(apply);
+    };
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > hero.offsetHeight + 200) return; // 画面外では計算しない
+      sy = window.scrollY;
+      request();
+    }, { passive: true });
+
+    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      hero.addEventListener("pointermove", function (e) {
+        var r = hero.getBoundingClientRect();
+        mx = (e.clientX - r.left) / r.width - 0.5;   // -0.5 〜 0.5
+        my = (e.clientY - r.top) / r.height - 0.5;
+        request();
+      });
+      hero.addEventListener("pointerleave", function () {
+        mx = my = 0;
+        request();
+      });
+    }
+  }
+
   // スクロールに合わせて順に現れる演出
   // ※ .reveal はJSから付ける。JS無効・非対応時は何も起きず通常表示のまま
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

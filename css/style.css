@@ -183,6 +183,35 @@ a { color: var(--c-primary); }
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 20% 40%, #000 20%, transparent 75%);
 }
 
+/* 通信が広がる様子を表す同心円のパルス(回線サイトのモチーフ) */
+.hero__signal {
+  position: absolute; right: 12%; top: 46%;
+  width: 0; height: 0;
+}
+.hero__signal i {
+  position: absolute; left: 50%; top: 50%;
+  width: 120px; height: 120px; margin: -60px 0 0 -60px;
+  border: 1.5px solid rgba(255,255,255,.34);
+  border-radius: 50%;
+  opacity: 0;
+  animation: signalPulse 5.6s cubic-bezier(.2,.6,.35,1) infinite;
+  animation-delay: var(--d, 0s);
+}
+@keyframes signalPulse {
+  0%   { transform: scale(.25); opacity: 0; }
+  12%  { opacity: .55; }
+  70%  { opacity: .10; }
+  100% { transform: scale(3.4); opacity: 0; }
+}
+
+/* 背景は本文よりゆっくり動かす(スクロール視差 + カーソル追従) */
+.hero__bg {
+  transform: translate3d(calc(var(--mx, 0) * 14px), calc(var(--sy, 0px) * .16 + var(--my, 0) * 10px), 0);
+  transition: transform .35s cubic-bezier(.22,.9,.3,1);
+  will-change: transform;
+}
+.hero__orb--a { transition: transform .5s ease-out; }
+
 .hero__inner { max-width: var(--w-site); margin: 0 auto; position: relative; z-index: 1; }
 
 .hero__title {
@@ -218,6 +247,22 @@ a { color: var(--c-primary); }
 }
 @keyframes hlSweep { to { transform: scaleX(1); } }
 
+/* 下線が引き終わったあと、文字の上を一度だけ光が走る */
+.hero .hl::before {
+  content: "";
+  position: absolute; inset: -.1em -.2em;
+  background: linear-gradient(105deg, transparent 38%, rgba(255,255,255,.75) 50%, transparent 62%);
+  background-size: 260% 100%;
+  background-position: 160% 0;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  animation: hlShine 1.25s ease-out 1.5s 1 both;
+}
+@keyframes hlShine {
+  from { background-position: 160% 0; }
+  to   { background-position: -60% 0; }
+}
+
 .hero__lead {
   font-size: clamp(.92rem, .86rem + .3vw, 1.05rem);
   line-height: 1.85;
@@ -244,16 +289,35 @@ a { color: var(--c-primary); }
 .hero__point:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,.6); transform: translateY(-2px); }
 .hero__point-ico { font-size: 1.05em; line-height: 1; }
 
-/* 登場アニメーション(上へふわっと) */
-.hero__line, .hero__lead, .hero__point {
+/* 登場アニメーション */
+.hero__lead, .hero__point {
   animation: heroRise .62s cubic-bezier(.22,.9,.3,1) both;
 }
-.hero__line--1  { animation-delay: .02s; }
-.hero__line--2  { animation-delay: .12s; }
+/* 見出しは下から拭き上げるように現れる(下端は切らないよう余白を残す) */
+.hero__line {
+  animation: lineWipe .78s cubic-bezier(.16,.84,.3,1) both;
+}
+.hero__line--1  { animation-delay: .05s; }
+.hero__line--2  { animation-delay: .19s; }
+@keyframes lineWipe {
+  from { opacity: 0; clip-path: inset(0 0 105% 0); transform: translate3d(0, 18px, 0); }
+  to   { opacity: 1; clip-path: inset(0 0 -30% 0); transform: none; }
+}
 .hero__lead     { animation-delay: .24s; }
-.hero__point:nth-child(1) { animation-delay: .34s; }
-.hero__point:nth-child(2) { animation-delay: .42s; }
-.hero__point:nth-child(3) { animation-delay: .50s; }
+.hero__point { animation-name: chipPop; animation-duration: .5s; animation-timing-function: cubic-bezier(.34,1.56,.5,1); }
+.hero__point:nth-child(1) { animation-delay: .46s; }
+.hero__point:nth-child(2) { animation-delay: .56s; }
+.hero__point:nth-child(3) { animation-delay: .66s; }
+@keyframes chipPop {
+  from { opacity: 0; transform: translate3d(0, 10px, 0) scale(.94); }
+  to   { opacity: 1; transform: none; }
+}
+.hero__point:hover .hero__point-ico { animation: icoNudge .45s ease; }
+@keyframes icoNudge {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  35%      { transform: translateY(-3px) rotate(-9deg); }
+  70%      { transform: translateY(0) rotate(5deg); }
+}
 @keyframes heroRise {
   from { opacity: 0; transform: translate3d(0, 16px, 0); }
   to   { opacity: 1; transform: translate3d(0, 0, 0); }
@@ -326,7 +390,9 @@ a { color: var(--c-primary); }
 @media (prefers-reduced-motion: reduce) {
   .hero { animation: none; }
   .hero__orb, .finder__compass { animation: none; }
-  .hero__line, .hero__lead, .hero__point, .finder__box { animation: none; opacity: 1; transform: none; }
+  .hero__line, .hero__lead, .hero__point, .finder__box { animation: none; opacity: 1; transform: none; clip-path: none; }
+  .hero__signal, .hero .hl::before { display: none; }
+  .hero__bg { transform: none; transition: none; }
   .hero .hl::after { animation: none; transform: scaleX(1); }
   .reveal { opacity: 1; transform: none; transition: none; }
   .finder__item:hover { transform: none; }
