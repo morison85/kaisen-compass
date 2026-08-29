@@ -7,26 +7,25 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1120" cy="60" r="220" fill="#ffffff" opacity=".06"/>
-  <circle cx="1010" cy="560" r="160" fill="#ffffff" opacity=".05"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
 
-  <!-- 右:お金が戻るイラスト -->
-  <g transform="translate(850,140)">
+  <!-- 右下:お金が戻るイラスト -->
+  <g transform="translate(890, 340) scale(0.9)">
     <rect x="20" y="120" width="240" height="150" rx="14" fill="#ffffff"/>
     <rect x="20" y="120" width="240" height="44" rx="14" fill="#9fc1f5"/>
     <circle cx="140" cy="210" r="44" fill="#ffd76a"/>
     <text x="140" y="228" text-anchor="middle" font-size="52" font-weight="800" fill="#0b2c5f">¥</text>
-    <!-- 矢印 -->
     <path d="M140 40 V95" stroke="#ffd76a" stroke-width="16" stroke-linecap="round"/>
     <path d="M112 72 L140 100 L168 72" fill="none" stroke="#ffd76a" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <rect x="70" y="96" width="300" height="58" rx="29" fill="#ffd76a"/>
-  <text x="220" y="136" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">損しない手順つき</text>
+  <rect x="70" y="80" width="292" height="56" rx="28" fill="#ffd76a"/>
+  <text x="216" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">損しない手順つき</text>
 
-  <text x="70" y="250" font-size="90" font-weight="800" fill="#ffffff">乗り換え×</text>
-  <text x="70" y="368" font-size="90" font-weight="800" fill="#ffd76a">キャッシュバック</text>
-  <text x="70" y="448" font-size="38" font-weight="600" fill="#cfe0ff">受け取り忘れゼロへ。申込前チェックリスト付き</text>
+  <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff">乗り換え×</text>
+  <text x="70" y="360" font-size="82" font-weight="800" fill="#ffd76a">キャッシュバック</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">受け取り忘れゼロへ。チェックリスト付き</text>
 
   <g transform="translate(70,530)">
     <circle cx="24" cy="24" r="24" fill="#ffffff"/>

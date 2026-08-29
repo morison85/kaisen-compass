@@ -7,29 +7,28 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1120" cy="60" r="220" fill="#ffffff" opacity=".06"/>
-  <circle cx="1010" cy="560" r="160" fill="#ffffff" opacity=".05"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
 
-  <!-- 右:家と光回線イラスト -->
-  <g transform="translate(830,150)">
+  <!-- 右下:家と光回線イラスト(文字ゾーンと分離) -->
+  <g transform="translate(880, 330) scale(0.85)">
     <path d="M40 130 L150 40 L260 130 V300 H40 Z" fill="#ffffff"/>
     <path d="M10 140 L150 25 L290 140" fill="none" stroke="#ffd76a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
     <rect x="115" y="200" width="70" height="100" rx="6" fill="#1558d6"/>
     <rect x="65" y="160" width="46" height="46" rx="6" fill="#9fc1f5"/>
     <rect x="189" y="160" width="46" height="46" rx="6" fill="#9fc1f5"/>
-    <!-- 光ファイバー -->
     <path d="M-160 320 C -40 320, 20 250, 150 250" fill="none" stroke="#ffd76a" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 24"/>
     <circle cx="150" cy="250" r="14" fill="#ffd76a"/>
   </g>
 
   <!-- チップ -->
-  <rect x="70" y="96" width="270" height="58" rx="29" fill="#ffd76a"/>
-  <text x="205" y="136" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">2026年最新版</text>
+  <rect x="70" y="80" width="264" height="56" rx="28" fill="#ffd76a"/>
+  <text x="202" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">2026年最新版</text>
 
-  <!-- タイトル -->
-  <text x="70" y="256" font-size="96" font-weight="800" fill="#ffffff" letter-spacing="2">光回線おすすめ</text>
-  <text x="70" y="376" font-size="96" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">7社</tspan>を徹底比較</text>
-  <text x="70" y="452" font-size="38" font-weight="600" fill="#cfe0ff">料金・速度・セット割で選ぶ &#8220;後悔しない1社&#8221;</text>
+  <!-- タイトル(x<840のゾーンに限定) -->
+  <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff" letter-spacing="2">光回線おすすめ</text>
+  <text x="70" y="360" font-size="82" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">7社</tspan>を徹底比較</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">料金・速度・セット割で選ぶ後悔しない1社</text>
 
   <!-- ブランド -->
   <g transform="translate(70,530)">

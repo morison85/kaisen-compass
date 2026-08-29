@@ -7,15 +7,14 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1120" cy="60" r="220" fill="#ffffff" opacity=".06"/>
-  <circle cx="1010" cy="560" r="160" fill="#ffffff" opacity=".05"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
 
-  <!-- 右:スマホとSIM -->
-  <g transform="translate(880,120)">
+  <!-- 右下:スマホとSIM -->
+  <g transform="translate(900, 250) scale(0.8)">
     <rect x="30" y="30" width="170" height="320" rx="28" fill="#ffffff"/>
     <rect x="46" y="66" width="138" height="230" rx="10" fill="#eaf1fd"/>
     <circle cx="115" cy="330" r="14" fill="#c9d6e8"/>
-    <!-- 料金が下がるグラフ -->
     <g transform="translate(60,90)">
       <rect x="0" y="30" width="24" height="90" rx="4" fill="#d64545" opacity=".8"/>
       <rect x="42" y="70" width="24" height="50" rx="4" fill="#9fc1f5"/>
@@ -23,17 +22,16 @@
       <path d="M6 12 L96 78" stroke="#0b2c5f" stroke-width="7" stroke-linecap="round"/>
       <path d="M78 66 L96 78 L88 56" fill="none" stroke="#0b2c5f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-    <!-- SIMカード -->
     <path d="M215 200 h70 a12 12 0 0 1 12 12 v86 a12 12 0 0 1-12 12 h-88 a12 12 0 0 1-12-12 v-68 z" fill="#ffd76a"/>
     <rect x="205" y="238" width="52" height="40" rx="7" fill="#d9a521"/>
   </g>
 
-  <rect x="70" y="96" width="300" height="58" rx="29" fill="#ffd76a"/>
-  <text x="220" y="136" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">乗り換え手順つき</text>
+  <rect x="70" y="80" width="292" height="56" rx="28" fill="#ffd76a"/>
+  <text x="216" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">乗り換え手順つき</text>
 
-  <text x="70" y="256" font-size="92" font-weight="800" fill="#ffffff">格安SIM<tspan fill="#ffd76a">5社</tspan>比較</text>
-  <text x="70" y="376" font-size="72" font-weight="800" fill="#ffffff">スマホ代を月3,000円下げる</text>
-  <text x="70" y="452" font-size="38" font-weight="600" fill="#cfe0ff">品質そのまま、ムダだけ削る乗り換え術</text>
+  <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">格安SIM</text>
+  <text x="70" y="360" font-size="80" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">5社</tspan>を比較</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">スマホ代を月3,000円下げる乗り換え術</text>
 
   <g transform="translate(70,530)">
     <circle cx="24" cy="24" r="24" fill="#ffffff"/>

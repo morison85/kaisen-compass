@@ -7,11 +7,11 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1120" cy="60" r="220" fill="#ffffff" opacity=".06"/>
-  <circle cx="1010" cy="560" r="160" fill="#ffffff" opacity=".05"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
 
-  <!-- 右:マンションとWi-Fi -->
-  <g transform="translate(860,120)">
+  <!-- 右下:マンションとWi-Fi -->
+  <g transform="translate(900, 260) scale(0.85)">
     <rect x="20" y="60" width="200" height="300" rx="10" fill="#ffffff"/>
     <g fill="#9fc1f5">
       <rect x="48" y="90" width="40" height="40" rx="5"/><rect x="132" y="90" width="40" height="40" rx="5"/>
@@ -19,19 +19,18 @@
       <rect x="48" y="222" width="40" height="40" rx="5"/><rect x="132" y="222" width="40" height="40" rx="5"/>
     </g>
     <rect x="92" y="292" width="56" height="68" rx="6" fill="#1558d6"/>
-    <!-- Wi-Fi波 -->
     <g fill="none" stroke="#ffd76a" stroke-width="14" stroke-linecap="round">
       <path d="M120 30 a56 56 0 0 1 56 0" transform="rotate(-8 148 30)"/>
       <path d="M104 4 a92 92 0 0 1 88 0" transform="rotate(-8 148 4)"/>
     </g>
   </g>
 
-  <rect x="70" y="96" width="330" height="58" rx="29" fill="#ffd76a"/>
-  <text x="235" y="136" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">原因の切り分け図解</text>
+  <rect x="70" y="80" width="330" height="56" rx="28" fill="#ffd76a"/>
+  <text x="235" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">原因の切り分け図解</text>
 
-  <text x="70" y="256" font-size="88" font-weight="800" fill="#ffffff">マンションのネット</text>
-  <text x="70" y="376" font-size="88" font-weight="800" fill="#ffffff">「<tspan fill="#ffd76a">遅い</tspan>」を解決</text>
-  <text x="70" y="452" font-size="38" font-weight="600" fill="#cfe0ff">配線方式の確認から乗り換え先まで、この1本で</text>
+  <text x="70" y="248" font-size="78" font-weight="800" fill="#ffffff">マンションのネット</text>
+  <text x="70" y="360" font-size="78" font-weight="800" fill="#ffffff">「<tspan fill="#ffd76a">遅い</tspan>」を解決</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">配線方式の確認から乗り換えまで、この1本で</text>
 
   <g transform="translate(70,530)">
     <circle cx="24" cy="24" r="24" fill="#ffffff"/>

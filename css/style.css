@@ -64,10 +64,19 @@ a { color: var(--c-primary); }
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
 }
 
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
 .brand img { width: 40px; height: 40px; }
-.brand__name { font-size: 1.28rem; font-weight: 800; color: var(--c-navy); letter-spacing: 0.02em; line-height: 1.2; }
-.brand__tag { display: block; font-size: 0.66rem; font-weight: 500; color: var(--c-text-sub); letter-spacing: 0.04em; }
+.brand__name {
+  font-family: "Zen Maru Gothic", var(--font);
+  font-size: 1.38rem; font-weight: 900; color: var(--c-navy);
+  letter-spacing: 0.06em; line-height: 1.1;
+}
+.brand__tag {
+  display: block;
+  font-family: var(--font);
+  font-size: 0.56rem; font-weight: 600; color: #94a3b5;
+  letter-spacing: 0.4em; margin-top: 4px;
+}
 
 .gnav__menu { display: flex; align-items: center; gap: 2px; list-style: none; }
 .gnav__menu a {
@@ -359,6 +368,11 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 
 .svc__desc { font-size: 0.93rem; margin-bottom: 16px; }
 
+/* サービス公式バナー(A8広告素材) */
+.svc__banner { text-align: center; margin: 4px 0 16px; }
+.svc__banner a { display: inline-block; line-height: 0; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; }
+.svc__banner img { max-width: 100%; height: auto; }
+
 .merit { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
 .merit__col { border-radius: var(--radius-s); padding: 14px 16px; font-size: 0.84rem; }
 .merit__col ul { margin-left: 18px; }
@@ -501,7 +515,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .footer a:hover { color: #fff; text-decoration: underline; }
 .footer__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
 .footer__brand img { width: 36px; height: 36px; }
-.footer__brand span { font-weight: 800; color: #fff; font-size: 1.1rem; }
+.footer__brand span { font-family: "Zen Maru Gothic", var(--font); font-weight: 900; color: #fff; font-size: 1.12rem; letter-spacing: .06em; }
 .footer__note { font-size: 0.74rem; color: #8fa3c0; border-top: 1px solid #24457e; padding-top: 18px; line-height: 1.8; }
 .footer__copy { margin-top: 12px; text-align: center; font-size: 0.78rem; color: #8fa3c0; }
 

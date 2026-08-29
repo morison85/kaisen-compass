@@ -7,32 +7,30 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1120" cy="60" r="220" fill="#ffffff" opacity=".06"/>
-  <circle cx="1010" cy="560" r="160" fill="#ffffff" opacity=".05"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
 
-  <!-- 右:ホームルーター -->
-  <g transform="translate(880,130)">
+  <!-- 右下:ホームルーター -->
+  <g transform="translate(910, 230) scale(0.85)">
     <rect x="40" y="90" width="150" height="240" rx="26" fill="#ffffff"/>
     <circle cx="115" cy="140" r="12" fill="#0e9f6e"/>
     <rect x="80" y="180" width="70" height="8" rx="4" fill="#c9d6e8"/>
     <rect x="80" y="202" width="70" height="8" rx="4" fill="#c9d6e8"/>
     <rect x="80" y="224" width="70" height="8" rx="4" fill="#c9d6e8"/>
-    <!-- 電波 -->
     <g fill="none" stroke="#ffd76a" stroke-width="14" stroke-linecap="round">
       <path d="M88 60 a44 44 0 0 1 54 0"/>
       <path d="M70 24 a78 78 0 0 1 90 0"/>
     </g>
-    <!-- コンセント -->
     <path d="M115 330 v34" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
     <rect x="95" y="364" width="40" height="26" rx="6" fill="#ffd76a"/>
   </g>
 
-  <rect x="70" y="96" width="360" height="58" rx="29" fill="#ffd76a"/>
-  <text x="250" y="136" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">コンセントに挿すだけ</text>
+  <rect x="70" y="80" width="380" height="56" rx="28" fill="#ffd76a"/>
+  <text x="260" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">コンセントに挿すだけ</text>
 
-  <text x="70" y="256" font-size="96" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">工事不要</tspan>WiFi</text>
-  <text x="70" y="376" font-size="96" font-weight="800" fill="#ffffff">徹底比較</text>
-  <text x="70" y="452" font-size="38" font-weight="600" fill="#cfe0ff">ホームルーター3社+ポケット型の選び方</text>
+  <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">工事不要</tspan>WiFi</text>
+  <text x="70" y="360" font-size="82" font-weight="800" fill="#ffffff">徹底比較</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">ホームルーター3社+ポケット型の選び方</text>
 
   <g transform="translate(70,530)">
     <circle cx="24" cy="24" r="24" fill="#ffffff"/>
