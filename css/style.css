@@ -29,11 +29,32 @@
   --w-site: 1120px;
   --w-article: 780px;
   --font: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", Meiryo, sans-serif;
+  /* 見出し用: Noto より字面が締まっていて、大きく組んだときに強い */
+  --font-display: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  /* ブランド用: 角丸で親しみのある書体 */
+  --font-brand: "Zen Maru Gothic", var(--font-display);
+  /* 数字用: 欧文の幾何学サンセリフ。日本語部分は自動で見出し書体にフォールバックする */
+  --font-num: "Outfit", var(--font-display);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+/* 見出しは表示用書体 + 約物半角(palt)で、日本語らしい字間に整える */
+h1, h2, h3, h4,
+.hero__title, .sec-head h1, .sec-head h2, .article-title,
+.article-body h2, .article-body h3, .card__title, .finder__title,
+.footer h2, .profile-head h2, .box-memo__t {
+  font-family: var(--font-display);
+  font-feature-settings: "palt" 1;
+}
+/* 数字は欧文書体で。日本語の文字は自動的に見出し書体へフォールバックする */
+.num, .hero .hl, .card__meta time, .stars small {
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .01em;
+}
 
 body {
   font-family: var(--font);
@@ -67,7 +88,7 @@ a { color: var(--c-primary); }
 .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
 .brand img { width: 40px; height: 40px; }
 .brand__name {
-  font-family: "Zen Maru Gothic", var(--font);
+  font-family: var(--font-brand);
   font-size: 1.38rem; font-weight: 900; color: var(--c-navy);
   letter-spacing: 0.06em; line-height: 1.1;
 }
@@ -165,10 +186,10 @@ a { color: var(--c-primary); }
 .hero__inner { max-width: var(--w-site); margin: 0 auto; position: relative; z-index: 1; }
 
 .hero__title {
-  font-size: clamp(1.55rem, 1.05rem + 2.3vw, 2.6rem);
-  line-height: 1.42;
-  font-weight: 800;
-  letter-spacing: 0.01em;
+  font-size: clamp(1.6rem, 1.05rem + 2.45vw, 2.75rem);
+  line-height: 1.38;
+  font-weight: 900;
+  letter-spacing: -0.005em;
   margin-bottom: 16px;
   text-wrap: balance;
 }
@@ -315,7 +336,7 @@ a { color: var(--c-primary); }
 
 .sec-head { text-align: center; margin-bottom: 34px; }
 .sec-head__en { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; color: var(--c-primary); text-transform: uppercase; }
-.sec-head h1, .sec-head h2 { font-size: 1.65rem; font-weight: 800; color: var(--c-navy); line-height: 1.5; margin-top: 4px; }
+.sec-head h1, .sec-head h2 { font-size: clamp(1.35rem, 1.15rem + .85vw, 1.75rem); font-weight: 900; color: var(--c-navy); line-height: 1.45; letter-spacing: .01em; margin-top: 6px; }
 .sec-head p { font-size: 0.9rem; color: var(--c-text-sub); margin-top: 8px; }
 
 /* ============ 記事カード ============ */
@@ -337,7 +358,7 @@ a { color: var(--c-primary); }
   color: var(--c-primary-dark); background: var(--c-primary-pale);
   border-radius: 999px; padding: 3px 12px; margin-bottom: 10px;
 }
-.card__title { font-size: 1.02rem; font-weight: 700; line-height: 1.55; margin-bottom: 8px; }
+.card__title { font-size: 1.02rem; font-weight: 700; line-height: 1.6; letter-spacing: .005em; margin-bottom: 8px; }
 .card__title a { color: var(--c-text); text-decoration: none; }
 .card__title a:hover { color: var(--c-primary); }
 .card__excerpt { font-size: 0.84rem; color: var(--c-text-sub); line-height: 1.7; margin-bottom: 12px; flex: 1; }
@@ -360,7 +381,7 @@ a { color: var(--c-primary); }
 
 .article-head { margin-bottom: 22px; }
 .article-head .card__cat { margin-bottom: 12px; }
-.article-title { font-size: 1.72rem; font-weight: 800; color: var(--c-navy); line-height: 1.5; letter-spacing: 0.01em; margin-bottom: 14px; }
+.article-title { font-size: clamp(1.35rem, 1.1rem + 1.05vw, 1.82rem); font-weight: 900; color: var(--c-navy); line-height: 1.48; letter-spacing: 0.005em; margin-bottom: 14px; }
 .article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; font-size: 0.8rem; color: var(--c-text-sub); }
 .article-meta .upd { font-weight: 700; color: var(--c-primary-dark); }
 
@@ -657,7 +678,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .footer a:hover { color: #fff; text-decoration: underline; }
 .footer__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
 .footer__brand img { width: 36px; height: 36px; }
-.footer__brand span { font-family: "Zen Maru Gothic", var(--font); font-weight: 900; color: #fff; font-size: 1.12rem; letter-spacing: .06em; }
+.footer__brand span { font-family: var(--font-brand); font-weight: 900; color: #fff; font-size: 1.12rem; letter-spacing: .06em; }
 .footer__note { font-size: 0.74rem; color: #8fa3c0; border-top: 1px solid #24457e; padding-top: 18px; line-height: 1.8; }
 .footer__copy { margin-top: 12px; text-align: center; font-size: 0.78rem; color: #8fa3c0; }
 
@@ -726,8 +747,8 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
   .finder__grid { grid-template-columns: 1fr; }
 }
 
-/* 狭い画面では見出しの改行位置を自然にまかせる */
+/* 見出しは2行の意味の切れ目で必ず折り返す(単語の途中で切れないように) */
+.hero__line { text-wrap: nowrap; }
 @media (max-width: 420px) {
-  .hero__line { display: inline; }
-  .hero__title { text-wrap: pretty; }
+  .hero__title { font-size: clamp(1.5rem, .9rem + 2.6vw, 1.85rem); }
 }
