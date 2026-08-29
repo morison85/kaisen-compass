@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20260829c">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -73,28 +73,34 @@
 </div>
 
 <header class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <span class="hero__orb hero__orb--a"></span>
+    <span class="hero__orb hero__orb--b"></span>
+    <span class="hero__orb hero__orb--c"></span>
+    <span class="hero__grid"></span>
+  </div>
   <div class="hero__inner">
-    <h1>ネット回線選びの<br>「わからない」を、<span class="hl">3分</span>でなくす。</h1>
+    <h1 class="hero__title"><span class="hero__line hero__line--1">ネット回線選びの</span><span class="hero__line hero__line--2">「わからない」を、<span class="hl">3分</span>でなくす。</span></h1>
     <p class="hero__lead">光回線・ホームルーター・格安SIM。料金と実測データ、そして実際に使った経験だけを根拠に、あなたの住まいとスマホに合う「正解」を案内します。</p>
     <div class="hero__points">
-      <span class="hero__point">📊 料金・実測データで比較</span>
-      <span class="hero__point">🏠 住まい別の最適解</span>
-      <span class="hero__point">💰 乗り換えで損しない手順</span>
+      <span class="hero__point"><span class="hero__point-ico" aria-hidden="true">📊</span>料金・実測データで比較</span>
+      <span class="hero__point"><span class="hero__point-ico" aria-hidden="true">🏠</span>住まい別の最適解</span>
+      <span class="hero__point"><span class="hero__point-ico" aria-hidden="true">💰</span>乗り換えで損しない手順</span>
     </div>
   </div>
 </header>
 
-<div class="finder">
+<div class="finder" id="finder">
   <div class="finder__box">
-    <div class="finder__title">🧭 あなたの状況から探す</div>
+    <div class="finder__title"><span class="finder__compass" aria-hidden="true">🧭</span>あなたの状況から探す</div>
     <div class="finder__sub">いちばん近いものを選んでください。答えのページに直行します。</div>
     <div class="finder__grid">
-      <a class="finder__item" href="articles/hikari-osusume"><span class="ico">🏆</span><span>光回線を比較したい<small>おすすめ7社を一覧で</small></span></a>
-      <a class="finder__item" href="articles/hikari-cashback"><span class="ico">💰</span><span>乗り換えで得したい<small>キャッシュバックの受け取り方</small></span></a>
-      <a class="finder__item" href="articles/hikkoshi-internet"><span class="ico">📦</span><span>引越しが決まった<small>継続・乗り換えの判断フロー</small></span></a>
-      <a class="finder__item" href="articles/mansion-internet"><span class="ico">🏢</span><span>マンションのネットが遅い<small>原因の切り分けから解決まで</small></span></a>
-      <a class="finder__item" href="articles/home-router"><span class="ico">🔌</span><span>工事なしで今すぐ使いたい<small>ホームルーター比較</small></span></a>
-      <a class="finder__item" href="articles/kakuyasu-sim"><span class="ico">📱</span><span>スマホ代を下げたい<small>格安SIM5社比較</small></span></a>
+      <a class="finder__item" href="articles/hikari-osusume"><span class="ico" aria-hidden="true">🏆</span><span class="finder__label">光回線を比較したい<small>おすすめ7社を一覧で</small></span><span class="finder__arrow" aria-hidden="true">→</span></a>
+      <a class="finder__item" href="articles/hikari-cashback"><span class="ico" aria-hidden="true">💰</span><span class="finder__label">乗り換えで得したい<small>キャッシュバックの受け取り方</small></span><span class="finder__arrow" aria-hidden="true">→</span></a>
+      <a class="finder__item" href="articles/hikkoshi-internet"><span class="ico" aria-hidden="true">📦</span><span class="finder__label">引越しが決まった<small>継続・乗り換えの判断フロー</small></span><span class="finder__arrow" aria-hidden="true">→</span></a>
+      <a class="finder__item" href="articles/mansion-internet"><span class="ico" aria-hidden="true">🏢</span><span class="finder__label">マンションのネットが遅い<small>原因の切り分けから解決まで</small></span><span class="finder__arrow" aria-hidden="true">→</span></a>
+      <a class="finder__item" href="articles/home-router"><span class="ico" aria-hidden="true">🔌</span><span class="finder__label">工事なしで今すぐ使いたい<small>ホームルーター比較</small></span><span class="finder__arrow" aria-hidden="true">→</span></a>
+      <a class="finder__item" href="articles/kakuyasu-sim"><span class="ico" aria-hidden="true">📱</span><span class="finder__label">スマホ代を下げたい<small>格安SIM5社比較</small></span><span class="finder__arrow" aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
@@ -357,6 +363,6 @@
 </footer>
 
 <button class="to-top" aria-label="ページ上部へ戻る">↑</button>
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=20260829c" defer></script>
 </body>
 </html>

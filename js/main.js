@@ -50,4 +50,47 @@
   document.querySelectorAll("a.btn[href='#']").forEach(function (a) {
     a.addEventListener("click", function (e) { e.preventDefault(); });
   });
+
+  // スクロールに合わせて順に現れる演出
+  // ※ .reveal はJSから付ける。JS無効・非対応時は何も起きず通常表示のまま
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    var groups = [
+      { sel: ".finder__item", step: 60 },
+      { sel: ".card", step: 80 },
+      { sel: ".sec-head", step: 0 }
+    ];
+    // 初期表示で画面内にある要素には .reveal を付けない(常に見えるまま)。
+    // 画面外のものだけ隠して、スクロールで現れるようにする。
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var targets = [];
+    groups.forEach(function (g) {
+      var shown = 0;
+      document.querySelectorAll(g.sel).forEach(function (el) {
+        if (el.getBoundingClientRect().top < vh * 0.92) return; // すでに見えている
+        el.classList.add("reveal");
+        el.style.transitionDelay = (shown % 6) * g.step + "ms";
+        shown++;
+        targets.push(el);
+      });
+    });
+    if (!targets.length) return;
+
+    var show = function (el) {
+      el.classList.add("is-in");
+      if (io) io.unobserve(el);
+    };
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) show(entry.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+
+    targets.forEach(function (el) { io.observe(el); });
+
+    // 保険: 何らかの理由で監視が働かなくても、6秒後には必ず表示する
+    setTimeout(function () {
+      targets.forEach(function (el) { el.classList.add("is-in"); });
+    }, 6000);
+  }
 })();
