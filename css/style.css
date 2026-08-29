@@ -621,6 +621,10 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 
 /* CTAボタン */
 .btn-area { margin-top: 18px; }
+/* CTAの上に各社の公式バナーを置く。1x1の計測ピクセルは幅を取らせない */
+.btn-area__banner { display: flex; justify-content: center; margin-bottom: 14px; }
+.btn-area__banner img { border-radius: var(--radius-s); box-shadow: var(--shadow-1); max-width: 100%; height: auto; }
+.btn-area__banner img[width="1"] { box-shadow: none; }
 .btn {
   display: block; text-align: center; text-decoration: none;
   font-weight: 800; font-size: 1.02rem; line-height: 1.4;
