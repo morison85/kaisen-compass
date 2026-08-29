@@ -20,8 +20,8 @@
     <path d="M92 130 H118" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 12"/>
   </g>
 
-  <rect x="70" y="80" width="292" height="56" rx="28" fill="#ffd76a"/>
-  <text x="216" y="119" text-anchor="middle" font-size="27" font-weight="800" fill="#0b2c5f">割引額を実質コストで解説</text>
+  <rect x="70" y="80" width="384" height="56" rx="28" fill="#ffd76a"/>
+  <text x="262" y="119" text-anchor="middle" font-size="27" font-weight="800" fill="#0b2c5f">割引額を実質コストで解説</text>
 
   <text x="70" y="248" font-size="70" font-weight="800" fill="#ffffff">ビッグローブ光</text>
   <text x="70" y="360" font-size="62" font-weight="800" fill="#ffd76a">au・UQセット割ガイド</text>

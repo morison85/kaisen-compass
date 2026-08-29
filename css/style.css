@@ -174,7 +174,7 @@ a { color: var(--c-primary); }
 
 .sec-head { text-align: center; margin-bottom: 34px; }
 .sec-head__en { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; color: var(--c-primary); text-transform: uppercase; }
-.sec-head h2 { font-size: 1.65rem; font-weight: 800; color: var(--c-navy); line-height: 1.5; margin-top: 4px; }
+.sec-head h1, .sec-head h2 { font-size: 1.65rem; font-weight: 800; color: var(--c-navy); line-height: 1.5; margin-top: 4px; }
 .sec-head p { font-size: 0.9rem; color: var(--c-text-sub); margin-top: 8px; }
 
 /* ============ 記事カード ============ */
@@ -509,7 +509,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .footer { background: var(--c-navy); color: #c9d6e8; margin-top: 72px; font-size: 0.85rem; }
 .footer__inner { max-width: var(--w-site); margin: 0 auto; padding: 48px 20px 26px; }
 .footer__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 34px; margin-bottom: 34px; }
-.footer h3 { color: #fff; font-size: 0.95rem; margin-bottom: 14px; }
+.footer h2 { color: #fff; font-size: 0.95rem; margin-bottom: 14px; }
 .footer ul { list-style: none; }
 .footer li { margin-bottom: 9px; }
 .footer a { color: #c9d6e8; text-decoration: none; }

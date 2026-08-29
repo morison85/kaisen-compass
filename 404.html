@@ -8,6 +8,7 @@
 <link rel="icon" type="image/svg+xml" href="https://kaisen-compass.com/favicon.svg">
 <link rel="icon" type="image/png" sizes="48x48" href="https://kaisen-compass.com/favicon-48.png">
 <link rel="icon" type="image/png" sizes="192x192" href="https://kaisen-compass.com/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kaisen-compass.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
@@ -15,12 +16,73 @@
 </head>
 <body>
 
-<main class="article static" style="text-align:center; padding-top:80px;">
-  <img src="https://kaisen-compass.com/images/logo.svg" alt="回線コンパス" width="80" height="80" style="margin:0 auto 20px;">
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="https://kaisen-compass.com/" class="brand">
+      <img src="https://kaisen-compass.com/images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="https://kaisen-compass.com/">ホーム</a></li>
+      <li><a href="https://kaisen-compass.com/category/hikari.html">光回線</a></li>
+      <li><a href="https://kaisen-compass.com/category/wifi.html">WiFi・ルーター</a></li>
+      <li><a href="https://kaisen-compass.com/category/sim.html">格安SIM</a></li>
+      <li><a href="https://kaisen-compass.com/about.html">運営者情報</a></li>
+      <li><a class="gnav__cta" href="https://kaisen-compass.com/articles/hikari-osusume.html">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main class="article static" style="text-align:center; padding-top:56px;">
+  <img src="https://kaisen-compass.com/images/logo.svg" alt="" width="80" height="80" style="margin:0 auto 20px;">
   <h1 class="article-title" style="font-size:1.5rem;">404|ページが見つかりません</h1>
   <p>お探しのページは移動または削除された可能性があります。<br>コンパスの針を合わせ直しましょう。</p>
+
+  <div class="box-memo" style="text-align:left; margin-top:32px;">
+    <div class="box-memo__t">🧭 よく読まれている記事</div>
+    <ul style="margin:0;">
+      <li><a href="https://kaisen-compass.com/articles/hikari-osusume.html">光回線おすすめ7社比較|迷わない選び方を図解で解説</a></li>
+      <li><a href="https://kaisen-compass.com/articles/home-router.html">工事不要WiFiおすすめ比較|ホームルーター3社+ポケット型</a></li>
+      <li><a href="https://kaisen-compass.com/articles/hikari-cashback.html">光回線の乗り換え完全ガイド|キャッシュバックで損しない手順</a></li>
+      <li><a href="https://kaisen-compass.com/articles/kakuyasu-sim.html">格安SIMおすすめ5社比較|スマホ代を月3,000円下げる乗り換え術</a></li>
+    </ul>
+  </div>
+
   <p style="margin-top:28px;"><a class="btn btn--cv" style="display:inline-block; max-width:320px;" href="https://kaisen-compass.com/">トップページへ戻る</a></p>
 </main>
 
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="https://kaisen-compass.com/images/logo.svg" alt="" width="36" height="36"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="https://kaisen-compass.com/category/hikari.html">光回線</a></li>
+          <li><a href="https://kaisen-compass.com/category/wifi.html">WiFi・ホームルーター</a></li>
+          <li><a href="https://kaisen-compass.com/category/sim.html">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="https://kaisen-compass.com/about.html">運営者情報</a></li>
+          <li><a href="https://kaisen-compass.com/policy.html">編集ポリシー・広告掲載について</a></li>
+          <li><a href="https://kaisen-compass.com/privacy.html">プライバシーポリシー・免責事項</a></li>
+          <li><a href="https://kaisen-compass.com/contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="https://kaisen-compass.com/js/main.js" defer></script>
 </body>
 </html>
