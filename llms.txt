@@ -19,6 +19,9 @@
 - [ソフトバンク光への乗り換え完全ガイド](https://kaisen-compass.com/articles/sbhikari-norikae.html): 光コラボ・独自回線などパターン別の乗り換え手順とあんしん乗り換えキャンペーンの申請条件。
 - [GMOとくとくBB光のキャンペーン完全ガイド](https://kaisen-compass.com/articles/gmohikari-campaign.html): キャッシュバック受け取り手順(開通10ヶ月後)と縛りなしの実際。
 - [ビッグローブ光のauスマートバリュー・UQセット割ガイド](https://kaisen-compass.com/articles/biglobehikari-au-setwari.html): セット割の割引額・加入条件・実質コストの計算方法。
+- [WiMAXはホームルーターとモバイル型どっち?](https://kaisen-compass.com/articles/wimax-vs-homerouter.html): 判断軸は「持ち出すかどうか」の一点。持ち出さないならホームルーターが電波・速度・接続台数で有利。
+- [賃貸で光回線の工事ができないときの対処法](https://kaisen-compass.com/articles/kouji-dekinai-chintai.html): 「工事できない」の原因は4つ。大家さんの不許可は穴あけ不要の工事方法の説明で覆せることが多い。
+- [インターネット無料の賃貸が遅い理由](https://kaisen-compass.com/articles/muryou-net-osoi.html): 帯域の共有・VDSL配線・帯域制限が原因。まず有線で実測して宅内か建物かを切り分ける。
 
 ## サイト情報
 
