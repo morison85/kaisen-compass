@@ -186,14 +186,17 @@ a { color: var(--c-primary); }
 .hero__inner { max-width: var(--w-site); margin: 0 auto; position: relative; z-index: 1; }
 
 .hero__title {
-  font-size: clamp(1.6rem, 1.05rem + 2.45vw, 2.75rem);
-  line-height: 1.38;
+  font-size: clamp(1.3rem, .92rem + 1.95vw, 2.45rem);
+  line-height: 1.45;
   font-weight: 900;
   letter-spacing: -0.005em;
   margin-bottom: 16px;
-  text-wrap: balance;
+  /* 日本語を文節単位で折り返す(対応ブラウザのみ)。語の途中で切れるのを防ぐ */
+  word-break: auto-phrase;
 }
 .hero__line { display: block; }
+/* 語の途中で折り返させたくない箇所に付ける */
+.nw { white-space: nowrap; }
 
 /* 「3分」— 下線が伸びてから文字が光る */
 .hero .hl {
@@ -218,6 +221,8 @@ a { color: var(--c-primary); }
 .hero__lead {
   font-size: clamp(.92rem, .86rem + .3vw, 1.05rem);
   line-height: 1.85;
+  /* 日本語を文節単位で折り返す(対応ブラウザのみ。非対応なら従来どおり) */
+  word-break: auto-phrase;
   opacity: .95;
   max-width: 640px;
   margin-bottom: clamp(20px, 3vw, 28px);
@@ -747,8 +752,4 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
   .finder__grid { grid-template-columns: 1fr; }
 }
 
-/* 見出しは2行の意味の切れ目で必ず折り返す(単語の途中で切れないように) */
-.hero__line { text-wrap: nowrap; }
-@media (max-width: 420px) {
-  .hero__title { font-size: clamp(1.5rem, .9rem + 2.6vw, 1.85rem); }
-}
+
