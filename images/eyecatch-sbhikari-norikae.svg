@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="ソフトバンク光への乗り換え完全ガイド" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:分岐する矢印(パターン別ルート) -->
+  <g transform="translate(900, 330) scale(0.9)">
+    <rect x="0" y="90" width="70" height="70" rx="12" fill="#ffffff"/>
+    <path d="M70 125 H130" stroke="#ffd76a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M130 80 L130 170" stroke="#ffd76a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M130 80 H190" stroke="#ffd76a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M130 170 H190" stroke="#ffd76a" stroke-width="10" stroke-linecap="round"/>
+    <rect x="190" y="50" width="76" height="60" rx="12" fill="#ffffff" opacity=".9"/>
+    <rect x="190" y="140" width="76" height="60" rx="12" fill="#ffffff" opacity=".55"/>
+  </g>
+
+  <rect x="70" y="80" width="292" height="56" rx="28" fill="#ffd76a"/>
+  <text x="216" y="119" text-anchor="middle" font-size="27" font-weight="800" fill="#0b2c5f">パターン別手順つき</text>
+
+  <text x="70" y="248" font-size="76" font-weight="800" fill="#ffffff">ソフトバンク光</text>
+  <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">乗り換えガイド</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">違約金還元・あんしん乗り換えの使い方</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

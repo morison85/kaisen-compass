@@ -16,6 +16,9 @@
 - [WiMAXプロバイダ比較](https://kaisen-compass.com/articles/wimax-provider.html): 全プロバイダで回線・速度は同一。実質月額での比較方法と2026年10月値上げへの対処。
 - [戸建ての光回線おすすめ比較](https://kaisen-compass.com/articles/kodate-hikari.html): 戸建ては全選択肢から選べる。エリア判定→独自回線優先が最短ルート。
 - [光回線の10ギガは必要?](https://kaisen-compass.com/articles/hikari-10giga.html): 大半は1ギガで十分。10ギガが活きる3条件と必要機器を解説。
+- [ソフトバンク光への乗り換え完全ガイド](https://kaisen-compass.com/articles/sbhikari-norikae.html): 光コラボ・独自回線などパターン別の乗り換え手順とあんしん乗り換えキャンペーンの申請条件。
+- [GMOとくとくBB光のキャンペーン完全ガイド](https://kaisen-compass.com/articles/gmohikari-campaign.html): キャッシュバック受け取り手順(開通10ヶ月後)と縛りなしの実際。
+- [ビッグローブ光のauスマートバリュー・UQセット割ガイド](https://kaisen-compass.com/articles/biglobehikari-au-setwari.html): セット割の割引額・加入条件・実質コストの計算方法。
 
 ## サイト情報
 
