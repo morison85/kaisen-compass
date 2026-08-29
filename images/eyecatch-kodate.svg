@@ -19,8 +19,8 @@
     <path d="M-40 250 Q10 200 60 236" fill="none" stroke="#ffd76a" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 18"/>
   </g>
 
-  <rect x="70" y="80" width="292" height="56" rx="28" fill="#ffd76a"/>
-  <text x="216" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">全選択肢から選べる</text>
+  <rect x="70" y="80" width="321" height="56" rx="28" fill="#ffd76a"/>
+  <text x="230" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">全選択肢から選べる</text>
 
   <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">戸建ての光回線</text>
   <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">おすすめ比較</text>

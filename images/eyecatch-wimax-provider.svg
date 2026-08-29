@@ -20,8 +20,8 @@
     <path d="M120 88 Q140 66 160 88" fill="none" stroke="#ffd76a" stroke-width="12" stroke-linecap="round"/>
   </g>
 
-  <rect x="70" y="80" width="342" height="56" rx="28" fill="#ffd76a"/>
-  <text x="241" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">速度は同じ・料金が違う</text>
+  <rect x="70" y="80" width="379" height="56" rx="28" fill="#ffd76a"/>
+  <text x="259" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">速度は同じ・料金が違う</text>
 
   <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff">WiMAX</text>
   <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">プロバイダ比較</text>

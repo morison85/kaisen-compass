@@ -21,8 +21,8 @@
     <path d="M152 12 L206 30 L152 48 Z" fill="#f26f1d"/>
   </g>
 
-  <rect x="70" y="80" width="322" height="56" rx="28" fill="#ffd76a"/>
-  <text x="231" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">受け取り確実性で選ぶ</text>
+  <rect x="70" y="80" width="350" height="56" rx="28" fill="#ffd76a"/>
+  <text x="245" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">受け取り確実性で選ぶ</text>
 
   <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff">auひかり</text>
   <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">申込窓口の比較</text>

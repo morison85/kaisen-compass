@@ -19,8 +19,8 @@
     <text x="150" y="258" text-anchor="middle" font-size="40" font-weight="800" fill="#ffffff">10G</text>
   </g>
 
-  <rect x="70" y="80" width="322" height="56" rx="28" fill="#ffd76a"/>
-  <text x="231" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">判断フローチャート付き</text>
+  <rect x="70" y="80" width="379" height="56" rx="28" fill="#ffd76a"/>
+  <text x="259" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">判断フローチャート付き</text>
 
   <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">光回線の10ギガ</text>
   <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">必要?不要?</text>

@@ -20,8 +20,8 @@
     <text x="120" y="168" text-anchor="middle" font-size="50" font-weight="800" fill="#0b2c5f">¥</text>
   </g>
 
-  <rect x="70" y="80" width="332" height="56" rx="28" fill="#ffd76a"/>
-  <text x="236" y="119" text-anchor="middle" font-size="27" font-weight="800" fill="#0b2c5f">10ヶ月後も取りこぼさない</text>
+  <rect x="70" y="80" width="384" height="56" rx="28" fill="#ffd76a"/>
+  <text x="262" y="119" text-anchor="middle" font-size="27" font-weight="800" fill="#0b2c5f">10ヶ月後も取りこぼさない</text>
 
   <text x="70" y="248" font-size="70" font-weight="800" fill="#ffffff">GMOとくとくBB光</text>
   <text x="70" y="360" font-size="62" font-weight="800" fill="#ffd76a">キャンペーン完全ガイド</text>
