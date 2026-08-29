@@ -8,13 +8,13 @@
   <text x="40" y="185" font-size="17" fill="#5f6b7a">月額(税込・執筆時点の目安)</text>
   <text x="40" y="245" font-size="44" font-weight="800" fill="#0b2c5f">5,200円</text>
   <text x="40" y="285" font-size="22" fill="#26303e">2ギガプラン</text>
-  <g font-size="22" fill="#26303e">
+  <g font-size="20" fill="#26303e">
     <circle cx="432" cy="188" r="13" fill="#0e9f6e"/><text x="425" y="195" font-size="16" fill="#fff">✓</text>
     <text x="458" y="196">下り最大2Gbps・実測最速クラス</text>
     <circle cx="432" cy="248" r="13" fill="#0e9f6e"/><text x="425" y="255" font-size="16" fill="#fff">✓</text>
     <text x="458" y="256">ソフトバンクのセット割対象</text>
     <circle cx="432" cy="308" r="13" fill="#d97706"/><text x="426" y="315" font-size="16" fill="#fff">!</text>
-    <text x="458" y="316">提供エリア限定・工事2回で開通長め</text>
+    <text x="458" y="316">エリア限定・開通まで長め</text>
   </g>
   <line x1="40" y1="365" x2="760" y2="365" stroke="#e2e6e4" stroke-width="2"/>
   <text x="40" y="398" font-size="14" fill="#94a3b5">出典:公式サイト(2026年8月時点)※最新の料金・条件は公式でご確認ください</text>
