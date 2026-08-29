@@ -23,6 +23,10 @@
 - [賃貸で光回線の工事ができないときの対処法](https://kaisen-compass.com/articles/kouji-dekinai-chintai): 「工事できない」の原因は4つ。大家さんの不許可は穴あけ不要の工事方法の説明で覆せることが多い。
 - [インターネット無料の賃貸が遅い理由](https://kaisen-compass.com/articles/muryou-net-osoi): 帯域の共有・VDSL配線・帯域制限が原因。まず有線で実測して宅内か建物かを切り分ける。
 
+- [光回線の開通までのつなぎWiFi](https://kaisen-compass.com/articles/kaitsuu-tsunagi-wifi): 待ち期間×データ量の2軸で選ぶ。申込前なら開通前の無料レンタルがある光回線を選ぶのが最安。
+- [ソフトバンクエアーが遅いときの対策](https://kaisen-compass.com/articles/softbank-air-osoi): 原因は端末の世代・置き場所・時間帯の混雑。0円の対処→機種変更→乗り換えの4段階で解決する。
+- [auひかりのマンション対応を確認する方法](https://kaisen-compass.com/articles/auhikari-mansion-taiou): タイプは建物ごとに固定で選べない。建物名まで入れたエリア判定でタイプ・月額・最大速度が確定する。
+
 ## サイト情報
 
 - [運営者情報](https://kaisen-compass.com/about)
