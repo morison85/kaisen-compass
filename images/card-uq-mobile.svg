@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="UQモバイルのサービス概要" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs><linearGradient id="h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d4437c"/><stop offset="1" stop-color="#9c2a58"/></linearGradient></defs>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <rect width="800" height="130" fill="url(#h)"/>
+  <circle cx="740" cy="20" r="90" fill="#ffffff" opacity=".08"/>
+  <text x="40" y="78" font-size="46" font-weight="800" fill="#ffffff">UQモバイル</text>
+  <text x="40" y="112" font-size="19" fill="#ffdcea">KDDI|au回線のサブブランド</text>
+  <text x="40" y="185" font-size="17" fill="#5f6b7a">月額(税込・執筆時点の目安)</text>
+  <text x="40" y="245" font-size="44" font-weight="800" fill="#0b2c5f">2,400円〜</text>
+  <text x="40" y="285" font-size="22" fill="#26303e">プランにより変動</text>
+  <g font-size="22" fill="#26303e">
+    <circle cx="432" cy="188" r="13" fill="#0e9f6e"/><text x="425" y="195" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="196">au回線そのままの通信品質</text>
+    <circle cx="432" cy="248" r="13" fill="#0e9f6e"/><text x="425" y="255" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="256">全国の店舗で対面サポートOK</text>
+    <circle cx="432" cy="308" r="13" fill="#0e9f6e"/><text x="425" y="315" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="316">自宅セット割でさらに割引</text>
+  </g>
+  <line x1="40" y1="365" x2="760" y2="365" stroke="#e2e6e4" stroke-width="2"/>
+  <text x="40" y="398" font-size="14" fill="#94a3b5">出典:公式サイト(2026年8月時点)※最新の料金・条件は公式でご確認ください</text>
+</svg>

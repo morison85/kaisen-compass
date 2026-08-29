@@ -372,6 +372,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .svc__banner { text-align: center; margin: 4px 0 16px; }
 .svc__banner a { display: inline-block; line-height: 0; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; }
 .svc__banner img { max-width: 100%; height: auto; }
+.svc__banner > img { border: 1px solid var(--c-border); border-radius: 8px; }
 
 .merit { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
 .merit__col { border-radius: var(--radius-s); padding: 14px 16px; font-size: 0.84rem; }
