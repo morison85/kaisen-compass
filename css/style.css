@@ -996,7 +996,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 
 .cmp-list { display: flex; flex-direction: column; gap: 14px; }
 .cmp-row {
-  display: grid; grid-template-columns: 200px 1fr 190px; align-items: center; gap: 0;
+  display: grid; grid-template-columns: 190px 1fr 218px; align-items: center; gap: 0;
   border: 1.5px solid var(--c-border); border-radius: var(--radius); overflow: hidden; background: #fff;
   transition: border-color .22s, box-shadow .22s, transform .22s;
 }
@@ -1016,7 +1016,10 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .cmp-row__spec dd { font-size: .84rem; font-weight: 700; color: var(--c-text); margin: 0; line-height: 1.5; }
 .cmp-row__feat { font-size: .82rem; line-height: 1.75; color: var(--c-text-sub); margin: 0; }
 .cmp-row__cta { padding: 16px 18px; }
-.cmp-row__cta .btn { width: 100%; }
+.cmp-row__cta .btn {
+  width: 100%; font-size: .86rem; padding: 13px 12px; border-radius: 16px;
+}
+.cmp-row__cta .btn small { font-size: .66rem; margin-top: 2px; }
 
 @media (max-width: 900px) {
   .cmp-row { grid-template-columns: 150px 1fr; }
