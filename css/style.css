@@ -1050,3 +1050,25 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .toolbox__links a + a { background: #fff; color: var(--c-primary); border: 2px solid var(--c-primary); padding: 10px 12px; }
 .toolbox__links a:hover, .toolbox__links a:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.12); }
 @media (prefers-reduced-motion: reduce) { .toolbox__links a:hover, .toolbox__links a:focus-visible { transform: none; } }
+
+/* トップページのツール導線 */
+.toolhero { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.toolhero__card {
+  display: flex; flex-direction: column; text-decoration: none;
+  background: #fff; border: 1.5px solid var(--c-border); border-radius: var(--radius);
+  padding: 22px 22px 20px; transition: border-color .22s, box-shadow .22s, transform .22s;
+}
+.toolhero__card:hover, .toolhero__card:focus-visible {
+  border-color: var(--c-primary); transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.10);
+}
+.toolhero__icon {
+  width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center;
+  background: var(--c-primary-pale); margin-bottom: 12px;
+}
+.toolhero__icon svg { width: 26px; height: 26px; stroke: var(--c-primary); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.toolhero__t { font-size: 1.12rem; font-weight: 800; color: var(--c-navy); margin: 0 0 6px; }
+.toolhero__d { font-size: .88rem; line-height: 1.8; color: var(--c-text-sub); margin: 0 0 14px; flex: 1; }
+.toolhero__go { font-size: .88rem; font-weight: 800; color: var(--c-primary); }
+.toolhero__go::after { content: " →"; }
+@media (prefers-reduced-motion: reduce) { .toolhero__card:hover, .toolhero__card:focus-visible { transform: none; } }
