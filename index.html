@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20260830s">
+<link rel="stylesheet" href="css/style.css?v=20260830t">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,6 +83,40 @@
     <span class="hero__signal">
       <i style="--d:0s"></i><i style="--d:1.4s"></i><i style="--d:2.8s"></i><i style="--d:4.2s"></i>
     </span>
+
+    <svg class="hero__fiber" viewBox="0 0 600 400" preserveAspectRatio="none" aria-hidden="true">
+      <g class="hero__fiberBase">
+        <path d="M-20 92 C 150 74, 300 128, 620 96" />
+        <path d="M-20 186 C 170 168, 330 214, 620 176" />
+        <path d="M-20 280 C 140 268, 320 306, 620 258" />
+        <path d="M-20 352 C 190 340, 350 372, 620 330" />
+      </g>
+      <g class="hero__fiberRun">
+        <path d="M-20 92 C 150 74, 300 128, 620 96"   style="--d:0s;    --t:7.5s" />
+        <path d="M-20 186 C 170 168, 330 214, 620 176" style="--d:2.1s;  --t:9s" />
+        <path d="M-20 280 C 140 268, 320 306, 620 258" style="--d:4.4s;  --t:8.2s" />
+        <path d="M-20 352 C 190 340, 350 372, 620 330" style="--d:1.2s;  --t:10.5s" />
+      </g>
+    </svg>
+
+    <svg class="hero__net" viewBox="0 0 320 260" aria-hidden="true">
+      <g class="hero__netLine">
+        <line x1="42" y1="52" x2="158" y2="96" />
+        <line x1="158" y1="96" x2="268" y2="44" />
+        <line x1="158" y1="96" x2="112" y2="196" />
+        <line x1="158" y1="96" x2="256" y2="176" />
+        <line x1="112" y1="196" x2="256" y2="176" />
+      </g>
+      <g class="hero__netNode">
+        <circle cx="42"  cy="52"  r="4" style="--d:0s" />
+        <circle cx="268" cy="44"  r="4" style="--d:.5s" />
+        <circle cx="158" cy="96"  r="6" style="--d:1s" />
+        <circle cx="112" cy="196" r="4" style="--d:1.5s" />
+        <circle cx="256" cy="176" r="4" style="--d:2s" />
+      </g>
+    </svg>
+
+    <span class="hero__scrim"></span>
   </div>
   <div class="hero__inner">
     <h1 class="hero__title"><span class="hero__line hero__line--1"><span class="nw">光回線</span>・<span class="nw">WiFi</span>・<span class="nw">格安SIM</span></span><span class="hero__line hero__line--2">料金と<span class="hl">実測データ</span>の比較サイト</span></h1>
@@ -407,6 +441,6 @@
 </footer>
 
 <button class="to-top" aria-label="ページ上部へ戻る">↑</button>
-<script src="js/main.js?v=20260830s" defer></script>
+<script src="js/main.js?v=20260830t" defer></script>
 </body>
 </html>
