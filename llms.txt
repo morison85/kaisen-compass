@@ -4,6 +4,8 @@
 
 ## 主要コンテンツ
 
+- [ネット回線の診断ツール](https://kaisen-compass.com/shindan): スマホのキャリア・住まい・工事の可否・使い始めたい時期の4問に答えると、光回線/ホームルーター/短期レンタルから候補を提示する対話型ツール。分岐の根拠も明示。
+- [ネット回線の比較一覧](https://kaisen-compass.com/hikaku): 光回線6・ホームルーター4・短期レンタル1の計11サービスを、月額・セット割の対象キャリア・開通工事の要否で絞り込める一覧ページ。
 - [光回線おすすめ7社比較](https://kaisen-compass.com/articles/hikari-osusume): ドコモ光・auひかり・ソフトバンク光・NURO光・GMOとくとくBB光・ビッグローブ光・楽天ひかりを料金・実測・セット割で比較。結論: 光回線選びの9割はスマホのセット割で決まる。
 - [光回線の乗り換え完全ガイド](https://kaisen-compass.com/articles/hikari-cashback): 乗り換え5ステップとキャッシュバックの注意点。鉄則は「先に申込・開通確認後に解約」。
 - [引越しのネット回線ガイド](https://kaisen-compass.com/articles/hikkoshi-internet): 継続・乗り換え・新規の判断フロー。手続きは引越しの1〜1.5ヶ月前が理想。
