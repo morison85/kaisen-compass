@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>テレワークの回線おすすめ【2026年】在宅勤務に必要な速度と構成の作り方 | 回線コンパス</title>
+<meta name="description" content="在宅勤務に必要な回線スペックは、下り100Mbpsより「上りの安定」と「Pingの低さ」です。Web会議が落ちる原因の切り分け、住まい別のおすすめ構成、ルーターの見直し、避けるべき選択までを実務ベースで整理しました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/telework-kaisen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="テレワークの回線おすすめ|在宅勤務に必要な速度と構成の作り方">
+<meta property="og:description" content="効くのは下り速度ではなく上りとPing。Web会議が落ちる原因の切り分けと、住まい別の構成例を解説。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/telework-kaisen">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-telework-kaisen.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-08-30">
+<meta property="article:modified_time" content="2026-08-30">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-telework-kaisen.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260830c">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "テレワークの回線おすすめ【2026年】在宅勤務に必要な速度と構成の作り方",
+  "description": "効くのは下り速度ではなく上りとPing。Web会議が落ちる原因の切り分けと、住まい別の構成例を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-telework-kaisen.png",
+  "author": {
+    "@type": "Person",
+    "name": "もりそん",
+    "url": "https://kaisen-compass.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "回線コンパス",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kaisen-compass.com/images/logo-512.png",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "datePublished": "2026-08-30",
+  "dateModified": "2026-08-30",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/telework-kaisen"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "下り何Mbpsあれば在宅勤務に足りますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Web会議と画面共有を含めても、下りは50Mbps程度あれば十分です。それより上りが3〜10Mbps安定して出ているか、Pingが50ms以下かのほうが重要です。下り1Gbpsでも上りが不安定なら会議は落ちます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Web会議中だけ音声が途切れるのはなぜですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "上り帯域の不足かジッター(Pingの揺れ)が原因のことが多いです。まず有線接続に変えて改善するか確認してください。それでも直らない場合は、同じ時間帯に家族が大容量通信をしていないかを確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ホームルーターで在宅勤務はできますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常の会議なら実用範囲です。ただしPingが光回線より高く時間帯で揺れるため、失敗できない商談や面接では光回線の有線接続に分があります。工事ができない事情があるなら選択肢として現実的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "マンションで速度が出ません。事業者を変えれば直りますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "配線方式がVDSLなら直りません。建物の共用部から各戸までが電話線で配線されており、最大100Mbpsが物理的な上限だからです。光配線方式なら事業者やルーターの見直しで改善する余地があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10ギガプランにする意味はありますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "在宅勤務目的ならほとんどありません。会議に必要な帯域は10Mbps台で、上限を10倍にしても安定性は変わらないためです。大容量の動画素材を日常的にやり取りするなど、明確な用途がある場合に限られます。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://kaisen-compass.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "光回線",
+      "item": "https://kaisen-compass.com/category/hikari"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "テレワークの回線"
+    }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>テレワークの回線</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">テレワークの回線おすすめ【2026年】在宅勤務に必要な速度と構成の作り方</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-telework-kaisen.svg" alt="テレワークの回線おすすめ" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>在宅勤務で回線を見直すとき、多くの人が「下り1Gbps」を基準にします。しかし<strong>Web会議で落ちる原因の大半は、下り速度とは関係ありません</strong>。</p>
+    <p>仕事で使う回線に本当に必要なのは何か、そしてどこから直すべきかを、切り分けの順番どおりに整理します。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>必要なのは下り速度ではなく<strong>上りの安定とPingの低さ</strong>。Web会議は上下とも10〜15Mbps程度あれば足り、それ以上速くしても会議は安定しません。<strong>光回線+IPv6(IPoE)+有線接続</strong>が最も確実な構成で、ここを満たせば回線側の問題はほぼ解消します。</p>
+    </div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#youken">在宅勤務に必要なスペック</a></li>
+        <li><a href="#genin">会議が落ちる原因の切り分け</a></li>
+        <li><a href="#kousei">住まい別のおすすめ構成</a></li>
+        <li><a href="#router">ルーターの見直し</a></li>
+        <li><a href="#sakeru">避けたほうがいい選択</a></li>
+        <li><a href="#keihi">経費と法人契約の考え方</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <h2 id="youken">在宅勤務に必要なスペック</h2>
+    <p>主要なWeb会議サービスが公表している推奨帯域は、意外なほど小さい数字です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>用途</th><th>必要な下り</th><th>必要な上り</th><th>Ping</th></tr></thead>
+        <tbody>
+          <tr><th>Web会議(1対1・HD)</th><td>2〜4Mbps</td><td>2〜4Mbps</td><td>50ms以下</td></tr>
+          <tr><th>Web会議(グループ・HD)</th><td>4〜8Mbps</td><td class="best">3〜5Mbps</td><td>50ms以下</td></tr>
+          <tr><th>画面共有つき</th><td>8〜15Mbps</td><td class="best">5〜10Mbps</td><td>30ms以下が理想</td></tr>
+          <tr><th>大容量ファイルの送受信</th><td>50Mbps〜</td><td>30Mbps〜</td><td>—</td></tr>
+          <tr><th>VPN経由の業務</th><td>10Mbps〜</td><td>10Mbps〜</td><td class="best">低いほど快適</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 各サービスの公表値をもとにした執筆時点の目安です</p>
+    <p>つまり<strong>下り100Mbps出ていれば速度は足りている</strong>ということです。それでも会議が固まるなら、原因は速度ではなく別のところにあります。</p>
+    <div class="box-memo">
+      <div class="box-memo__t">🧭 見るべき数字はここ</div>
+      <p style="margin:0;">在宅勤務で効くのは<strong>①上り速度 ②Ping ③ジッター(揺れ)</strong>の3つです。速度測定サイトで下りしか見ていないと、問題を見逃します。特に上りは、自分の映像と音声を送る方向なので、相手からの「聞こえない」に直結します。</p>
+    </div>
+
+    <h2 id="genin">会議が落ちる原因の切り分け</h2>
+    <p>原因は「回線」「宅内(Wi-Fi・ルーター)」「PC」の3層に分かれます。上から順に潰していきます。</p>
+    <h3>層1:PC側</h3>
+    <p>CPU使用率が高いと、映像処理が追いつかず「重い」と感じます。会議中にタスクマネージャーで確認してください。<strong>回線ではなくPCが原因のケースは想像以上に多い</strong>です。</p>
+    <h3>層2:宅内のWi-Fi</h3>
+    <p>2.4GHz帯を使っている、ルーターが古い、電子レンジと干渉している。ここが原因なら<strong>有線接続に変えるだけで直ります</strong>。まずLANケーブルで直結して試すのが最短の切り分けです。</p>
+    <h3>層3:回線</h3>
+    <p>有線でもダメ、時間帯によって明確に悪化する。この場合が回線側の問題です。特に<strong>21〜23時だけ極端に遅い</strong>なら、IPv6(IPoE)が使えていないか、マンションの配線方式がVDSLである可能性が高いです。</p>
+    <p>詳しい切り分け手順は<a href="web-kaigi-taisho">Web会議が途切れる・固まる原因と対処法</a>にまとめています。</p>
+
+    <h2 id="kousei">住まい別のおすすめ構成</h2>
+    <h3>戸建て:光回線を素直に引く</h3>
+    <p>戸建ては建物の制約がなく、選択肢が最も広い住まいです。独自回線(auひかり・NURO光)も光コラボも選べます。<strong>速度と安定性を最優先するなら独自回線</strong>、月額を抑えたいなら光コラボ、という整理になります。</p>
+    <div class="cta">
+      <div class="cta__t">🏠 戸建てで安定性を優先するなら</div>
+      <p>auひかりはNTT網を使わない独自回線のため、フレッツ光系の混雑の影響を受けません。仕事で使う回線として、この構造上の違いは効きます。au・UQのセット割も対象です。</p>
+      <div class="btn-area__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="auひかり(正規代理店NEXT)の公式キャンペーンバナー" src="https://www23.a8.net/svt/bgt?aid=260829413164&amp;wid=002&amp;eno=01&amp;mid=s00000014546021006000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" alt=""></div>
+      <!-- A8: auひかり(正規代理店NEXT) -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank">auひかりの提供エリアを確認する<small>住所を入れるだけ・結果はすぐ表示</small></a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6" alt="">
+      <p class="micro">※ 窓口による特典の差は<a href="auhikari-dairiten">auひかりの申し込み窓口・代理店比較</a>で解説しています</p>
+    </div>
+    <h3>マンション:まず配線方式を確認する</h3>
+    <p>マンションは建物の設備で上限が決まります。<strong>VDSL方式なら最大100Mbpsが上限</strong>で、どの事業者に変えても改善しません。まず自分の建物がどの方式かを確認してください。詳細は<a href="mansion-internet">マンションのネットが遅い原因と解決策</a>にあります。</p>
+    <h3>工事ができない場合:ホームルーター</h3>
+    <p>Web会議程度なら、ホームルーターでも実用になります。ただし<strong>Pingが30〜60msと光回線より高く、時間帯で揺れる</strong>ため、面接や商談など失敗できない場面では有線の光回線に分があります。</p>
+
+    <h2 id="router">ルーターの見直し</h2>
+    <p>回線を変えなくても、ルーターを替えるだけで改善することがあります。次に当てはまるなら交換を検討してください。</p>
+    <ul>
+      <li><strong>5年以上使っている</strong> — Wi-Fi 5(11ac)以前の世代は同時接続に弱い</li>
+      <li><strong>IPv6(IPoE)に対応していない</strong> — 夜間の混雑を回避できない</li>
+      <li><strong>家族の同時利用で遅くなる</strong> — 処理性能が足りていない</li>
+      <li><strong>プロバイダのレンタル品を惰性で使っている</strong> — 世代が古いことがある</li>
+    </ul>
+    <p>そのうえで、<strong>仕事用PCだけは有線でつなぐ</strong>。これが最もコストパフォーマンスの高い対策です。LANケーブルはカテゴリ5e以上であれば十分です。</p>
+
+    <h2 id="sakeru">避けたほうがいい選択</h2>
+    <ul>
+      <li><strong>スマホのテザリングを常用する</strong> — 通信量の制限と発熱で、長時間の会議に耐えません</li>
+      <li><strong>速度だけで選ぶ</strong> — 10ギガプランにしても会議は安定しません。上りとPingを見てください</li>
+      <li><strong>建物の配線方式を確認せずにマンションで契約する</strong> — VDSLなら事業者を変えても上限は同じです</li>
+      <li><strong>無料インターネット付き物件に頼りきる</strong> — 帯域が共有で、夜間に大きく落ちることがあります(<a href="muryou-net-osoi">詳しくはこちら</a>)</li>
+    </ul>
+
+    <div class="cta">
+      <div class="cta__t">💡 月額を抑えつつ、身軽さも残したいなら</div>
+      <p>GMOとくとくBB光は契約期間の縛りと解約金がなく、v6プラスに標準対応しています。在宅勤務が続くか分からない、転居の可能性がある、といった状況で選びやすい構成です。</p>
+      <div class="btn-area__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="GMOとくとくBB光の公式キャンペーンバナー" src="https://www22.a8.net/svt/bgt?aid=260829413162&amp;wid=002&amp;eno=01&amp;mid=s00000000018040038000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" alt=""></div>
+      <!-- A8: GMOとくとくBB光 -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金と条件を見る<small>縛りなし・v6プラス対応の詳細</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+      <p class="micro">※ 他社と横並びで比べるなら<a href="hikari-osusume">光回線おすすめ7社比較</a>へ</p>
+    </div>
+
+    <h2 id="keihi">経費と法人契約の考え方</h2>
+    <p>在宅勤務の通信費は、会社の規定によって扱いが変わります。個人事業主・フリーランスの場合は、<strong>業務で使った割合分を按分して経費に計上する</strong>のが一般的です。</p>
+    <p>法人契約にすると固定IPオプションが使えるなど選択肢は増えますが、月額は個人向けプランより高くなります。<strong>固定IPが業務要件でないなら、個人向けプランで十分</strong>なことがほとんどです。</p>
+    <p class="micro">※ 経費計上の可否と按分の方法は税務の判断になります。詳細は税理士等の専門家にご確認ください。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>下り何Mbpsあれば在宅勤務に足りますか?</summary>
+        <div class="faq__a">Web会議と画面共有を含めても、下りは50Mbps程度あれば十分です。それより上りが3〜10Mbps安定して出ているか、Pingが50ms以下かのほうが重要です。下り1Gbpsでも上りが不安定なら会議は落ちます。</div>
+      </details>
+      <details>
+        <summary>Web会議中だけ音声が途切れるのはなぜですか?</summary>
+        <div class="faq__a">上り帯域の不足かジッター(Pingの揺れ)が原因のことが多いです。まず有線接続に変えて改善するか確認してください。それでも直らない場合は、同じ時間帯に家族が大容量通信をしていないかを確認します。</div>
+      </details>
+      <details>
+        <summary>ホームルーターで在宅勤務はできますか?</summary>
+        <div class="faq__a">通常の会議なら実用範囲です。ただしPingが光回線より高く時間帯で揺れるため、失敗できない商談や面接では光回線の有線接続に分があります。工事ができない事情があるなら選択肢として現実的です。</div>
+      </details>
+      <details>
+        <summary>マンションで速度が出ません。事業者を変えれば直りますか?</summary>
+        <div class="faq__a">配線方式がVDSLなら直りません。建物の共用部から各戸までが電話線で配線されており、最大100Mbpsが物理的な上限だからです。光配線方式なら事業者やルーターの見直しで改善する余地があります。</div>
+      </details>
+      <details>
+        <summary>10ギガプランにする意味はありますか?</summary>
+        <div class="faq__a">在宅勤務目的ならほとんどありません。会議に必要な帯域は10Mbps台で、上限を10倍にしても安定性は変わらないためです。大容量の動画素材を日常的にやり取りするなど、明確な用途がある場合に限られます。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ</h2>
+    <ul>
+      <li>必要なのは下り速度ではなく<strong>上りの安定とPing</strong></li>
+      <li><strong>PC → Wi-Fi → 回線</strong>の順に切り分ける</li>
+      <li><strong>仕事用PCは有線接続</strong>。最も費用対効果が高い</li>
+      <li>マンションは<strong>配線方式の確認が先</strong>。VDSLなら上限100Mbps</li>
+      <li><strong>10ギガにしても会議は安定しない</strong>。効く場所が違う</li>
+    </ul>
+    <p>会議中のトラブルを今すぐ止めたいなら<a href="web-kaigi-taisho">Web会議が途切れる・固まる原因と対処法</a>、住まい別の選び方は<a href="hikari-osusume">光回線おすすめ7社比較</a>へ。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>Zoom / Microsoft Teams / Google Meet の各公式ヘルプ「必要な帯域幅」(2026年8月確認)</li>
+        <li>みんなのネット回線速度(ユーザー実測値の集計・2026年8月確認) — 回線種別ごとの上り・Ping</li>
+        <li>経費計上の可否・按分の方法は個別の状況によります。税務の判断は専門家にご確認ください</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="web-kaigi-taisho">Web会議が途切れる・固まる原因と対処法|5分でできる切り分け手順</a></li>
+      <li><a href="mansion-internet">マンションのネットが遅い原因と解決策|配線方式の確認から乗り換えまで</a></li>
+      <li><a href="kodate-hikari">戸建ての光回線おすすめ比較|独自回線が本命になれる唯一の住まい</a></li>
+      <li><a href="hikari-osusume">光回線おすすめ7社比較【2026年8月】迷わない選び方を図解でやさしく解説</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>姉妹サイト</h2>
+        <ul>
+          <li><a href="https://taisyoku-compass.com/">退職コンパス</a></li>
+        </ul>
+        <p>退職・転職の進め方に迷ったときに。退職代行の比較から退職後の保険・年金の手続きまで、労働法の根拠つきで解説しています。</p>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260830c" defer></script>
+</body>
+</html>

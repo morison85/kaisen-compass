@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>WiMAXのエリア確認方法【2026年】ピンポイント判定の見方と圏外時の代替 | 回線コンパス</title>
+<meta name="description" content="WiMAXは番地単位のピンポイント判定でエリアを確認します。判定結果の○・△・×の意味、5Gエリアの調べ方、屋内で入らないときの対処、お試しレンタルの使い方、圏外だった場合の代替回線までまとめました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/wimax-area">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WiMAXのエリア確認方法|ピンポイント判定の見方と圏外時の代替">
+<meta property="og:description" content="判定は番地まで入れて行います。○でも屋内で入らないことがある理由と、その場合の代替回線を解説。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/wimax-area">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-wimax-area.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-08-30">
+<meta property="article:modified_time" content="2026-08-30">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-wimax-area.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260830c">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "WiMAXのエリア確認方法【2026年】ピンポイント判定の見方と圏外時の代替",
+  "description": "判定は番地まで入れて行います。○でも屋内で入らないことがある理由と、その場合の代替回線を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-wimax-area.png",
+  "author": {
+    "@type": "Person",
+    "name": "もりそん",
+    "url": "https://kaisen-compass.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "回線コンパス",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kaisen-compass.com/images/logo-512.png",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "datePublished": "2026-08-30",
+  "dateModified": "2026-08-30",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/wimax-area"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "プロバイダによってエリアは変わりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "変わりません。WiMAXはどの窓口から契約してもUQコミュニケーションズの同じ回線・同じ電波を使います。エリア判定の結果も同じです。窓口によって違うのは料金と特典だけです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "判定が△でも契約して大丈夫ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "おすすめしません。△は不安定な可能性があるという意味です。まずお試しレンタルで実機を試すか、初期契約解除制度が使える窓口を選んでください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "引越し先でも使えますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "住所変更の手続きだけで使えます。ただし引越し先が圏外だと使えなくなるため、引越しが決まった時点で新住所のエリア判定を必ず行ってください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5Gが入らないと意味がないですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "そんなことはありません。au 4G LTEが安定して入れば、動画視聴やWeb会議には十分な速度が出ます。5Gは速度の上限を引き上げるものと考えてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "マンションの高層階だと不利ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "15階以上では基地局より高い位置になり、電波が届きにくくなることがあります。「高いほど電波がよい」わけではありません。高層階ではお試しレンタルでの確認を強くおすすめします。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://kaisen-compass.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "WiFi・ホームルーター",
+      "item": "https://kaisen-compass.com/category/wifi"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "WiMAXのエリア確認"
+    }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+    <li>WiMAXのエリア確認</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">WiFi・ホームルーター</span>
+    <h1 class="article-title">WiMAXのエリア確認方法【2026年】ピンポイント判定の見方と圏外時の代替</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-wimax-area.svg" alt="WiMAXのエリア確認方法" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>WiMAXは工事がいらない代わりに、<strong>自宅に電波が届くかどうかがすべて</strong>です。契約してから「入らなかった」では手遅れになります。</p>
+    <p>幸い、エリア判定は無料で、数十秒で終わります。ただし判定結果の読み方には注意点があります。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>UQコミュニケーションズの<strong>ピンポイントエリア判定</strong>に住所を番地まで入力すれば判定できます。結果は○・△・×の3段階ですが、<strong>○でも屋内では入らないことがあります</strong>。判定はあくまで屋外基準だからです。不安なら<strong>お試しレンタル(Try WiMAX)</strong>で実機を借りて確認するのが確実です。</p>
+    </div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#tejun">ピンポイント判定の手順</a></li>
+        <li><a href="#yomikata">○・△・×の読み方</a></li>
+        <li><a href="#5g">5Gエリアの確認</a></li>
+        <li><a href="#okunai">○なのに屋内で入らないとき</a></li>
+        <li><a href="#otameshi">お試しレンタルで実機確認</a></li>
+        <li><a href="#kengai">圏外だったときの代替</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <h2 id="tejun">ピンポイント判定の手順</h2>
+    <p>判定はUQコミュニケーションズの公式ページで行います。どのプロバイダから契約する場合も、回線は同じUQのものなので<strong>判定結果はどこで契約しても同じ</strong>です。</p>
+    <ol>
+      <li><strong>郵便番号または住所を入力</strong> — 都道府県から順に選びます</li>
+      <li><strong>番地まで入力する</strong> — ここが重要。町名までだと判定が大まかになります</li>
+      <li><strong>判定結果を確認</strong> — ○・△・× と、対応する周波数帯が表示されます</li>
+      <li><strong>建物の階数を考慮する</strong> — 判定は屋外基準。高層階・地下は別途注意が必要です</li>
+    </ol>
+    <div class="box-memo">
+      <div class="box-memo__t">🧭 番地まで入れる理由</div>
+      <p style="margin:0;">WiMAXの電波は障害物に弱く、<strong>同じ町内でも数百メートル離れると結果が変わります</strong>。町名までの判定で「○」でも、実際の住所では「△」ということが普通に起こります。必ず番地まで入力してください。</p>
+    </div>
+
+    <h2 id="yomikata">○・△・×の読み方</h2>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>判定</th><th>意味</th><th>契約してよいか</th></tr></thead>
+        <tbody>
+          <tr><th>○</th><td>サービスエリア内</td><td class="ok">問題なし。ただし屋内は要確認</td></tr>
+          <tr><th>△</th><td>電波が弱い、または場所により不安定</td><td class="ng">お試しレンタルで実測してから</td></tr>
+          <tr><th>×</th><td>サービスエリア外</td><td class="ng">契約しない。代替を検討</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>「△」で契約するのは避けてください。</strong>△は「使えるかもしれないし、使えないかもしれない」という意味です。窓口によっては初期契約解除制度(8日以内のキャンセル)が使えますが、手続きの手間と返送の負担が発生します。</p>
+
+    <h2 id="5g">5Gエリアの確認</h2>
+    <p>WiMAX +5Gでは、WiMAX 2+の電波に加えてauの5G/4G LTE回線も使えます。判定ページでは対応する電波の種類も表示されます。</p>
+    <ul>
+      <li><strong>5G</strong> — 最も速いが、エリアはまだ限定的。特にミリ波は都市部の一部のみ</li>
+      <li><strong>au 4G LTE</strong> — カバー率が広く、実質的な主力。ここが入れば安定して使えることが多い</li>
+      <li><strong>WiMAX 2+</strong> — 従来からの電波</li>
+    </ul>
+    <p>「5Gエリア外」でも4G LTEが入れば実用になります。<strong>5Gが入るかどうかより、4G LTEの電波が安定して入るかのほうが重要</strong>です。速度が数百Mbps出るかより、途切れないことのほうが体感に効きます。</p>
+
+    <h2 id="okunai">○なのに屋内で入らないとき</h2>
+    <p>判定は屋外での受信を基準にしています。実際の利用は屋内なので、次の要因で電波が弱くなります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>要因</th><th>影響</th><th>対処</th></tr></thead>
+        <tbody>
+          <tr><th>鉄筋コンクリート造</th><td class="ng">大きい</td><td>窓際に設置する</td></tr>
+          <tr><th>高層階(15階以上)</th><td>基地局より高くなり不安定</td><td>設置位置を数十cm動かして探る</td></tr>
+          <tr><th>地下・半地下</th><td class="ng">ほぼ入らない</td><td>光回線を検討</td></tr>
+          <tr><th>窓のないワンルーム中央</th><td>中</td><td>窓際+高さ1m以上へ</td></tr>
+          <tr><th>金属製の棚・家電の近く</th><td>中</td><td>離す</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>設置場所を変えるだけで実測が2倍以上変わることは珍しくありません。<strong>「窓際・床から1m以上・家電から離す」</strong>の3点をまず試してください。</p>
+
+    <h2 id="otameshi">お試しレンタルで実機確認</h2>
+    <p>UQコミュニケーションズは<strong>Try WiMAX</strong>という無料の貸出サービスを提供しています(在庫状況により受付が変わります)。実機を自宅で使って判断できるので、△判定や高層階・地下といった不安がある場合はこれが最も確実です。</p>
+    <p>借りたら、次の3点を必ず測ってください。</p>
+    <ul>
+      <li><strong>時間帯別の速度</strong> — 平日昼・平日21〜23時・休日夜の3回</li>
+      <li><strong>Ping</strong> — ゲームやWeb会議をするなら必須</li>
+      <li><strong>実際に使う部屋での電波</strong> — 窓際だけでなく、普段いる場所で</li>
+    </ul>
+
+    <div class="cta">
+      <div class="cta__t">📡 エリアを確認して、そのまま条件も比べる</div>
+      <p>WiMAXは回線も端末も全社共通で、違うのは料金と特典だけです。BIGLOBE WiMAXは特典が月額割引型なので、キャッシュバックのような受け取り忘れが起きません。口座振替にも対応しています。</p>
+      <div class="btn-area__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BSJOH" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="BIGLOBE WiMAX +5Gの公式キャンペーンバナー" src="https://www27.a8.net/svt/bgt?aid=260829413076&amp;wid=002&amp;eno=01&amp;mid=s00000000040014074000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BSJOH" alt=""></div>
+      <!-- A8: BIGLOBE WiMAX +5G -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXのエリアと料金を見る<small>ピンポイント判定と実質月額を確認できます</small></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" alt="">
+      <p class="micro">※ 窓口ごとの実質月額の比較は<a href="wimax-provider">WiMAXプロバイダおすすめ比較</a>で解説しています</p>
+    </div>
+
+    <h2 id="kengai">圏外だったときの代替</h2>
+    <p>×判定だった場合、WiMAXは選択肢から外れます。目的別に代替を考えます。</p>
+    <h3>工事なしを続けたい場合</h3>
+    <p>ドコモ home 5Gやソフトバンクエアーは別の回線網を使うため、<strong>WiMAXが圏外でも使えることがあります</strong>。特にドコモ回線はカバー率が広く、WiMAXの弱いエリアで有力な代替になります。</p>
+    <h3>スマホがソフトバンク・ワイモバイルの場合</h3>
+    <p>ソフトバンクエアーはセット割の対象になるため、総額で有利になることがあります。</p>
+    <div class="cta">
+      <div class="cta__t">🔌 WiMAXが圏外でも、別の回線なら届くことがある</div>
+      <p>ソフトバンクエアーはソフトバンク回線を使うため、WiMAXとエリアの傾向が異なります。ワイモバイルとのセット割が使える場合は総額でも有利です。</p>
+      <div class="btn-area__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2YKMU2+348K+2NAN35" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="SoftBank Air(正規代理店NEXT)の公式キャンペーンバナー" src="https://www27.a8.net/svt/bgt?aid=260829413179&amp;wid=002&amp;eno=01&amp;mid=s00000014546016006000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BAH9H+2YKMU2+348K+2NAN35" alt=""></div>
+      <!-- A8: SoftBank Air(正規代理店NEXT) -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2YKMU2+348K+2N9KIA" rel="nofollow sponsored noopener" target="_blank">ソフトバンクエアーのエリアと料金を見る<small>提供エリアの判定とキャンペーン内容</small></a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BAH9H+2YKMU2+348K+2N9KIA" alt="">
+      <p class="micro">※ 遅いときの対処法は<a href="softbank-air-osoi">ソフトバンクエアーが遅いときの対策</a>にまとめています</p>
+    </div>
+    <h3>工事ができるなら</h3>
+    <p>結局のところ、安定性で光回線に勝るものはありません。賃貸で工事の可否が分からない場合は<a href="kouji-dekinai-chintai">賃貸で光回線の工事ができないときの対処法</a>を確認してください。「できない」と思っていたケースの多くは、実は工事可能です。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>プロバイダによってエリアは変わりますか?</summary>
+        <div class="faq__a">変わりません。WiMAXはどの窓口から契約してもUQコミュニケーションズの同じ回線・同じ電波を使います。エリア判定の結果も同じです。窓口によって違うのは料金と特典だけです。</div>
+      </details>
+      <details>
+        <summary>判定が△でも契約して大丈夫ですか?</summary>
+        <div class="faq__a">おすすめしません。△は不安定な可能性があるという意味です。まずお試しレンタルで実機を試すか、初期契約解除制度が使える窓口を選んでください。</div>
+      </details>
+      <details>
+        <summary>引越し先でも使えますか?</summary>
+        <div class="faq__a">住所変更の手続きだけで使えます。ただし引越し先が圏外だと使えなくなるため、引越しが決まった時点で新住所のエリア判定を必ず行ってください。</div>
+      </details>
+      <details>
+        <summary>5Gが入らないと意味がないですか?</summary>
+        <div class="faq__a">そんなことはありません。au 4G LTEが安定して入れば、動画視聴やWeb会議には十分な速度が出ます。5Gは速度の上限を引き上げるものと考えてください。</div>
+      </details>
+      <details>
+        <summary>マンションの高層階だと不利ですか?</summary>
+        <div class="faq__a">15階以上では基地局より高い位置になり、電波が届きにくくなることがあります。「高いほど電波がよい」わけではありません。高層階ではお試しレンタルでの確認を強くおすすめします。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ</h2>
+    <ul>
+      <li>エリア判定は<strong>番地まで入力</strong>する。町名までだと不正確</li>
+      <li><strong>△では契約しない</strong>。お試しレンタルで実機確認を</li>
+      <li>5Gより<strong>au 4G LTEが安定して入るか</strong>のほうが重要</li>
+      <li>判定は屋外基準。<strong>窓際・床から1m以上</strong>で改善することが多い</li>
+      <li>圏外なら<strong>home 5Gやソフトバンクエアー</strong>が代替になりうる</li>
+    </ul>
+    <p>窓口ごとの実質月額を比べるなら<a href="wimax-provider">WiMAXプロバイダおすすめ比較</a>、ホーム型とモバイル型で迷っているなら<a href="wimax-vs-homerouter">WiMAXはホームルーターとモバイル型どっち?</a>へ。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>UQコミュニケーションズ「サービスエリアマップ / ピンポイントエリア判定」(2026年8月確認)</li>
+        <li>UQコミュニケーションズ「Try WiMAX」案内ページ(2026年8月確認) — 貸出条件</li>
+        <li>電波の入りやすさは建物構造・階数・周辺環境で大きく変わります。本文の目安は一般的な傾向です</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="wimax-provider">WiMAXプロバイダおすすめ比較|速度は全社同じ、選ぶ基準は実質月額</a></li>
+      <li><a href="wimax-vs-homerouter">WiMAXはホームルーターとモバイル型どっち?後悔しない選び分け</a></li>
+      <li><a href="homerouter-game">ホームルーターでゲームはできる?Pingの実際とジャンル別の向き不向き</a></li>
+      <li><a href="kouji-dekinai-chintai">賃貸で光回線の工事ができないときの対処法</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>姉妹サイト</h2>
+        <ul>
+          <li><a href="https://taisyoku-compass.com/">退職コンパス</a></li>
+        </ul>
+        <p>退職・転職の進め方に迷ったときに。退職代行の比較から退職後の保険・年金の手続きまで、労働法の根拠つきで解説しています。</p>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260830c" defer></script>
+</body>
+</html>

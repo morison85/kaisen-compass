@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>ホームルーターでゲームはできる?【2026年】Pingの実際とジャンル別の向き不向き | 回線コンパス</title>
+<meta name="description" content="ホームルーターでオンラインゲームができるかは、ジャンルによって答えが変わります。Pingの意味と必要な数値、ホームルーターの実測傾向、遅くなる原因と改善策、光回線に切り替えるべき境界線までを整理しました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/homerouter-game">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ホームルーターでゲームはできる?Pingの実際とジャンル別の向き不向き">
+<meta property="og:description" content="答えはジャンル次第。対戦格闘やFPSは厳しく、RPGや協力プレイなら実用範囲です。Pingの目安と改善策を解説。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/homerouter-game">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-homerouter-game.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-08-30">
+<meta property="article:modified_time" content="2026-08-30">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-homerouter-game.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260830c">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ホームルーターでゲームはできる?【2026年】Pingの実際とジャンル別の向き不向き",
+  "description": "答えはジャンル次第。対戦格闘やFPSは厳しく、RPGや協力プレイなら実用範囲です。Pingの目安と改善策を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-homerouter-game.png",
+  "author": {
+    "@type": "Person",
+    "name": "もりそん",
+    "url": "https://kaisen-compass.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "回線コンパス",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kaisen-compass.com/images/logo-512.png",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "datePublished": "2026-08-30",
+  "dateModified": "2026-08-30",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/homerouter-game"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ping値はどうやって測れますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ゲーム機の場合はネットワーク設定の接続テストで表示されます。PCなら速度測定サイトのPing/レイテンシ欄、またはコマンドプロンプトで ping コマンドを使います。時間帯を変えて数回測り、平均と揺れの両方を見てください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ping30msなら快適ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ジャンルによります。RPGや協力プレイなら十分快適です。FPSのランク帯や対戦格闘では、10msの相手と当たると不利になる場面が出ます。数値だけでなく、揺れが小さいかどうかも確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5G対応なら光回線並みになりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "なりません。5Gで改善するのは主に速度(下り)で、Pingは光回線ほど下がりません。ミリ波エリアなど条件が揃えば20ms台まで下がることもありますが、一般的な設置環境では30ms以上が現実的な線です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "クラウドゲーミングは使えますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "条件つきで使えます。安定した下り速度とPingの両方が必要で、時間帯によって画質が落ちたり入力遅延を感じたりします。有線接続と5GHz帯の利用は前提と考えてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ゲーム機を有線でつなげますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "home 5G・WiMAXのホームルーターにはLANポートがあります。ソフトバンクエアーもモデルによって搭載しています。有線接続はPingと安定性の両方に効くので、ゲーム用途なら必須と考えてください。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://kaisen-compass.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "WiFi・ホームルーター",
+      "item": "https://kaisen-compass.com/category/wifi"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ホームルーターとゲーム"
+    }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+    <li>ホームルーターとゲーム</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">WiFi・ホームルーター</span>
+    <h1 class="article-title">ホームルーターでゲームはできる?【2026年】Pingの実際とジャンル別の向き不向き</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-homerouter-game.svg" alt="ホームルーターでゲームはできるか" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「工事なしで使えるホームルーターにしたいけれど、ゲームができないと困る」。この質問はとても多く、そして<strong>できる・できないの二択で答えると必ず外れます</strong>。</p>
+    <p>同じオンラインゲームでも、必要な通信品質はジャンルによって10倍以上違うからです。まず何が効くのかを整理します。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>判断の軸は速度ではなく<strong>Ping(応答速度)</strong>。ホームルーターのPingは<strong>おおむね30〜60ms</strong>で、光回線の10〜20msより明確に遅く、時間帯によって揺れます。<strong>RPG・シミュレーション・協力プレイは実用範囲、対戦格闘やランク帯のFPSは厳しい</strong>というのが現実的な線引きです。</p>
+    </div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#ping">速度ではなくPingで決まる</a></li>
+        <li><a href="#jitsuryoku">ホームルーターのPing実測の目安</a></li>
+        <li><a href="#genre">ジャンル別の向き不向き</a></li>
+        <li><a href="#genin">ホームルーターが不利になる理由</a></li>
+        <li><a href="#taisaku">今すぐできる改善策</a></li>
+        <li><a href="#sakai">光回線に切り替える境界線</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <h2 id="ping">速度ではなくPingで決まる</h2>
+    <p>「下り300Mbps出ています」という数字は、ゲームの快適さをほとんど説明しません。オンラインゲームが送受信しているのは<strong>操作情報という極めて小さなデータ</strong>で、必要な帯域は数Mbpsもあれば足りるためです。</p>
+    <p>効くのは<strong>Ping(応答速度・レイテンシ)</strong>。自分の操作がサーバーに届いて返ってくるまでの往復時間で、単位はms(ミリ秒)です。この数字が小さいほど、ボタンを押してから画面が反応するまでの遅れが少なくなります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>Ping値</th><th>体感</th></tr></thead>
+        <tbody>
+          <tr><th>〜15ms</th><td class="best">競技レベルでも問題ない</td></tr>
+          <tr><th>15〜30ms</th><td class="ok">ほぼすべてのゲームで快適</td></tr>
+          <tr><th>30〜50ms</th><td>アクション以外は問題なし。FPSは違和感が出はじめる</td></tr>
+          <tr><th>50〜80ms</th><td>対戦系は不利。協力プレイやRPGは可</td></tr>
+          <tr><th>80ms〜</th><td class="ng">対戦系は厳しい。ラグを感じる場面が増える</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>もうひとつ大事なのが<strong>ジッター(Pingの揺れ)</strong>です。平均40msでも、瞬間的に150msまで跳ねる回線は、安定して60msの回線より体感が悪くなります。</p>
+
+    <h2 id="jitsuryoku">ホームルーターのPing実測の目安</h2>
+    <p>ホームルーターは携帯電話の電波を使うため、光回線より経路が長くなります。実測の集計値を見ると、次のような傾向になります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>回線</th><th>Pingの目安</th><th>揺れやすさ</th></tr></thead>
+        <tbody>
+          <tr><th>光回線(IPv6)</th><td class="best">10〜20ms</td><td class="ok">小さい</td></tr>
+          <tr><th>ドコモ home 5G</th><td>30〜50ms</td><td>中</td></tr>
+          <tr><th>WiMAX +5G</th><td>30〜60ms</td><td>中</td></tr>
+          <tr><th>ソフトバンクエアー</th><td>40〜70ms</td><td class="ng">大きめ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 実測の集計値をもとにした執筆時点の目安です。エリア・時間帯・設置場所で大きく変わります</p>
+    <p>光回線との差は<strong>おおむね20〜40ms</strong>。この差が問題になるかどうかが、そのまま向き不向きの境界になります。</p>
+
+    <h2 id="genre">ジャンル別の向き不向き</h2>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>ジャンル</th><th>ホームルーター</th><th>理由</th></tr></thead>
+        <tbody>
+          <tr><th>RPG・シミュレーション</th><td class="ok">問題なし</td><td>コマンド入力が中心で応答速度の影響が小さい</td></tr>
+          <tr><th>協力プレイ(PvE)</th><td class="ok">ほぼ問題なし</td><td>相手はNPC。多少の遅延は吸収される</td></tr>
+          <tr><th>MMO</th><td class="ok">実用範囲</td><td>レイド戦のシビアな場面でだけ気になることがある</td></tr>
+          <tr><th>FPS・TPS(カジュアル)</th><td>条件つきで可</td><td>遊べるが、撃ち合いで不利になる場面がある</td></tr>
+          <tr><th>FPS(ランク帯)</th><td class="ng">おすすめしない</td><td>数十msの差が勝敗に直結する</td></tr>
+          <tr><th>対戦格闘</th><td class="ng">厳しい</td><td>フレーム単位の入力が要求される</td></tr>
+          <tr><th>クラウドゲーミング</th><td>条件つきで可</td><td>Pingに加えて安定した帯域が必要</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box-memo">
+      <div class="box-memo__t">🧭 正直なところ</div>
+      <p style="margin:0;">「ランク帯で勝ちにいくFPS」と「対戦格闘」の2つに当てはまるなら、ホームルーターは避けたほうがいいです。逆に言えば、それ以外のジャンルなら実用になります。ここを曖昧にしたまま契約すると後悔します。</p>
+    </div>
+
+    <h2 id="genin">ホームルーターが不利になる理由</h2>
+    <ul>
+      <li><strong>電波の経路が長い</strong> — 端末→基地局→コアネットワークと経由が増える分、往復時間が伸びます</li>
+      <li><strong>混雑の影響を受ける</strong> — 同じ基地局を周辺の利用者と共有するため、夜間に遅くなりやすい</li>
+      <li><strong>電波状況で揺れる</strong> — 設置場所や天候でPingが変動します</li>
+      <li><strong>NATの制限</strong> — 一部のゲームで「NATタイプ厳しい」と判定され、マッチングしにくくなることがあります</li>
+    </ul>
+    <p>最後のNATタイプは見落とされがちです。ホームルーターは共有IPを使う構成が多く、ポート開放ができないため、P2P接続を使うゲームで不利になることがあります。</p>
+
+    <h2 id="taisaku">今すぐできる改善策</h2>
+    <h3>1. 有線で繋ぐ</h3>
+    <p>最も効果が大きい対策です。Wi-Fi経由だと数ms〜10ms上乗せされ、揺れも増えます。<strong>LANポートのあるホームルーターを選び、ゲーム機は有線接続</strong>にしてください。home 5G・WiMAXのホームルーターにはLANポートがあります。</p>
+    <h3>2. 設置場所を変える</h3>
+    <p>窓際・床から1m以上・基地局のある方角。この3つで実測が改善することがあります。電波強度の表示が最大になる位置を探してください。</p>
+    <h3>3. 5GHz帯を使う(無線の場合)</h3>
+    <p>2.4GHz帯は電子レンジやBluetoothと干渉します。ゲーム機は5GHz帯に繋いでください。</p>
+    <h3>4. 時間帯をずらす</h3>
+    <p>21〜24時は最も混雑します。この時間帯だけPingが倍近くになるなら、それは回線品質ではなく混雑の問題です。</p>
+
+    <div class="cta">
+      <div class="cta__t">🎮 有線ポートつきで、実質月額を抑えるなら</div>
+      <p>GMOとくとくBBのホームWi-FiはLANポートを備えており、ゲーム機を有線でつなげます。同じWiMAX回線でも窓口によって実質月額が変わるため、条件の確認から始めるのが得です。</p>
+      <!-- A8: GMOとくとくBBホームWi-Fi -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2W6WEY+50+7LVLZM" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBBホームWi-Fiの条件を見る<small>実質月額と特典を確認できます</small></a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BAH9H+2W6WEY+50+7LVLZM" alt="">
+      <p class="micro">※ 窓口ごとの実質月額の比べ方は<a href="wimax-provider">WiMAXプロバイダ比較</a>で解説しています</p>
+    </div>
+
+    <h2 id="sakai">光回線に切り替える境界線</h2>
+    <p>次のどれかに当てはまるなら、ホームルーターではなく光回線を検討してください。</p>
+    <ul>
+      <li>対戦格闘、またはランク帯のFPSを本気でやる</li>
+      <li>配信をしながらプレイする(上りの帯域と安定性が要る)</li>
+      <li>家族が同時に動画を見ていてもPingを保ちたい</li>
+      <li>「NATタイプ」の警告が出て、マッチングに支障が出ている</li>
+    </ul>
+    <p>逆に、賃貸で工事の許可が取れない、数年で引っ越す予定がある、といった事情があるなら、ホームルーターで運用しながら遊べるジャンルを選ぶという判断も十分に合理的です。工事ができない場合の選択肢は<a href="kouji-dekinai-chintai">賃貸で光回線の工事ができないときの対処法</a>にまとめています。</p>
+
+    <div class="cta">
+      <div class="cta__t">📡 まずは自宅がエリア内かを確認する</div>
+      <p>WiMAXは同じ回線でも窓口で実質月額が変わります。BIGLOBE WiMAXは特典が月額割引型で、受け取り忘れが起きないのが利点です。</p>
+      <div class="btn-area__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BSJOH" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="BIGLOBE WiMAX +5Gの公式キャンペーンバナー" src="https://www27.a8.net/svt/bgt?aid=260829413076&amp;wid=002&amp;eno=01&amp;mid=s00000000040014074000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BSJOH" alt=""></div>
+      <!-- A8: BIGLOBE WiMAX +5G -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXのエリアと料金を見る<small>ピンポイント判定とお試し利用の案内</small></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" alt="">
+      <p class="micro">※ エリア判定の見方は<a href="wimax-area">WiMAXのエリア確認方法</a>で解説しています</p>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>Ping値はどうやって測れますか?</summary>
+        <div class="faq__a">ゲーム機の場合はネットワーク設定の接続テストで表示されます。PCなら速度測定サイトのPing/レイテンシ欄、またはコマンドプロンプトで ping コマンドを使います。時間帯を変えて数回測り、平均と揺れの両方を見てください。</div>
+      </details>
+      <details>
+        <summary>Ping30msなら快適ですか?</summary>
+        <div class="faq__a">ジャンルによります。RPGや協力プレイなら十分快適です。FPSのランク帯や対戦格闘では、10msの相手と当たると不利になる場面が出ます。数値だけでなく、揺れが小さいかどうかも確認してください。</div>
+      </details>
+      <details>
+        <summary>5G対応なら光回線並みになりますか?</summary>
+        <div class="faq__a">なりません。5Gで改善するのは主に速度(下り)で、Pingは光回線ほど下がりません。ミリ波エリアなど条件が揃えば20ms台まで下がることもありますが、一般的な設置環境では30ms以上が現実的な線です。</div>
+      </details>
+      <details>
+        <summary>クラウドゲーミングは使えますか?</summary>
+        <div class="faq__a">条件つきで使えます。安定した下り速度とPingの両方が必要で、時間帯によって画質が落ちたり入力遅延を感じたりします。有線接続と5GHz帯の利用は前提と考えてください。</div>
+      </details>
+      <details>
+        <summary>ゲーム機を有線でつなげますか?</summary>
+        <div class="faq__a">home 5G・WiMAXのホームルーターにはLANポートがあります。ソフトバンクエアーもモデルによって搭載しています。有線接続はPingと安定性の両方に効くので、ゲーム用途なら必須と考えてください。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ</h2>
+    <ul>
+      <li>判断軸は速度ではなく<strong>Ping</strong>。ホームルーターは30〜60msが目安</li>
+      <li><strong>RPG・協力プレイは実用範囲</strong>、対戦格闘とランクFPSは厳しい</li>
+      <li><strong>有線接続</strong>が最も効く改善策。LANポート付きを選ぶ</li>
+      <li><strong>NATタイプ</strong>の制限でマッチングに支障が出ることがある</li>
+      <li>配信・ランク帯・同時利用が多いなら<strong>光回線に切り替える</strong></li>
+    </ul>
+    <p>ホーム型とモバイル型で迷っているなら<a href="wimax-vs-homerouter">WiMAXはホームルーターとモバイル型どっち?</a>、工事不要の3社を比べるなら<a href="home-router">工事不要WiFiおすすめ比較</a>へ。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>みんなのネット回線速度(ユーザー実測値の集計・2026年8月確認) — 回線種別ごとのPing中央値</li>
+        <li>各社公式サイトの端末仕様ページ(2026年8月確認) — LANポートの有無と対応規格</li>
+        <li>Ping値の体感区分は一般的な目安であり、ゲームタイトルやサーバーの所在地によって変わります</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="wimax-vs-homerouter">WiMAXはホームルーターとモバイル型どっち?後悔しない選び分け</a></li>
+      <li><a href="home-router">工事不要WiFiおすすめ比較|ホームルーター3社+ポケット型の選び方</a></li>
+      <li><a href="wimax-area">WiMAXのエリア確認方法|ピンポイント判定と圏外時の代替</a></li>
+      <li><a href="web-kaigi-taisho">Web会議が途切れる・固まる原因と対処法</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>姉妹サイト</h2>
+        <ul>
+          <li><a href="https://taisyoku-compass.com/">退職コンパス</a></li>
+        </ul>
+        <p>退職・転職の進め方に迷ったときに。退職代行の比較から退職後の保険・年金の手続きまで、労働法の根拠つきで解説しています。</p>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260830c" defer></script>
+</body>
+</html>

@@ -26,6 +26,11 @@
 - [光回線の開通までのつなぎWiFi](https://kaisen-compass.com/articles/kaitsuu-tsunagi-wifi): 待ち期間×データ量の2軸で選ぶ。申込前なら開通前の無料レンタルがある光回線を選ぶのが最安。
 - [ソフトバンクエアーが遅いときの対策](https://kaisen-compass.com/articles/softbank-air-osoi): 原因は端末の世代・置き場所・時間帯の混雑。0円の対処→機種変更→乗り換えの4段階で解決する。
 - [auひかりのマンション対応を確認する方法](https://kaisen-compass.com/articles/auhikari-mansion-taiou): タイプは建物ごとに固定で選べない。建物名まで入れたエリア判定でタイプ・月額・最大速度が確定する。
+- [事業者変更承諾番号の取り方](https://kaisen-compass.com/articles/jigyousha-henkou): 光コラボ同士なら工事も無回線期間もなし。承諾番号の取り方と有効期限15日の数え方を手順どおりに。
+- [光回線の解約手順と違約金](https://kaisen-compass.com/articles/hikari-kaiyaku): 違約金の上限は月額1ヶ月分。本当に効くのは工事費の残債です。順番を間違えない解約の段取り。
+- [ホームルーターでゲームはできる?Pingの実際とジャンル別の向き不向き](https://kaisen-compass.com/articles/homerouter-game): 判断軸は速度ではなくPing。RPGは実用範囲、対戦格闘とランクFPSは厳しい理由を数値で解説。
+- [WiMAXのエリア確認方法](https://kaisen-compass.com/articles/wimax-area): 判定は番地まで入れる。○でも屋内で入らない理由と、圏外だったときの代替回線まで。
+- [テレワークの回線おすすめ](https://kaisen-compass.com/articles/telework-kaisen): 効くのは下り速度ではなく上りとPing。会議が落ちる原因の切り分けと住まい別の構成例。
 
 ## サイト情報
 
