@@ -1313,3 +1313,28 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 /* ヒーローの装飾（オーブ・信号バー）が狭い画面で画面幅を押し広げていたので閉じ込める */
 .hero, .hero__bg { overflow: hidden; }
 .hero__bg > * { max-width: 100%; }
+
+/* ============================================================
+   回線コンパス：ヒーローの立ち上がりを強める
+   ============================================================ */
+.hero__tools { animation: heroRise .72s cubic-bezier(.22,.9,.3,1) .41s both; }
+.hero__point { animation: chipPop .5s cubic-bezier(.2,1.3,.4,1) both; }
+.hero__point:nth-child(1) { animation-delay: .34s; }
+.hero__point:nth-child(2) { animation-delay: .42s; }
+.hero__point:nth-child(3) { animation-delay: .50s; }
+.hero__tool .hero__toolGo { transition: transform .22s cubic-bezier(.22,.9,.3,1); }
+.hero__tool:hover .hero__toolGo, .hero__tool:focus-visible .hero__toolGo { transform: translateX(4px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__tools, .hero__point { animation: none !important; }
+  .hero__tool:hover .hero__toolGo, .hero__tool:focus-visible .hero__toolGo { transform: none; }
+}
+
+/* .reveal.is-in の transition が .card のホバー用 transition を上書きして
+   ホバーの持ち上がりが瞬間移動になっていたので、カードだけ個別に指定する */
+.card.reveal.is-in,
+.finder__item.reveal.is-in {
+  transition: opacity .5s cubic-bezier(.22,.9,.3,1),
+              transform .24s cubic-bezier(.22,.9,.3,1),
+              box-shadow .24s, border-color .2s, background .2s;
+}
