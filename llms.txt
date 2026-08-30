@@ -33,6 +33,9 @@
 - [ホームルーターでゲームはできる?Pingの実際とジャンル別の向き不向き](https://kaisen-compass.com/articles/homerouter-game): 判断軸は速度ではなくPing。RPGは実用範囲、対戦格闘とランクFPSは厳しい理由を数値で解説。
 - [WiMAXのエリア確認方法](https://kaisen-compass.com/articles/wimax-area): 判定は番地まで入れる。○でも屋内で入らない理由と、圏外だったときの代替回線まで。
 - [テレワークの回線おすすめ](https://kaisen-compass.com/articles/telework-kaisen): 効くのは下り速度ではなく上りとPing。会議が落ちる原因の切り分けと住まい別の構成例。
+- [光回線が遅いときの原因と直し方](https://kaisen-compass.com/articles/hikari-osoi): 遅さの8割は接続方式かルーター。5分の切り分け手順とIPv6 IPoEへの切り替え、乗り換えを考えるべき条件まで。
+- [2026年のネット回線 値上げまとめ](https://kaisen-compass.com/articles/neage-2026): WiMAX各社が10月に月330〜630円、SoftBank Airが12月に月330円の改定。窓口別の改定額と違約金なし解約の確認手順。
+- [光回線の初期費用と工事費](https://kaisen-compass.com/articles/hikari-shokihiyou): 事務手数料3,300円＋工事費が基本。「実質無料」の仕組みと途中解約時の残債、総額の計算式を解説。
 
 ## サイト情報
 

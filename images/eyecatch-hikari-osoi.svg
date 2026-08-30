@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="光回線が遅いときの原因と直し方" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/><stop offset=".55" stop-color="#114699"/><stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="40" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1090" cy="600" r="150" fill="#ffffff" opacity=".05"/>
+  <rect x="70" y="118" width="122" height="52" rx="26" fill="#ffd76a"/>
+  <text x="131" y="154" text-anchor="middle" font-size="26" font-weight="800" fill="#10233f">光回線</text>
+  <text x="70" y="286" font-size="74" font-weight="800" fill="#ffffff">光回線が遅い</text>
+  <text x="70" y="286" font-size="74" font-weight="800" fill="#ffffff" dy="94">原因と直し方</text>
+  <text x="70" y="470" font-size="34" font-weight="600" fill="#dbe7ff">5分でできる切り分け手順</text>
+  <g transform="translate(70,540)">
+    <circle cx="16" cy="0" r="16" fill="#ffffff" opacity=".9"/>
+    <text x="44" y="8" font-size="26" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

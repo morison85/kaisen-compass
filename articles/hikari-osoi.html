@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>光回線が遅いときの原因と直し方【2026年】5分でできる切り分け手順 | 回線コンパス</title>
+<meta name="description" content="光回線が遅い原因は、回線そのものより「接続方式(PPPoE)」と「ルーター」にあることが大半です。スマホと有線で速度を比べる切り分けから、IPv6 IPoEへの切り替え、ルーターの寿命判断まで、契約を変える前に試せる順番で解説します。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/hikari-osoi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="光回線が遅いときの原因と直し方【2026年】5分でできる切り分け手順">
+<meta property="og:description" content="光回線が遅い原因は、回線そのものより「接続方式(PPPoE)」と「ルーター」にあることが大半です。スマホと有線で速度を比べる切り分けから、IPv6 IPoEへの切り替え、ルーターの寿命判断まで、契約を変える前に試せる順番で解説します。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/hikari-osoi">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-osoi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-08-30">
+<meta property="article:modified_time" content="2026-08-30">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-osoi.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260830x">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "光回線が遅いときの原因と直し方【2026年】5分でできる切り分け手順",
+  "description": "光回線が遅い原因は、回線そのものより「接続方式(PPPoE)」と「ルーター」にあることが大半です。スマホと有線で速度を比べる切り分けから、IPv6 IPoEへの切り替え、ルーターの寿命判断まで、契約を変える前に試せる順番で解説します。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-hikari-osoi.png",
+  "datePublished": "2026-08-30",
+  "dateModified": "2026-08-30",
+  "author": { "@type": "Person", "name": "もりそん" },
+  "publisher": { "@type": "Organization", "name": "回線コンパス",
+    "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo.svg" } },
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/hikari-osoi"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+      { "@type": "Question", "name": "速度はどこで測るのが正確ですか?", "acceptedAnswer": { "@type": "Answer", "text": "測定サイトはどれでも構いませんが、<strong>同じサイト・同じ時間帯で複数回</strong>測ってください。1回の数値だけでは判断できません。夜9〜11時と昼間の2つの時間帯で測ると、混雑の影響があるかどうかが分かります。" } },
+      { "@type": "Question", "name": "IPv6にすると何が変わりますか?", "acceptedAnswer": { "@type": "Answer", "text": "混雑する接続点（網終端装置）を通らなくなるため、<strong>夜間の速度低下が起きにくくなります</strong>。回線そのものの最大速度が上がるわけではないので、もともと昼間から遅い場合は別の原因です。" } },
+      { "@type": "Question", "name": "v6プラスに申し込んだのに速くなりません", "acceptedAnswer": { "@type": "Answer", "text": "ルーターが対応していない可能性が高いです。<strong>申し込みだけでは方式は切り替わりません</strong>。プロバイダのレンタルルーターに変えるか、対応表で自分の機種を確認してください。" } },
+      { "@type": "Question", "name": "10ギガプランにすれば解決しますか?", "acceptedAnswer": { "@type": "Answer", "text": "有線で1Gbpsに近い数字が出ていて、それでも足りない場合だけ意味があります。<strong>PPPoEのままだったりルーターが古いなら、10ギガにしても速くなりません</strong>。詳しくは<a href=\"hikari-10giga\">光回線の10ギガは必要か</a>で判断基準を書いています。" } },
+      { "@type": "Question", "name": "ルーターは高いものを買うべきですか?", "acceptedAnswer": { "@type": "Answer", "text": "接続台数と間取りで決まります。<strong>1LDKで数台なら1万円前後で十分</strong>です。3LDK以上や10台以上つなぐなら、メッシュ対応の機種を検討してください。価格より、IPv6 IPoEに対応しているかを先に確認します。" } }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "\u30db\u30fc\u30e0", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "光回線が遅いときの対処" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>光回線が遅いときの対処</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">光回線が遅いときの原因と直し方【2026年】5分でできる切り分け手順</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-hikari-osoi.svg" alt="光回線が遅いときの原因と直し方" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>夜になると動画が止まる。テレワークのWeb会議で自分だけ固まる。速度を測ると契約している「1Gbps」とはかけ離れた数字が出る——。</p>
+    <p>このとき多くの人が「回線が悪いから乗り換えよう」と考えます。でも<strong>実際に乗り換えが必要なケースは、体感で全体の2割ほど</strong>です。残りの8割は、接続方式かルーターのどちらかで直ります。しかもどちらも追加費用ゼロで試せます。</p>
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>まず<strong>スマホのWi-Fiと、パソコンの有線接続で速度を測り比べます</strong>。有線だけ速いならWi-Fi(ルーター)の問題、両方遅いなら回線側の問題です。回線側なら<strong>接続方式が古いPPPoEのままでないかを最初に疑ってください</strong>。IPv6 IPoE(v6プラス等)に変えるだけで、夜間の遅さが解消することがよくあります。乗り換えを考えるのは、この2つを試したあとで十分です。</p>
+    </div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#kirwake">まず切り分ける（5分）</a></li>
+        <li><a href="#houshiki">原因の8割は接続方式かルーター</a></li>
+        <li><a href="#ipoe">IPv6 IPoEに切り替える</a></li>
+        <li><a href="#router">ルーターの寿命を見分ける</a></li>
+        <li><a href="#mansion">マンションだけに起きる遅さ</a></li>
+        <li><a href="#norikae">乗り換えを考えるべきケース</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">迷ったら、ツールで候補を絞れます</p>
+      <p>それでも回線を替えるなら、工事の可否とスマホのキャリアから候補を絞れます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="kirwake">まず切り分ける（5分）</h2>
+    <p>原因を決めつける前に、どこが遅いのかを分けます。やることは速度を2回測るだけです。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">1. スマホをWi-Fiにつないで測る</div>
+        <p>ルーターのすぐそば（1〜2m）で測ります。速度測定サイトはどれでも構いません。</p>
+      </li>
+      <li>
+        <div class="steps__t">2. パソコンをLANケーブルで直結して測る</div>
+        <p>ルーターのLANポートに挿して測ります。ノートPCにLAN端子がなければ、この手順は飛ばして構いません。</p>
+      </li>
+    </ol>
+
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>結果</th><th>疑うところ</th><th>やること</th></tr></thead>
+        <tbody>
+          <tr><th>有線は速い / Wi-Fiが遅い</th><td>ルーターかWi-Fiの電波</td><td class="ok">ルーターの置き場所・周波数帯・買い替え</td></tr>
+          <tr><th>両方とも遅い</th><td>回線か接続方式</td><td class="ok">接続方式をIPv6 IPoEに変更</td></tr>
+          <tr><th>夜だけ遅い</th><td>接続方式（混雑）</td><td class="ok">同上。時間帯で差が出るのが典型です</td></tr>
+          <tr><th>特定の時間だけ・毎日同じ</th><td>建物内の共用設備</td><td>マンションの配線方式を確認</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box-memo">
+      <div class="box-memo__t">🧭 「1Gbps」は上限であって実測値ではありません</div>
+      <p style="margin:0;">契約書の1Gbpsは<strong>理論上の最大値</strong>です。実測で200〜400Mbps出ていれば、動画も在宅勤務も問題なく使えます。<strong>遅いかどうかは数字より「用途に足りているか」で判断してください</strong>。4K動画で25Mbps、Web会議で上り5Mbpsが目安です。</p>
+    </div>
+
+    <h2 id="houshiki">原因の8割は接続方式かルーター</h2>
+    <p>光回線が「夜だけ遅い」とき、回線そのものは壊れていません。混んでいるのは<strong>網終端装置と呼ばれる、プロバイダとNTT網の接続点</strong>です。ここを通らない新しい方式に変えると、混雑を避けられます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>接続方式</th><th>混雑の影響</th><th>備考</th></tr></thead>
+        <tbody>
+          <tr><th>PPPoE（従来方式）</th><td>受ける</td><td>夜間に大きく落ちる。古い契約はこのまま</td></tr>
+          <tr><th>IPv6 IPoE（v6プラス等）</th><td class="ok">受けにくい</td><td>対応ルーターが必要。追加料金は無料が多い</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="ipoe">IPv6 IPoEに切り替える</h2>
+    <p>切り替えに必要なのは2つだけです。<strong>プロバイダ側の申し込み</strong>と、<strong>対応ルーター</strong>。どちらが欠けても効きません。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">1. プロバイダのマイページで対応状況を見る</div>
+        <p>「v6プラス」「IPoE」「IPv6オプション」などの名前で提供されています。名称は事業者ごとに違います。<strong>多くは無料</strong>で、申し込み後 数日〜数週間で切り替わります。</p>
+      </li>
+      <li>
+        <div class="steps__t">2. ルーターが対応しているか確認する</div>
+        <p>型番で検索し、対応表に載っているかを見ます。<strong>プロバイダのレンタルルーターに替えるのがいちばん確実</strong>です。自前の古い機種だと、申し込んでも方式が変わりません。</p>
+      </li>
+      <li>
+        <div class="steps__t">3. 切り替え後にもう一度測る</div>
+        <p>夜9〜11時に測ってください。改善するのはこの時間帯です。</p>
+      </li>
+    </ol>
+
+    <div class="cta">
+      <div class="cta__t">📡 そもそも最初からIPv6 IPoEで始めたいなら</div>
+      <p>契約中のプロバイダが対応していない、あるいは申し込みの手続きが面倒という場合は、最初から標準対応の窓口に変える手もあります。GMOとくとくBB光はv6プラスに標準対応で、契約期間の縛りと違約金がありません。合わなければ抜けられるので、方式を理由に乗り換えるなら候補になります。</p>
+      <div class="btn-area"><a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の公式ページを見る<small>v6プラス標準対応・契約期間の縛りなし</small></a><img class="js-imp" data-src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
+    </div>
+
+    <h2 id="router">ルーターの寿命を見分ける</h2>
+    <p>ルーターは消耗品です。<strong>目安は4〜5年</strong>で、それを超えると通信が不安定になります。次のどれかに当てはまるなら買い替えを検討してください。</p>
+    <ul>
+      <li>買ってから<strong>5年以上</strong>たっている</li>
+      <li>本体が<strong>熱い</strong>。触っていられないほどなら要注意です</li>
+      <li>再起動すると直るが、<strong>数日でまた遅くなる</strong></li>
+      <li>Wi-Fi 5（11ac）より前の規格。11n止まりなら確実に足を引っ張っています</li>
+      <li>同時につないでいる機器が<strong>10台を超えている</strong></li>
+    </ul>
+    <div class="box-memo">
+      <div class="box-memo__t">🧭 置き場所だけで変わることもあります</div>
+      <p style="margin:0;">床に直置き、テレビの裏、金属ラックの中、水槽の近く——このどれかなら、まず<strong>部屋の中央・床から1m以上の高さ・開けた場所</strong>に移してみてください。買い替えずに直ることがあります。</p>
+    </div>
+
+    <h2 id="mansion">マンションだけに起きる遅さ</h2>
+    <p>集合住宅では、<strong>建物内の配線方式</strong>が上限を決めていることがあります。自分の部屋の機器をいくら替えても越えられません。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th>配線方式</th><th>実際に出やすい速度</th><th>対処</th></tr></thead>
+        <tbody>
+          <tr><th>光配線方式</th><td class="ok">100Mbps〜数百Mbps</td><td>問題なし</td></tr>
+          <tr><th>LAN配線方式</th><td>〜100Mbps程度</td><td>建物側の上限。個別契約かホームルーターへ</td></tr>
+          <tr><th>VDSL方式</th><td>〜100Mbps程度</td><td>同上。電話線を使うため上限が低い</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>配線方式は、管理会社に聞くか、NTT東西の提供エリア検索で住所を入れると分かります。<strong>VDSLやLAN配線だと分かった時点で、部屋の中の改善では限界があります</strong>。詳しくは<a href="mansion-internet">マンションのネットが遅い原因と解決策</a>で切り分けの手順を書いています。</p>
+
+    <h2 id="norikae">乗り換えを考えるべきケース</h2>
+    <p>ここまでを試しても改善しないなら、はじめて乗り換えの出番です。次のどれかに当てはまるときです。</p>
+    <ul>
+      <li>IPv6 IPoEに切り替え済みで、ルーターも新しいのに<strong>有線でも遅い</strong></li>
+      <li>建物が<strong>VDSL・LAN配線</strong>で、光配線に変えられない</li>
+      <li>プロバイダが<strong>IPv6 IPoEを提供していない</strong></li>
+    </ul>
+    <p>ただし、マンションの設備が原因の場合は<strong>光コラボ同士で乗り換えても同じ配線を使うので変わりません</strong>。この場合は建物の設備を経由しないホームルーターのほうが速くなることがあります。</p>
+
+    <div class="cta">
+      <div class="cta__t">🔌 建物の設備が原因なら、工事のいらない回線という手もあります</div>
+      <p>VDSLやLAN配線が上限になっている場合、同じ建物の光回線に乗り換えても改善しません。コンセントに挿すだけのホームルーターは建物内の配線を通らないため、環境によっては逆転します。BIGLOBE WiMAXは最低利用期間と契約解除料がないので、合わなければやめられます。</p>
+      <div class="btn-area"><a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXの公式ページを見る<small>最低利用期間なし・口座振替に対応</small></a><img class="js-imp" data-src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>速度はどこで測るのが正確ですか?</summary>
+        <div class="faq__a">測定サイトはどれでも構いませんが、<strong>同じサイト・同じ時間帯で複数回</strong>測ってください。1回の数値だけでは判断できません。夜9〜11時と昼間の2つの時間帯で測ると、混雑の影響があるかどうかが分かります。</div>
+      </details>
+      <details>
+        <summary>IPv6にすると何が変わりますか?</summary>
+        <div class="faq__a">混雑する接続点（網終端装置）を通らなくなるため、<strong>夜間の速度低下が起きにくくなります</strong>。回線そのものの最大速度が上がるわけではないので、もともと昼間から遅い場合は別の原因です。</div>
+      </details>
+      <details>
+        <summary>v6プラスに申し込んだのに速くなりません</summary>
+        <div class="faq__a">ルーターが対応していない可能性が高いです。<strong>申し込みだけでは方式は切り替わりません</strong>。プロバイダのレンタルルーターに変えるか、対応表で自分の機種を確認してください。</div>
+      </details>
+      <details>
+        <summary>10ギガプランにすれば解決しますか?</summary>
+        <div class="faq__a">有線で1Gbpsに近い数字が出ていて、それでも足りない場合だけ意味があります。<strong>PPPoEのままだったりルーターが古いなら、10ギガにしても速くなりません</strong>。詳しくは<a href="hikari-10giga">光回線の10ギガは必要か</a>で判断基準を書いています。</div>
+      </details>
+      <details>
+        <summary>ルーターは高いものを買うべきですか?</summary>
+        <div class="faq__a">接続台数と間取りで決まります。<strong>1LDKで数台なら1万円前後で十分</strong>です。3LDK以上や10台以上つなぐなら、メッシュ対応の機種を検討してください。価格より、IPv6 IPoEに対応しているかを先に確認します。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ</h2>
+    <ul>
+      <li>まず<strong>有線とWi-Fiで測り比べて</strong>、どちらが遅いかを分ける</li>
+      <li>夜だけ遅いなら、原因はほぼ<strong>接続方式（PPPoE）</strong>。IPv6 IPoEに変える</li>
+      <li>申し込みだけでは変わらない。<strong>対応ルーターとセット</strong>で効く</li>
+      <li>ルーターは<strong>4〜5年が寿命</strong>。置き場所を変えるだけで直ることもある</li>
+      <li>マンションで<strong>VDSL・LAN配線</strong>なら、部屋の中の改善では越えられない</li>
+      <li>乗り換えるのは、ここまで試したあとで十分</li>
+    </ul>
+    <div class="btn-area">
+      <a class="btn btn--sub" href="../shindan">6つの質問で自分に合う回線を診断する</a>
+    </div>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>総務省「電気通信サービスの品質測定手法の確立・国際標準化」— 実効速度の考え方（2026年8月確認）</li>
+        <li>日本ネットワークイネイブラー「v6プラス」サービス説明（2026年8月確認）</li>
+        <li>NTT東日本・NTT西日本 フレッツ光 提供エリア検索 — 建物の配線方式の確認（2026年8月確認）</li>
+        <li>本文の速度の目安は一般的な利用条件での傾向です。実際の速度は建物・時間帯・機器構成で変わります</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260830x" defer></script>
+</body>
+</html>
