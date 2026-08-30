@@ -1187,3 +1187,8 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 
 /* 比較表の料金列。長い注記でも1行あたりの折り返しが暴れないよう幅を確保する */
 .cmp-tbl .col-price { min-width: 132px; }
+
+/* fieldset/legend のブラウザ既定の枠線が透けるので打ち消す */
+.qz__panel { border: 0; padding: 0; margin: 0; min-width: 0; }
+.qz__panel > legend.qz__q { display: block; width: 100%; padding: 0; float: left; }
+.qz__panel > legend.qz__q + .qz__hint { clear: both; }
