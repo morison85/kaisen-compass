@@ -1033,3 +1033,20 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 @media (prefers-reduced-motion: reduce) {
   .cmp-filter__btn:hover, .cmp-row:hover { transform: none; }
 }
+
+/* 記事本文から診断ツール・比較一覧へ送るボックス */
+.toolbox {
+  margin: 26px 0; padding: 18px 20px; border-radius: var(--radius);
+  background: var(--c-primary-pale); border: 1.5px solid var(--c-primary);
+}
+.toolbox__t { font-weight: 800; color: var(--c-navy); font-size: 1rem; margin: 0 0 6px; }
+.toolbox p { font-size: .88rem; color: var(--c-text-sub); line-height: 1.8; margin: 0 0 12px; }
+.toolbox__links { display: flex; flex-wrap: wrap; gap: 10px; }
+.toolbox__links a {
+  flex: 1 1 190px; text-align: center; text-decoration: none; font-weight: 800; font-size: .88rem;
+  padding: 12px 14px; border-radius: 14px; background: var(--c-primary); color: #fff;
+  transition: transform .18s, box-shadow .18s;
+}
+.toolbox__links a + a { background: #fff; color: var(--c-primary); border: 2px solid var(--c-primary); padding: 10px 12px; }
+.toolbox__links a:hover, .toolbox__links a:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.12); }
+@media (prefers-reduced-motion: reduce) { .toolbox__links a:hover, .toolbox__links a:focus-visible { transform: none; } }
