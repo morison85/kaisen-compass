@@ -825,3 +825,82 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 }
 
 
+
+
+/* ============================================================
+   もう一方のサイトへの切り替えカード(フッター)
+   見出しテキストを置かず、ロゴ・名前・矢印だけで移動先を示す
+   ============================================================ */
+.sister { min-width: 0; }
+.sister__card {
+  display: flex; align-items: center; gap: 13px;
+  padding: 13px 15px; border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.16);
+  text-decoration: none;
+  transition: transform .24s cubic-bezier(.22,.9,.3,1), background .24s, border-color .24s, box-shadow .24s;
+}
+.sister__card:hover,
+.sister__card:focus-visible {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.12);
+  border-color: rgba(120,170,255,.55);
+  box-shadow: 0 12px 26px rgba(21,88,214,.30);
+  text-decoration: none;
+}
+.sister__ico { flex-shrink: 0; line-height: 0; }
+.sister__ico svg { display: block; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,.35); }
+.sister__needle { transform-origin: 50% 50%; transition: transform .55s cubic-bezier(.22,.9,.3,1); }
+.sister__card:hover .sister__needle,
+.sister__card:focus-visible .sister__needle { transform: rotate(-345deg); }
+.sister__body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.sister__name {
+  display: flex; align-items: center; gap: 6px;
+  color: #fff; font-weight: 800; font-size: 0.95rem; line-height: 1.3;
+}
+.sister__go { opacity: .7; transition: transform .24s, opacity .24s; }
+.sister__card:hover .sister__go,
+.sister__card:focus-visible .sister__go { transform: translateX(5px); opacity: 1; }
+.sister__desc { font-size: 0.74rem; line-height: 1.6; color: #c9d6e8; }
+
+
+/* ============================================================
+   === 動きの追加(2026-08-30) ===
+   既存の hero/finder の演出に、CTA・カード・FAQの動きを足す
+   ============================================================ */
+/* CTAボタン: 押せる感じを強め、光が一度だけ横切る */
+.btn { transition: transform .18s cubic-bezier(.22,.9,.3,1), box-shadow .18s, filter .18s; }
+.btn:hover, .btn:focus-visible { transform: translateY(-2px); }
+.btn:active { transform: translateY(0) scale(.985); }
+.btn--cv { position: relative; overflow: hidden; }
+.btn--cv::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(105deg, transparent 38%, rgba(255,255,255,.42) 50%, transparent 62%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+.btn--cv:hover::after, .btn--cv:focus-visible::after { animation: ctaSheen .75s ease-out; }
+@keyframes ctaSheen { to { transform: translateX(120%); } }
+
+/* 比較カード: 浮き上がり */
+.svc { transition: transform .24s cubic-bezier(.22,.9,.3,1), box-shadow .24s; }
+.svc:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(11,44,95,.13); }
+
+/* FAQ: 開いたときに中身がすっと出る */
+.faq details[open] .faq__a,
+.faq details[open] > div:last-child { animation: faqOpen .32s ease-out; }
+@keyframes faqOpen { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
+/* 手順リスト */
+.steps > li { transition: transform .2s; }
+.steps > li:hover { transform: translateX(3px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover, .btn:active, .svc:hover, .steps > li:hover { transform: none; }
+  .btn--cv:hover::after, .btn--cv:focus-visible::after { animation: none; }
+  .faq details[open] .faq__a,
+  .faq details[open] > div:last-child { animation: none; }
+  .sister__card:hover, .sister__card:focus-visible { transform: none; }
+  .sister__card:hover .sister__needle, .sister__card:focus-visible .sister__needle { transform: none; }
+  .sister__card:hover .sister__go, .sister__card:focus-visible .sister__go { transform: none; }
+}
