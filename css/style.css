@@ -1433,3 +1433,78 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 @media (max-height: 520px) {
   .hero__net { display: none; }
 }
+
+/* ============================================================
+   比較表の下に置く「各社の詳しい紹介」カード
+   記事カード(.card)と同じ寸法感で、画像・スペック・CTAを載せる
+   ============================================================ */
+.brief-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(330px, 100%), 1fr));
+  gap: 24px; margin: 18px 0 8px;
+}
+.brief {
+  display: flex; flex-direction: column; min-width: 0;
+  background: #fff; border: 1px solid var(--c-border); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow-1);
+  transition: box-shadow .25s, transform .25s cubic-bezier(.22,.9,.3,1);
+}
+.brief:hover { box-shadow: var(--shadow-2); transform: translateY(-4px); }
+
+.brief__thumb { aspect-ratio: 800 / 420; background: var(--c-sky); overflow: hidden; }
+.brief__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.brief__body { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
+.brief__cat {
+  align-self: flex-start; font-size: .7rem; font-weight: 800;
+  color: var(--c-primary-dark, var(--c-primary)); background: var(--c-primary-pale);
+  border-radius: 999px; padding: 3px 11px; margin-bottom: 9px;
+}
+.brief__name { font-size: 1.06rem; font-weight: 800; color: var(--c-navy); line-height: 1.5; margin: 0 0 10px; }
+
+.brief__spec {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(128px, 100%), 1fr));
+  gap: 6px 12px; margin: 0 0 12px; padding: 11px 12px;
+  background: var(--c-bg); border-radius: 12px;
+}
+.brief__spec div { min-width: 0; }
+.brief__spec dt { font-size: .67rem; color: var(--c-text-sub); font-weight: 700; margin-bottom: 1px; }
+.brief__spec dd { font-size: .84rem; font-weight: 800; color: var(--c-text); margin: 0; line-height: 1.5; }
+
+.brief__desc { font-size: .85rem; line-height: 1.85; color: var(--c-text-sub); margin: 0 0 11px; }
+
+.brief__fit { display: grid; gap: 6px; margin: 0 0 14px; }
+.brief__fit p { font-size: .81rem; line-height: 1.75; margin: 0; padding-left: 22px; position: relative; color: var(--c-text-sub); }
+.brief__fit b { color: var(--c-text); font-weight: 800; }
+.brief__fit .fit-y::before,
+.brief__fit .fit-n::before {
+  position: absolute; left: 0; top: .1em; font-size: .9em; font-weight: 800;
+}
+.brief__fit .fit-y::before { content: "○"; color: var(--c-green); }
+.brief__fit .fit-n::before { content: "△"; color: var(--c-text-sub); }
+
+.brief__cta { margin-top: auto; }
+.brief__cta .btn { font-size: .9rem; padding: 13px 14px; border-radius: 14px; }
+.brief__cta .btn small { font-size: .7rem; }
+
+.brief__official { margin: 0 0 12px; }
+.brief__official img { display: block; width: 100%; max-width: 260px; height: auto; border-radius: 8px; }
+.brief__official img[width="1"] { width: 1px; max-width: 1px; }
+
+@media (max-width: 480px) {
+  .brief-grid { gap: 18px; }
+  .brief__body { padding: 14px 15px 16px; }
+  .brief__spec { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brief:hover { transform: none; }
+}
+
+/* 紹介カードも表と同じく本文幅より広く使い、記事カードに近い比率にする */
+.brief-grid { grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
+@media (min-width: 820px) {
+  .brief-grid {
+    width: min(1100px, calc(100vw - 44px));
+    max-width: none;
+    margin-left: calc(50% - min(550px, calc(50vw - 22px)));
+  }
+}
