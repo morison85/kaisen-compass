@@ -947,6 +947,8 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 /* --- 結果 --- */
 .result-zone { margin: 34px 0 10px; scroll-margin-top: 76px; }
 #resultCards { display: flex; flex-direction: column; gap: 18px; }
+/* hidden 属性は display:grid に負けるので明示的に消す */
+.res[hidden], .cmp-row[hidden] { display: none !important; }
 .res {
   display: grid; grid-template-columns: 260px 1fr; gap: 0;
   border: 1.5px solid var(--c-border); border-radius: var(--radius); overflow: hidden;
