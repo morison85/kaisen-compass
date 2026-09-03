@@ -5,8 +5,22 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 04 Sep 2026 00:03:36 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 00:40:08 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/ipv6-ipoe</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/ipv6-ipoe</guid>
+    <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
+    <description>IPv6(IPoE)とは何か、なぜ「夜だけ遅い」が直るのかを図解で解説。PPPoEとIPoEの違い、v6プラス・OCNバーチャルコネクトなどの用語整理、自分の回線がIPoEか確認する方法、切り替え手順、IPoE標準対応で選ぶ光回線、切り替えても速くならないケースまで。</description>
+  </item>
+  <item>
+    <title>一人暮らしのネット代の平均と節約術|月5,000円台の構成 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hitorigurashi-netdai</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hitorigurashi-netdai</guid>
+    <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
+    <description>一人暮らしのネット代(スマホ+自宅回線)はいくらが普通か。大手キャリア+光回線で月1万円超になる仕組み、格安SIM+縛りなし光回線・ホームルーター・テザリングの3構成で月5,000円台に収める組み方、通信量別の正解、乗り換え時に損しない注意点を、2026年9月時点の公式料金で解説します。</description>
+  </item>
   <item>
     <title>UQモバイル乗り換え手順|自宅セット割の組み方 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/uqmobile-norikae</link>
@@ -131,7 +145,7 @@
     <link>https://kaisen-compass.com/articles/sbhikari-norikae</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/sbhikari-norikae</guid>
     <pubDate>Sat, 29 Aug 2026 09:00:00 +0900</pubDate>
-    <description>ソフトバンク光への乗り換えは、今の回線が光コラボか独自回線かで手順も期間もまったく変わります。事業者変更・新規開通それぞれの流れ、他社違約金・撤去費用を還元する「あんしん乗り換えキャンペーン」の申請条件と必要書類、ワイモバイル/ソフトバンクのセット割まで具体的に解説します。</description>
+    <description>ソフトバンク光への乗り換えは、今の回線が光コラボか独自回線かで手順も期間も変わります。事業者変更・新規開通それぞれの流れ、他社違約金を還元する「あんしん乗り換えキャンペーン」の申請条件と必要書類、ワイモバイル/ソフトバンクのセット割まで解説します。</description>
   </item>
   <item>
     <title>インターネット無料の賃貸が遅い理由 | 回線コンパス</title>
