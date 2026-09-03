@@ -40,6 +40,9 @@
 - [UQモバイルへの乗り換え手順](https://kaisen-compass.com/articles/uqmobile-norikae): MNPワンストップで予約番号は原則不要。自宅セット割はネット回線側から先に設計するのが取りこぼしを防ぐ順番。
 - [NURO光がエリア外だったときの代替回線](https://kaisen-compass.com/articles/nurohikari-area-gai): エリア外は県単位・番地単位・建物単位の3種類。速さの本質はNTT網を通らない独自回線かどうか。
 - [光回線とプロバイダの違い](https://kaisen-compass.com/articles/hikari-provider-chigai): 回線は道、プロバイダは出入口。契約は分離型・一体型・選択型の3パターンで、請求の件数から判定できる。
+- [LINEMOの乗り換えキャンペーン条件の読み方](https://kaisen-compass.com/articles/linemo-norikae): 乗り換え特典は後払いの割引。ソフトバンク・ワイモバイル・LINEモバイルからは対象外、付与は開通の約7ヶ月後、ギフトコードは約30日で失効。(月額×利用月数−特典)÷利用月数で実質月額に直すとahamo(30GB 2,970円)と比較できる。
+- [ドコモhome 5Gのエリア確認方法](https://kaisen-compass.com/articles/home5g-area): サービスエリアマップは利用機種をシャープ home 5G HR02 に変えてから住所検索する。地図が5Gでも減衰・遮蔽・混雑で実効速度は落ちるため、設置予定地で昼夜2回の実測を行い、8日以内キャンセル(初期契約解除)を保険にする。住所単位のピンポイント判定が要るならWiMAX。
+- [ひかり電話は必要か不要か](https://kaisen-compass.com/articles/hikari-denwa-hitsuyou): 「番号を残すか」「通話に使うか」の2軸で判定し、両方ノーの人だけ不要。基本料は月550円前後で加入電話1,870円前後より年約1.6万円安く、通話料は全国一律8.8円/3分。番号はNTT発番の0AB〜J番号なら同一市内区域で引き継げる。セット割の適用条件に含まれる場合と停電時に使えない点が要注意。
 
 ## サイト情報
 

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>ドコモhome 5Gのエリア確認方法|地図が5Gでも遅い理由 | 回線コンパス</title>
+<meta name="description" content="ドコモhome 5Gのエリア確認は、サービスエリアマップで機種にhome 5G HR02を選ぶのが正解。地図が5G色でも自宅で出ない3つの理由、8日以内キャンセル(初期契約解除)を試用として使う手順、エリア判定の仕組みが違うWiMAX・SoftBank Airとの比較まで解説します。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/home5g-area">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ドコモhome 5Gのエリア確認方法|地図が「5G」でも遅い理由と申込前チェック">
+<meta property="og:description" content="エリアマップの正しい見方、地図と実測がずれる3つの理由、8日以内キャンセルを保険にする手順を解説。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/home5g-area">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-home5g-area.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-04">
+<meta property="article:modified_time" content="2026-09-04">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-home5g-area.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260904b">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ドコモhome 5Gのエリア確認方法|地図が「5G」でも遅い理由と申込前チェック【2026年】",
+  "description": "home 5Gのエリア確認手順と、地図の色と実測がずれる理由、8日以内キャンセルを使った実地検証の進め方を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-home5g-area.png",
+  "author": { "@type": "Person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-04",
+  "dateModified": "2026-09-04",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/home5g-area"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "ドコモhome 5Gの提供エリアを確認する手順",
+  "step": [
+    { "@type": "HowToStep", "name": "サービスエリアマップを開く", "text": "ドコモ公式のサービスエリアマップにアクセスする。" },
+    { "@type": "HowToStep", "name": "機種をhome 5G HR02にする", "text": "利用機種の選択でメーカーをシャープ、機種名をhome 5G HR02に設定する。スマホのままだと判定が変わる。" },
+    { "@type": "HowToStep", "name": "設置予定の住所を検索する", "text": "住所検索に設置する部屋の住所を入力し、5Gエリアと4G LTEエリアの色を確認する。" },
+    { "@type": "HowToStep", "name": "周辺の色ムラを見る", "text": "地図を拡大し、自宅の周囲50〜100mの範囲で色が途切れていないかを確認する。" },
+    { "@type": "HowToStep", "name": "実地で電波を確認する", "text": "設置予定の窓際でドコモ回線のスマホの電波表示と実測速度を測り、地図の判定と突き合わせる。" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "home 5Gのエリア確認はスマホのエリアマップと同じですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "同じマップを使いますが、機種の選択を変える必要があります。サービスエリアマップの利用機種でメーカーをシャープ、機種名をhome 5G HR02に設定してください。機種によって対応する周波数帯が違うため、スマホのまま調べると実際の判定とずれることがあります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "地図では5Gエリアなのに速度が出ないのはなぜですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "主な理由は3つあります。1つ目は建物の壁や窓の断熱ガラスによる減衰、2つ目は基地局との間に建物や地形の遮蔽物があること、3つ目は同じ基地局を使う利用者が多い時間帯の混雑です。エリアマップは屋外の電波の届く範囲を示すもので、屋内の実効速度を保証するものではありません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "契約してから電波が悪かった場合はどうすればいいですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "初期契約解除制度(8日以内キャンセル)が使えます。契約書面を受け取った日から8日以内であれば、原則として違約金なしで解約できます。届いたらすぐに設置して速度を測り、期限内に判断するのが安全です。事務手数料や返送費用の扱いは事前に確認してください。" }
+    },
+    {
+      "@type": "Question",
+      "name": "home 5GとWiMAXはエリアの調べ方が違いますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "違います。WiMAXは住所単位のピンポイントエリア判定があり、丸(◯)・三角(△)・バツ(×)などの判定結果が出ます。home 5Gはエリアマップの色で判断する方式のため、判定の粒度が粗くなります。どちらも最終的には実地での確認が必要です。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "WiFi・ホームルーター", "item": "https://kaisen-compass.com/category/wifi" },
+    { "@type": "ListItem", "position": 3, "name": "home 5Gのエリア確認" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+    <li>home 5Gのエリア確認</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">WiFi・ホームルーター</span>
+    <h1 class="article-title">ドコモhome 5Gのエリア確認方法|地図が「5G」でも遅い理由と申込前チェック【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-04">2026年9月4日</time></span>
+      <span>公開日:<time datetime="2026-09-04">2026年9月4日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。掲載順や評価は<a href="../policy">編集ポリシー</a>に基づき、広告の有無に関わらず作成しています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-home5g-area.svg" alt="ドコモhome 5Gのエリア確認方法と、地図が5Gでも速度が出ない理由" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>工事不要で置くだけ、しかもドコモの5G——home 5Gは条件がハマれば非常に快適です。ただし<strong>ホームルーターの満足度は、料金でも機種でもなく「設置する部屋にどれだけ電波が届くか」でほぼ決まります</strong>。ここを調べずに申し込むと、月5,000円前後を払いながら光回線より遅い、という結果になりかねません。</p>
+    <p>この記事は「エリアマップの見方」だけで終わりません。<strong>地図の色と自宅の実効速度がずれる理由</strong>と、それでも不安が残るときに使える<strong>8日以内キャンセルという実質的な"試用制度"</strong>まで、申し込み前にやることを順番に並べます。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>エリア確認の正解は<strong>「サービスエリアマップで、利用機種をシャープの home 5G HR02 に変えてから住所を検索する」</strong>。スマホのまま調べると判定がずれます。そのうえで<strong>設置予定の窓際でドコモ回線のスマホの電波と実測を測る</strong>ところまでやってください。</p>
+      <p>そして重要なのは、<strong>地図がエリア内でも自宅で速度が出るとは限らない</strong>こと。最後は実機で確かめるしかないので、<strong>8日以内キャンセル(初期契約解除)を保険として計画に組み込む</strong>のが現実的な進め方です。</p>
+    </div>
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank"><span>住所単位で判定できるWiMAXも比較する</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#tejun">エリア確認の正しい手順(5ステップ)</a></li>
+        <li><a href="#zure">地図が「5G」でも遅い3つの理由</a></li>
+        <li><a href="#jicchi">実地でできる電波チェック</a></li>
+        <li><a href="#hoken">8日以内キャンセルを保険にする</a></li>
+        <li><a href="#hikaku">エリア判定の仕組みが違う3サービス</a></li>
+        <li><a href="#kengai">エリア外・微妙だったときの選択肢</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">迷ったら、ツールで候補を絞れます</p>
+      <p>ホームルーターと光回線を、工事の可否・月額・実測の3軸で並べて見られます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="tejun">エリア確認の正しい手順(5ステップ)</h2>
+    <p>多くの人がつまずくのは<strong>ステップ2</strong>です。ここを飛ばすと、調べた結果が実際の対応状況とずれます。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">ドコモのサービスエリアマップを開く</div>
+        <p>ドコモ公式サイトの「サービスエリア」からエリアマップを開きます。スマホからでもPCからでも確認できます。</p>
+      </li>
+      <li>
+        <div class="steps__t">利用機種を「シャープ / home 5G HR02」に変更する</div>
+        <p><strong>ここが最重要です。</strong>エリアマップは機種ごとに対応する周波数帯が違うため、初期状態(スマホ)のまま調べると判定が変わります。「ご利用機種」の選択で<strong>メーカー:シャープ株式会社 → 機種名:home 5G HR02</strong>を選んでください。</p>
+      </li>
+      <li>
+        <div class="steps__t">設置する部屋の住所で検索する</div>
+        <p>「住所検索」に、実際に設置する建物の住所を入力します。建物単位で見るので、番地まで正確に入れてください。表示される色分けで<strong>5Gエリアか、4G LTEエリアか</strong>を確認します。</p>
+      </li>
+      <li>
+        <div class="steps__t">地図を拡大して「色ムラ」を見る</div>
+        <p>自宅のピンだけでなく、<strong>周囲50〜100mの範囲</strong>を拡大して見ます。自宅の点だけが色付きで周りが白い、あるいはエリアの縁ギリギリにある場合は、電波が弱い可能性が高いです。ここは地図の"点"ではなく"面"で読むのがコツです。</p>
+      </li>
+      <li>
+        <div class="steps__t">実地で電波を測る</div>
+        <p>地図はあくまで屋外の目安。<strong>設置予定の場所でドコモ回線のスマホの電波表示と実測速度を確認</strong>します(次章で具体的なやり方を解説します)。ドコモ回線を持っていない場合は、家族や友人のドコモ端末で測らせてもらうのが確実です。</p>
+      </li>
+    </ol>
+    <div class="box-memo">
+      <div class="box-memo__t">📞 ネットで判断できないときは</div>
+      <p style="margin:0;">高層階、地下、山あいなど地図だけでは判断が難しい場所は、ドコモインフォメーションセンターや店舗で住所を伝えて確認できます。「home 5G を設置したい」と伝えると、機種を前提にした案内が受けられます。</p>
+    </div>
+
+    <h2 id="zure">地図が「5G」でも遅い3つの理由</h2>
+    <p>エリアマップは<strong>「屋外で、その周波数の電波が届く見込みの範囲」</strong>を示したものです。自宅の中で出る速度を保証するものではありません。ずれる原因は主に3つです。</p>
+    <figure class="diagram">
+      <svg viewBox="0 0 800 320" role="img" aria-label="エリアマップの色と自宅の実効速度がずれる3つの理由の図。壁や窓による減衰、建物や地形による遮蔽、時間帯の混雑" style="width:100%;height:auto;display:block;background:#f4f8fe;border-radius:12px" font-family="'Noto Sans JP','Hiragino Sans',Meiryo,sans-serif">
+        <rect x="24" y="30" width="240" height="256" rx="16" fill="#ffffff" stroke="#dde5ef" stroke-width="2"/>
+        <text x="144" y="66" text-anchor="middle" font-size="17" font-weight="800" fill="#0b2c5f">理由1:減衰</text>
+        <rect x="60" y="96" width="60" height="120" rx="6" fill="#eef3fa" stroke="#c9d6e8" stroke-width="2"/>
+        <text x="90" y="164" text-anchor="middle" font-size="13" fill="#5f6b7a">壁</text>
+        <path d="M230 120 H128" stroke="#0e9f6e" stroke-width="6" stroke-linecap="round"/>
+        <path d="M56 120 H30" stroke="#d64545" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 6"/>
+        <text x="144" y="248" text-anchor="middle" font-size="13" fill="#5f6b7a">壁・断熱ガラスで</text>
+        <text x="144" y="268" text-anchor="middle" font-size="13" fill="#5f6b7a">電波が大きく弱まる</text>
+        <rect x="280" y="30" width="240" height="256" rx="16" fill="#ffffff" stroke="#dde5ef" stroke-width="2"/>
+        <text x="400" y="66" text-anchor="middle" font-size="17" font-weight="800" fill="#0b2c5f">理由2:遮蔽</text>
+        <rect x="300" y="120" width="46" height="96" rx="4" fill="#eef3fa" stroke="#c9d6e8" stroke-width="2"/>
+        <rect x="380" y="96" width="56" height="120" rx="4" fill="#e6ecf6" stroke="#c9d6e8" stroke-width="2"/>
+        <circle cx="482" cy="110" r="14" fill="#1558d6"/>
+        <text x="482" y="146" text-anchor="middle" font-size="12" fill="#5f6b7a">基地局</text>
+        <path d="M468 118 C 440 140, 420 150, 350 160" fill="none" stroke="#d64545" stroke-width="4" stroke-dasharray="6 6"/>
+        <text x="400" y="248" text-anchor="middle" font-size="13" fill="#5f6b7a">間に建物や地形があると</text>
+        <text x="400" y="268" text-anchor="middle" font-size="13" fill="#5f6b7a">エリア内でも届きにくい</text>
+        <rect x="536" y="30" width="240" height="256" rx="16" fill="#ffffff" stroke="#dde5ef" stroke-width="2"/>
+        <text x="656" y="66" text-anchor="middle" font-size="17" font-weight="800" fill="#0b2c5f">理由3:混雑</text>
+        <rect x="566" y="110" width="180" height="24" rx="8" fill="#e6f7f0"/>
+        <text x="566" y="102" font-size="12" fill="#0e9f6e">昼:空いている</text>
+        <rect x="566" y="164" width="180" height="24" rx="8" fill="#fdecec"/>
+        <text x="566" y="156" font-size="12" fill="#d64545">夜:同じ基地局に集中</text>
+        <circle cx="584" cy="176" r="7" fill="#d64545"/><circle cx="606" cy="176" r="7" fill="#d64545"/><circle cx="628" cy="176" r="7" fill="#d64545"/><circle cx="650" cy="176" r="7" fill="#d64545"/><circle cx="672" cy="176" r="7" fill="#d64545"/>
+        <circle cx="584" cy="122" r="7" fill="#0e9f6e"/>
+        <text x="656" y="248" text-anchor="middle" font-size="13" fill="#5f6b7a">基地局の容量を近隣と</text>
+        <text x="656" y="268" text-anchor="middle" font-size="13" fill="#5f6b7a">分け合うので夜は落ちる</text>
+      </svg>
+      <figcaption>エリアマップが示すのは「屋外の電波の届く範囲」。屋内の実効速度は、減衰・遮蔽・混雑の3つで削られます。</figcaption>
+    </figure>
+    <h3>理由1:壁と窓で電波が弱まる(減衰)</h3>
+    <p>5Gの高い周波数帯ほど直進性が強く、障害物に弱くなります。とくに<strong>Low-Eガラス(断熱・遮熱ガラス)は電波を大きく減衰させる</strong>ことで知られていて、新しめのマンションや戸建てほど影響を受けやすい傾向があります。鉄筋コンクリートの建物、地下の部屋も同様です。</p>
+    <h3>理由2:基地局との間に遮蔽物がある</h3>
+    <p>地図上ではエリア内でも、自宅と基地局の間に大きな建物や斜面があると電波は回り込みにくくなります。<strong>マンションの低層階で、目の前に別の建物が建っている</strong>ようなケースは要注意です。逆に高層階は見通しがよくなる一方、基地局のアンテナは地上向きに角度が付いていることが多いため、<strong>高すぎる階もかえって不利になる</strong>ことがあります。</p>
+    <h3>理由3:時間帯の混雑</h3>
+    <p>モバイル回線は<strong>1つの基地局の容量を近隣の利用者で分け合う</strong>仕組みです。昼は200Mbps出ていても、20〜23時は一桁台まで落ちることがあります。ホームルーターの評価が人によって極端に割れるのは、この差が大きいからです。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 「速度は最大◯Gbps」の表記について</div>
+      <p style="margin:0;">カタログの最大速度は理論値で、実際の環境で出る速度とは別物です。ホームルーター全体の実測は、条件がよい場所で<strong>下り100〜250Mbps前後</strong>が2026年時点の目安。この幅に収まれば十分に実用的ですが、夜間に一桁まで落ちる環境も現実にあります。</p>
+    </div>
+
+    <h2 id="jicchi">実地でできる電波チェック</h2>
+    <p>地図を見たら、次は実地です。ドコモ回線のスマホが1台あれば、申し込み前に精度の高い判断ができます。</p>
+    <div class="box-point">
+      <div class="box-point__t">✅ 設置予定の部屋でやる4つの確認</div>
+      <ul>
+        <li><strong>電波表示を見る</strong>:設置予定の窓際で「5G」と表示されるか、「4G」止まりかを確認。アンテナ本数もメモします</li>
+        <li><strong>時間帯を変えて2回測る</strong>:昼(13時前後)と夜(21時前後)の2回、速度測定サイトで実測します。<strong>夜の数値が本番</strong>です</li>
+        <li><strong>置き場所の候補で測り比べる</strong>:窓際・部屋の中央・別の部屋で測ると、10倍近く差が出ることがあります</li>
+        <li><strong>階数を確認する</strong>:マンションなら、同じ建物の別階に住む知人がいれば聞いてみる価値があります</li>
+      </ul>
+    </div>
+    <p>スマホの実測がそのままhome 5Gの速度になるわけではありません(据置型の端末は大きなアンテナを積んでいるぶん有利です)。ただし<strong>「スマホですら夜に1桁Mbps」なら、ホームルーターでも厳しい</strong>という判断は十分にできます。この足切りができるだけで、失敗はかなり減ります。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">ホームルーターの相談を受けるとき、私が最初にお願いするのは「夜9時に、置きたい部屋で速度を測って送ってください」です。地図やカタログを何時間眺めるより、この1枚のスクリーンショットのほうが判断材料になります。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="hoken">8日以内キャンセルを保険にする</h2>
+    <p>ここまでやっても、最終的な答えは<strong>実際に置いてみないと分かりません</strong>。だからこそ、制度を保険として使います。</p>
+    <p>home 5Gには<strong>初期契約解除制度(いわゆる8日以内キャンセル)</strong>が適用されます。契約書面を受け取った日から<strong>8日以内</strong>であれば、原則として違約金なしで解約できる制度です。「電波が悪かった」という理由でも使えるのがポイントです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>日数</th><th>やること</th><th>ポイント</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>0日目</th><td>端末が届いたら<strong>その日のうちに設置</strong></td><td class="best">日数のカウントは待ってくれません</td></tr>
+          <tr><th>1〜2日目</th><td>昼・夜の実測をそれぞれ記録</td><td>夜の数値を最重要で見ます</td></tr>
+          <tr><th>2〜4日目</th><td>置き場所を変えて再測定</td><td>窓際・高い位置・部屋の中央を試す</td></tr>
+          <tr><th>5〜6日目</th><td>実生活で使ってみる</td><td>Web会議・動画・ゲームなど普段の用途で</td></tr>
+          <tr><th>7〜8日目</th><td>継続か解除かを決める</td><td class="best">迷ったら期限内に解除するのが安全</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 「無料で試せる」わけではない点に注意</div>
+      <p style="margin:0;">初期契約解除でも、<strong>契約事務手数料や利用した分の料金、端末の返送費用は請求される</strong>ことがあります。金額と手続き方法は申し込み時に必ず確認してください。また、代理店経由の申し込みでは独自のキャンペーン特典の返還条件が別に定められている場合があります。</p>
+    </div>
+
+    <h2 id="hikaku">エリア判定の仕組みが違う3サービス</h2>
+    <p>ホームルーターの主要3サービスは、<strong>そもそもエリアの確認方法が違います</strong>。ここを知っておくと、比較検討がぐっと楽になります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>サービス</th><th>エリア確認の方法</th><th>判定の粒度</th><th>特徴</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ドコモ<br>home 5G</th>
+            <td>エリアマップの色で判断<br>(機種選択が必要)</td>
+            <td>面(色分け)</td>
+            <td>ドコモ回線を使う。4Gエリアも広く、エリア面では有利</td>
+          </tr>
+          <tr>
+            <th>WiMAX<br>(BIGLOBE等)</th>
+            <td class="best">住所単位のピンポイント判定</td>
+            <td class="best">点(◯△×で表示)</td>
+            <td>申込前に住所で判定結果が出る。プロバイダは自由に選べる</td>
+          </tr>
+          <tr>
+            <th>SoftBank Air</th>
+            <td>住所入力での提供可否判定</td>
+            <td>点(可否)</td>
+            <td>ソフトバンク/ワイモバイルのセット割が使える</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>「事前に住所でハッキリした判定が欲しい」ならWiMAXが圧倒的にやりやすい</strong>です。◯△×の形で結果が返ってくるので、迷いが減ります。一方home 5Gは、ドコモの4G/5Gエリアの広さそのものが強みで、<strong>地方や郊外ではhome 5Gだけがエリア内</strong>ということも珍しくありません。</p>
+    <p>なお、WiMAXは同じ回線をどのプロバイダで契約しても<strong>電波の入り方は同じ</strong>です。違うのは料金と特典だけなので、エリア判定さえ通れば<a href="wimax-provider">WiMAXプロバイダ比較</a>で条件のいい窓口を選べばよい、という構造になっています。</p>
+    <div class="cta">
+      <div class="cta__t">📡 住所で先に判定したいなら</div>
+      <p>WiMAXは申込前に住所単位のピンポイント判定ができます。判定が通れば、あとは料金と特典だけで窓口を選べます。</p>
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXでエリアを判定する<small>住所を入れるだけ・申込特典の条件も確認できます</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" alt="">
+      <a class="btn btn--sub" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2W6WEY+50+7LVLZM" rel="nofollow sponsored noopener" target="_blank">とくとくBBホームWi-Fiも比較する(ずっと定額タイプ)</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4BAH9H+2W6WEY+50+7LVLZM" alt="">
+      <a class="btn btn--sub" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2YKMU2+348K+2N9KIA" rel="nofollow sponsored noopener" target="_blank">ソフトバンク・ワイモバイルユーザーならSoftBank Air</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2YKMU2+348K+2N9KIA" alt="">
+      <!-- ドコモ home 5G はどのASPにも案件が無いため公式への通常リンク(nofollow)。提携審査中/未提携。承認後に差し替え -->
+      <a class="btn btn--sub" href="https://www.docomo.ne.jp/home_5g/" rel="nofollow noopener" target="_blank">ドコモ home 5Gの公式サイトを見る</a>
+      <p class="micro">※ 料金・キャンペーン・エリアの判定結果は時期によって変わります。申し込み前に各社公式サイトでご確認ください。</p>
+    </div>
+
+    <h2 id="kengai">エリア外・微妙だったときの選択肢</h2>
+    <p>調べた結果が「4Gエリアのみ」「エリアの縁」「夜だけ極端に遅い」だった場合の進み方です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>状況</th><th>おすすめの選択肢</th><th>理由</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>工事はできる</th>
+            <td class="best">光回線に切り替える</td>
+            <td>速度・安定性・夜間の落ちにくさで、モバイル系とは別次元。料金も大差ない</td>
+          </tr>
+          <tr>
+            <th>工事ができない(賃貸・大家NG)</th>
+            <td>他のホームルーターで再判定</td>
+            <td>使う電波が違うため、home 5GがダメでもWiMAXやSoftBank Airは通ることがある</td>
+          </tr>
+          <tr>
+            <th>短期間だけ使いたい</th>
+            <td>縛りなしのWiFiやレンタル</td>
+            <td>数ヶ月なら端末代の残債が発生しない契約形態が有利</td>
+          </tr>
+          <tr>
+            <th>ゲーム・Web会議が主用途</th>
+            <td>光回線一択に近い</td>
+            <td>モバイル回線はPingが不安定になりやすく、応答速度が求められる用途と相性が悪い</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>工事ができる住まいなら、正直なところ<strong>光回線のほうが総合的に有利</strong>です。月額もホームルーターと大きくは変わりません。工事の可否や配線方式の確認方法は<a href="kouji-dekinai-chintai">賃貸で光回線の工事ができないとき</a>にまとめています。用途がゲーム中心なら<a href="homerouter-game">ホームルーターでゲームはできる?</a>で実際のPingの傾向を確認してください。据置型とモバイル型で迷っている場合は<a href="wimax-vs-homerouter">WiMAXは据置型とモバイル型どっち?</a>が判断材料になります。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>エリアマップで機種を変えないとどうなりますか?</summary>
+        <div class="faq__a">機種ごとに対応する周波数帯が異なるため、スマホの初期設定のまま調べると、home 5G HR02での実際の対応状況とずれることがあります。メーカーをシャープ、機種名を home 5G HR02 に変更してから住所を検索してください。</div>
+      </details>
+      <details>
+        <summary>5Gエリア外でもhome 5Gは使えますか?</summary>
+        <div class="faq__a">使えます。5Gエリア外でも4G LTEで通信できる設計です。ただし速度は5G時と比べて落ちるため、4Gエリアのみの場所で契約する場合は「光回線並みの速度」は期待しないほうが安全です。</div>
+      </details>
+      <details>
+        <summary>設置場所は自由に変えられますか?</summary>
+        <div class="faq__a">部屋の中での移動は自由ですが、<strong>登録した設置場所以外での利用は規約で認められていません</strong>。引越しの際は住所変更の手続きが必要で、移転先がエリア外だと使えなくなります。持ち歩いて使いたい場合はモバイルルーター型を選んでください。</div>
+      </details>
+      <details>
+        <summary>速度が出ないとき、置き場所でどれくらい変わりますか?</summary>
+        <div class="faq__a">大きく変わります。窓際で基地局の方向に近い位置、床から1m以上の高さ、金属や家電から離す、という3点を守るだけで数倍改善することがあります。まず置き場所を試し尽くしてから、解約を検討してください。</div>
+      </details>
+      <details>
+        <summary>home 5GとWiMAX、どちらが速いですか?</summary>
+        <div class="faq__a">2026年時点の実測の集計では、条件のよい環境ではWiMAXの最新機種がやや優勢という結果もありますが、差は環境による変動幅に埋もれる程度です。<strong>「どちらが速いか」より「自分の家でどちらが繋がるか」で選ぶ</strong>のが正解です。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:地図で足切り、実地で判断、制度で保険</h2>
+    <ul>
+      <li>エリアマップは<strong>機種を home 5G HR02 に変えてから</strong>住所を検索する</li>
+      <li>地図は点ではなく<strong>面(周囲の色ムラ)</strong>で読む</li>
+      <li>地図が5Gでも<strong>減衰・遮蔽・混雑</strong>で実効速度は落ちる。屋内の速度は保証されない</li>
+      <li>ドコモ回線のスマホで<strong>設置予定の場所を昼と夜に実測</strong>する。夜の数値が本番</li>
+      <li>最後は<strong>8日以内キャンセル(初期契約解除)</strong>を保険に、届いた当日から検証を始める</li>
+      <li>住所単位でハッキリ判定したいなら<strong>WiMAXのピンポイント判定</strong>が使いやすい</li>
+      <li>工事ができる住まいなら、<strong>光回線のほうが総合的に有利</strong></li>
+    </ul>
+    <p>ホームルーター全体の比較は<a href="home-router">工事不要WiFiおすすめ比較</a>に、光回線と並べた判断は<a href="hikari-osusume">光回線おすすめ7社比較</a>にまとめています。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li><a href="https://www.docomo.ne.jp/area/" target="_blank" rel="nofollow noopener">NTTドコモ サービスエリアマップ</a>(2026年9月確認)</li>
+        <li><a href="https://www.docomo.ne.jp/home_5g/" target="_blank" rel="nofollow noopener">NTTドコモ home 5G 公式サイト</a> 料金・提供条件(2026年9月確認)</li>
+        <li>総務省「電気通信事業法に基づく初期契約解除制度」に関する公開資料</li>
+        <li><a href="https://www.uqwimax.jp/" target="_blank" rel="nofollow noopener">UQコミュニケーションズ</a> WiMAXのピンポイントエリア判定(2026年9月確認)</li>
+        <li>実測値の傾向は各社公表値および一般に公開されている速度計測サービスの集計値を参照した目安です</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|回線オタク・実測データ収集家</div>
+      <p>光回線とホームルーターを自分で契約しては実測するのが習慣になり、家族や友人の回線相談を何十件も受けてきました。ホームルーターは「調べ方」で結果が変わる商材なので、手順を細かく書くようにしています。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="home-router">工事不要WiFiおすすめ比較|ホームルーターの選び方</a></li>
+      <li><a href="wimax-area">WiMAXのエリア確認方法|ピンポイント判定と圏外時の代替</a></li>
+      <li><a href="wimax-vs-homerouter">WiMAXは据置型とモバイル型どっち?|選び分けの基準</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>「回線選びで失敗しない」ために、公式の料金と実測データ、実際の使用経験にもとづく比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較と、仕事の辞め方の実務ガイド</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260904b" defer></script>
+</body>
+</html>

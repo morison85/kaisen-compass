@@ -5,8 +5,29 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 04 Sep 2026 00:40:08 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>LINEMO乗り換えキャンペーンの条件と実質月額 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/linemo-norikae</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/linemo-norikae</guid>
+    <pubDate>Fri, 04 Sep 2026 12:00:00 +0900</pubDate>
+    <description>LINEMOの乗り換えキャンペーンは「後払いの割引」。PayPayポイントの付与が約7ヶ月後・コード受領から30日で失効という2段構えの条件を時系列で整理し、特典を月割りした実質月額でahamo・UQモバイルと比較します。対象外になる乗り換え元も明記。</description>
+  </item>
+  <item>
+    <title>ドコモhome 5Gのエリア確認方法|地図が5Gでも遅い理由 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/home5g-area</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/home5g-area</guid>
+    <pubDate>Fri, 04 Sep 2026 12:00:00 +0900</pubDate>
+    <description>ドコモhome 5Gのエリア確認は、サービスエリアマップで機種にhome 5G HR02を選ぶのが正解。地図が5G色でも自宅で出ない3つの理由、8日以内キャンセル(初期契約解除)を試用として使う手順、エリア判定の仕組みが違うWiMAX・SoftBank Airとの比較まで解説します。</description>
+  </item>
+  <item>
+    <title>ひかり電話は必要?不要?|月550円の損益分岐と番号の残し方 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-denwa-hitsuyou</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-denwa-hitsuyou</guid>
+    <pubDate>Fri, 04 Sep 2026 12:00:00 +0900</pubDate>
+    <description>ひかり電話が必要かを「番号を使うか・残すか」の2軸で判定。月550円と加入電話1,870円の差、全国一律8.8円/3分の通話料、番号を引き継ぐ条件、アナログ電話の終了スケジュール、意外な必須ケース(セット割・FAX・停電)まで整理します。</description>
+  </item>
   <item>
     <title>IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/ipv6-ipoe</link>
