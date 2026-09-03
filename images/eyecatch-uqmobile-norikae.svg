@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="UQモバイルへの乗り換え手順と自宅セット割の組み方" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:スマホと家がつながるイラスト -->
+  <g transform="translate(880, 335) scale(0.9)">
+    <rect x="30" y="120" width="110" height="180" rx="16" fill="#ffffff"/>
+    <rect x="44" y="140" width="82" height="130" rx="6" fill="#9fc1f5"/>
+    <circle cx="85" cy="286" r="8" fill="#0b2c5f"/>
+    <path d="M162 215 H196" stroke="#ffd76a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M180 197 L198 215 L180 233" fill="none" stroke="#ffd76a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M225 195 L280 150 L335 195 V300 H225 Z" fill="#ffffff"/>
+    <rect x="263" y="240" width="34" height="60" rx="4" fill="#9fc1f5"/>
+    <circle cx="280" cy="126" r="16" fill="#ffd76a"/>
+  </g>
+
+  <rect x="70" y="80" width="300" height="56" rx="28" fill="#ffd76a"/>
+  <text x="220" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">セット割も忘れずに</text>
+
+  <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">UQモバイル</text>
+  <text x="70" y="360" font-size="80" font-weight="800" fill="#ffd76a">乗り換え手順</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">ワンストップの条件と、自宅セット割の組み方</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

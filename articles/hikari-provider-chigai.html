@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>光回線とプロバイダの違い|契約3パターンと選び方 | 回線コンパス</title>
+<meta name="description" content="光回線とプロバイダの違いを、電気の「送電線と電力会社」にたとえて整理。契約形態は分離型・一体型・選択型の3パターンあり、自分がどれかで請求も乗り換え手順も変わります。プロバイダで実際に変わる3つの要素まで解説。2026年9月時点の情報です。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/hikari-provider-chigai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="光回線とプロバイダの違い【2026年】契約3パターンと、選ぶときに本当に効く3要素">
+<meta property="og:description" content="回線事業者とISPの役割分担、分離型・一体型・選択型の見分け方、プロバイダ選びで実際に変わる3つのことを整理。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/hikari-provider-chigai">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-provider-chigai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-03">
+<meta property="article:modified_time" content="2026-09-03">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-provider-chigai.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260830z">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "光回線とプロバイダの違い【2026年】契約3パターンと、選ぶときに本当に効く3要素",
+  "description": "回線事業者とプロバイダ(ISP)の役割の違い、契約形態3パターンの見分け方、プロバイダ選びで実際に変わる要素を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-hikari-provider-chigai.png",
+  "author": { "@type": "Person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-03",
+  "dateModified": "2026-09-03",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/hikari-provider-chigai"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "光回線とプロバイダは何が違うのですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "光回線は自宅までデータを運ぶ物理的な道、プロバイダ(ISP)はその道をインターネットにつなぐ出入口です。電気にたとえると、光回線が送電線、プロバイダが電力会社にあたります。どちらか一方だけではインターネットは使えません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "自分がプロバイダをどこと契約しているか分からないときは?",
+      "acceptedAnswer": { "@type": "Answer", "text": "毎月の請求が1件だけなら一体型または選択型で、回線事業者の請求にプロバイダ料金が含まれています。請求が2件に分かれていれば分離型で、もう一方の請求元がプロバイダです。フレッツ光の契約書やルーターの接続設定に記載されたIDの形式でも判別できます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "プロバイダを変えると速くなりますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "夜だけ遅い症状なら改善する可能性があります。接続方式がPPPoEのままだと混雑ポイントを通るため、IPv6 IPoEに対応したプロバイダへ変えると体感が変わることがあります。一方、配線方式がVDSLである、ルーターが古いなど別の原因の場合は、プロバイダを変えても改善しません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "プロバイダだけを変更することはできますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "分離型(フレッツ光など)なら、回線をそのままにプロバイダだけ変更できます。一体型の光コラボでは、プロバイダは回線とセットのため単独では変更できず、回線ごと乗り換えることになります。選択型は事業者内での変更手続きが用意されている場合があります。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "光回線とプロバイダの違い" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>光回線とプロバイダの違い</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">光回線とプロバイダの違い【2026年】契約3パターンと、選ぶときに本当に効く3要素</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-03">2026年9月3日</time></span>
+      <span>公開日:<time datetime="2026-09-03">2026年9月3日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-hikari-provider-chigai.svg" alt="光回線とプロバイダの違いを図解で整理" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「光回線」と「プロバイダ」。申し込みの画面では並んで出てくるのに、違いを説明できる人は多くありません。しかもこの2つ、<strong>分かっていないと困る場面が3つだけ、はっきり存在します</strong>。速度トラブルの原因を切り分けるとき、乗り換えの手続きをするとき、そして請求額の内訳を確認するときです。</p>
+    <p>この記事では用語の解説にとどまらず、<strong>「自分の契約がどのパターンか」を5分で判定する手順</strong>まで用意しました。ここが分かると、回線まわりの話が一気に整理されます。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p><strong>光回線=自宅までデータを運ぶ「道」、プロバイダ=その道をインターネットにつなぐ「出入口」</strong>です。電気でいえば送電線と電力会社の関係で、どちらか一方だけでは通信できません。そして2026年現在、多くの人は<strong>両方をまとめて1社と契約する「一体型」</strong>を使っています。プロバイダ選びで実際に変わるのは、<strong>①接続方式(IPv6 IPoEの有無)②実質料金 ③特典</strong>の3つだけ。この3つ以外はあまり気にしなくて構いません。</p>
+    </div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#yakuwari">役割の違いを「電気」で理解する</a></li>
+        <li><a href="#pattern">契約は3パターンある(分離型・一体型・選択型)</a></li>
+        <li><a href="#hantei">自分がどれかを5分で判定する</a></li>
+        <li><a href="#kawaru">プロバイダで実際に変わる3つのこと</a></li>
+        <li><a href="#erabikata">プロバイダの選び方</a></li>
+        <li><a href="#henkou">プロバイダだけを変更したいとき</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">結局どこを選べばいいのか、から入りたいなら</p>
+      <p>用語よりも先に候補を絞りたい人は、こちらのほうが早いです。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="yakuwari">役割の違いを「電気」で理解する</h2>
+    <p>いちばん腑に落ちやすいのは、電気のたとえです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>役割</th><th>インターネット</th><th>電気にたとえると</th><th>具体例</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>設備を持つ側</th>
+            <td>回線事業者</td>
+            <td>送電線・電柱を持つ会社</td>
+            <td>NTT東日本/西日本、KDDI、ソニーネットワークコミュニケーションズ、電力系各社</td>
+          </tr>
+          <tr>
+            <th>つなぐ側</th>
+            <td>プロバイダ(ISP)</td>
+            <td>電力会社(小売)</td>
+            <td>GMOとくとくBB、BIGLOBE、So-net、@nifty、OCN など</td>
+          </tr>
+          <tr>
+            <th>利用者がやること</th>
+            <td>両方の契約が必要</td>
+            <td>両方あって初めて電気が使える</td>
+            <td class="best">現在は1社にまとめられる形が主流</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>回線事業者が用意するのは、あくまで<strong>自宅から通信網までの物理的な道</strong>です。光ファイバーを引き、自宅にONU(回線終端装置)を設置するところまで。しかし道があるだけでは、インターネットという広大なネットワークには出られません。</p>
+    <p>そこでプロバイダが、<strong>その道をインターネット本体に接続し、利用者にIPアドレスを割り当てる</strong>役目を担います。IPアドレスはネット上の住所にあたるもので、これがないとWebサイトを見ることも、メールを送ることもできません。</p>
+    <div class="box-memo">
+      <div class="box-memo__t">🧭 「フレッツ光」がプロバイダではない理由</div>
+      <p style="margin:0;">フレッツ光はNTT東日本・西日本が提供する<strong>回線サービス</strong>であって、プロバイダではありません。だからフレッツ光を契約した人は、別途プロバイダを自分で選んで契約する必要がありました。「フレッツ光を契約したのにネットが使えない」という古典的なつまずきは、これが原因です。</p>
+    </div>
+
+    <h2 id="pattern">契約は3パターンある(分離型・一体型・選択型)</h2>
+    <p>ここが本題です。回線とプロバイダの契約の仕方には、大きく3つの形があります。<strong>自分がどれに当てはまるかで、請求の見え方も乗り換え手順も変わります</strong>。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>パターン</th><th>契約先</th><th>請求</th><th>代表例</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>① 分離型</th>
+            <td>回線事業者とプロバイダを別々に契約</td>
+            <td>2件に分かれる</td>
+            <td>フレッツ光 + 好きなプロバイダ</td>
+          </tr>
+          <tr>
+            <th>② 一体型</th>
+            <td class="best">1社とだけ契約(プロバイダ込み)</td>
+            <td class="best">1件にまとまる</td>
+            <td>ソフトバンク光、GMOとくとくBB光、NURO光、電力系回線</td>
+          </tr>
+          <tr>
+            <th>③ 選択型</th>
+            <td>1社と契約するが、プロバイダは自分で選ぶ</td>
+            <td>1件にまとまる</td>
+            <td>ドコモ光、auひかり(一部)、ビッグローブ光の一部プラン</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>① 分離型:選択の自由が大きいが手間も大きい</h3>
+    <p>かつての標準形です。フレッツ光を契約し、プロバイダは自分で好きなところを選ぶ。プロバイダを気に入らなければそこだけ変えられる自由度がありますが、<strong>請求が2件に分かれ、トラブル時の問い合わせ先も2つ</strong>になります。「回線に聞いたらプロバイダだと言われ、プロバイダに聞いたら回線だと言われる」というたらい回しは、この構造から生まれます。</p>
+
+    <h3>② 一体型:2026年の主流</h3>
+    <p>光コラボレーション(光コラボ)や独自回線の多くがこの形です。NTTのフレッツ網を各事業者が借り受け、プロバイダ機能とセットで提供します。<strong>契約先が1社、請求も1件、問い合わせ窓口も1つ</strong>。分かりやすさが最大の利点です。</p>
+    <p>デメリットもあります。<strong>プロバイダだけを変えることができません</strong>。プロバイダの接続方式や品質に不満があっても、変えるには回線ごと乗り換えるしかない。ただし光コラボ同士なら「事業者変更」という工事不要の手続きで移れるため、実務上のハードルはそれほど高くありません。手順は<a href="jigyousha-henkou">事業者変更承諾番号の取り方</a>にまとめています。</p>
+
+    <h3>③ 選択型:1契約なのにプロバイダは選べる</h3>
+    <p>ドコモ光が代表例です。契約はドコモ1社ですが、プロバイダは提携リストから自分で選びます。しかも<strong>選んだプロバイダによって月額料金が変わる</strong>設計になっており、大手を含む多くのプロバイダから選べる「タイプA」と、対象が少数に限られる「タイプB」で月額に220円ほどの差が付きます。</p>
+    <p>速度も提供エリアもタイプによる違いはないため、<strong>特に理由がなければ月額の安いタイプAから選ぶ</strong>のが基本です。この「同じサービスなのに窓口で条件が変わる」構造は、auひかりの申し込み窓口にも似た話があります(<a href="auhikari-dairiten">auひかりの窓口・代理店比較</a>)。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">回線の相談を受けるとき、最初に聞くのが「請求は何件来ていますか」です。この一問で契約パターンがほぼ絞れて、そのあとの話が一気に速くなります。用語から入るより、請求書から入るほうが確実だと感じています。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="hantei">自分がどれかを5分で判定する</h2>
+    <p>専門知識は要りません。次の順に確認してください。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">毎月の請求が何件来ているか数える</div>
+        <p>クレジットカードの明細か、口座の引き落とし履歴を見ます。<strong>通信関係の引き落としが2件あれば分離型</strong>。1件だけなら一体型か選択型です。</p>
+      </li>
+      <li>
+        <div class="steps__t">1件だった場合、その事業者名を確認する</div>
+        <p>ソフトバンク光・GMOとくとくBB光・NURO光・eo光などなら<strong>一体型</strong>。ドコモ光なら<strong>選択型</strong>で、契約時に選んだプロバイダ名が契約書類のどこかに書かれています。</p>
+      </li>
+      <li>
+        <div class="steps__t">プロバイダ名が思い出せないときは、契約書類かマイページを見る</div>
+        <p>「接続ID」「認証ID」といった項目に、@のあとにプロバイダのドメインが入っています。たとえば @nifty、@gmobb.jp のような形です。ここでプロバイダ名が確定します。</p>
+      </li>
+      <li>
+        <div class="steps__t">接続方式(IPv6 IPoEかPPPoEか)を確認する</div>
+        <p>プロバイダのマイページで「IPv6接続」「IPoE」「v6プラス」といった項目の申し込み状況を見ます。<strong>ここがオフのままだと、夜だけ遅い原因になります</strong>。名称はプロバイダによって違うので、それらしい項目を探してください。</p>
+      </li>
+    </ol>
+    <div class="box-point">
+      <div class="box-point__t">✅ 判定結果でやることが変わる</div>
+      <ul>
+        <li><strong>分離型</strong> → プロバイダだけ変更できる。一体型の光コラボへ「転用」して1本化するのも有力</li>
+        <li><strong>一体型</strong> → プロバイダ単独の変更は不可。不満があれば事業者変更で回線ごと移る</li>
+        <li><strong>選択型</strong> → 事業者内でプロバイダを変更できる場合がある。まず窓口に確認</li>
+        <li><strong>どのパターンでも</strong> → IPv6 IPoEがオフなら、まずそこをオンにする</li>
+      </ul>
+    </div>
+
+    <h2 id="kawaru">プロバイダで実際に変わる3つのこと</h2>
+    <p>プロバイダを比較する記事はたくさんありますが、実際に体感や家計に効くのは次の3つに絞られます。逆に言えば、<strong>それ以外の項目で悩む時間はもったいない</strong>ということです。</p>
+
+    <h3>1. 接続方式(IPv6 IPoEに対応しているか)</h3>
+    <p>これが最大の差です。従来のPPPoE方式は、通信が「網終端装置」という設備を必ず通る構造で、利用者が増える夜間にそこが渋滞します。<strong>回線が1Gbpsでも、夜に数十Mbpsまで落ちる原因の多くはこれ</strong>です。</p>
+    <p>IPv6 IPoE方式(v6プラス、transix、クロスパスなど、呼び名はプロバイダごとに違います)はこの混雑ポイントを通らないため、夜間の落ち込みが起きにくくなります。確認すべきは3点です。</p>
+    <ul>
+      <li>そのプロバイダが<strong>IPv6 IPoEに対応しているか</strong></li>
+      <li>対応が<strong>標準か、別途申し込みが必要か</strong>(申し込み制だと、契約しただけでは有効になりません)</li>
+      <li><strong>対応ルーターが必要か、レンタルがあるか</strong>(手持ちの古いルーターでは機能しないことがあります)</li>
+    </ul>
+    <p>症状別の切り分け方は<a href="hikari-osoi">光回線が遅いときの原因と直し方</a>で詳しく扱っています。マンションで遅い場合は配線方式が原因のこともあるため、<a href="mansion-internet">マンションのネットが遅い原因と解決策</a>もあわせて確認してください。</p>
+
+    <h3>2. 実質料金(月額 + 特典 + 工事費)</h3>
+    <p>プロバイダによって月額が変わるのは、主に選択型と分離型です。一体型では回線料金に含まれているため、比較すべきは<strong>「回線ごとの実質総額」</strong>になります。計算式はシンプルです。</p>
+    <div class="box-point">
+      <div class="box-point__t">🧮 実質総額の出し方</div>
+      <ul>
+        <li><strong>(月額 × 契約予定の月数)+ 事務手数料 + 工事費 − キャッシュバック − 割引の合計</strong></li>
+        <li>これを月数で割ると「実質月額」になる</li>
+        <li>比較する期間は<strong>全社そろえる</strong>(2年なら全部2年で計算する)</li>
+      </ul>
+    </div>
+    <p>ここで多いのが、キャッシュバックの金額だけを見て決めてしまう失敗です。受け取りが1年後で条件が複雑な5万円より、受け取りが早く条件のシンプルな3万円のほうが、実際に手元に残る額は多くなることがあります。初期費用の内訳は<a href="hikari-shokihiyou">光回線の初期費用と工事費</a>、キャッシュバックの落とし穴は<a href="hikari-cashback">乗り換え完全ガイド</a>にまとめました。</p>
+
+    <h3>3. 特典・付帯サービス</h3>
+    <p>Wi-Fiルーターの無料レンタル、セキュリティソフト、訪問サポートなど。これらは<strong>「自分が実際に使うものだけ」を評価</strong>してください。使わないオプションの価値を加味して選ぶと、判断がゆがみます。</p>
+    <p>実用的に効きやすいのは、IPv6対応ルーターの無料レンタルです。市販で買えば数千円〜1万円台の出費になるため、レンタルがあるプロバイダは実質的に安くなります。</p>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 逆に、あまり気にしなくていいこと</div>
+      <p style="margin:0;">プロバイダのメールアドレス、独自のポータルサイト、会員向けコンテンツ。これらを判断材料にする必要はほとんどありません。特にプロバイダのメールアドレスは、<strong>乗り換えのたびに使えなくなる</strong>という重い制約が付くため、重要な連絡先には最初からフリーメールを使うほうが後々ラクです。</p>
+    </div>
+
+    <h2 id="erabikata">プロバイダの選び方</h2>
+    <p>ここまでを踏まえると、選び方は次の順番に整理できます。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">まず回線を決める(プロバイダより先)</div>
+        <p>速度の土台を決めるのは回線側です。独自回線が使えるならそれが有利、使えないなら光コラボをスマホのセット割で選ぶ。この順番は変わりません。詳しくは<a href="hikari-osusume">光回線おすすめ7社比較</a>で。</p>
+      </li>
+      <li>
+        <div class="steps__t">一体型なら、プロバイダ選びは終わっている</div>
+        <p>回線を決めた時点でプロバイダも決まります。あとは接続方式が標準でIPv6 IPoEになっているかだけ確認します。</p>
+      </li>
+      <li>
+        <div class="steps__t">選択型なら、料金の安いタイプからIPv6対応で絞る</div>
+        <p>ドコモ光ならタイプAの中から、IPv6 IPoE標準対応かつルーターレンタルがあるプロバイダを選ぶのが定石です。</p>
+      </li>
+      <li>
+        <div class="steps__t">分離型なら、この機会に一体型へ寄せる</div>
+        <p>フレッツ光+別プロバイダの構成は、請求も窓口も二重で、料金面でも不利になりがちです。<strong>「転用」の手続きで、工事なしのまま光コラボへ移せます</strong>。</p>
+      </li>
+    </ol>
+
+    <div class="cta">
+      <div class="cta__t">💡 プロバイダ込み・縛りなしで組みたいなら</div>
+      <p>回線とプロバイダが一体で、解約違約金なし。IPv6 IPoE対応で、対応ルーターのレンタルもあります。</p>
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金を見る<small>キャッシュバック・縛りなしの詳細はこちら</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+      <p class="micro">※ キャッシュバックの受け取り時期と申請方法は<a href="gmohikari-campaign">GMOとくとくBB光のキャンペーン解説</a>で確認できます。</p>
+    </div>
+
+    <div class="cta">
+      <div class="cta__t">📶 au・UQユーザーで、セット割も取りたいなら</div>
+      <p>プロバイダ一体型の光コラボ。au/UQ両方のセット割に対応しており、全国のほとんどの住所で申し込めます。</p>
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+1824BE+3HKU+1BMW42" rel="nofollow sponsored noopener" target="_blank">ビッグローブ光のキャンペーンを見る<small>au・UQユーザーの割引額を確認できます</small></a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BAH9H+1824BE+3HKU+1BMW42" alt="">
+      <p class="micro">※ 割引額と加入条件は<a href="biglobehikari-au-setwari">ビッグローブ光のセット割ガイド</a>で詳しく解説しています。</p>
+    </div>
+
+    <h2 id="henkou">プロバイダだけを変更したいとき</h2>
+    <p>「回線はそのままで、プロバイダだけ変えたい」というニーズは、主に速度改善が目的でしょう。可否はパターンによって変わります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>パターン</th><th>プロバイダ単独の変更</th><th>手順の概要</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>分離型</th>
+            <td class="best">できる</td>
+            <td>新プロバイダに申し込み → 接続設定を変更 → 旧プロバイダを解約</td>
+          </tr>
+          <tr>
+            <th>一体型</th>
+            <td>できない</td>
+            <td>事業者変更または新規契約で、回線ごと乗り換える</td>
+          </tr>
+          <tr>
+            <th>選択型</th>
+            <td>事業者による</td>
+            <td>回線事業者の窓口で変更手続き。手数料がかかる場合あり</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>分離型で変更する場合の注意点は2つ。<strong>①新旧の契約が重なる月は二重で料金が発生する ②旧プロバイダのメールアドレスは使えなくなる</strong>。前者は「新プロバイダの接続を確認してから旧を解約する」という順番を守れば、重複は最小限で済みます。この「先に新、後で旧」の原則は、回線の乗り換えとまったく同じです。</p>
+    <p>なお、変更前に一度試してほしいことがあります。<strong>今のプロバイダでIPv6 IPoEの申し込みができないか</strong>の確認です。対応しているのに申し込んでいないだけ、というケースは珍しくありません。この場合、プロバイダを変えずに無料で改善できます。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>光回線とプロバイダ、どちらを先に決めるべきですか?</summary>
+        <div class="faq__a">回線が先です。速度の土台と提供エリアを決めるのは回線側で、プロバイダはその上に乗るものだからです。2026年現在は一体型が主流なので、回線を決めた時点でプロバイダも決まることがほとんどです。</div>
+      </details>
+      <details>
+        <summary>プロバイダを変えると速くなりますか?</summary>
+        <div class="faq__a">夜だけ遅い症状なら改善の可能性があります。接続方式がPPPoEのままだと混雑ポイントを通るためです。一方、配線方式がVDSL、ルーターが古い、Wi-Fiの電波が届いていないなど別の原因なら、プロバイダを変えても改善しません。まず原因の切り分けを。</div>
+      </details>
+      <details>
+        <summary>プロバイダ料金の相場はいくらですか?</summary>
+        <div class="faq__a">分離型でプロバイダを単独契約する場合、月1,000円前後が一つの目安です。一体型では回線料金に含まれているため、単独の金額は表示されません。比較するなら回線込みの実質総額で見てください。</div>
+      </details>
+      <details>
+        <summary>プロバイダのメールアドレスは引き継げますか?</summary>
+        <div class="faq__a">原則として引き継げません。プロバイダによっては、解約後もメールだけを有料で継続できるサービスを用意している場合があります。長期的には、フリーメールへ移行しておくほうが乗り換えのたびの手間がなくなります。</div>
+      </details>
+      <details>
+        <summary>ホームルーターやWiMAXにもプロバイダはありますか?</summary>
+        <div class="faq__a">あります。WiMAXは回線設備が全社共通で、契約先のプロバイダによって料金と特典だけが変わる構造です。速度は同じなので選ぶ基準は実質月額になります。詳しくは<a href="wimax-provider">WiMAXプロバイダ比較</a>で解説しています。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:分かるべきは「自分がどのパターンか」だけ</h2>
+    <ul>
+      <li>光回線は<strong>道</strong>、プロバイダは<strong>インターネットへの出入口</strong>。両方ないと通信できない</li>
+      <li>契約形態は<strong>分離型・一体型・選択型</strong>の3つ。請求の件数で判定できる</li>
+      <li>プロバイダで実際に変わるのは<strong>接続方式・実質料金・特典</strong>の3つだけ</li>
+      <li>最重要は<strong>IPv6 IPoEに対応しているか、標準で有効か</strong></li>
+      <li>選ぶ順番は<strong>回線が先、プロバイダは後</strong>。一体型なら回線を決めた時点で終わる</li>
+    </ul>
+    <p>回線から具体的に選びたいなら<a href="hikari-osusume">光回線おすすめ7社比較</a>へ。戸建てなら<a href="kodate-hikari">戸建ての光回線おすすめ比較</a>、工事ができない住まいなら<a href="home-router">工事不要WiFi比較</a>が近い内容です。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>NTT東日本・NTT西日本 公式サイト フレッツ光および光コラボレーションモデルの提供形態に関する案内(2026年9月確認)</li>
+        <li>各プロバイダ公式サイト IPv6 IPoE(v6プラス等)の提供条件・対応機器の案内(2026年9月確認)</li>
+        <li>NTTドコモ 公式サイト ドコモ光のプロバイダタイプ別料金(2026年9月確認)</li>
+        <li>総務省「情報通信白書」 — 国内ブロードバンドの契約構造に関する統計</li>
+      </ul>
+      <p class="micro">※ 料金・提供条件は変動します。記載内容は2026年9月時点の目安であり、申し込み前に必ず各社公式サイトで最新の条件をご確認ください。</p>
+    </div>
+  </div>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="hikari-osusume">光回線おすすめ7社比較【2026年8月】迷わない選び方を図解でやさしく解説</a></li>
+      <li><a href="hikari-osoi">光回線が遅いときの原因と直し方|5分の切り分け手順とIPv6 IPoEへの切り替え</a></li>
+      <li><a href="jigyousha-henkou">事業者変更承諾番号の取り方【2026年】光コラボ間の乗り換え手順と15日ルール</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260830z" defer></script>
+</body>
+</html>

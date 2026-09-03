@@ -37,6 +37,10 @@
 - [2026年のネット回線 値上げまとめ](https://kaisen-compass.com/articles/neage-2026): WiMAX各社が10月に月330〜630円、SoftBank Airが12月に月330円の改定。窓口別の改定額と違約金なし解約の確認手順。
 - [光回線の初期費用と工事費](https://kaisen-compass.com/articles/hikari-shokihiyou): 事務手数料3,300円＋工事費が基本。「実質無料」の仕組みと途中解約時の残債、総額の計算式を解説。
 
+- [UQモバイルへの乗り換え手順](https://kaisen-compass.com/articles/uqmobile-norikae): MNPワンストップで予約番号は原則不要。自宅セット割はネット回線側から先に設計するのが取りこぼしを防ぐ順番。
+- [NURO光がエリア外だったときの代替回線](https://kaisen-compass.com/articles/nurohikari-area-gai): エリア外は県単位・番地単位・建物単位の3種類。速さの本質はNTT網を通らない独自回線かどうか。
+- [光回線とプロバイダの違い](https://kaisen-compass.com/articles/hikari-provider-chigai): 回線は道、プロバイダは出入口。契約は分離型・一体型・選択型の3パターンで、請求の件数から判定できる。
+
 ## サイト情報
 
 - [運営者情報](https://kaisen-compass.com/about)
