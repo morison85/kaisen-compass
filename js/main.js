@@ -90,6 +90,59 @@
     }
   }
 
+  (function stickyCta() {
+  // モバイル固定CTAバー(記事ページ・本文中の最初の広告ボタンを再掲)
+  // ※ PCでは表示しない。閉じたらそのセッション中は出さない
+  var artBody = document.querySelector(".article-body");
+  var primary = null;
+  if (artBody) {
+    var cands = artBody.querySelectorAll('a.btn--cv[rel~="sponsored"]');
+    for (var ci = 0; ci < cands.length; ci++) {
+      if (/a8\.net|moshimo\.com|valuecommerce\.com/.test(cands[ci].getAttribute("href") || "")) { primary = cands[ci]; break; }
+    }
+  }
+  var closedKey = "stickycta-closed";
+  var stickyClosed = false;
+  try { stickyClosed = sessionStorage.getItem(closedKey) === "1"; } catch (e) {}
+  if (primary && !stickyClosed) {
+    var clone = primary.cloneNode(true);
+    var smalls = clone.querySelectorAll("small, img");
+    for (var i = 0; i < smalls.length; i++) smalls[i].parentNode.removeChild(smalls[i]);
+    var label = (primary.getAttribute("data-sticky") || clone.textContent || "").replace(/\s+/g, " ").trim();
+    if (label.length > 24) label = label.slice(0, 23) + "…";
+    var bar = document.createElement("div");
+    bar.className = "stickycta";
+    bar.setAttribute("role", "complementary");
+    bar.setAttribute("aria-label", "この記事のおすすめ");
+    bar.innerHTML = '<span class="stickycta__pr">PR</span>' +
+      '<a class="stickycta__btn" rel="nofollow sponsored noopener" target="_blank"></a>' +
+      '<button type="button" class="stickycta__close" aria-label="閉じる">×</button>';
+    var link = bar.querySelector(".stickycta__btn");
+    link.href = primary.getAttribute("href");
+    link.textContent = label;
+    document.body.appendChild(bar);
+    document.body.classList.add("has-stickycta");
+    var footer = document.querySelector("footer");
+    var update = function () {
+      var y = window.scrollY;
+      var r = primary.getBoundingClientRect();
+      var vh = window.innerHeight;
+      var inView = r.top < vh && r.bottom > 0;
+      var nearEnd = footer && footer.getBoundingClientRect().top < vh + 80;
+      bar.classList.toggle("is-on", y > 480 && !inView && !nearEnd);
+    };
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+    bar.querySelector(".stickycta__close").addEventListener("click", function () {
+      bar.classList.remove("is-on");
+      document.body.classList.remove("has-stickycta");
+      try { sessionStorage.setItem(closedKey, "1"); } catch (e) {}
+      setTimeout(function () { if (bar.parentNode) bar.parentNode.removeChild(bar); }, 350);
+    });
+  }
+  })();
+
   // スクロールに合わせて順に現れる演出
   // ※ .reveal はJSから付ける。JS無効・非対応時は何も起きず通常表示のまま
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -132,4 +185,5 @@
       targets.forEach(function (el) { el.classList.add("is-in"); });
     }, 6000);
   }
+
 })();
