@@ -45,3 +45,9 @@
 
 - [運営者情報](https://kaisen-compass.com/about)
 - [編集ポリシー・広告掲載について](https://kaisen-compass.com/policy): 掲載順・評価は報酬額でなく読者への適合度で決定。広告を含む記事にはその旨を明記。
+
+### 光回線
+- [IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順](https://kaisen-compass.com/articles/ipv6-ipoe): PPPoEは網終端装置を通るため夜間に混雑し、IPv6 IPoE(v6プラス等)は通らないため速い。申込→対応ルーター→自動設定の3手順、MAP-E/DS-Liteのポート制限、IPoE標準の回線(GMOとくとくBB光等)。
+
+### 格安SIM
+- [一人暮らしのネット代の平均と節約術](https://kaisen-compass.com/articles/hitorigurashi-netdai): 大手キャリア+光回線で月10,000〜12,000円、格安SIM+縛りなし光回線で5,000〜6,000円台、テザリングのみで3,000円前後。通信量100GB超は光回線、20〜100GBはホームルーター、20GB以下はテザリングが目安。一人暮らしは縛りのない回線を選ぶ。

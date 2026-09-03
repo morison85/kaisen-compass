@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法 | 回線コンパス</title>
+<meta name="description" content="IPv6(IPoE)とは何か、なぜ「夜だけ遅い」が直るのかを図解で解説。PPPoEとIPoEの違い、v6プラス・OCNバーチャルコネクトなどの用語整理、自分の回線がIPoEか確認する方法、切り替え手順、IPoE標準対応で選ぶ光回線、切り替えても速くならないケースまで。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/ipv6-ipoe">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順【図解】">
+<meta property="og:description" content="夜の遅さの正体はPPPoEの混雑ポイント。IPoEに切り替える3ステップと、標準対応の回線。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/ipv6-ipoe">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-ipv6-ipoe.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-04">
+<meta property="article:modified_time" content="2026-09-04">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-ipv6-ipoe.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260904b">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順【図解】",
+  "description": "PPPoEとIPoEの違い、v6プラス等の用語整理、IPoEかどうかの確認方法、切り替え手順、IPoE標準対応の光回線を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-ipv6-ipoe.png",
+  "author": { "@type": "Person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-04",
+  "dateModified": "2026-09-04",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/ipv6-ipoe"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "IPv6(IPoE)にすると料金は上がりますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "多くの光コラボではIPv6 IPoE(v6プラスなど)は無料のオプション、または標準機能として提供されています。ただし対応ルーターが必要で、プロバイダによってはルーターのレンタル料がかかる場合があります。GMOとくとくBB光やドコモ光(GMOとくとくBB)のように対応ルーターを無料レンタルできる回線なら、追加費用なしで切り替えられます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "IPv6にするとオンラインゲームのポート開放はできますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "方式によります。v6プラスなどのMAP-E方式は、使えるポート番号が限られるため、任意のポートを開放する用途には向きません。transix(DS-Lite)方式はポート開放自体ができません。ゲームサーバーの公開など特定ポートが必要な場合は、PPPoE接続を併用するか、固定IPオプションのある回線・プロバイダを選ぶ必要があります。通常のオンライン対戦プレイはIPoEのままで問題なく動作します。" }
+    },
+    {
+      "@type": "Question",
+      "name": "IPv6に切り替えると、IPv4にしか対応していないサイトは見られなくなりますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "見られます。v6プラス・OCNバーチャルコネクト・transixなどは「IPv4 over IPv6」という仕組みで、IPv4向けの通信もIPv6の経路に乗せて運びます。そのためIPv4のみのサイトやサービスも従来どおり利用でき、利用者側で使い分けを意識する必要はありません。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "IPv6(IPoE)とは" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>IPv6(IPoE)とは</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順【図解】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-04">2026年9月4日</time></span>
+      <span>公開日:<time datetime="2026-09-04">2026年9月4日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。掲載順や評価は<a href="../policy">編集ポリシー</a>に基づき、広告の有無に関わらず作成しています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-ipv6-ipoe.svg" alt="IPv6(IPoE)とは?夜だけ遅い光回線が速くなる仕組みと切り替え手順" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>昼は普通なのに、21時を過ぎると動画が止まる。速度測定をすると夜だけ一桁Mbps——。この症状の原因は、回線の速さそのものではなく、<strong>「どの道を通ってインターネットに出ているか」</strong>にあることがほとんどです。</p>
+    <p>その道を変えるのが<strong>IPv6(IPoE)</strong>。難しそうな名前ですが、やることは「オプションを申し込んで、対応ルーターを置く」だけです。この記事では、仕組みを図で理解したうえで、確認方法と切り替え手順、標準で対応している回線までまとめます。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>「夜だけ遅い」の正体は、<strong>従来のPPPoE方式が通る網終端装置という混雑ポイント</strong>です。<strong>IPv6 IPoE(v6プラス・OCNバーチャルコネクト・transixなど)はこのポイントを通らない</strong>ため、夜間でも速度が落ちにくくなります。</p>
+      <p>必要なのは<strong>①IPoE対応のプロバイダ(多くは無料オプション) ②対応ルーター ③申し込み</strong>の3つだけ。GMOとくとくBB光のようにIPoEが標準で対応ルーターも無料の回線なら、乗り換えと同時に解決します。</p>
+    </div>
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><span>GMOとくとくBB光の料金とキャンペーンを見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#shoutai">「夜だけ遅い」の正体:PPPoEとIPoEの違い</a></li>
+        <li><a href="#yougo">IPv6・IPoE・v6プラス…用語を3分で整理</a></li>
+        <li><a href="#kakunin">自分の回線がIPoEか確認する方法</a></li>
+        <li><a href="#tejun">切り替え手順(3ステップ)</a></li>
+        <li><a href="#erabu">IPoE標準対応で選ぶ光回線</a></li>
+        <li><a href="#dame">切り替えても速くならないケース</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">迷ったら、ツールで候補を絞れます</p>
+      <p>IPoEに標準対応している光コラボと、そもそも混雑構造の違う独自回線を、月額とセット割で並べて見られます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="shoutai">「夜だけ遅い」の正体:PPPoEとIPoEの違い</h2>
+    <p>フレッツ光や光コラボ(ドコモ光・ソフトバンク光・GMOとくとくBB光など)は、NTTの光ファイバー網を通ってプロバイダ経由でインターネットに出ます。このとき通る「出口」が2種類あります。</p>
+    <figure class="diagram">
+      <svg viewBox="0 0 800 360" role="img" aria-label="PPPoEは網終端装置で混雑し、IPoEはゲートウェイルーターを通って混雑を避ける図" style="width:100%;height:auto;display:block;background:#f4f8fe;border-radius:12px" font-family="'Noto Sans JP','Hiragino Sans',Meiryo,sans-serif">
+        <rect x="30" y="140" width="120" height="80" rx="12" fill="#fff" stroke="#dde5ef" stroke-width="2"/>
+        <text x="90" y="174" text-anchor="middle" font-size="18" font-weight="700" fill="#0b2c5f">自宅</text>
+        <text x="90" y="200" text-anchor="middle" font-size="13" fill="#5f6b7a">ルーター</text>
+        <rect x="220" y="140" width="150" height="80" rx="12" fill="#fff" stroke="#dde5ef" stroke-width="2"/>
+        <text x="295" y="174" text-anchor="middle" font-size="18" font-weight="700" fill="#0b2c5f">NTTの光網</text>
+        <text x="295" y="200" text-anchor="middle" font-size="13" fill="#5f6b7a">フレッツ網(NGN)</text>
+        <path d="M150 180 H220" stroke="#0b2c5f" stroke-width="4" stroke-linecap="round"/>
+        <!-- PPPoE 上ルート -->
+        <path d="M370 165 C 420 165, 420 80, 470 80 H 540" fill="none" stroke="#d64545" stroke-width="4" stroke-linecap="round"/>
+        <rect x="540" y="45" width="130" height="70" rx="12" fill="#fdecec" stroke="#d64545" stroke-width="2"/>
+        <text x="605" y="74" text-anchor="middle" font-size="15" font-weight="800" fill="#d64545">網終端装置</text>
+        <text x="605" y="98" text-anchor="middle" font-size="12" fill="#d64545">夜は大混雑</text>
+        <text x="455" y="60" text-anchor="middle" font-size="14" font-weight="700" fill="#d64545">従来のPPPoE</text>
+        <path d="M670 80 H 720" stroke="#d64545" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+        <!-- IPoE 下ルート -->
+        <path d="M370 195 C 420 195, 420 280, 470 280 H 540" fill="none" stroke="#0e9f6e" stroke-width="4" stroke-linecap="round"/>
+        <rect x="540" y="245" width="130" height="70" rx="12" fill="#e6f7f0" stroke="#0e9f6e" stroke-width="2"/>
+        <text x="605" y="274" text-anchor="middle" font-size="15" font-weight="800" fill="#0e9f6e">ゲートウェイ</text>
+        <text x="605" y="298" text-anchor="middle" font-size="12" fill="#0e9f6e">広帯域・混雑しにくい</text>
+        <text x="455" y="310" text-anchor="middle" font-size="14" font-weight="700" fill="#0e9f6e">IPv6 IPoE</text>
+        <path d="M670 280 H 720" stroke="#0e9f6e" stroke-width="4" stroke-linecap="round"/>
+        <!-- インターネット -->
+        <ellipse cx="750" cy="180" rx="42" ry="60" fill="#fff" stroke="#dde5ef" stroke-width="2"/>
+        <text x="750" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#0b2c5f">インター</text>
+        <text x="750" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#0b2c5f">ネット</text>
+        <path d="M720 80 C 735 80, 740 110, 745 120" fill="none" stroke="#d64545" stroke-width="3"/>
+        <path d="M720 280 C 735 280, 740 250, 745 240" fill="none" stroke="#0e9f6e" stroke-width="3"/>
+      </svg>
+      <figcaption>PPPoEは各プロバイダの「網終端装置」を必ず通る。IPoEはこの装置を経由せず、容量の大きいゲートウェイからインターネットへ出る。</figcaption>
+    </figure>
+    <p><strong>PPPoE(従来方式)</strong>は、NTT網からプロバイダへ渡るときに「網終端装置」という機器を通ります。この装置はプロバイダごとに容量が決まっていて、増設のルールも厳しいため、<strong>利用者が集中する夜間に渋滞</strong>します。回線が1Gbpsでも、この出口が詰まっていれば体感は遅くなります。</p>
+    <p><strong>IPoE(IPv6 IPoE)</strong>は、網終端装置を通らずに、NTT網から直接インターネット側へ抜ける方式です。出口の容量が桁違いに大きく、混雑の影響を受けにくい。これが「IPv6にしたら夜が速くなった」の理屈です。<strong>光ファイバーそのものは同じ</strong>で、変わるのは通る道だけ。だから工事は要りません。</p>
+    <div class="box-point">
+      <div class="box-point__t">💡 独自回線(auひかり・NURO光)は別の話</div>
+      <p style="margin:0;">auひかりやNURO光はNTTのフレッツ網を使わず自前の設備で提供しているため、この「網終端装置の渋滞」がそもそも存在しません。光コラボからの乗り換えでこの問題を根本から避ける手もあります(<a href="hikari-osusume">光回線7社比較</a>参照)。</p>
+    </div>
+
+    <h2 id="yougo">IPv6・IPoE・v6プラス…用語を3分で整理</h2>
+    <p>プロバイダのサイトを見ると似た言葉が並んでいて混乱しますが、整理すると3階層です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>言葉</th><th>何のこと?</th><th>覚え方</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>IPv6 / IPv4</th><td>インターネット上の「住所」の規格。IPv4は枯渇したためIPv6が普及中</td><td>住所の書き方</td></tr>
+          <tr><th>IPoE / PPPoE</th><td>NTT網からインターネットへ出る「接続方式」。速さの差はここで生まれる</td><td class="best">通る道</td></tr>
+          <tr><th>IPv4 over IPv6</th><td>IPv6の道にIPv4の通信も乗せて運ぶ技術。これがあるとIPv4のみのサイトも速い道で見られる</td><td>相乗り</td></tr>
+          <tr><th>v6プラス / OCNバーチャルコネクト / transix / クロスパス</th><td>「IPv4 over IPv6」を提供する事業者ごとのサービス名。方式はMAP-E(v6プラス等)とDS-Lite(transix)に分かれる</td><td>商品名</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>つまり、あなたが手に入れたいのは<strong>「IPoE接続」+「IPv4 over IPv6」</strong>のセットです。プロバイダの案内で「v6プラス対応」「IPv6(IPoE)+IPv4 over IPv6」と書かれていれば、それが該当します。「IPv6対応」とだけ書かれていて、PPPoEのIPv6(IPv6 PPPoE)しか提供していないケースもあるので、<strong>IPoEの文字があるか</strong>を確認してください。</p>
+
+    <h2 id="kakunin">自分の回線がIPoEか確認する方法</h2>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">判定サイトで確認する(1分)</div>
+        <p>自宅のWi-Fiにつないだ状態で、IPv6の接続テストサイト(「test-ipv6」で検索)を開きます。IPv6が「利用可能」で、接続方式にIPoE系の事業者名(JPNE・OCN・IIJなど)が表示されれば切り替え済みです。IPv4のみ、またはIPv6がPPPoE表示なら未対応です。</p>
+      </li>
+      <li>
+        <div class="steps__t">プロバイダのマイページを見る</div>
+        <p>「オプション」「接続方式」の欄に v6プラス・IPv6(IPoE)・OCNバーチャルコネクト などの申込状況が出ています。未申込なら、ここから申し込めることがほとんどです。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターのランプ・管理画面を見る</div>
+        <p>対応ルーターは、管理画面の接続状態に「v6プラス」「MAP-E」「DS-Lite」「IPv6 IPoE」と表示されます。PPPoEの設定画面に自分でIDとパスワードを入れた記憶があるなら、まだPPPoEで繋がっている可能性が高いです。</p>
+      </li>
+    </ol>
+
+    <h2 id="tejun">切り替え手順(3ステップ)</h2>
+    <p>やることは3つ。工事も、多くの場合は費用も要りません。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">プロバイダでIPoE(v6プラス等)を申し込む</div>
+        <p>マイページか電話で申し込みます。フレッツ光を契約している場合は、NTTの「IPv6 IPoE」がすでに含まれているかを合わせて確認します。多くの光コラボでは<strong>オプション料金は無料</strong>で、申込から数日で開通します。</p>
+      </li>
+      <li>
+        <div class="steps__t">IPv4 over IPv6対応のルーターを用意する</div>
+        <p>方式(MAP-E / DS-Lite)に対応したルーターが必要です。プロバイダが指定・無料レンタルするルーターを使うのがいちばん確実で、市販品なら「v6プラス対応」「OCNバーチャルコネクト対応」の記載を確認します。古いルーターは非対応のことが多く、<strong>ここでつまずく人が最も多い</strong>ポイントです。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターをつないで自動設定を待つ</div>
+        <p>対応ルーターは接続方式を自動判別するため、PPPoEのIDやパスワードの入力は不要です。開通後、もう一度判定サイトで確認して完了。速度測定は<strong>21〜24時</strong>に行うと、切り替え前との差がはっきり出ます。</p>
+      </li>
+    </ol>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ ポート開放・固定IPが必要な人は注意</div>
+      <p style="margin:0;">MAP-E方式(v6プラス等)は使えるポート番号が限られ、DS-Lite方式(transix)はポート開放ができません。自宅サーバーや一部のネットワークカメラなど特定ポートが必要な用途は、PPPoEとの併用か固定IPオプションを検討してください。通常のオンラインゲーム・動画視聴・Web会議はIPoEのままで問題ありません。</p>
+    </div>
+
+    <h2 id="erabu">IPoE標準対応で選ぶ光回線</h2>
+    <p>いま使っているプロバイダがIPoE非対応、または対応ルーターが有料レンタルなら、<strong>最初からIPoEが標準の回線に乗り換えたほうが早い</strong>ことがあります。光コラボ間の乗り換え(事業者変更)は工事不要で、手順は<a href="jigyousha-henkou">事業者変更の実務ガイド</a>にまとめています。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>回線</th><th>IPoEの扱い</th><th>対応ルーター</th><th>向いている人</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>GMOとくとくBB光</th><td class="best">v6プラスが標準</td><td class="best">無料レンタル</td><td>セット割なし・縛りなしで安く</td></tr>
+          <tr><th>ドコモ光(GMOとくとくBB)</th><td class="best">v6プラス対応</td><td class="best">無料レンタル</td><td>ドコモユーザー</td></tr>
+          <tr><th>ソフトバンク光</th><td>IPv6高速ハイブリッド</td><td>光BBユニット(有料オプション)が必要</td><td>ソフトバンク・ワイモバイルユーザー</td></tr>
+          <tr><th>auひかり</th><td>独自回線のため網終端装置を通らない</td><td>レンタル機器で対応</td><td>au・UQユーザー、混雑構造を根本から避けたい人</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cta">
+      <div class="cta__t">🔓 IPoE標準・ルーター無料・縛りなしで解決するなら</div>
+      <p>GMOとくとくBB光はv6プラスが標準で、対応ルーターも無料レンタル。契約期間の縛りも解約違約金もないので、「夜の遅さが直るか試したい」人が乗り換え先に選びやすい回線です。月額はマンション3,773円・戸建て4,818円(税込)。</p>
+      <!-- A8: GMOとくとくBB光(GMO光アクセス) -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金とキャンペーンを見る<small>v6プラス標準・ルーター無料・縛りなし</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+      <!-- A8: GMOとくとくBB ドコモ光 -->
+      <a class="btn btn--sub" href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y" rel="nofollow sponsored noopener" target="_blank">ドコモユーザーなら:ドコモ光(GMOとくとくBB)を見る</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAI1I+3UQ1I2+50+54KL8Y" alt="">
+      <p class="micro">※ キャッシュバックの受け取り手順は<a href="gmohikari-campaign">GMOとくとくBB光のキャンペーン解説</a>で確認してください。</p>
+    </div>
+    <div class="cta">
+      <div class="cta__t">⚡ 混雑の構造ごと変えるなら:独自回線</div>
+      <p>auひかりはNTTのフレッツ網を使わない独自回線で、網終端装置の渋滞と無関係です。au・UQモバイルのセット割も使えます。提供エリアは住所で判定できます。</p>
+      <!-- A8: auひかり(正規代理店NEXT) -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank">auひかりの提供エリアを確認する<small>住所を入れるだけ・申し込みにはなりません</small></a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6" alt="">
+      <!-- A8: ソフトバンク光(正規代理店NEXT) -->
+      <a class="btn btn--sub" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM" rel="nofollow sponsored noopener" target="_blank">ソフトバンク・ワイモバイルなら:ソフトバンク光を見る</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM" alt="">
+    </div>
+
+    <h2 id="dame">切り替えても速くならないケース</h2>
+    <p>IPoEは「出口の渋滞」を解決する手段なので、原因が別の場所にあると効きません。切り替え前に、次の4つを潰しておくと無駄がありません。</p>
+    <ul>
+      <li><strong>マンションの配線がVDSL</strong>:建物内が電話線配線だと上限は100Mbps前後。IPoEにしても頭打ちは変わりません。確認方法は<a href="mansion-internet">マンションのネットが遅い原因</a>へ</li>
+      <li><strong>ルーターが古い</strong>:Wi-Fi 5以前の古い機種は、IPoEに対応していても無線部分が遅いことがあります。有線で速度が出るのに無線だけ遅いなら、ルーターの買い替えが先です</li>
+      <li><strong>Wi-Fiの電波が弱い</strong>:壁を2枚以上またぐ、2.4GHz帯につながっている、といった環境要因。ルーターの近くで測って速いなら、中継機やメッシュWi-Fiの出番です</li>
+      <li><strong>端末側の問題</strong>:古いスマホやPCのWi-Fi規格が遅い、バックグラウンドで大容量のアップデートが走っている、など。別の端末で測ってみると切り分けられます</li>
+    </ul>
+    <p>切り分けの手順は<a href="hikari-osoi">光回線が遅いときの対処法</a>に、時間帯別・原因別でまとめています。夜だけ遅く、昼は速く、有線でも同じなら、IPoEが最有力の解決策です。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>IPv6(IPoE)にすると料金は上がりますか?</summary>
+        <div class="faq__a">多くの光コラボではIPv6 IPoE(v6プラスなど)は無料のオプション、または標準機能です。ただし対応ルーターが必要で、プロバイダによってはレンタル料がかかることがあります。GMOとくとくBB光やドコモ光(GMOとくとくBB)のように対応ルーターを無料レンタルできる回線なら、追加費用なしで切り替えられます。</div>
+      </details>
+      <details>
+        <summary>IPv6にするとオンラインゲームのポート開放はできますか?</summary>
+        <div class="faq__a">方式によります。v6プラスなどのMAP-E方式は使えるポート番号が限られ、transix(DS-Lite)方式はポート開放ができません。ゲームサーバーの公開など特定ポートが必要な場合は、PPPoE接続の併用か固定IPオプションのある回線を選びます。通常のオンライン対戦はIPoEのままで問題なく動作します。</div>
+      </details>
+      <details>
+        <summary>IPv6に切り替えると、IPv4にしか対応していないサイトは見られなくなりますか?</summary>
+        <div class="faq__a">見られます。v6プラス・OCNバーチャルコネクト・transixなどは「IPv4 over IPv6」という仕組みで、IPv4向けの通信もIPv6の経路に乗せて運びます。利用者側で使い分けを意識する必要はありません。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:夜の遅さは「道」を変えれば直る</h2>
+    <ul>
+      <li>「夜だけ遅い」の原因は、PPPoEが通る<strong>網終端装置の混雑</strong>。回線速度の問題ではない</li>
+      <li><strong>IPv6 IPoE + IPv4 over IPv6</strong>(v6プラス等)に切り替えると、混雑ポイントを通らなくなる</li>
+      <li>手順は<strong>申し込み→対応ルーター→自動設定</strong>の3つ。工事不要で、多くは無料</li>
+      <li>非対応プロバイダなら、IPoE標準・ルーター無料の<a href="gmohikari-campaign">GMOとくとくBB光</a>などへ事業者変更するのが早い</li>
+      <li>VDSL・古いルーター・Wi-Fi環境が原因なら、IPoEでは直らないので先に切り分ける</li>
+    </ul>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li><a href="https://flets.com/next/ipv6/" target="_blank" rel="noopener">NTT東日本 フレッツ光ネクスト「IPv6 IPoE」サービス案内</a></li>
+        <li><a href="https://www.jpne.co.jp/service/v6plus/" target="_blank" rel="noopener">日本ネットワークイネイブラー(JPNE)「v6プラス」サービス概要</a></li>
+        <li><a href="https://www.mic.go.jp/" target="_blank" rel="noopener">総務省</a> IPv6普及・高度化に関する公開資料</li>
+        <li>各社公式サイトの対応方式・ルーターの提供条件(2026年9月確認)</li>
+        <li>運営者自身のPPPoE→IPoE切り替え経験(夜間の実測改善)</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|回線オタク・実測データ収集家</div>
+      <p>自身も「夜だけ遅い」光コラボでPPPoEからIPoEに切り替え、21時台の実測が改善した経験があります。当サイトの評価は公式の料金・実測データの集計値・実際に契約した経験の3つだけを根拠にしています。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="hikari-osoi">光回線が遅いときの対処法|時間帯別・原因別の切り分けと改善策</a></li>
+      <li><a href="mansion-internet">マンションのネットが遅い原因と解決策|配線方式の調べ方</a></li>
+      <li><a href="gmohikari-campaign">GMOとくとくBB光のキャンペーン完全ガイド|キャッシュバック条件と縛りなしの実際</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>「回線選びで失敗しない」ために、公式の料金と実測データ、実際の使用経験にもとづく比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較と、仕事の辞め方の実務ガイド</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260904b" defer></script>
+</body>
+</html>
