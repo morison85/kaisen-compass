@@ -28,8 +28,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css?v=20260904b">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260904c">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,8 +39,8 @@
   "image": "https://kaisen-compass.com/images/og/eyecatch-hikari-osoi.png",
   "datePublished": "2026-08-30",
   "dateModified": "2026-08-30",
-  "author": { "@type": "Person", "name": "もりそん" },
-  "publisher": { "@type": "Organization", "name": "回線コンパス",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス",
     "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo.svg" } },
   "mainEntityOfPage": "https://kaisen-compass.com/articles/hikari-osoi"
 }
@@ -214,7 +214,7 @@
     <div class="cta">
       <div class="cta__t">📡 そもそも最初からIPv6 IPoEで始めたいなら</div>
       <p>契約中のプロバイダが対応していない、あるいは申し込みの手続きが面倒という場合は、最初から標準対応の窓口に変える手もあります。GMOとくとくBB光はv6プラスに標準対応で、契約期間の縛りと違約金がありません。合わなければ抜けられるので、方式を理由に乗り換えるなら候補になります。</p>
-      <div class="btn-area"><a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の公式ページを見る<small>v6プラス標準対応・契約期間の縛りなし</small></a><img class="js-imp" data-src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
+      <div class="btn-area"><a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の公式ページを見る<small>v6プラス標準対応・契約期間の縛りなし</small></a><img src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
     </div>
 
     <h2 id="router">ルーターの寿命を見分ける</h2>
@@ -257,7 +257,7 @@
     <div class="cta">
       <div class="cta__t">🔌 建物の設備が原因なら、工事のいらない回線という手もあります</div>
       <p>VDSLやLAN配線が上限になっている場合、同じ建物の光回線に乗り換えても改善しません。コンセントに挿すだけのホームルーターは建物内の配線を通らないため、環境によっては逆転します。BIGLOBE WiMAXは最低利用期間と契約解除料がないので、合わなければやめられます。</p>
-      <div class="btn-area"><a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXの公式ページを見る<small>最低利用期間なし・口座振替に対応</small></a><img class="js-imp" data-src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
+      <div class="btn-area"><a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXの公式ページを見る<small>最低利用期間なし・口座振替に対応</small></a><img src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
     </div>
 
     <h2 id="faq">よくある質問</h2>
@@ -307,6 +307,31 @@
       </ul>
     </div>
   </div>
+<aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">そもそも最初からIPv6 IPoEで始めたいなら</div>
+    <p>契約中のプロバイダが対応していない、あるいは申し込みの手続きが面倒という場合は、最初から標準対応の窓口に変える手もあります。GMOとくとくBB光はv6プラスに標準対応で、契約期間の縛りと違約金がありません。合わなければ抜けられるので、方式を理由に乗り換えるなら候補になります。</p>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の公式ページを見る<small>v6プラス標準対応・契約期間の縛りなし</small></a>
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="hikari-osusume">光回線おすすめ7社比較【2026年8月】迷わない選び方を図解でやさしく解説</a></li>
+      <li><a href="hikari-denwa-hitsuyou">ひかり電話は必要?不要?|月550円の損益分岐と、固定電話番号を残す方法【2026年】</a></li>
+      <li><a href="ipv6-ipoe">IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順【図解】</a></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="footer">
@@ -349,6 +374,6 @@
 </footer>
 
 <button class="to-top" aria-label="ページ上部へ戻る">↑</button>
-<script src="../js/main.js?v=20260904b" defer></script>
+<script src="../js/main.js?v=20260904c" defer></script>
 </body>
 </html>

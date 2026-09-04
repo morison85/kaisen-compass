@@ -1573,3 +1573,10 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .pick__note { font-size: .76rem; color: var(--c-text-sub); text-align: center; margin-top: 14px; line-height: 1.7; }
 @media (max-width: 560px) { .pick-grid { grid-template-columns: 1fr; } }
 
+/* ============ 記事末尾「迷ったらこれ」 ============ */
+.final-pick { margin: 36px 0 8px; padding: 22px 22px 20px; border-radius: var(--radius); background: linear-gradient(135deg, #fff8ef, #fdeeda); border: 2px solid var(--c-accent); text-align: center; }
+.final-pick__label { display: inline-block; font-size: .78rem; font-weight: 800; color: #fff; background: var(--c-accent); border-radius: 999px; padding: 3px 12px; margin-bottom: 10px; }
+.final-pick__t { font-size: 1.1rem; font-weight: 800; color: var(--c-navy); margin-bottom: 8px; line-height: 1.45; }
+.final-pick p { font-size: .9rem; margin: 0 0 14px; }
+.final-pick .btn { max-width: 420px; margin: 0 auto; }
+.final-pick .micro { font-size: .76rem; color: var(--c-text-sub); margin: 10px 0 0; }
