@@ -5,8 +5,29 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 05 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 05 Sep 2026 18:30:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>光回線を2年ごとに乗り換えるのは得か損か|サイクル運用の損益分岐 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-2nen-norikae</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-2nen-norikae</guid>
+    <pubDate>Sat, 05 Sep 2026 18:00:00 +0900</pubDate>
+    <description>光回線の「2年ごと乗り換え」は本当に得なのか。意味があるのは周期ではなく工事費の分割完了月です。損益分岐を4つの数字で出す計算式、据え置き・2年・3〜4年の5年総額シミュレーション、光コラボと独自回線の向き不向き、年間スケジュールと落とし穴5つまで、2026年9月時点の情報でまとめました。</description>
+  </item>
+  <item>
+    <title>WiMAXの「無制限」は本当?制限がかかる3つの条件 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/wimax-mugen-hontou</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/wimax-mugen-hontou</guid>
+    <pubDate>Sat, 05 Sep 2026 18:10:00 +0900</pubDate>
+    <description>WiMAXの無制限を4つの層に分解して整理。プラン上の月間上限はなく旧「3日15GB」も2022年2月に撤廃済みですが、プラスエリアモードの月30GB制限と混雑時間帯の規約条項は残っています。「30GB超えるとスタンダードも止まる」という誤解の訂正と、使い方別の安全ラインまで、2026年9月時点の情報で解説します。</description>
+  </item>
+  <item>
+    <title>ホームルーターの電気代は月いくら?実額と実質月額の比較 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/homerouter-denkidai</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/homerouter-denkidai</guid>
+    <pubDate>Sat, 05 Sep 2026 18:20:00 +0900</pubDate>
+    <description>ホームルーターの電気代は24時間つけっぱなしで月200〜450円前後が目安。消費電力から出す早見表と、光回線(ONU+Wi-Fiルーター)との比較、「電気代込みの実質月額」で並べ直した総コストを掲載。節電で実際に削れる額と、Wi-Fi 7ルーターの消費電力まで、2026年9月時点の情報でまとめました。</description>
+  </item>
   <item>
     <title>光回線ルーターの選び方|Wi-Fi 6/6E/7の違いと買うか借りるか | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/hikari-router-erabikata</link>

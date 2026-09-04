@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>ホームルーターの電気代は月いくら?実額と実質月額の比較 | 回線コンパス</title>
+<meta name="description" content="ホームルーターの電気代は月いくらか。消費電力から計算する早見表、24時間つけっぱなしの年間コスト、光回線(ONU+Wi-Fiルーター)との比較、そして「電気代込みの実質月額」で見た本当の差額まで。節電で削れる額の現実も正直に書きました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/homerouter-denkidai">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ホームルーターの電気代は月いくら?機種別の実額と「電気代込みの実質月額」【2026年】">
+<meta property="og:description" content="消費電力から出す早見表と、光回線との総コスト比較。節電で実際に削れる額も正直に書きました。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/homerouter-denkidai">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-homerouter-denkidai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-05">
+<meta property="article:modified_time" content="2026-09-05">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-homerouter-denkidai.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260904e">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ホームルーターの電気代は月いくら?機種別の実額と「電気代込みの実質月額」で見る本当の差【2026年】",
+  "description": "ホームルーターの電気代を消費電力から計算。光回線との総コスト比較と節電効果の現実を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-homerouter-denkidai.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/homerouter-denkidai"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "ホームルーターの電気代を自分で計算する手順",
+  "step": [
+    { "@type": "HowToStep", "name": "消費電力を調べる", "text": "端末本体の裏面ラベルか公式サイトの仕様表で、定格消費電力(W)を確認する。" },
+    { "@type": "HowToStep", "name": "月の使用時間をかける", "text": "24時間つけっぱなしなら、1ヶ月は720時間として計算する。" },
+    { "@type": "HowToStep", "name": "kWhに直す", "text": "消費電力(W)×720時間÷1000で、1ヶ月の消費電力量(kWh)を出す。" },
+    { "@type": "HowToStep", "name": "電力量単価をかける", "text": "kWhに電力量単価(目安31円/kWh)をかけると、1ヶ月の電気代の目安が出る。" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ホームルーターの電気代は月いくらですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "定格消費電力が10〜20W程度の機種が多く、24時間つけっぱなしで月200〜450円前後が目安です(電力量単価31円/kWhで計算)。実際には常に定格いっぱいで動くわけではないため、これより下回ることが多くなります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "光回線とホームルーターでは、どちらが電気代が安いですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "大きな差はつきません。光回線はONUとWi-Fiルーターの2台で合計10〜25W程度、ホームルーターは1台で10〜20W程度です。電気代の差は月に数十円〜百数十円の範囲で、回線選びの判断材料としては月額料金や速度のほうが圧倒的に大きく影響します。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ホームルーターはこまめに電源を切ったほうがいいですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "節約できる額は限定的です。1日8時間切っても月70〜150円程度の削減にとどまる一方、再起動のたびにネットワークへの再接続で数分待つことになります。外出中も家族が使う、スマート家電がつながっている、といった環境では切らないほうが実用的です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "Wi-Fi 7のルーターは電気代が高いのですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "上位機種は消費電力が大きくなる傾向があります。Wi-Fi 5・6世代の一般的な機種が5〜12W程度なのに対し、Wi-Fi 7のハイエンド機では30W以上の定格を持つものもあり、その場合は月600円を超える計算になります。購入前に仕様表の定格消費電力を確認しておくと想定外を避けられます。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "WiFi・ルーター", "item": "https://kaisen-compass.com/category/wifi" },
+    { "@type": "ListItem", "position": 3, "name": "ホームルーターの電気代" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/wifi">WiFi・ルーター</a></li>
+    <li>ホームルーターの電気代</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">WiFi・ルーター</span>
+    <h1 class="article-title">ホームルーターの電気代は月いくら?機種別の実額と「電気代込みの実質月額」で見る本当の差【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-05">2026年9月5日</time></span>
+      <span>公開日:<time datetime="2026-09-05">2026年9月5日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-homerouter-denkidai.svg" alt="ホームルーターの電気代は月いくらかを消費電力から計算する" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>ホームルーターは24時間つけっぱなしが前提の機器です。「ずっと電源が入っているけど、電気代はどれくらいかかっているんだろう」——気になるのは自然だと思います。</p>
+    <p>この記事では、消費電力から電気代を出す方法と機種別の早見表に加えて、あまり見かけない<strong>「電気代込みの実質月額」</strong>という見方を提示します。回線を比べるとき、月額料金だけを並べても実際の支出は分からないからです。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>ホームルーターの電気代は、<strong>24時間つけっぱなしで月200〜450円前後</strong>が目安です(消費電力10〜20W・電力量単価31円/kWhで計算)。光回線もONUとWi-Fiルーターの2台で同程度かかるため、<strong>回線の種類による電気代の差は月に数十円〜百数十円</strong>にとどまります。回線選びの判断材料としては、月額料金と速度のほうが桁違いに大きく効きます。</p>
+    </div>
+
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2W6WEY+50+7LVLZM" rel="nofollow sponsored noopener" target="_blank"><span>ずっと定額タイプ:とくとくBBホームWi-Fiを見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#keisan">電気代の計算式(30秒で出せます)</a></li>
+        <li><a href="#hayami">消費電力別・電気代の早見表</a></li>
+        <li><a href="#kishu">ホームルーターの消費電力はどれくらいか</a></li>
+        <li><a href="#hikari">光回線(ONU+ルーター)との比較</a></li>
+        <li><a href="#jisshitsu">「電気代込みの実質月額」で並べ直す</a></li>
+        <li><a href="#setsuden">節電で実際に削れる額</a></li>
+        <li><a href="#wifi7">Wi-Fi 7ルーターは電気代が高いのか</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">機種そのものを選び直すなら</p>
+      <p>ホームルーターは電気代よりも、エリアと実測速度で決まります。主要3機種の比較はこちらです。</p>
+      <div class="toolbox__links">
+        <a href="home-router">ホームルーター3社を比較する</a>
+        <a href="../shindan">6つの質問で診断する</a>
+      </div>
+    </div>
+
+    <h2 id="keisan">電気代の計算式(30秒で出せます)</h2>
+    <p>使うのは1つの式だけです。</p>
+
+    <div class="box-point">
+      <div class="box-point__t">🧮 1ヶ月の電気代の出し方</div>
+      <ul>
+        <li><strong>消費電力(W) ÷ 1000 × 使用時間(h) × 電力量単価(円/kWh)</strong></li>
+        <li>24時間つけっぱなしなら、1ヶ月の使用時間は<strong>720時間</strong>(24×30)</li>
+        <li>電力量単価は<strong>31円/kWh</strong>を使います(全国家庭電気製品公正取引協議会が家電の電気代表示に用いる目安単価。令和4年7月改定)</li>
+      </ul>
+      <p style="margin:.6em 0 0;">つまり<strong>「消費電力(W)×22.3円」がそのまま月の電気代の目安</strong>になります。15Wなら約335円。この暗算だけ覚えておけば十分です。</p>
+    </div>
+
+    <p>注意点が1つあります。仕様表に書かれている消費電力は多くの場合<strong>定格(最大)値</strong>で、常にその電力を消費しているわけではありません。通信していない時間帯は下がるため、実際の請求はこの計算より低くなるのが普通です。<strong>この記事の金額は「上限に近い目安」</strong>として読んでください。</p>
+    <p>また、電力量単価は契約している電力会社とプランによって変わります。自宅の実際の単価は検針票や電力会社のマイページに記載されているので、正確に出したい場合はそちらの数字に置き換えてください。</p>
+
+    <h2 id="hayami">消費電力別・電気代の早見表</h2>
+    <p>24時間つけっぱなし(月720時間)、31円/kWhで計算した早見表です。自分の機器の消費電力を仕様表で確認して、当てはめてください。</p>
+
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>消費電力</th><th>1ヶ月</th><th>1年</th><th>該当しやすい機器</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>5W</th>
+            <td class="best">約112円</td>
+            <td class="best">約1,340円</td>
+            <td>光回線のONU、省電力なWi-Fiルーター</td>
+          </tr>
+          <tr>
+            <th>8W</th>
+            <td>約179円</td>
+            <td>約2,140円</td>
+            <td>エントリークラスのWi-Fi 6ルーター</td>
+          </tr>
+          <tr>
+            <th>10W</th>
+            <td>約223円</td>
+            <td>約2,680円</td>
+            <td>ホームルーター(省電力寄りの機種)</td>
+          </tr>
+          <tr>
+            <th>15W</th>
+            <td>約335円</td>
+            <td>約4,020円</td>
+            <td>ホームルーターの中心的な水準</td>
+          </tr>
+          <tr>
+            <th>20W</th>
+            <td>約446円</td>
+            <td>約5,360円</td>
+            <td>5G対応の据え置き型・高性能Wi-Fiルーター</td>
+          </tr>
+          <tr>
+            <th>30W</th>
+            <td>約670円</td>
+            <td>約8,030円</td>
+            <td>Wi-Fi 7のハイエンド機など</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="micro">※ 電力量単価31円/kWh、月720時間で計算した目安です。定格(最大)消費電力ベースのため、実際の消費はこれより低くなる傾向があります。</p>
+    </div>
+
+    <p>全体像として押さえておきたいのは、<strong>ホームルーターは家電の中では消費電力が小さい部類</strong>だという点です。エアコンや冷蔵庫と比べれば桁が違います。「電気代が心配でホームルーターをやめる」という判断が必要になるケースは、ほぼありません。</p>
+
+    <h2 id="kishu">ホームルーターの消費電力はどれくらいか</h2>
+    <p>各社の据え置き型ホームルーターは、<strong>おおむね10〜20Wの範囲</strong>に収まります。5G対応で高速通信をこなすぶん、Wi-Fiルーター単体よりはやや大きめです。</p>
+    <p>正確な数値は、次のどちらかで確認できます。</p>
+    <ul>
+      <li><strong>端末本体の裏面・底面のラベル</strong>:「定格入力 DC12V 1.5A」のように書かれている場合、12V×1.5A=18Wが上限です。</li>
+      <li><strong>メーカーまたは提供事業者の公式仕様ページ</strong>:「消費電力(最大)」の項目に記載されています。</li>
+    </ul>
+    <p>まとめサイトに載っている数値は世代違いの機種が混ざっていることがあるので、<strong>自分の手元の端末のラベルを見るのが確実</strong>です。ACアダプタ側にも入力・出力の表記があるので、そちらでも確認できます。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">電気代の相談を受けると、たいてい「思っていたより安かった」という反応になります。むしろ驚かれるのは、光回線でもONUとルーターの2台で同じくらいかかっている、という点のほうです。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="hikari">光回線(ONU+ルーター)との比較</h2>
+    <p>「ホームルーターは電気代がかかるから光回線のほうがいい」という話を見かけることがありますが、これは正確ではありません。光回線は<strong>機器が2台以上になる</strong>からです。</p>
+
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>回線タイプ</th><th>必要な機器</th><th>合計の消費電力</th><th>月の電気代の目安</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ホームルーター</th>
+            <td>本体1台のみ</td>
+            <td>10〜20W</td>
+            <td>約220〜450円</td>
+          </tr>
+          <tr>
+            <th>光回線(標準構成)</th>
+            <td>ONU + Wi-Fiルーター</td>
+            <td>10〜25W</td>
+            <td>約220〜560円</td>
+          </tr>
+          <tr>
+            <th>光回線(ホームゲートウェイ一体型)</th>
+            <td>HGW 1台</td>
+            <td class="best">8〜15W</td>
+            <td class="best">約180〜335円</td>
+          </tr>
+          <tr>
+            <th>光回線+メッシュWi-Fi(3台構成)</th>
+            <td>ONU + 親機 + 子機2台</td>
+            <td>20〜40W</td>
+            <td>約450〜890円</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="micro">※ 機器の世代・機種によって幅があります。メッシュWi-Fiは台数が増えるぶん、合計の消費電力が上がります。</p>
+    </div>
+
+    <p>読み取れることは、<strong>回線の種類ではなく「つないでいる機器の台数」で電気代が決まる</strong>ということです。広い家でメッシュWi-Fiを組んでいる光回線のほうが、ホームルーター1台より電気代が高くなることも普通にあります。</p>
+    <p>裏を返せば、ホームルーターは<strong>1台で完結する構成なので、機器まわりの電気代はむしろ抑えやすい</strong>とも言えます。この点は、工事ができない住まいでホームルーターを選ぶときの、地味ですが確かな利点です(<a href="kouji-dekinai-chintai">工事ができない賃貸の選択肢</a>)。</p>
+
+    <h2 id="jisshitsu">「電気代込みの実質月額」で並べ直す</h2>
+    <p>ここが、この記事の本題です。回線を比べるとき、たいていは月額料金だけが並べられます。でも実際に毎月出ていくお金は<strong>月額料金+電気代</strong>です。この視点で並べ直すと、見え方が少し変わります。</p>
+
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>構成</th><th>回線の月額(目安)</th><th>機器の電気代</th><th>電気代込みの実質月額</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ホームルーター(5G)</th>
+            <td>4,000〜5,500円</td>
+            <td>約335円</td>
+            <td>約4,335〜5,835円</td>
+          </tr>
+          <tr>
+            <th>光回線・戸建て</th>
+            <td>5,000〜6,000円</td>
+            <td>約400円</td>
+            <td>約5,400〜6,400円</td>
+          </tr>
+          <tr>
+            <th>光回線・マンション</th>
+            <td class="best">3,500〜4,500円</td>
+            <td>約400円</td>
+            <td class="best">約3,900〜4,900円</td>
+          </tr>
+          <tr>
+            <th>光回線+メッシュ3台</th>
+            <td>5,000〜6,000円</td>
+            <td>約670円</td>
+            <td>約5,670〜6,670円</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="micro">※ 2026年9月時点の一般的な料金水準からの試算です。実際の月額は契約する回線・プラン・割引の適用状況で変わります。</p>
+    </div>
+
+    <p>結論として、<strong>電気代の差(月に数十円〜300円程度)は、月額料金の差(月に1,000円〜2,000円)に比べて小さい</strong>ということが分かります。マンションで光回線が使えるなら、電気代を含めてもそちらが安くなるケースが多い、というのが素直な読み方です。</p>
+    <p>とはいえ、ホームルーターには<strong>工事費ゼロ・即日で使える・引越しに持っていける</strong>という、料金表に現れない価値があります。数字だけで決めきれない部分なので、住まいと今後の予定を合わせて判断してください。据え置き型と持ち運び型の選び分けは<a href="wimax-vs-homerouter">WiMAXとホームルーターの比較</a>にまとめています。</p>
+
+    <div class="cta">
+      <div class="cta__t">🏠 電気代を含めても月額を抑えたいなら</div>
+      <p>ホームルーターは機器1台で完結するため、機器まわりの電気代を積み上げにくい構成です。工事不要で申し込みから最短数日、コンセントに挿すだけで使えます。</p>
+      <!-- A8: とくとくBBホームWi-Fi 2026-09-05 設置 -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2W6WEY+50+7LVLZM" rel="nofollow sponsored noopener" target="_blank">とくとくBBホームWi-Fiの料金を見る<small>ずっと定額タイプの条件を確認できます</small></a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4BAH9H+2W6WEY+50+7LVLZM" alt="">
+      <!-- A8: BIGLOBE WiMAX +5G -->
+      <a class="btn btn--sub" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXのキャンペーンも比較する</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" alt="">
+      <p class="micro">※ 料金・キャンペーン条件は時期によって変わります。申し込み前に公式サイトでご確認ください。</p>
+    </div>
+
+    <h2 id="setsuden">節電で実際に削れる額</h2>
+    <p>ここは正直に書きます。<strong>ホームルーターの節電で削れる額は、かけた手間に対して小さい</strong>です。</p>
+
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>節電のやり方</th><th>削減額(15W機種の場合)</th><th>デメリット</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>外出中の8時間だけ電源を切る</th>
+            <td>月約110円</td>
+            <td>帰宅後に再接続で数分待つ。スマート家電が切れる</td>
+          </tr>
+          <tr>
+            <th>就寝中の8時間も切る(1日16時間オフ)</th>
+            <td>月約220円</td>
+            <td>夜間の自動更新・バックアップが止まる</td>
+          </tr>
+          <tr>
+            <th>省電力モード・エコモードを使う</th>
+            <td class="best">月30〜80円程度</td>
+            <td class="best">ほぼなし(機種により通信性能が少し下がる)</td>
+          </tr>
+          <tr>
+            <th>Wi-Fiの5GHz帯を必要時のみ使う</th>
+            <td>月数十円</td>
+            <td>手間の割に効果が小さい</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>やる価値があるのは、<strong>機種に省電力モードがあれば有効にしておく</strong>くらいです。デメリットがほぼなく、設定は一度きりで済みます。</p>
+    <p>一方、こまめな電源オフはあまりおすすめできません。ホームルーターは電源を入れ直すたびに基地局への再接続と回線の確立が必要で、使えるようになるまで数分かかります。加えて、スマートスピーカー・見守りカメラ・スマートロックなど常時接続の機器がある家庭では、切っている間それらも止まります。<strong>月100円のために毎日その不便を受け入れるか</strong>、という比較になります。</p>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 節電より効果が大きいのは「置き場所」</div>
+      <p style="margin:0;">同じ電気代を払うなら、電波をしっかり掴む場所に置いたほうが得です。窓際・床から1m以上・電子レンジや水槽から離す、の3点で実測が変わることがあります。遅さを感じている場合は<a href="softbank-air-osoi">ホームルーターが遅いときの対処</a>を先に試してください。</p>
+    </div>
+
+    <h2 id="wifi7">Wi-Fi 7ルーターは電気代が高いのか</h2>
+    <p>光回線を使っていて、Wi-Fiルーターの買い替えを検討している人向けの補足です。</p>
+    <p>結論から言うと、<strong>Wi-Fi 7のハイエンド機は消費電力が大きくなる傾向があります</strong>。Wi-Fi 5・6世代の一般的な機種が5〜12W程度なのに対し、Wi-Fi 7の上位機では30Wを超える定格を持つものもあります。30Wなら月約670円、年間約8,000円です。ここまで来ると、無視できない額になります。</p>
+    <p>ただしこれは<strong>最上位クラスの話</strong>で、Wi-Fi 7でも標準的なモデルなら10〜20W程度に収まります。買う前に仕様表の「消費電力(最大)」を見て、上の早見表に当てはめれば、想定外は避けられます。世代ごとの選び方は<a href="hikari-router-erabikata">Wi-Fiルーターの選び方</a>で整理しました。</p>
+    <p>なお、通信費全体を見直したい場合は、電気代よりもスマホのプランや回線の月額そのものを触るほうが効きます。ネット代全体の相場感は<a href="hitorigurashi-netdai">一人暮らしのネット代の相場と節約</a>を参考にしてください。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>ホームルーターの電気代は月いくらですか?</summary>
+        <div class="faq__a">定格消費電力10〜20W程度の機種が多く、24時間つけっぱなしで月200〜450円前後が目安です(31円/kWhで計算)。実際には常に定格いっぱいで動くわけではないため、請求はこれより低くなることが多くなります。</div>
+      </details>
+      <details>
+        <summary>光回線とホームルーター、どちらが電気代が安いですか?</summary>
+        <div class="faq__a">大きな差はつきません。光回線はONUとWi-Fiルーターの2台で合計10〜25W、ホームルーターは1台で10〜20W程度です。むしろメッシュWi-Fiを組んでいる光回線のほうが高くなることもあります。決め手になるのは月額料金と速度のほうです。</div>
+      </details>
+      <details>
+        <summary>こまめに電源を切ったほうがいいですか?</summary>
+        <div class="faq__a">削減額は1日8時間オフで月100円程度にとどまる一方、再接続に数分かかり、常時接続の機器も止まります。省電力モードがある機種なら、そちらを有効にするだけで十分です。</div>
+      </details>
+      <details>
+        <summary>自分の機種の消費電力はどこで確認できますか?</summary>
+        <div class="faq__a">端末本体の裏面・底面のラベル、またはACアダプタの表記で確認できます。「DC12V 1.5A」のような表記なら、12×1.5=18Wが上限です。公式サイトの仕様表にも「消費電力(最大)」として記載されています。</div>
+      </details>
+      <details>
+        <summary>Wi-Fi 7のルーターは電気代が高いのですか?</summary>
+        <div class="faq__a">最上位クラスは30W以上の定格を持つものがあり、その場合は月600円を超えます。ただし標準的なモデルなら10〜20W程度で、従来世代と大きくは変わりません。購入前に仕様表の定格消費電力を確認してください。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:電気代は「台数」で決まる</h2>
+    <ul>
+      <li>計算式は<strong>消費電力(W)×22.3円=月の電気代</strong>(31円/kWh・720時間)</li>
+      <li>ホームルーターは<strong>月200〜450円前後</strong>。家電の中では小さい部類</li>
+      <li>光回線もONU+ルーターで同程度。<strong>差は月に数十円〜百数十円</strong></li>
+      <li>電気代は回線の種類ではなく<strong>つないでいる機器の台数</strong>で決まる</li>
+      <li>節電でやる価値があるのは<strong>省電力モードの有効化</strong>くらい</li>
+    </ul>
+    <p>機種そのものを選び直すなら<a href="home-router">ホームルーター3社比較</a>へ。エリアが不安なら<a href="home5g-area">5Gエリアの確認方法</a>を先に済ませておくと確実です。光回線と迷っている段階なら<a href="hikari-osusume">光回線7社比較</a>と見比べてください。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>公益社団法人 全国家庭電気製品公正取引協議会「電気料金の目安単価」31円/kWh(税込・令和4年7月22日改定)</li>
+        <li>各ホームルーター・Wi-Fiルーターのメーカー公式仕様ページに記載の定格消費電力(2026年9月確認)</li>
+        <li>本文中の電気代・実質月額はいずれも上記単価にもとづく編集部の試算です</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">機器1台で完結する構成にしたいなら</div>
+    <p>ホームルーターはONUもWi-Fiルーターも別に用意する必要がなく、コンセント1つで完結します。工事不要で申し込みから最短数日、引越し時もそのまま持っていけるのが強みです。</p>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2W6WEY+50+7LVLZM" rel="nofollow sponsored noopener" target="_blank">とくとくBBホームWi-Fiの料金を見る<small>ずっと定額タイプの条件を確認できます</small></a>
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="home-router">ホームルーターおすすめ3社比較|エリアと実測で選ぶ</a></li>
+      <li><a href="wimax-vs-homerouter">WiMAXとホームルーターはどっち?モバイル型と据え置き型の選び分け</a></li>
+      <li><a href="hikari-router-erabikata">Wi-Fiルーターの選び方|Wi-Fi 6/6E/7と買い替えの判断基準</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260904e" defer></script>
+</body>
+</html>
