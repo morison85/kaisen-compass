@@ -5,8 +5,29 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 04 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 05 Sep 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>光回線ルーターの選び方|Wi-Fi 6/6E/7の違いと買うか借りるか | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-router-erabikata</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-router-erabikata</guid>
+    <pubDate>Sat, 05 Sep 2026 12:00:00 +0900</pubDate>
+    <description>光回線用Wi-Fiルーターの選び方。最優先はIPv6(IPoE)対応で、規格の新しさより先に確認すべき理由を解説。Wi-Fi 6・6E・7の違いと実用面での必要性、買うかレンタルかを利用年数の損益分岐点で判断する方法、部屋の広さ・接続台数から選ぶ3ステップまで、2026年9月時点の情報でまとめました。</description>
+  </item>
+  <item>
+    <title>楽天モバイル×楽天ひかりのセットは得?|ポイント還元の実質価値 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/rakuten-hikari-mobile-set</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/rakuten-hikari-mobile-set</guid>
+    <pubDate>Sat, 05 Sep 2026 12:00:00 +0900</pubDate>
+    <description>楽天モバイルと楽天ひかりのセット特典(毎月1,000ポイント永年還元)は現金値引きではなくポイント還元。消化率別に実質価値を現金換算し、楽天経済圏度チェックリストで自分に向くかを判定します。対象外・非該当だった人向けにahamo+GMOとくとくBB光などの代替案も、2026年9月時点の情報で解説します。</description>
+  </item>
+  <item>
+    <title>ポケットWiFi短期レンタルの選び方|期間別の正解 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/pocket-wifi-tanki-rental</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/pocket-wifi-tanki-rental</guid>
+    <pubDate>Sat, 05 Sep 2026 12:00:00 +0900</pubDate>
+    <description>ポケットWiFi短期レンタルは借りる期間で正解が変わります。1週間・2週間〜1ヶ月・2ヶ月以上の3区分で損益分岐を日額換算し、主要な短期レンタルサービスを比較。出張・帰省・引越しなどシーン別のチェックリストと、データ容量・回線種別の選び方まで、2026年9月時点の情報でまとめました。</description>
+  </item>
   <item>
     <title>マンションのVDSLを速くする方法|100Mbpsの壁と抜け道 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/mansion-vdsl</link>

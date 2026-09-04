@@ -56,3 +56,8 @@
 
 ### 格安SIM
 - [一人暮らしのネット代の平均と節約術](https://kaisen-compass.com/articles/hitorigurashi-netdai): 大手キャリア+光回線で月10,000〜12,000円、格安SIM+縛りなし光回線で5,000〜6,000円台、テザリングのみで3,000円前後。通信量100GB超は光回線、20〜100GBはホームルーター、20GB以下はテザリングが目安。一人暮らしは縛りのない回線を選ぶ。
+
+### 2026-09-05 追加
+- [光回線ルーターの選び方](https://kaisen-compass.com/articles/hikari-router-erabikata): 最優先はIPv6(IPoE)対応。Wi-Fi 6/6E/7の違いと必要性、買うかレンタルかは利用年数3〜4年が損益分岐の目安。
+- [楽天モバイル×楽天ひかりのセットは得?](https://kaisen-compass.com/articles/rakuten-hikari-mobile-set): セット特典は毎月1,000ポイント永年還元(現金値引きではない)。楽天経済圏度チェックリストと、対象外の人向け代替案(ahamo+GMOとくとくBB光など)を解説。
+- [ポケットWiFi短期レンタルの選び方](https://kaisen-compass.com/articles/pocket-wifi-tanki-rental): 1週間程度は日割りレンタル、2週間〜1ヶ月は縛りなし月契約、2ヶ月超はモバイルルーターの通常契約が日額換算で有利。

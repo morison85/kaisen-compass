@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="光回線のWi-Fiルーターの選び方。Wi-Fi6/6E/7の違いと買うか借りるかの判断" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:Wi-Fiルーターのイラスト -->
+  <g transform="translate(890, 320) scale(0.9)">
+    <rect x="10" y="150" width="270" height="70" rx="16" fill="#ffffff"/>
+    <circle cx="45" cy="185" r="8" fill="#1558d6"/>
+    <rect x="70" y="178" width="150" height="14" rx="7" fill="#dbe7ff"/>
+    <line x1="70" y1="90" x2="55" y2="150" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+    <line x1="220" y1="90" x2="235" y2="150" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+    <g fill="none" stroke="#ffd76a" stroke-width="9" stroke-linecap="round">
+      <path d="M100 130 A45 45 0 0 1 190 130"/>
+      <path d="M118 145 A24 24 0 0 1 172 145"/>
+    </g>
+    <circle cx="145" cy="160" r="7" fill="#ffd76a"/>
+  </g>
+
+  <rect x="70" y="80" width="300" height="56" rx="28" fill="#ffd76a"/>
+  <text x="220" y="119" text-anchor="middle" font-size="27" font-weight="800" fill="#0b2c5f">買うか、借りるか</text>
+
+  <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff">光回線ルーターの</text>
+  <text x="70" y="360" font-size="82" font-weight="800" fill="#ffd76a">選び方</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">Wi-Fi 6/6E/7の違いと損益分岐点</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
