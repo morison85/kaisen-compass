@@ -30,7 +30,7 @@
   --w-article: 780px;
   --font: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", Meiryo, sans-serif;
   /* 見出し用: Noto より字面が締まっていて、大きく組んだときに強い */
-  --font-display: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  --font-display: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", Meiryo, sans-serif; /* 2026-09-04: Zen Kaku Gothic New の読み込みを止めた(モバイルのFCPが10秒超だった) */
   /* ブランド用: 角丸で親しみのある書体 */
   --font-brand: "Zen Maru Gothic", var(--font-display);
   /* 数字用: 欧文の幾何学サンセリフ。日本語部分は自動で見出し書体にフォールバックする */
