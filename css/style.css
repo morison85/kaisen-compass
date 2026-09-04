@@ -38,6 +38,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html { overflow-x: clip; } /* 何かが画面幅を超えてもページ全体が横スクロールしないための保険 */
 
 html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 
@@ -1214,7 +1215,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 }
 
 @media (max-width: 819px) {
-  .tbl-wrap { overflow-x: visible; border: 0; background: transparent; border-radius: 0; }
+  .tbl-wrap--cards { overflow-x: visible; border: 0; background: transparent; border-radius: 0; } /* hikaku のカード積み専用。記事内の表(.tbl-wrap > table.cmp)は横スクロールを維持する(2026-09-04: 全 .tbl-wrap に効いていて記事がページごと横スクロールしていた) */
   .tbl-hint { display: none !important; }
   .cmp-tbl { min-width: 0; width: 100%; font-size: .86rem; }
   .cmp-tbl, .cmp-tbl tbody, .cmp-tbl tr, .cmp-tbl td, .cmp-tbl th { display: block; width: auto; }
