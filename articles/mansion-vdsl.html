@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>マンションのVDSLを速くする方法|100Mbpsの壁と抜け道 | 回線コンパス</title>
+<meta name="description" content="マンションの配線がVDSL方式だと、どの光回線を契約しても上限は100Mbps。それでも夜に遅いのはPPPoEの混雑が原因のことが多く、IPoE化・ルーター更新・有線接続で改善できます。100Mbpsの壁そのものを抜ける方法(auひかりタイプG・光配線方式への変更・5Gホームルーター)と、乗り換え判断の基準を2026年9月時点の情報で解説します。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/mansion-vdsl">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="マンションのVDSL方式を速くする方法|100Mbpsの壁の正体と、今日できる改善・抜け道になる回線">
+<meta property="og:description" content="VDSLの上限100Mbpsは変えられないが、夜の遅さはIPoE化で直る。壁を抜けるauひかりタイプG・光配線変更・5Gホームルーターも解説。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/mansion-vdsl">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-mansion-vdsl.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-04">
+<meta property="article:modified_time" content="2026-09-04">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-mansion-vdsl.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260904e">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "マンションのVDSL方式を速くする方法|100Mbpsの壁の正体と、今日できる改善・抜け道になる回線",
+  "description": "VDSL方式の上限100Mbpsの仕組み、夜に遅い原因の切り分け、IPoE化・ルーター更新・有線接続による改善、auひかりタイプG・光配線方式への変更・5Gホームルーターで壁を抜ける方法を解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-mansion-vdsl.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-04",
+  "dateModified": "2026-09-04",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/mansion-vdsl"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "VDSL方式のマンションで100Mbps以上は出せますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "NTTの光回線を使う光コラボ(ドコモ光・ソフトバンク光・GMOとくとくBB光など)では、VDSL方式の上限100Mbpsを超えることはできません。超えるには、建物がauひかりのタイプG(G.fast方式・下り最大664Mbps)に対応しているか、建物の配線を光配線方式に変更するか、光回線をあきらめて5Gのホームルーターを使うかのいずれかになります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "VDSLなのに夜だけ遅くなるのは配線のせいですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "配線ではなく、PPPoE接続が通る網終端装置の混雑が原因のことが多いです。VDSLの上限100Mbpsは時間帯で変わらないので、昼は60〜80Mbps出るのに夜は10Mbps以下になるなら、プロバイダにIPoE(IPv4 over IPv6)を申し込んで対応ルーターに変えると夜間の落ち込みが改善します。上限が上がるわけではない点に注意してください。" }
+    },
+    {
+      "@type": "Question",
+      "name": "マンションの配線をVDSLから光配線方式に変えられますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "建物全体の設備の話なので、入居者が個人で変えることはできません。管理会社やオーナー(分譲なら管理組合)がNTT東日本・西日本に光配線方式への切り替え工事を相談する形になり、建物の構造や配管の状況で可否が決まります。要望を出すこと自体は無料なので、まず管理会社に相談してみる価値はあります。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "マンションのVDSLを速くする方法" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>マンションのVDSLを速くする方法</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">マンションのVDSL方式を速くする方法【2026年】100Mbpsの壁の正体と、今日できる改善・抜け道になる回線</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-04">2026年9月4日</time></span>
+      <span>公開日:<time datetime="2026-09-04">2026年9月4日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。掲載順や評価は<a href="../policy">編集ポリシー</a>に基づき、広告の有無に関わらず作成しています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-mansion-vdsl.svg" alt="マンションのVDSLを速くする方法。100Mbpsの壁と抜け道" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「光回線なのに速度が100Mbpsで頭打ち」「夜になると1桁Mbpsまで落ちる」。マンションでこの症状が出たら、原因はほぼ<strong>建物の配線がVDSL方式</strong>であることです。共用部までは光ファイバーで来ていても、そこから各戸までは電話線なので、どのプロバイダを選んでも上限は100Mbpsになります。</p>
+    <p>ただし「VDSLだから何をやっても無駄」ではありません。夜の落ち込みは配線とは別の原因で、直せます。そして100Mbpsの壁そのものを抜ける方法も3つあります。この記事では、今日できる改善と、乗り換えを判断する基準を順番に整理します。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p><strong>VDSLの上限100Mbpsは、NTT回線を使う光コラボではどこに乗り換えても変わりません</strong>。一方で「夜だけ遅い」はPPPoEの混雑が原因なので、<strong>IPoE(IPv4 over IPv6)に切り替える+対応ルーターに変える</strong>だけで、昼と同じ60〜80Mbps前後に戻るケースが大半です。</p>
+      <p>壁を抜けたいなら、<strong>①建物がauひかりタイプG(最大664Mbps)に対応しているか確認 ②管理会社に光配線方式への変更を相談 ③5Gエリアならホームルーターに切り替え</strong>の順に検討します。今の回線がPPPoEのまま2年縛りを更新し続けているなら、IPoE標準で縛りのない光コラボへの事業者変更が最も手間の少ない改善です。</p>
+    </div>
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><span>IPoE標準・縛りなしのGMOとくとくBB光を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#shikumi">VDSL方式とは:100Mbpsの壁の正体</a></li>
+        <li><a href="#kiriwake">「遅い」の原因を3分で切り分ける</a></li>
+        <li><a href="#kaizen">今日できる改善5つ(上限は変わらないが体感は変わる)</a></li>
+        <li><a href="#genkai">100Mbpsで足りること・足りないこと</a></li>
+        <li><a href="#nukemichi">壁を抜ける3つの方法</a></li>
+        <li><a href="#handan">乗り換え判断の基準</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">迷ったら、ツールで候補を絞れます</p>
+      <p>住まいのタイプ・工事の可否・重視する点を選ぶだけで、光回線とホームルーターの候補を絞り込めます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="shikumi">VDSL方式とは:100Mbpsの壁の正体</h2>
+    <p>マンションの光回線は、建物の共用部(MDF室)までは光ファイバーで引き込まれ、そこから各部屋までの区間が3つの方式に分かれます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>配線方式</th><th>共用部→各戸の配線</th><th>上限速度</th><th>見分け方</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>光配線方式</th><td>光ファイバー</td><td class="best">最大1Gbps(10ギガ対応の建物も)</td><td>壁に「光コンセント」がある</td></tr>
+          <tr><th>VDSL方式</th><td>電話線(メタル)</td><td>最大100Mbps</td><td>電話線のモジュラージャックにVDSLモデムをつなぐ</td></tr>
+          <tr><th>LAN配線方式</th><td>LANケーブル</td><td>最大100Mbps〜1Gbps(設備による)</td><td>壁にLANポートがある</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>VDSLは電話線で信号を運ぶため、規格上の上限が下り・上りとも100Mbpsです。実測は共用部からの距離や配線の状態で変わり、<strong>60〜90Mbpsが標準、古い建物だと30〜50Mbps</strong>ということもあります。この上限は建物側の設備で決まるので、<strong>プロバイダや光コラボをどこに変えても同じ</strong>です。自分の建物の方式の調べ方は<a href="mansion-internet">マンションのネットが遅い原因と配線方式の確認方法</a>に詳しくまとめています。</p>
+
+    <h2 id="kiriwake">「遅い」の原因を3分で切り分ける</h2>
+    <p>対策を選ぶ前に、遅さの種類を確認します。スマホの速度測定アプリで、<strong>昼(平日13時ごろ)と夜(21〜23時)の2回、ルーターのそばで計測</strong>してください。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>症状</th><th>原因の見立て</th><th>効く対策</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>昼も夜も60〜90Mbpsで頭打ち</th><td>VDSLの上限に達している(正常)</td><td>体感を上げるなら有線・ルーター更新。それ以上は「壁を抜ける」方法</td></tr>
+          <tr><th>昼は60Mbps以上、夜だけ10Mbps以下</th><td class="best">PPPoEの網終端装置の混雑</td><td class="best">IPoE(IPv4 over IPv6)への切り替え</td></tr>
+          <tr><th>昼も夜も20〜30Mbps以下、ときどき切れる</th><td>宅内配線の劣化・モデム不調・古いルーター</td><td>モジュラーケーブル交換・モデム再起動・ルーター更新。改善しなければNTTに配線点検を相談</td></tr>
+          <tr><th>スマホだけ遅い、部屋を移動すると変わる</th><td>Wi-Fiの電波(距離・干渉)</td><td>5GHz帯を使う・ルーターの置き場所を変える・中継機</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>いちばん多いのは2行目です。VDSLの上限は時間帯で変わらないので、<strong>夜だけ極端に落ちるなら配線の問題ではありません</strong>。原因の仕組みは<a href="ipv6-ipoe">IPv6(IPoE)とは何か</a>で図解しています。</p>
+
+    <h2 id="kaizen">今日できる改善5つ(上限は変わらないが体感は変わる)</h2>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">IPoE(IPv4 over IPv6)に切り替える</div>
+        <p>今のプロバイダがv6プラス・OCNバーチャルコネクト・transixなどの名称で提供していれば、マイページから申し込めます(多くは無料)。対応ルーターが必要で、5年以上前の機種は非対応のことが多いです。プロバイダが非対応なら、IPoE標準の光コラボへ事業者変更するのが早道です。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターを買い替える(Wi-Fi 6以上・有線1Gbps対応)</div>
+        <p>VDSLモデムからルーターへの区間は100Mbpsでも、ルーターが古いとWi-Fi側で30Mbpsしか出ないことがあります。Wi-Fi 6(11ax)対応・有線ギガ対応の機種にすると、上限いっぱいの90Mbps前後まで使い切れます。IPoE対応の条件も一緒に満たせます。</p>
+      </li>
+      <li>
+        <div class="steps__t">PCとテレビは有線でつなぐ</div>
+        <p>Web会議のPCやゲーム機はLANケーブルで直結すると、遅延のばらつきが消えます。VDSLの100Mbpsは、有線ならWeb会議・4K動画・オンラインゲームに十分です。</p>
+      </li>
+      <li>
+        <div class="steps__t">モジュラーケーブルを新品の短いものに替え、モデムを再起動する</div>
+        <p>VDSLモデムと壁のジャックをつなぐ電話線は、長い・古い・電話機と分岐しているとノイズで速度が落ちます。1m程度の新しいケーブルに替え、モデムの電源を入れ直します。数百円で済む対策です。</p>
+      </li>
+      <li>
+        <div class="steps__t">大きなダウンロードは深夜か昼に回す</div>
+        <p>ゲームのアップデートやOSの更新は、時間指定で混雑時間を避けます。100Mbpsでも空いている時間なら100GBが3時間程度で終わります。</p>
+      </li>
+    </ol>
+    <div class="cta">
+      <div class="cta__t">⚡ 今のプロバイダがIPoE非対応・2年縛りが続いているなら</div>
+      <p>GMOとくとくBB光はv6プラス(IPoE)が標準で、対応Wi-Fiルーターは無料レンタル。契約の縛りも解約違約金もないので、VDSLの建物から引越すときも身軽です。光コラボ同士なら工事なしの事業者変更で切り替えられます。</p>
+      <!-- A8: GMOとくとくBB光(GMO光アクセス) -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金とキャンペーンを見る<small>マンション3,773円・縛りなし・v6プラス対応ルーター無料</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+      <p class="micro">※ VDSLの上限100Mbps自体は変わりません。夜間の落ち込み対策と、縛りからの解放が目的です。事業者変更の手順は<a href="jigyousha-henkou">こちら</a>。</p>
+    </div>
+
+    <h2 id="genkai">100Mbpsで足りること・足りないこと</h2>
+    <p>「100Mbpsしか出ない」は、用途によっては問題になりません。冷静に必要量を見ておきます。</p>
+    <ul>
+      <li><strong>足りる</strong>:Web会議(1人あたり2〜4Mbps)、4K動画(約25Mbps)、オンラインゲームの対戦(数Mbps。重要なのは速度より遅延の安定)、テレワークの一般業務</li>
+      <li><strong>ぎりぎり</strong>:家族3〜4人が同時に4K動画とゲームを使う、クラウドへの大量アップロード(上りも100Mbps上限)</li>
+      <li><strong>足りない</strong>:100GB級のゲームやソフトを頻繁に落とす、動画編集データのやり取りが日常、複数人が同時にダウンロードする</li>
+    </ul>
+    <p>「足りる」に入るなら、上の5つの改善で終わりにして構いません。「足りない」なら、次の3つの方法で壁を抜けます。</p>
+
+    <h2 id="nukemichi">壁を抜ける3つの方法</h2>
+    <h3>方法1:auひかりの「タイプG」に対応していないか確認する</h3>
+    <p>auひかりのマンションタイプには、<strong>電話線のままで下り最大664Mbpsを出すG.fast方式(タイプG)</strong>があります。建物の共用設備がタイプGに対応していれば、配線を変えずにVDSLの6倍以上の上限になります。対応しているかどうかは建物ごとに決まっていて、住所を入れるだけで判定できます。NTT系の光コラボからの乗り換えになるので工事は必要ですが、VDSLの壁を抜ける中では最も現実的な方法です。</p>
+    <div class="cta">
+      <div class="cta__t">🏢 建物がタイプGなら、配線そのままで664Mbps</div>
+      <p>auひかりはKDDIの独自回線で、夜間の混雑にも強い回線です。まず住所で建物の対応タイプを判定してください。判定は無料で、申し込みにはなりません。</p>
+      <!-- A8: auひかり(正規代理店NEXT) -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank">auひかりの建物対応(タイプ)を確認する<small>住所を入れるだけ・結果はすぐ表示</small></a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6" alt="">
+      <p class="micro">※ 結果がタイプV(VDSL)なら上限は同じ100Mbpsです。マンションタイプの見方は<a href="auhikari-mansion-taiou">auひかりのマンション対応確認</a>に、窓口の選び方は<a href="auhikari-dairiten">代理店比較</a>にまとめています。</p>
+    </div>
+    <h3>方法2:管理会社に「光配線方式への変更」を相談する</h3>
+    <p>建物の配線を光配線方式に変えるのは、オーナー・管理組合がNTT東日本/西日本に相談して行う設備工事です。入居者が個人で決められるものではありませんが、要望を出すのは自由で、築年数の古い物件ほど検討が進んでいることもあります。「VDSLで100Mbpsが上限になっており、光配線方式への変更を検討してほしい」と管理会社に伝えてみてください。すぐには実現しなくても、次の引越しの物件選びで「光配線方式かどうか」を条件にする判断材料になります。</p>
+    <h3>方法3:光回線をあきらめて5Gホームルーターにする</h3>
+    <p>5Gエリアで電波が強い部屋なら、ホームルーターの実測がVDSLの100Mbpsを上回ることは珍しくありません。工事不要で、契約から数日で使えます。速度が電波状況に左右されるので、<strong>初期契約解除やお試し期間のある窓口で実測を確認してから本契約</strong>するのが安全です。</p>
+    <div class="cta">
+      <div class="cta__t">📡 5Gの電波が入るなら、工事なしで100Mbpsの壁を越える</div>
+      <p>BIGLOBE WiMAXは月額割引型(24ヶ月目まで1,650円引き)でキャッシュバックの受け取り忘れがなく、au・UQモバイルのセット割にも対応。まずピンポイントのエリア判定で、自宅が5Gの提供エリアかを確認してください。</p>
+      <!-- A8: BIGLOBE WiMAX +5G -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXのエリアと料金を見る<small>ピンポイント判定・工事不要・お試し利用の案内</small></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" alt="">
+      <p class="micro">※ 工事ができない賃貸での選択肢は<a href="kouji-dekinai-chintai">光回線の工事ができない賃貸のネット回線</a>でも解説しています。</p>
+    </div>
+
+    <h2 id="handan">乗り換え判断の基準</h2>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>状況</th><th>判断</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>夜だけ遅い・昼は60Mbps以上</th><td class="best">乗り換え不要。IPoE化(非対応ならIPoE標準の光コラボへ事業者変更)</td></tr>
+          <tr><th>昼も夜も上限付近で、用途は動画・会議中心</th><td>乗り換え不要。有線化とルーター更新で体感を上げる</td></tr>
+          <tr><th>大容量のダウンロード・アップロードが日常</th><td class="best">auひかりタイプGの対応確認 → 非対応なら5Gホームルーターの実測確認</td></tr>
+          <tr><th>今の契約が2年縛り+PPPoE+古いルーター</th><td>縛りなし・IPoE標準・ルーター無料の光コラボへ。VDSLでも月額と手間が下がる</td></tr>
+          <tr><th>1年以内に引越す予定</th><td>設備投資はせず、次の物件を光配線方式で選ぶ。つなぎは縛りなしの回線で</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>どの判断でも、<strong>今の回線の解約金と工事費の残債</strong>を先に確認してから動いてください。2022年7月以降の契約なら解約金は月額1か月分以下ですが、工事費の分割残債は別に残ります(<a href="hikari-kaiyaku">光回線の解約手順と違約金</a>)。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>VDSL方式のマンションで100Mbps以上は出せますか?</summary>
+        <div class="faq__a">NTTの光回線を使う光コラボでは、VDSL方式の上限100Mbpsを超えることはできません。超えるには、建物がauひかりのタイプG(G.fast方式・下り最大664Mbps)に対応しているか、建物の配線を光配線方式に変更するか、光回線をあきらめて5Gのホームルーターを使うかのいずれかになります。</div>
+      </details>
+      <details>
+        <summary>VDSLなのに夜だけ遅くなるのは配線のせいですか?</summary>
+        <div class="faq__a">配線ではなく、PPPoE接続が通る網終端装置の混雑が原因のことが多いです。VDSLの上限は時間帯で変わらないので、昼は60〜80Mbps出るのに夜は10Mbps以下になるなら、IPoE(IPv4 over IPv6)を申し込んで対応ルーターに変えると夜間の落ち込みが改善します。上限が上がるわけではない点に注意してください。</div>
+      </details>
+      <details>
+        <summary>マンションの配線をVDSLから光配線方式に変えられますか?</summary>
+        <div class="faq__a">建物全体の設備の話なので、入居者が個人で変えることはできません。管理会社やオーナー(分譲なら管理組合)がNTT東日本・西日本に切り替え工事を相談する形になり、建物の構造や配管の状況で可否が決まります。要望を出すこと自体は無料なので、まず管理会社に相談してみる価値はあります。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:上限は変えられない、でも「夜の遅さ」と「壁」は別問題</h2>
+    <ul>
+      <li>VDSLの上限<strong>100Mbps</strong>は建物の設備で決まり、光コラボをどこに変えても同じ</li>
+      <li><strong>夜だけ遅いならIPoE化</strong>で直る。非対応プロバイダならIPoE標準の光コラボへ事業者変更</li>
+      <li>ルーター更新・有線化・ケーブル交換で、上限いっぱいの90Mbps前後まで使い切れる</li>
+      <li>壁を抜けるなら<strong>auひかりタイプG(664Mbps)の対応確認 → 光配線方式の相談 → 5Gホームルーター</strong>の順</li>
+      <li>動くときは解約金と工事費残債を先に確認。引越し予定があるなら次の物件を光配線方式で選ぶ</li>
+    </ul>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li><a href="https://flets.com/" target="_blank" rel="noopener">NTT東日本 フレッツ光</a>・NTT西日本 集合住宅向けサービスの配線方式(光配線方式・VDSL方式・LAN配線方式)と最大通信速度の案内</li>
+        <li><a href="https://www.au.com/internet/auhikari/" target="_blank" rel="noopener">KDDI auひかり</a> マンションタイプG(G.fast方式・下り最大664Mbps)・タイプV(VDSL方式)の提供条件(2026年9月確認)</li>
+        <li><a href="https://www.jpne.co.jp/service/v6plus/" target="_blank" rel="noopener">日本ネットワークイネイブラー(JPNE)「v6プラス」</a> IPoE方式の仕組み</li>
+        <li>GMOとくとくBB光・BIGLOBE WiMAX +5Gの各公式サイトの料金表示(税込・2026年9月確認)</li>
+        <li>運営者自身のVDSL方式マンションでの実測(昼夜の速度差とIPoE切り替え前後の比較)</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">今のプロバイダがIPoE非対応・2年縛りが続いているなら</div>
+    <p>GMOとくとくBB光はv6プラス(IPoE)が標準で、対応Wi-Fiルーターは無料レンタル。契約の縛りも解約違約金もないので、VDSLの建物から引越すときも身軽です。光コラボ同士なら工事なしの事業者変更で切り替えられます。</p>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金とキャンペーンを見る<small>マンション3,773円・縛りなし・v6プラス対応ルーター無料</small></a>
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|回線オタク・実測データ収集家</div>
+      <p>VDSL方式のマンションに住んでいたとき、夜の遅さをIPoE化で直し、上限の壁は引越し先を光配線方式にすることで越えました。当サイトの評価は公式の料金・実測データの集計値・実際に契約した経験の3つだけを根拠にしています。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="mansion-internet">マンションのネットが遅い原因と解決策|配線方式の調べ方</a></li>
+      <li><a href="ipv6-ipoe">IPv6(IPoE)とは|夜だけ遅い光回線を直す仕組みと切り替え手順</a></li>
+      <li><a href="hikari-osoi">光回線が遅いときの対処法|時間帯別・原因別の切り分けと改善策</a></li>
+      <li><a href="auhikari-mansion-taiou">auひかりのマンション対応確認|建物タイプの見方と料金</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>「回線選びで失敗しない」ために、公式の料金と実測データ、実際の使用経験にもとづく比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較と、仕事の辞め方の実務ガイド</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260904e" defer></script>
+</body>
+</html>

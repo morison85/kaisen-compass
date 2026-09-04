@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="マンションのVDSLを速くする方法。100Mbpsの壁と抜け道" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右側: 上限の比較カード -->
+  <g transform="translate(860,140)">
+    <rect x="0" y="0" width="280" height="330" rx="22" fill="#ffffff"/>
+    <text x="140" y="46" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">配線方式ごとの上限</text>
+    <text x="30" y="100" font-size="18" font-weight="700" fill="#5f6b7a">VDSL(電話線)</text>
+    <text x="250" y="140" text-anchor="end" font-size="34" font-weight="800" fill="#d64545">100Mbps</text>
+    <text x="30" y="192" font-size="18" font-weight="700" fill="#5f6b7a">auひかり タイプG</text>
+    <text x="250" y="232" text-anchor="end" font-size="34" font-weight="800" fill="#0b2c5f">664Mbps</text>
+    <text x="30" y="284" font-size="18" font-weight="700" fill="#5f6b7a">光配線方式</text>
+    <text x="250" y="322" text-anchor="end" font-size="34" font-weight="800" fill="#0e9f6e">1Gbps</text>
+  </g>
+
+  <!-- バッジ: 「上限100Mbpsの壁」全角4+半角7(3.5)=7.5文字×29=218+60=278 -->
+  <rect x="70" y="80" width="278" height="56" rx="28" fill="#ffd76a"/>
+  <text x="209" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">上限100Mbpsの壁</text>
+
+  <!-- 見出し: 「マンションの」6×74=444 / 「VDSLを速くする」半角4(2)+全角5=7×74=518 → 右端588 (図版860) -->
+  <text x="70" y="248" font-size="74" font-weight="800" fill="#ffffff">マンションの</text>
+  <text x="70" y="360" font-size="74" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">VDSL</tspan>を速くする</text>
+  <!-- サブ: 20文字×31=620 -->
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">今日できる改善と、壁を抜ける回線の選び方</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

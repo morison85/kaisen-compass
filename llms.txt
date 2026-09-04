@@ -50,6 +50,8 @@
 - [編集ポリシー・広告掲載について](https://kaisen-compass.com/policy): 掲載順・評価は報酬額でなく読者への適合度で決定。広告を含む記事にはその旨を明記。
 
 ### 光回線
+- [マンションのVDSL方式を速くする方法](https://kaisen-compass.com/articles/mansion-vdsl): VDSL方式のマンションで速度を改善する方法と、100Mbpsの上限を抜ける3つの選択肢
+- [ahamoユーザーの光回線おすすめ](https://kaisen-compass.com/articles/ahamo-hikari-osusume): ahamoユーザー向けの光回線の選び方。セット割がない前提でahamo光と縛りなし光コラボを2年総額で比較
 - [IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順](https://kaisen-compass.com/articles/ipv6-ipoe): PPPoEは網終端装置を通るため夜間に混雑し、IPv6 IPoE(v6プラス等)は通らないため速い。申込→対応ルーター→自動設定の3手順、MAP-E/DS-Liteのポート制限、IPoE標準の回線(GMOとくとくBB光等)。
 
 ### 格安SIM
