@@ -1581,3 +1581,6 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .final-pick p { font-size: .9rem; margin: 0 0 14px; }
 .final-pick .btn { max-width: 420px; margin: 0 auto; }
 .final-pick .micro { font-size: .76rem; color: var(--c-text-sub); margin: 10px 0 0; }
+
+/* ボタンを縦に並べたときの間隔(.cta .btn の margin:0 auto に潰されないよう再指定) */
+.cta .btn + .btn, .final-pick .btn + .btn, .btn-area .btn + .btn, .cta .btn--sub, .btn-area .btn--sub { margin-top: 10px; }
