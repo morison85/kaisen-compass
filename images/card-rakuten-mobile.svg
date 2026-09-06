@@ -6,16 +6,16 @@
   <text x="40" y="78" font-size="46" font-weight="800" fill="#ffffff">楽天モバイル</text>
   <text x="40" y="112" font-size="19" fill="#ffd9d9">Rakuten最強プラン(段階制)</text>
   <text x="40" y="185" font-size="17" fill="#5f6b7a">月額(税込・執筆時点の目安)</text>
-  <text x="40" y="240" font-size="34" font-weight="800" fill="#0b2c5f">3GBまで 1,078円</text>
-  <text x="40" y="292" font-size="34" font-weight="800" fill="#0b2c5f">無制限 3,278円</text>
+  <text x="40" y="240" font-size="34" font-weight="800" fill="#0b2c5f">3GBまで 968円</text>
+  <text x="40" y="292" font-size="34" font-weight="800" fill="#0b2c5f">無制限 3,168円</text>
   <g font-size="20" fill="#26303e">
     <circle cx="432" cy="188" r="13" fill="#0e9f6e"/><text x="425" y="195" font-size="16" fill="#fff">✓</text>
     <text x="458" y="196">使った分だけの段階制プラン</text>
     <circle cx="432" cy="248" r="13" fill="#0e9f6e"/><text x="425" y="255" font-size="16" fill="#fff">✓</text>
     <text x="458" y="256">専用アプリで国内通話無料</text>
     <circle cx="432" cy="308" r="13" fill="#0e9f6e"/><text x="425" y="315" font-size="16" fill="#fff">✓</text>
-    <text x="458" y="316">上限3,278円でデータ無制限</text>
+    <text x="458" y="316">上限3,168円でデータ無制限</text>
   </g>
   <line x1="40" y1="365" x2="760" y2="365" stroke="#e2e6e4" stroke-width="2"/>
-  <text x="40" y="398" font-size="14" fill="#94a3b5">出典:公式サイト(2026年8月時点)※最新の料金・条件は公式でご確認ください</text>
+  <text x="40" y="398" font-size="14" fill="#94a3b5">出典:公式サイト(2026年9月時点)※最新の料金・条件は公式でご確認ください</text>
 </svg>
