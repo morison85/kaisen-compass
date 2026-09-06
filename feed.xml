@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 06 Sep 2026 11:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 07 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>格安SIMで後悔する人の共通点|取り返せる欠点と、取り返せない欠点 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/kakuyasu-sim-koukai</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/kakuyasu-sim-koukai</guid>
+    <pubDate>Mon, 07 Sep 2026 07:00:00 +0900</pubDate>
+    <description>格安SIMのデメリットは12個ではなく2種類です。月1,000円以下や0円で消せる9個と、お金では取り返せない3個(昼の速度・対面サポート・端末の相性)に仕分けました。回避コストを足した実質月額での比較方法、MVNO/サブブランド/オンライン専用プランを5問で選び分ける判定表、乗り換え前30分の棚卸し手順、期限のある手続きの一覧まで、2026年9月時点の情報でまとめています。</description>
+  </item>
   <item>
     <title>テザリングは固定回線の代わりになる?条件と限界 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/tethering-kotei-kaisen</link>

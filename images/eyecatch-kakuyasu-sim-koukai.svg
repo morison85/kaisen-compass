@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="格安SIMの欠点は2種類しかない。取り返せるもの9個と取り返せないもの3個" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:デメリットを2つに仕分けるイラスト -->
+  <g transform="translate(880, 320) scale(0.9)">
+    <path d="M152 8 V46" stroke="#ffd76a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M152 46 C152 68, 70 62, 70 84" fill="none" stroke="#ffd76a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M152 46 C152 68, 235 62, 235 84" fill="none" stroke="#ffd76a" stroke-width="10" stroke-linecap="round"/>
+    <rect x="0" y="90" width="140" height="120" rx="14" fill="#ffffff"/>
+    <circle cx="70" cy="142" r="32" fill="#ffd76a"/>
+    <path d="M55 142 L67 154 L87 130" fill="none" stroke="#0b2c5f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="196" text-anchor="middle" font-size="26" font-weight="800" fill="#0b2c5f">9個</text>
+    <rect x="165" y="90" width="140" height="120" rx="14" fill="#9fc1f5"/>
+    <circle cx="235" cy="142" r="32" fill="#ffffff"/>
+    <path d="M221 128 L249 156 M249 128 L221 156" stroke="#0b2c5f" stroke-width="10" stroke-linecap="round"/>
+    <text x="235" y="196" text-anchor="middle" font-size="26" font-weight="800" fill="#0b2c5f">3個</text>
+  </g>
+
+  <rect x="70" y="80" width="321" height="56" rx="28" fill="#ffd76a"/>
+  <text x="230" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">後悔を防ぐ仕分け表</text>
+
+  <text x="70" y="248" font-size="78" font-weight="800" fill="#ffffff">格安SIMの欠点は</text>
+  <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">2種類しかない</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">取り返せるもの9個/取り返せないもの3個</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
