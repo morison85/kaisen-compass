@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 05 Sep 2026 18:30:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 06 Sep 2026 11:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>テザリングは固定回線の代わりになる?条件と限界 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/tethering-kotei-kaisen</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/tethering-kotei-kaisen</guid>
+    <pubDate>Sun, 06 Sep 2026 10:30:00 +0900</pubDate>
+    <description>「データ無制限」と「テザリング無制限」は同じではありません。auの使い放題MAX＋はテザリングとデータシェアの合計60GBが上限で、超過後は128kbpsに制限されます。キャリア別の上限一覧、月の容量を1日あたりに割り戻す逆算表、5問の判定チャート、月額の損益分岐、そして数字に出ない5つの限界まで、2026年9月時点の公式情報で整理しました。</description>
+  </item>
   <item>
     <title>光回線を2年ごとに乗り換えるのは得か損か|サイクル運用の損益分岐 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/hikari-2nen-norikae</link>
