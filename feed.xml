@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 07 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Tue, 08 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>eSIM乗り換えの手順|今日つながる締切と「空白時間」の作り方 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/esim-norikae</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/esim-norikae</guid>
+    <pubDate>Tue, 08 Sep 2026 07:00:00 +0900</pubDate>
+    <description>eSIMの乗り換えでつまずく原因は、手順ではなく時間帯です。ahamoのMNP回線切替は午前9時〜午後9時、UQモバイルは他社からの乗り換えが9:00〜21:15、楽天モバイルは21:01以降の受付だと翌9時以降の開通になります。各社の開通受付時間の一覧、圏外になる5〜15分の空白時間に止まるもの(困るのはSMS認証)、Wi-Fiがない場合の回避策、物理SIMとの選び分けまで、2026年9月時点の公式情報で整理しました。</description>
+  </item>
   <item>
     <title>格安SIMで後悔する人の共通点|取り返せる欠点と、取り返せない欠点 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/kakuyasu-sim-koukai</link>

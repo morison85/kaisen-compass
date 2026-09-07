@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="eSIM乗り換えは締切時間で決まる。各社の開通受付時間と空白時間の作り方" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:締切時間(時計)とスマホの中のeSIM -->
+  <g transform="translate(890, 330) scale(0.9)">
+    <rect x="0" y="10" width="130" height="215" rx="20" fill="#ffffff"/>
+    <rect x="14" y="34" width="102" height="160" rx="10" fill="#0b2c5f"/>
+    <rect x="34" y="70" width="62" height="46" rx="8" fill="#ffd76a"/>
+    <path d="M46 84 h38 M46 96 h26" stroke="#0b2c5f" stroke-width="6" stroke-linecap="round"/>
+    <text x="65" y="152" text-anchor="middle" font-size="24" font-weight="800" fill="#ffffff">eSIM</text>
+    <circle cx="65" cy="210" r="8" fill="#9fc1f5"/>
+    <circle cx="230" cy="118" r="72" fill="#ffd76a"/>
+    <circle cx="230" cy="118" r="58" fill="#ffffff"/>
+    <path d="M230 118 V78 M230 118 L258 132" stroke="#0b2c5f" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="230" cy="118" r="6" fill="#0b2c5f"/>
+    <path d="M148 118 h34" stroke="#ffd76a" stroke-width="9" stroke-linecap="round"/>
+    <path d="M170 106 l16 12 l-16 12" fill="none" stroke="#ffd76a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="70" y="80" width="350" height="56" rx="28" fill="#ffd76a"/>
+  <text x="245" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">今日つながる締切一覧</text>
+
+  <text x="70" y="248" font-size="78" font-weight="800" fill="#ffffff">eSIM乗り換えは</text>
+  <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">締切時間で決まる</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">各社の開通受付時間と、圏外になる空白の作り方</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
