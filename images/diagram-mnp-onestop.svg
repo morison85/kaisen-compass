@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="従来のMNP予約番号方式とMNPワンストップ方式の手順の違いを比べた図" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="560" fill="#f4f7fc"/>
+
+  <!-- 従来方式 -->
+  <text x="60" y="58" font-size="30" font-weight="800" fill="#0b2c5f">従来の予約番号方式(ツーステップ)</text>
+  <rect x="60" y="80" width="250" height="120" rx="16" fill="#ffffff" stroke="#c8d6ee" stroke-width="2"/>
+  <text x="185" y="122" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">① 今の会社</text>
+  <text x="185" y="156" text-anchor="middle" font-size="20" fill="#42557a">予約番号をもらう</text>
+  <text x="185" y="184" text-anchor="middle" font-size="18" font-weight="700" fill="#c2410c">有効期限15日</text>
+
+  <path d="M330 140 h70" stroke="#0b2c5f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M382 126 l18 14 l-18 14" fill="none" stroke="#0b2c5f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="420" y="80" width="250" height="120" rx="16" fill="#ffffff" stroke="#c8d6ee" stroke-width="2"/>
+  <text x="545" y="122" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">② 次の会社</text>
+  <text x="545" y="156" text-anchor="middle" font-size="20" fill="#42557a">番号を入力して申込</text>
+  <text x="545" y="184" text-anchor="middle" font-size="18" font-weight="700" fill="#c2410c">残日数の条件あり</text>
+
+  <path d="M690 140 h70" stroke="#0b2c5f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M742 126 l18 14 l-18 14" fill="none" stroke="#0b2c5f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="780" y="80" width="250" height="120" rx="16" fill="#0b2c5f"/>
+  <text x="905" y="132" text-anchor="middle" font-size="22" font-weight="800" fill="#ffffff">③ 開通</text>
+  <text x="905" y="168" text-anchor="middle" font-size="20" fill="#cfe0ff">番号が引き継がれる</text>
+
+  <text x="60" y="238" font-size="19" fill="#42557a">窓口が2か所。期限切れ・残日数不足でやり直しが起きやすい</text>
+
+  <line x1="60" y1="272" x2="1140" y2="272" stroke="#d7e1f2" stroke-width="2"/>
+
+  <!-- ワンストップ -->
+  <text x="60" y="330" font-size="30" font-weight="800" fill="#1558d6">MNPワンストップ方式</text>
+  <rect x="60" y="352" width="610" height="120" rx="16" fill="#ffffff" stroke="#1558d6" stroke-width="3"/>
+  <text x="365" y="394" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">① 次の会社のWebで申し込む</text>
+  <text x="365" y="428" text-anchor="middle" font-size="20" fill="#42557a">途中で今の会社のサイトへ自動で移動し、同意して戻る</text>
+  <text x="365" y="456" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">予約番号なし・期限なし</text>
+
+  <path d="M690 412 h70" stroke="#1558d6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M742 398 l18 14 l-18 14" fill="none" stroke="#1558d6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="780" y="352" width="250" height="120" rx="16" fill="#1558d6"/>
+  <text x="905" y="404" text-anchor="middle" font-size="22" font-weight="800" fill="#ffffff">② 開通</text>
+  <text x="905" y="440" text-anchor="middle" font-size="20" fill="#dbe7ff">番号が引き継がれる</text>
+
+  <text x="60" y="510" font-size="19" fill="#42557a">窓口は1か所。ただし2社とも対応していて、Webから申し込む場合に限る</text>
+</svg>

@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 08 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 09 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>MNPワンストップとは|予約番号が要る組み合わせ・要らない組み合わせ | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/mnp-one-stop</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/mnp-one-stop</guid>
+    <pubDate>Wed, 09 Sep 2026 07:00:00 +0900</pubDate>
+    <description>「MNPワンストップなら予約番号は不要」は半分だけ正解です。使えるのは転出元と転入先の両方が対応事業者一覧にあり、かつWebから申し込む場合だけ。公表されている対応28事業者の一覧、2軸の判定表、対応同士でも予約番号方式に戻る6つの例外、予約番号になったときの15日逆算スケジュールまで、2026年9月時点の情報で整理しました。</description>
+  </item>
   <item>
     <title>eSIM乗り換えの手順|今日つながる締切と「空白時間」の作り方 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/esim-norikae</link>
