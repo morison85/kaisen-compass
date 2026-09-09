@@ -1663,3 +1663,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .rs__shot { display: block; width: 100%; line-height: 0; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; background: #fff; }
 .rs__shot img { display: block; width: 100%; height: auto; border-radius: 0; }
 .rs__src { text-align: center; margin: -4px 0 0; }
+
+/* トップ「最適解」カードの公式画像(2026-09-10) */
+.pick-card__shot { display: block; line-height: 0; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; background: #fff; margin: -4px 0 2px; }
+.pick-card__shot img { display: block; width: 100%; height: auto; }
