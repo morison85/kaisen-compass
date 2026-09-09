@@ -220,7 +220,7 @@ a { color: var(--c-primary); }
   line-height: 1.45;
   font-weight: 900;
   letter-spacing: -0.005em;
-  margin-bottom: 16px;
+  margin-bottom: clamp(22px, 3vw, 30px); /* 2026-09-10: リード文とチップを外したぶん、ツールカードとの間隔を確保 */
   /* 日本語を文節単位で折り返す(対応ブラウザのみ)。語の途中で切れるのを防ぐ */
   word-break: auto-phrase;
 }
