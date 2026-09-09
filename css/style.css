@@ -1712,3 +1712,6 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
   .brand__name { white-space: nowrap; }
 }
 @media (min-width: 901px) and (max-width: 1280px) { .brand__tag { display: none; } }
+/* hero simplified 2026-09-11: 右カラムのカードを外し1列に */
+@media (min-width: 960px) { .hero__inner { grid-template-columns: minmax(0, 1fr); gap: 22px; } }
+.hero__copy { max-width: 100%; }
