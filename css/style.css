@@ -1130,7 +1130,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .rs__why li { font-size: .76rem; font-weight: 700; color: var(--c-green); background: rgba(22,163,74,.10); border-radius: 8px; padding: 4px 10px; }
 .rs__spec { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr)); gap: 6px 14px; margin: 10px 0; }
 .rs__spec dt { font-size: .68rem; color: var(--c-text-sub); font-weight: 700; }
-.rs__spec dd { font-size: .86rem; font-weight: 800; color: var(--c-text); margin: 0 0 4px; line-height: 1.5; }
+.rs__spec dd { font-size: .86rem; font-weight: 800; color: var(--c-text); margin: 0 0 4px; line-height: 1.5; overflow-wrap: anywhere; }
 .rs__desc { font-size: .84rem; line-height: 1.8; color: var(--c-text-sub); margin: 0 0 12px; }
 .rs__ex { margin: 18px 0; border: 1.5px solid var(--c-border); border-radius: var(--radius); background: #fff; }
 .rs__ex summary { cursor: pointer; padding: 14px 18px; font-weight: 800; font-size: .92rem; color: var(--c-navy); }
@@ -1639,7 +1639,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .hero__bars li { grid-template-columns: 8.9em minmax(0, 1fr) 3.4em; }
 .hero__short { display: none; }
 @media (max-width: 640px) {
-  .hero__bars li { grid-template-columns: 5.2em minmax(0, 1fr) 3.4em; }
+  .hero__bars li { grid-template-columns: 7.1em minmax(0, 1fr) 3.4em; }
   .hero__full { display: none; }
   .hero__short { display: inline; }
 }
