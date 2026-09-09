@@ -1643,3 +1643,13 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
   .hero__full { display: none; }
   .hero__short { display: inline; }
 }
+
+/* 公式画像 + 解説カードの2枚組(2026-09-10) */
+.svc__banner--duo { display: grid; grid-template-columns: 1fr; gap: 12px; text-align: left; }
+@media (min-width: 640px) { .svc__banner--duo { grid-template-columns: 1fr 1fr; align-items: start; } }
+.svc__banner--duo > img { display: block; width: 100%; }
+.svc__official { margin: 0; min-width: 0; }
+.svc__official > a { display: block; line-height: 0; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; background: #fff; }
+.svc__official img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; }
+.svc__official figcaption { font-size: .72rem; color: var(--c-text-sub); margin-top: 5px; line-height: 1.45; text-align: left; }
+.svc__official figcaption a { display: inline; line-height: inherit; border: 0; border-radius: 0; color: inherit; text-decoration: underline; }
