@@ -1712,14 +1712,3 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
   .brand__name { white-space: nowrap; }
 }
 @media (min-width: 901px) and (max-width: 1280px) { .brand__tag { display: none; } }
-
-/* ヒーロー見出し 2026-09-11: 誤解に取り消し線 → 事実(夜の実測は約2倍) */
-.hero__title { display: grid; gap: 10px; }
-.hero__myth { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 1rem; font-weight: 700; letter-spacing: .01em; color: rgba(255,255,255,.88); animation: heroRise .6s cubic-bezier(.22,.9,.3,1) .05s both; }
-.hero__myth s { text-decoration: line-through; text-decoration-color: #ff9d8a; text-decoration-thickness: 3px; }
-.hero__stamp { display: inline-block; font-style: normal; font-size: .68rem; font-weight: 800; letter-spacing: .12em; color: #ffb4a6; border: 2px solid #ff9d8a; border-radius: 6px; padding: 1px 7px; transform: rotate(-6deg); animation: stampIn .5s cubic-bezier(.2,1.4,.4,1) .55s both; }
-@keyframes stampIn { from { opacity: 0; transform: rotate(-6deg) scale(1.8); } to { opacity: 1; transform: rotate(-6deg) scale(1); } }
-.hero__fact { display: block; line-height: 1.45; animation: heroRise .6s cubic-bezier(.22,.9,.3,1) .22s both; }
-.hero__fact .hl b { font-family: "Outfit", var(--font); font-weight: 800; font-size: 1.5em; line-height: 1; letter-spacing: -.02em; vertical-align: -.06em; padding: 0 .04em; }
-@media (max-width: 860px) { .hero__myth { font-size: .9rem; } }
-@media (prefers-reduced-motion: reduce) { .hero__myth, .hero__fact { animation: none !important; } .hero__stamp { animation: none !important; } }
