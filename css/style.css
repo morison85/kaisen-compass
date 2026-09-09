@@ -1715,3 +1715,10 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 /* hero simplified 2026-09-11: 右カラムのカードを外し1列に */
 @media (min-width: 960px) { .hero__inner { grid-template-columns: minmax(0, 1fr); gap: 22px; } }
 .hero__copy { max-width: 100%; }
+
+/* ヒーロー 2026-09-11: サイト名を最大に、その下に一言 */
+.hero__brandName { display: inline-block; position: relative; font-family: "Zen Maru Gothic", var(--font); font-weight: 900; font-size: clamp(2.6rem, 1.9rem + 3.8vw, 5rem); line-height: 1.1; letter-spacing: .06em; color: #fff; text-shadow: 0 8px 32px rgba(0,0,0,.28); padding: 0 .04em .14em; margin: 0 0 14px; animation: heroRise .6s cubic-bezier(.22,.9,.3,1) .05s both; }
+.hero__brandName::after { content: ""; position: absolute; left: .04em; right: .04em; bottom: 0; height: .12em; border-radius: 999px; background: linear-gradient(90deg, #ffd76a, #ffb648); transform: scaleX(0); transform-origin: left center; animation: brandSweep .8s cubic-bezier(.22,.9,.3,1) .5s forwards; }
+@keyframes brandSweep { to { transform: scaleX(1); } }
+.hero__tagline { display: block; font-size: clamp(1rem, .9rem + .7vw, 1.3rem); font-weight: 700; letter-spacing: .03em; color: rgba(255,255,255,.92); animation: heroRise .6s cubic-bezier(.22,.9,.3,1) .25s both; }
+@media (prefers-reduced-motion: reduce) { .hero__brandName, .hero__tagline { animation: none !important; } .hero__brandName::after { animation: none; transform: none; } }
