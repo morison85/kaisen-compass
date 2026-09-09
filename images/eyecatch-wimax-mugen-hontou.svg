@@ -22,8 +22,8 @@
     <text x="212" y="240" text-anchor="middle" font-size="46" font-weight="800" fill="#ffffff">?</text>
   </g>
 
-  <rect x="70" y="80" width="292" height="56" rx="28" fill="#ffd76a"/>
-  <text x="216" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">4つの層に分けて整理</text>
+  <rect x="70" y="80" width="323" height="56" rx="28" fill="#ffd76a"/>
+  <text x="232" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">4つの層に分けて整理</text>
 
   <text x="70" y="248" font-size="78" font-weight="800" fill="#ffffff">WiMAXの無制限は</text>
   <text x="70" y="360" font-size="78" font-weight="800" fill="#ffd76a">本当か?</text>

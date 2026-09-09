@@ -30,8 +30,8 @@
   </g>
 
   <!-- バッジ: 「図解でわかる」5文字×29=145+60=205 -->
-  <rect x="70" y="80" width="205" height="56" rx="28" fill="#ffd76a"/>
-  <text x="172" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">図解でわかる</text>
+  <rect x="70" y="80" width="218" height="56" rx="28" fill="#ffd76a"/>
+  <text x="179" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">図解でわかる</text>
 
   <!-- 見出し: 「IPv6(IPoE)とは?」半角11+全角3 → 約 11×37+3×74=629 (右端699) / 「夜だけ遅い」を解決 = 10文字×74=740 (右端810 < 850) -->
   <text x="70" y="248" font-size="74" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">IPv6</tspan>(IPoE)とは?</text>
