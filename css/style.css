@@ -1653,3 +1653,13 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .svc__official img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; }
 .svc__official figcaption { font-size: .72rem; color: var(--c-text-sub); margin-top: 5px; line-height: 1.45; text-align: left; }
 .svc__official figcaption a { display: inline; line-height: inherit; border: 0; border-radius: 0; color: inherit; text-decoration: underline; }
+
+/* hikaku / shindan の公式画像(2026-09-10) */
+.brief__thumb a { display: block; width: 100%; height: 100%; line-height: 0; }
+.brief__src, .rs__src { font-size: .68rem; color: var(--c-text-sub); line-height: 1.4; margin: 6px 14px 0; }
+.brief__src a, .rs__src a { color: inherit; text-decoration: underline; }
+.brief__card { padding: 8px 14px 0; }
+.brief__card img { display: block; width: 100%; height: auto; border: 1px solid var(--c-border); border-radius: 8px; }
+.rs__shot { display: block; width: 100%; line-height: 0; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; background: #fff; }
+.rs__shot img { display: block; width: 100%; height: auto; border-radius: 0; }
+.rs__src { text-align: center; margin: -4px 0 0; }
