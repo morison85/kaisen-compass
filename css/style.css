@@ -1584,3 +1584,62 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 
 /* ボタンを縦に並べたときの間隔(.cta .btn の margin:0 auto に潰されないよう再指定) */
 .cta .btn + .btn, .final-pick .btn + .btn, .btn-area .btn + .btn, .cta .btn--sub, .btn-area .btn--sub { margin-top: 10px; }
+
+/* ============ ヒーロー 2026-09-10: 見出し + 実測カード ============ */
+.hero__inner { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; align-items: center; }
+@media (min-width: 960px) {
+  .hero__inner { grid-template-columns: minmax(0, 1fr) 372px; gap: 44px; }
+}
+.hero__copy { min-width: 0; }
+.hero__scope { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 6px; font-size: .86rem; font-weight: 700; opacity: .92; }
+.hero__scope > span:not(.hero__scopeNote) { position: relative; padding-left: 14px; }
+.hero__scope > span:not(.hero__scopeNote)::before { content: ""; position: absolute; left: 0; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: #ffd76a; box-shadow: 0 0 0 3px rgba(255,215,106,.22); }
+.hero__scopeNote { font-weight: 500; opacity: .75; font-size: .8rem; }
+.hero__scopeNote::before { content: "―"; margin-right: 8px; opacity: .6; }
+.hero__data {
+  position: relative; color: #fff;
+  background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.22);
+  border-radius: 18px; padding: 18px 18px 16px;
+  box-shadow: 0 18px 44px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.18);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  animation: heroRise .72s cubic-bezier(.22,.9,.3,1) .38s both;
+}
+.hero__dataHead { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.hero__dataIco { flex: 0 0 auto; width: 30px; height: 30px; color: #fff; }
+.hero__needle { transform-origin: 32px 32px; animation: needleSettle 2.2s cubic-bezier(.22,.9,.3,1) .6s both; }
+@keyframes needleSettle {
+  0%   { transform: rotate(-140deg); }
+  55%  { transform: rotate(18deg); }
+  75%  { transform: rotate(-8deg); }
+  100% { transform: rotate(0); }
+}
+.hero__dataTitle { flex: 1; min-width: 0; font-weight: 800; font-size: .98rem; line-height: 1.3; }
+.hero__dataTitle small { display: block; font-weight: 600; font-size: .72rem; opacity: .78; margin-top: 2px; }
+.hero__dataStamp { flex: 0 0 auto; font-size: .7rem; font-weight: 700; letter-spacing: .04em; padding: 4px 9px; border-radius: 999px; background: rgba(255,215,106,.18); color: #ffd76a; border: 1px solid rgba(255,215,106,.35); }
+.hero__bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.hero__bars li { display: grid; grid-template-columns: 7.6em minmax(0, 1fr) 3.6em; align-items: center; gap: 10px; font-size: .84rem; }
+.hero__bars .n { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hero__bars .bar { position: relative; height: 10px; border-radius: 999px; background: rgba(255,255,255,.14); overflow: hidden; }
+.hero__bars .bar i { position: absolute; inset: 0; width: var(--w, 50%); border-radius: 999px; background: linear-gradient(90deg, rgba(255,255,255,.55), #ffd76a); transform-origin: left center; animation: barGrow .9s cubic-bezier(.22,.9,.3,1) var(--d, .6s) both; }
+.hero__bars li:first-child .bar i { background: linear-gradient(90deg, #ffe08a, #ffb347); box-shadow: 0 0 14px rgba(255,215,106,.45); }
+@keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.hero__bars .v { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.hero__dataNote { margin: 12px 0 0; font-size: .74rem; line-height: 1.7; opacity: .82; }
+.hero__dataNote a { color: #ffd76a; font-weight: 700; text-decoration: none; }
+.hero__dataNote a:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .hero__data { padding: 15px 14px 13px; border-radius: 16px; }
+  .hero__bars li { grid-template-columns: 6.8em minmax(0, 1fr) 3.4em; font-size: .8rem; gap: 8px; }
+  .hero__scope { font-size: .8rem; }
+  .hero__scopeNote { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__data, .hero__bars .bar i, .hero__needle { animation: none !important; transform: none !important; }
+}
+.hero__bars li { grid-template-columns: 8.9em minmax(0, 1fr) 3.4em; }
+.hero__short { display: none; }
+@media (max-width: 640px) {
+  .hero__bars li { grid-template-columns: 5.2em minmax(0, 1fr) 3.4em; }
+  .hero__full { display: none; }
+  .hero__short { display: inline; }
+}
