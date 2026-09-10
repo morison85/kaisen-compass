@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="css/style.css?v=20260910o">
+<link rel="stylesheet" href="css/style.css?v=20260910p">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -126,16 +126,23 @@
           <mask id="kcCut" maskUnits="userSpaceOnUse" x="0" y="0" width="980" height="232"><rect x="0" y="0" width="980" height="232" fill="#fff"/><rect x="196" y="109" width="784" height="14" fill="#000"/></mask>
         </defs>
         <g class="hero__logoDial" transform="translate(96 116) scale(.93)">
-          <rect x="-88" y="-88" width="176" height="176" rx="36" fill="none" stroke="#0b2c5f" stroke-width="32"/>
-          <rect x="-88" y="-88" width="176" height="176" rx="36" fill="none" stroke="#ffffff" stroke-width="20"/>
-          <circle r="46" fill="none" stroke="#ffd76a" stroke-width="12"/>
-          <path d="M0-88v-14M0 88v14M-88 0h-14" stroke="#ffd76a" stroke-width="9" stroke-linecap="round"/>
+          <rect class="hero__logoCase" x="-88" y="-88" width="176" height="176" rx="36" fill="none" stroke="#0b2c5f" stroke-width="32" pathLength="1"/>
+          <rect class="hero__logoCase" x="-88" y="-88" width="176" height="176" rx="36" fill="none" stroke="#ffffff" stroke-width="20" pathLength="1"/>
+          <circle class="hero__logoRingIn" r="46" fill="none" stroke="#ffd76a" stroke-width="12"/>
+          <path class="hero__logoTicks" d="M0-88v-14M0 88v14M-88 0h-14" stroke="#ffd76a" stroke-width="9" stroke-linecap="round"/>
           <g class="hero__logoNeedle"><polygon points="0,-64 10,0 0,64 -10,0" fill="#ffffff"/><polygon points="0,-64 10,0 0,0" fill="#ffd76a"/></g>
-          <circle r="6" fill="#0b2c5f"/>
+          <circle class="hero__logoTicks" r="6" fill="#0b2c5f"/>
         </g>
-        <text x="206" y="174" mask="url(#kcCut)" font-family="'Zen Maru Gothic', 'Noto Sans JP', sans-serif" font-weight="900" font-size="148" letter-spacing="1" fill="#ffffff" stroke="#0b2c5f" stroke-width="12" paint-order="stroke" stroke-linejoin="round">線コンパス</text>
+        <g mask="url(#kcCut)">
+        <text class="hero__logoCh" style="--i:0" x="206" y="174" font-family="'Zen Maru Gothic', 'Noto Sans JP', sans-serif" font-weight="900" font-size="148" letter-spacing="1" fill="#ffffff" stroke="#0b2c5f" stroke-width="12" paint-order="stroke" stroke-linejoin="round">線</text>
+        <text class="hero__logoCh" style="--i:1" x="355" y="174" font-family="'Zen Maru Gothic', 'Noto Sans JP', sans-serif" font-weight="900" font-size="148" letter-spacing="1" fill="#ffffff" stroke="#0b2c5f" stroke-width="12" paint-order="stroke" stroke-linejoin="round">コ</text>
+        <text class="hero__logoCh" style="--i:2" x="504" y="174" font-family="'Zen Maru Gothic', 'Noto Sans JP', sans-serif" font-weight="900" font-size="148" letter-spacing="1" fill="#ffffff" stroke="#0b2c5f" stroke-width="12" paint-order="stroke" stroke-linejoin="round">ン</text>
+        <text class="hero__logoCh" style="--i:3" x="653" y="174" font-family="'Zen Maru Gothic', 'Noto Sans JP', sans-serif" font-weight="900" font-size="148" letter-spacing="1" fill="#ffffff" stroke="#0b2c5f" stroke-width="12" paint-order="stroke" stroke-linejoin="round">パ</text>
+        <text class="hero__logoCh" style="--i:4" x="802" y="174" font-family="'Zen Maru Gothic', 'Noto Sans JP', sans-serif" font-weight="900" font-size="148" letter-spacing="1" fill="#ffffff" stroke="#0b2c5f" stroke-width="12" paint-order="stroke" stroke-linejoin="round">ス</text>
+        </g>
         <path class="hero__logoRoute" d="M178 116 H 946" fill="none" stroke="#ffd76a" stroke-width="7" stroke-linecap="round" pathLength="1"/>
-        <path d="M934 104 L 958 116 L 934 128" fill="none" stroke="#ffb648" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="hero__logoPulse" d="M178 116 H 946" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" pathLength="1"/>
+        <path class="hero__logoArrow" d="M934 104 L 958 116 L 934 128" fill="none" stroke="#ffb648" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
       </svg></span><span class="hero__tagline">ネット回線選びのお役立ち情報メディア</span></h1>
     <div class="hero__tools">
       <a class="hero__tool" href="shindan">
