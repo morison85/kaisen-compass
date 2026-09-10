@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 09 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 10 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>UQモバイルとLINEMOはどっち?料金の分かれ目は「自宅のネット回線」 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/uqmobile-linemo-hikaku</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/uqmobile-linemo-hikaku</guid>
+    <pubDate>Thu, 10 Sep 2026 07:00:00 +0900</pubDate>
+    <description>UQモバイルとLINEMOの2択は、電波でも料金表でもなく「自宅のネット回線が自宅セット割の対象か」で決まります。対象になる回線・ならない回線の一覧(ドコモ光・ソフトバンク光・NURO光・GMOとくとくBB光は対象外)、データ量×セット割の早見表、5問の判定チャート、PayPayポイント特典を実質月額に直した3年試算まで、2026年9月時点の公式情報で整理しました。</description>
+  </item>
   <item>
     <title>MNPワンストップとは|予約番号が要る組み合わせ・要らない組み合わせ | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/mnp-one-stop</link>
