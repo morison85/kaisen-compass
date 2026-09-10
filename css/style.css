@@ -1723,35 +1723,47 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .hero__tagline { display: block; font-size: clamp(1rem, .9rem + .7vw, 1.3rem); font-weight: 700; letter-spacing: .03em; color: rgba(255,255,255,.92); animation: heroRise .6s cubic-bezier(.22,.9,.3,1) .25s both; }
 @media (prefers-reduced-motion: reduce) { .hero__brandName, .hero__tagline { animation: none !important; } .hero__brandName::after { animation: none; transform: none; } }
 
-/* ヒーローのロゴ(文字+図形) 2026-09-11 案A + 登場アニメーション(hero_logo.py が生成) */
+/* ヒーローのロゴ(輪郭化した文字+文字盤) 2026-09-11 (退職コンパス _dev/tc_logo/build.py が生成。両サイト共通) */
 .hero__logo { display: block; width: min(100%, 700px); margin: 0 0 12px; }
-.hero__logoSvg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 10px 28px rgba(0,0,0,.28)); }
-/* 1. 文字盤: 外枠が描かれ、環が弾んで現れ、刻みが灯る */
-.hero__logoCase { stroke-dasharray: 1; stroke-dashoffset: 1; animation: logoDraw .8s cubic-bezier(.22,.9,.3,1) .05s forwards; }
-.hero__logoRingIn { transform-box: fill-box; transform-origin: center; animation: logoPop .5s cubic-bezier(.2,1.5,.4,1) .55s both; }
-.hero__logoTicks { animation: logoFade .35s ease-out .8s both; }
-/* 2. 文字が1字ずつ下から立ち上がる */
-.hero__logoCh { transform-box: fill-box; transform-origin: center bottom; animation: logoRise .55s cubic-bezier(.22,.9,.3,1) both; animation-delay: calc(.6s + var(--i) * .09s); }
-/* 3. 線が文字を貫いて伸び、矢印が飛び出す */
-.hero__logoRoute { stroke-dasharray: 1; stroke-dashoffset: 1; animation: logoDraw .85s cubic-bezier(.22,.9,.3,1) 1.25s forwards; }
-.hero__logoArrow { transform-box: fill-box; transform-origin: left center; animation: logoPop .4s cubic-bezier(.2,1.5,.4,1) 1.95s both; }
-/* 4. 針が大きく振れて北を指し、その後ゆっくり揺れ続ける */
-.hero__logoNeedle { transform-origin: 0 0; animation: needleSettle 2s cubic-bezier(.22,.9,.3,1) 1.9s both, needleIdle 7s ease-in-out 4.2s infinite; }
-/* 5. 線の上を光が走る(7秒ごと、控えめ) */
-.hero__logoPulse { stroke-dasharray: .12 1; stroke-dashoffset: 1.12; opacity: 0; animation: logoPulse 7s linear 3.2s infinite; }
-.hero__logoRing { transform-origin: 120px 118px; animation: logoRing 1.4s cubic-bezier(.22,.9,.3,1) .1s both; }
-/* ロゴの後にキャッチとツールカードが続く */
-.hero__tagline { animation: heroRise .6s cubic-bezier(.22,.9,.3,1) 1.5s both; }
-.hero__tools { animation: heroRise .6s cubic-bezier(.22,.9,.3,1) 1.8s both; }
+.hero__logoSvg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 10px 28px rgba(0,0,0,.28)); --gold: #ffd76a; }
+.hero__logoSvg--tc { --ink: #0e3f38; }
+.hero__logoSvg--kc { --ink: #0b2c5f; }
+/* 位置決めの translate は外側の g に置いてあるので、動かす要素は transform-origin: 0 0(=文字盤の中心)で回す */
+/* 1. 文字盤: 面 → 外枠が描かれる → 目盛りが順に灯る → 内側の環が弾む。目盛り環は90秒で1周し続ける */
+.hero__logoFace { animation: logoFade .4s ease-out 0s both; }
+.hero__logoCase { stroke-dasharray: 1; stroke-dashoffset: 1; animation: logoDraw .9s cubic-bezier(.22,.9,.3,1) .05s forwards; }
+.hero__logoBezel { transform-origin: 0 0; opacity: 0; animation: logoFade .5s ease-out .6s forwards, logoBezel 90s linear 0s infinite; }
+.hero__logoTick { transform-box: fill-box; transform-origin: center; animation: logoPop .3s cubic-bezier(.2,1.5,.4,1) both; animation-delay: calc(1s + var(--i) * .12s); }
+.hero__logoRingIn { transform-origin: 0 0; animation: logoPop .5s cubic-bezier(.2,1.5,.4,1) 1.1s both; }
+.hero__logoDial--small { transform-origin: 0 0; animation: logoPop .5s cubic-bezier(.2,1.5,.4,1) 1.1s both; }
+.hero__logoRing { transform-origin: 0 0; animation: logoRing 1.4s cubic-bezier(.22,.9,.3,1) .1s both; }
+/* 2. 文字: 1字ずつ黄色い線で輪郭がなぞられ、なぞり終わると白く塗られる */
+.hero__logoCh { stroke-dasharray: 1; stroke-dashoffset: 1; animation: glyphTrace .9s ease-out both; animation-delay: calc(.3s + var(--i) * .12s); }
+/* 3. 針: 1回転半して振れ、北で止まる → 止まった瞬間に輪が広がる → 以後ゆっくり揺れる。hero__logoAim はマウス追従(JS) */
+.hero__logoAim { transform-origin: 0 0; transition: transform .5s cubic-bezier(.2,.9,.3,1); }
+.hero__logoNeedle { transform-origin: 0 0; animation: needleSpin 2.1s cubic-bezier(.16,.84,.3,1) 1.2s both, needleIdle 7s ease-in-out 3.5s infinite; }
+.hero__logoNeedleB { transform-origin: 0 0; animation: needleSpin 2.1s cubic-bezier(.16,.84,.3,1) 1.2s both, needleIdle 7s ease-in-out 3.5s infinite; }
+.hero__logoPing { transform-origin: 0 0; opacity: 0; animation: logoPing .9s ease-out 3.2s both; }
+/* 4. 線が文字を貫いて伸び、矢印が出る。7秒ごとに光が走る */
+.hero__logoRoute { stroke-dasharray: 1; stroke-dashoffset: 1; animation: logoDraw .75s cubic-bezier(.22,.9,.3,1) 1.75s forwards; }
+.hero__logoArrow { transform-box: fill-box; transform-origin: left center; animation: logoPop .4s cubic-bezier(.2,1.5,.4,1) 2.45s both; }
+.hero__logoPulse { stroke-dasharray: .12 1; stroke-dashoffset: 1.12; opacity: 0; animation: logoPulse 7s linear 3.8s infinite; }
+/* 5. ロゴの後にキャッチとツールカード */
+.hero__tagline { animation: heroRise .6s cubic-bezier(.22,.9,.3,1) 1.6s both; }
+.hero__tools { animation: heroRise .6s cubic-bezier(.22,.9,.3,1) 1.9s both; }
 @keyframes logoDraw { to { stroke-dashoffset: 0; } }
-@keyframes logoPop { from { opacity: 0; transform: scale(.2); } to { opacity: 1; transform: scale(1); } }
 @keyframes logoFade { from { opacity: 0; } to { opacity: 1; } }
-@keyframes logoRise { from { opacity: 0; transform: translateY(26px) scaleY(.9); } to { opacity: 1; transform: none; } }
-@keyframes needleSettle { 0% { transform: rotate(-150deg); } 55% { transform: rotate(16deg); } 75% { transform: rotate(-7deg); } 100% { transform: rotate(0); } }
-@keyframes needleIdle { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(3deg); } 70% { transform: rotate(-3deg); } }
-@keyframes logoPulse { 0% { opacity: 0; stroke-dashoffset: 1.12; } 4% { opacity: .9; } 32% { opacity: .9; stroke-dashoffset: -0.12; } 34%, 100% { opacity: 0; stroke-dashoffset: -0.12; } }
+@keyframes logoPop { from { opacity: 0; transform: scale(.2); } to { opacity: 1; transform: scale(1); } }
+@keyframes logoBezel { to { transform: rotate(360deg); } }
 @keyframes logoRing { from { opacity: 0; transform: rotate(-40deg) scale(.9); } to { opacity: .9; transform: none; } }
+@keyframes glyphTrace { 0% { stroke-dashoffset: 1; stroke: var(--gold); stroke-width: 4; fill-opacity: 0; } 55% { stroke-dashoffset: 0; stroke: var(--gold); stroke-width: 4; fill-opacity: 0; } 100% { stroke-dashoffset: 0; stroke: var(--ink); stroke-width: 12; fill-opacity: 1; } }
+@keyframes needleSpin { 0% { transform: rotate(-540deg); opacity: 0; } 12% { opacity: 1; } 70% { transform: rotate(14deg); } 85% { transform: rotate(-5deg); } 100% { transform: rotate(0); } }
+@keyframes needleIdle { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(3deg); } 70% { transform: rotate(-3deg); } }
+@keyframes logoPing { 0% { opacity: .9; transform: scale(.7); } 100% { opacity: 0; transform: scale(1.5); } }
+@keyframes logoPulse { 0% { opacity: 0; stroke-dashoffset: 1.12; } 4% { opacity: .9; } 32% { opacity: .9; stroke-dashoffset: -0.12; } 34%, 100% { opacity: 0; stroke-dashoffset: -0.12; } }
 @media (prefers-reduced-motion: reduce) {
-  .hero__logoCase, .hero__logoRingIn, .hero__logoTicks, .hero__logoCh, .hero__logoRoute, .hero__logoArrow, .hero__logoNeedle, .hero__logoRing, .hero__tagline, .hero__tools { animation: none !important; transform: none !important; opacity: 1; stroke-dashoffset: 0; }
-  .hero__logoPulse { animation: none !important; opacity: 0 !important; }
+  .hero__logoFace, .hero__logoCase, .hero__logoBezel, .hero__logoTick, .hero__logoRingIn, .hero__logoDial--small, .hero__logoRing, .hero__logoCh, .hero__logoNeedle, .hero__logoNeedleB, .hero__logoRoute, .hero__logoArrow, .hero__tagline, .hero__tools { animation: none !important; opacity: 1; stroke-dashoffset: 0; }
+  .hero__logoCh { fill-opacity: 1; }
+  .hero__logoTick, .hero__logoRingIn, .hero__logoDial--small, .hero__logoRing, .hero__logoBezel, .hero__logoArrow, .hero__logoNeedle, .hero__logoNeedleB, .hero__logoAim { transform: none !important; }
+  .hero__logoPing, .hero__logoPulse { animation: none !important; opacity: 0 !important; }
 }
