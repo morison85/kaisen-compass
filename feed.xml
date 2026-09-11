@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 11 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>スマホ料金が高いときの見直し手順|下がる額は「差額」ではなく正味で決まる | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/sumaho-ryokin-minaoshi</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/sumaho-ryokin-minaoshi</guid>
+    <pubDate>Sat, 12 Sep 2026 07:00:00 +0900</pubDate>
+    <description>スマホ料金の見直しで実際に下がるのは、プランの差額ではなく「正味の削減額」です。光セット割の消滅・家族割の目減り・端末残債・ポイント倍率の低下・移行時の一時費用という5つの「戻し」を差し引く計算式、乗り換えずに下げる4手、ギガ数別の行き先早見表、単身から4人家族までの年間インパクト試算を2026年9月時点の情報でまとめました。</description>
+  </item>
   <item>
     <title>楽天モバイルの電波が悪いときの対策|効く手は「掴んでいるバンド」で変わる | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/rakuten-mobile-denpa</link>

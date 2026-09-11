@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="スマホ料金の見直しで下がる額は、差額ではなく正味で決まる" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右側: 正味削減額カード(差額 − 戻し = 正味) -->
+  <g transform="translate(860,150)">
+    <rect x="0" y="0" width="280" height="320" rx="22" fill="#ffffff"/>
+    <text x="140" y="46" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">正味の削減額</text>
+    <text x="30" y="96" font-size="18" font-weight="700" fill="#5f6b7a">見かけの差額</text>
+    <text x="250" y="134" text-anchor="end" font-size="32" font-weight="800" fill="#0e9f6e">-4,000円</text>
+    <text x="30" y="184" font-size="18" font-weight="700" fill="#5f6b7a">セット割・残債の戻し</text>
+    <text x="250" y="222" text-anchor="end" font-size="32" font-weight="800" fill="#d64545">+1,650円</text>
+    <path d="M30 248 H250" stroke="#c9d4e4" stroke-width="3" stroke-linecap="round"/>
+    <text x="30" y="292" font-size="20" font-weight="800" fill="#0b2c5f">正味</text>
+    <text x="250" y="296" text-anchor="end" font-size="36" font-weight="800" fill="#0e9f6e">-2,350円</text>
+  </g>
+
+  <!-- バッジ: 「差額では決まらない」9文字×29=261+60=321 -->
+  <rect x="70" y="80" width="321" height="56" rx="28" fill="#ffd76a"/>
+  <text x="230" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">差額では決まらない</text>
+
+  <!-- 見出し: 「スマホ料金を」6×74=444 / 「正味で下げる」6×74=444 → 右端514。カードは x=860 から -->
+  <text x="70" y="248" font-size="74" font-weight="800" fill="#ffffff">スマホ料金を</text>
+  <text x="70" y="360" font-size="74" font-weight="800" fill="#ffffff"><tspan fill="#ffd76a">正味</tspan>で下げる</text>
+  <!-- サブ: 17文字×31=527 → 右端597 -->
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">下がる額は差額ではなく正味で決まる</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
