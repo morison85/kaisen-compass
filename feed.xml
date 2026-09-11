@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 10 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 11 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>楽天モバイルの電波が悪いときの対策|効く手は「掴んでいるバンド」で変わる | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/rakuten-mobile-denpa</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/rakuten-mobile-denpa</guid>
+    <pubDate>Fri, 11 Sep 2026 07:00:00 +0900</pubDate>
+    <description>楽天モバイルの「電波が悪い」は、圏外型・混雑型・通話型の3つに分かれ、端末が掴んでいるバンド(Band 3 / 18・26 / 28)で効く対策が変わります。2026年9月時点のプラチナバンドの現在地(下り3MHz幅という割当の狭さ)、バンドの確認方法、症状別の対処早見表、Rakuten Casaの条件、副回線・固定回線・乗り換えの分かれ目まで整理しました。</description>
+  </item>
   <item>
     <title>UQモバイルとLINEMOはどっち?料金の分かれ目は「自宅のネット回線」 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/uqmobile-linemo-hikaku</link>

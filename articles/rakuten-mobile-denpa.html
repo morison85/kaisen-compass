@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>楽天モバイルの電波が悪い時の対策|バンド別の打ち手 | 回線コンパス</title>
+<meta name="description" content="楽天モバイルの電波が悪いときは、端末が掴んでいるバンド(Band 3/18/28)で効く対策が変わります。2026年9月時点のプラチナバンドの現在地、バンドの確認方法、症状別の対処早見表、Rakuten Casaと副回線の使い分け、乗り換え判断の損益分岐まで。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/rakuten-mobile-denpa">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="楽天モバイルの電波が悪い時の対策|効く手は「掴んでいるバンド」で変わる">
+<meta property="og:description" content="再起動やSIM挿し直しの前に、今どのバンドを掴んでいるかを確認する。症状別の対処早見表と、Rakuten Casa・副回線・乗り換えの分かれ目まで。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/rakuten-mobile-denpa">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-rakuten-mobile-denpa.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-11">
+<meta property="article:modified_time" content="2026-09-11">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-rakuten-mobile-denpa.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260910q">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "楽天モバイルの電波が悪いときの対策|効く手は「掴んでいるバンド」で変わる【2026年9月】",
+  "description": "楽天モバイルの電波が悪いときの原因切り分けと対策。2026年9月時点のプラチナバンドの現在地、掴んでいるバンドの確認方法、症状別の対処早見表、Rakuten Casa・副回線・乗り換えの判断基準をまとめました。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-rakuten-mobile-denpa.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/rakuten-mobile-denpa"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "プラチナバンドが始まったのに、なぜまだ電波が悪いのですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "700MHz帯の商用サービスは2024年6月に始まりましたが、対応する基地局の整備は場所ごとに順次進むため、住んでいるエリアに届くまでに時間差があります。また楽天モバイルへの割り当ては下り3MHz幅・上り4MHz幅と、大手3社の上下10MHz幅に比べて狭く、建物に入りやすい代わりに一度に流せる量は多くありません。電波が届くことと、混雑時に速度が出ることは別の問題として切り分けるのが現実的です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "自宅の屋内だけ電波が弱いときは何をすればよいですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "まずWi-Fi通話(VoWiFi)を有効にして、通話とSMSを自宅のWi-Fi経由に逃がすのが最も手軽です。それでも足りない場合は、楽天モバイルが無料で貸し出すRakuten Casaという小型基地局を検討できます。ただしRakuten Casaは電波改善・調査依頼をしたうえで案内を受ける方式で、楽天モバイルが指定するインターネット回線を自宅で開通していることが条件です。5G通信には対応していません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "楽天モバイルを解約せずに電波の穴を埋める方法はありますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "副回線としてもう1枚eSIMを追加する方法があります。楽天モバイルは使った量に応じて料金が変わる段階制なので、普段の通信を別回線に寄せて楽天を低容量帯で維持する、という運用も可能です。自宅だけが弱いのであれば、固定回線やホームルーターを入れて宅内の通信をWi-Fiに寄せるほうが、月額あたりの改善幅は大きくなる傾向があります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "どのバンドを掴んでいるかはどうやって確認しますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Androidは「設定」→「デバイス情報」→「SIMのステータス」などから接続中のネットワーク情報を表示できる機種があります。表記は機種によって大きく異なり、バンド番号が出ないものもあります。iPhoneは標準の設定画面にバンド番号が出ないため、4G/5Gの表示と、場所を変えたときの変化から推定する形になります。My 楽天モバイルのエリアマップで、自宅が自社回線エリアかパートナー回線エリアかを確認する方法も併用してください。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "格安SIM", "item": "https://kaisen-compass.com/category/sim" },
+    { "@type": "ListItem", "position": 3, "name": "楽天モバイルの電波対策" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/sim">格安SIM</a></li>
+    <li>楽天モバイルの電波対策</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">格安SIM</span>
+    <h1 class="article-title">楽天モバイルの電波が悪いときの対策|効く手は「掴んでいるバンド」で変わる【2026年9月】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-11">2026年9月11日</time></span>
+      <span>公開日:<time datetime="2026-09-11">2026年9月11日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-rakuten-mobile-denpa.svg" alt="楽天モバイルの電波が悪いときの対策は、掴んでいるバンドによって変わる" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「楽天モバイルにしたけど電波が悪い」という相談は、ここ数年でいちばん多く受けてきたテーマです。そして内容をよく聞くと、同じ「電波が悪い」でも中身がまったく違うことに気づきます。家の中だけ圏外になる人、外では普通に使えるのに夕方だけ遅くなる人、データ通信は動いているのに通話だけ切れる人。この3つは原因が別なので、同じ対処をしても直る人と直らない人に分かれます。</p>
+    <p>ネットで見つかる対策記事は「再起動する」「SIMを挿し直す」から始まるものがほとんどですが、それで直るのは全体の一部です。先に確認すべきなのは、<strong>あなたの端末が今どの周波数(バンド)を掴んでいるか</strong>。ここが分かると、打つべき手が一気に絞り込めます。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>楽天モバイルの電波トラブルは<strong>「掴んでいるバンド」と「症状」の組み合わせ</strong>で打ち手が決まります。1.7GHz帯(Band 3)しか入らない状態で屋内が弱いなら、<strong>Wi-Fi通話とRakuten Casa</strong>で改善する余地が大きい。700MHz帯(Band 28)を掴めているのに遅いなら、それは電波ではなく<strong>混雑</strong>が原因なので端末側の設定では直りません。そもそも屋外でも圏外が続くならエリア側の問題で、<strong>副回線を足すか乗り換える</strong>ほうが早く解決します。</p>
+    </div>
+
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" rel="nofollow sponsored noopener" target="_blank"><span>電波を理由に移るなら:ドコモ回線のahamoの条件を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・料金や提供条件は、申し込み前に公式サイトでご確認ください</span></p>
+
+    <div class="svc__banner"><img src="../images/card-rakuten-mobile.svg" alt="楽天モバイル(Rakuten最強プラン)のサービス概要" width="800" height="420" loading="lazy" decoding="async"></div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#kiriwake">「電波が悪い」を3つに切り分ける</a></li>
+        <li><a href="#platinum">2026年9月時点のプラチナバンドの現在地</a></li>
+        <li><a href="#band">今どのバンドを掴んでいるかを確認する</a></li>
+        <li><a href="#hayami">バンド別・症状別の対処早見表</a></li>
+        <li><a href="#today">今日できる対策7つ</a></li>
+        <li><a href="#okunai">屋内が弱いときの本命は2つ</a></li>
+        <li><a href="#naoranai">それでも直らないときの3択</a></li>
+        <li><a href="#before">乗り換える前に確認する4点</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">自宅の通信環境から見直すなら</p>
+      <p>屋内の電波問題は、スマホ側だけでなく自宅回線とセットで考えると解決が早くなります。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../sougaku">総額を計算する</a>
+      </div>
+    </div>
+
+    <h2 id="kiriwake">「電波が悪い」を3つに切り分ける</h2>
+    <p>最初にやるのは対策ではなく、症状の分類です。次の3つのうち、自分がどれに当てはまるかを決めてください。複数に当てはまる場合は、いちばん困っている症状を選びます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>症状のタイプ</th><th>典型的な場面</th><th>原因の中心</th><th>効く対策の方向</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>A. 圏外・アンテナが立たない</strong></td><td>建物の奥・地下・エレベーター・郊外の移動中</td><td>電波そのものが届いていない</td><td>屋内対策(Wi-Fi通話・Casa)か、エリアを変える</td></tr>
+          <tr><td><strong>B. アンテナは立つのに遅い</strong></td><td>平日の昼休み・夕方〜夜・駅前やイベント会場</td><td>基地局の混雑、帯域の取り合い</td><td>時間帯の回避・Wi-Fiへの退避・副回線</td></tr>
+          <tr><td><strong>C. 通話だけ切れる・繋がらない</strong></td><td>通話中に突然切断、着信が鳴らない</td><td>通話アプリの設定、VoLTE/VoWiFiの挙動</td><td>Rakuten Linkの設定見直し・Wi-Fi通話の有効化</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>この3つを分けないまま対策を試すと、たとえば「混雑で遅いだけ(B)」なのに端末を初期化してしまう、といった遠回りが起きます。逆にAとCは端末側の設定で改善する余地が大きいので、先に手を動かす価値があります。</p>
+    <p>もうひとつ大事なのが、<strong>場所と時間を必ずセットで記録する</strong>ことです。「電波が悪い」と感じた瞬間に、その場所(自宅のどの部屋か、屋外のどこか)と時刻をメモしておくと、後述するバンドの確認と組み合わせたときに原因がはっきりします。この記録がないまま楽天モバイルのサポートに問い合わせても、調査のしようがありません。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">相談を受けていて多いのが「家では圏外だけど外では困っていない」というパターン。これはAの典型で、乗り換えなくても屋内対策だけで解決するケースが少なくありません。逆に「外でも遅い時間帯がある」というBの人に屋内対策をすすめても意味がないので、切り分けを飛ばさないほうが結局は近道になります。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="platinum">2026年9月時点のプラチナバンドの現在地</h2>
+    <p>楽天モバイルは2024年6月27日に、700MHz帯(Band 28)のいわゆるプラチナバンドで商用サービスを開始しました。プラチナバンドは周波数が低いぶん障害物を回り込みやすく、建物の中や地下に届きやすいのが特徴です。「楽天は屋内に弱い」という評判の根本原因が、この帯域を持っていなかったことにありました。</p>
+    <p>ただし、始まったからといってすぐ全国が変わるわけではありません。まず、楽天モバイルが使っている主な周波数を整理します。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>バンド</th><th>周波数帯</th><th>性格</th><th>掴んでいるときの体感</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Band 3</td><td>1.7GHz帯</td><td>楽天の主力。帯域は広いが障害物に弱い</td><td>屋外・窓際では速い。建物の奥で落ちやすい</td></tr>
+          <tr><td>Band 28</td><td>700MHz帯(プラチナ)</td><td>届きやすいが割当幅が狭い</td><td>圏外になりにくい。混雑時は速度が伸びにくい</td></tr>
+          <tr><td>Band 18 / 26</td><td>800MHz帯</td><td>パートナー回線(au回線のローミング)</td><td>エリアによって使われる。自社エリアとは扱いが異なる場合がある</td></tr>
+          <tr><td>n77</td><td>3.7GHz帯(5G)</td><td>速いが到達距離が短い</td><td>基地局の近くだけ速い。屋内で不安定になりやすい</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ここで押さえておきたい前提が2つあります。</p>
+    <p>ひとつ目は<strong>割り当て幅</strong>です。楽天モバイルの700MHz帯は下り3MHz幅・上り4MHz幅で、大手3社が上下10MHz幅ずつを持っているのと比べると狭い。つまりプラチナバンドは「届くようにする」ための帯域であって、「たくさん流す」ための帯域ではありません。プラチナバンドが入ってきたのに速度が出ない、という体感はこの構造から説明できます。速度を担うのは引き続きBand 3や5Gのn77です。</p>
+    <p>ふたつ目は<strong>整備の進み方</strong>です。700MHz帯に対応した基地局は都市部や地下鉄など人が集まる場所から順に増えており、2026年9月時点でも拡大の途中です。「自分の生活圏にはまだ来ていない」ということは十分あり得ます。楽天モバイルが公表している4G人口カバー率は99.9%(公式表記)ですが、これは人口ベースの数字で、建物の中まで快適という意味ではありません。カバー率と屋内の体感は別物だと考えておいてください。</p>
+    <p>なお楽天モバイルは、AST SpaceMobileと組んだ「Rakuten最強衛星サービス」を2026年第4四半期に提供開始する予定を公表しています。こちらもプラチナバンドを使う計画で、山間部や海上など基地局が置けない場所の穴を埋める位置づけです。ただし2026年9月時点ではまだ提供前なので、今困っている電波の解決策としては当てにしないほうが無難です。</p>
+
+    <h2 id="band">今どのバンドを掴んでいるかを確認する</h2>
+    <p>ここがこの記事の中心です。対策を始める前に、電波が悪いと感じる場所で端末が何を掴んでいるかを見ます。</p>
+    <ol class="steps">
+      <li>
+        <strong>Androidの場合:設定から接続情報を見る</strong>
+        <p>「設定」→「デバイス情報(端末情報)」→「SIMのステータス」あたりに、接続中のネットワーク種別や電波強度が表示されます。ただし<strong>表記は機種によって大きく違い、バンド番号がそのまま出ない端末も多い</strong>のが実情です。出ない場合は次の代替手段を使ってください。</p>
+      </li>
+      <li>
+        <strong>iPhoneの場合:バンド番号は基本的に出ない</strong>
+        <p>iPhoneの標準設定画面にバンド番号の表示はありません。フィールドテストモードという隠し機能はありますが、iOSのバージョンによって表示項目が変わるうえ、一般の利用者向けの機能ではないので、これに頼らない方法をおすすめします。</p>
+      </li>
+      <li>
+        <strong>代替手段:場所を変えて「4G表示の粘り方」を見る</strong>
+        <p>窓際と部屋の奥で、アンテナ本数がどれくらい落ちるかを比べます。<strong>窓際では4本立つのに、2〜3m奥に入っただけで1本以下まで落ちる</strong>——これはBand 3中心で、プラチナバンドが届いていない典型的なパターンです。逆に奥に入ってもアンテナ本数がほぼ変わらないなら、700MHz帯が届いている可能性が高くなります。</p>
+      </li>
+      <li>
+        <strong>My 楽天モバイルのエリアマップで自宅を確認する</strong>
+        <p>楽天モバイル公式のサービスエリアマップで、自宅の住所をピンポイントで確認します。<strong>自社回線エリアか、パートナー回線(au回線のローミング)エリアか</strong>で、使える帯域も混雑の出方も変わります。マップ上は圏内でも、建物の構造次第で屋内に届かないことがある点は変わりません。</p>
+      </li>
+      <li>
+        <strong>自宅3か所×朝昼夜の9回を記録する</strong>
+        <p>玄関・リビング・寝室など3か所で、朝・昼(12〜13時)・夜(21時前後)にアンテナ本数と速度を測ってメモします。手間に見えますが、これをやると<strong>「家全体が弱い」のか「特定の部屋だけ弱い」のか「時間帯だけ悪い」のか</strong>が一目で分かります。家全体が弱ければ屋内対策、時間帯だけなら混雑、特定の部屋だけならWi-Fiの配置で解決します。</p>
+      </li>
+    </ol>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 電波強度(dBm)の読み方</div>
+      <p>端末に「-105dBm」のような数値が出る場合、これは電波の受信強度で、<strong>0に近いほど強い</strong>(マイナスの値が小さいほど良い)という見方をします。目安としては-80dBm前後なら良好、-100dBm前後で不安定になりやすく、-110dBmを下回ると通信が切れやすくなる、という感覚です。ただし測定値は端末の持ち方や向きでも変わるため、1回の数値で判断せず、同じ場所で何度か確認してください。</p>
+    </div>
+
+    <h2 id="hayami">バンド別・症状別の対処早見表</h2>
+    <p>症状の分類(A・B・C)と、掴んでいるバンドの推定が揃ったら、次の表で打ち手を決めます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>今の状態</th><th>起きていること</th><th>最初にやること</th><th>改善の見込み</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Band 3のみ<br>×屋内で弱い(A)</strong></td>
+            <td>1.7GHzが壁を越えられていない。プラチナバンド未整備か、屋内まで届いていない</td>
+            <td>Wi-Fi通話を有効化 → 改善しなければ電波改善・調査依頼からRakuten Casaを相談</td>
+            <td>大きい。設備側の対応で解決する余地がある</td>
+          </tr>
+          <tr>
+            <td><strong>Band 28あり<br>×速度が出ない(B)</strong></td>
+            <td>届いてはいるが割当幅が狭く、混雑時間帯に取り合いになっている</td>
+            <td>Wi-Fiに退避。混雑時間に大容量通信を避ける。副回線を検討</td>
+            <td>端末設定では小さい。運用か回線構成の見直しが要る</td>
+          </tr>
+          <tr>
+            <td><strong>パートナー回線<br>(Band 18/26)</strong></td>
+            <td>自社エリア外でau回線を借りている状態</td>
+            <td>エリアマップで自社エリア化の状況を確認。当面は副回線か乗り換えを検討</td>
+            <td>自力では変えられない。整備を待つ形になる</td>
+          </tr>
+          <tr>
+            <td><strong>5G(n77)表示で<br>不安定になる</strong></td>
+            <td>5Gと4Gの切り替えが頻発し、通信が途切れる</td>
+            <td>設定から5Gをオフにして4G固定にする</td>
+            <td>中程度。切り替えの往復が減り安定することがある</td>
+          </tr>
+          <tr>
+            <td><strong>通話だけ切れる(C)</strong></td>
+            <td>Rakuten Linkの経路(モバイル/Wi-Fi)が環境と噛み合っていない</td>
+            <td>Rakuten Linkの通話設定でモバイル優先/Wi-Fi優先を切り替える</td>
+            <td>大きい。設定変更だけで直ることが多い</td>
+          </tr>
+          <tr>
+            <td><strong>屋外でも圏外が続く</strong></td>
+            <td>生活圏がエリアの穴にあたっている</td>
+            <td>副回線を足すか、別キャリアへ乗り換える</td>
+            <td>端末側の対策は効かない。構成を変える判断へ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>この表の使い方で大事なのは、<strong>「改善の見込み」の列を先に見る</strong>ことです。見込みが小さいと分かっている対策に時間を使わない、というのがいちばんの時短になります。Bの混雑パターンで端末の初期化を繰り返す人がとても多いのですが、混雑は端末では解決できません。</p>
+
+    <h2 id="today">今日できる対策7つ</h2>
+    <p>ここからは実際の手順です。上から順に、手間が軽く効果が出やすい順に並べています。</p>
+    <ol class="steps">
+      <li><strong>端末を再起動する</strong><p>基地局への接続情報がおかしくなっているだけのケースは、これで直ります。1分で終わるので最初に試す価値があります。</p></li>
+      <li><strong>5Gをオフにして4G固定にする</strong><p>「設定」→「モバイルネットワーク」から、優先ネットワークを4G/LTEに変更します。5Gの電波が弱い場所で4Gとの切り替えが頻発していると、かえって不安定になります。バッテリー持ちも改善する傾向があります。</p></li>
+      <li><strong>Wi-Fi通話(VoWiFi)をオンにする</strong><p>自宅にWi-Fiがあるなら、通話とSMSをWi-Fi経由に逃がせます。屋内で通話が切れる問題には、これがいちばん効きます。設定項目名は機種により「Wi-Fi通話」「Wi-Fi Calling」などと異なります。</p></li>
+      <li><strong>Rakuten Linkの通話経路を切り替える</strong><p>Rakuten Linkアプリの「設定」→「通話とメッセージ」から、モバイル回線を優先するかWi-Fiを優先するかを変更できます。自宅Wi-Fiが混んでいる場合はモバイル優先、屋内の電波が弱い場合はWi-Fi優先、と環境に合わせて選びます。</p></li>
+      <li><strong>ネットワーク設定をリセットする</strong><p>Wi-Fiのパスワードなども一緒に消えるので、再入力できる準備をしてから実行します。APN設定の不整合が原因のときに効きます。</p></li>
+      <li><strong>SIMを挿し直す/eSIMを再発行する</strong><p>物理SIMは接点の汚れで不安定になることがあります。eSIMの場合はMy 楽天モバイルから再発行が可能ですが、再発行中は一時的に通信できなくなるため、時間に余裕があるときに行ってください。</p></li>
+      <li><strong>端末の持ち方と置き場所を変える</strong><p>金属製のケースやスタンド、窓のLow-Eガラス、鉄筋コンクリートの壁は電波を弱めます。窓際に置くだけでアンテナが1〜2本増えることは珍しくありません。</p></li>
+    </ol>
+
+    <div class="box-point">
+      <div class="box-point__t">✅ やっても効果が薄いこと</div>
+      <p>機内モードのオン・オフを何度も繰り返す、キャリア設定アップデートを連打する、といった操作は、1回試して変わらなければそれ以上の効果は期待できません。また「電波を強くするアプリ」の類は、端末の電波そのものを強くすることはできません。時間を使うなら、上の7つと後述の屋内対策に振り向けたほうが確実です。</p>
+    </div>
+
+    <h2 id="okunai">屋内が弱いときの本命は2つ</h2>
+    <p>症状Aで、家の中だけが弱いという場合。ここが楽天モバイルの相談でいちばん多いパターンですが、実は解決策がはっきりしています。</p>
+
+    <h3>本命1:Wi-Fi通話(VoWiFi)で通話をWi-Fiに逃がす</h3>
+    <p>自宅にWi-Fiがあれば、通話とSMSを自宅のインターネット回線経由に切り替えられます。モバイルの電波が1本しか立たない部屋でも、Wi-Fiが届いていれば通話は安定します。データ通信もWi-Fiに繋いでおけば、屋内でモバイル電波を使う機会そのものが減ります。</p>
+    <p>限界もあります。Wi-Fi通話は自宅の回線品質にそのまま依存するので、<strong>そのWi-Fiが夜に遅くなるような環境だと通話品質も落ちます</strong>。自宅回線が夜だけ遅いという場合は、<a href="ipv6-ipoe">IPv6 IPoEへの切り替え</a>で改善することが多いので、先にそちらを確認してください。</p>
+
+    <h3>本命2:Rakuten Casa(無料の小型基地局)</h3>
+    <p>Rakuten Casaは、自宅のインターネット回線につないで屋内に小さな楽天回線エリアを作る機器です。楽天モバイルが無料で貸し出しており、2026年9月時点の公式表記では月額利用料・本体代(レンタル)・事務手数料がいずれも無料です。条件は次のとおりです。</p>
+    <ul>
+      <li>Rakuten最強プランを契約していること</li>
+      <li>楽天回線対応製品を使用していること</li>
+      <li><strong>電波改善・調査依頼を行い、楽天モバイルから設置の案内を受けていること</strong></li>
+      <li><strong>楽天モバイルが指定するインターネット回線を契約し、開通していること</strong></li>
+      <li>現住所・楽天モバイルの登録住所・インターネット回線の設置住所の3つが一致していること</li>
+    </ul>
+    <p>注意点は2つ。ひとつは<strong>申し込めば必ずもらえるものではない</strong>こと。電波改善・調査依頼を出したうえで、電波状況に応じて案内される方式なので、調査の結果として別の改善策を提案されたり、案内されなかったりすることがあります。もうひとつは<strong>Rakuten Casaは5G通信サービスに対応していない</strong>こと。屋内の4G環境を作る機器だと理解しておいてください。また紛失時や返却が遅れた場合に違約金が請求される可能性がある旨も公式に記載されています。</p>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ どちらの対策も「自宅に固定回線があること」が前提</div>
+      <p>Wi-Fi通話もRakuten Casaも、自宅にインターネット回線がなければ成立しません。スマホのテザリングだけで暮らしている場合は、屋内の電波問題を根本から解決する手段がほぼ残らないことになります。<a href="tethering-kotei-kaisen">テザリングを固定回線代わりにする限界</a>もあわせて確認してください。楽天ひかりとのセット運用を検討している場合は<a href="rakuten-hikari-mobile-set">楽天モバイルと楽天ひかりのセット</a>にまとめています。</p>
+    </div>
+
+    <p>自宅回線をこれから引くなら、工事ができる住まいかどうかで選択肢が分かれます。全国の光コラボから選ぶなら、縛りのない構成にしておくと、あとでスマホ側を変えたときに身動きが取りやすくなります。</p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/gmohikari-600.webp 600w, ../images/official/gmohikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/gmohikari.jpg" srcset="../images/official/gmohikari-600.jpg 600w, ../images/official/gmohikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="GMOとくとくBB光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://gmobb.jp/service/gmohikari/" rel="nofollow noopener" target="_blank">GMOとくとくBB光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-gmohikari.svg" alt="GMOとくとくBB光のサービス概要(月額・縛りなし)" width="800" height="420" loading="lazy" decoding="async"></div>
+
+    <p>回線そのものの選び方は<a href="hikari-osusume">光回線7社比較</a>、工事ができない住まいなら<a href="home-router">ホームルーターの選び方</a>が近い判断材料になります。</p>
+
+    <h2 id="naoranai">それでも直らないときの3択</h2>
+    <p>屋外でも電波が悪い、あるいは屋内対策をしても生活が回らない。そうなったら、構成を変える判断に移ります。選択肢は3つです。</p>
+
+    <h3>選択肢1:楽天を残して副回線を足す</h3>
+    <p>もう1枚、別キャリアのeSIMを入れて2回線で使う方法です。楽天モバイルは使った量に応じて料金が変わる段階制なので、<strong>普段の通信を副回線に寄せれば、楽天側は低容量帯の料金で維持できます</strong>。Rakuten Linkの無料通話や楽天市場の特典を手放したくない人に向いた運用です。eSIM対応端末なら物理SIMを抜かずに追加できるので、切り替えの手間もありません(<a href="esim-norikae">eSIMの乗り換え手順</a>)。</p>
+
+    <h3>選択肢2:自宅の通信を固定回線・ホームルーターで埋める</h3>
+    <p>困っているのが家の中だけなら、スマホの契約を変えるより自宅の通信環境を作るほうが費用対効果が高くなります。工事ができるなら光回線、できないならホームルーターやWiMAX。月額は増えますが、家族全員の通信が同時に改善するのが大きな違いです(<a href="wimax-vs-homerouter">WiMAXとホームルーターの比較</a>)。</p>
+
+    <h3>選択肢3:別のキャリアへ乗り換える</h3>
+    <p>生活圏そのものが電波の穴にあたっている場合は、これがいちばん確実です。ドコモ回線ならahamo、au回線ならUQモバイル、ソフトバンク回線ならLINEMOが同価格帯の受け皿になります。どこを選ぶかは、<strong>自分がよくいる場所で誰のアンテナが立っているか</strong>で決めるのが確実です。家族や同僚の端末を見せてもらうのが、いちばん早い実測になります。</p>
+
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>構成</th><th>月額の目安(税込)</th><th>電波の改善</th><th>向いている人</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>楽天モバイル1本のまま</td><td>1,078〜3,278円</td><td>屋内対策次第</td><td>屋内だけが問題で、Casaや自宅Wi-Fiで解決できる人</td></tr>
+          <tr><td>楽天+副回線(eSIM)</td><td>楽天の低容量帯+副回線分</td><td>穴を埋められる</td><td>楽天の特典や無料通話を手放したくない人</td></tr>
+          <tr><td>楽天+自宅の固定回線</td><td>スマホ代+光/ホームルーター代</td><td>宅内は確実に改善</td><td>在宅時間が長い人・家族で使う人</td></tr>
+          <tr><td>他社へ乗り換え</td><td>2,000〜3,000円台が中心</td><td>生活圏ごと変わる</td><td>屋外でも電波が悪く、日常に支障が出ている人</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>※ 月額はいずれも2026年9月時点の各社公式表記に基づく目安です。キャンペーンや割引の適用状況で実際の請求額は変わります。</p>
+    <p>「楽天をやめるか残すか」で迷ったときの判断基準はシンプルで、<strong>電波に困っている場所が自宅の中だけなら残す、外に出ても困るなら変える</strong>。自宅だけの問題に乗り換えで対応しても、費用が増えるわりに解決しないことがあります。</p>
+
+    <h2 id="before">乗り換える前に確認する4点</h2>
+    <div class="box-point">
+      <div class="box-point__t">✅ 解約ボタンを押す前のチェック</div>
+      <ul>
+        <li><strong>楽天市場のポイント倍率</strong>:楽天モバイルの契約は楽天市場のポイント倍率(SPU)に影響します。解約で倍率が下がるので、月の買い物額が大きい人は差額を試算してから決めてください。</li>
+        <li><strong>家族の回線</strong>:家族向けの割引プログラムの対象になっている場合、1回線抜けると残る回線の料金が変わることがあります。</li>
+        <li><strong>端末の残債</strong>:楽天モバイルで端末を分割購入している場合、解約後も支払いは続きます。「解約すると端末代が消える」ということはありません。</li>
+        <li><strong>番号の引き継ぎ</strong>:MNPワンストップに対応している事業者同士なら、予約番号の取得なしで乗り換えられます(<a href="mnp-one-stop">MNPワンストップの解説</a>)。対応状況は移行先によって違うので、申し込み前に確認を。</li>
+      </ul>
+    </div>
+    <p>移行先の候補の絞り方は、データ量と自宅回線の組み合わせで決まります。サブブランド2択で迷っている場合は<a href="uqmobile-linemo-hikaku">UQモバイルとLINEMOの比較</a>、格安SIM全体から選びたい場合は<a href="kakuyasu-sim">格安SIM5社比較</a>が出発点になります。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>プラチナバンドが始まったのに、なぜまだ電波が悪いのですか?</summary>
+        <div class="faq__a">700MHz帯の商用サービスは2024年6月に始まりましたが、対応する基地局の整備は場所ごとに順次進むため、住んでいるエリアに届くまでに時間差があります。また楽天モバイルへの割り当ては下り3MHz幅・上り4MHz幅と、大手3社の上下10MHz幅に比べて狭く、建物に入りやすい代わりに一度に流せる量は多くありません。「届くこと」と「混雑時に速度が出ること」は別問題として切り分けてください。</div>
+      </details>
+      <details>
+        <summary>自宅の屋内だけ電波が弱いときは何をすればよいですか?</summary>
+        <div class="faq__a">まずWi-Fi通話(VoWiFi)を有効にして、通話とSMSを自宅のWi-Fi経由に逃がすのが最も手軽です。それでも足りない場合は、楽天モバイルが無料で貸し出すRakuten Casaを検討できます。ただし電波改善・調査依頼をしたうえで案内を受ける方式で、楽天モバイルが指定するインターネット回線を自宅で開通していることが条件です。5G通信には対応していません。</div>
+      </details>
+      <details>
+        <summary>楽天モバイルを解約せずに電波の穴を埋める方法はありますか?</summary>
+        <div class="faq__a">副回線としてもう1枚eSIMを追加する方法があります。楽天モバイルは使用量に応じた段階制なので、普段の通信を別回線に寄せて楽天を低容量帯で維持する運用が可能です。自宅だけが弱いのであれば、固定回線やホームルーターで宅内の通信をWi-Fiに寄せるほうが、月額あたりの改善幅は大きくなる傾向があります。</div>
+      </details>
+      <details>
+        <summary>どのバンドを掴んでいるかはどうやって確認しますか?</summary>
+        <div class="faq__a">Androidは「設定」→「デバイス情報」→「SIMのステータス」などから接続情報を表示できる機種があります。表記は機種差が大きく、バンド番号が出ないものもあります。iPhoneは標準の設定画面にバンド番号が出ないため、4G/5Gの表示と場所を変えたときの変化から推定する形になります。My 楽天モバイルのエリアマップで自社回線エリアかパートナー回線エリアかを確認する方法も併用してください。</div>
+      </details>
+      <details>
+        <summary>5Gをオフにすると、かえって遅くなりませんか?</summary>
+        <div class="faq__a">5Gの電波が安定して届いている場所では、オフにすると速度が落ちます。効果があるのは「5Gと4Gの切り替えが頻発して通信が途切れる」場所です。自宅で試して体感が改善するなら戻さない、変わらないか悪化するなら戻す、という試し方が確実です。設定は端末側でいつでも切り替えられます。</div>
+      </details>
+      <details>
+        <summary>衛星サービスが始まれば電波の問題は解決しますか?</summary>
+        <div class="faq__a">Rakuten最強衛星サービスは2026年第4四半期の提供開始が予定されており、基地局を置けない山間部や海上などの穴を埋める位置づけです。ただし建物の中に届きにくいという屋内の課題は、衛星では解決しにくい性質のものです。屋内対策とは別の話として考えておくほうが期待値を外しません。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:順番を守れば遠回りしない</h2>
+    <ul>
+      <li>まず症状を<strong>A(圏外)・B(遅い)・C(通話)</strong>に分ける</li>
+      <li>電波が悪い場所で<strong>掴んでいるバンドと電波強度</strong>を確認する</li>
+      <li><strong>Band 3のみ×屋内</strong>なら、Wi-Fi通話 → Rakuten Casaの順で対処</li>
+      <li><strong>Band 28あり×遅い</strong>は混雑。端末設定では直らないので運用か構成を変える</li>
+      <li>屋外でも困るなら、<strong>副回線か乗り換え</strong>。自宅だけなら固定回線のほうが費用対効果が高い</li>
+    </ul>
+    <p>楽天モバイルの電波は、プラチナバンドの整備でここ数年かなり変わりました。それでも「自分の生活圏でどうか」は個別の話なので、平均的な評判ではなく自分の記録で判断するのがいちばん確実です。乗り換えを含めて考えるなら、自宅回線とスマホをセットで見直すと年単位では大きな差になります。<a href="hitorigurashi-netdai">一人暮らしのネット代の相場</a>もあわせてどうぞ。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>楽天モバイル株式会社 プレスリリース「楽天モバイル、"プラチナバンド" 700MHz帯での商用サービスを開始」(2024年6月27日)</li>
+        <li>楽天モバイル公式「Rakuten Casa(楽天カーサ)」申し込み条件・料金・注意事項ページ(2026年9月確認)</li>
+        <li>楽天モバイル公式「Rakuten最強プラン(料金プラン)」(2026年9月確認)</li>
+        <li>楽天モバイル公式 サービスエリアマップ(2026年9月確認)</li>
+        <li>ケータイ Watch「楽天モバイル三木谷氏、26年の"スマホと衛星直接通信"は『プラチナバンドで』」</li>
+        <li>本文中の月額はすべて税込・2026年9月時点の目安です。周波数の割り当て幅・エリア整備状況・キャンペーンは時期により変わるため、申し込みや解約の前に各社公式サイトでご確認ください。</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">屋外でも電波に困るなら、回線そのものを変える</div>
+    <p>屋内対策で解決しない——つまり生活圏そのものがエリアの穴にあたっている場合、端末側でできることはほとんど残りません。ドコモ回線をそのまま使うahamoは、Web完結で申し込めて5分かけ放題が料金に含まれるため、乗り換え後にオプションを組み直す手間が少ないのが実務的な利点です。まず自分がよくいる場所でドコモのアンテナが立つかを確認してから検討してください。</p>
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/ahamo-600.webp 600w, ../images/official/ahamo.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/ahamo.jpg" srcset="../images/official/ahamo-600.jpg 600w, ../images/official/ahamo.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="ahamoの公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://ahamo.com/" rel="nofollow noopener" target="_blank">ahamo公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-ahamo.svg" alt="ahamoのサービス概要(月額・特徴)" width="800" height="420" loading="lazy" decoding="async"></div>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" rel="nofollow sponsored noopener" target="_blank">ahamoの詳細を見る<small>料金・データ量・かけ放題の条件を確認</small></a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" alt="">
+    <p class="micro">※ リンク先は広告(PR)です。料金・提供条件は公式サイトで最新情報をご確認ください。店頭で相談しながら決めたい場合は、<a href="uqmobile-norikae">UQモバイル</a>のように店舗を持つブランドが向きます。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="kakuyasu-sim">格安SIMおすすめ5社比較|データ量から逆算する選び方</a></li>
+      <li><a href="esim-norikae">eSIM乗り換えの手順|副回線の追加にも使える</a></li>
+      <li><a href="rakuten-hikari-mobile-set">楽天モバイル×楽天ひかりのセット|楽天経済圏の通信構成</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260910b" defer></script>
+</body>
+</html>

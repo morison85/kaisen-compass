@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="楽天モバイルの電波が悪いときの対策はバンド別" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:基地局とスマホのアンテナ表示 -->
+  <g transform="translate(890, 300) scale(0.9)">
+    <path d="M60 250 L100 40 L140 250" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M74 180 L126 180" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="100" cy="30" r="14" fill="#ffd76a"/>
+    <path d="M150 60 a70 70 0 0 1 0 80" fill="none" stroke="#ffd76a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M178 34 a110 110 0 0 1 0 132" fill="none" stroke="#ffd76a" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+    <rect x="180" y="150" width="110" height="180" rx="16" fill="#ffffff"/>
+    <rect x="196" y="250" width="14" height="30" rx="3" fill="#1558d6"/>
+    <rect x="218" y="232" width="14" height="48" rx="3" fill="#1558d6"/>
+    <rect x="240" y="212" width="14" height="68" rx="3" fill="#cfe0ff"/>
+    <rect x="262" y="192" width="14" height="88" rx="3" fill="#cfe0ff"/>
+  </g>
+
+  <rect x="70" y="80" width="330" height="56" rx="28" fill="#ffd76a"/>
+  <text x="235" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">症状別・対処早見表</text>
+
+  <text x="70" y="246" font-size="68" font-weight="800" fill="#ffffff">楽天モバイルの電波が悪い</text>
+  <text x="70" y="356" font-size="82" font-weight="800" fill="#ffd76a">対策はバンド別</text>
+  <text x="70" y="432" font-size="31" font-weight="600" fill="#cfe0ff">掴んでいる周波数で、効く手が変わる</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
