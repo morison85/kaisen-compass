@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>Wi-Fi中継機とメッシュWi-Fiの違い | 回線コンパス</title>
+<meta name="description" content="Wi-Fi中継機とメッシュWi-Fiの違いを仕組みから解説。家の隅まで届かない原因を4つに切り分け、機器の追加で直るケースと直らないケースを判定。中継機・メッシュ無線・メッシュ有線バックホールの速度の天井を比較し、間取り別の選び方までまとめました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/mesh-wifi-chukeiki">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wi-Fi中継機とメッシュWi-Fiの違い|家の隅まで届かせる正解は「原因」で変わる">
+<meta property="og:description" content="違いはシームレスさではなく「親機までの足回り」。原因の切り分けと、構成別の速度の天井を比較します。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/mesh-wifi-chukeiki">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-mesh-wifi-chukeiki.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-15">
+<meta property="article:modified_time" content="2026-09-15">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-mesh-wifi-chukeiki.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260910q">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wi-Fi中継機とメッシュWi-Fiの違い|家の隅まで届かせる正解は「原因」で変わる【2026年】",
+  "description": "中継機とメッシュWi-Fiの違いを仕組みから解説し、届かない原因の切り分けと構成別の速度の天井を比較します。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-mesh-wifi-chukeiki.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-15",
+  "dateModified": "2026-09-15",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/mesh-wifi-chukeiki"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Wi-Fiが届かない原因を5分で切り分ける手順",
+  "step": [
+    { "@type": "HowToStep", "name": "親機のすぐ横で測る", "text": "ルーターから1〜2mの位置でスマホの速度を測り、契約速度に対してどれくらい出ているかを記録する。" },
+    { "@type": "HowToStep", "name": "困っている部屋で測る", "text": "同じアプリで、電波が弱いと感じる部屋でも測って数値を比べる。" },
+    { "@type": "HowToStep", "name": "時間帯を変えて測る", "text": "平日の昼と夜21〜23時台の2回測り、時間帯で落ちるかどうかを確認する。" },
+    { "@type": "HowToStep", "name": "有線でも測る", "text": "パソコンをLANケーブルでルーターに直結して測り、無線の問題か回線の問題かを分ける。" },
+    { "@type": "HowToStep", "name": "結果から原因を判定する", "text": "親機の横で遅ければ回線側かルーター世代、奥の部屋だけ遅ければ距離と遮蔽、夜だけ遅ければ混雑と判定する。" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "中継機とメッシュWi-Fiはどちらを買えばいいですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "困っているのが1部屋だけで、親機からの距離も壁1〜2枚程度なら中継機で足りるケースが多いです。家じゅうで途切れる、3階建てや広い間取りで複数箇所をカバーしたい、家の中を移動しながら通話やオンライン会議をするといった条件が入ると、メッシュWi-Fiのほうが向いています。" }
+    },
+    {
+      "@type": "Question",
+      "name": "中継機を置くと速度が半分になると聞きましたが本当ですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "親機との通信と手元の端末との通信を同じ周波数帯で行う機種では、送信と受信を交互に処理するため理論値がおよそ半分になります。親機側を5GHz、端末側を2.4GHzのように分けて同時に使える「デュアルバンド同時接続」対応の機種を選べば、この半減は避けやすくなります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "メーカーが違う機器でメッシュを組めますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Wi-Fi Allianceの共通規格「Wi-Fi EasyMesh」に両方が対応していれば、メーカーをまたいで組める場合があります。ただしメーカー独自のメッシュ機能とは互換性がなく、同じメーカーでも機種によって対応状況が異なるため、購入前に各メーカーの対応機種一覧で確認してください。" }
+    },
+    {
+      "@type": "Question",
+      "name": "機器を追加しても速くならないのはなぜですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "中継機もメッシュも、親機に届いている通信を家の中に配り直す装置です。回線そのものが混んでいる、集合住宅のVDSL配線で上限が頭打ちになっている、といった原因の場合は台数を増やしても改善しません。親機のすぐ横やLANケーブル直結でも遅いときは、回線側を疑ってください。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "WiFi・ルーター", "item": "https://kaisen-compass.com/category/wifi" },
+    { "@type": "ListItem", "position": 3, "name": "中継機とメッシュWi-Fiの違い" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/wifi">WiFi・ルーター</a></li>
+    <li>中継機とメッシュWi-Fiの違い</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">WiFi・ルーター</span>
+    <h1 class="article-title">Wi-Fi中継機とメッシュWi-Fiの違い|家の隅まで届かせる正解は「原因」で変わる【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-15">2026年9月15日</time></span>
+      <span>公開日:<time datetime="2026-09-15">2026年9月15日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-mesh-wifi-chukeiki.svg" alt="Wi-Fi中継機とメッシュWi-Fiの違いと、家の隅まで届かせる方法" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「寝室だけWi-Fiが弱い」「2階に上がると動画が止まる」。この悩みの解決策として出てくるのが<strong>Wi-Fi中継機</strong>と<strong>メッシュWi-Fi</strong>の2つです。値段は数千円から3万円台まで開きがあり、どちらを買うべきか迷いやすいところです。</p>
+    <p>ただ、この2つを比べる前に確認すべきことがあります。<strong>そもそも、その症状は機器を足して直る種類のものなのか</strong>。ここを飛ばして買うと、1万円以上かけて何も変わらないという結果になりかねません。この記事では、原因の切り分けから始めて、中継機とメッシュの仕組みの違い、構成ごとの速度の天井、間取り別の選び方まで順番に整理します。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>中継機とメッシュの本当の差は「シームレスに繋ぎ変わるかどうか」ではなく、<strong>親機までの足回り(バックホール)をどう確保する設計か</strong>です。そのうえで選び方は単純で、<strong>困っている部屋が1つなら中継機、家じゅう・移動しながら使うならメッシュ</strong>。ただし<strong>親機のすぐ横でも遅い/夜だけ遅い場合は、どちらを買っても改善しません</strong>。まず原因を切り分けてください。</p>
+    </div>
+
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><span>回線側が原因だったなら:GMOとくとくBB光の料金を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/gmohikari-600.webp 600w, ../images/official/gmohikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/gmohikari.jpg" srcset="../images/official/gmohikari-600.jpg 600w, ../images/official/gmohikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="GMOとくとくBB光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://gmobb.jp/service/gmohikari/" rel="nofollow noopener" target="_blank">GMOとくとくBB光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-gmohikari.svg" alt="GMOとくとくBB光のサービス概要(月額・縛りなし)" width="800" height="420" loading="lazy" decoding="async"></div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#genin">「届かない」の原因は4つ。機器で直るのは2つだけ</a></li>
+        <li><a href="#kiriwake">買う前にやる5分の切り分け</a></li>
+        <li><a href="#chigai">中継機とメッシュの違いを仕組みで理解する</a></li>
+        <li><a href="#tenjo">構成別・速度の天井を逆算する</a></li>
+        <li><a href="#hantei">間取りと症状から選ぶ判定表</a></li>
+        <li><a href="#yusen">有線バックホールの作り方(現実解)</a></li>
+        <li><a href="#kaumae">買う前に確認する5項目</a></li>
+        <li><a href="#kaisen">足しても直らないときは回線側を疑う</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">回線側が原因だった場合の受け皿</p>
+      <p>切り分けの結果、機器ではなく回線が足を引っ張っていたときは、こちらから候補を絞れます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="genin">「届かない」の原因は4つ。機器で直るのは2つだけ</h2>
+    <p>Wi-Fiが弱い・遅いという症状は、原因が大きく4種類に分かれます。中継機やメッシュを足して効くのは、このうち上の2つだけです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>原因</th><th>症状の出方</th><th>機器の追加で直るか</th><th>本来の対処</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>① 距離・遮蔽</th>
+            <td>特定の部屋・階だけ弱い。親機の近くは問題ない</td>
+            <td class="best">直る</td>
+            <td>中継機・メッシュの追加、親機の置き場所の見直し</td>
+          </tr>
+          <tr>
+            <th>② 親機の性能・世代</th>
+            <td>家全体でなんとなく遅い。接続台数が多いと不安定</td>
+            <td class="best">直る</td>
+            <td>ルーターの買い替え。メッシュ導入は買い替えを兼ねられる</td>
+          </tr>
+          <tr>
+            <th>③ 電波の混雑</th>
+            <td>夜だけ遅い。集合住宅で顕著。2.4GHzが特に不安定</td>
+            <td>ほぼ直らない</td>
+            <td>5GHz・6GHzへの移動、チャンネル変更、有線化</td>
+          </tr>
+          <tr>
+            <th>④ 回線側の上限</th>
+            <td>親機のすぐ横でも遅い。有線でも遅い。夜に激しく落ちる</td>
+            <td>直らない</td>
+            <td>IPoE化・プラン変更・回線の乗り換え</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>検索して出てくる「中継機とメッシュ、どっちがおすすめ?」という記事の多くは、①と②であることを暗黙の前提にしています。しかし、実際に相談を受けていて多いのは③と④が混ざっているケースです。とくに集合住宅で夜だけ遅くなる症状は、<a href="mansion-vdsl">VDSL配線の上限</a>や<a href="ipv6-ipoe">IPv6 IPoE未対応</a>が理由のことがあり、そこに中継機を足しても体感は変わりません。</p>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ この症状なら、中継機もメッシュも買わないでください</div>
+      <ul>
+        <li>ルーターの<strong>すぐ横</strong>でも期待より遅い</li>
+        <li>パソコンを<strong>LANケーブルで直結</strong>しても遅い</li>
+        <li><strong>夜21時〜23時台だけ</strong>極端に落ち、昼間は速い</li>
+      </ul>
+      <p style="margin:0;">いずれも原因は家の中の電波ではなく、回線かプロバイダ側にあります。機器を増やしても、配る元が細いままでは太くなりません。</p>
+    </div>
+
+    <h2 id="kiriwake">買う前にやる5分の切り分け</h2>
+    <p>やることは「同じ測り方で、場所と時間を変えて4回測る」だけです。スマホの速度測定アプリでもブラウザの測定サイトでも構いませんが、途中で変えずに同じもので統一してください。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">親機から1〜2mの場所で測る</div>
+        <p>まずは基準づくり。ここで契約速度に対して極端に低ければ、家の中の電波の問題ではありません。1ギガ契約の無線で下り200〜400Mbps出ていれば、親機まわりは健全と見ていい水準です。</p>
+      </li>
+      <li>
+        <div class="steps__t">困っている部屋で測る</div>
+        <p>基準の数値と比べます。<strong>基準の3割を切っている</strong>なら距離・遮蔽が効いており、中継機やメッシュで改善が見込めます。逆に基準とほぼ同じなのに遅いと感じるなら、原因は電波ではありません。</p>
+      </li>
+      <li>
+        <div class="steps__t">時間帯を変えてもう一度測る</div>
+        <p>平日の昼と、夜21時〜23時台の2回。<strong>夜だけ大きく落ちる</strong>なら混雑か回線側です。この差が5倍以上になる場合は、機器より先に回線の見直しを検討したほうが早いです。</p>
+      </li>
+      <li>
+        <div class="steps__t">LANケーブルで直結して測る</div>
+        <p>パソコンやゲーム機をルーターのLANポートに直結します。<strong>有線でも遅ければ確定で回線側</strong>。有線は速いのに無線が遅いなら、無線側の問題なので機器の追加が効きます。</p>
+      </li>
+      <li>
+        <div class="steps__t">結果を4分類に当てはめる</div>
+        <p>「親機の横は速い・奥の部屋が遅い・時間帯で変わらない・有線は速い」なら①距離と遮蔽で、中継機かメッシュの出番。「どこでも遅い・有線でも遅い」なら④回線側です。</p>
+      </li>
+    </ol>
+    <div class="box-memo">
+      <div class="box-memo__t">📝 測る前に、0円でできること</div>
+      <p style="margin:0;">親機を<strong>床置き・テレビ裏・金属ラックの中・水槽や電子レンジのそば</strong>から出すだけで、奥の部屋の数値が変わることがあります。電波は水と金属に弱く、下向きには広がりにくい性質があるためです。<strong>家の中央寄り・床から1m以上・周囲に遮蔽物なし</strong>に置き直してから測ると、そもそも機器の追加が要らなかったと分かる場合もあります。</p>
+    </div>
+
+    <h2 id="chigai">中継機とメッシュの違いを仕組みで理解する</h2>
+    <p>カタログでは「メッシュはシームレスに繋ぎ変わる」「中継機は安い」という説明が並びますが、体感の差を決めているのはもっと手前の設計思想です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>観点</th><th>Wi-Fi中継機</th><th>メッシュWi-Fi</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>役割</th>
+            <td>今ある親機の電波を、その場で受けて撒き直す</td>
+            <td>親機とサテライトで1つのネットワークを組み直す</td>
+          </tr>
+          <tr>
+            <th>SSID(電波の名前)</th>
+            <td>機種により別名になることがある(手動で切り替えが必要)</td>
+            <td class="best">全台で同じ。端末が自動で強いほうへ移る</td>
+          </tr>
+          <tr>
+            <th>接続先の切り替え</th>
+            <td>端末任せ。弱い電波を掴んだままになりやすい</td>
+            <td class="best">ネットワーク側から誘導するため居座りにくい</td>
+          </tr>
+          <tr>
+            <th>親機までの足回り</th>
+            <td>通常は1経路。同じ帯で中継すると速度が半減する</td>
+            <td class="best">専用帯や有線に逃がす設計が用意されている</td>
+          </tr>
+          <tr>
+            <th>台数を増やしたとき</th>
+            <td>中継機の先にさらに中継すると劣化が重なる</td>
+            <td class="best">経路を選び直せるため劣化しにくい</td>
+          </tr>
+          <tr>
+            <th>費用の目安</th>
+            <td class="best">3,000〜8,000円前後</td>
+            <td>2台セットで1.5万〜3.5万円前後</td>
+          </tr>
+          <tr>
+            <th>今の親機</th>
+            <td class="best">そのまま使える</td>
+            <td>基本は置き換え(ブリッジ併用も可)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 2026年9月時点の一般的な家庭向け製品の目安です。機種により例外があります。</p>
+    </div>
+    <p>この表で一番効いてくるのは<strong>「親機までの足回り」の行</strong>です。中継機もメッシュのサテライトも、やっていることは「親機から受け取った通信を、手元の端末に渡す」という同じ仲介作業。違うのは、その仲介にどれだけ専用の道を用意しているかです。この親機との通信路をバックホールと呼びます。</p>
+    <figure>
+      <img src="../images/diagram-backhaul.svg" alt="中継機の同一帯中継、デュアルバンド同時接続、メッシュの有線バックホールで速度の天井がどう変わるかの図解" width="1200" height="640" loading="lazy" decoding="async">
+      <figcaption>差がつくのは「シームレスさ」より、親機までの足回りをどう確保しているか</figcaption>
+    </figure>
+    <p>安価な中継機は、親機から受け取るのも端末に渡すのも同じ5GHzで行います。無線は同じ周波数で送信と受信を同時にはできないため、交互に処理することになり、<strong>理論値がおよそ半分に落ちます</strong>。これが「中継機は遅くなる」と言われる正体です。逆に言えば、親機側と端末側で帯を分けられる機種を選べば、この半減はかなり避けられます。</p>
+
+    <h2 id="tenjo">構成別・速度の天井を逆算する</h2>
+    <p>ここが、この記事で一番お伝えしたい部分です。中継機かメッシュかという二択ではなく、<strong>「バックホールをどう確保したか」で天井が決まる</strong>という見方をすると、製品選びが一気に楽になります。親機のすぐ横で出る速度を100としたときの、奥の部屋での目安が次の表です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>構成</th><th>バックホール</th><th>天井の目安</th><th>向いている使い方</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>中継機(シングルバンド中継)</th>
+            <td>端末と同じ帯を共有</td>
+            <td>約50%</td>
+            <td>スマホでSNS・音楽。動画は標準画質まで</td>
+          </tr>
+          <tr>
+            <th>中継機(デュアルバンド同時接続)</th>
+            <td>親機側5GHz・端末側2.4GHz などで分離</td>
+            <td>約60〜70%</td>
+            <td>1部屋の動画視聴・ブラウジング</td>
+          </tr>
+          <tr>
+            <th>メッシュ(無線バックホール・2バンド)</th>
+            <td>端末と一部共用</td>
+            <td>約50〜70%</td>
+            <td>家じゅうの常用。4K視聴は配置次第</td>
+          </tr>
+          <tr>
+            <th>メッシュ(無線バックホール・トライバンド)</th>
+            <td>専用の1帯を確保</td>
+            <td>約70〜85%</td>
+            <td>4K視聴・オンライン会議・複数人同時</td>
+          </tr>
+          <tr>
+            <th>メッシュ(有線バックホール)</th>
+            <td>LANケーブル</td>
+            <td class="best">親機とほぼ同等</td>
+            <td>オンラインゲーム・10ギガ契約・在宅勤務</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 仕組みから導いた目安で、保証値ではありません。実際は距離・壁材・チャンネルの混雑・契約回線の速度に左右されます。</p>
+    </div>
+    <p>読み取ってほしいのは2点です。ひとつは、<strong>いちばん安い中継機を買うと、その時点で天井が半分に決まる</strong>ということ。元が300Mbps出ている家なら150Mbpsで、動画も会議も十分実用的です。しかし元が80Mbpsしか出ていない家で半減させると40Mbpsになり、家族が同時に使った瞬間に苦しくなります。<strong>今いくら出ているかによって、同じ製品の評価が変わります</strong>。</p>
+    <p>もうひとつは、<strong>3万円のトライバンドメッシュを無線で置くより、1.5万円の2台セットをLANケーブルで繋ぐほうが速いことが多い</strong>という逆転です。バックホールを有線に逃がせるなら、そちらに予算を寄せたほうが結果が出ます。<a href="homerouter-game">オンラインゲームでのPing</a>を気にする人や、<a href="hikari-10giga">10ギガ契約</a>にしている人は、この差が体感にはっきり出ます。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">友人から「2階のWi-Fiが弱い」と相談されたとき、最初に聞くのは製品名ではなく「1階の親機の横では何Mbps出ている?」です。ここが70Mbpsだった家では、中継機を足す前にルーターの世代とIPoE対応を確認したほうが早い、という話になります。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="hantei">間取りと症状から選ぶ判定表</h2>
+    <p>切り分けの結果が①距離・遮蔽、または②親機の性能だった人向けの判定です。予算は2026年9月時点の一般的な市場価格の目安です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>あなたの状況</th><th>おすすめの構成</th><th>予算の目安</th><th>注意点</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1LDK・2DKで、困っているのは1部屋だけ</th>
+            <td>デュアルバンド同時接続の中継機1台</td>
+            <td class="best">4,000〜8,000円</td>
+            <td>親機と困っている部屋の中間、かつ親機の電波が十分届く位置に置く</td>
+          </tr>
+          <tr>
+            <th>3LDK以上の平屋・マンションで家じゅう不安定</th>
+            <td>メッシュ2台セット(無線バックホール)</td>
+            <td>1.5万〜2.5万円</td>
+            <td>親機を置き換えるので、レンタル機はブリッジ設定にする</td>
+          </tr>
+          <tr>
+            <th>2階建て・3階建ての戸建て</th>
+            <td>メッシュ2〜3台。可能なら有線バックホール</td>
+            <td>2万〜3.5万円</td>
+            <td>階をまたぐ電波は減衰が大きい。階段まわりに置くと通りやすい</td>
+          </tr>
+          <tr>
+            <th>家の中を移動しながら通話・会議をする</th>
+            <td>メッシュ(中継機は不向き)</td>
+            <td>1.5万〜3万円</td>
+            <td>切り替え時の途切れが問題になる用途はメッシュ一択に近い</td>
+          </tr>
+          <tr>
+            <th>各部屋にLANポートがある(情報分電盤つき)</th>
+            <td class="best">メッシュ+有線バックホール</td>
+            <td>1.5万〜2.5万円</td>
+            <td>この環境なら、高価な無線機能に課金するより配線を使うほうが速い</td>
+          </tr>
+          <tr>
+            <th>ルーターが5年以上前のもの</th>
+            <td>まずルーター本体の買い替え</td>
+            <td>8,000〜2万円</td>
+            <td>中継機を足す前に、親機を替えるだけで解決する場合がある</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ルーター本体の買い替えから検討する場合は、規格(Wi-Fi 6/6E/7)より先に見るべき点を<a href="hikari-router-erabikata">光回線ルーターの選び方</a>にまとめています。レンタルルーターを使っている人は、そちらとの併用の作法も同じ記事で触れています。</p>
+
+    <h2 id="yusen">有線バックホールの作り方(現実解)</h2>
+    <p>「LANケーブルで繋げば速い」のは分かっていても、壁に穴は開けられないし、部屋をまたいでケーブルを這わせるのは現実的でない、という家が多いはずです。持ち家・賃貸それぞれで取れる手を、効果の大きい順に並べます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>方法</th><th>効果</th><th>費用の目安</th><th>向いている家</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>各部屋のLANポートを使う</th>
+            <td class="best">最大</td>
+            <td>ケーブル代のみ(数百円〜)</td>
+            <td>情報分電盤・マルチメディアコンセントのある新しめの物件</td>
+          </tr>
+          <tr>
+            <th>フラットLANケーブルを床・ドア下に這わす</th>
+            <td class="best">最大</td>
+            <td>1,000〜3,000円</td>
+            <td>隣室まで数mで済む間取り。ドアの隙間を通せる薄型の製品を選ぶ</td>
+          </tr>
+          <tr>
+            <th>モール(配線カバー)で壁ぎわを回す</th>
+            <td class="best">最大</td>
+            <td>3,000〜6,000円</td>
+            <td>賃貸でも原状回復しやすい。跡が残りにくい固定方法の製品を選ぶ</td>
+          </tr>
+          <tr>
+            <th>PLCアダプター(電力線を使う)</th>
+            <td>中(数十〜200Mbps程度)</td>
+            <td>1万〜1.6万円</td>
+            <td>階をまたぐ・配線できない家。同一ブレーカー内でないと効きにくい</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>PLCは「有線と同じ速度が出る」ものではありません。分電盤の構成や同時に使っている家電の影響を受けやすく、期待値は無線バックホールと同程度〜やや上、という位置づけで見てください。それでも、<strong>鉄筋の壁や階をまたいで電波がまったく通らない</strong>家では、無線で頑張るより安定することがあります。</p>
+    <div class="box-point">
+      <div class="box-point__t">✅ 有線バックホールを組むときのチェック</div>
+      <ul>
+        <li>ケーブルは<strong>カテゴリ6A以上</strong>を選ぶ(1ギガなら5eでも足りるが、将来の10ギガを見越すなら6A)</li>
+        <li>親機側・サテライト側とも、<strong>LANポートの速度表記</strong>を確認する(1台だけ100Mbps止まりの機種があると、そこが天井になる)</li>
+        <li>サテライトを有線で繋いだら、管理アプリで<strong>「有線接続」と表示されているか</strong>を確認する</li>
+        <li>電源タップを経由するPLCは効きが落ちる。<strong>壁のコンセントに直挿し</strong>する</li>
+        <li>賃貸は<strong>壁への穴あけ・造作を伴う配線は事前に確認</strong>する。床を這わせる・モールで回す程度なら原状回復しやすい</li>
+      </ul>
+    </div>
+
+    <h2 id="kaumae">買う前に確認する5項目</h2>
+    <p>製品ページの数字より、この5つのほうが後悔の有無に直結します。</p>
+    <h3>1. 中継機は「デュアルバンド同時接続」対応か</h3>
+    <p>前述のとおり、ここで天井が決まります。製品ページに「親機との通信と子機との通信を別の帯域で同時に行う」旨の記載があるかを確認してください。記載がない安価なモデルは、同一帯で中継する前提と考えたほうが安全です。</p>
+    <h3>2. メッシュは同一メーカー・同一シリーズで揃えるのが基本</h3>
+    <p>Wi-Fi Allianceの共通規格<strong>Wi-Fi EasyMesh</strong>に両方が対応していれば、メーカーをまたいで組める場合があります。ただし、メーカー独自のメッシュ機能とは互換性がなく、同じメーカーでも機種によって対応・非対応が分かれます。買い足しの可能性があるなら、EasyMesh対応を選んでおくと選択肢が残ります。</p>
+    <h3>3. IPv6(IPoE)をそのまま通せるか</h3>
+    <p>メッシュ機に置き換えた途端に夜が遅くなった、という失敗の典型が、IPv6の設定が引き継がれていないパターンです。<a href="ipv6-ipoe">IPv6 IPoE</a>を使っている家では、メッシュ機側の対応方式(IPoE対応/IPv6パススルー)を必ず確認してください。</p>
+    <h3>4. レンタルルーターとの併用形態を決める</h3>
+    <p>光回線の事業者からルーター機能つき機器を借りている場合、メッシュ機は<strong>ブリッジ(アクセスポイント)モード</strong>で使うのが基本です。両方でルーター機能を有効にすると、二重ルーター状態になり、オンラインゲームやVPNで不具合が出ることがあります。</p>
+    <h3>5. 設置台数と電源の位置を先に決める</h3>
+    <p>メッシュのサテライトは、親機の電波が「十分届く場所」に置かないと意味がありません。奥に置きすぎると足回りが細くなり、置く意味が薄れます。目安は<strong>親機とデッドゾーンのちょうど中間、かつ親機の電波が2〜3本立つ位置</strong>。その場所にコンセントがあるか、買う前に見ておいてください。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 「中継機の先に中継機」はやらない</div>
+      <p style="margin:0;">中継機を数珠つなぎにすると、区間ごとに速度の天井が掛け算で落ちていきます。50%×50%で25%まで下がる計算です。2台以上が必要な広さなら、最初からメッシュを選ぶほうが結果的に安上がりになります。</p>
+    </div>
+
+    <h2 id="kaisen">足しても直らないときは回線側を疑う</h2>
+    <p>切り分けで④に当てはまった場合、打てる手は家の中ではなく契約側にあります。優先順位は次のとおりです。</p>
+    <ul>
+      <li><strong>IPv6 IPoEに変えられないか確認する</strong>:夜だけ遅い症状の定番の対処です。プロバイダによっては申し込みだけで切り替わり、対応ルーターも必要になります。詳しくは<a href="ipv6-ipoe">IPv6 IPoEの解説</a>へ。</li>
+      <li><strong>集合住宅の配線方式を確認する</strong>:VDSL方式なら理論上の上限が100Mbps前後で、無線をいくら強化しても超えられません。確認方法は<a href="mansion-internet">マンションのネットが遅い原因</a>と<a href="mansion-vdsl">VDSLの改善策</a>にまとめています。</li>
+      <li><strong>回線そのものを乗り換える</strong>:上の2つで打つ手がない場合の最終手段です。在宅勤務で困っているなら<a href="telework-kaisen">テレワーク向けの回線要件</a>、オンライン会議が主戦場なら<a href="web-kaigi-taisho">Web会議が切れるときの対処</a>も合わせて確認してください。</li>
+    </ul>
+    <p>原因が「無線ではなく回線」だと分かったときに、いちばん判断しやすいのは<strong>契約期間の縛りがない回線</strong>です。改善しなければまた変えればいい、という状態にしておくと、試すこと自体のコストが下がります。</p>
+
+    <div class="cta">
+      <div class="cta__t">🪶 縛りなしで、まず回線を変えて試したいなら</div>
+      <p>契約期間の縛りと解約違約金がない光コラボなら、乗り換えて改善しなかったときの損失を抑えられます。プロバイダ一体型でIPv6 IPoEに標準対応しており、対応ルーターのレンタルもあります。</p>
+      <!-- A8: GMOとくとくBB光(GMO光アクセス) 2026-09-04 設置 -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金を見る<small>縛りなし・IPv6 IPoE標準対応</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+      <p class="micro">※ 料金・キャンペーンの条件は時期により変わります。申し込み前に公式サイトでご確認ください。回線全体の比較は<a href="hikari-osusume">光回線7社比較</a>にまとめています。</p>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>中継機とメッシュ、結局どちらを買えばいいですか?</summary>
+        <div class="faq__a">困っている部屋が1つで、親機からの距離も壁1〜2枚程度なら中継機で足りるケースが多いです。家じゅうで途切れる・3階建て・移動しながら通話や会議をするといった条件が入るなら、メッシュのほうが向いています。予算が中途半端に足りないときは、無理に安いメッシュを買うより、デュアルバンド同時接続の中継機を選ぶほうが満足度は高くなりやすいです。</div>
+      </details>
+      <details>
+        <summary>中継機を置くと速度が半分になると聞きました。本当ですか?</summary>
+        <div class="faq__a">親機との通信と端末との通信を同じ周波数帯で行う機種では、送信と受信を交互に処理するため理論値がおよそ半分になります。親機側を5GHz、端末側を2.4GHzのように分けて同時に使える「デュアルバンド同時接続」対応機を選べば、この半減は避けやすくなります。</div>
+      </details>
+      <details>
+        <summary>メーカーが違う機器でメッシュを組めますか?</summary>
+        <div class="faq__a">共通規格「Wi-Fi EasyMesh」に両方が対応していれば、メーカーをまたいで組める場合があります。ただしメーカー独自方式とは互換性がなく、同じメーカーでも機種で対応が分かれます。購入前に各メーカーの対応機種一覧で確認してください。</div>
+      </details>
+      <details>
+        <summary>今のルーターを親機のまま、メッシュを足せますか?</summary>
+        <div class="faq__a">できる場合はありますが、多くのメッシュ製品は「親機も含めて置き換える」前提で設計されています。回線事業者からのレンタル機がルーター機能を持っているときは、メッシュ側をブリッジ(アクセスポイント)モードにして、ルーター機能はレンタル機に任せる構成が扱いやすいです。</div>
+      </details>
+      <details>
+        <summary>Wi-Fi 7のメッシュにすれば、家の隅まで届きますか?</summary>
+        <div class="faq__a">規格が新しくなっても、電波が壁を通る距離が劇的に伸びるわけではありません。Wi-Fi 7で効くのは主に混雑した環境での安定性や、バックホールに使える帯域の余裕です。届く範囲そのものを広げたいなら、規格より台数と置き場所、そして有線バックホールのほうが効きます。</div>
+      </details>
+      <details>
+        <summary>ホームルーターやポケット型WiFiでも中継機は使えますか?</summary>
+        <div class="faq__a">Wi-Fiを出している機器であれば中継自体は可能です。ただし元の回線がモバイル回線の場合、混雑時間帯の速度低下は中継機では解決しません。ホームルーターで部屋の奥が弱いときは、まず機器の置き場所(窓ぎわ・高い位置)を見直すほうが効果が出やすいです。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:買う順番を間違えなければ、失敗しにくい</h2>
+    <ul>
+      <li>まず<strong>5分の切り分け</strong>。親機の横・奥の部屋・時間帯・有線の4回測る</li>
+      <li>原因が<strong>③混雑・④回線側</strong>なら、中継機もメッシュも効かない</li>
+      <li>中継機とメッシュの差は<strong>バックホールの確保のしかた</strong>。天井はここで決まる</li>
+      <li>安い中継機は<strong>天井が約50%</strong>。今の速度が細い家ほど不利になる</li>
+      <li><strong>有線バックホールが組めるなら、そこに予算を寄せる</strong>のがいちばん効く</li>
+      <li>2台以上必要な広さなら、中継機の数珠つなぎではなく<strong>最初からメッシュ</strong></li>
+    </ul>
+    <p>ルーター本体から見直す場合は<a href="hikari-router-erabikata">光回線ルーターの選び方</a>、そもそも回線が遅い可能性を潰したい場合は<a href="hikari-osoi">光回線が遅いときの原因と対処</a>が次の一歩になります。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>バッファロー「メッシュWi-Fiとは?」「Wi-Fi EasyMesh」「中継機を選ぶポイントはデュアルバンド同時接続」(2026年9月確認) — 中継時の帯域共有と半減、EasyMeshの互換性、有線バックホールの扱い</li>
+        <li>NEC Aterm サポート「中継機使用時に速度が出ない・通信が安定しない」(2026年9月確認) — 中継機の設置位置と速度低下の要因</li>
+        <li>各メーカーのメッシュ対応機種一覧および製品仕様ページ(2026年9月確認) — 有線バックホール対応、トライバンド構成の有無</li>
+        <li>価格は2026年9月時点の一般的な市場価格の目安です。実売価格は時期・販売店により変動します</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">原因が「回線側」だったときの身軽な選択肢</div>
+    <p>機器を増やしても改善しない場合、変えるべきは配る元です。契約期間の縛りと解約違約金がない光コラボなら、試して合わなければまた変えられる状態を保てます。プロバイダ一体型でIPv6 IPoE標準対応、対応ルーターのレンタルもあります。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="GMOとくとくBB光の公式キャンペーンバナー" src="https://www22.a8.net/svt/bgt?aid=260829413162&amp;wid=002&amp;eno=01&amp;mid=s00000000018040038000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" alt=""></div>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金を見る<small>縛りなし・IPv6 IPoE標準対応</small></a>
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="hikari-router-erabikata">光回線ルーターの選び方|Wi-Fi 6・6E・7の違いと買う/借りるの損益分岐</a></li>
+      <li><a href="hikari-osoi">光回線が遅いときの原因と対処|夜だけ遅い問題の切り分け方</a></li>
+      <li><a href="ipv6-ipoe">IPv6 IPoEとは?夜の遅さが変わる仕組みを図解でやさしく解説</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260910b" defer></script>
+</body>
+</html>

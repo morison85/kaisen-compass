@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Wi-Fi中継機とメッシュWi-Fiの違い 家の隅まで届かせる方法" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:親機と中継ノード、電波のイラスト -->
+  <g transform="translate(890, 330) scale(0.9)">
+    <!-- 親機 -->
+    <rect x="10" y="150" width="96" height="120" rx="18" fill="#ffffff"/>
+    <circle cx="58" cy="184" r="9" fill="#1558d6"/>
+    <rect x="30" y="212" width="56" height="10" rx="5" fill="#cfe0ff"/>
+    <rect x="30" y="234" width="38" height="10" rx="5" fill="#cfe0ff"/>
+    <!-- 電波 -->
+    <path d="M124 210 a44 44 0 0 1 0 0" fill="none"/>
+    <path d="M122 182 a46 46 0 0 1 0 76" fill="none" stroke="#ffd76a" stroke-width="9" stroke-linecap="round"/>
+    <path d="M150 160 a76 76 0 0 1 0 120" fill="none" stroke="#ffd76a" stroke-width="9" stroke-linecap="round" opacity=".7"/>
+    <!-- 子機ノード -->
+    <rect x="196" y="176" width="78" height="96" rx="16" fill="#ffd76a"/>
+    <circle cx="235" cy="204" r="8" fill="#0b2c5f"/>
+    <rect x="212" y="228" width="46" height="9" rx="4.5" fill="#0b2c5f" opacity=".45"/>
+    <rect x="212" y="248" width="30" height="9" rx="4.5" fill="#0b2c5f" opacity=".45"/>
+    <!-- 家の輪郭 -->
+    <path d="M-10 140 L148 34 L306 140" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+  </g>
+
+  <rect x="70" y="80" width="365" height="56" rx="28" fill="#ffd76a"/>
+  <text x="252" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">買う前に5分で切り分け</text>
+
+  <text x="70" y="248" font-size="74" font-weight="800" fill="#ffffff">中継機とメッシュ</text>
+  <text x="70" y="356" font-size="74" font-weight="800" fill="#ffd76a">違うのは足回り</text>
+  <text x="70" y="432" font-size="31" font-weight="600" fill="#cfe0ff">家の隅まで届かない原因を先に切り分ける</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
