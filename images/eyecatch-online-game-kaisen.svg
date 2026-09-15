@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="オンラインゲームにおすすめの回線 Pingは距離と混雑とNATで決まる" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:Pingの波形とゲームコントローラー -->
+  <g transform="translate(880, 330) scale(0.9)">
+    <polyline points="20,120 62,120 82,72 104,152 126,108 168,108 188,58 210,144 232,100 280,100" fill="none" stroke="#ffd76a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="52" y="262" width="56" height="48" rx="24" fill="#ffffff" opacity=".85"/>
+    <rect x="192" y="262" width="56" height="48" rx="24" fill="#ffffff" opacity=".85"/>
+    <rect x="40" y="180" width="220" height="98" rx="49" fill="#ffffff"/>
+    <rect x="72" y="222" width="46" height="13" rx="6.5" fill="#1558d6"/>
+    <rect x="88" y="206" width="14" height="46" rx="7" fill="#1558d6"/>
+    <circle cx="200" cy="210" r="9" fill="#1558d6"/>
+    <circle cx="200" cy="248" r="9" fill="#1558d6"/>
+    <circle cx="182" cy="229" r="9" fill="#1558d6"/>
+    <circle cx="218" cy="229" r="9" fill="#1558d6"/>
+    <circle cx="150" cy="229" r="7" fill="#cfe0ff"/>
+  </g>
+
+  <rect x="70" y="80" width="310" height="56" rx="28" fill="#ffd76a"/>
+  <text x="225" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">Pingは3層で決まる</text>
+
+  <text x="70" y="248" font-size="74" font-weight="800" fill="#ffffff">オンラインゲーム回線</text>
+  <text x="70" y="356" font-size="74" font-weight="800" fill="#ffd76a">下がる余地を計算</text>
+  <text x="70" y="432" font-size="31" font-weight="600" fill="#cfe0ff">距離・混雑・NATのどれが効いているかで選ぶ</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

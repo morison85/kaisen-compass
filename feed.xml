@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 15 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 16 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>オンラインゲームにおすすめの回線|Pingが下がる余地は「距離・混雑・NAT」で決まる【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/online-game-kaisen</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/online-game-kaisen</guid>
+    <pubDate>Wed, 16 Sep 2026 07:00:00 +0900</pubDate>
+    <description>Pingは①物理距離で決まる下限②混雑による上振れ③宅内の揺れの合計で、回線の乗り換えで削れるのは②だけです。片道100km=約1msの換算で距離の下限を先に計算する表、有線で100回測って最小値と平均値の差から乗り換えの余地を見積もる手順、NATタイプを決めるIPv4接続方式の一覧(MAP-Eは240ポートの範囲のみ・DS-Liteは原則不可)を2026年9月時点の目安でまとめました。</description>
+  </item>
   <item>
     <title>Wi-Fi中継機とメッシュWi-Fiの違い|家の隅まで届かせる正解は「原因」で変わる【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/mesh-wifi-chukeiki</link>

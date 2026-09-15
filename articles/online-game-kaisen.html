@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>オンラインゲームにおすすめの回線 | 回線コンパス</title>
+<meta name="description" content="オンラインゲーム向けの回線選びを、Pingの内訳から逆算します。物理距離で決まる下限、混雑で増える上振れ、IPv4接続方式で決まるNATタイプの3層に分解し、乗り換えで何ms縮む余地があるのかを先に見積もる方法、回線タイプ別の向き不向き、0円でできる設定までまとめました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/online-game-kaisen">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="オンラインゲームにおすすめの回線|Pingが下がる余地は「距離・混雑・NAT」で決まる">
+<meta property="og:description" content="回線を変えて縮むのは、Pingのうち混雑ぶんだけ。まず自分のPingを3層に分解して、乗り換えの余地を計算します。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/online-game-kaisen">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-online-game-kaisen.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-16">
+<meta property="article:modified_time" content="2026-09-16">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-online-game-kaisen.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260910q">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "オンラインゲームにおすすめの回線|Pingが下がる余地は「距離・混雑・NAT」で決まる【2026年】",
+  "description": "Pingを物理距離の下限・混雑による上振れ・IPv4接続方式で決まるNATタイプの3層に分解し、回線の乗り換えで縮む余地を先に見積もる方法をまとめました。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-online-game-kaisen.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/online-game-kaisen"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "回線の乗り換えでPingが何ms下がる余地があるかを見積もる手順",
+  "step": [
+    { "@type": "HowToStep", "name": "有線でつなぎ直す", "text": "測る前に、パソコンやゲーム機をLANケーブルでルーターに直結する。Wi-Fiのままでは無線の揺れが混ざり、回線側の実力が測れない。" },
+    { "@type": "HowToStep", "name": "100回連続で応答時間を測る", "text": "コマンドプロンプトやターミナルでpingコマンドを100回実行し、最小・平均・最大の3つの数値を記録する。" },
+    { "@type": "HowToStep", "name": "ゲーム内の表示でも確認する", "text": "ゲーム側のネットワーク情報表示をオンにして、対戦中のPingとパケットロス率を確認する。" },
+    { "@type": "HowToStep", "name": "夜の混雑時間帯にもう一度測る", "text": "平日21時から23時台に同じ測定を繰り返し、昼との差を記録する。" },
+    { "@type": "HowToStep", "name": "3層に分解して余地を計算する", "text": "最小値がその経路の物理的な下限、平均から最小を引いた差が混雑による上振れ。回線の乗り換えで縮められるのは主に後者であり、この差が小さいなら乗り換えても体感は変わりにくい。" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "オンラインゲームのPingはどれくらいなら快適ですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "ジャンルによって基準が変わります。FPSや対戦格闘のように1フレーム単位の判定が絡むものは30ms以下が目安、ランク帯で競うなら20ms以下を狙う人が多いです。MOBAやアクションRPGは50ms前後、MMOやターン制のゲームは100ms前後でも支障が出にくい傾向があります。ただし数値が低くても、時々大きく跳ねる状態では体感が悪化します。" }
+    },
+    {
+      "@type": "Question",
+      "name": "回線を乗り換えればPingは下がりますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "下がる余地がある場合とない場合があります。Pingは物理的な距離で決まる下限と、混雑などで上乗せされる分の合計です。pingコマンドの最小値がその経路の下限に近く、平均との差が小さいなら、乗り換えても削れる部分がほとんど残っていません。逆に夜だけ平均が跳ね上がるなら、混雑ぶんを削れる可能性があります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "NATタイプが「タイプ2」でもゲームはできますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "多くの対戦ゲームはタイプ2(モデレート)で問題なく遊べます。影響が出やすいのは、フレンドとのパーティ参加、ボイスチャットの接続、自分がホストになる形式のマッチングなどです。これらで繰り返し失敗する場合に、はじめてポート開放や接続方式の見直しを検討する順番で問題ありません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "10ギガプランにすればゲームのラグは減りますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "帯域の広さと応答時間は別の指標なので、10ギガにしたからPingが下がるという関係にはありません。効くのは、同居人が大容量のダウンロードをしている間に巻き込まれて遅くなる状況や、ゲームの大型アップデートを短時間で終わらせたい場面です。ラグ対策としての優先順位は高くありません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ホームルーターやポケット型WiFiでオンラインゲームはできますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "ジャンルによります。応答の速さを競わないゲームなら実用になるケースが多い一方、FPSや対戦格闘では光回線と比べてPingが高めで揺れやすい傾向があります。加えて事業者側で複数の利用者がIPv4アドレスを共有する構成が一般的なため、NATタイプが厳しく判定されやすい点にも注意が必要です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "IPv6 IPoEにするとゲームに不利になると聞きました。本当ですか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "夜の混雑を避けられるという意味では有利に働くことが多く、不利になるのはポート開放が絡む場面に限られます。MAP-E方式は割り当てられた範囲のポートしか開けられず、DS-Lite方式は原則としてポート開放ができません。ポート開放が必要かどうかは遊ぶタイトルによるため、まずは今の構成のまま遊べているかで判断してください。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "オンラインゲームにおすすめの回線" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>オンラインゲームにおすすめの回線</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">オンラインゲームにおすすめの回線|Pingが下がる余地は「距離・混雑・NAT」で決まる【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-16">2026年9月16日</time></span>
+      <span>公開日:<time datetime="2026-09-16">2026年9月16日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-online-game-kaisen.svg" alt="オンラインゲームにおすすめの回線と、Pingが下がる余地の計算方法" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「撃ち負けるのは回線のせいかもしれない」。そう思って検索すると、Ping値の実測ランキングが並んだ記事がいくつも出てきます。ただ、そこに載っている数字は<strong>測った人の家から、測った人が選んだサーバーまで</strong>の値です。同じ回線に乗り換えても、住んでいる場所が違えば結果は変わります。</p>
+    <p>この記事では、ランキングを眺める前にやるべきことから始めます。<strong>自分のPingを3つの層に分解して、乗り換えで削れる部分が何ms残っているかを計算する</strong>。そのうえで、回線タイプ別の向き不向き、マッチングが繋がらないときに効くNATタイプの話、契約を変えずに今日できる設定まで順番に整理します。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>Pingは<strong>①距離で決まる下限 ②混雑による上振れ ③宅内の揺れ</strong>の合計で、<strong>回線の乗り換えで削れるのは②だけ</strong>です。まず有線で100回測り、<strong>最小値(=下限)と平均値の差</strong>を見てください。差が数ms以内なら、どの回線に変えても体感は変わりにくい。差が大きい、あるいは夜だけ跳ねるなら乗り換えの効果が出ます。マッチングが繋がらない系の悩みはPingではなく<strong>IPv4の接続方式</strong>の問題で、こちらは別の対処が要ります。</p>
+    </div>
+
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank"><span>混雑ぶんを削りたいなら:auひかりの提供エリアを確認する</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/auhikari-600.webp 600w, ../images/official/auhikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/auhikari.jpg" srcset="../images/official/auhikari-600.jpg 600w, ../images/official/auhikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="auひかりの公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://www.au.com/internet/auhikari_1g/" rel="nofollow noopener" target="_blank">auひかり公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-auhikari.svg" alt="auひかりのサービス概要(月額・独自回線)" width="800" height="420" loading="lazy" decoding="async"></div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#naiwake">Pingは3つの層でできている</a></li>
+        <li><a href="#kyori">距離の下限を先に計算する</a></li>
+        <li><a href="#hakaru">5分でPingを3層に分解する測り方</a></li>
+        <li><a href="#jitter">平均より「上振れ」が体感を壊す</a></li>
+        <li><a href="#nat">NATタイプはIPv4の接続方式で決まる</a></li>
+        <li><a href="#erabi">回線タイプ別の向き不向き</a></li>
+        <li><a href="#settei">契約を変えずに今日できる設定</a></li>
+        <li><a href="#hantei">3つの質問で決める判定表</a></li>
+        <li><a href="#gokai">よくある誤解(10ギガ・速度・ゲーミング機器)</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">乗り換えの余地があると分かったら</p>
+      <p>削れる部分が残っていると判断できた場合は、こちらから候補を絞れます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="naiwake">Pingは3つの層でできている</h2>
+    <p>Ping(応答時間)は、自分の端末から相手のサーバーへ信号が届いて返ってくるまでの往復時間です。この数字はひとつの原因で決まっているわけではなく、性質の違う3つの層が積み上がった合計になっています。ここを分けずに「Pingが高い=回線が悪い」と考えると、乗り換えても何も変わらなかったという結果になりがちです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>層</th><th>正体</th><th>回線の乗り換えで変わるか</th><th>効く対処</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>① 距離の下限</th>
+            <td>自宅とゲームサーバーの物理的な距離、経由する設備の処理時間</td>
+            <td>ほぼ変わらない</td>
+            <td>サーバー地域を近いところに固定する</td>
+          </tr>
+          <tr>
+            <th>② 混雑の上振れ</th>
+            <td>夜間の網の混雑、接続方式(PPPoE/IPoE)、経路の込み具合</td>
+            <td class="best">変わる</td>
+            <td>IPoE化、プロバイダ変更、回線の乗り換え</td>
+          </tr>
+          <tr>
+            <th>③ 宅内の揺れ</th>
+            <td>Wi-Fiの干渉、二重ルーター、同居人の通信、機器の省電力設定</td>
+            <td>変わらない</td>
+            <td>有線化、ルーター構成の見直し、QoS設定</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 実際のPingはこの3層の合計として観測されます。どの層が効いているかは測り方で切り分けられます。</p>
+    </div>
+    <p>ゲーム系の回線記事が扱っているのは、ほぼ②の層だけです。①は契約で動かせず、③は家の中の問題なので、記事を読んで乗り換えても、原因が①か③にあった人は変化を感じられません。<strong>まず自分のPingが、どの層でできているのかを知るのが先</strong>です。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">回線の相談でいちばん多いのが「ゲーム用に一番速い回線を教えてほしい」という聞かれ方です。ただ、詳しく聞くと有線ではなくWi-Fiだった、というケースが本当に多い。契約の話に入る前に、まずケーブル1本を試してもらうようにしています。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="kyori">距離の下限を先に計算する</h2>
+    <p>ここがこの記事の中心です。①の層は物理法則で決まるので、<strong>契約前に紙の上で計算できます</strong>。光ファイバーの中を進む光の速度は、真空中の約30万km/秒より遅く、屈折率のぶんだけ落ちて<strong>おおよそ20万km/秒</strong>です。Pingは往復の時間なので、<strong>片道100kmにつき約1ms</strong>という換算になります。</p>
+    <p>ただし現実の経路は直線ではありません。ケーブルは地形や設備に沿って敷かれ、途中の交換設備やルーターごとに処理時間が乗ります。経験的には、<strong>直線距離から出した理論値の2〜3倍あたりが実測の目安</strong>になります。これを距離ごとに並べると次のようになります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>自宅とサーバーの位置関係</th><th>直線距離の目安</th><th>理論上の往復</th><th>実測の目安</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>同じ都市圏(例:東京都内→東京サーバー)</th>
+            <td>〜50km</td>
+            <td>約0.5ms</td>
+            <td class="best">3〜10ms</td>
+          </tr>
+          <tr>
+            <th>東京⇔大阪</th>
+            <td>約400km</td>
+            <td>約4ms</td>
+            <td>10〜20ms</td>
+          </tr>
+          <tr>
+            <th>東京⇔札幌 / 東京⇔福岡</th>
+            <td>約830〜880km</td>
+            <td>約8〜9ms</td>
+            <td>18〜30ms</td>
+          </tr>
+          <tr>
+            <th>日本⇔シンガポール</th>
+            <td>約5,300km</td>
+            <td>約53ms</td>
+            <td>60〜90ms</td>
+          </tr>
+          <tr>
+            <th>日本⇔米国西海岸</th>
+            <td>約8,200km</td>
+            <td>約82ms</td>
+            <td>100〜140ms</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 2026年9月時点の一般的な目安です。実測は経路・事業者・時間帯により変わります。理論値は光ファイバー内の伝搬速度を約20万km/秒として計算した往復時間です。</p>
+    </div>
+    <p>この表の使い方はシンプルです。<strong>自分の位置と、遊んでいるタイトルのサーバー所在地から、実測の目安の下限を読む</strong>。そのうえで、今のPingがその範囲に収まっているなら、回線を変えて削れる余地はほとんど残っていません。</p>
+    <div class="box-point">
+      <div class="box-point__t">✅ 具体例:福岡在住で東京サーバーに繋いでいる場合</div>
+      <ul>
+        <li>距離の下限は<strong>18〜30ms前後</strong>。ここは契約では動かせない</li>
+        <li>今のPingが25msなら、乗り換えで狙える改善幅は<strong>数ms</strong>。体感は変わりにくい</li>
+        <li>今のPingが60msで、夜だけ跳ねているなら、<strong>30ms前後が混雑ぶん</strong>。ここは削れる可能性がある</li>
+        <li>同じ福岡でも、大阪サーバーのタイトルなら下限はもっと低い。<strong>タイトルごとに違う</strong></li>
+      </ul>
+    </div>
+    <p>逆に言うと、都内在住でPingが40msという人は、下限が数msしかないのに30ms以上が上乗せされている状態です。この場合は、②か③に削れる余地が大きく残っています。<a href="ipv6-ipoe">IPv6 IPoE</a>への切り替えや回線の見直しが、いちばん効くパターンです。</p>
+
+    <h2 id="hakaru">5分でPingを3層に分解する測り方</h2>
+    <p>用意するものはパソコンとLANケーブルだけです。ゲーム機しかない場合は、ゲーム内のネットワーク情報表示で代用できます。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">有線でつなぎ直す</div>
+        <p>測る前に必ずLANケーブルでルーターに直結します。ここを飛ばすと③の層が混ざり、回線の実力が分からなくなります。無線しか選べない事情がある場合でも、判断のために一度だけ有線で測ってください。</p>
+      </li>
+      <li>
+        <div class="steps__t">100回連続で測る</div>
+        <p>Windowsならコマンドプロンプトで <code>ping -n 100 8.8.8.8</code>、MacやLinuxなら <code>ping -c 100 8.8.8.8</code>。終わると最小・平均・最大が表示されます。この<strong>3つの数字が揃って初めて意味を持ちます</strong>。1回だけ測って一喜一憂しても、判断材料にはなりません。</p>
+      </li>
+      <li>
+        <div class="steps__t">ゲーム内の表示でも確認する</div>
+        <p>多くのタイトルには、対戦中のPingとパケットロス率を画面に出す設定があります。実際に繋いでいるサーバーへの数値なので、こちらのほうが実態に近くなります。<strong>パケットロスが1%を超えて続く</strong>なら、Pingの数値より先にそちらが原因です。</p>
+      </li>
+      <li>
+        <div class="steps__t">夜21〜23時台にもう一度測る</div>
+        <p>昼と夜の平均を比べます。この差が、そのまま②の混雑ぶんです。差が10ms以上開く、あるいは最大値が3桁に跳ねるようなら、回線側の見直しで改善が見込めます。</p>
+      </li>
+      <li>
+        <div class="steps__t">3層に割り振る</div>
+        <p><strong>最小値</strong>がその経路の下限(①)。<strong>平均−最小</strong>が混雑ぶん(②)。有線と無線で測って出た差が宅内ぶん(③)です。ここまで来れば、自分が打つべき手は一つに絞れます。</p>
+      </li>
+    </ol>
+    <div class="box-memo">
+      <div class="box-memo__t">📝 測定先の選び方</div>
+      <p style="margin:0;">上の例で挙げた <code>8.8.8.8</code> は測定用として使いやすい宛先ですが、実際のゲームサーバーとは経路が違います。あくまで「自分の回線が安定しているか」を見る基準用です。<strong>タイトルごとの実際のPingは、ゲーム内の表示で確認する</strong>のがいちばん確実です。</p>
+    </div>
+
+    <h2 id="jitter">平均より「上振れ」が体感を壊す</h2>
+    <p>ここも誤解されやすいところです。ゲームの体感を壊しているのは、平均Pingの高さより<strong>数値の揺れ(ジッター)とパケットロス</strong>であることが多くあります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>状態</th><th>平均Ping</th><th>最大Ping</th><th>体感</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>A:低いが揺れる</th>
+            <td>20ms</td>
+            <td>120msに時々跳ねる</td>
+            <td>撃ち合いで突然ワープする。いちばん困る</td>
+          </tr>
+          <tr>
+            <th>B:高いが安定</th>
+            <td>45ms</td>
+            <td>50ms程度で収まる</td>
+            <td class="best">慣れれば戦える。判定は一貫している</td>
+          </tr>
+          <tr>
+            <th>C:低くて安定</th>
+            <td>15ms</td>
+            <td>20ms程度</td>
+            <td class="best">理想。ここを目指す</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 数値は説明のためのモデルケースです。ゲーム側の補正処理があるため、体感は同じ数値でもタイトルによって変わります。</p>
+    </div>
+    <p>AとBなら、多くの人がBのほうが戦いやすいと感じます。ゲーム側は遅延をある程度見込んで補正をかけているため、<strong>一定の遅れには対応できても、急に変わる遅れには対応しきれない</strong>からです。だからランキング記事の「平均Ping◯ms」という数字だけを見て選ぶと、判断を誤ります。</p>
+    <p>そして、この揺れを生んでいる主な犯人は次の4つです。心当たりのある順に潰していくと、契約を変えずに片付くことがあります。</p>
+    <ul>
+      <li><strong>Wi-Fi接続</strong>:同じ部屋でも数msから数十ms単位で揺れます。ゲーム用途では有線が基本です</li>
+      <li><strong>同居人の大容量通信</strong>:動画の4K視聴やゲームのアップデートが走ると、上りが埋まってPingが跳ねます</li>
+      <li><strong>夜間の網の混雑</strong>:21〜23時台に集中します。<a href="hikari-osoi">夜だけ遅い問題</a>と同じ原因です</li>
+      <li><strong>裏で動いているダウンロード</strong>:ゲームプラットフォームの自動更新、クラウドバックアップ、OSの更新</li>
+    </ul>
+
+    <h2 id="nat">NATタイプはIPv4の接続方式で決まる</h2>
+    <p>「Pingは悪くないのに、フレンドとパーティが組めない」「ボイスチャットだけ繋がらない」。この種の悩みは速度ともPingとも別の話で、<strong>NATタイプ</strong>という接続の開き具合が原因です。そしてNATタイプは、回線の速さではなく<strong>その回線がIPv4通信をどう流しているか(接続方式)</strong>でほぼ決まります。ここを書いている比較記事は多くないので、詳しく見ていきます。</p>
+    <p>まず前提として、家庭用の回線はIPv4アドレスが足りない事情から、複数の利用者で1つのアドレスを共有する方式が主流になっています。共有しているぶん、外から来る通信を自分の機器まで通す「ポート開放」に制限がかかります。この制限の強さが方式ごとに違い、それがNATタイプの差になって現れます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>IPv4の接続方式</th><th>代表的なサービス</th><th>ポート開放</th><th>NATタイプの傾向</th><th>夜の混雑</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>独自回線(自社網)</th>
+            <td>auひかり、NURO光、電力系光</td>
+            <td class="best">機器側で設定できる構成が多い</td>
+            <td class="best">オープンにしやすい</td>
+            <td class="best">強い</td>
+          </tr>
+          <tr>
+            <th>IPv4 PPPoE</th>
+            <td>従来型の光コラボ、固定IPオプション</td>
+            <td class="best">可能</td>
+            <td class="best">オープンにしやすい</td>
+            <td>弱い(混みやすい)</td>
+          </tr>
+          <tr>
+            <th>MAP-E方式</th>
+            <td>v6プラス、OCNバーチャルコネクト、IPv6高速ハイブリッド など</td>
+            <td>割り当てられた範囲のみ可(240ポート前後)</td>
+            <td>タイプ2になりやすい</td>
+            <td class="best">強い</td>
+          </tr>
+          <tr>
+            <th>DS-Lite方式</th>
+            <td>transix など</td>
+            <td>原則できない</td>
+            <td>タイプ2〜3になりやすい</td>
+            <td class="best">強い</td>
+          </tr>
+          <tr>
+            <th>モバイル網の共有NAT</th>
+            <td>ホームルーター、WiMAX、スマホのテザリング</td>
+            <td>できないことが多い</td>
+            <td>厳しく出やすい</td>
+            <td>時間帯の影響を受けやすい</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 2026年9月時点の一般的な傾向です。同じ事業者でも契約時期・機器・集合住宅か戸建てかで構成が変わる場合があるため、ポート開放の可否は必ず契約先の公式案内で確認してください。</p>
+    </div>
+    <p>ここで押さえておきたいのが、<strong>MAP-E方式ではポート開放が「できる/できない」の二択ではない</strong>という点です。1つのIPv4アドレスを複数の契約者で分け合う構造上、自分に割り当てられたポート番号(おおむね240個)の範囲でしか開けられません。つまり<strong>「ポート番号を指定して開ける」のではなく「開けられるポート番号があらかじめ決まっている」</strong>。ゲームが特定の番号を要求する場合、その番号が自分の割り当てに入っていなければ開けられない、という制限です。</p>
+    <p>一方、DS-Lite方式はアドレス変換がプロバイダ側の設備で行われるため、利用者側の機器でポートを開ける手段がありません。同じ「IPv4 over IPv6」でも、この2つは性質がまったく違います。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 先に確認したいこと:本当にポート開放が要るのか</div>
+      <p style="margin:0;">多くの対戦ゲームは<strong>タイプ2(モデレート)のままでも問題なく遊べます</strong>。実際に困るのは、フレンドのパーティに入れない、ボイスチャットが繋がらない、自分がホストになる形式で相手が入ってこられない、といった場面です。これらが繰り返し起きていないなら、接続方式を理由に回線を変える必要はありません。<strong>症状が出ていないのに方式を気にするのは、優先順位を間違えています。</strong></p>
+    </div>
+    <p>症状が実際に出ていて、かつ今の回線がMAP-EかDS-Liteだった場合、打てる手は次の3つです。上から順に安く済みます。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">PPPoE接続を併用する</div>
+        <p>事業者によっては、IPv6 IPoEを使いながら、ゲーム機の通信だけ従来のPPPoEに逃がす構成が取れます。ルーターの設定で分ける形になるので手間はかかりますが、費用は0円です。対応可否は契約中のプロバイダの案内で確認してください。</p>
+      </li>
+      <li>
+        <div class="steps__t">固定IPのオプションを付ける</div>
+        <p>ポートの制限を根本から外す方法です。月1,000円台のオプションを用意しているプロバイダがあり、ゲーマー向けをうたうプロバイダでは標準的な選択肢になっています。自宅サーバーを立てたい人にも向きます。</p>
+      </li>
+      <li>
+        <div class="steps__t">独自回線に乗り換える</div>
+        <p>auひかりやNURO光のような自社網の回線は、提供されるホームゲートウェイ側でポートの設定ができる構成が一般的です。ただし集合住宅のタイプによっては構成が異なるため、申し込み前に自分の建物のタイプを確認しておくと安全です。</p>
+      </li>
+    </ol>
+
+    <div class="cta">
+      <div class="cta__t">🎮 固定IPとポート開放を前提に組みたいなら</div>
+      <p>Gaming+(ゲーミングプラス)は、フレッツ光回線で使うオンラインゲーマー向けのプロバイダです。1ギガでも10ギガ(光クロス)でも月額は同じで、ポート開放や自宅サーバーに使う固定IPはオプションとして用意されています。初期費用0円・利用開始月の料金が無料なので、<strong>自分の家でPingを実測してから続けるか決められる</strong>のが、この手の悩みと相性のいいところです。</p>
+      <div class="btn-area__banner"><a href="//af.moshimo.com/af/c/click?a_id=5781566&amp;p_id=5865&amp;pc_id=16282&amp;pl_id=75188" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/5573/000000075188.jpg" width="320" height="100" alt="Gaming+(ゲーミングプラス)の公式バナー" loading="lazy" decoding="async"></a><img src="//i.moshimo.com/af/i/impression?a_id=5781566&amp;p_id=5865&amp;pc_id=16282&amp;pl_id=75188" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
+      <!-- もしも: Gaming+(p_id=5865) 2026-09-01 提携 -->
+      <a class="btn btn--cv" href="//af.moshimo.com/af/c/click?a_id=5781566&amp;p_id=5865&amp;pc_id=16282&amp;pl_id=75148" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank">Gaming+の料金とお試し条件を見る<small>初月無料・固定IPオプションあり・光クロス対応</small></a><img src="//i.moshimo.com/af/i/impression?a_id=5781566&amp;p_id=5865&amp;pc_id=16282&amp;pl_id=75148" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy">
+      <p class="micro">※ 料金・オプションの条件は時期により変わります。申し込み前に公式サイトでご確認ください。フレッツ光回線の契約が別途必要です。</p>
+    </div>
+
+    <h2 id="erabi">回線タイプ別の向き不向き</h2>
+    <p>ここまでの3層とNATの話を踏まえて、回線のタイプごとに整理します。「どれが最強か」ではなく、<strong>自分のボトルネックがどの層にあるかで選ぶ</strong>のが実際的です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>回線タイプ</th><th>距離の下限</th><th>夜の安定</th><th>NATの自由度</th><th>向いている人</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>独自回線(auひかり・NURO光・電力系)</th>
+            <td>変わらない</td>
+            <td class="best">高い</td>
+            <td class="best">高い</td>
+            <td>エリア内で、混雑もポート開放もまとめて解決したい人</td>
+          </tr>
+          <tr>
+            <th>光コラボ+IPv6 IPoE(MAP-E)</th>
+            <td>変わらない</td>
+            <td class="best">高い</td>
+            <td>制限あり</td>
+            <td>エリアが広く、まず夜の混雑を潰したい人</td>
+          </tr>
+          <tr>
+            <th>フレッツ光+ゲーマー向けプロバイダ</th>
+            <td>変わらない</td>
+            <td class="best">高い</td>
+            <td class="best">高い(固定IP)</td>
+            <td>ポート開放や自宅サーバーが要る人</td>
+          </tr>
+          <tr>
+            <th>ホームルーター・WiMAX</th>
+            <td>やや不利</td>
+            <td>時間帯の影響を受けやすい</td>
+            <td>低い</td>
+            <td>工事ができない住まいで、ジャンルを選んで遊ぶ人</td>
+          </tr>
+          <tr>
+            <th>スマホのテザリング</th>
+            <td>不利</td>
+            <td>不安定になりやすい</td>
+            <td>低い</td>
+            <td>一時的な代替。常用には向かない</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 2026年9月時点の一般的な傾向です。同じタイプでも建物の配線方式や住所により結果は変わります。</p>
+    </div>
+    <p>1列目の「距離の下限」がすべて同じなのが、この表のポイントです。<strong>どれを選んでも①の層は動かない</strong>。回線選びで差がつくのは、あくまで2列目以降だと分かります。</p>
+    <p>なお、集合住宅の場合はもうひとつ手前の壁があります。建物への引き込みが<a href="mansion-vdsl">VDSL方式</a>だと上限が頭打ちになり、そもそも選択肢が限られます。自分の建物がどの方式かは、<a href="mansion-internet">マンションのネット回線の調べ方</a>で確認できます。<a href="auhikari-dairiten">auひかりを申し込む窓口の選び方</a>や、エリア外だった場合の代替は<a href="nurohikari-area-gai">NURO光がエリア外のときの選択肢</a>にまとめています。</p>
+    <p>ホームルーターでどこまで遊べるかを具体的に知りたい場合は、<a href="homerouter-game">ホームルーターでゲームはできるか</a>にジャンル別の判断をまとめています。工事ができない住まいの人は、そちらを先に読んだほうが早いです。</p>
+
+    <h2 id="settei">契約を変えずに今日できる設定</h2>
+    <p>③の宅内の層は、0円から数千円で片付くものが多く、しかも効果が大きい部分です。回線を検討する前に、この順番で試してください。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">有線にする(いちばん効く)</div>
+        <p>Wi-Fiは電波の状況で数msから数十ms揺れます。カテゴリ5eのLANケーブルなら1,000円前後で、これだけで最大値の跳ねが収まることが珍しくありません。部屋をまたぐ配線が難しい場合は、フラットケーブルやモール配線という手があります。</p>
+      </li>
+      <li>
+        <div class="steps__t">二重ルーターを解消する</div>
+        <p>回線事業者からのレンタル機と、自分で買ったルーターの両方がルーターとして動いていると、変換処理が2回走ります。これはPingを押し上げるうえ、NATタイプも厳しく判定される原因になります。<strong>市販ルーター側をブリッジ(アクセスポイント)モードに切り替える</strong>のが基本の対処です。</p>
+      </li>
+      <li>
+        <div class="steps__t">裏で動く通信を止める</div>
+        <p>ゲームプラットフォームの自動ダウンロード、クラウド同期、OSの更新。プレイ中にこれらが走ると、上り方向が埋まってPingが跳ねます。設定で「プレイ中はダウンロードを停止」にできるタイトル・プラットフォームが多いので、そこを確認します。</p>
+      </li>
+      <li>
+        <div class="steps__t">サーバー地域を固定する</div>
+        <p>自動選択のままだと、混雑状況によって遠いサーバーに割り当てられることがあります。手動で東京や日本を選べるタイトルなら、固定するだけで①の層が数十ms変わります。<strong>回線を変えるより先に、ここを確認してください。</strong></p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターの世代と設定を見直す</div>
+        <p>どうしても無線しか選べない場合は、5GHzか6GHzを使い、親機との間に金属や水回りが入らない位置に置きます。機種によってはゲーム機の通信を優先するQoS機能があります。買い替えの判断は<a href="hikari-router-erabikata">ルーターの選び方</a>、届かない部屋がある場合は<a href="mesh-wifi-chukeiki">中継機とメッシュの違い</a>が参考になります。</p>
+      </li>
+    </ol>
+
+    <h2 id="hantei">3つの質問で決める判定表</h2>
+    <p>測った数字を、行動に変換します。有線で測った値を使ってください。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>Q1 平均と最小の差</th><th>Q2 夜だけ跳ねるか</th><th>Q3 マッチングの不具合</th><th>次にやること</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>5ms以内</th>
+            <td>跳ねない</td>
+            <td>なし</td>
+            <td class="best">回線は十分。これ以上は機器や環境の話</td>
+          </tr>
+          <tr>
+            <th>5ms以内</th>
+            <td>跳ねない</td>
+            <td>ある</td>
+            <td>接続方式を確認。PPPoE併用か固定IPを検討</td>
+          </tr>
+          <tr>
+            <th>10ms以上</th>
+            <td>跳ねる</td>
+            <td>なし</td>
+            <td>IPoE化、それでも駄目なら回線の乗り換え</td>
+          </tr>
+          <tr>
+            <th>10ms以上</th>
+            <td>跳ねる</td>
+            <td>ある</td>
+            <td>独自回線かゲーマー向けプロバイダへ。両方まとめて解決できる</td>
+          </tr>
+          <tr>
+            <th>そもそも最小値が高い</th>
+            <td>—</td>
+            <td>—</td>
+            <td>サーバー地域を確認。距離の下限なら乗り換えても変わらない</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 判定は目安です。ゲームの種類や求める水準によって、許容できる範囲は変わります。</p>
+    </div>
+    <p>「そもそも最小値が高い」の行が、いちばん見落とされます。地方在住で東京サーバーのタイトルを遊んでいる場合、<strong>そこは回線の問題ではありません</strong>。乗り換えの前に、この行に当てはまっていないかを必ず確認してください。</p>
+
+    <h2 id="gokai">よくある誤解(10ギガ・速度・ゲーミング機器)</h2>
+    <p>最後に、ゲーム用の回線選びで混同されやすい3点を整理します。売り文句として強いぶん、優先順位を狂わせやすい項目です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>よく言われること</th><th>実際のところ</th><th>効く場面</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>10ギガにすればラグが減る</th>
+            <td>帯域の広さと応答時間は別の指標。Pingが下がる関係にはない</td>
+            <td>大型アップデートの短縮、同居人の通信に巻き込まれにくくなる</td>
+          </tr>
+          <tr>
+            <th>下り1Gbps出ていれば勝てる</th>
+            <td>対戦ゲームが使うのは常時数百kbps程度。速度より安定性</td>
+            <td>配信をしながら遊ぶ場合は上り側が効く</td>
+          </tr>
+          <tr>
+            <th>ゲーミングルーターで速くなる</th>
+            <td>宅内の優先制御は効くが、回線側の混雑や距離には作用しない</td>
+            <td>同居人が多い家、Wi-Fiで遊ばざるを得ない環境</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tbl-hint">※ 配信や録画を同時に行う場合は上り帯域の要件が変わります。用途に応じて判断してください。</p>
+    </div>
+    <p>10ギガそのものが無意味というわけではなく、<strong>ラグ対策としての優先順位が低い</strong>という話です。導入の判断材料は<a href="hikari-10giga">10ギガは必要か</a>にまとめています。仕事のWeb会議と兼用する環境なら、要件が近いので<a href="telework-kaisen">テレワーク向けの回線要件</a>も合わせて読むと、構成を一度で決められます。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>オンラインゲームのPingはどれくらいなら快適ですか?</summary>
+        <div class="faq__a">ジャンルで基準が変わります。FPSや対戦格闘のように細かい判定が絡むものは30ms以下が目安で、ランク帯で競うなら20ms以下を狙う人が多いです。MOBAやアクションRPGは50ms前後、MMOやターン制のゲームは100ms前後でも支障が出にくい傾向があります。ただし数値が低くても、時々大きく跳ねる状態では体感が悪化します。</div>
+      </details>
+      <details>
+        <summary>回線を乗り換えればPingは下がりますか?</summary>
+        <div class="faq__a">下がる余地がある場合とない場合があります。Pingは物理的な距離で決まる下限と、混雑などで上乗せされる分の合計です。pingコマンドの最小値がその経路の下限に近く、平均との差が小さいなら、乗り換えても削れる部分がほとんど残っていません。逆に夜だけ平均が跳ね上がるなら、混雑ぶんを削れる可能性があります。</div>
+      </details>
+      <details>
+        <summary>NATタイプが「タイプ2」でもゲームはできますか?</summary>
+        <div class="faq__a">多くの対戦ゲームはタイプ2(モデレート)で問題なく遊べます。影響が出やすいのは、フレンドとのパーティ参加、ボイスチャットの接続、自分がホストになる形式のマッチングなどです。これらで繰り返し失敗する場合に、はじめてポート開放や接続方式の見直しを検討する順番で問題ありません。</div>
+      </details>
+      <details>
+        <summary>10ギガプランにすればゲームのラグは減りますか?</summary>
+        <div class="faq__a">帯域の広さと応答時間は別の指標なので、10ギガにしたからPingが下がるという関係にはありません。効くのは、同居人が大容量のダウンロードをしている間に巻き込まれる状況や、ゲームの大型アップデートを短時間で終わらせたい場面です。ラグ対策としての優先順位は高くありません。</div>
+      </details>
+      <details>
+        <summary>ホームルーターやポケット型WiFiでオンラインゲームはできますか?</summary>
+        <div class="faq__a">ジャンルによります。応答の速さを競わないゲームなら実用になるケースが多い一方、FPSや対戦格闘では光回線と比べてPingが高めで揺れやすい傾向があります。加えて事業者側で複数の利用者がIPv4アドレスを共有する構成が一般的なため、NATタイプが厳しく判定されやすい点にも注意が必要です。</div>
+      </details>
+      <details>
+        <summary>IPv6 IPoEにするとゲームに不利になると聞きました。本当ですか?</summary>
+        <div class="faq__a">夜の混雑を避けられるという意味では有利に働くことが多く、不利になるのはポート開放が絡む場面に限られます。MAP-E方式は割り当てられた範囲のポートしか開けられず、DS-Lite方式は原則としてポート開放ができません。ポート開放が必要かどうかは遊ぶタイトルによるため、まずは今の構成のまま遊べているかで判断してください。</div>
+      </details>
+      <details>
+        <summary>有線にしたいのですが、部屋までLANケーブルを引けません。</summary>
+        <div class="faq__a">まず、フラットケーブルをドアの隙間に通す、モールで壁際に這わせるといった物理的な工夫を検討してください。それも難しい場合は、メッシュWi-Fiの子機をゲーム機の近くに置き、子機とゲーム機の間だけ有線でつなぐ構成が次善策になります。この形なら、少なくともゲーム機側の無線の揺れは避けられます。</div>
+      </details>
+      <details>
+        <summary>集合住宅なのですが、どの回線を選んでも遅い気がします。</summary>
+        <div class="faq__a">建物内の配線方式が原因の可能性があります。電話線を使うVDSL方式だと上限が頭打ちになり、契約を変えても大きくは変わりません。建物が光配線方式に対応していない場合、選べる現実的な手は、工事の要らないホームルーターに切り替えるか、引っ越しのタイミングで対応物件を選ぶかに絞られます。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:ランキングを見る前に、自分の数字を測る</h2>
+    <ul>
+      <li>Pingは<strong>①距離の下限 ②混雑の上振れ ③宅内の揺れ</strong>の合計。回線で削れるのは②だけ</li>
+      <li>①は<strong>片道100km=約1ms</strong>で計算でき、実測は理論値の2〜3倍が目安</li>
+      <li>有線で100回測り、<strong>最小値と平均値の差</strong>を見れば、乗り換えの余地が分かる</li>
+      <li>体感を壊すのは平均の高さより<strong>上振れとパケットロス</strong></li>
+      <li>マッチング系の不具合はPingではなく<strong>IPv4の接続方式</strong>の問題</li>
+      <li><strong>MAP-Eは範囲内のみポート開放可、DS-Liteは原則不可</strong>。独自回線と固定IPは自由度が高い</li>
+      <li>10ギガもゲーミングルーターも、<strong>ラグ対策としての優先順位は低い</strong></li>
+    </ul>
+    <p>測ってみて②に削る余地があった場合は、回線側の見直しが効きます。まずは<a href="ipv6-ipoe">IPv6 IPoEへの切り替え</a>で足りるかを確認し、それでも夜の跳ねが収まらないときに乗り換えを検討する順番が、費用の面でも無駄がありません。候補を横並びで見たい場合は<a href="hikari-osusume">光回線7社の比較</a>からどうぞ。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>日本ネットワークイネイブラー(JPNE)「v6プラス」サービス説明および技術情報(2026年9月確認) — MAP-E方式におけるポートの割り当てと制限の考え方</li>
+        <li>インターネットマルチフィード「transix」サービス案内(2026年9月確認) — DS-Lite方式におけるアドレス変換の位置とポート開放の扱い</li>
+        <li>各回線事業者の公式サポートページ(auひかり、NURO光、ソフトバンク光ほか・2026年9月確認) — ホームゲートウェイのポート変換設定、IPv6接続方式の案内</li>
+        <li>距離からの理論値は、光ファイバー内の伝搬速度を約20万km/秒(屈折率およそ1.5)として往復時間を計算した目安です</li>
+        <li>各都市間の距離は主要都市の緯度経度から算出した直線距離の概数です。実際の通信経路はこれより長くなります</li>
+        <li>Pingの目安値は2026年9月時点で公開されている各ゲームタイトルの推奨環境および一般的な評価をもとにした目安で、公式に保証された数値ではありません</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">混雑もNATもまとめて解決したいなら、独自回線</div>
+    <p>測定の結果、夜の上振れが大きく、さらにマッチング系の不具合も出ている場合は、両方に同時に効く選択肢が独自回線です。auひかりはNTT東西の網を経由しない自社設備で、提供されるホームゲートウェイ側でポートの設定ができる構成が一般的。auやUQ mobileのスマホを使っているならセット割の対象にもなります。まずは住所を入れて、提供エリアに入っているかの確認からです。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="auひかり(正規代理店NEXT)の公式キャンペーンバナー" src="https://www23.a8.net/svt/bgt?aid=260829413164&amp;wid=002&amp;eno=01&amp;mid=s00000014546021006000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" alt=""></div>
+    <!-- A8: auひかり(正規代理店NEXT) -->
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank">auひかりの提供エリアを確認する<small>住所を入れるだけ・結果はすぐ表示</small></a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6" alt="">
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。エリア外だった場合の代替は<a href="nurohikari-area-gai">こちら</a>にまとめています。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="homerouter-game">ホームルーターでゲームはできる?Pingの実態とジャンル別の判断</a></li>
+      <li><a href="ipv6-ipoe">IPv6 IPoEとは?夜の遅さが変わる仕組みを図解でやさしく解説</a></li>
+      <li><a href="hikari-10giga">光回線の10ギガは必要?1ギガとの違いと向いている人の条件</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260910b" defer></script>
+</body>
+</html>
