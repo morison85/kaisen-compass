@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>動画配信の通信量の目安|画質別ギガ消費 | 回線コンパス</title>
+<meta name="description" content="Netflix・YouTube・Prime Video・TVerを1時間見ると何GB減るのかを画質別に整理。1日の視聴時間から月間ギガを逆算する表、画質設定を「ギガ単価」で円換算する考え方、速度制限後に動画が見られるかまで、2026年9月時点の目安でまとめました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/douga-tsushinryou">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="動画配信の通信量はどれくらい?画質別のギガ消費と最適プランの決め方【2026年】">
+<meta property="og:description" content="1時間で何GB減るのかを画質別に。月間ギガの逆算表と、画質設定を円に換算する「ギガ単価」の考え方。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/douga-tsushinryou">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-douga-tsushinryou.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-16">
+<meta property="article:modified_time" content="2026-09-16">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-douga-tsushinryou.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260910q">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "動画配信の通信量はどれくらい?画質別のギガ消費と最適プランの決め方【2026年】",
+  "description": "Netflix・YouTube・Prime Video・TVerの1時間あたり通信量を画質別に整理し、月間ギガの逆算と最適プランの決め方まで解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-douga-tsushinryou.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/douga-tsushinryou"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "動画配信で使う月間ギガを逆算する手順",
+  "step": [
+    { "@type": "HowToStep", "name": "視聴時間を出す", "text": "1日に動画を見る平均時間を、通勤・寝る前などのシーンごとに足して分単位で出す。" },
+    { "@type": "HowToStep", "name": "Wi-Fi以外の割合を掛ける", "text": "そのうち自宅Wi-Fiにつながっていない時間の割合を掛け、モバイル回線で見る時間を出す。" },
+    { "@type": "HowToStep", "name": "画質ごとの係数を掛ける", "text": "低画質0.3GB・標準0.7GB・フルHD2GBなど、1時間あたりの目安を掛けて1日の消費量を出す。" },
+    { "@type": "HowToStep", "name": "30倍して月間に直す", "text": "1日の消費量を30倍し、動画以外(SNS・地図・音楽)の分を2〜5GB上乗せして月間の必要量とする。" },
+    { "@type": "HowToStep", "name": "プランと照らす", "text": "必要量に2〜3割の余裕を足した数字で、契約中のプランの容量と比較する。" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "動画を1時間見ると何GB消費しますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "画質によって10倍以上変わります。2026年9月時点の目安で、低画質なら1時間あたり0.3GB前後、標準画質で0.7GB前後、フルHDで2〜3GB前後、4Kでは6〜7GB前後です。Netflix公式ヘルプでは「高」設定で標準1GB・HD3GB・UHD7GBと案内されています。" }
+    },
+    {
+      "@type": "Question",
+      "name": "画質を下げると、実際いくら得になりますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "プランの1GBあたり単価で換算すると見えてきます。大容量プランの単価はおおむね45〜100円/GBで、毎日1時間の視聴をフルHDから標準に落とすと月39GBほど減る計算になるため、月1,800〜3,900円相当のプラン差に当たります。小容量プランなら単価が高い分、影響はさらに大きくなります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "速度制限にかかった後でも動画は見られますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "制限後の速度によります。最大1Mbpsに制限されるプランなら360p〜480p程度の低画質は再生できるケースが多い一方、最大300kbpsや128kbpsでは動画視聴は現実的ではありません。自分のプランの制限後速度を先に確認しておくと、月末の過ごし方が変わります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ダウンロード(オフライン再生)はギガの節約になりますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "自宅のWi-Fiでダウンロードしておけば、外で再生するときのモバイル通信はほぼゼロになります。ただしダウンロード時のデータ量自体はストリーミングとほぼ同じなので、外出先でダウンロードしては意味がありません。Wi-Fi接続時のみダウンロードする設定にしておくのが確実です。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "格安SIM・スマホ", "item": "https://kaisen-compass.com/category/sim" },
+    { "@type": "ListItem", "position": 3, "name": "動画配信の通信量" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/sim">格安SIM・スマホ</a></li>
+    <li>動画配信の通信量</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">格安SIM</span>
+    <h1 class="article-title">動画配信の通信量はどれくらい?画質別のギガ消費と最適プランの決め方【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-16">2026年9月16日</time></span>
+      <span>公開日:<time datetime="2026-09-16">2026年9月16日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-douga-tsushinryou.svg" alt="動画配信サービスの画質別データ通信量の目安" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「月末になると必ずギガが足りない」。その原因のほぼすべては動画です。SNSも地図も音楽も、動画の消費量に比べたら誤差の範囲に収まります。</p>
+    <p>ただ、動画配信の通信量は<strong>「1時間で何GB」という単一の数字では答えが出ません</strong>。同じNetflixでも、設定ひとつで1時間あたり0.3GBにも7GBにもなる。倍率にして20倍以上です。この記事では、サービス別・画質別の目安を整理したうえで、自分の視聴スタイルから月間ギガを逆算し、最終的に「画質設定を月いくらの話として捉えるか」まで落とし込みます。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>2026年9月時点の目安で、動画1時間の消費は<strong>低画質0.3GB・標準0.7GB・フルHD2〜3GB・4Kで6〜7GB前後</strong>。毎日1時間見るなら月9GB〜90GBと、画質だけで10倍の差がつきます。<strong>やるべきことは「使い放題の契約を探す」より先に、アプリ側の画質を固定して消費を設計すること</strong>。そのうえで足りなければ大容量プラン、自宅視聴が中心なら固定回線に逃がすのが順番です。</p>
+    </div>
+
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" rel="nofollow sponsored noopener" target="_blank"><span>外でも動画を見るなら:ahamoの30GB/110GBを見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/ahamo-600.webp 600w, ../images/official/ahamo.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/ahamo.jpg" srcset="../images/official/ahamo-600.jpg 600w, ../images/official/ahamo.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="ahamoの公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://ahamo.com/" rel="nofollow noopener" target="_blank">ahamo公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-ahamo.svg" alt="ahamoのサービス概要(月額・特徴)" width="800" height="420" loading="lazy" decoding="async"></div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#hayami">サービス別・画質別の1時間あたり通信量</a></li>
+        <li><a href="#gyakusan">1日の視聴時間から月間ギガを逆算する</a></li>
+        <li><a href="#tanka">画質設定を「ギガ単価」で円に換算する</a></li>
+        <li><a href="#seigen">速度制限にかかった後、動画は見られるのか</a></li>
+        <li><a href="#setsuyaku">通信量を減らす5つの現実的な手</a></li>
+        <li><a href="#plan">それでも足りないときのプランの決め方</a></li>
+        <li><a href="#gokai">よくある誤解</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">自宅の回線から見直すなら、ツールで候補を絞れます</p>
+      <p>動画を見る場所が自宅中心なら、スマホのプランより固定回線側を整える方が総額は下がります。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../sougaku">2年・3年の総額を計算する</a>
+      </div>
+    </div>
+
+    <h2 id="hayami">サービス別・画質別の1時間あたり通信量</h2>
+    <p>まず全体像です。数字は2026年9月時点の公表値と一般的な実測レンジをもとにした<strong>目安</strong>で、作品のビットレートや端末によって上下します。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>サービス</th><th>低画質</th><th>標準画質</th><th>フルHD</th><th>4K</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Netflix</th>
+            <td class="best">約0.3GB(設定「低」)</td>
+            <td>約0.7GB(設定「中」)</td>
+            <td>約3GB</td>
+            <td>約7GB</td>
+          </tr>
+          <tr>
+            <th>YouTube</th>
+            <td class="best">約0.3GB(360p)</td>
+            <td>約0.5〜0.7GB(480p)</td>
+            <td>約1.1GB(720p)/約2GB(1080p)</td>
+            <td>約7GB</td>
+          </tr>
+          <tr>
+            <th>Prime Video</th>
+            <td class="best">約0.3GB</td>
+            <td>約0.6GB</td>
+            <td>約2〜3GB</td>
+            <td>約6〜7GB</td>
+          </tr>
+          <tr>
+            <th>TVer</th>
+            <td>—</td>
+            <td>約0.9GB(自動画質)</td>
+            <td>約1.4GB(高画質)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th>音楽ストリーミング</th>
+            <td>約0.04GB</td>
+            <td>約0.07GB</td>
+            <td>約0.14GB(320kbps)</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ Netflixは公式ヘルプの「1台のデバイスでの1時間あたりのデータ使用量」、TVerは公式ヘルプの「30分あたり平均450MB/700MB」を1時間換算した値です。</p>
+    <p>この表で真っ先に押さえてほしいのは、<strong>音楽と動画は桁が違う</strong>という一点です。高音質の音楽ストリーミングを1時間流しても0.14GB程度、つまりフルHD動画4分ぶんにしかなりません。「音楽を聴きすぎてギガが減った」という感覚はほぼ錯覚で、実際は同じ時間に見ていた動画のほうが効いています。</p>
+    <div class="box-point">
+      <div class="box-point__t">✅ 画面サイズと画質の関係</div>
+      <ul>
+        <li>スマホの画面(6インチ前後)では、<strong>720pと1080pの差はほとんど見分けられない</strong>ことが多い</li>
+        <li>4Kが意味を持つのは、基本的に<strong>40インチ以上のテレビで近距離</strong>のとき</li>
+        <li>モバイル回線で4K再生を許すと、映画1本(2時間)で<strong>14GB前後</strong>が消える</li>
+      </ul>
+    </div>
+
+    <h2 id="gyakusan">1日の視聴時間から月間ギガを逆算する</h2>
+    <p>「1時間で何GB」がわかっても、月に必要な量に直せなければ意味がありません。逆算の手順は5つです。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">1日の視聴時間をシーンごとに足す</div>
+        <p>通勤で30分、昼休みに15分、寝る前に45分——というように、場面ごとに積み上げると精度が上がります。「なんとなく1時間くらい」と答えた人が実際は2時間超だった、というズレはよく起きます。</p>
+      </li>
+      <li>
+        <div class="steps__t">Wi-Fiにつながっていない時間の割合を掛ける</div>
+        <p>自宅や職場のWi-Fiで見ている分はモバイルのギガを消費しません。<strong>ここを掛け忘れると必要量を2〜3倍に見積もってしまい、過剰なプランを契約することになります</strong>。</p>
+      </li>
+      <li>
+        <div class="steps__t">画質ごとの係数を掛ける</div>
+        <p>低画質0.3・標準0.7・フルHD2.0を1時間あたりの係数として掛けます。アプリの設定を確認していない人は、まず「自動」になっていると考えて標準〜フルHDの間で見ておくのが安全です。</p>
+      </li>
+      <li>
+        <div class="steps__t">30倍して月間に直す</div>
+        <p>1日の消費量を30倍します。ここに動画以外(SNS・地図・ブラウジング・音楽)の分として2〜5GBを上乗せすると、実態に近い数字になります。</p>
+      </li>
+      <li>
+        <div class="steps__t">2〜3割の余裕を足してプランと比べる</div>
+        <p>旅行月や連休は視聴時間が伸びます。ぴったりの容量を選ぶと毎月ヒヤヒヤするので、余裕を見た数字でプランを比較してください。</p>
+      </li>
+    </ol>
+    <p>手を動かすのが面倒な人向けに、モバイル回線だけで視聴した場合の月間消費量を表にしました。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>1日の視聴時間</th><th>低画質(0.3GB/時)</th><th>標準(0.7GB/時)</th><th>フルHD(2GB/時)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>30分</th><td class="best">約4.5GB</td><td>約10.5GB</td><td>約30GB</td></tr>
+          <tr><th>1時間</th><td class="best">約9GB</td><td>約21GB</td><td>約60GB</td></tr>
+          <tr><th>2時間</th><td>約18GB</td><td>約42GB</td><td>約120GB</td></tr>
+          <tr><th>3時間</th><td>約27GB</td><td>約63GB</td><td>約180GB</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>1日2時間をフルHDで見ると月120GB。これはもう<strong>大容量プランでも収まらない水準</strong>で、無制限プランか自宅Wi-Fiが前提になります。逆に、標準画質で30分なら月10GB程度に収まり、3,000円を切るプランの射程です。<a href="hitorigurashi-netdai">一人暮らしのネット代の相場</a>で試算したように、この違いはそのまま年間数万円の差になります。</p>
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">回線の相談を受けていて一番多い勘違いが、この逆算の2番目を飛ばしてしまうパターンです。「毎日3時間は動画を見る」と話していた人に内訳を聞いていくと、そのうち2時間半は自宅のWi-Fi。必要だったのは無制限プランではなく、20GBのプランと自宅の回線の見直しでした。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="tanka">画質設定を「ギガ単価」で円に換算する</h2>
+    <p>ここがこの記事でいちばん伝えたい部分です。「画質を下げるとギガが節約できます」という説明は、どこにでも書いてあります。でも<strong>それが月いくらの話なのかを示している記事はほとんどありません</strong>。実際に円に直してみます。</p>
+    <p>やり方は単純で、<strong>月額 ÷ データ容量 = 1GBあたりの単価</strong>を出し、削減できるGB数に掛けるだけです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>プランのタイプ</th><th>月額の目安(税込)</th><th>データ容量</th><th>1GBあたり単価</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>小容量プラン</th><td>1,000円前後</td><td>3GB前後</td><td>約330円</td></tr>
+          <tr><th>中容量プラン</th><td>2,970円</td><td>30GB</td><td>約99円</td></tr>
+          <tr><th>大容量プラン</th><td>4,950円</td><td>110GB</td><td class="best">約45円</td></tr>
+          <tr><th>無制限プラン</th><td>3,278円</td><td>上限なし</td><td>使うほど下がる</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 中容量・大容量はahamo(30GB 2,970円/大盛りオプション追加で110GB 4,950円)、無制限は楽天モバイルの最大料金(3,278円)を2026年9月時点の目安として使っています。</p>
+    <p>この単価を、さきほどの逆算表にぶつけます。<strong>毎日1時間の視聴を、フルHDから標準画質に1段下げた場合</strong>を計算してみましょう。</p>
+    <div class="box-point">
+      <div class="box-point__t">💴 画質を1段下げると、月いくら相当か</div>
+      <ul>
+        <li>フルHD(2GB/時)で毎日1時間 = <strong>月60GB</strong></li>
+        <li>標準画質(0.7GB/時)で毎日1時間 = <strong>月21GB</strong></li>
+        <li>差は<strong>39GB</strong>。大容量プランの単価45円で換算すると<strong>約1,800円相当</strong>、中容量プランの単価99円なら<strong>約3,900円相当</strong></li>
+        <li>これが小容量プラン(約330円/GB)の感覚だと、同じ39GBは<strong>1万円超</strong>の価値になる</li>
+      </ul>
+    </div>
+    <p>つまり、スマホの画面で見るぶんには差がわかりにくい画質を1段下げるだけで、<strong>月1,800円〜数千円のプラン差に相当する削減ができる</strong>ということです。多くの人が「プランを変えるかどうか」で悩んでいますが、先に触るべきはアプリ側の設定でした。</p>
+    <p>逆の見方もできます。どうしてもフルHDや4Kで見たい人にとって、<strong>大容量プランの45円/GBという単価は十分に安い</strong>。小容量プランで我慢しながらデータ追加を繰り返すより、最初から容量の大きいプランにしたほうが1GBあたりでは得になります。データ追加(いわゆるチャージ)は1GBあたり500〜1,100円程度が相場で、単価では最も割高な買い方です。<a href="sumaho-ryokin-minaoshi">スマホ料金の見直し</a>でも書いたとおり、判断の軸を「月額」から「単価」に移すと選択肢の見え方が変わります。</p>
+
+    <h2 id="seigen">速度制限にかかった後、動画は見られるのか</h2>
+    <p>ギガを使い切ったあとの速度は、プランによって大きく違います。ここを把握しているかどうかで、月末の過ごし方が変わります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>制限後の速度</th><th>該当しやすいプラン</th><th>動画はどうなるか</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>最大1Mbps</th>
+            <td>20GB以上の中容量プラン(ahamo・LINEMO・UQモバイルの大きめプランなど)</td>
+            <td class="best">360p〜480pの低画質なら再生できるケースが多い。フルHDは厳しい</td>
+          </tr>
+          <tr>
+            <th>最大300kbps</th>
+            <td>3〜4GB前後の小容量プラン、各社の節約モード</td>
+            <td>動画視聴は現実的でない。音楽の低音質がぎりぎり</td>
+          </tr>
+          <tr>
+            <th>最大128kbps</th>
+            <td>一部のMVNOの制限後</td>
+            <td>動画は不可。メッセージと軽いWeb閲覧が限界</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>「制限後も1Mbps出るから大丈夫」という宣伝文句は、<strong>動画に限っては条件付きで正しい</strong>という理解が正確です。低画質なら見られますが、混雑時間帯には1Mbpsを下回ることもあり、再生が止まる場面は出てきます。<a href="uqmobile-linemo-hikaku">UQモバイルとLINEMOの比較</a>でも触れたとおり、同じ会社のプランでも容量帯によって制限後の速度が変わるので、契約前に確認しておく価値があります。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 「無制限」でも動画が止まることはある</div>
+      <p style="margin:0;">無制限をうたうプランでも、一定時間内に大量の通信をした場合の速度制御や、混雑エリアでの制御が規約に書かれていることがあります。またエリアの電波状況の影響も大きく、容量が無制限でも快適さが保証されるわけではありません。<a href="rakuten-mobile-denpa">楽天モバイルの電波が悪いときの対策</a>で書いたように、無制限プランを選ぶ場合は自分の生活圏の電波を先に確認しておくのが順番です。</p>
+    </div>
+
+    <h2 id="setsuyaku">通信量を減らす5つの現実的な手</h2>
+    <p>効果の大きい順に並べます。上2つだけで、ほとんどの人は足ります。</p>
+    <h3>手1:アプリの画質を「自動」から固定に変える</h3>
+    <p>各サービスのアプリ設定に、モバイル通信時の画質を指定する項目があります。「自動」は回線が速いほど高画質を取りにいく設計なので、電波のいい場所ほどギガを消費します。<strong>モバイル時は標準(または「データセーバー」)に固定</strong>し、Wi-Fi時だけ高画質にするのが基本形です。効果は最大で3分の1以下。</p>
+    <h3>手2:自宅のWi-Fiでダウンロードしておく</h3>
+    <p>主要な配信サービスはオフライン再生に対応しています。寝る前に翌日ぶんをダウンロードしておけば、外での再生時の通信はほぼゼロ。設定で「Wi-Fi接続時のみダウンロード」をオンにしておけば、うっかりモバイル回線でダウンロードする事故も防げます。</p>
+    <h3>手3:自動再生をオフにする</h3>
+    <p>見終わった後に次の動画が勝手に始まる機能や、一覧画面でサムネイルが動く機能は、意図しない通信を積み上げます。地味ですが、寝落ちしたときの数GBを防げます。</p>
+    <h3>手4:音声だけで足りるコンテンツは音声に切り替える</h3>
+    <p>ラジオ的に流しているだけの動画なら、画面をオフにしても音声が続く機能や、音楽サービスへの切り替えで通信量は10分の1以下になります。前掲の表のとおり、音楽は1時間0.14GB程度です。</p>
+    <h3>手5:通信量の確認を習慣にする</h3>
+    <p>スマホの設定画面には、アプリごとのモバイルデータ使用量が表示されます。月初にリセットして、どのアプリが何GB使っているかを一度見ておくと、「なんとなく足りない」が「このアプリで◯GB」に変わります。</p>
+    <div class="box-point">
+      <div class="box-point__t">✅ 月末にギガが尽きたときの優先順位</div>
+      <ul>
+        <li>まず<strong>Wi-Fiが使える場所</strong>を探す(自宅・職場・店舗)</li>
+        <li>次に<strong>ダウンロード済みのコンテンツ</strong>に切り替える</li>
+        <li>データ追加は最後。1GBあたり500〜1,100円程度と<strong>単価が最も高い買い方</strong></li>
+        <li>3ヶ月連続で足りないなら、それは<strong>プランが合っていない</strong>サイン</li>
+      </ul>
+    </div>
+
+    <h2 id="plan">それでも足りないときのプランの決め方</h2>
+    <p>設定を整えてもなお足りないなら、契約側を変える番です。判断は「どこで見ているか」で分かれます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>視聴スタイル</th><th>月間の必要量</th><th>向いている選択肢</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ほぼ自宅で見る</th>
+            <td>モバイルは5〜10GBで足りる</td>
+            <td class="best">小〜中容量プラン+固定回線(光回線かホームルーター)</td>
+          </tr>
+          <tr>
+            <th>通勤・外出先が中心</th>
+            <td>20〜60GB</td>
+            <td>中容量プラン(30GB前後)。制限後1Mbpsのプランだと安心度が上がる</td>
+          </tr>
+          <tr>
+            <th>外で高画質・長時間</th>
+            <td>100GB以上</td>
+            <td>大容量プランか無制限プラン。単価では大容量が有利なことも多い</td>
+          </tr>
+          <tr>
+            <th>家にネット回線がない</th>
+            <td>100GB以上</td>
+            <td>ホームルーターか無制限プラン。<a href="tethering-kotei-kaisen">テザリング運用</a>は条件を満たす人だけ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>見落とされがちなのが1行目です。<strong>自宅視聴が中心なら、スマホのプランを大きくするより固定回線を整えたほうが総額は下がります</strong>。光回線なら月4,000〜5,500円前後で容量を気にせず4Kまで見られるうえ、家族の端末もまとめて面倒を見られます。スマホの無制限プランを家族分契約するより明らかに安い構成です。</p>
+    <p>工事ができない住まいなら<a href="home-router">ホームルーター</a>という選択肢もあります。逆に、自宅にWi-Fiはあるのに部屋によって動画が止まる場合は、プランではなく電波の届き方が原因なので、<a href="mesh-wifi-chukeiki">中継機やメッシュWi-Fiの記事</a>のほうが解決に近いです。</p>
+    <p>プランそのものの比較は<a href="kakuyasu-sim">格安SIM・オンライン専用プラン5社の比較</a>にまとめています。動画を見る量が多い人は、料金の安さより「制限後の速度」と「1GB単価」の2つを軸に見てください。</p>
+
+    <div class="cta">
+      <div class="cta__t">📱 外でも動画を見る人のプラン選び</div>
+      <p>30GBで足りるか、110GBまで必要か。ドコモ回線の品質のまま、容量だけを上げ下げできるのが選びやすい点です。かけ放題の扱いを含めた条件は公式ページで確認してください。</p>
+      <!-- A8: ahamo(s00000022488001) 2026-08-30 提携完了 -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" rel="nofollow sponsored noopener" target="_blank">ahamoの詳細を見る<small>30GB・大盛り110GBの料金を確認</small></a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BAI1I+CF4KUY+4TIO+5YJRM" alt="">
+      <p class="micro">※ 料金・データ容量・オプションの条件は変更されることがあります。申し込み前に公式サイトで最新の内容をご確認ください。</p>
+    </div>
+
+    <h2 id="gokai">よくある誤解</h2>
+    <h3>誤解1:「4Kで見ないとせっかくの契約がもったいない」</h3>
+    <p>4Kの価値は画面サイズと視聴距離で決まります。スマホやタブレットでは差を感じにくく、通信量だけが3倍以上になります。<strong>4Kを活かすならテレビ+固定回線</strong>という組み合わせが基本です。</p>
+    <h3>誤解2:「通信速度が速いプランならギガの減りも遅い」</h3>
+    <p>逆です。速い回線ほど高いビットレートの映像を取りにいくため、同じ動画でも消費量は増えます。速度とギガ消費は、むしろ比例する関係にあります。</p>
+    <h3>誤解3:「動画をダウンロードすると容量を2倍使う」</h3>
+    <p>ダウンロードとストリーミングで、通信量そのものはほぼ同じです(端末のストレージは消費します)。Wi-Fiでダウンロードして外で見るぶんには、モバイル通信の節約になります。</p>
+    <h3>誤解4:「Wi-Fiにつないでいれば通信量はゼロ」</h3>
+    <p>スマホのギガは減りませんが、自宅回線側では同じだけのデータが流れています。光回線は基本的に容量無制限なので問題になりませんが、<strong>ホームルーターやポケットWi-Fiには短期間の大量通信に対する速度制御がある場合があります</strong>。契約中の機器の規約は一度確認しておいてください。</p>
+    <h3>誤解5:「ギガを使い切ったら追加購入するのが手っ取り早い」</h3>
+    <p>手っ取り早いのは確かですが、単価では最も高い選択です。2ヶ月以上続けて追加購入しているなら、プランを1段上げたほうが安くなる可能性が高い水準です。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>動画を1時間見ると何GB消費しますか?</summary>
+        <div class="faq__a">画質で10倍以上変わります。2026年9月時点の目安で、低画質0.3GB前後、標準0.7GB前後、フルHD2〜3GB前後、4K6〜7GB前後です。Netflix公式ヘルプでは設定「高」で標準1GB・HD3GB・UHD7GBと案内されています。</div>
+      </details>
+      <details>
+        <summary>画質を下げると、実際いくら得になりますか?</summary>
+        <div class="faq__a">1GBあたり単価で換算します。大容量プランの単価は45〜100円/GB程度なので、毎日1時間の視聴をフルHDから標準に下げて月39GB減らせば、月1,800〜3,900円相当の削減にあたります。小容量プランならさらに大きな差になります。</div>
+      </details>
+      <details>
+        <summary>速度制限にかかった後でも動画は見られますか?</summary>
+        <div class="faq__a">制限後の速度次第です。最大1Mbpsなら360p〜480p程度は再生できるケースが多く、最大300kbps・128kbpsでは動画視聴は現実的ではありません。契約中のプランの制限後速度を先に確認しておくと安心です。</div>
+      </details>
+      <details>
+        <summary>ダウンロードはギガの節約になりますか?</summary>
+        <div class="faq__a">自宅Wi-Fiでダウンロードしておけば、外での再生時のモバイル通信はほぼゼロになります。ダウンロード時のデータ量はストリーミングとほぼ同じなので、「Wi-Fi接続時のみダウンロード」の設定をオンにしておくのが確実です。</div>
+      </details>
+      <details>
+        <summary>家族で使う場合、どう考えればいいですか?</summary>
+        <div class="faq__a">人数分の無制限プランを契約するより、固定回線を1本引いて全員がWi-Fiで見る構成のほうが総額は下がるのが一般的です。各自のモバイルプランは外出時に必要な分だけに絞れます。<a href="hikari-osusume">光回線7社比較</a>でスマホのセット割と合わせて検討してください。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:プランを変える前に、設定を変える</h2>
+    <ul>
+      <li>動画1時間は<strong>低画質0.3GB・標準0.7GB・フルHD2〜3GB・4K6〜7GB</strong>が目安(2026年9月時点)</li>
+      <li>月間ギガは<strong>視聴時間 × Wi-Fi以外の割合 × 画質係数 × 30日</strong>で逆算する</li>
+      <li>画質を1段下げるのは、単価換算で<strong>月1,800〜3,900円相当</strong>の削減にあたる</li>
+      <li>制限後の速度は<strong>1Mbpsなら低画質可・300kbps以下は不可</strong></li>
+      <li>自宅視聴が中心なら、スマホの容量を増やすより<strong>固定回線を整えるほうが総額は安い</strong></li>
+    </ul>
+    <p>プランの比較に進むなら<a href="kakuyasu-sim">格安SIM5社比較</a>へ、自宅の回線から見直すなら<a href="hikari-osusume">光回線7社比較</a>へ。ゲームも含めて回線の質を上げたい場合は<a href="online-game-kaisen">オンラインゲーム向け回線の記事</a>が近い内容です。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>Netflix ヘルプセンター「データ使用量の設定を変更する」— 1時間あたりのデータ使用量(低0.3GB/中0.7GB/高:標準1GB・HD3GB・UHD7GB)</li>
+        <li>TVer ヘルプページ「視聴時のデータ通信量を教えてください」— スマホ・PC(自動画質)30分あたり平均450MB、高画質30分あたり平均700MB</li>
+        <li>UQ mobile 公式コラム「YouTubeの視聴で消費するデータ通信量はどれくらい?」— 画質別の目安</li>
+        <li>ahamo 公式サイト — 30GB 2,970円(税込)/大盛りオプション追加で110GB 4,950円(税込)、2026年9月確認</li>
+        <li>楽天モバイル 公式サイト — データ無制限時の月額3,278円(税込)、2026年9月確認</li>
+        <li>各社公式サイトの料金・速度制限に関する記載(2026年9月確認)</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">自宅で見る時間が長いなら、固定回線に逃がすのが最短</div>
+    <p>動画の消費量が月100GBを超えるなら、スマホのプランを大きくするより自宅の回線を整えたほうが総額は下がります。縛りと解約違約金のない光コラボなら、状況が変わったときに身軽に見直せます。プロバイダ一体型でIPv6 IPoEに標準対応し、対応ルーターのレンタルもあります。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="GMOとくとくBB光の公式キャンペーンバナー" src="https://www22.a8.net/svt/bgt?aid=260829413162&amp;wid=002&amp;eno=01&amp;mid=s00000000018040038000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" alt=""></div>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金を見る<small>縛りなし・容量を気にせず高画質で見られます</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="kakuyasu-sim">格安SIMおすすめ5社比較|料金と通信品質で選ぶ乗り換えガイド</a></li>
+      <li><a href="hitorigurashi-netdai">一人暮らしのネット代の平均は?月5,000円台に収める構成の作り方</a></li>
+      <li><a href="sumaho-ryokin-minaoshi">スマホ料金が高いと感じたら|見直しで通信費を取り戻す手順</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260910b" defer></script>
+</body>
+</html>

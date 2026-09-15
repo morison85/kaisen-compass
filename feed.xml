@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 16 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 16 Sep 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>動画配信の通信量はどれくらい?画質別のギガ消費と最適プランの決め方【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/douga-tsushinryou</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/douga-tsushinryou</guid>
+    <pubDate>Wed, 16 Sep 2026 12:00:00 +0900</pubDate>
+    <description>動画1時間の消費は低画質0.3GB・標準0.7GB・フルHD2〜3GB・4K6〜7GBが目安で、設定ひとつで10倍以上変わります。Netflix・YouTube・Prime Video・TVerの画質別早見表、1日の視聴時間から月間ギガを逆算する手順、月額÷容量で出した「1GB単価」で画質設定を円に換算する考え方、速度制限後に動画が見られるかまでを2026年9月時点の目安でまとめました。</description>
+  </item>
   <item>
     <title>オンラインゲームにおすすめの回線|Pingが下がる余地は「距離・混雑・NAT」で決まる【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/online-game-kaisen</link>
