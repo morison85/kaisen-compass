@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../css/style.css?v=20260910q">
+<link rel="stylesheet" href="../css/style.css?v=20260917a">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -225,7 +225,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tbl-hint">※ 実際のPingはこの3層の合計として観測されます。どの層が効いているかは測り方で切り分けられます。</p>
+      <p class="micro">※ 実際のPingはこの3層の合計として観測されます。どの層が効いているかは測り方で切り分けられます。</p>
     </div>
     <p>ゲーム系の回線記事が扱っているのは、ほぼ②の層だけです。①は契約で動かせず、③は家の中の問題なので、記事を読んで乗り換えても、原因が①か③にあった人は変化を感じられません。<strong>まず自分のPingが、どの層でできているのかを知るのが先</strong>です。</p>
 
@@ -278,7 +278,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tbl-hint">※ 2026年9月時点の一般的な目安です。実測は経路・事業者・時間帯により変わります。理論値は光ファイバー内の伝搬速度を約20万km/秒として計算した往復時間です。</p>
+      <p class="micro">※ 2026年9月時点の一般的な目安です。実測は経路・事業者・時間帯により変わります。理論値は光ファイバー内の伝搬速度を約20万km/秒として計算した往復時間です。</p>
     </div>
     <p>この表の使い方はシンプルです。<strong>自分の位置と、遊んでいるタイトルのサーバー所在地から、実測の目安の下限を読む</strong>。そのうえで、今のPingがその範囲に収まっているなら、回線を変えて削れる余地はほとんど残っていません。</p>
     <div class="box-point">
@@ -349,7 +349,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tbl-hint">※ 数値は説明のためのモデルケースです。ゲーム側の補正処理があるため、体感は同じ数値でもタイトルによって変わります。</p>
+      <p class="micro">※ 数値は説明のためのモデルケースです。ゲーム側の補正処理があるため、体感は同じ数値でもタイトルによって変わります。</p>
     </div>
     <p>AとBなら、多くの人がBのほうが戦いやすいと感じます。ゲーム側は遅延をある程度見込んで補正をかけているため、<strong>一定の遅れには対応できても、急に変わる遅れには対応しきれない</strong>からです。だからランキング記事の「平均Ping◯ms」という数字だけを見て選ぶと、判断を誤ります。</p>
     <p>そして、この揺れを生んでいる主な犯人は次の4つです。心当たりのある順に潰していくと、契約を変えずに片付くことがあります。</p>
@@ -406,7 +406,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tbl-hint">※ 2026年9月時点の一般的な傾向です。同じ事業者でも契約時期・機器・集合住宅か戸建てかで構成が変わる場合があるため、ポート開放の可否は必ず契約先の公式案内で確認してください。</p>
+      <p class="micro">※ 2026年9月時点の一般的な傾向です。同じ事業者でも契約時期・機器・集合住宅か戸建てかで構成が変わる場合があるため、ポート開放の可否は必ず契約先の公式案内で確認してください。</p>
     </div>
     <p>ここで押さえておきたいのが、<strong>MAP-E方式ではポート開放が「できる/できない」の二択ではない</strong>という点です。1つのIPv4アドレスを複数の契約者で分け合う構造上、自分に割り当てられたポート番号(おおむね240個)の範囲でしか開けられません。つまり<strong>「ポート番号を指定して開ける」のではなく「開けられるポート番号があらかじめ決まっている」</strong>。ゲームが特定の番号を要求する場合、その番号が自分の割り当てに入っていなければ開けられない、という制限です。</p>
     <p>一方、DS-Lite方式はアドレス変換がプロバイダ側の設備で行われるため、利用者側の機器でポートを開ける手段がありません。同じ「IPv4 over IPv6」でも、この2つは性質がまったく違います。</p>
@@ -484,7 +484,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tbl-hint">※ 2026年9月時点の一般的な傾向です。同じタイプでも建物の配線方式や住所により結果は変わります。</p>
+      <p class="micro">※ 2026年9月時点の一般的な傾向です。同じタイプでも建物の配線方式や住所により結果は変わります。</p>
     </div>
     <p>1列目の「距離の下限」がすべて同じなのが、この表のポイントです。<strong>どれを選んでも①の層は動かない</strong>。回線選びで差がつくのは、あくまで2列目以降だと分かります。</p>
     <p>なお、集合住宅の場合はもうひとつ手前の壁があります。建物への引き込みが<a href="mansion-vdsl">VDSL方式</a>だと上限が頭打ちになり、そもそも選択肢が限られます。自分の建物がどの方式かは、<a href="mansion-internet">マンションのネット回線の調べ方</a>で確認できます。<a href="auhikari-dairiten">auひかりを申し込む窓口の選び方</a>や、エリア外だった場合の代替は<a href="nurohikari-area-gai">NURO光がエリア外のときの選択肢</a>にまとめています。</p>
@@ -555,7 +555,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tbl-hint">※ 判定は目安です。ゲームの種類や求める水準によって、許容できる範囲は変わります。</p>
+      <p class="micro">※ 判定は目安です。ゲームの種類や求める水準によって、許容できる範囲は変わります。</p>
     </div>
     <p>「そもそも最小値が高い」の行が、いちばん見落とされます。地方在住で東京サーバーのタイトルを遊んでいる場合、<strong>そこは回線の問題ではありません</strong>。乗り換えの前に、この行に当てはまっていないかを必ず確認してください。</p>
 
@@ -584,7 +584,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tbl-hint">※ 配信や録画を同時に行う場合は上り帯域の要件が変わります。用途に応じて判断してください。</p>
+      <p class="micro">※ 配信や録画を同時に行う場合は上り帯域の要件が変わります。用途に応じて判断してください。</p>
     </div>
     <p>10ギガそのものが無意味というわけではなく、<strong>ラグ対策としての優先順位が低い</strong>という話です。導入の判断材料は<a href="hikari-10giga">10ギガは必要か</a>にまとめています。仕事のWeb会議と兼用する環境なら、要件が近いので<a href="telework-kaisen">テレワーク向けの回線要件</a>も合わせて読むと、構成を一度で決められます。</p>
 

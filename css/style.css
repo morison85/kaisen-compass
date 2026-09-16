@@ -12,7 +12,7 @@
   --c-sky: #f4f8fe;          /* セクション背景 */
   --c-accent: #f26f1d;       /* CTA(青の補色=オレンジ) */
   --c-accent-dark: #d85c10;
-  --c-green: #0e9f6e;        /* 無料/OKバッジ */
+  --c-green: #0a7a52;        /* 無料/OKバッジ(白地で 5.36:1。#0e9f6e は 3.39 で AA 未満だった) */
   --c-red: #d64545;          /* 注意 */
   --c-text: #26303e;
   --c-text-sub: #5f6b7a;
@@ -96,7 +96,7 @@ a { color: var(--c-primary); }
 .brand__tag {
   display: block;
   font-family: var(--font);
-  font-size: 0.56rem; font-weight: 600; color: #94a3b5;
+  font-size: 0.62rem; font-weight: 600; color: var(--c-text-sub);
   letter-spacing: 0.4em; margin-top: 4px;
 }
 
@@ -128,7 +128,7 @@ a { color: var(--c-primary); }
 }
 .breadcrumb ol { list-style: none; display: flex; gap: 6px; }
 .breadcrumb li + li::before { content: "›"; margin-right: 6px; color: #9aa7b5; }
-.breadcrumb a { color: var(--c-text-sub); text-decoration: none; }
+.breadcrumb a { color: var(--c-text-sub); text-decoration: none; display: inline-block; padding: 3px 0; }
 .breadcrumb a:hover { color: var(--c-primary); text-decoration: underline; }
 
 /* ============ トップ:ヒーロー ============ */
@@ -784,7 +784,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 
 /* ============ レスポンシブ ============ */
 
-@media (max-width: 860px) {
+@media (max-width: 980px) {
   .nav-toggle { display: block; }
   .gnav__menu {
     position: absolute; top: 66px; left: 0; right: 0;
@@ -1233,14 +1233,15 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
     padding: 14px 16px 10px; background: var(--c-bg); border-bottom: 1px solid var(--c-border);
   }
   .cmp-tbl td {
-    display: grid; grid-template-columns: 8.6em 1fr; gap: 6px 12px; align-items: start;
+    display: grid; grid-template-columns: 8.6em 1fr; gap: 0 12px; align-items: start;
     padding: 9px 16px; border-bottom: 1px dashed var(--c-border); min-width: 0;
   }
   .cmp-tbl td::before {
     content: attr(data-label); font-size: .72rem; font-weight: 800;
-    color: var(--c-text-sub); line-height: 1.5; padding-top: 2px;
+    color: var(--c-text-sub); line-height: 1.5; padding-top: 2px; grid-column: 1; grid-row: 1;
   }
   .cmp-tbl td:last-child { display: block; padding: 12px 16px 14px; border-bottom: 0; }
+  .cmp-tbl td > * { grid-column: 2; } /* ラベル(::before)と4つの span が2列に順に流れて1段ずれていた(2026-09-17) */
   .cmp-tbl td:last-child::before { display: none; }
   .cmp-tbl .tcta { display: block; width: 100%; }
   .cmp-tbl .tlogo-wrap img { max-width: 200px; }
@@ -1658,6 +1659,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .brief__thumb a { display: block; width: 100%; height: 100%; line-height: 0; }
 .brief__src, .rs__src { font-size: .68rem; color: var(--c-text-sub); line-height: 1.4; margin: 6px 14px 0; }
 .brief__src a, .rs__src a { color: inherit; text-decoration: underline; }
+.brief__src a, .rs__src a, .svc__src a { display: inline-block; padding: 4px 0; } /* タップ領域を24px前後に(2026-09-17) */
 .brief__card { padding: 8px 14px 0; }
 .brief__card img { display: block; width: 100%; height: auto; border: 1px solid var(--c-border); border-radius: 8px; }
 .rs__shot { display: block; width: 100%; line-height: 0; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; background: #fff; }
@@ -1705,13 +1707,13 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 
 /* ナビ項目が増えても折り返さない(2026-09-10) */
 .gnav__menu a { white-space: nowrap; }
-@media (min-width: 901px) {
+@media (min-width: 981px) {
   .gnav__menu a { padding: 8px 9px; font-size: .84rem; }
   .gnav__cta { padding: 8px 14px !important; font-size: .8rem !important; margin-left: 4px; }
   .brand { flex-shrink: 0; }
   .brand__name { white-space: nowrap; }
 }
-@media (min-width: 901px) and (max-width: 1280px) { .brand__tag { display: none; } }
+@media (min-width: 981px) and (max-width: 1280px) { .brand__tag { display: none; } }
 /* hero simplified 2026-09-11: 右カラムのカードを外し1列に */
 @media (min-width: 960px) { .hero__inner { grid-template-columns: minmax(0, 1fr); gap: 22px; } }
 .hero__copy { max-width: 100%; }
