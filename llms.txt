@@ -78,3 +78,6 @@
 - [光回線ルーターの選び方](https://kaisen-compass.com/articles/hikari-router-erabikata): 最優先はIPv6(IPoE)対応。Wi-Fi 6/6E/7の違いと必要性、買うかレンタルかは利用年数3〜4年が損益分岐の目安。
 - [楽天モバイル×楽天ひかりのセットは得?](https://kaisen-compass.com/articles/rakuten-hikari-mobile-set): セット特典は毎月1,000ポイント永年還元(現金値引きではない)。楽天経済圏度チェックリストと、対象外の人向け代替案(ahamo+GMOとくとくBB光など)を解説。
 - [ポケットWiFi短期レンタルの選び方](https://kaisen-compass.com/articles/pocket-wifi-tanki-rental): 1週間程度は日割りレンタル、2週間〜1ヶ月は縛りなし月契約、2ヶ月超はモバイルルーターの通常契約が日額換算で有利。
+
+### WiFi
+- [実家のネット回線はどう選ぶ?親世代が困らない構成は「誰が直すか」で決まる](https://kaisen-compass.com/articles/jikka-internet-senior): 親世代の実家回線を、機器の台数で決まる直しやすさ・用途・固定電話・名義・電話勧誘対策で選ぶ方法

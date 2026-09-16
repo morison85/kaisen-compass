@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="実家のネット回線を親世代でも困らない構成で選ぶ方法" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:実家の家とWi-Fiの電波 -->
+  <g transform="translate(900, 330) scale(0.9)">
+    <polygon points="20,120 150,20 280,120" fill="#ffd76a"/>
+    <rect x="45" y="118" width="210" height="140" fill="#ffffff"/>
+    <rect x="125" y="178" width="50" height="80" rx="4" fill="#9fc1f5"/>
+    <rect x="70" y="145" width="40" height="36" rx="4" fill="#9fc1f5"/>
+    <rect x="190" y="145" width="40" height="36" rx="4" fill="#9fc1f5"/>
+    <g fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round">
+      <path d="M268 18 a44 44 0 0 1 44 -44" transform="translate(-10,40)"/>
+      <path d="M248 18 a64 64 0 0 1 64 -64" transform="translate(-10,40)" opacity=".7"/>
+    </g>
+    <circle cx="258" cy="58" r="8" fill="#ffffff"/>
+  </g>
+
+  <rect x="70" y="80" width="234" height="56" rx="28" fill="#ffd76a"/>
+  <text x="187" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">直す人で選ぶ</text>
+
+  <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff">実家のネット回線</text>
+  <text x="70" y="360" font-size="82" font-weight="800" fill="#ffd76a">親が困らない選び方</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">機器の台数・固定電話・勧誘対策まで</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
