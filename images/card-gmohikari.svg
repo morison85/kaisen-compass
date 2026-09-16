@@ -6,16 +6,16 @@
   <text x="40" y="78" font-size="44" font-weight="800" fill="#ffffff">GMOとくとくBB光</text>
   <text x="40" y="112" font-size="19" fill="#c9f0ef">GMOインターネット|フレッツ光回線(光コラボ)</text>
   <text x="40" y="185" font-size="17" fill="#5f6b7a">月額(税込・執筆時点の目安)</text>
-  <text x="40" y="240" font-size="38" font-weight="800" fill="#0b2c5f">戸建て 4,818円</text>
-  <text x="40" y="290" font-size="30" font-weight="700" fill="#26303e">マンション 3,773円</text>
+  <text x="40" y="240" font-size="38" font-weight="800" fill="#0b2c5f">戸建て 5,390円</text>
+  <text x="40" y="290" font-size="30" font-weight="700" fill="#26303e">マンション 4,290円</text>
   <g font-size="20" fill="#26303e">
     <circle cx="432" cy="188" r="13" fill="#0e9f6e"/><text x="425" y="195" font-size="16" fill="#fff">✓</text>
-    <text x="458" y="196">セット割なしでも最安級</text>
+    <text x="458" y="196">対応ルーターは無料レンタル</text>
     <circle cx="432" cy="248" r="13" fill="#0e9f6e"/><text x="425" y="255" font-size="16" fill="#fff">✓</text>
     <text x="458" y="256">縛り・違約金なしで気楽</text>
     <circle cx="432" cy="308" r="13" fill="#0e9f6e"/><text x="425" y="315" font-size="16" fill="#fff">✓</text>
     <text x="458" y="316">v6プラス対応で夜も安定</text>
   </g>
   <line x1="40" y1="365" x2="760" y2="365" stroke="#e2e6e4" stroke-width="2"/>
-  <text x="40" y="398" font-size="14" fill="#94a3b5">出典:公式サイト(2026年8月時点)※最新の料金・条件は公式でご確認ください</text>
+  <text x="40" y="398" font-size="14" fill="#94a3b5">出典:公式サイト(2026年9月時点)※最新の料金・条件は公式でご確認ください</text>
 </svg>
