@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="二人暮らし(同棲・夫婦)のWi-Fiをセット割と名義から選ぶ方法" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:二人とWi-Fiの電波 -->
+  <g transform="translate(900, 330) scale(0.9)">
+    <g fill="none" stroke="#ffd76a" stroke-width="12" stroke-linecap="round">
+      <path d="M95 60 a80 80 0 0 1 110 0"/>
+      <path d="M70 32 a115 115 0 0 1 160 0" opacity=".7"/>
+    </g>
+    <circle cx="150" cy="88" r="10" fill="#ffd76a"/>
+    <circle cx="85" cy="150" r="34" fill="#ffffff"/>
+    <path d="M25 270 v-40 a60 60 0 0 1 120 0 v40 z" fill="#ffffff"/>
+    <circle cx="215" cy="150" r="34" fill="#9fc1f5"/>
+    <path d="M155 270 v-40 a60 60 0 0 1 120 0 v40 z" fill="#9fc1f5"/>
+  </g>
+
+  <rect x="70" y="80" width="270" height="56" rx="28" fill="#ffd76a"/>
+  <text x="205" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">家族判定と名義</text>
+
+  <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff">二人暮らしのWi-Fi</text>
+  <text x="70" y="360" font-size="82" font-weight="800" fill="#ffd76a">同棲・夫婦の選び方</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">重なる時間・セット割・名義で決める</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
