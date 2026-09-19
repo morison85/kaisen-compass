@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 18 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 19 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>個人事業主の光回線は法人契約が必要?|経費・固定IP・インボイスの判断は「3つの質問」で決まる【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/kojin-jigyounushi-hikari</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/kojin-jigyounushi-hikari</guid>
+    <pubDate>Sat, 19 Sep 2026 07:00:00 +0900</pubDate>
+    <description>個人事業主の光回線は、多くの場合は個人向けプランを個人名義で契約し、仕事で使った割合を家事按分するのが一般的です。法人向けが必要になるのは法人格・固定IPの業務要件・請求書払いの3つのどれかに当てはまるときだけ。3つの質問の判定表、固定IPが要る業務・要らない業務の一覧と付け方3通り、2年間の費用比較、時間・日数・端末台数・通信量で25〜71%まで振れる按分の根拠の作り方、インボイスの少額特例(税込1万円未満・2029年9月30日まで)、法人成りのときの名義変更の注意点を2026年9月時点の情報でまとめました。</description>
+  </item>
   <item>
     <title>二人暮らしのWi-Fiおすすめ|同棲・夫婦の回線は「セット割の家族判定」と「名義」で決まる【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/futarigurashi-wifi</link>
