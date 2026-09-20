@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 19 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 21 Sep 2026 07:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>WiMAXの解約タイミングはいつがベスト?端末残債と違約金を最小化する手順【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/wimax-kaiyaku-timing</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/wimax-kaiyaku-timing</guid>
+    <pubDate>Mon, 21 Sep 2026 07:00:00 +0900</pubDate>
+    <description>WiMAXの解約で出ていくお金は「契約解除料・端末残債・締め日ズレで生まれる余分な1ヶ月・セット割の消滅」の4つに分解できます。2022年7月の制度改正で解除料はほぼゼロになった一方、端末代27,720円を24回/36回に分けた分割残債と、締め日を1日過ぎると丸1ヶ月分が乗る日割りなしの請求が残りました。自分の持ち出しを出す4行の計算シート、経過月数別の残債早見表、GMOとくとくBBの20日締め・当月末解約という公式の運用、他社違約金を最大40,000円まで補填するキャンペーンの受け取り条件、そして「解約」と「プロバイダ退会」を同時にやると割賦が一括請求になる落とし穴まで、2026年9月時点の各社公式情報で整理しました。</description>
+  </item>
   <item>
     <title>個人事業主の光回線は法人契約が必要?|経費・固定IP・インボイスの判断は「3つの質問」で決まる【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/kojin-jigyounushi-hikari</link>

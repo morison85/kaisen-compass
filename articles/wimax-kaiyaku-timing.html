@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>WiMAXの解約タイミング|端末残債と違約金を最小化する手順 | 回線コンパス</title>
+<meta name="description" content="WiMAXの解約で出ていくお金は「契約解除料・端末残債・締め日ズレの1ヶ月・割引の消滅」の4つ。1つずつ最小化する方法と、自分の解約コストを出す計算シート、ベストな解約月の決め方を2026年9月時点の各社公式情報で整理しました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/wimax-kaiyaku-timing">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WiMAXの解約タイミングはいつがベスト?端末残債と違約金を最小化する手順">
+<meta property="og:description" content="解約費用は4つに分解できます。契約解除料・端末残債・締め日ズレ・割引消滅を1つずつ潰す実践ガイド。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/wimax-kaiyaku-timing">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-wimax-kaiyaku-timing.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-21">
+<meta property="article:modified_time" content="2026-09-21">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-wimax-kaiyaku-timing.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260917a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "WiMAXの解約タイミングはいつがベスト?端末残債と違約金を最小化する手順【2026年】",
+  "description": "WiMAXの解約費用を「契約解除料・端末残債・締め日ズレ・割引消滅」の4つに分解し、それぞれの最小化の方法と解約コスト計算シートを解説。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-wimax-kaiyaku-timing.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-09-21",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/wimax-kaiyaku-timing"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "WiMAXの解約金は2026年でもまだ高いですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2022年7月の電気通信事業法の改正以降に契約したプランなら、契約解除料は0円〜月額1ヶ月分程度が一般的です。解除料そのものを設定していない窓口も増えています。高額な解除料が残っているのは、改正前のプランを使い続けているケースが中心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "端末残債はどうやって調べればいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "マイページの「割賦契約」「端末代金」といった欄に残金が表示される窓口が多いです。表示が見つからない場合は「月々の端末代金 × 残りの分割回数」で概算できます。正確な金額はサポートに問い合わせるのが確実です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "解約月の料金は日割りになりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WiMAXでは日割りしない窓口が主流です。GMOとくとくBB WiMAXもBIGLOBE WiMAXも、解約月の月額は全額かかると公式に案内しています。だからこそ締め日を外さないことが金額に直結します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "端末は返却しなければいけませんか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "購入プランなら返却不要の窓口が多く、レンタルプランなら期限内の返却が必要です。GMOとくとくBB WiMAXは購入プランの端末・SIMカードについて返却不要と明記しています。契約形態によって扱いが逆になるので、契約書面で確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "解約と同時にプロバイダも退会したほうがいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "端末の分割が残っているうちは、退会しないほうが安全なケースがあります。BIGLOBEの場合、WiMAXを解約しても割賦の分割払いは継続できますが、BIGLOBEを退会すると残金が一括払いになると案内されています。残債が終わってから退会を検討するのが無難です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ネットが使えない期間をつくらずに乗り換えられますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "できます。WiMAXは解約手続き後も解約日(月末)まで使える窓口が多いので、新しい回線の開通を確認してから解約を申し込めば空白は生まれません。光回線に移る場合は工事日が読みにくいため、開通確認後に締め日へ間に合わせる段取りがおすすめです。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "WiFi・ルーター", "item": "https://kaisen-compass.com/category/wifi" },
+    { "@type": "ListItem", "position": 3, "name": "WiMAXの解約タイミング" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/wifi">WiFi・ルーター</a></li>
+    <li>WiMAXの解約タイミング</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">WiFi・ルーター</span>
+    <h1 class="article-title">WiMAXの解約タイミングはいつがベスト?端末残債と違約金を最小化する手順【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-21">2026年9月21日</time></span>
+      <span>公開日:<time datetime="2026-09-21">2026年9月21日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-wimax-kaiyaku-timing.svg" alt="WiMAXの解約で損しないタイミングの決め方" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「WiMAXをやめたいけれど、解約金がいくらかかるのか怖くて手が止まっている」。この相談、かなり多いです。そして話を聞いていくと、ほとんどの人が<strong>怖がる場所を間違えています</strong>。</p>
+    <p>2026年時点のWiMAXで本当に痛いのは、数年前によく話題になった「高額な違約金」ではありません。契約解除料は制度改正で大きく下がりました。代わりに残ったのが、<strong>端末代金の分割残債</strong>と、<strong>手続きを1日遅らせただけで消える1ヶ月分の月額</strong>です。この記事は、その4つの費用を1つずつ潰していくための手順書です。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>WiMAXの解約費用は<strong>①契約解除料 ②端末の分割残債 ③締め日ズレで生まれる余分な1ヶ月 ④セット割・回線割の消滅</strong>の4つに分解できます。2026年の契約なら①はほぼゼロ。狙うべきタイミングは<strong>「端末の分割が終わった月の、締め日より前」</strong>。それを待てないなら、<strong>他社の違約金・残債を負担するキャンペーンで乗り換える</strong>のが現実的な最短ルートです。</p>
+    </div>
+
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank"><span>解約金で悩まない窓口に移るなら:BIGLOBE WiMAXの条件を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/biglobe-wimax-600.webp 600w, ../images/official/biglobe-wimax.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/biglobe-wimax.jpg" srcset="../images/official/biglobe-wimax-600.jpg 600w, ../images/official/biglobe-wimax.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="BIGLOBE WiMAXの公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://join.biglobe.ne.jp/mobile/wimax/5g/" rel="nofollow noopener" target="_blank">BIGLOBE WiMAX公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-biglobe-wimax.svg" alt="BIGLOBE WiMAXのサービス概要" width="800" height="420" loading="lazy" decoding="async"></div>
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#bunkai">解約費用は4つに分解できる</a></li>
+        <li><a href="#keisan">自分の解約コストを出す計算シート</a></li>
+        <li><a href="#zandai">端末残債:「実質無料」が一番の落とし穴</a></li>
+        <li><a href="#shimebi">締め日カレンダー:1日遅れると1ヶ月分</a></li>
+        <li><a href="#best">ベストな解約タイミング3パターン</a></li>
+        <li><a href="#hoten">残債と違約金を「負担してもらう」方法</a></li>
+        <li><a href="#otoshiana">見落としがちな落とし穴5つ</a></li>
+        <li><a href="#norikae">解約後の乗り換え先の決め方</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">解約後の回線がまだ決まっていないなら</p>
+      <p>WiMAXをやめた後に光回線へ行くのか、別のホームルーターに移るのか。使い方から逆算して候補を絞れます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="bunkai">解約費用は4つに分解できる</h2>
+    <p>「WiMAXの解約金」とひとことで呼ばれているものは、性質のまったく違う4つの費用が混ざっています。混ざったままだと対策が立てられないので、まず分けます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>費用の種類</th><th>金額の目安(2026年9月時点)</th><th>減らせるか</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>① 契約解除料</th>
+            <td class="best">0円〜月額1ヶ月分程度</td>
+            <td>更新月を待つ/そもそも0円の窓口が多い</td>
+          </tr>
+          <tr>
+            <th>② 端末の分割残債</th>
+            <td>0円〜27,000円前後</td>
+            <td>分割終了まで待つ/負担キャンペーンを使う</td>
+          </tr>
+          <tr>
+            <th>③ 締め日ズレの1ヶ月</th>
+            <td>4,000〜6,000円程度</td>
+            <td>締め日前に手続きすれば0円にできる</td>
+          </tr>
+          <tr>
+            <th>④ 割引の消滅</th>
+            <td>月数百円〜1,000円程度</td>
+            <td>他サービスの契約を見直して調整</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>このうち<strong>①はもう怖がる必要がありません</strong>。2022年7月に施行された電気通信事業法の改正で、期間拘束契約の違約金に適切な上限を設けるというルールが入り、通信各社は解除料を大きく引き下げました。実務上は「月額料金1ヶ月分相当が上限」という水準に落ち着いていて、WiMAXでは解除料そのものを撤廃した窓口も珍しくありません。</p>
+    <p>たとえばBIGLOBE WiMAXは、2022年7月1日以降に「ギガ放題プラス」「ギガ放題プラスS」を申し込んだ契約について、最低利用期間も契約解除料も設定していないと案内しています。この条件に当てはまるなら<strong>いつ解約しても①は0円</strong>です。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ ただし「2022年6月以前の契約」は別世界</div>
+      <p style="margin:0;">改正前のプラン(WiMAX 2+時代の3年契約など)をそのまま使い続けている場合、旧ルールの高額な解除料が生きている可能性があります。契約書面かマイページで<strong>「いつ申し込んだプランか」</strong>をまず確認してください。5年以上同じ端末を使い続けている人は、ここに該当しがちです。</p>
+    </div>
+    <p>そして本題は②と③です。この2つが、いまのWiMAXで金額の大半を占めます。</p>
+
+    <h2 id="keisan">自分の解約コストを出す計算シート</h2>
+    <p>感覚で判断すると必ず迷うので、数字を入れてしまいましょう。マイページを開いて、次の4行を埋めるだけです。所要10分ほど。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>記入欄</th><th>どこで調べるか</th><th>記入例</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>A 契約解除料</th>
+            <td>マイページの「契約内容」「更新月」欄。表示がなければサポートに確認</td>
+            <td>0円</td>
+          </tr>
+          <tr>
+            <th>B 端末残債</th>
+            <td>「割賦契約」「端末代金」欄。無ければ<strong>月々の端末代 × 残りの回数</strong>で計算</td>
+            <td>1,155円 × 9回 = 10,395円</td>
+          </tr>
+          <tr>
+            <th>C 解約月の月額</th>
+            <td>日割りされない前提で、ふだんの請求額をそのまま記入</td>
+            <td>4,928円</td>
+          </tr>
+          <tr>
+            <th>D 失う割引(年額)</th>
+            <td>セット割・複数回線割などの月額 × 12</td>
+            <td>0円(セット割なし)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>A + B が「今すぐ解約したときの持ち出し」</strong>です。記入例なら10,395円。ここに乗り換え先の初期費用(事務手数料3,300円前後)が乗ります。</p>
+    <p>判断の軸はシンプルで、<strong>「A + B」より「乗り換えで下がる月額 × 12ヶ月」のほうが大きければ、待たずに動いたほうが得</strong>になる傾向があります。記入例で月1,000円下がるなら年12,000円なので、10,395円を払ってでも動く価値がある計算です。逆に月300円しか変わらないなら、分割が終わるまで待つという判断になります。</p>
+    <p>ここにDを加えると精度が上がります。スマホのセット割が月1,100円ついているなら、WiMAXをやめた瞬間に年13,200円の値上がりが起きるのと同じこと。<strong>「WiMAXの月額」ではなく「家全体の通信費」で比べる</strong>のがコツです。家全体で見直す手順は<a href="sumaho-ryokin-minaoshi">スマホ料金の見直し</a>にまとめています。</p>
+    <div class="box-point">
+      <div class="box-point__t">✅ 計算シートを使う前に確認する3つ</div>
+      <ul>
+        <li>端末代は<strong>24回払いか36回払いか</strong>(残債の消えるスピードが1.5倍違う)</li>
+        <li>いま何ヶ月目か(<strong>端末発送月を1ヶ月目</strong>としてカウントする窓口が多い)</li>
+        <li>解約月の月額が<strong>日割りされるか、全額か</strong>(WiMAXは全額の窓口が主流)</li>
+      </ul>
+    </div>
+
+    <h2 id="zandai">端末残債:「実質無料」が一番の落とし穴</h2>
+    <p>WiMAXの端末は、多くの窓口で<strong>「端末代を24回または36回の分割にして、同額を毎月割り引く」</strong>という形で提供されています。使い続けているかぎり支払いがゼロに見えるので「実質無料」と呼ばれますが、<strong>割引が止まるのは解約した瞬間</strong>です。分割のほうだけが残ります。</p>
+    <p>金額感を出しておきます。端末代27,720円というのは、各社で共通してよく使われる価格帯です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>経過月数</th><th>24回払い(月1,155円)の残債</th><th>36回払い(月770円)の残債</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>6ヶ月目で解約</th><td>20,790円</td><td>23,100円</td></tr>
+          <tr><th>12ヶ月目で解約</th><td>13,860円</td><td>18,480円</td></tr>
+          <tr><th>18ヶ月目で解約</th><td>6,930円</td><td>13,860円</td></tr>
+          <tr><th>24ヶ月目で解約</th><td class="best">0円</td><td>9,240円</td></tr>
+          <tr><th>36ヶ月目で解約</th><td class="best">0円</td><td class="best">0円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 端末代27,720円を想定した計算例です。実際の端末価格・分割回数・残債額は窓口と契約時期で異なります。必ずマイページの表示額でご確認ください。</p>
+    <p>ここで効いてくるのが<strong>分割回数の差</strong>です。36回払いは月々の負担が軽く見えますが、<strong>3年間ずっと「解約すると残債が出る状態」に縛られる</strong>ということでもあります。24回払いなら2年で身軽になれる。月額の安さだけで窓口を選ぶと、この差を見落とします。</p>
+    <p>同じ表を逆から読むと、<strong>1年で解約する前提なら端末は買わないほうがいい</strong>という結論も出ます。24回払いでも12ヶ月目の残債は13,860円。1年間の月額を2,000円安くできたとしても、浮いた24,000円の半分以上が残債で消える計算です。</p>
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">相談を受けていて一番多いのが「縛りなしだから解約金ゼロだと思っていた」というパターンです。契約解除料と端末残債は別の財布なので、"縛りなし"をうたう窓口でも端末を分割で買っていれば残債は出ます。逆に、端末をレンタルにしている窓口なら残債は発生しません(その代わり返却が必要)。<strong>契約解除料・端末残債・返却義務の3点</strong>をセットで見るクセをつけると、判断がぶれなくなります。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+    <p>WiMAXの窓口ごとの料金構成やキャンペーンの型は<a href="wimax-provider">WiMAXプロバイダの選び方</a>で比較しています。これから契約する人は、そちらで「分割回数」も見比べてください。</p>
+
+    <h2 id="shimebi">締め日カレンダー:1日遅れると1ヶ月分</h2>
+    <p>4つの費用のうち、<strong>もっとも見落とされていて、もっとも簡単に避けられる</strong>のが③の締め日ズレです。</p>
+    <p>WiMAXの解約は「申し込んだ日に止まる」のではなく、<strong>「締め日までに申し込めば当月末で解約、過ぎたら翌月末で解約」</strong>という方式が一般的です。そして解約月の月額は日割りされません。つまり手続きが1日遅れただけで、まるまる1ヶ月分(4,000〜6,000円程度)を余計に払うことになります。</p>
+    <p>具体例として、GMOとくとくBB WiMAXは公式サイトで<strong>「毎月20日を締め切りとして、当月末でのご解約」「当月21日以降の手続きは翌月末日で解約」「解約月の日割り請求は行っていない」</strong>と明記しています。締め日を公表していない窓口もあるため、金額を確定させたいなら自分の契約元で必ず確認してください。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">月初〜10日:自分の窓口の締め日を確認する</div>
+        <p>公式サイトの解約ページかFAQで「◯日までの手続きで当月末解約」という記載を探します。見つからない場合はサポートに<strong>「何日までに手続きすれば当月末で解約になりますか」</strong>と直接聞くのが確実です。Web手続きと電話で締め時刻が違う窓口もあります。</p>
+      </li>
+      <li>
+        <div class="steps__t">締め日の3日前まで:手続きを完了させる</div>
+        <p>Web手続きなら24時間受付のことが多いですが、電話のみ・受付時間ありの窓口もあります。締め日当日に電話が繋がらない事故を避けるため、<strong>3営業日の余裕</strong>を見ておきましょう。締め日前ならキャンセルできる窓口もあるので、早く出して損はありません。</p>
+      </li>
+      <li>
+        <div class="steps__t">解約日(月末)まで:回線は使えたまま</div>
+        <p>手続きを出しても、多くの窓口では<strong>解約日である月末まで通常どおり使えます</strong>。ここを知らずに「早く申し込むと早く止まってしまう」と勘違いして先延ばしにする人がいますが、実際は逆です。早めに出したほうが安全。</p>
+      </li>
+      <li>
+        <div class="steps__t">解約後:機器の扱いと最終請求を確認する</div>
+        <p>購入プランなら端末の返却が不要な窓口が多く、レンタルプランなら期限内の返却が必須です。返却遅れは機器損害金の対象になります。最後の請求明細で、残債・解除料・当月分が想定どおりかを必ず確認してください。</p>
+      </li>
+    </ol>
+    <div class="box-point">
+      <div class="box-point__t">💡 締め日ズレを味方につける、裏返しの使い方</div>
+      <ul>
+        <li>乗り換え先の開通が<strong>月末にずれ込みそう</strong>なら、あえて今月の締め日を見送って翌月末解約にすると、空白期間を作らずに済みます</li>
+        <li>逆に<strong>もう使っていない</strong>なら、1日でも早く締め日に間に合わせるほど月額が浮きます</li>
+        <li>光回線に移る場合は<a href="hikari-kaiyaku">光回線の解約手順</a>と同じく「新回線の開通確認 → 旧回線の解約」の順番が原則です</li>
+      </ul>
+    </div>
+
+    <h2 id="best">ベストな解約タイミング3パターン</h2>
+    <p>ここまでの4項目を踏まえると、解約に適した月は3つに絞れます。自分がどれに当てはまるかで動き方を決めてください。</p>
+
+    <h3>パターンA:端末の分割が終わった直後(理想形)</h3>
+    <p>24回払いなら25ヶ月目、36回払いなら37ヶ月目。<strong>残債0円・解除料0円で、持ち出しはゼロ</strong>になります。あと2〜3ヶ月で分割が終わるという人は、基本的に待ったほうが得です。</p>
+    <p>ただし「待つ」ことにもコストがあります。月1,500円安い回線に移れるなら、6ヶ月待つあいだに9,000円を捨てていることになる。計算シートのB(残債)と比べて、<strong>残債のほうが小さければ待たずに動く</strong>のが合理的です。</p>
+
+    <h3>パターンB:更新月がある旧プランの人 → 更新月を狙う</h3>
+    <p>2022年6月以前の契約で最低利用期間が設定されている場合は、契約更新月(多くは24ヶ月目または36ヶ月目の前後)に解約すれば解除料がかからない設計になっています。<strong>更新月は1〜3ヶ月の幅で設定されていることが多い</strong>ので、マイページで正確な月を確認し、その月の締め日前に手続きします。</p>
+    <p>この場合、<strong>更新月を1ヶ月でも過ぎると再び拘束期間が始まる</strong>契約もあります。更新月がわかったら、その月の頭にカレンダーへリマインダーを置いておくのが確実です。</p>
+
+    <h3>パターンC:待てない・待つ理由がない人 → 負担キャンペーンで乗り換える</h3>
+    <p>「引っ越す」「速度に耐えられない」「光回線が開通した」など、今すぐ動く理由があるなら、残債が消えるのを待つ意味はありません。<strong>他社の違約金・端末残債を負担するキャンペーンを使って、持ち出しを実質ゼロに寄せる</strong>のが現実的です。次章で詳しく扱います。</p>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 「そもそも電波が入らない」なら初期契約解除も選択肢</div>
+      <p style="margin:0;">契約直後で「自宅で使いものにならない」というケースには、初期契約解除制度があります。GMOとくとくBB WiMAXの場合、<strong>契約書面の受領日または端末の到着日を初日として8日以内</strong>に書面と返却物を指定先へ送付する、という運用が公式に案内されています。適用条件・返却物・手数料の扱いは窓口ごとに異なるので、届いてすぐ使えなかった時点で公式ページを確認してください。契約前の対策は<a href="wimax-area">WiMAXのエリア確認方法</a>にまとめています。</p>
+    </div>
+
+    <h2 id="hoten">残債と違約金を「負担してもらう」方法</h2>
+    <p>解約費用を減らす方法は、実は「待つ」だけではありません。<strong>次の契約先に払ってもらう</strong>という手があります。</p>
+
+    <h3>方法1:他社違約金補填キャンペーンを使う</h3>
+    <p>代表例がGMOとくとくBB WiMAXの他社違約金補填キャンペーンです。公式サイトによると、他社からの乗り換えで<strong>解約違約金等相当額を最大40,000円までキャッシュバック</strong>する設計になっています。ただし受け取りまでの導線が長いので、条件を先に把握しておくことが前提です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>確認項目</th><th>公式サイトの記載(2026年9月時点)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>上限額</th><td class="best">最大40,000円</td></tr>
+          <tr><th>必要な手続き</th><td>申込完了後に届く案内メールの手順に沿って、解約書類を送付</td></tr>
+          <tr><th>受け取り時期</th><td>端末発送月を1ヶ月目として11ヶ月目に口座登録の案内 → 登録の翌月末に振込</td></tr>
+          <tr><th>失格条件</th><td>特典付与時に解約していると対象外(ほかにも条件あり)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ポイントは<strong>受け取りが約1年後</strong>という点です。その間に解約すると特典が消えます。つまりこのキャンペーンは「1年以上は使う」と決めた人向け。短期で使うつもりなら、そもそも補填を当てにしない設計にすべきです。受け取り忘れの防ぎ方は<a href="hikari-cashback">キャッシュバックの罠と対策</a>で整理した方法がそのまま使えます。</p>
+
+    <h3>方法2:同じ系列内の「乗り換えサポート」を使う</h3>
+    <p>GMOとくとくBB WiMAXには「どんなときも解約サポート」という仕組みがあり、速度などに満足できなかった場合に、同社が提供する光回線へ<strong>解約違約金無料で乗り換えられる</strong>と案内されています。WiMAXから光回線への移行を考えているなら、まず自分の契約元に同種の制度がないか確認する価値があります。窓口のサポートページに載っていない救済措置が、電話で聞くと出てくることもあります。</p>
+
+    <h3>方法3:そもそも「残債が出ない契約」に移る</h3>
+    <p>次の契約で同じ悩みを繰り返さないための方法です。端末を<strong>レンタル</strong>にしている窓口を選べば、分割残債という概念自体が発生しません(その代わり返却は必要)。たとえば5G CONNECTは、最新端末レンタルプランを<strong>解約違約金なし</strong>と案内しています。購入プランのほうは端末代27,720円を24ヶ月の分割にして、契約を続けるかぎり支払いが免除される方式です。</p>
+    <p>「光回線が開通するまでのつなぎ」「単身赴任の2年間だけ」のように<strong>終わりが見えている使い方</strong>なら、レンタル型・縛りなし型のほうが総額で有利になりやすい傾向があります。短期利用の選択肢は<a href="pocket-wifi-tanki-rental">短期レンタルWiFiの選び方</a>にもまとめています。</p>
+    <div class="svc__banner"><img src="../images/card-5gconnect.svg" alt="5G CONNECTのサービス概要(縛りなし・端末レンタル)" width="800" height="420" loading="lazy" decoding="async"></div>
+
+    <div class="cta">
+      <div class="cta__t">🪶 次は残債で悩まない契約にする</div>
+      <p>契約解除料が設定されておらず、特典が月額割引型のBIGLOBE WiMAXは、キャッシュバックの申請忘れで損をする構造がありません。口座振替に対応している数少ない窓口でもあります。端末を分割で買う場合の回数と残債の出方は、申込前に公式ページで確認してください。</p>
+      <!-- A8: BIGLOBE WiMAX 既存記事(wimax-provider.html)からコピー -->
+      <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXの最新条件を見る<small>契約解除料・端末代金の扱いを公式ページで確認できます</small></a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" alt="">
+      <!-- もしも: 5G CONNECT(p_id=4143) wimax-provider.html からコピー -->
+      <a class="btn btn--sub" href="//af.moshimo.com/af/c/click?a_id=5781568&amp;p_id=4143&amp;pc_id=10502&amp;pl_id=56647" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank">端末レンタル・縛りなしも見る(5G CONNECT)</a><img src="//i.moshimo.com/af/i/impression?a_id=5781568&amp;p_id=4143&amp;pc_id=10502&amp;pl_id=56647" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy">
+      <p class="micro">※ 料金・契約期間・端末の扱い・キャンペーン条件は変更されることがあります。申込前に必ず公式サイトで最新の条件をご確認ください。</p>
+    </div>
+
+    <h2 id="otoshiana">見落としがちな落とし穴5つ</h2>
+    <p>ここからは、金額表には出てこないのに後から効いてくるポイントです。相談を受けていて「知らなかった」と言われる頻度が高い順に並べました。</p>
+
+    <h3>落とし穴1:「解約」と「プロバイダ退会」は別の手続き</h3>
+    <p>これが最大の盲点です。BIGLOBE WiMAXの場合、端末の割賦契約が残っていても<strong>解約後は月々の分割払いをそのまま続けられます</strong>。ところが同じタイミングで<strong>BIGLOBE自体を退会すると、残金が一括払いに切り替わる</strong>と公式サポートに明記されています。</p>
+    <p>「どうせ使わないからアカウントも消しておこう」という善意の一手が、数万円の一括請求を呼ぶわけです。<strong>残債があるうちは、サービスの解約だけにとどめてアカウントは残す</strong>。これを覚えておくだけで事故が防げます。他社でも似た設計の可能性があるので、退会ボタンを押す前に割賦の残りを確認してください。</p>
+
+    <h3>落とし穴2:セット割・複数回線割が連鎖して外れる</h3>
+    <p>WiMAXを解約すると、スマホ側のセット割や、同一プロバイダ内の複数回線割が外れることがあります。<strong>「WiMAXの月額が消えたのに、家全体の通信費はあまり下がらない」</strong>という現象は、たいていこれが原因です。解約前に、同じIDで契約しているサービスの割引条件を一度見ておきましょう。</p>
+
+    <h3>落とし穴3:メールアドレスなど付帯サービスの格下げ</h3>
+    <p>プロバイダのメールアドレスを使っている場合、回線解約にともなって無料プランへ自動移行し、<strong>保存期間の短縮やメールソフトでの利用不可</strong>といった制限がかかることがあります。BIGLOBEはこの扱いを解約ページで明示していて、継続したい場合は有料のスタンダードプラン(月220円)への申し込みが別途必要と案内しています。仕事や公的な手続きにそのアドレスを登録している人は要注意です。</p>
+
+    <h3>落とし穴4:端末の返却要否を取り違える</h3>
+    <p>購入プランは返却不要、レンタルプランは返却必須、というのが基本形です。GMOとくとくBB WiMAXは購入プランについて<strong>「端末・SIMカードの返却は不要」「送っても返せない」</strong>と明記しています。逆にレンタルプランで返却が遅れると損害金の対象になります。自分がどちらの契約かを、契約書面で確認してください。</p>
+
+    <h3>落とし穴5:口座振替・請求書払いは停止タイミングがずれる</h3>
+    <p>クレジットカード払いと違い、口座振替や請求書払いは<strong>解約月の翌々月まで請求が続く</strong>ことがあります。これは二重請求ではなく、請求サイクルの都合であることがほとんどです。最終請求が届くまでは、引き落とし口座を解約したりカードを止めたりしないようにしましょう。</p>
+
+    <h2 id="norikae">解約後の乗り換え先の決め方</h2>
+    <p>WiMAXをやめる理由によって、次に行くべき場所は変わります。ここを間違えると、また半年で解約したくなります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>やめる理由</th><th>次の候補</th><th>理由</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>速度・安定性に不満</th>
+            <td class="best">光回線</td>
+            <td>無線である以上、WiMAXの窓口を変えても電波環境は変わらない</td>
+          </tr>
+          <tr>
+            <th>月額が高い</th>
+            <td>別のWiMAX窓口/ホームルーター</td>
+            <td>回線は同じなので、窓口の料金設計だけで月1,000円前後変わる</td>
+          </tr>
+          <tr>
+            <th>引っ越し・使う期間が短い</th>
+            <td>縛りなし・レンタル型</td>
+            <td>残債と解除料を構造的に発生させない</td>
+          </tr>
+          <tr>
+            <th>外に持ち出さなくなった</th>
+            <td>ホームルーター/光回線</td>
+            <td>据え置き前提なら通信量の上限と料金の条件が良くなる</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>「速度が理由」の人が別のWiMAX窓口に移るのは、ほぼ確実に失敗します。WiMAXはどの窓口でも同じ回線設備を使っているため、<strong>窓口を変えても速度は変わりません</strong>。変わるのは料金とサポートだけです。この構造は<a href="wimax-vs-homerouter">WiMAXとホームルーターの違い</a>で整理しています。</p>
+    <p>逆に「月額が高い」が理由なら、窓口の乗り換えはよく効きます。同じ回線・同じ端末で月額だけが下がるからです。窓口別の料金は<a href="wimax-provider">WiMAXプロバイダ比較</a>、据え置き型を含めた選択肢は<a href="home-router">ホームルーター3種比較</a>を見てください。</p>
+    <p>そして、通信量の上限が心配で解約を考えている人は、先に<a href="wimax-mugen-hontou">WiMAXの無制限は本当か</a>で速度制御ルールの実際を確認したほうがいいかもしれません。使い方を少し変えるだけで解約せずに済むケースもあります。電気代まで含めた維持コストを比べたいなら<a href="homerouter-denkidai">ホームルーターの電気代</a>もどうぞ。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>WiMAXの解約金は2026年でもまだ高いですか?</summary>
+        <div class="faq__a">2022年7月の電気通信事業法の改正以降に契約したプランなら、契約解除料は0円〜月額1ヶ月分程度が一般的です。解除料そのものを設定していない窓口も増えています。高額な解除料が残っているのは、改正前のプランを使い続けているケースが中心です。</div>
+      </details>
+      <details>
+        <summary>端末残債はどうやって調べればいいですか?</summary>
+        <div class="faq__a">マイページの「割賦契約」「端末代金」といった欄に残金が表示される窓口が多いです。表示が見つからない場合は「月々の端末代金 × 残りの分割回数」で概算できます。正確な金額はサポートに問い合わせるのが確実です。</div>
+      </details>
+      <details>
+        <summary>解約月の料金は日割りになりますか?</summary>
+        <div class="faq__a">WiMAXでは日割りしない窓口が主流です。GMOとくとくBB WiMAXもBIGLOBE WiMAXも、解約月の月額は全額かかると公式に案内しています。だからこそ締め日を外さないことが金額に直結します。</div>
+      </details>
+      <details>
+        <summary>端末は返却しなければいけませんか?</summary>
+        <div class="faq__a">購入プランなら返却不要の窓口が多く、レンタルプランなら期限内の返却が必要です。GMOとくとくBB WiMAXは購入プランの端末・SIMカードについて返却不要と明記しています。契約形態によって扱いが逆になるので、契約書面で確認してください。</div>
+      </details>
+      <details>
+        <summary>解約と同時にプロバイダも退会したほうがいいですか?</summary>
+        <div class="faq__a">端末の分割が残っているうちは、退会しないほうが安全なケースがあります。BIGLOBEの場合、WiMAXを解約しても割賦の分割払いは継続できますが、BIGLOBEを退会すると残金が一括払いになると案内されています。残債が終わってから退会を検討するのが無難です。</div>
+      </details>
+      <details>
+        <summary>ネットが使えない期間をつくらずに乗り換えられますか?</summary>
+        <div class="faq__a">できます。WiMAXは解約手続き後も解約日(月末)まで使える窓口が多いので、新しい回線の開通を確認してから解約を申し込めば空白は生まれません。光回線に移る場合は工事日が読みにくいため、開通確認後に締め日へ間に合わせる段取りがおすすめです。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:怖いのは違約金ではなく、残債と締め日</h2>
+    <ul>
+      <li>解約費用は<strong>①解除料 ②端末残債 ③締め日ズレ ④割引消滅</strong>の4つに分解する</li>
+      <li>2026年の契約なら<strong>①はほぼ0円</strong>。金額の大半は②と③</li>
+      <li>理想は<strong>分割が終わった月の締め日前</strong>。待てないなら負担キャンペーンで相殺する</li>
+      <li><strong>残債があるうちにプロバイダを退会しない</strong>(一括請求になることがある)</li>
+      <li>速度が理由なら窓口変更では解決しない。<strong>光回線へ移る</strong>のが筋</li>
+    </ul>
+    <p>次の回線が決まっていないなら<a href="../shindan">回線診断</a>で候補を出すか、<a href="home-router">ホームルーター比較</a>から入るのが早いです。引っ越しが絡む場合は<a href="hikkoshi-internet">引越しのネット回線ガイド</a>のほうが手順に沿っています。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>総務省「電気通信消費者情報コーナー 消費者保護ルール」— 期間拘束契約の違約金の上限(令和4年7月1日施行分)</li>
+        <li>GMOとくとくBB WiMAX 公式「WiMAXの解約」— 20日締め・当月末解約・日割りなし・端末返却不要・初期契約解除(2026年9月確認)</li>
+        <li>GMOとくとくBB WiMAX 公式「他社違約金補填キャンペーン」— 最大40,000円・申請手順・受け取り時期(2026年9月確認)</li>
+        <li>BIGLOBE会員サポート「BIGLOBE WiMAX +5G 解約手続き」— 解約月の料金は全額・割賦契約と退会の関係・付帯サービスの扱い(2026年9月確認)</li>
+        <li>5G CONNECT 公式サイト — プラン別の月額・端末代金の扱い・契約期間(2026年9月確認)</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">解約金で悩まない契約に切り替える</div>
+    <p>契約解除料が設定されておらず、特典が月額割引型なので申請忘れのリスクもありません。口座振替に対応している数少ないWiMAX窓口でもあります。端末を分割で買う場合の回数と残債の出方だけ、申込前に公式ページで確認してください。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BSJOH" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="BIGLOBE WiMAX +5Gの公式キャンペーンバナー" src="https://www27.a8.net/svt/bgt?aid=260829413076&amp;wid=002&amp;eno=01&amp;mid=s00000000040014074000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BSJOH" alt=""></div>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXのキャンペーンを見る<small>割引後の月額と適用条件を確認できます</small></a>
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="wimax-provider">WiMAXプロバイダ比較|同じ回線でも月額が変わる理由と窓口の選び方</a></li>
+      <li><a href="wimax-vs-homerouter">WiMAXとホームルーターの違い|持ち運びと据え置き、どちらを選ぶべきか</a></li>
+      <li><a href="hikari-kaiyaku">光回線の解約手順|違約金・工事費残債・機器返却の落とし穴</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260910b" defer></script>
+</body>
+</html>
