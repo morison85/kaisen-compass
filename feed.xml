@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 21 Sep 2026 07:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 21 Sep 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>ホームルーターの引越し手続き|住所変更を忘れると止まる3社のルール差【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/homerouter-hikkoshi</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/homerouter-hikkoshi</guid>
+    <pubDate>Mon, 21 Sep 2026 12:00:00 +0900</pubDate>
+    <description>ホームルーターは工事不要ですが、引越しの手続きまで不要とは限りません。ドコモ home 5G と SoftBank Air は設置場所住所の登録が必須で、変更せずに別の場所で使うと利用できなくなり、登録住所以外での利用が確認されれば利用停止の措置の対象になります。一方でWiMAXのホームルーターは契約住所以外での利用が認められており、手続きは契約者情報の更新という位置づけです。3社のルール差の早見表、サービス別の手続き手順、引越し1ヶ月前から引越し後1週間までのタイムライン、やりがちな失敗5つ、そして新居で電波が悪かったときに初期契約解除が使えない理由と「残債+契約解除料+当月分」で損失を最小にするリカバリー判定まで、2026年9月時点の各社公式情報で整理しました。</description>
+  </item>
   <item>
     <title>WiMAXの解約タイミングはいつがベスト?端末残債と違約金を最小化する手順【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/wimax-kaiyaku-timing</link>
