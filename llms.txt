@@ -37,6 +37,7 @@
 - [光回線が遅いときの原因と直し方](https://kaisen-compass.com/articles/hikari-osoi): 遅さの8割は接続方式かルーター。5分の切り分け手順とIPv6 IPoEへの切り替え、乗り換えを考えるべき条件まで。
 - [2026年のネット回線 値上げまとめ](https://kaisen-compass.com/articles/neage-2026): WiMAX各社が10月に月330〜630円、SoftBank Airが12月に月330円の改定。窓口別の改定額と違約金なし解約の確認手順。
 - [光回線の初期費用と工事費](https://kaisen-compass.com/articles/hikari-shokihiyou): 事務手数料3,300円＋工事費が基本。「実質無料」の仕組みと途中解約時の残債、総額の計算式を解説。
+- [光回線キャンペーン比較(2026年秋)](https://kaisen-compass.com/articles/hikari-campaign-hikaku): 6社のキャンペーンを受取時期で比較。10月申込なら入金は1〜3ヶ月後(auひかり代理店)から約17ヶ月後(NURO光公式特設)まで。受取前は解約しにくい「見えない縛り」とソフトバンク光12月値上げ前の申込の考え方。
 - [ホームルーターの引越し手続き](https://kaisen-compass.com/articles/homerouter-hikkoshi): home 5G・SoftBank Airは設置場所住所の変更が必須で怠ると利用停止の対象。WiMAX系は契約住所以外での利用が認められている。3社のルール差と手続き手順。
 - [WiMAXの解約タイミング](https://kaisen-compass.com/articles/wimax-kaiyaku-timing): 解約費用は解除料・端末残債・締め日ズレ・割引消滅の4つ。2026年は解除料ほぼ0円で、残債と20日締めの1ヶ月分が本丸。
 
