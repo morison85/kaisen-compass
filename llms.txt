@@ -71,6 +71,7 @@
 - [編集ポリシー・広告掲載について](https://kaisen-compass.com/policy): 掲載順・評価は報酬額でなく読者への適合度で決定。広告を含む記事にはその旨を明記。
 
 ### 光回線
+- [光回線の障害は本当に多い?つながらないときの5分切り分けと確認先](https://kaisen-compass.com/articles/hikari-shougai): 光回線がつながらないときの切り分け手順、回線別の障害情報の確認先、約款上の料金返還条件(24時間ルール)を解説
 - [個人事業主の光回線は法人契約が必要?](https://kaisen-compass.com/articles/kojin-jigyounushi-hikari): 個人事業主・フリーランスの光回線を、法人格・固定IPの業務要件・請求書払いの3つの質問で個人向けか法人向けかに振り分ける。家事按分の根拠の作り方、固定IPの費用比較、インボイスの少額特例、法人成り時の名義変更の注意点
 - [二人暮らしのWi-Fiおすすめ](https://kaisen-compass.com/articles/futarigurashi-wifi): 二人暮らし(同棲・夫婦)の回線選び。同時利用の重なりから必要な速度を見積もり、ドコモ/au/ソフトバンクのセット割が夫婦・事実婚・同棲のどこまで効くかの比較表、名義変更できないケースと名義人の決め方、費用の分け方を解説
 - [マンションのVDSL方式を速くする方法](https://kaisen-compass.com/articles/mansion-vdsl): VDSL方式のマンションで速度を改善する方法と、100Mbpsの上限を抜ける3つの選択肢

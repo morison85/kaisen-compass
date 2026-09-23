@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>光回線の障害は本当に多い?切り分け手順と確認先 | 回線コンパス</title>
+<meta name="description" content="光回線がつながらないとき、事業者の障害なのか自宅側の不調なのかを5分で切り分ける手順。ONUのランプの読み方、回線別の障害情報の公式確認先、約款で決まっている「24時間ルール」と料金返還の条件、出張費を請求されるケースまでまとめました。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/hikari-shougai">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="光回線の障害は本当に多い?つながらないときの5分切り分けと確認先【2026年】">
+<meta property="og:description" content="「つながらない」の多くは事業者の障害ではありません。5分の切り分けフロー、ランプの読み方、回線別の確認先、そして約款上の「24時間ルール」まで。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/hikari-shougai">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-shougai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-09-24">
+<meta property="article:modified_time" content="2026-09-24">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-shougai.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260917a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "光回線の障害は本当に多い?つながらないときの5分切り分けと確認先【2026年】",
+  "description": "光回線がつながらないときに、事業者の障害・回線の混雑・自宅側の不調を切り分ける手順と、回線別の障害情報の確認先、約款上の料金返還の条件をまとめます。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-hikari-shougai.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-09-24",
+  "dateModified": "2026-09-24",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/hikari-shougai"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "光回線の障害はどのくらいの頻度で起きますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "総務省の情報通信白書によると、電気通信事業者から報告された事故は2022年度で約7,500件ありますが、これは全国の全事業者・全サービスを合算した数字で、大半は影響範囲が限定的なものです。個々の家庭が年に何度も大規模障害に当たるケースは多くありません。週単位で切れる場合は、事業者の障害ではなくルーターや宅内配線が原因である可能性のほうが高い傾向です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "障害で使えなかった分の料金は返ってきますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NTT東日本のIP通信網サービス契約約款では、全く利用できない状態を事業者が知った時刻から24時間以上連続した場合に限り、24時間の倍数の部分について日数分の利用料金相当額を賠償する、と定められています。数時間の障害は原則として対象外で、47時間止まっても1日分という計算です。他社は各社の約款によるため、契約先の「責任の制限」条項を確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ONUの「光回線」ランプが赤いのですが、再起動で直りますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "光信号そのものが届いていない状態を示すことが多く、再起動では直らないケースが大半です。光ケーブルがコネクタから外れかけていないかだけ確認し、それでも変わらなければ事業者への連絡が近道になります。ランプの名称や色は機種によって異なるため、正確な意味は機器の取扱説明書か契約先の公式サポートページで確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "サポートに訪問してもらうと費用はかかりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "事業者側の設備に故障がないと判定されたうえで派遣を依頼し、原因が契約者側の機器にあった場合は、派遣に要した費用の負担を求められることが約款に定められています。市販ルーターの故障などが該当します。保守契約やサポートオプションに加入していれば扱いが変わるため、連絡前に契約内容を確認しておくと安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "障害情報に何も出ていないのに、うちだけつながりません",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "公式の工事故障情報に掲載されるのは、基本的に一定範囲に影響が及ぶ地域的な故障です。自宅への引き込み線の断線やONUの個別故障は掲載されません。ONU直結でもつながらず、ランプに異常があるなら、掲載を待たずにサポートへ連絡したほうが復旧は早くなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "障害が多い回線・少ない回線はありますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "公平に比較できる公開データが揃っていないため、断定はできません。ただし構造として、光コラボはNTTのフレッツ網とプロバイダ設備の二層で構成されるため障害の発生点が2か所あり、auひかりやNURO光のような独自回線は窓口が一本化されている、という違いはあります。どちらが有利かは状況次第で、「障害の少なさ」だけを基準に選ぶのは現実的ではありません。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "通信障害の切り分け" }
+  ]
+}
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>通信障害の切り分け</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">光回線の障害は本当に多い?つながらないときの5分切り分けと確認先【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-09-24">2026年9月24日</time></span>
+      <span>公開日:<time datetime="2026-09-24">2026年9月24日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-hikari-shougai.svg" alt="光回線の通信障害を切り分ける手順と確認先の解説" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>ネットが急に落ちたとき、最初に頭をよぎるのは「また障害か」でしょう。SNSで回線名を検索すれば、だいたいいつでも誰かが「つながらない」と書いています。だから「この回線は障害が多い」という印象だけが積み上がっていく。</p>
+    <p>ところが実際に原因を追っていくと、事業者側の障害だったケースは思ったより少なく、多くは自宅側で止まっています。そして厄介なことに、この2つは<strong>対処法も、待つべき時間も、料金が戻るかどうかも、まったく別物</strong>です。切り分けを飛ばしてサポートに電話すると、待たされた挙げ句に出張費を請求されることさえあります。</p>
+    <p>この記事では、まず「障害」と呼ばれているものを3種類に分解し、5分で原因を切り分ける手順、機器のランプの読み方、回線ごとの公式な確認先を並べます。そのうえで、ほとんど知られていない<strong>約款上の「24時間ルール」</strong>——障害で料金が戻る条件と戻らない条件——まで踏み込みます。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>「つながらない」の原因は<strong>①事業者側の障害 ②回線の混雑(輻輳) ③自宅側の不調</strong>の3つに分かれ、体感では区別がつきません。まず<strong>スマホのモバイル回線で外に出られるか</strong>を確かめ、次に<strong>ONUのランプ</strong>を見て、<strong>ルーターを外してONU直結</strong>で試す。ここまで5分で、③かどうかはほぼ判定できます。①だった場合、料金が戻るのは約款上<strong>「全く使えない状態が24時間以上連続したとき」</strong>が基本で、数時間の障害では原則として返金されません。</p>
+    </div>
+
+    <p class="answer-cta"><a class="answer-cta__btn" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><span>切れる頻度が減らないなら:GMOとくとくBB光の条件を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・相談や申し込みの前に、料金と条件は公式サイトでご確認ください</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/gmohikari-600.webp 600w, ../images/official/gmohikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/gmohikari.jpg" srcset="../images/official/gmohikari-600.jpg 600w, ../images/official/gmohikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="GMOとくとくBB光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://gmobb.jp/service/gmohikari/" rel="nofollow noopener" target="_blank">GMOとくとくBB光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-gmohikari.svg" alt="GMOとくとくBB光のサービス概要(月額・縛りなし)" width="800" height="420" loading="lazy" decoding="async"></div><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#sanshurui">「障害」と呼ばれているものは3種類ある</a></li>
+        <li><a href="#flow">5分でできる切り分けフロー</a></li>
+        <li><a href="#lamp">ONUのランプの読み方</a></li>
+        <li><a href="#kakunin">障害情報の公式確認先(回線別)</a></li>
+        <li><a href="#yakkan">24時間ルール:障害で料金は戻るのか</a></li>
+        <li><a href="#shucchou">サポートを呼ぶ前に:出張費を請求されるケース</a></li>
+        <li><a href="#yobi">予備回線という考え方</a></li>
+        <li><a href="#norikae">乗り換えを考えるべきサイン</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">そもそも今の回線が自分に合っているか怪しいなら</p>
+      <p>切れる・遅いが慢性化しているなら、機器の問題ではなく回線の選び方が合っていない可能性があります。住まいのタイプとスマホのセット割から、候補を数社まで絞り込めます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="sanshurui">「障害」と呼ばれているものは3種類ある</h2>
+    <p>日常会話ではまとめて「障害」と言いますが、中身は別物です。ここを分けないと、待つべき場面で機器をいじり、動くべき場面でひたすら待つことになります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>種類</th><th>典型的な症状</th><th>見分け方</th><th>取るべき行動</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>①事業者側の障害</th>
+            <td>突然まったくつながらない。特定の時刻から急に。家中のすべての機器が同時に落ちる</td>
+            <td>公式の障害情報に掲載される。同じエリア・同じ回線の人も同時に落ちている</td>
+            <td>復旧を待つ。機器の設定はいじらない</td>
+          </tr>
+          <tr>
+            <th>②回線の混雑(輻輳)</th>
+            <td>つながってはいるが、平日夜や休日夜だけ極端に遅い。動画が止まる</td>
+            <td>時間帯で明確に差が出る。深夜や早朝は速い</td>
+            <td>IPv6(IPoE)への切り替え、設備の見直し</td>
+          </tr>
+          <tr>
+            <th>③自宅側の不調</th>
+            <td>特定の部屋・特定の機器だけ。再起動で直る。日によってムラがある</td>
+            <td>ONU直結の有線では正常につながる。他の機器は問題ない</td>
+            <td>ルーター・LANケーブル・機器側の対処</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>相談を受けていて一番多いのは③です。「障害が多い回線だと思っていたが、5年使ったルーターを替えたら止まった」というパターンは繰り返し出てきます。②は障害ではなく設計の問題で、接続方式を変えるだけで改善することが多い領域です。詳しくは<a href="ipv6-ipoe">IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法</a>にまとめています。</p>
+    <p>では①、つまり本物の障害はどのくらい起きているのか。総務省の情報通信白書によれば、電気通信事業者から報告された事故は2022年度で約7,500件にのぼります。ただしこれは<strong>全国の全事業者・全サービスを合算した数字</strong>で、大半は影響範囲の小さいものです。一定規模以上の「重大な事故」は電気通信事業法施行規則に基づいて総務省に報告・公表される仕組みになっており、件数としては全体のごく一部にとどまります。</p>
+    <p>つまり「日本中のどこかで毎日何かが起きている」のは事実でも、<strong>自分の家の回線が年に何度も本物の障害に当たる確率は高くない</strong>、というのが実態に近い見方です。週に何度も切れるなら、疑うべきは①ではなく③か②です。</p>
+
+    <div class="box-point">
+      <div class="box-point__t">✅ 30秒でできる一次判定</div>
+      <ul>
+        <li>スマホの<strong>Wi-Fiをオフ</strong>にしてモバイル回線でサイトが開くか → 開くなら「自宅回線側の問題」で確定</li>
+        <li>家の中の<strong>別の機器</strong>(テレビ・ゲーム機など)もつながらないか → 1台だけならその機器の問題</li>
+        <li><strong>有線のPC</strong>はつながるか → 有線だけ生きているならWi-Fi(ルーター)側の問題</li>
+      </ul>
+    </div>
+
+    <h2 id="flow">5分でできる切り分けフロー</h2>
+    <p>順番が重要です。とくに手順3と手順4は、逆にやると判定を間違えます。上から順に進めてください。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">スマホをモバイル回線に切り替えて外に出られるか確認する(30秒)</div>
+        <p>Wi-Fiをオフにしてサイトを開きます。ここで開けば、少なくともスマホ本体とインターネット全体は正常です。「自宅の回線から先のどこか」に絞り込めました。開けない場合は、スマホのキャリア側で障害が起きている可能性もあります。</p>
+      </li>
+      <li>
+        <div class="steps__t">ONU・ホームゲートウェイのランプを見る(30秒)</div>
+        <p>壁際の黒い箱(回線終端装置=ONU、電話も使っているならホームゲートウェイ)の表示を確認します。次章の表で、どこまで信号が来ているかが読み取れます。<strong>写真を撮っておく</strong>と、後でサポートに説明するときに話が早く進みます。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターを外して、ONUとPCを直接LANケーブルでつなぐ(2分)</div>
+        <p>切り分けの本命です。直結でつながるなら、原因はルーターかWi-Fi側。直結でもつながらないなら、回線側か宅内配線です。ここまでで③かどうかの判定は、ほぼ終わります。なお、直結の際はPC側でIPアドレスを取り直す必要があるため、ケーブルを挿してから1分ほど待ってください。</p>
+      </li>
+      <li>
+        <div class="steps__t">電源を入れ直す。順番は「ONU → 5分待つ → ルーター」(5分)</div>
+        <p>まとめて抜いて、まとめて挿す人が多いのですが、<strong>ONUが回線を認識し直すのに時間がかかる</strong>ため、ONUを先に立ち上げきってからルーターを入れます。ONUは電源を抜いて10秒以上待ってから挿し直し、ランプが安定するまで数分待つのが目安です。ルーターは最後です。</p>
+      </li>
+      <li>
+        <div class="steps__t">公式の障害情報を確認する(1分)</div>
+        <p>ここまでで直らなければ、事業者側を疑います。次章の表の確認先を、<strong>回線とプロバイダの両方</strong>見てください。理由は後述しますが、片方だけ見て「障害なし」と判断すると外します。</p>
+      </li>
+      <li>
+        <div class="steps__t">それでも直らなければサポートへ(情報を揃えてから)</div>
+        <p>電話口で聞かれるのは、契約者名義・お客様ID(契約番号)・住所・ランプの状態・いつから起きているか・直結を試したか、です。先にメモしておくと、保留で待たされる時間が短くなります。</p>
+      </li>
+    </ol>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 障害かもしれないときに「やってはいけない」こと</div>
+      <ul>
+        <li><strong>ルーターを初期化する</strong>——事業者側の障害だった場合、復旧後に設定を全部やり直すはめになります。切り分けが終わるまでは初期化に手を出さないでください</li>
+        <li><strong>プロバイダのID・パスワードを入れ直す</strong>——PPPoEの認証情報は、間違えて上書きすると自力で戻せなくなることがあります</li>
+        <li><strong>光ケーブルを抜き差しする</strong>——細いガラス繊維で、曲げや汚れに弱い部品です。コネクタを触るのは最後の手段にしてください</li>
+        <li><strong>解約や乗り換えを即決する</strong>——障害の最中は判断が荒くなります。復旧してから、頻度を見て決めるほうが後悔しにくいです</li>
+      </ul>
+    </div>
+
+    <h2 id="lamp">ONUのランプの読み方</h2>
+    <p>ランプは「どこまで信号が届いているか」を示す地図です。機種によって名称も色も違いますが、光回線で共通して見るべきは次の4つです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>ランプ</th><th>正常時</th><th>異常時の意味</th><th>自力で直せるか</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>電源</th>
+            <td class="best">緑点灯</td>
+            <td>消灯なら通電していない。コンセント、ACアダプタ、電源タップのスイッチを確認</td>
+            <td class="best">直せる可能性が高い</td>
+          </tr>
+          <tr>
+            <th>光回線(PON・OPTなど)</th>
+            <td class="best">緑点灯</td>
+            <td>消灯・赤・点滅は<strong>光信号が届いていない</strong>状態。局側の障害、屋外の断線、宅内の光ケーブルの抜け・折れなど</td>
+            <td>ケーブルの差し込み以外は難しい。事業者へ</td>
+          </tr>
+          <tr>
+            <th>認証(AUTH)</th>
+            <td class="best">緑点灯</td>
+            <td>光信号は届いているが、局側での認証が通っていない。設備側の設定や機器故障のことが多い</td>
+            <td>基本的に事業者側の対応</td>
+          </tr>
+          <tr>
+            <th>UNI(LAN)</th>
+            <td class="best">緑点灯・点滅</td>
+            <td>ONUとルーター/PCの間でリンクが張れていない。LANケーブル、ポート、機器側の電源</td>
+            <td class="best">直せる可能性が高い</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>読み方の勘所はひとつです。<strong>「光回線」ランプが正常なら、原因は自宅の中にある</strong>。逆に「光回線」ランプが消えている・赤い場合は、ルーターをいくら再起動しても直りません。この一点だけ覚えておけば、無駄な時間をかなり削れます。</p>
+    <p>なお、ランプの名称・色・点滅パターンは機種ごとに異なります。ホームゲートウェイでは「ひかり電話」「PPP」などのランプが追加され、PPPが消灯していれば接続設定側、といった読み方も必要になります。正確な凡例は<strong>機器に付属の取扱説明書、または契約先の公式サポートページ</strong>を正としてください。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">友人から「ネットが落ちた」と連絡が来たとき、私がまず聞くのは「黒い箱のランプ、何色?」です。写真を1枚送ってもらうだけで、待つべき話なのか、動けば直る話なのかが分かれる。逆にランプを見ずに再起動を繰り返すと、原因にたどり着かないまま時間だけ溶けていきます。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="kakunin">障害情報の公式確認先(回線別)</h2>
+    <p>ここで多くの人がつまずくポイントがあります。<strong>光コラボ(ドコモ光・ソフトバンク光・GMOとくとくBB光・ビッグローブ光など)は、設備が二層構造になっている</strong>ということです。</p>
+    <p>足回りの光ファイバーはNTT東日本・西日本のフレッツ網で、そこから先のインターネット接続はプロバイダ(ISP)の設備。つまり障害は<strong>どちらの層でも起こり得る</strong>のに、契約先のサイトだけを見て「障害情報は出ていない」と判断してしまう人が非常に多い。NTT側の工事故障情報も併せて見るのが正解です。この二層構造については<a href="hikari-provider-chigai">光回線とプロバイダの違い</a>で図解しています。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>契約している回線</th><th>見るべき情報源</th><th>補足</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>フレッツ光</th>
+            <td>NTT東日本/NTT西日本の「工事故障情報」</td>
+            <td>都道府県から絞り込める。プロバイダ側の障害情報も併せて確認</td>
+          </tr>
+          <tr>
+            <th>光コラボ全般<br>(ドコモ光・SB光・GMO光など)</th>
+            <td class="best">①契約先の公式障害情報<br>②NTT東日本/西日本の工事故障情報</td>
+            <td class="best"><strong>2か所とも見る</strong>のが基本。片方だけだと見落とす</td>
+          </tr>
+          <tr>
+            <th>auひかり</th>
+            <td>KDDIの障害・メンテナンス情報</td>
+            <td>独自回線なのでNTT側は無関係。プロバイダ側の障害は別枠</td>
+          </tr>
+          <tr>
+            <th>NURO光</th>
+            <td>NURO/ソニーネットワークコミュニケーションズの障害・メンテナンス情報</td>
+            <td>こちらも独自設備。窓口は一本化されている</td>
+          </tr>
+          <tr>
+            <th>ホームルーター・WiMAX</th>
+            <td>回線元(KDDI/ドコモ/ソフトバンク)の障害情報</td>
+            <td>プロバイダではなく<strong>電波を出している事業者</strong>側を見る</td>
+          </tr>
+          <tr>
+            <th>ケーブルテレビ系</th>
+            <td>契約しているCATV局の障害情報</td>
+            <td>地域局ごとに掲載場所が違う</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>SNSで「回線名 障害」を時刻順に検索する方法も、体感としては早い。ただしこれは<strong>傍証</strong>です。同じ時間帯に無関係の人が無関係の理由で書き込むことも多く、SNSの投稿数だけで障害と断定するのは危険です。公式の掲載を正として、SNSは「自分だけではなさそうだ」という安心材料くらいに使うのが健全でしょう。</p>
+
+    <div class="box-point">
+      <div class="box-point__t">✅ 公式の障害情報に「載らない」障害もある</div>
+      <p>公式の工事故障情報に掲載されるのは、基本的に<strong>一定の範囲に影響が及ぶ地域的な故障</strong>です。自宅に引き込んでいる1本のケーブルが断線した、宅内のONUが壊れた、といった個別の故障は掲載されません。「障害情報に何も出ていない=自分の回線は正常」ではない、という点は押さえておいてください。個別故障が疑われるなら、待たずにサポートへ連絡したほうが復旧は早くなります。</p>
+    </div>
+
+    <h2 id="yakkan">24時間ルール:障害で料金は戻るのか</h2>
+    <p>ここからが、まとめ記事ではほとんど触れられない部分です。「半日ネットが止まったのだから、その分は返してもらえるだろう」と考えるのは自然ですが、<strong>約款の設計はそうなっていません</strong>。</p>
+    <p>NTT東日本のIP通信網サービス契約約款(フレッツ光などが該当します)の第51条「責任の制限」には、次の趣旨が定められています。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 賠償の条件は「24時間以上の連続」</div>
+      <ul>
+        <li>賠償の対象は、サービスが<strong>「全く利用できない状態」</strong>にあることを<strong>事業者が知った時刻から起算して24時間以上その状態が連続した</strong>場合</li>
+        <li>賠償額は、その状態が続いた時間のうち<strong>24時間の倍数である部分</strong>について24時間ごとに日数を計算し、その日数分の利用料金相当額が上限</li>
+        <li>起算点は「障害が始まった時刻」ではなく<strong>「事業者が知った時刻」</strong></li>
+        <li>事業者の故意または重大な過失による場合は、この制限は適用されない</li>
+      </ul>
+    </div>
+    <p>これを時間軸に落とすと、次のようになります。数字は約款の考え方をそのまま当てはめた目安です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>全く使えなかった時間</th><th>賠償(料金返還)の対象</th><th>月額5,000円の回線なら</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>6時間</th><td>対象外</td><td>0円</td></tr>
+          <tr><th>23時間</th><td>対象外</td><td>0円</td></tr>
+          <tr><th>25時間</th><td class="best">1日分</td><td class="best">約167円</td></tr>
+          <tr><th>47時間</th><td>1日分</td><td>約167円</td></tr>
+          <tr><th>49時間</th><td class="best">2日分</td><td class="best">約333円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>47時間止まっても1日分にしかならない、というのが「24時間の倍数である部分に限る」という条文の意味です。ここは直感に反するので、改めて強調しておきます。</p>
+    <p>さらに注意したいのが「全く利用できない状態」の定義です。約款上は、すべての通信に著しい支障が生じて全く利用できない状態と同程度の場合を含む、とされています。裏を返せば、<strong>「遅い」「頻繁に切れるが時々つながる」といった状態は、この条件に当てはまらないと判断されるのが一般的</strong>です。体感としては障害でも、契約上は障害として扱われない領域があるということになります。</p>
+    <p>また、これはNTT東日本の約款の話です。光コラボ各社・独自回線各社は<strong>それぞれ自社の約款・利用規約を持っています</strong>。24時間という考え方を採る事業者は多いものの、条件や算定方法は同一ではありません。実際に申し出る前に、契約先の約款の「責任の制限」「損害賠償」の条項を確認してください。</p>
+
+    <div class="box-point">
+      <div class="box-point__t">✅ 返金は「自動で振り込まれる」とは限らない</div>
+      <p>条件を満たしていても、契約者からの申し出をきっかけに処理される運用の事業者があります。大規模障害では事業者側から一括で告知・対応することもありますが、個別の長時間障害では自分から連絡しないと動かないことも。<strong>障害の開始時刻・復旧時刻・問い合わせた日時をメモに残す</strong>習慣をつけておくと、話がスムーズになります。なお金額は月額の日割り相当が上限で、在宅勤務ができなかった分の損失といった二次的な損害までは、通常カバーされません。</p>
+    </div>
+
+    <h2 id="shucchou">サポートを呼ぶ前に:出張費を請求されるケース</h2>
+    <p>もうひとつ、知らないと損をする条項があります。同じ約款の第49条「契約者等の切分責任」です。</p>
+    <p>ここには、契約者が用意した機器(自営端末設備)が接続されている状態で通信ができなくなったときは、<strong>その機器に故障がないことを確認したうえで</strong>修理を請求してください、という義務が書かれています。そして第3項では、事業者が試験をして自社設備に故障がないと判定したうえで、契約者の請求で係員を派遣した結果、<strong>原因が契約者側の機器にあった場合は、派遣にかかった費用を契約者が負担する</strong>、と定められています。</p>
+    <p>つまり「市販のWi-Fiルーターが壊れていただけ」なのに訪問を依頼すると、出張費用の請求対象になり得るということです。金額は事業者・内容によりますが、数千円から1万円台の実費がかかるケースがあります。</p>
+    <p>これが、前章の<strong>「ONU直結を試してから電話する」</strong>という手順が単なる効率の話ではない理由です。直結でつながるなら原因は自分の機器側で、訪問を呼ぶ場面ではありません。逆に直結でもダメなら、堂々とサポートに連絡できます。ルーターの寿命や買い替えの判断は<a href="hikari-router-erabikata">光回線のルーターの選び方</a>を参考にしてください。</p>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 保守契約・サポートオプションがある場合は例外</div>
+      <p>機器の保守契約やサポートオプションに加入している場合、この切分責任の条項は適用されない旨が注記されています。月数百円のオプションに入っているかどうかで扱いが変わるので、心当たりがあれば契約内容を確認してから連絡してください。逆に、訪問の機会が多そうな環境(古い建物、配線が複雑など)なら、加入を検討する価値はあります。</p>
+    </div>
+
+    <h2 id="yobi">予備回線という考え方</h2>
+    <p>本物の障害だった場合、こちらにできることはありません。復旧を待つだけです。だからこそ、<strong>止まったときに何時間困るのか</strong>を先に考えておくほうが実利があります。</p>
+    <p>在宅勤務でオンライン会議が入っている、配信をしている、家族が受験生でオンライン授業がある——こうした環境では、半日の停止が実害に直結します。一方、夜に動画を見るのがメインなら、数時間の停止はスマホで十分しのげます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>予備の手段</th><th>月コストの目安</th><th>準備のしやすさ</th><th>向いている人</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>スマホのテザリング</th>
+            <td class="best">追加0円<br>(データ量を消費)</td>
+            <td class="best">今すぐ使える</td>
+            <td>停止が数時間で済む人。ただし大容量プランでないと足りない</td>
+          </tr>
+          <tr>
+            <th>大容量の副回線SIM</th>
+            <td>1,000〜3,000円程度</td>
+            <td>SIMを挿すだけ</td>
+            <td>メイン回線と別キャリアにしておきたい人</td>
+          </tr>
+          <tr>
+            <th>ホームルーター/WiMAX</th>
+            <td>4,000〜5,000円程度</td>
+            <td class="best">コンセントに挿すだけ・工事不要</td>
+            <td class="best">会議や授業が止まると困る人。据え置きで家族全員が使える</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>コスト効率だけを見ればテザリングが最強ですが、複数人が同時に使う前提だと厳しくなります。テザリングを本気で常用したときの限界は<a href="tethering-kotei-kaisen">テザリングは固定回線の代わりになるか</a>で検証しています。会議中に落ちたときの具体的な立て直し方は<a href="web-kaigi-taisho">Web会議が途切れるときの対処</a>にまとめました。</p>
+    <p>光回線とモバイル回線は物理的に別の経路を通るので、<strong>片方の障害がもう片方に波及しにくい</strong>のが利点です。ホームルーターの選び方は<a href="home-router">ホームルーターおすすめ比較</a>で、光回線との違いは<a href="wimax-vs-homerouter">WiMAXとホームルーターの違い</a>で整理しています。</p>
+
+    <h2 id="norikae">乗り換えを考えるべきサイン</h2>
+    <p>「障害が多いから乗り換える」という判断は、半分正しく半分間違っています。本物の障害が理由なら、乗り換え先でも同じ確率で起こり得るからです。判断すべきは<strong>頻度と原因</strong>です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>状況</th><th>本当の原因になりやすいもの</th><th>先に試すこと</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>年に1〜2回、数時間止まる</th>
+            <td>事業者側の障害。どの回線でも起こり得る範囲</td>
+            <td>乗り換えても変わりにくい。予備回線の検討へ</td>
+          </tr>
+          <tr>
+            <th>週に何度も切れる</th>
+            <td>ルーターの劣化・熱・電波干渉。LANケーブルの断線</td>
+            <td>ルーター買い替え、有線化、設置場所の見直し</td>
+          </tr>
+          <tr>
+            <th>夜だけ極端に遅い</th>
+            <td>接続方式(PPPoE)の混雑、建物内の共有帯域</td>
+            <td><a href="ipv6-ipoe">IPv6(IPoE)化</a>。それでも改善しなければ回線変更</td>
+          </tr>
+          <tr>
+            <th>マンションで常に遅い・不安定</th>
+            <td>VDSL方式など建物側の設備が上限を決めている</td>
+            <td><a href="mansion-vdsl">配線方式の確認</a>。設備が原因なら回線変更の価値あり</td>
+          </tr>
+          <tr>
+            <th>機器を替えても改善しない</th>
+            <td>引き込み配線の劣化、局側設備、エリアの収容状況</td>
+            <td class="best">事業者に調査を依頼。改善しなければ乗り換えが現実的</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>整理すると、<strong>乗り換えで確実に効くのは「建物設備が原因のとき」と「調査しても改善しないとき」</strong>です。ルーターが原因なら1万円台の買い替えで済む話を、工事と契約変更に広げる必要はありません。</p>
+    <p>逆に、VDSL方式のマンションで上限100Mbpsに縛られている、あるいは同じ建物の利用者が増えて慢性的に詰まっている、といったケースは自分では動かせません。この場合は独自回線や別方式への乗り換えが効きます。候補の絞り込みは<a href="hikari-osusume">光回線おすすめ7社比較</a>、乗り換えの手順と違約金の扱いは<a href="hikari-cashback">光回線の乗り換え完全ガイド</a>が出発点になります。速度そのものが不満なら<a href="hikari-osoi">光回線が遅い原因と直し方</a>も併せてどうぞ。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>光回線の障害はどのくらいの頻度で起きますか?</summary>
+        <div class="faq__a">総務省の情報通信白書によると、電気通信事業者から報告された事故は2022年度で約7,500件ありますが、これは全国の全事業者・全サービスを合算した数字で、大半は影響範囲が限定的なものです。個々の家庭が年に何度も大規模障害に当たるケースは多くありません。週単位で切れる場合は、事業者の障害ではなくルーターや宅内配線が原因である可能性のほうが高い傾向です。</div>
+      </details>
+      <details>
+        <summary>障害で使えなかった分の料金は返ってきますか?</summary>
+        <div class="faq__a">NTT東日本のIP通信網サービス契約約款では、全く利用できない状態を事業者が知った時刻から24時間以上連続した場合に限り、24時間の倍数の部分について日数分の利用料金相当額を賠償する、と定められています。数時間の障害は原則として対象外で、47時間止まっても1日分という計算です。他社は各社の約款によるため、契約先の「責任の制限」条項を確認してください。</div>
+      </details>
+      <details>
+        <summary>ONUの「光回線」ランプが赤いのですが、再起動で直りますか?</summary>
+        <div class="faq__a">光信号そのものが届いていない状態を示すことが多く、再起動では直らないケースが大半です。光ケーブルがコネクタから外れかけていないかだけ確認し、それでも変わらなければ事業者への連絡が近道になります。ランプの名称や色は機種によって異なるため、正確な意味は機器の取扱説明書か契約先の公式サポートページで確認してください。</div>
+      </details>
+      <details>
+        <summary>サポートに訪問してもらうと費用はかかりますか?</summary>
+        <div class="faq__a">事業者側の設備に故障がないと判定されたうえで派遣を依頼し、原因が契約者側の機器にあった場合は、派遣に要した費用の負担を求められることが約款に定められています。市販ルーターの故障などが該当します。保守契約やサポートオプションに加入していれば扱いが変わるため、連絡前に契約内容を確認しておくと安心です。</div>
+      </details>
+      <details>
+        <summary>障害情報に何も出ていないのに、うちだけつながりません</summary>
+        <div class="faq__a">公式の工事故障情報に掲載されるのは、基本的に一定範囲に影響が及ぶ地域的な故障です。自宅への引き込み線の断線やONUの個別故障は掲載されません。ONU直結でもつながらず、ランプに異常があるなら、掲載を待たずにサポートへ連絡したほうが復旧は早くなります。</div>
+      </details>
+      <details>
+        <summary>障害が多い回線・少ない回線はありますか?</summary>
+        <div class="faq__a">公平に比較できる公開データが揃っていないため、断定はできません。ただし構造として、光コラボはNTTのフレッツ網とプロバイダ設備の二層で構成されるため障害の発生点が2か所あり、auひかりやNURO光のような独自回線は窓口が一本化されている、という違いはあります。どちらが有利かは状況次第で、「障害の少なさ」だけを基準に選ぶのは現実的ではありません。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:切り分けの順番を持っておく</h2>
+    <ul>
+      <li>「つながらない」は<strong>事業者の障害・混雑・自宅側の不調</strong>の3つに分かれ、体感では区別できない</li>
+      <li>最初の30秒は<strong>スマホのモバイル回線</strong>、次に<strong>ONUのランプ</strong>、そして<strong>ONU直結</strong>。ここまでで大半は判定できる</li>
+      <li>「光回線」ランプが正常なら原因は家の中。消灯・赤なら再起動では直らない</li>
+      <li>光コラボは<strong>契約先とNTT東西の両方</strong>の障害情報を見る。片方だけだと見落とす</li>
+      <li>料金が戻るのは約款上<strong>「全く使えない状態が24時間以上連続」</strong>が基本。数時間の障害は原則対象外</li>
+      <li>直結を試さずに訪問を呼ぶと、原因が自分の機器だった場合に<strong>出張費の請求対象</strong>になり得る</li>
+      <li>頻発するなら障害ではなく機器か設備。<strong>乗り換えで効くのは建物設備が原因のとき</strong></li>
+    </ul>
+    <p>障害そのものをゼロにはできません。できるのは、止まったときに慌てないための順番を持っておくことと、止まっても困らない備えを用意しておくことの2つです。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>NTT東日本「IP通信網サービス契約約款」 — 第49条(ＩＰ通信網契約者等の切分責任)、第51条(責任の制限)、第38条第2項第4号(利用料金の支払義務)。2026年9月確認</li>
+        <li>NTT東日本「工事故障情報」「故障情報のご確認」 — 地域的な故障(大規模故障/障害)の確認方法について。2026年9月確認</li>
+        <li>総務省「令和6年版 情報通信白書」電気通信サービスの事故の発生状況 — 2022年度の報告件数 約7,500件</li>
+        <li>総務省「安全・信頼性の向上|重大な事故の報告」 — 電気通信事業法施行規則第57条に基づく報告制度の概要。2026年9月確認</li>
+        <li>各社公式サイトの障害・メンテナンス情報ページ、およびONUのランプ表示に関するサポート案内(2026年9月確認)</li>
+      </ul>
+      <p class="micro">※ 本記事の料金・条件は2026年9月時点の目安です。約款の内容は改定されることがあるため、実際の手続きの前に契約先の最新の約款・規約をご確認ください。</p>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">止まったら困る家なら「予備の回線」を1本</div>
+    <p>光回線の障害は、こちらの努力では短くできません。復旧を待つ以外にできるのは、止まったときに使える別経路を用意しておくことです。ホームルーター/WiMAXは工事も立ち会いも不要で、コンセントに挿せばその日から使えます。光回線とは別のモバイル網を通るため、片方の障害の影響を受けにくいのが利点。在宅勤務やオンライン授業が止まると実害が出る家庭では、保険として現実的な選択肢になります。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BSJOH" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="BIGLOBE WiMAX +5Gの公式キャンペーンバナー" src="https://www27.a8.net/svt/bgt?aid=260829413076&amp;wid=002&amp;eno=01&amp;mid=s00000000040014074000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BSJOH" alt=""></div>
+    <a class="btn btn--cv" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXのキャンペーンを見る<small>申込特典と月額割引の条件を確認できます</small></a>
+    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" alt="">
+    <p class="micro">※ リンク先は広告(PR)です。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="hikari-osoi">光回線が遅い原因と直し方|時間帯別のチェックリスト</a></li>
+      <li><a href="ipv6-ipoe">IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法</a></li>
+      <li><a href="hikari-router-erabikata">光回線のルーターの選び方|買い替えの判断基準</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260910b" defer></script>
+</body>
+</html>

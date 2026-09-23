@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 23 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>光回線の障害は本当に多い?つながらないときの5分切り分けと確認先【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-shougai</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-shougai</guid>
+    <pubDate>Thu, 24 Sep 2026 12:00:00 +0900</pubDate>
+    <description>光回線がつながらないとき、原因は「事業者側の障害」「回線の混雑(輻輳)」「自宅側の不調」の3つに分かれますが、体感では区別がつきません。まずスマホのモバイル回線で外に出られるかを確かめ、ONUのランプを見て、ルーターを外してONU直結で試す——ここまで5分で自宅側かどうかはほぼ判定できます。ランプ4種(電源・光回線・認証・UNI)の読み方、光コラボは契約先とNTT東西の2か所を見る必要があるという二層構造、そしてNTT東日本のIP通信網サービス契約約款が定める「全く利用できない状態が24時間以上連続したときに限り、24時間の倍数の部分について日数分の利用料金相当額を賠償する」という24時間ルール、さらに自前機器が原因だったときに派遣費用の負担を求められる切分責任の条項まで、2026年9月時点の一次情報で整理しました。</description>
+  </item>
   <item>
     <title>光回線の工事待ちは何週間?混雑する月と開通を早める6つの手【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/hikari-kouji-machi</link>
