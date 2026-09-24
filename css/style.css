@@ -1553,6 +1553,19 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .answer-cta__btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-2); }
 .answer-cta__go { flex: 0 0 auto; color: #fff; background: linear-gradient(120deg, var(--c-accent), #ff8c3a); border-radius: 999px; padding: 6px 14px; font-size: .82rem; white-space: nowrap; }
 .answer-cta__pr { display: block; font-size: .68rem; color: var(--c-text-sub); margin-top: 6px; }
+/* キャリア切替チップ(光回線記事、2026-09-24)。JS が .is-js を付けるまで出さない */
+.answer-cta__chips { display: none; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 8px; }
+.answer-cta--pick.is-js .answer-cta__chips { display: flex; }
+.answer-cta__q { font-size: .76rem; font-weight: 800; color: var(--c-text-sub); margin-right: 2px; }
+.answer-cta__chip {
+  font-family: inherit; font-size: .78rem; font-weight: 700; line-height: 1; padding: 7px 11px; border-radius: 999px;
+  border: 1.5px solid var(--c-border); background: #fff; color: var(--c-navy); cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.answer-cta__chip:hover { border-color: var(--c-primary); }
+.answer-cta__chip.is-on { background: var(--c-navy); border-color: var(--c-navy); color: #fff; }
+.answer-cta__chip:focus-visible { outline: 3px solid var(--c-primary); outline-offset: 2px; }
+.answer-cta__imp { position: absolute; width: 1px; height: 1px; border: 0; }
 
 /* ============ トップ: 状況別の最適解(CTA付き) ============ */
 .pick { padding: 12px 0 8px; }
