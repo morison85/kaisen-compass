@@ -44,7 +44,7 @@
     "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 }
   },
   "datePublished": "2026-08-29",
-  "dateModified": "2026-09-24",
+  "dateModified": "2026-09-25",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/hikari-osusume"
 }
 </script>
@@ -162,7 +162,7 @@
     <span class="card__cat">光回線</span>
     <h1 class="article-title">光回線おすすめ7社比較【2026年9月】スマホ別の最適解と月額・実測速度</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-09-24">2026年9月24日</time></span>
+      <span class="upd">更新日:<time datetime="2026-09-25">2026年9月25日</time></span>
       <span>公開日:<time datetime="2026-08-29">2026年8月29日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -259,7 +259,7 @@
     </div>
 
     <h2 id="hikaku">おすすめ7社の比較表</h2>
-    <p>月額は割引適用前の基本料金(税込)、速度は「みんなのネット回線速度」の平均実測値を参考にした執筆時点の目安です。</p>
+    <p>月額は割引適用前の基本料金(税込)。速度は「みんなのネット回線速度」に投稿された直近3ヶ月の測定値のうち、夜の時間帯の平均下り速度です(みんそく 2026/09 取得。比較表・診断と同じ<a href="../data/speed.json">データ</a>で月1回更新)。</p>
     <div class="tbl-wrap">
       <table class="cmp">
         <thead>
@@ -267,7 +267,7 @@
             <th>回線名</th>
             <th>月額(戸建て)</th>
             <th>月額(マンション)</th>
-            <th>下り実測の目安</th>
+            <th>下り実測(夜)</th>
             <th>セット割</th>
             <th>向いている人</th>
           </tr>
@@ -277,7 +277,7 @@
             <th>ドコモ光</th>
             <td>5,720円</td>
             <td>4,400円</td>
-            <td>約270Mbps</td>
+            <td data-speed="docomo">約536Mbps</td>
             <td>ドコモ</td>
             <td>ドコモのスマホを使っている家庭</td>
           </tr>
@@ -285,7 +285,7 @@
             <th>auひかり</th>
             <td>5,610円〜</td>
             <td>4,180円〜</td>
-            <td class="best">約500Mbps</td>
+            <td class="best" data-speed="au">約636Mbps</td>
             <td>au / UQ</td>
             <td>au・UQモバイルで、提供エリア内の人</td>
           </tr>
@@ -293,7 +293,7 @@
             <th>ソフトバンク光</th>
             <td>5,720円</td>
             <td>4,180円</td>
-            <td>約300Mbps</td>
+            <td data-speed="sb">約592Mbps</td>
             <td>SB / ワイモバ</td>
             <td>ソフトバンク・ワイモバイルの人</td>
           </tr>
@@ -301,7 +301,7 @@
             <th>NURO光</th>
             <td>5,720円<br><span class="micro">2年割で24か月は4,530円</span></td>
             <td>4,730円<br><span class="micro">2年割で24か月は3,530円</span></td>
-            <td class="best">約580Mbps</td>
+            <td class="best" data-speed="nuro">約1012Mbps</td>
             <td>ソフトバンク</td>
             <td>速度優先で、エリア内・工事2回を待てる人</td>
           </tr>
@@ -309,7 +309,7 @@
             <th>GMOとくとくBB光</th>
             <td>5,390円</td>
             <td>4,290円</td>
-            <td>約330Mbps</td>
+            <td data-speed="gmo">約583Mbps</td>
             <td>なし(縛りなし)</td>
             <td>格安SIM・オンラインプランで、縛りを避けたい人</td>
           </tr>
@@ -317,7 +317,7 @@
             <th>ビッグローブ光</th>
             <td>5,478円</td>
             <td>4,378円</td>
-            <td>約290Mbps</td>
+            <td data-speed="biglobe">約628Mbps</td>
             <td>au / UQ</td>
             <td>au・UQモバイルで、auひかりがエリア外の人</td>
           </tr>
@@ -325,7 +325,7 @@
             <th>楽天ひかり</th>
             <td>5,280円</td>
             <td>4,180円</td>
-            <td>約250Mbps</td>
+            <td data-speed="rakuten">約286Mbps</td>
             <td>楽天(ポイント優遇)</td>
             <td>楽天モバイル+楽天市場をよく使う人</td>
           </tr>

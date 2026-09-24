@@ -1,0 +1,60 @@
+{
+ "source": "articles/hikari-campaign-hikaku.html の早見表(各社公式ページ・公式キャンペーンページの2026年9月時点の内容)",
+ "checked": "2026-09",
+ "items": [
+  {
+   "id": "au",
+   "name": "auひかり(正規代理店NEXT)",
+   "tokuten": "代理店の現金キャッシュバック+KDDIの公式特典(工事費の初期費用相当額割引など)",
+   "kangen": "乗りかえスタートサポート:最大30,000円(セット割の申込で最大10,000円上乗せ)、au PAY残高で還元",
+   "uketori": "代理店分は申込時の電話で口座を伝えるだけ。還元は別途申請",
+   "href": "https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6",
+   "beacon": "https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6"
+  },
+  {
+   "id": "sb",
+   "name": "ソフトバンク光(公式・代理店)",
+   "tokuten": "回線工事費割引(1ギガは月1,980円×24ヶ月)、超おうち応援割、公式サイト申込で5,000円など",
+   "kangen": "あんしん乗り換え:違約金・撤去工事費を最大10万円まで(モバイルWi-Fi残債は42,000円まで)",
+   "uketori": "証明書を提出。還元は普通為替で郵送",
+   "href": "https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM",
+   "beacon": "https://www15.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM"
+  },
+  {
+   "id": "nuro",
+   "name": "NURO光(公式特設ページ)",
+   "tokuten": "戸建て・39戸以下の集合住宅40,000円/40戸以上のマンション30,000円、工事費実質無料(36回分割相当を割引)",
+   "kangen": "最大60,000円",
+   "uketori": "開通11ヶ月後と17ヶ月後の2回、マイページで口座指定(各45日間)",
+   "href": "https://px.a8.net/svt/ejp?a8mat=4BAH9H+2N9ECA+2VMU+63WO2",
+   "beacon": "https://www10.a8.net/0.gif?a8mat=4BAH9H+2N9ECA+2VMU+63WO2"
+  },
+  {
+   "id": "gmo",
+   "name": "GMOとくとくBB光",
+   "tokuten": "基本のキャッシュバック+オプション加入での増額。契約期間の縛りなし",
+   "kangen": "最大60,000円(他社違約金補助)",
+   "uketori": "開通11ヶ月目前後に基本メールアドレスへ案内、手続きの翌月末に振込",
+   "href": "https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ",
+   "beacon": "https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ"
+  },
+  {
+   "id": "docomo",
+   "name": "ドコモ光(GMOとくとくBB)",
+   "tokuten": "数万円の現金キャッシュバック(新規・事業者変更・転用で額が違う)、期間限定の増額あり",
+   "kangen": "申込ページの条件による",
+   "uketori": "開通月を含む4ヶ月目に案内メール、口座登録の翌月末に振込",
+   "href": "https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y",
+   "beacon": "https://www12.a8.net/0.gif?a8mat=4BAI1I+3UQ1I2+50+54KL8Y"
+  },
+  {
+   "id": "biglobe",
+   "name": "ビッグローブ光(BIGLOBE公式)",
+   "tokuten": "1ギガ(3年プラン)35,000円/10ギガ(2年プラン)55,000円",
+   "kangen": "最大40,000円",
+   "uketori": "入会資料に同梱の申込書で手続き、12ヶ月目に受取",
+   "href": "https://px.a8.net/svt/ejp?a8mat=4BAH9H+1824BE+3HKU+1BMW42",
+   "beacon": "https://www10.a8.net/0.gif?a8mat=4BAH9H+1824BE+3HKU+1BMW42"
+  }
+ ]
+}
