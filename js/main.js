@@ -196,7 +196,14 @@
       bar.classList.toggle("is-on", y > 480 && !inView && !nearEnd);
     };
     return function (opt) {
-      if (closed || !opt || !opt.anchor || !opt.href) return;
+      if (closed || !opt) return;
+      if (opt.anchor === null) {
+        // 結果を消したとき(診断のやり直しなど)。anchor を外して、次の結果が来るまで出さない
+        anchor = null;
+        if (bar) { bar.classList.remove("is-on"); document.body.classList.remove("has-stickycta"); }
+        return;
+      }
+      if (!opt.anchor || !opt.href) return;
       if (!bar) {
         bar = document.createElement("div");
         bar.className = "stickycta";
@@ -222,6 +229,7 @@
         });
       }
       anchor = opt.anchor;
+      document.body.classList.add("has-stickycta");
       var label = String(opt.label || "").replace(/\s+/g, " ").trim();
       if (label.length > 24) label = label.slice(0, 23) + "…";
       link.setAttribute("href", opt.href);

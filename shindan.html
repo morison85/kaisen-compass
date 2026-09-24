@@ -705,6 +705,7 @@
   document.getElementById("rsRedo").addEventListener("click", function () {
     form.reset(); step = 0; draw();
     result.hidden = true; form.hidden = false;
+    if (window.kcSticky) window.kcSticky({ anchor: null });   // 前回1位の固定CTAバーを消す(次の結果で載せ直す)
     form.scrollIntoView({ block: "start", behavior: "smooth" });
   });
 

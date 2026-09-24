@@ -1720,7 +1720,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .sg__detail { grid-column: 1 / -1; font-size: .8rem; color: var(--c-text-sub); line-height: 1.75; border-top: 1px dashed var(--c-border); padding-top: 8px; }
 .sg__detail .tcta { margin-left: 6px; vertical-align: middle; }
 .sg__cta { grid-column: 1 / -1; padding-top: 4px; }
-.sg__cta .btn { margin: 0; }
+.sg__cta .btn { margin: 0; border-radius: 14px; } /* 文言が複数行になるスマホ幅で pill 状に潰れないよう固定 */
 .sg__cta .micro { display: block; font-size: .68rem; color: var(--c-text-sub); text-align: center; margin: 6px 0 0; }
 .rs__spec .rs__spec--total { grid-column: 1 / -1; }
 .rs__spec--total dd { color: var(--c-accent-dark); font-size: .95rem; }

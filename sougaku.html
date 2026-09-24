@@ -173,6 +173,7 @@
       <li><strong>工事費</strong>は「目安」を選ぶと光コラボの標準額(戸建て22,000円・マンション16,500円)を足します。実質無料キャンペーンは分割相当額の割引なので、期間内に解約すると残債が請求されます(<a href="articles/hikari-shokihiyou">初期費用の解説</a>)。</li>
       <li><strong>キャッシュバック</strong>は窓口と時期で大きく変わるため含めていません。上位2〜3社について、公式ページの特典額を引いて比べてください(<a href="articles/hikari-cashback">受け取り方の注意点</a>)。</li>
       <li>ホームルーターの<strong>端末代</strong>(SoftBank Air・home 5G の実質無料条件など)と、月額の改定予定(SoftBank Air は2026年12月に+330円)は含めていません。</li>
+      <li>3年(36ヶ月)で計算するときの<strong>BIGLOBE WiMAX +5G と SoftBank Air</strong>は、割引が24ヶ月目までなので、25ヶ月目からを割引前の月額(4,928円・5,368円)で計算しています。</li>
       <li>NURO光は2026年9月改定後の月額基本料金(戸建て5,720円・マンション4,730円)で計算しています。2年割適用の24か月間は4,530/3,530円です。建物によっては「NURO光 forマンション」になり料金が変わります。</li>
     </ul>
 
@@ -293,7 +294,7 @@
         '<span class="sg__rank">' + (i + 1) + '</span>' +
         '<div><div class="sg__name">' + esc(s.name) + '</div><div class="sg__tags">' + tags.map(function (t) { return '<span class="sg__tag">' + esc(t) + '</span>'; }).join("") + '</div></div>' +
         '<div class="sg__total"><b>' + yen(r.total) + '</b><small>月あたり約' + yen(Math.round(r.total / r.months)) + '・' + diff + '</small></div>' +
-        '<div class="sg__detail">月額' + yen(r.monthly) + '×' + r.months + 'ヶ月 ＋ 事務手数料' + yen(FEE) + (r.kouji ? ' ＋ 工事費' + yen(r.kouji) : '') + (r.disc ? ' − セット割' + yen(r.disc) : '') + '。' + esc(s.note) +
+        '<div class="sg__detail">' + (r.monthly2 ? '月額' + yen(r.monthly) + '×24ヶ月 ＋ ' + yen(r.monthly2) + '×' + (r.months - 24) + 'ヶ月' : '月額' + yen(r.monthly) + '×' + r.months + 'ヶ月') + ' ＋ 事務手数料' + yen(FEE) + (r.kouji ? ' ＋ 工事費' + yen(r.kouji) : '') + (r.disc ? ' − セット割' + yen(r.disc) : '') + '。' + esc(s.note) +
         ' <a class="tcta" data-cta="table" href="' + esc(s.href) + '" ' + rel + ' target="_blank">公式で見る</a>' + (s.beacon ? '<img border="0" width="1" height="1" src="' + esc(s.beacon) + '" alt="">' : '') + '</div>' +
         cta +
         '</li>';
