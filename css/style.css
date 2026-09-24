@@ -1229,6 +1229,7 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
   .tbl-hint { display: none !important; }
   .cmp-tbl { min-width: 0; width: 100%; font-size: .86rem; }
   .cmp-tbl, .cmp-tbl tbody, .cmp-tbl tr, .cmp-tbl td, .cmp-tbl th { display: block; width: auto; }
+  .cmp-tbl caption { display: block; width: auto; padding: 0 0 10px; } /* カード積みでは table-caption だと1文字幅に潰れる(2026-09-25) */
   .cmp-tbl thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
   .cmp-tbl tbody tr {
     border: 1.5px solid var(--c-border); border-radius: var(--radius); background: #fff;
