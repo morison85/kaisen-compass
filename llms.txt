@@ -13,9 +13,9 @@
 - [引越しのネット回線ガイド](https://kaisen-compass.com/articles/hikkoshi-internet): 継続・乗り換え・新規の判断フロー。手続きは引越しの1〜1.5ヶ月前が理想。
 - [マンションのネットが遅い原因と解決策](https://kaisen-compass.com/articles/mansion-internet): 原因の大半は配線方式(VDSL)・ルーター・無料ネットの混雑。切り分け手順を解説。
 - [一人暮らしのWiFiの正解](https://kaisen-compass.com/articles/hitorigurashi-wifi): 光回線・ホームルーター・ポケット型の使い分け。テザリングで十分なケースも解説。
-- [工事不要WiFi比較](https://kaisen-compass.com/articles/home-router): ドコモhome 5G・WiMAX・ソフトバンクエアーの比較。スマホのキャリアに合わせるのが基本。
+- [工事不要WiFiおすすめ比較](https://kaisen-compass.com/articles/home-router): ドコモhome 5G・WiMAX・ソフトバンクエアーの比較。スマホのキャリアに合わせるのが基本。
 - [Web会議が途切れる原因と対処法](https://kaisen-compass.com/articles/web-kaigi-taisho): 応急処置と、回線・Wi-Fi・PCの3層での切り分け手順。
-- [格安SIMおすすめ5社比較](https://kaisen-compass.com/articles/kakuyasu-sim): 楽天モバイル・ahamo・LINEMO・UQモバイル・IIJmioの比較と乗り換え手順。
+- [格安SIM比較](https://kaisen-compass.com/articles/kakuyasu-sim): 楽天モバイル・ahamo・LINEMO・UQモバイル・IIJmioの比較と乗り換え手順。
 - [auひかりの申し込み窓口・代理店比較](https://kaisen-compass.com/articles/auhikari-dairiten): 正規代理店・プロバイダ・公式の違い。選ぶ軸は金額でなく受け取りの確実性。
 - [WiMAXプロバイダ比較](https://kaisen-compass.com/articles/wimax-provider): 全プロバイダで回線・速度は同一。実質月額での比較方法と2026年10月値上げへの対処。
 - [戸建ての光回線おすすめ比較](https://kaisen-compass.com/articles/kodate-hikari): 戸建ては全選択肢から選べる。エリア判定→独自回線優先が最短ルート。
@@ -49,9 +49,9 @@
 - [ドコモhome 5Gのエリア確認方法](https://kaisen-compass.com/articles/home5g-area): サービスエリアマップは利用機種をシャープ home 5G HR02 に変えてから住所検索する。地図が5Gでも減衰・遮蔽・混雑で実効速度は落ちるため、設置予定地で昼夜2回の実測を行い、8日以内キャンセル(初期契約解除)を保険にする。住所単位のピンポイント判定が要るならWiMAX。
 - [ひかり電話は必要か不要か](https://kaisen-compass.com/articles/hikari-denwa-hitsuyou): 「番号を残すか」「通話に使うか」の2軸で判定し、両方ノーの人だけ不要。基本料は月550円前後で加入電話1,870円前後より年約1.6万円安く、通話料は全国一律8.8円/3分。番号はNTT発番の0AB〜J番号なら同一市内区域で引き継げる。セット割の適用条件に含まれる場合と停電時に使えない点が要注意。
 
-- [光回線を2年ごとに乗り換えるのは得か損か](https://kaisen-compass.com/articles/hikari-2nen-norikae): 「2年ごと」ではなく工事費の分割完了月が基準。損益分岐の計算式と5年総額シミュレーション、光コラボ限定でサイクルを回す運用手順。
+- [光回線は2年ごとに乗り換えるべき?得になる3条件と5年総額の差額](https://kaisen-compass.com/articles/hikari-2nen-norikae): 「2年ごと」ではなく工事費の分割完了月が基準。損益分岐の計算式と5年総額シミュレーション、光コラボ限定でサイクルを回す運用手順。
 - [WiMAXの「無制限」は本当?制限がかかる3つの条件と使い方別の安全ライン](https://kaisen-compass.com/articles/wimax-mugen-hontou): 容量は無制限だが速度は保証されない。プラスエリアモードの月30GB制限、混雑時間帯の規約条項、電波側の要因を4層に分けて整理。
-- [ホームルーターの電気代は月いくら?機種別の実額と「電気代込みの実質月額」で見る本当の差](https://kaisen-compass.com/articles/homerouter-denkidai): 消費電力(W)×22.3円が月額の目安。光回線(ONU+ルーター)との比較と「電気代込みの実質月額」で並べ直した総コスト。
+- [ルーターの電気代は月いくら?Wi-Fiルーター・ホームルーター別の早見表](https://kaisen-compass.com/articles/homerouter-denkidai): 消費電力(W)×22.3円が月額の目安。光回線(ONU+ルーター)との比較と「電気代込みの実質月額」で並べ直した総コスト。
 - [テザリングは固定回線の代わりになる?できる人の条件と5つの限界](https://kaisen-compass.com/articles/tethering-kotei-kaisen): 「データ無制限」と「テザリング無制限」は別物。auの使い放題MAX＋はテザリング＋データシェア合計60GBで超過後128kbps。キャリア別の上限一覧、月の容量を1日あたりに割り戻す逆算表、5問の判定チャート、月額の損益分岐。
 - [eSIM乗り換えの手順](https://kaisen-compass.com/articles/esim-norikae): eSIMの乗り換えは手順より「何時に申し込むか」で決まる。ahamoのMNP回線切替は午前9時〜午後9時、UQモバイルは他社からの乗り換えが9:00〜21:15で機種変更・再発行は0:05〜23:55、楽天モバイルは21:01以降の受付だと翌9時以降、IIJmioは21:00以降の完了分が翌朝9時以降に自動開通。圏外になる空白時間は5〜15分で、困るのは通話よりSMS認証。Wi-Fiは実質必須で、乗り換え対象端末のテザリングは切替と同時に止まる。
 - [MNPワンストップとは](https://kaisen-compass.com/articles/mnp-one-stop): MNPワンストップが使えるかは「転出元と転入先の両方が対応事業者一覧にあり、Webから申し込む場合」に限られる。乗り換え先だけ見て判断すると申込途中で予約番号を求められる。公表されている対応事業者は28件(2026年3月17日時点)で、一覧にない会社は予約番号方式。対応同士でも店頭・電話申込、法人契約、データ専用契約、名義の不一致では予約番号が必要。予約番号は有効期限15日だが、乗り換え先が残り7〜10日以上を求めるため実質の猶予は5〜8日。

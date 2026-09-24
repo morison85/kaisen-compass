@@ -3,7 +3,7 @@
 <channel>
   <title>回線コンパス</title>
   <link>https://kaisen-compass.com/</link>
-  <description>光回線・ホームルーター・格安SIMを料金と実測データで比較するメディア</description>
+  <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
   <lastBuildDate>Thu, 24 Sep 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
@@ -148,11 +148,11 @@
     <description>「データ無制限」と「テザリング無制限」は同じではありません。auの使い放題MAX＋はテザリングとデータシェアの合計60GBが上限で、超過後は128kbpsに制限されます。キャリア別の上限一覧、月の容量を1日あたりに割り戻す逆算表、5問の判定チャート、月額の損益分岐、そして数字に出ない5つの限界まで、2026年9月時点の公式情報で整理しました。</description>
   </item>
   <item>
-    <title>光回線を2年ごとに乗り換えるのは得か損か|サイクル運用の損益分岐 | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/hikari-2nen-norikae</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-2nen-norikae</guid>
-    <pubDate>Sat, 05 Sep 2026 18:00:00 +0900</pubDate>
-    <description>光回線の「2年ごと乗り換え」は本当に得なのか。意味があるのは周期ではなく工事費の分割完了月です。損益分岐を4つの数字で出す計算式、据え置き・2年・3〜4年の5年総額シミュレーション、光コラボと独自回線の向き不向き、年間スケジュールと落とし穴5つまで、2026年9月時点の情報でまとめました。</description>
+    <title>ルーターの電気代は月いくら?Wi-Fiルーター・ホームルーター別の早見表【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/homerouter-denkidai</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/homerouter-denkidai</guid>
+    <pubDate>Sat, 05 Sep 2026 18:20:00 +0900</pubDate>
+    <description>ホームルーターの電気代は24時間つけっぱなしで月200〜450円前後が目安。消費電力から出す早見表と、光回線(ONU+Wi-Fiルーター)との比較、「電気代込みの実質月額」で並べ直した総コストを掲載。節電で実際に削れる額と、Wi-Fi 7ルーターの消費電力まで、2026年9月時点の情報でまとめました。</description>
   </item>
   <item>
     <title>WiMAXの「無制限」は本当?制限がかかる3つの条件 | 回線コンパス</title>
@@ -162,18 +162,11 @@
     <description>WiMAXの無制限を4つの層に分解して整理。プラン上の月間上限はなく旧「3日15GB」も2022年2月に撤廃済みですが、プラスエリアモードの月30GB制限と混雑時間帯の規約条項は残っています。「30GB超えるとスタンダードも止まる」という誤解の訂正と、使い方別の安全ラインまで、2026年9月時点の情報で解説します。</description>
   </item>
   <item>
-    <title>ホームルーターの電気代は月いくら?実額と実質月額の比較 | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/homerouter-denkidai</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/homerouter-denkidai</guid>
-    <pubDate>Sat, 05 Sep 2026 18:20:00 +0900</pubDate>
-    <description>ホームルーターの電気代は24時間つけっぱなしで月200〜450円前後が目安。消費電力から出す早見表と、光回線(ONU+Wi-Fiルーター)との比較、「電気代込みの実質月額」で並べ直した総コストを掲載。節電で実際に削れる額と、Wi-Fi 7ルーターの消費電力まで、2026年9月時点の情報でまとめました。</description>
-  </item>
-  <item>
-    <title>光回線ルーターの選び方|Wi-Fi 6/6E/7の違いと買うか借りるか | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/hikari-router-erabikata</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-router-erabikata</guid>
-    <pubDate>Sat, 05 Sep 2026 12:00:00 +0900</pubDate>
-    <description>光回線用Wi-Fiルーターの選び方。最優先はIPv6(IPoE)対応で、規格の新しさより先に確認すべき理由を解説。Wi-Fi 6・6E・7の違いと実用面での必要性、買うかレンタルかを利用年数の損益分岐点で判断する方法、部屋の広さ・接続台数から選ぶ3ステップまで、2026年9月時点の情報でまとめました。</description>
+    <title>光回線は2年ごとに乗り換えるべき?得になる3条件と5年総額の差額【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-2nen-norikae</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-2nen-norikae</guid>
+    <pubDate>Sat, 05 Sep 2026 18:00:00 +0900</pubDate>
+    <description>光回線の「2年ごと乗り換え」は本当に得なのか。意味があるのは周期ではなく工事費の分割完了月です。損益分岐を4つの数字で出す計算式、据え置き・2年・3〜4年の5年総額シミュレーション、光コラボと独自回線の向き不向き、年間スケジュールと落とし穴5つまで、2026年9月時点の情報でまとめました。</description>
   </item>
   <item>
     <title>楽天モバイル×楽天ひかりのセットは得?|ポイント還元の実質価値 | 回線コンパス</title>
@@ -188,6 +181,13 @@
     <guid isPermaLink="true">https://kaisen-compass.com/articles/pocket-wifi-tanki-rental</guid>
     <pubDate>Sat, 05 Sep 2026 12:00:00 +0900</pubDate>
     <description>ポケットWiFi短期レンタルは借りる期間で正解が変わります。1週間・2週間〜1ヶ月・2ヶ月以上の3区分で損益分岐を日額換算し、主要な短期レンタルサービスを比較。出張・帰省・引越しなどシーン別のチェックリストと、データ容量・回線種別の選び方まで、2026年9月時点の情報でまとめました。</description>
+  </item>
+  <item>
+    <title>光回線ルーターの選び方|Wi-Fi 6/6E/7の違いと買うか借りるか | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-router-erabikata</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-router-erabikata</guid>
+    <pubDate>Sat, 05 Sep 2026 12:00:00 +0900</pubDate>
+    <description>光回線用Wi-Fiルーターの選び方。最優先はIPv6(IPoE)対応で、規格の新しさより先に確認すべき理由を解説。Wi-Fi 6・6E・7の違いと実用面での必要性、買うかレンタルかを利用年数の損益分岐点で判断する方法、部屋の広さ・接続台数から選ぶ3ステップまで、2026年9月時点の情報でまとめました。</description>
   </item>
   <item>
     <title>マンションのVDSLを速くする方法|100Mbpsの壁と抜け道 | 回線コンパス</title>
@@ -260,7 +260,7 @@
     <description>光回線とプロバイダの違いを、電気の「送電線と電力会社」にたとえて整理。契約形態は分離型・一体型・選択型の3パターンあり、自分がどれかで請求も乗り換え手順も変わります。プロバイダで実際に変わる3つの要素まで解説。2026年9月時点の情報です。</description>
   </item>
   <item>
-    <title>WiMAXのエリア確認方法 | 回線コンパス</title>
+    <title>WiMAXのエリア確認方法|5Gエリアマップとピンポイント判定の見方【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/wimax-area</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/wimax-area</guid>
     <pubDate>Sun, 30 Aug 2026 12:00:00 +0900</pubDate>
@@ -414,7 +414,7 @@
     <description>光回線の乗り換え手順を5ステップで解説。キャッシュバックの受け取り忘れを防ぐチェックリスト、違約金・工事費残債を相殺する方法、新規・転用・事業者変更の違いまで。数万円の差がつく「損しない乗り換え」の実践ガイドです。</description>
   </item>
   <item>
-    <title>光回線おすすめ7社比較 | 回線コンパス</title>
+    <title>光回線おすすめ7社比較【2026年9月】スマホ別の最適解と月額・実測速度 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/hikari-osusume</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-osusume</guid>
     <pubDate>Thu, 20 Aug 2026 12:00:00 +0900</pubDate>
@@ -442,7 +442,7 @@
     <description>一人暮らしのWiFi選びを「在宅時間・データ量・工事可否・住む期間」の4軸で診断。光回線・ホームルーター・ポケット型WiFiの2年総額比較と、テザリングで十分なケースまで本音で解説します。あなたの正解が5分でわかります。</description>
   </item>
   <item>
-    <title>工事不要WiFiおすすめ比較 | 回線コンパス</title>
+    <title>工事不要WiFiおすすめ比較【2026年】ホームルーター3社と置くだけWiFiの選び方 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/home-router</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/home-router</guid>
     <pubDate>Mon, 10 Aug 2026 12:00:00 +0900</pubDate>
@@ -456,7 +456,7 @@
     <description>Web会議(Zoom・Teams・Meet)が途切れる・固まる・声が聞こえないときの原因は「回線」「Wi-Fi」「PC」の3層に分かれます。会議中でもできる応急処置と、5分の切り分け手順、原因別の根本対策を順に解説します。</description>
   </item>
   <item>
-    <title>格安SIMおすすめ5社比較 | 回線コンパス</title>
+    <title>格安SIM比較【2026年】5社の料金・速度・セット割を一覧で | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/kakuyasu-sim</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/kakuyasu-sim</guid>
     <pubDate>Wed, 05 Aug 2026 12:00:00 +0900</pubDate>
