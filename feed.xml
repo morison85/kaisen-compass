@@ -12,7 +12,7 @@
     <link>https://kaisen-compass.com/articles/hikari-shougai</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-shougai</guid>
     <pubDate>Thu, 24 Sep 2026 12:00:00 +0900</pubDate>
-    <description>光回線がつながらないとき、原因は「事業者側の障害」「回線の混雑(輻輳)」「自宅側の不調」の3つに分かれますが、体感では区別がつきません。まずスマホのモバイル回線で外に出られるかを確かめ、ONUのランプを見て、ルーターを外してONU直結で試す——ここまで5分で自宅側かどうかはほぼ判定できます。ランプ4種(電源・光回線・認証・UNI)の読み方、光コラボは契約先とNTT東西の2か所を見る必要があるという二層構造、そしてNTT東日本のIP通信網サービス契約約款が定める「全く利用できない状態が24時間以上連続したときに限り、24時間の倍数の部分について日数分の利用料金相当額を賠償する」という24時間ルール、さらに自前機器が原因だったときに派遣費用の負担を求められる切分責任の条項まで、2026年9月時点の一次情報で整理しました。</description>
+    <description>光回線がつながらないとき、原因は「事業者側の障害」「回線の混雑(輻輳)」「自宅側の不調」の3つに分かれますが、体感では区別がつきません。まずスマホのモバイル回線で外に出られるかを確かめ、ONUのランプを見て、ルーターを外してONU直結で試す。ここまで5分で自宅側かどうかはほぼ判定できます。ランプ4種(電源・光回線・認証・UNI)の読み方、光コラボは契約先とNTT東西の2か所を見る必要があるという二層構造、そしてNTT東日本のIP通信網サービス契約約款が定める「全く利用できない状態が24時間以上連続したときに限り、24時間の倍数の部分について日数分の利用料金相当額を賠償する」という24時間ルール、さらに自前機器が原因だったときに派遣費用の負担を求められる切分責任の条項まで、2026年9月時点の一次情報で整理しました。</description>
   </item>
   <item>
     <title>光回線の工事待ちは何週間?混雑する月と開通を早める6つの手【2026年】 | 回線コンパス</title>
@@ -351,6 +351,13 @@
     <description>WiMAXはどのプロバイダでも回線・速度・エリアが同じ。違うのは料金と特典だけです。BIGLOBE・GMOとくとくBB・カシモ・UQ本家などを実質月額で比較し、2026年10月の一斉値上げへの対処法、口座振替対応、キャッシュバック条件の注意点まで解説します。</description>
   </item>
   <item>
+    <title>Web会議が途切れる原因と対処法 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/web-kaigi-taisho</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/web-kaigi-taisho</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>Web会議(Zoom・Teams・Meet)が途切れる・固まる・声が聞こえないときの原因は「回線」「Wi-Fi」「PC」の3層に分かれます。会議中でもできる応急処置と、5分の切り分け手順、原因別の根本対策を順に解説します。</description>
+  </item>
+  <item>
     <title>ソフトバンク光への乗り換え手順 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/sbhikari-norikae</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/sbhikari-norikae</guid>
@@ -365,6 +372,13 @@
     <description>「インターネット無料」の賃貸が夜だけ極端に遅くなるのはなぜ?1本の回線を全戸で分け合う仕組み・VDSL配線・帯域制限という3つの構造的な原因を図解し、今日できる自衛策と、自分専用の回線を個別契約すべきかの判断基準を解説します。</description>
   </item>
   <item>
+    <title>マンションのネットが遅い原因と対策 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/mansion-internet</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/mansion-internet</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>マンションのWi-Fi・ネットが遅い原因は「配線方式(VDSL)」「ルーターの古さ」「無料ネットの混雑」の3つがほとんど。5分でできる原因の切り分け方と、費用0円の改善策から乗り換えまで、効果の大きい順に解説します。</description>
+  </item>
+  <item>
     <title>賃貸で光回線の工事ができないとき | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/kouji-dekinai-chintai</link>
     <guid isPermaLink="true">https://kaisen-compass.com/articles/kouji-dekinai-chintai</guid>
@@ -377,6 +391,48 @@
     <guid isPermaLink="true">https://kaisen-compass.com/articles/kodate-hikari</guid>
     <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
     <description>戸建てはマンションと違い、auひかり・NURO光などの独自回線を含む全選択肢から光回線を選べます。月額相場(4,800〜5,800円)、工事費実質無料の仕組み、スマホ別のおすすめ、10ギガの要否まで。持ち家で長く使う前提の「戸建て専用」の選び方を解説します。</description>
+  </item>
+  <item>
+    <title>格安SIM比較【2026年】5社の料金・速度・セット割を一覧で | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/kakuyasu-sim</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/kakuyasu-sim</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>格安SIM・オンライン専用プラン5社(楽天モバイル・ahamo・LINEMO・UQモバイル・IIJmio)を料金と通信品質で比較。データ量別の選び方、MNPワンストップでの乗り換え手順、注意点まで。大手キャリアからの乗り換えで年5〜7万円の節約も。</description>
+  </item>
+  <item>
+    <title>工事不要WiFiおすすめ比較【2026年】ホームルーター3社と置くだけWiFiの選び方 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/home-router</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/home-router</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>コンセントに挿すだけで使える工事不要WiFi(ホームルーター)のドコモhome 5G・WiMAX・ソフトバンクエアー3社を比較。スマホ別の選び方、ポケット型WiFiとの使い分け、契約前の注意点まで。工事なしで今週からネットが使えます。</description>
+  </item>
+  <item>
+    <title>一人暮らしのWiFiはどれが正解? | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hitorigurashi-wifi</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hitorigurashi-wifi</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>一人暮らしのWiFi選びを「在宅時間・データ量・工事可否・住む期間」の4軸で診断。光回線・ホームルーター・ポケット型WiFiの2年総額比較と、テザリングで十分なケースまで本音で解説します。あなたの正解が5分でわかります。</description>
+  </item>
+  <item>
+    <title>引越しのネット回線はどうする? | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikkoshi-internet</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikkoshi-internet</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>引越しでネット回線は「継続(移転)」「乗り換え」「新規契約」のどれが正解?判断フローチャートと費用比較で3分で結論が出ます。手続きのタイムライン、開通までのつなぎ回線、マンション・戸建て別の注意点まで完全ガイド。</description>
+  </item>
+  <item>
+    <title>光回線おすすめ7社比較【2026年9月】スマホ別の最適解と月額・実測速度 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-osusume</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-osusume</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>光回線7社(ドコモ光・auひかり・ソフトバンク光・NURO光・GMOとくとくBB光など)を料金・実測速度・セット割で比較。スマホ別の最適解が3分でわかる図解つき。乗り換え手順と失敗回避策まで、実際に複数回線を使ってきた運営者が解説します。</description>
+  </item>
+  <item>
+    <title>光回線の乗り換え手順とキャッシュバック | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-cashback</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-cashback</guid>
+    <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
+    <description>光回線の乗り換え手順を5ステップで解説。キャッシュバックの受け取り忘れを防ぐチェックリスト、違約金・工事費残債を相殺する方法、新規・転用・事業者変更の違いまで。数万円の差がつく「損しない乗り換え」の実践ガイドです。</description>
   </item>
   <item>
     <title>光回線の10ギガは必要? | 回線コンパス</title>
@@ -405,62 +461,6 @@
     <guid isPermaLink="true">https://kaisen-compass.com/articles/auhikari-dairiten</guid>
     <pubDate>Sat, 29 Aug 2026 12:00:00 +0900</pubDate>
     <description>auひかりはどこから申し込むかで受け取れる特典が数万円変わります。代理店NEXT・NNコミュニケーションズ・GMOとくとくBB・公式(au/プロバイダ)の違いを、金額だけでなく「受け取りやすさ」で比較。オプション条件や受け取り時期の罠も具体的に解説します。</description>
-  </item>
-  <item>
-    <title>光回線の乗り換え手順とキャッシュバック | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/hikari-cashback</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-cashback</guid>
-    <pubDate>Sat, 22 Aug 2026 12:00:00 +0900</pubDate>
-    <description>光回線の乗り換え手順を5ステップで解説。キャッシュバックの受け取り忘れを防ぐチェックリスト、違約金・工事費残債を相殺する方法、新規・転用・事業者変更の違いまで。数万円の差がつく「損しない乗り換え」の実践ガイドです。</description>
-  </item>
-  <item>
-    <title>光回線おすすめ7社比較【2026年9月】スマホ別の最適解と月額・実測速度 | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/hikari-osusume</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-osusume</guid>
-    <pubDate>Thu, 20 Aug 2026 12:00:00 +0900</pubDate>
-    <description>光回線7社(ドコモ光・auひかり・ソフトバンク光・NURO光・GMOとくとくBB光など)を料金・実測速度・セット割で比較。スマホ別の最適解が3分でわかる図解つき。乗り換え手順と失敗回避策まで、実際に複数回線を使ってきた運営者が解説します。</description>
-  </item>
-  <item>
-    <title>引越しのネット回線はどうする? | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/hikkoshi-internet</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikkoshi-internet</guid>
-    <pubDate>Tue, 18 Aug 2026 12:00:00 +0900</pubDate>
-    <description>引越しでネット回線は「継続(移転)」「乗り換え」「新規契約」のどれが正解?判断フローチャートと費用比較で3分で結論が出ます。手続きのタイムライン、開通までのつなぎ回線、マンション・戸建て別の注意点まで完全ガイド。</description>
-  </item>
-  <item>
-    <title>マンションのネットが遅い原因と対策 | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/mansion-internet</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/mansion-internet</guid>
-    <pubDate>Sat, 15 Aug 2026 12:00:00 +0900</pubDate>
-    <description>マンションのWi-Fi・ネットが遅い原因は「配線方式(VDSL)」「ルーターの古さ」「無料ネットの混雑」の3つがほとんど。5分でできる原因の切り分け方と、費用0円の改善策から乗り換えまで、効果の大きい順に解説します。</description>
-  </item>
-  <item>
-    <title>一人暮らしのWiFiはどれが正解? | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/hitorigurashi-wifi</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/hitorigurashi-wifi</guid>
-    <pubDate>Wed, 12 Aug 2026 12:00:00 +0900</pubDate>
-    <description>一人暮らしのWiFi選びを「在宅時間・データ量・工事可否・住む期間」の4軸で診断。光回線・ホームルーター・ポケット型WiFiの2年総額比較と、テザリングで十分なケースまで本音で解説します。あなたの正解が5分でわかります。</description>
-  </item>
-  <item>
-    <title>工事不要WiFiおすすめ比較【2026年】ホームルーター3社と置くだけWiFiの選び方 | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/home-router</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/home-router</guid>
-    <pubDate>Mon, 10 Aug 2026 12:00:00 +0900</pubDate>
-    <description>コンセントに挿すだけで使える工事不要WiFi(ホームルーター)のドコモhome 5G・WiMAX・ソフトバンクエアー3社を比較。スマホ別の選び方、ポケット型WiFiとの使い分け、契約前の注意点まで。工事なしで今週からネットが使えます。</description>
-  </item>
-  <item>
-    <title>Web会議が途切れる原因と対処法 | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/web-kaigi-taisho</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/web-kaigi-taisho</guid>
-    <pubDate>Sat, 08 Aug 2026 12:00:00 +0900</pubDate>
-    <description>Web会議(Zoom・Teams・Meet)が途切れる・固まる・声が聞こえないときの原因は「回線」「Wi-Fi」「PC」の3層に分かれます。会議中でもできる応急処置と、5分の切り分け手順、原因別の根本対策を順に解説します。</description>
-  </item>
-  <item>
-    <title>格安SIM比較【2026年】5社の料金・速度・セット割を一覧で | 回線コンパス</title>
-    <link>https://kaisen-compass.com/articles/kakuyasu-sim</link>
-    <guid isPermaLink="true">https://kaisen-compass.com/articles/kakuyasu-sim</guid>
-    <pubDate>Wed, 05 Aug 2026 12:00:00 +0900</pubDate>
-    <description>格安SIM・オンライン専用プラン5社(楽天モバイル・ahamo・LINEMO・UQモバイル・IIJmio)を料金と通信品質で比較。データ量別の選び方、MNPワンストップでの乗り換え手順、注意点まで。大手キャリアからの乗り換えで年5〜7万円の節約も。</description>
   </item>
 </channel>
 </rss>
