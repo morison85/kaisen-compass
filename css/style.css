@@ -995,6 +995,8 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .cmp-filter__btn:hover { border-color: var(--c-primary); transform: translateY(-2px); }
 .cmp-filter__btn.is-on { background: var(--c-primary); border-color: var(--c-primary); color: #fff; }
 .cmp-filter__btn.is-on span { background: rgba(255,255,255,.22); color: #fff; }
+.cmp-date { font-size: .8rem; color: var(--c-text-sub); margin: -6px 0 14px; }
+.cmp-tbl caption { caption-side: top; text-align: left; font-size: .8rem; color: var(--c-text-sub); padding: 0 0 8px; }
 .cmp-filter--cond { margin-top: 0; }
 .cmp-filter--cond .cmp-filter__btn { font-size: .8rem; padding: 7px 12px; }
 .cmp-tbl .col-speed { min-width: 128px; }
