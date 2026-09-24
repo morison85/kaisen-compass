@@ -53,7 +53,7 @@
     }
   },
   "datePublished": "2026-08-30",
-  "dateModified": "2026-09-24",
+  "dateModified": "2026-09-25",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/wimax-area"
 }
 </script>
@@ -169,7 +169,7 @@
     <span class="card__cat">WiFi・ホームルーター</span>
     <h1 class="article-title">WiMAXのエリア確認方法|5Gエリアマップとピンポイント判定の見方【2026年】</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-09-24">2026年9月24日</time></span>
+      <span class="upd">更新日:<time datetime="2026-09-25">2026年9月25日</time></span>
       <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -199,6 +199,7 @@
         <li><a href="#tejun">ピンポイント判定の手順</a></li>
         <li><a href="#yomikata">○・△・×の読み方</a></li>
         <li><a href="#5g">5Gエリアの確認</a></li>
+        <li><a href="#plus">プラスエリアモードのエリア確認</a></li>
         <li><a href="#okunai">○なのに屋内で入らないとき</a></li>
         <li><a href="#otameshi">お試しレンタルで実機確認</a></li>
         <li><a href="#kengai">圏外だったときの代替</a></li>
@@ -218,6 +219,10 @@
 
     <h2 id="tejun">ピンポイント判定の手順</h2>
     <p>判定はUQコミュニケーションズの公式ページで行います。どのプロバイダから契約する場合も、回線は同じUQのものなので<strong>判定結果はどこで契約しても同じ</strong>です。</p>
+    <div class="btn-area" style="margin:0 0 16px">
+      <a class="btn btn--sub" href="https://www.uqwimax.jp/wimax/area/" rel="noopener" target="_blank">UQ公式のエリア確認ページを開く(無料・申し込みにはなりません)</a>
+    </div>
+    <p>判定ページでは、先に<strong>建物種別(戸建住宅/集合住宅・ビルの10階未満/10階以上)</strong>を選んでから住所を指定します(2026年9月25日確認)。集合住宅の高層階は結果が変わるので、実際の階数で選んでください。</p>
     <ol>
       <li><strong>郵便番号または住所を入力</strong> — 都道府県から順に選びます</li>
       <li><strong>番地まで入力する</strong> — ここが重要。町名までだと判定が大まかになります</li>
@@ -252,6 +257,14 @@
     </ul>
     <p>「5Gエリア外」でも4G LTEが入れば実用になります。<strong>5Gが入るかどうかより、4G LTEの電波が安定して入るかのほうが重要</strong>です。速度が数百Mbps出るかより、途切れないことのほうが体感に効きます。</p>
 
+    <h2 id="plus">プラスエリアモードのエリア確認</h2>
+    <p>WiMAX +5Gの端末には、通常の<strong>スタンダードモード</strong>と、プラチナバンド(800MHz帯)を使える<strong>プラスエリアモード</strong>があります。プラスエリアモードは電波が遠くまで届き、建物の奥や地下にも入りやすい代わりに、月30GBを超えると当月末まで最大128kbpsに制限され、使った月は月額1,100円(税込)のオプション料がかかるのが基本です(プロバイダによっては無料。詳細は<a href="wimax-mugen-hontou">WiMAXの無制限の実態</a>)。</p>
+    <p>エリアも通信モードごとに違います。UQ公式のエリアマップは、都道府県を選んだ後に<strong>左上の虫眼鏡から通信モードを選択</strong>でき、最初に表示されるのは【5G対応】スタンダードモードです。プラスエリアモードに切り替えて塗り分けを見ると、「スタンダードモードでは△だが、プラスエリアモードなら届く」場所が分かります(UQ公式「エリアマップのモード選択について」2026年9月25日確認)。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ プラスエリアモード頼みの契約は避ける</div>
+      <p style="margin:0;">スタンダードモードが×で、プラスエリアモードだけ○という住所は、毎月30GBの上限とオプション料を抱えたまま使うことになります。UQ公式の注記どおり、プラスエリアモードは選択して通信した時点でオプション料の対象になり、同月内に別モードへ戻しても日割りにはなりません。自宅の主回線にするなら、スタンダードモードで○の住所か、<a href="#kengai">別の回線網を使うホームルーター</a>を候補にしてください。</p>
+    </div>
+
     <h2 id="okunai">○なのに屋内で入らないとき</h2>
     <p>判定は屋外での受信を基準にしています。実際の利用は屋内なので、次の要因で電波が弱くなります。</p>
     <div class="tbl-wrap">
@@ -276,6 +289,23 @@
       <li><strong>Ping</strong> — ゲームやWeb会議をするなら必須</li>
       <li><strong>実際に使う部屋での電波</strong> — 窓際だけでなく、普段いる場所で</li>
     </ul>
+    <h3>Try WiMAX(15日間無料)の申し込み条件</h3>
+    <p>UQ公式ページに書かれている条件は次のとおりです(2026年9月25日確認)。</p>
+    <div class="box-memo">
+      <div class="box-memo__t">📋 貸出条件(UQ公式)</div>
+      <ul>
+        <li><strong>期間</strong>:機器受け取り後、15日間無料</li>
+        <li><strong>必要なもの</strong>:契約者本人のクレジットカード(デビットカード不可)と連絡先メールアドレス</li>
+        <li><strong>回数</strong>:おひとりさま1回まで。利用履歴がなく、貸出機器の未返却履歴がない人が対象(前回の貸出から2年以上経過していれば再申込可)</li>
+        <li><strong>貸出端末</strong>:Speed Wi-Fi HOME 5G L13(ホームルーター)/ Speed Wi-Fi DOCK 5G 01(モバイルルーター)</li>
+        <li><strong>返却</strong>:返却日(最終日)の24時までに発送。返却の送料はUQ負担(ヤマト運輸の場合のみ)。未返却は最大で貸出機器相当額を請求されることがある</li>
+        <li><strong>発送</strong>:在庫がない場合や審査・混雑・天候により、翌日以降の発送になることがある</li>
+      </ul>
+    </div>
+    <div class="btn-area" style="margin:12px 0 22px">
+      <a class="btn btn--sub" href="https://www.uqwimax.jp/wimax/beginner/trywimax/" rel="noopener" target="_blank">UQ公式の Try WiMAX 案内ページを開く(広告ではありません)</a>
+    </div>
+
 
     <div class="cta">
       <div class="cta__t">📡 エリアを確認して、そのまま条件も比べる</div>
@@ -290,6 +320,45 @@
     <p>×判定だった場合、WiMAXは選択肢から外れます。目的別に代替を考えます。</p>
     <h3>工事なしを続けたい場合</h3>
     <p>ドコモ home 5Gやソフトバンクエアーは別の回線網を使うため、<strong>WiMAXが圏外でも使えることがあります</strong>。特にドコモ回線はカバー率が広く、WiMAXの弱いエリアで有力な代替になります。</p>
+    <p>WiMAXが×だったときに、工事なしのまま候補になる回線を、当サイトの<a href="../hikaku">比較表</a>と同じ料金で並べました。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>サービス</th><th>使う回線網</th><th>月額(税込)</th><th>契約期間の縛り</th><th>申し込み</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>SoftBank Air(代理店NEXT)</th>
+            <td>ソフトバンク</td>
+            <td>4,950円(24ヶ月目まで。以後5,368円、2026年12月に+330円)</td>
+            <td>あり</td>
+            <td><a class="tcta" data-cta="table" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2YKMU2+348K+2N9KIA" rel="nofollow sponsored noopener" target="_blank">公式で見る</a><img src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2YKMU2+348K+2N9KIA" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></td>
+          </tr>
+          <tr>
+            <th>ドコモ home 5G</th>
+            <td>ドコモ</td>
+            <td>4,950円</td>
+            <td>なし</td>
+            <td><a class="tcta" data-cta="table" href="https://www.docomo.ne.jp/home_5g/" rel="nofollow noopener" target="_blank">公式で見る</a></td>
+          </tr>
+          <tr>
+            <th>5G CONNECT</th>
+            <td>WiMAX +5G(au)</td>
+            <td>4,800円(端末購入プラン。レンタルは5,250円)</td>
+            <td>なし</td>
+            <td><a class="tcta" data-cta="table" href="//af.moshimo.com/af/c/click?a_id=5781568&amp;p_id=4143&amp;pc_id=10502&amp;pl_id=5664" rel="nofollow sponsored noopener" target="_blank">公式で見る</a><img src="//i.moshimo.com/af/i/impression?a_id=5781568&amp;p_id=4143&amp;pc_id=10502&amp;pl_id=5664" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></td>
+          </tr>
+          <tr>
+            <th>WiFiレンタルどっとこむ</th>
+            <td>各社(機種による)</td>
+            <td>1日単位</td>
+            <td>なし</td>
+            <td><a class="tcta" data-cta="table" href="//af.moshimo.com/af/c/click?a_id=5781576&amp;p_id=2628&amp;pc_id=5879&amp;pl_id=33478" rel="nofollow sponsored noopener" target="_blank">公式で見る</a><img src="//i.moshimo.com/af/i/impression?a_id=5781576&amp;p_id=2628&amp;pc_id=5879&amp;pl_id=33478" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 5G CONNECTはWiMAXと同じ回線網なので、×判定の住所では同じく圏外です。ドコモ home 5Gは<a href="home5g-area">エリア確認の手順</a>、短期の場合は<a href="pocket-wifi-tanki-rental">短期レンタルの選び方</a>を参照してください。端末代とキャッシュバックは含みません。</p>
     <h3>スマホがソフトバンク・ワイモバイルの場合</h3>
     <p>ソフトバンクエアーはセット割の対象になるため、総額で有利になることがあります。</p>
     <div class="cta">
@@ -340,8 +409,8 @@
     <div class="sources">
       <div class="sources__t">📚 参考情報・データの出典</div>
       <ul>
-        <li>UQコミュニケーションズ「サービスエリアマップ / ピンポイントエリア判定」(2026年8月確認)</li>
-        <li>UQコミュニケーションズ「Try WiMAX」案内ページ(2026年8月確認) — 貸出条件</li>
+        <li>UQコミュニケーションズ「サービスエリアマップ / ピンポイントエリア判定」「エリアマップのモード選択について」(2026年9月25日確認)</li>
+        <li>UQコミュニケーションズ「Try WiMAX」案内ページ(2026年9月25日確認) — 貸出条件</li>
         <li>電波の入りやすさは建物構造・階数・周辺環境で大きく変わります。本文の目安は一般的な傾向です</li>
       </ul>
     </div>

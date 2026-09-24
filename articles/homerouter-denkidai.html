@@ -40,7 +40,7 @@
   "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
   "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
   "datePublished": "2026-09-05",
-  "dateModified": "2026-09-24",
+  "dateModified": "2026-09-25",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/homerouter-denkidai"
 }
 </script>
@@ -142,7 +142,7 @@
     <span class="card__cat">WiFi・ルーター</span>
     <h1 class="article-title">ルーターの電気代は月いくら?Wi-Fiルーター・ホームルーター別の早見表と「電気代込みの実質月額」【2026年】</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-09-24">2026年9月24日</time></span>
+      <span class="upd">更新日:<time datetime="2026-09-25">2026年9月25日</time></span>
       <span>公開日:<time datetime="2026-09-05">2026年9月5日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -205,6 +205,29 @@
       </ul>
       <p style="margin:.6em 0 0;">つまり<strong>「消費電力(W)×22.3円」がそのまま月の電気代の目安</strong>になります。15Wなら約335円。この暗算だけ覚えておけば十分です。</p>
     </div>
+
+    <form class="sg" id="dk" aria-label="電気代の計算フォーム" onsubmit="return false">
+      <p class="toolbox__t" style="margin:0 0 10px">🔌 自分の機種で計算する</p>
+      <div class="sg__grid">
+        <div class="sg__f"><label class="sg__l" for="dkW">消費電力(W)</label><input type="number" id="dkW" value="15" min="0" max="500" step="0.5" inputmode="decimal"><p class="sg__hint">仕様表の「消費電力」または「最大消費電力」の値</p></div>
+        <div class="sg__f"><label class="sg__l" for="dkH">1日の使用時間(時間)</label><input type="number" id="dkH" value="24" min="0" max="24" step="1" inputmode="numeric"><p class="sg__hint">つけっぱなしなら24</p></div>
+        <div class="sg__f"><label class="sg__l" for="dkP">電力量単価(円/kWh)</label><input type="number" id="dkP" value="31" min="0" max="100" step="0.1" inputmode="decimal"><p class="sg__hint">目安単価31円。検針票の単価に置き換え可</p></div>
+      </div>
+      <p class="sg__hint" id="dkOut" aria-live="polite" style="font-size:.95rem;color:var(--c-text);margin-top:12px"></p>
+    </form>
+    <script>
+    (function () {
+      var f = document.getElementById("dk"); if (!f) return;
+      var out = document.getElementById("dkOut");
+      function n(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) || v < 0 ? 0 : v; }
+      function calc() {
+        var w = n("dkW"), h = Math.min(24, n("dkH")), p = n("dkP");
+        var month = w / 1000 * h * 30 * p, year = month * 12;
+        out.innerHTML = "1ヶ月の電気代の目安: <b>約" + Math.round(month).toLocaleString("ja-JP") + "円</b>(1年で約" + Math.round(year).toLocaleString("ja-JP") + "円)。計算: " + w + "W ÷ 1000 × " + h + "時間 × 30日 × " + p + "円/kWh";
+      }
+      f.addEventListener("input", calc); f.addEventListener("change", calc); calc();
+    })();
+    </script>
 
     <p>注意点が1つあります。仕様表に書かれている消費電力は多くの場合<strong>定格(最大)値</strong>で、常にその電力を消費しているわけではありません。通信していない時間帯は下がるため、実際の請求はこの計算より低くなるのが普通です。<strong>この記事の金額は「上限に近い目安」</strong>として読んでください。</p>
     <p>また、電力量単価は契約している電力会社とプランによって変わります。自宅の実際の単価は検針票や電力会社のマイページに記載されているので、正確に出したい場合はそちらの数字に置き換えてください。</p>

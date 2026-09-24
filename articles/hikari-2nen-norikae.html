@@ -40,7 +40,7 @@
   "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
   "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
   "datePublished": "2026-09-05",
-  "dateModified": "2026-09-24",
+  "dateModified": "2026-09-25",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/hikari-2nen-norikae"
 }
 </script>
@@ -142,7 +142,7 @@
     <span class="card__cat">光回線</span>
     <h1 class="article-title">光回線は2年ごとに乗り換えるべき?得になる3条件と5年総額の差額【2026年】</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-09-24">2026年9月24日</time></span>
+      <span class="upd">更新日:<time datetime="2026-09-25">2026年9月25日</time></span>
       <span>公開日:<time datetime="2026-09-05">2026年9月5日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -175,6 +175,8 @@
         <li><a href="#keisan">損益分岐の計算式(4つの数字を足し引きするだけ)</a></li>
         <li><a href="#sim">5年総額シミュレーション:2年 / 4年 / 据え置き</a></li>
         <li><a href="#muki">サイクル運用に向く回線・向かない回線</a></li>
+        <li><a href="#madoguchi">いま事業者変更で申し込める窓口とキャッシュバック</a></li>
+        <li><a href="#dore">自分は事業者変更・転用・新規のどれか</a></li>
         <li><a href="#schedule">実際の年間スケジュール</a></li>
         <li><a href="#otoshiana">サイクル運用の落とし穴5つ</a></li>
         <li><a href="#tema">手間を最小化する3つのコツ</a></li>
@@ -216,6 +218,53 @@
       </ul>
       <p style="margin:.6em 0 0;">①+②−③−④が<strong>プラス2万円を超えるなら、手間に見合う</strong>と考えていいラインです。数千円しか残らないなら、無理に動く必要はありません。</p>
     </div>
+
+
+    <form class="sg" id="bk" aria-label="損益分岐の計算機" onsubmit="return false">
+      <p class="toolbox__t" style="margin:0 0 4px">🧮 自分の数字で出す:2年・5年の差額と、初期費用を回収できる月</p>
+      <p class="sg__hint" style="margin:0 0 12px">①+②−③−④ をそのまま計算します。月額の初期値は<a href="../hikaku">比較表</a>の戸建て料金(ドコモ光5,720円→GMOとくとくBB光5,390円)。自分の契約のマイページと、申込ページの条件の数字に置き換えてください。</p>
+      <div class="sg__grid">
+        <div class="sg__f"><label class="sg__l" for="bkNow">今の月額(円)</label><input type="number" id="bkNow" value="5720" min="0" max="30000" step="10" inputmode="numeric"></div>
+        <div class="sg__f"><label class="sg__l" for="bkNext">乗り換え先の月額(円)</label><input type="number" id="bkNext" value="5390" min="0" max="30000" step="10" inputmode="numeric"></div>
+        <div class="sg__f"><label class="sg__l" for="bkCb">① 乗り換え先のキャッシュバック(円)</label><input type="number" id="bkCb" value="0" min="0" max="200000" step="1000" inputmode="numeric"></div>
+        <div class="sg__f"><label class="sg__l" for="bkZan">③ 今の回線の工事費残債(円)</label><input type="number" id="bkZan" value="0" min="0" max="100000" step="100" inputmode="numeric"></div>
+        <div class="sg__f"><label class="sg__l" for="bkIyaku">④ 解約違約金(円)</label><input type="number" id="bkIyaku" value="0" min="0" max="50000" step="100" inputmode="numeric"></div>
+        <div class="sg__f"><label class="sg__l" for="bkFee">④ 事務手数料+新規工事費(円)</label><input type="number" id="bkFee" value="3300" min="0" max="100000" step="100" inputmode="numeric"></div>
+      </div>
+      <ol class="sg__list" id="bkOut" aria-live="polite"></ol>
+      <p class="sg__hint">② は「今の月額−乗り換え先の月額」×月数です。乗り換え先のほうが高ければマイナスになります。工事費残債は分割回数の残り×1回あたりの額。事業者変更・転用なら新規工事費は原則0円です。</p>
+    </form>
+    <script>
+    (function () {
+      var f = document.getElementById("bk"); if (!f) return;
+      var out = document.getElementById("bkOut");
+      function n(id) { var v = parseInt(document.getElementById(id).value, 10); return isNaN(v) || v < 0 ? 0 : v; }
+      function yen(v) { return (v < 0 ? "−" : "") + Math.abs(v).toLocaleString("ja-JP") + "円"; }
+      function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+      function calc() {
+        var now = n("bkNow"), next = n("bkNext"), cb = n("bkCb"), zan = n("bkZan"), iyaku = n("bkIyaku"), fee = n("bkFee");
+        var diff = now - next;                 // 月あたりの差(プラスなら安くなる)
+        var cost = zan + iyaku + fee - cb;     // 乗り換えた時点で先に出ていくお金(マイナスなら受け取り超過)
+        var d24 = cb + diff * 24 - zan - iyaku - fee;
+        var d60 = cb + diff * 60 - zan - iyaku - fee;
+        var be;
+        if (cost <= 0) be = "乗り換えた月から" + (cost < 0 ? yen(-cost) + "の受け取り超過。" : "収支ゼロ。") + "以後は月額差がそのまま差額になります";
+        else if (diff > 0) be = Math.ceil(cost / diff) + "ヶ月目に初期費用" + yen(cost) + "を回収(月" + yen(diff) + "ずつ)";
+        else be = "月額が下がらないため、初期費用" + yen(cost) + "は回収できません(キャッシュバックの増額か、残債が消える月まで待つ)";
+        var rows = [
+          { t: "2年(24ヶ月)の差額", v: d24, s: "① " + yen(cb) + " ＋ ② " + yen(diff) + "×24 − ③ " + yen(zan) + " − ④ " + yen(iyaku + fee) },
+          { t: "5年(60ヶ月)の差額", v: d60, s: "同じ回線に5年いる場合との比較。次のキャッシュバックは含めていません" },
+          { t: "初期費用を回収できる月", v: null, s: be }
+        ];
+        out.innerHTML = rows.map(function (r, i) {
+          var cls = "sg__item" + (i === 0 && r.v > 0 ? " sg__item--top" : "");
+          var val = r.v == null ? "" : '<div class="sg__total"><b>' + (r.v > 0 ? "+" : "") + yen(r.v) + '</b><small>' + (r.v > 20000 ? "手間に見合う目安(2万円)を超えています" : r.v > 0 ? "プラスだが2万円未満" : "動くと損") + '</small></div>';
+          return '<li class="' + cls + '"><span class="sg__rank">' + (i + 1) + '</span><div><div class="sg__name">' + esc(r.t) + '</div></div>' + val + '<div class="sg__detail">' + esc(r.s) + '</div></li>';
+        }).join("");
+      }
+      f.addEventListener("input", calc); f.addEventListener("change", calc); calc();
+    })();
+    </script>
 
     <p>ポイントは<strong>③の工事費残債</strong>です。「工事費実質無料」は、工事費を分割払いにして同額を毎月割り引くことで、実質ゼロにする方式です。途中で解約すると割引が止まり、残りの分割分が一括で請求されます。</p>
     <p>この分割回数はサービスによって大きく違い、2026年9月時点ではおおむね次のような幅があります。</p>
@@ -346,6 +395,78 @@
     <h3>そもそも回線の種類が選べないケース</h3>
     <p>マンションで建物一括の設備しか入っていない場合、乗り換えの選択肢自体が限られます。この場合はサイクルを回す以前の問題なので、まず<a href="mansion-internet">マンションの回線方式の確認方法</a>で、自分の建物が何に対応しているかを押さえてください。</p>
 
+    <h2 id="madoguchi">いま事業者変更で申し込める窓口とキャッシュバック</h2>
+    <p>サイクル運用の乗り換え先になるのは、工事なしで移れる光コラボです。当サイトで提携している4社の窓口と、<a href="hikari-campaign-hikaku">2026年秋のキャンペーン比較</a>で確認した特典の型を並べました。金額は「最大」表記ではなく、オプションなしの基本形で読み取れる範囲です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>回線(窓口)</th><th>主な特典</th><th>他社解約費用の還元</th><th>受取の手続き</th><th>申し込み</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>GMOとくとくBB光</th>
+            <td>基本のキャッシュバック+オプション加入での増額。契約期間の縛りなし</td>
+            <td>最大60,000円(他社違約金補助)</td>
+            <td>開通11ヶ月目前後に基本メールアドレスへ案内、手続きの翌月末に振込</td>
+            <td><a class="tcta" data-cta="table" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">公式で見る</a><img src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></td>
+          </tr>
+          <tr>
+            <th>ドコモ光<br>(GMOとくとくBB)</th>
+            <td>数万円の現金キャッシュバック(新規・事業者変更・転用で額が違う)、期間限定の増額あり</td>
+            <td>申込ページの条件による</td>
+            <td>開通月を含む4ヶ月目に案内メール、口座登録の翌月末に振込</td>
+            <td><a class="tcta" data-cta="table" href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y" rel="nofollow sponsored noopener" target="_blank">公式で見る</a><img src="https://www12.a8.net/0.gif?a8mat=4BAI1I+3UQ1I2+50+54KL8Y" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></td>
+          </tr>
+          <tr>
+            <th>ソフトバンク光<br>(代理店NEXT)</th>
+            <td>回線工事費割引(1ギガは月1,980円×24ヶ月)、超おうち応援割など</td>
+            <td class="best">あんしん乗り換え:違約金・撤去工事費を最大10万円まで</td>
+            <td>証明書を提出。還元は普通為替で郵送</td>
+            <td><a class="tcta" data-cta="table" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM" rel="nofollow sponsored noopener" target="_blank">公式で見る</a><img src="https://www15.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></td>
+          </tr>
+          <tr>
+            <th>ビッグローブ光<br>(BIGLOBE公式)</th>
+            <td>1ギガ(3年プラン)35,000円/10ギガ(2年プラン)55,000円</td>
+            <td>最大40,000円</td>
+            <td>入会資料に同梱の申込書で手続き、12ヶ月目に受取</td>
+            <td><a class="tcta" data-cta="table" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+1824BE+3HKU+1BMW42" rel="nofollow sponsored noopener" target="_blank">公式で見る</a><img src="https://www10.a8.net/0.gif?a8mat=4BAH9H+1824BE+3HKU+1BMW42" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 2026年9月時点で各社公式ページ・公式キャンペーンページに掲載されている内容の目安です。金額・条件・期間は月単位で変わるため、申込前に申込ページの条件を確認してください。受取月の違いが「見えない縛り」になる理由は<a href="hikari-campaign-hikaku#shibari">キャンペーン比較の受取カレンダー</a>で説明しています。</p>
+
+    <h2 id="dore">自分は事業者変更・転用・新規のどれか</h2>
+    <p>手続きの種類は、今の回線が何かで決まります。工事の有無と、先に取っておく番号が変わります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>今の回線</th><th>手続き</th><th>工事</th><th>先に用意するもの</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>光コラボ(ドコモ光・ソフトバンク光・GMOとくとくBB光・ビッグローブ光・AsahiNet光など)</th>
+            <td class="best">事業者変更</td>
+            <td class="best">原則なし</td>
+            <td>事業者変更承諾番号(今の事業者に発行してもらう。有効期限15日)。取り方は<a href="jigyousha-henkou">承諾番号の取り方</a></td>
+          </tr>
+          <tr>
+            <th>フレッツ光(NTT東日本・西日本と直接契約)</th>
+            <td class="best">転用</td>
+            <td class="best">原則なし</td>
+            <td>転用承諾番号(NTT東日本・西日本に発行してもらう)</td>
+          </tr>
+          <tr>
+            <th>独自回線(auひかり・NURO光・電力系など)</th>
+            <td>新規</td>
+            <td>あり</td>
+            <td>新規申込。今の回線は別途解約し、撤去工事の要否を確認(<a href="hikari-kaiyaku">解約手順</a>)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ホームルーターやケーブルテレビの回線から光コラボへ移る場合も「新規」です。光コラボかどうか分からないときは、請求書か契約書の事業者名で判断できます。NTT東日本・西日本の名前で請求が来ていればフレッツ光、それ以外の事業者名で「光コラボレーション」「フレッツ光回線を利用」と書かれていれば光コラボです。</p>
+
     <h2 id="schedule">実際の年間スケジュール</h2>
     <p>サイクル運用は「思い立ったときに動く」と失敗しがちです。次の順番でカレンダーに落としておくのが、いちばん取りこぼしの少ないやり方です。</p>
 
@@ -441,6 +562,7 @@
       <ul>
         <li>総務省「電気通信事業法の一部を改正する法律」関連資料(令和4年7月1日施行)— 解約違約金の上限に関する制度</li>
         <li>各社公式サイトの料金表・キャンペーン規約・工事費分割条件(2026年9月確認)</li>
+        <li>窓口別の特典と受取手続きは<a href="hikari-campaign-hikaku">光回線キャンペーン比較(2026年秋)</a>と同じ内容(2026年9月確認)</li>
         <li>本文中のシミュレーション金額は、上記の公開条件をもとにした編集部の試算です</li>
       </ul>
     </div>
