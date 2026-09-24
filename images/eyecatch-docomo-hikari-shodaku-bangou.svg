@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="ドコモ光の事業者変更承諾番号の取り方" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:承諾番号の書類と15日の砂時計 -->
+  <g transform="translate(895, 330) scale(0.9)">
+    <rect x="10" y="60" width="210" height="250" rx="16" fill="#ffffff"/>
+    <rect x="10" y="60" width="210" height="48" rx="16" fill="#9fc1f5"/>
+    <rect x="10" y="92" width="210" height="16" fill="#9fc1f5"/>
+    <rect x="40" y="136" width="150" height="14" rx="7" fill="#cfe0ff"/>
+    <rect x="40" y="166" width="110" height="14" rx="7" fill="#cfe0ff"/>
+    <rect x="40" y="206" width="150" height="40" rx="8" fill="#ffd76a"/>
+    <text x="115" y="235" text-anchor="middle" font-size="26" font-weight="800" fill="#0b2c5f">11桁</text>
+    <rect x="40" y="266" width="120" height="14" rx="7" fill="#cfe0ff"/>
+    <circle cx="228" cy="292" r="54" fill="#ffd76a"/>
+    <text x="228" y="304" text-anchor="middle" font-size="38" font-weight="800" fill="#0b2c5f">15日</text>
+  </g>
+
+  <rect x="70" y="80" width="263" height="56" rx="28" fill="#ffd76a"/>
+  <text x="202" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">15日の期限つき</text>
+
+  <text x="70" y="248" font-size="82" font-weight="800" fill="#ffffff">ドコモ光</text>
+  <text x="70" y="360" font-size="82" font-weight="800" fill="#ffd76a">承諾番号の取り方</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">発行窓口・15日の期限・取る前の7チェック</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

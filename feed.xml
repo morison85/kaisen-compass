@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 24 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>ドコモ光の事業者変更承諾番号の取り方【2026年9月】発行窓口・15日の期限・取る前の7チェック | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/docomo-hikari-shodaku-bangou</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/docomo-hikari-shodaku-bangou</guid>
+    <pubDate>Fri, 25 Sep 2026 12:00:00 +0900</pubDate>
+    <description>ドコモ光から他社の光コラボへ移るとき、最初にやるのが事業者変更承諾番号の発行です。ドコモ公式の案内では申し込み方法はWeb(24時間)・ドコモショップ/d garden・電話(午前9時〜午後8時、151または0120-800-000)の3つ、有効期限は発行日を含めて15日間。ahamo光は原則Webのみです。つまずくのは番号の取り方ではなく、15日の中に乗り換え先の選定・工事費残債の精算・オプションの引き継ぎ判断を押し込んでしまうこと。そこでこの記事は、承諾番号が要る乗り換え(光コラボ間)と要らない乗り換え(auひかり・NURO光は新規契約扱い)の判定表、番号を取る前に確定させる7項目のチェックリスト、発行日を1日目とする15日カウントダウン表、事務手数料3,300円+契約期間内の解約金(1ギガ戸建5,500円・マンション4,180円ほか)+工事費残債という費用の場合分け早見表を、2026年9月時点のドコモ公式表記に基づいて整理しました。</description>
+  </item>
   <item>
     <title>光回線の障害は本当に多い?つながらないときの5分切り分けと確認先【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/hikari-shougai</link>
