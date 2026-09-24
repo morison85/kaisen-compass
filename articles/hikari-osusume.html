@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../css/style.css?v=20260917a">
+<link rel="stylesheet" href="../css/style.css?v=20260924a">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -213,8 +213,8 @@
     <ul>
       <li><strong>料金</strong>:各社公式サイトの掲載料金(税込)。キャンペーンの割引前の「素の月額」で比較</li>
       <li><strong>速度</strong>:ユーザー実測値の集計サイト「みんなのネット回線速度」の平均実測値を参考値として使用</li>
-      <li><strong>使用経験</strong>:運営者自身がこれまで契約してきた回線の体験(詳細は<a href="../about">運営者情報</a>)</li>
-      <li><strong>条件の細部</strong>:違約金・工事費・キャッシュバック条件は各社公式の記載を確認</li>
+      <li><strong>提供条件</strong>:違約金・工事費・キャッシュバック条件は各社公式の記載を確認</li>
+      <li><strong>掲載順</strong>:セット割の対象→提供エリア→月額→縛りの順に見て決めています。点数は付けません(<a href="../policy#junban">編集ポリシー</a>)</li>
     </ul>
     <p>なお、料金やキャンペーンは頻繁に変わります。この記事も更新を続けていますが、<strong>申し込み前には必ず公式サイトの最新条件を確認してください</strong>。</p>
 
@@ -267,7 +267,7 @@
             <th>月額(マンション)</th>
             <th>下り実測の目安</th>
             <th>セット割</th>
-            <th>総合評価</th>
+            <th>向いている人</th>
           </tr>
         </thead>
         <tbody>
@@ -277,7 +277,7 @@
             <td>4,400円</td>
             <td>約270Mbps</td>
             <td>ドコモ</td>
-            <td><span class="stars">★★★★☆</span></td>
+            <td>ドコモのスマホを使っている家庭</td>
           </tr>
           <tr>
             <th>auひかり</th>
@@ -285,7 +285,7 @@
             <td>4,180円〜</td>
             <td class="best">約500Mbps</td>
             <td>au / UQ</td>
-            <td><span class="stars">★★★★★</span></td>
+            <td>au・UQモバイルで、提供エリア内の人</td>
           </tr>
           <tr>
             <th>ソフトバンク光</th>
@@ -293,7 +293,7 @@
             <td>4,180円</td>
             <td>約300Mbps</td>
             <td>SB / ワイモバ</td>
-            <td><span class="stars">★★★★☆</span></td>
+            <td>ソフトバンク・ワイモバイルの人</td>
           </tr>
           <tr>
             <th>NURO光</th>
@@ -301,7 +301,7 @@
             <td>4,730円<br><span class="micro">2年割で24か月は3,530円</span></td>
             <td class="best">約580Mbps</td>
             <td>ソフトバンク</td>
-            <td><span class="stars">★★★★☆</span></td>
+            <td>速度優先で、エリア内・工事2回を待てる人</td>
           </tr>
           <tr>
             <th>GMOとくとくBB光</th>
@@ -309,7 +309,7 @@
             <td>4,290円</td>
             <td>約330Mbps</td>
             <td>なし(縛りなし)</td>
-            <td><span class="stars">★★★★★</span></td>
+            <td>格安SIM・オンラインプランで、縛りを避けたい人</td>
           </tr>
           <tr>
             <th>ビッグローブ光</th>
@@ -317,7 +317,7 @@
             <td>4,378円</td>
             <td>約290Mbps</td>
             <td>au / UQ</td>
-            <td><span class="stars">★★★★☆</span></td>
+            <td>au・UQモバイルで、auひかりがエリア外の人</td>
           </tr>
           <tr>
             <th>楽天ひかり</th>
@@ -325,7 +325,7 @@
             <td>4,180円</td>
             <td>約250Mbps</td>
             <td>楽天(ポイント優遇)</td>
-            <td><span class="stars">★★★☆☆</span></td>
+            <td>楽天モバイル+楽天市場をよく使う人</td>
           </tr>
         </tbody>
       </table>
@@ -338,7 +338,7 @@
       <span class="rank rank--1">ドコモユーザーの定番</span>
       <h3 class="svc__name">ドコモ光</h3>
       <p class="svc__co">NTTドコモ|フレッツ光回線(光コラボ)</p>
-      <div class="svc__rating"><span class="stars">★★★★☆<small>4.2</small></span></div>
+      <p class="svc__fit"><b>向いている人</b><span>ドコモのスマホを使っている家庭。家族のドコモ回線が多いほど割引が効く</span></p>
       <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/docomo-hikari-600.webp 600w, ../images/official/docomo-hikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/docomo-hikari.jpg" srcset="../images/official/docomo-hikari-600.jpg 600w, ../images/official/docomo-hikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="ドコモ光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://www.docomo.ne.jp/internet/hikari/" rel="nofollow noopener" target="_blank">ドコモ光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-docomo-hikari.svg" alt="ドコモ光のサービス概要(月額・セット割・特徴)" width="800" height="420" loading="lazy" decoding="async"></div>
       <table class="svc__spec">
         <tr><th>月額(税込)</th><td>戸建て 5,720円 / マンション 4,400円(1ギガ・タイプA)</td></tr>
@@ -377,7 +377,7 @@
       <span class="rank rank--best">速度と割引の両立</span>
       <h3 class="svc__name">auひかり</h3>
       <p class="svc__co">KDDI|独自回線</p>
-      <div class="svc__rating"><span class="stars">★★★★★<small>4.6</small></span></div>
+      <p class="svc__fit"><b>向いている人</b><span>au・UQモバイルで、提供エリア内の戸建て・対応マンション</span></p>
       <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="auひかり(正規代理店NEXT)の公式キャンペーンバナー" src="https://www23.a8.net/svt/bgt?aid=260829413164&amp;wid=002&amp;eno=01&amp;mid=s00000014546021006000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" alt=""></div>
       <table class="svc__spec">
         <tr><th>月額(税込)</th><td>戸建て 5,610円〜 / マンション 4,180円〜</td></tr>
@@ -414,7 +414,7 @@
       <span class="rank rank--n">SB・ワイモバイル向け</span>
       <h3 class="svc__name">ソフトバンク光</h3>
       <p class="svc__co">ソフトバンク|フレッツ光回線(光コラボ)</p>
-      <div class="svc__rating"><span class="stars">★★★★☆<small>4.1</small></span></div>
+      <p class="svc__fit"><b>向いている人</b><span>ソフトバンク・ワイモバイルのスマホを使っている人</span></p>
       <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BNYOX" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="ソフトバンク光(正規代理店NEXT)の公式キャンペーンバナー" src="https://www27.a8.net/svt/bgt?aid=260829413167&amp;wid=002&amp;eno=01&amp;mid=s00000014546008006000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BNYOX" alt=""></div>
       <table class="svc__spec">
         <tr><th>月額(税込)</th><td>戸建て 5,720円 / マンション 4,180円</td></tr>
@@ -450,7 +450,7 @@
       <span class="rank rank--n">速度に全振りしたい人へ</span>
       <h3 class="svc__name">NURO光</h3>
       <p class="svc__co">ソニーネットワークコミュニケーションズ|独自回線</p>
-      <div class="svc__rating"><span class="stars">★★★★☆<small>4.0</small></span></div>
+      <p class="svc__fit"><b>向いている人</b><span>速度を最優先し、エリア内で工事2回を待てる人</span></p>
       <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2N9ECA+2VMU+63WO2" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/nuro-600.webp 600w, ../images/official/nuro.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/nuro.jpg" srcset="../images/official/nuro-600.jpg 600w, ../images/official/nuro.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="NURO光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://www.nuro.jp/" rel="nofollow noopener" target="_blank">NURO光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-nuro.svg" alt="NURO光のサービス概要(月額・速度・注意点)" width="800" height="420" loading="lazy" decoding="async"></div>
       <table class="svc__spec">
         <tr><th>月額(税込)</th><td>戸建て 5,720円 / マンション 4,730円(2年割で24か月は4,530/3,530円。HGW料550円/月は別)</td></tr>
@@ -487,7 +487,7 @@
       <span class="rank rank--best">格安SIM派・縛りなし派の最適解</span>
       <h3 class="svc__name">GMOとくとくBB光</h3>
       <p class="svc__co">GMOインターネットグループ|フレッツ光回線(光コラボ)</p>
-      <div class="svc__rating"><span class="stars">★★★★★<small>4.5</small></span></div>
+      <p class="svc__fit"><b>向いている人</b><span>格安SIM・オンラインプランで、契約期間の縛りを避けたい人</span></p>
       <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="GMOとくとくBB光の公式キャンペーンバナー" src="https://www22.a8.net/svt/bgt?aid=260829413162&amp;wid=002&amp;eno=01&amp;mid=s00000000018040038000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" alt=""></div>
       <table class="svc__spec">
         <tr><th>月額(税込)</th><td>戸建て 5,390円 / マンション 4,290円</td></tr>
@@ -523,7 +523,7 @@
       <span class="rank rank--n">auひかりエリア外の受け皿</span>
       <h3 class="svc__name">ビッグローブ光</h3>
       <p class="svc__co">ビッグローブ(KDDIグループ)|フレッツ光回線(光コラボ)</p>
-      <div class="svc__rating"><span class="stars">★★★★☆<small>3.9</small></span></div>
+      <p class="svc__fit"><b>向いている人</b><span>au・UQモバイルで、auひかりがエリア外の人</span></p>
       <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+1824BE+3HKU+1BNYOX" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="ビッグローブ光の公式キャンペーンバナー" src="https://www28.a8.net/svt/bgt?aid=260829413074&amp;wid=002&amp;eno=01&amp;mid=s00000016275008006000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+1824BE+3HKU+1BNYOX" alt=""></div>
       <table class="svc__spec">
         <tr><th>月額(税込)</th><td>戸建て 5,478円 / マンション 4,378円</td></tr>
@@ -557,7 +557,7 @@
       <span class="rank rank--n">楽天経済圏の人向け</span>
       <h3 class="svc__name">楽天ひかり</h3>
       <p class="svc__co">楽天モバイル|フレッツ光回線(光コラボ)</p>
-      <div class="svc__rating"><span class="stars">★★★☆☆<small>3.6</small></span></div>
+      <p class="svc__fit"><b>向いている人</b><span>楽天モバイルと楽天市場をよく使う人</span></p>
       <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://network.mobile.rakuten.co.jp/hikari/" rel="nofollow noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/rakuten-hikari-600.webp 600w, ../images/official/rakuten-hikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/rakuten-hikari.jpg" srcset="../images/official/rakuten-hikari-600.jpg 600w, ../images/official/rakuten-hikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="楽天ひかりの公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://network.mobile.rakuten.co.jp/hikari/" rel="nofollow noopener" target="_blank">楽天ひかり公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-rakuten-hikari.svg" alt="楽天ひかりのサービス概要(月額・ポイント優遇・注意点)" width="800" height="420" loading="lazy" decoding="async"></div>
       <table class="svc__spec">
         <tr><th>月額(税込)</th><td>戸建て 5,280円 / マンション 4,180円</td></tr>
@@ -662,7 +662,7 @@
     <div>
       <div class="author__name">もりそん</div>
       <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
-      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、光回線・ホームルーターを自分で契約しては実測するのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、各社公式の料金と「みんなのネット回線速度」の公開集計を突き合わせて回線を比べるのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
     </div>
   </aside>
 
@@ -686,7 +686,7 @@
     <div class="footer__cols">
       <div>
         <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
-        <p>ネット回線選びの「よくわからない」を無くすために、料金・実測・使用経験に基づいた比較情報を発信しています。</p>
+        <p>ネット回線選びの「よくわからない」を無くすために、各社公式の料金と公開されている実測データの集計に基づいた比較情報を発信しています。</p>
       </div>
       <div>
         <h2>カテゴリ</h2>

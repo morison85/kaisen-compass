@@ -597,6 +597,8 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
 .svc__co { font-size: 0.78rem; color: var(--c-text-sub); margin-bottom: 12px; }
 .svc__rating { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
 .svc__rating .score { font-size: 1.3rem; font-weight: 800; color: var(--c-accent-dark); }
+.svc__fit { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; font-size: .86rem; line-height: 1.6; margin: 0 0 14px; padding: 8px 12px; background: var(--c-sky); border-radius: 8px; }
+.svc__fit b { color: var(--c-navy); white-space: nowrap; }
 
 .svc__spec { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin: 12px 0 16px; }
 .svc__spec th, .svc__spec td { border: 1px solid var(--c-border); padding: 8px 12px; text-align: left; line-height: 1.6; }
