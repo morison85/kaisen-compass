@@ -1771,3 +1771,14 @@ table.cmp .ng { color: var(--c-red); font-weight: 700; }
   .hero__logoTick, .hero__logoRingIn, .hero__logoDial--small, .hero__logoRing, .hero__logoBezel, .hero__logoArrow, .hero__logoNeedle, .hero__logoNeedleB, .hero__logoAim { transform: none !important; }
   .hero__logoPing, .hero__logoPulse { animation: none !important; opacity: 0 !important; }
 }
+
+/* カテゴリのテーマ別リンク(2026-09-24) */
+.topics { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 24px; margin: 0 0 34px; padding: 18px 20px; background: var(--c-sky); border: 1px solid var(--c-border); border-radius: var(--radius); }
+.topics__t { font-size: .95rem; font-weight: 800; color: var(--c-navy); margin: 0 0 8px; padding-bottom: 6px; border-bottom: 2px solid var(--c-accent); }
+.topics ul { list-style: none; margin: 0; padding: 0; }
+.topics li { font-size: .86rem; line-height: 1.5; padding: 4px 0 4px 14px; position: relative; }
+.topics li::before { content: "›"; position: absolute; left: 0; color: var(--c-accent); font-weight: 700; }
+.topics a { color: var(--c-text); text-decoration: none; }
+.topics a:hover { text-decoration: underline; color: var(--c-navy); }
+.hub-links ul { margin: 6px 0 0; padding-left: 1.2em; }
+.hub-links li { margin: 4px 0; font-size: .92rem; }
