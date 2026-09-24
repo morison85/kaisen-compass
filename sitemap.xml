@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kaisen-compass.com/</loc><lastmod>2026-09-24</lastmod><priority>1.0</priority></url>
-  <url><loc>https://kaisen-compass.com/sougaku</loc><lastmod>2026-09-17</lastmod><priority>0.9</priority></url>
-<url><loc>https://kaisen-compass.com/shindan</loc><lastmod>2026-09-17</lastmod><priority>0.9</priority></url>
-  <url><loc>https://kaisen-compass.com/hikaku</loc><lastmod>2026-09-17</lastmod><priority>0.9</priority></url>
+  <url><loc>https://kaisen-compass.com/sougaku</loc><lastmod>2026-09-25</lastmod><priority>0.9</priority></url>
+<url><loc>https://kaisen-compass.com/shindan</loc><lastmod>2026-09-25</lastmod><priority>0.9</priority></url>
+  <url><loc>https://kaisen-compass.com/hikaku</loc><lastmod>2026-09-25</lastmod><priority>0.9</priority></url>
   <url><loc>https://kaisen-compass.com/articles/hikari-kouji-machi</loc><lastmod>2026-09-23</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kaisen-compass.com/articles/hikari-osusume</loc><lastmod>2026-09-17</lastmod><priority>0.9</priority></url>
+  <url><loc>https://kaisen-compass.com/articles/hikari-osusume</loc><lastmod>2026-09-25</lastmod><priority>0.9</priority></url>
   <url><loc>https://kaisen-compass.com/articles/hikari-cashback</loc><lastmod>2026-08-29</lastmod><priority>0.9</priority></url>
   <url><loc>https://kaisen-compass.com/articles/hikkoshi-internet</loc><lastmod>2026-08-29</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/mansion-internet</loc><lastmod>2026-08-29</lastmod><priority>0.8</priority></url>
@@ -30,7 +30,7 @@
   <url><loc>https://kaisen-compass.com/articles/jigyousha-henkou</loc><lastmod>2026-08-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/hikari-kaiyaku</loc><lastmod>2026-08-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/homerouter-game</loc><lastmod>2026-08-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kaisen-compass.com/articles/wimax-area</loc><lastmod>2026-08-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kaisen-compass.com/articles/wimax-area</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/telework-kaisen</loc><lastmod>2026-08-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/hikari-osoi</loc><lastmod>2026-08-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/neage-2026</loc><lastmod>2026-09-17</lastmod><priority>0.8</priority></url>
@@ -55,9 +55,9 @@
   <url><loc>https://kaisen-compass.com/articles/hikari-router-erabikata</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/rakuten-hikari-mobile-set</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/pocket-wifi-tanki-rental</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kaisen-compass.com/articles/hikari-2nen-norikae</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kaisen-compass.com/articles/hikari-2nen-norikae</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/wimax-mugen-hontou</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kaisen-compass.com/articles/homerouter-denkidai</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kaisen-compass.com/articles/homerouter-denkidai</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/tethering-kotei-kaisen</loc><lastmod>2026-09-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/esim-norikae</loc><lastmod>2026-09-08</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/kakuyasu-sim-koukai</loc><lastmod>2026-09-07</lastmod><priority>0.8</priority></url>
@@ -65,7 +65,7 @@
   <url><loc>https://kaisen-compass.com/articles/uqmobile-linemo-hikaku</loc><lastmod>2026-09-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/sumaho-ryokin-minaoshi</loc><lastmod>2026-09-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/rakuten-mobile-denpa</loc><lastmod>2026-09-11</lastmod><priority>0.8</priority></url>
-  <url><loc>https://kaisen-compass.com/articles/chintai-hikari-kyoka</loc><lastmod>2026-09-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://kaisen-compass.com/articles/chintai-hikari-kyoka</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/net-keiyaku-hajimete</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/mesh-wifi-chukeiki</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://kaisen-compass.com/articles/online-game-kaisen</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
