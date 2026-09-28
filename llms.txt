@@ -90,3 +90,4 @@
 
 ### WiFi
 - [実家のネット回線はどう選ぶ?親世代が困らない構成は「誰が直すか」で決まる](https://kaisen-compass.com/articles/jikka-internet-senior): 親世代の実家回線を、機器の台数で決まる直しやすさ・用途・固定電話・名義・電話勧誘対策で選ぶ方法
+- [ホームルーターはやめたほうがいい?向かない人の条件](https://kaisen-compass.com/articles/homerouter-mukanai-hito): 向かないのは夜間の速度低下・対戦ゲームのPing・置き場所・端末残債の4条件。「夜のヘビー利用」×「Ping要求」の2軸判定チャートと5問チェックリスト、home 5G・SoftBank Air・WiMAX+5Gの公式「混雑時間帯」注記の比較、端末残債の計算表。

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="ホームルーターが向くか向かないかを夜間の利用量とPing要求の2軸で判定するチャート" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <text x="600" y="50" text-anchor="middle" font-size="34" font-weight="800" fill="#0b2c5f">向く?向かない?2軸で判定</text>
+  <text x="600" y="82" text-anchor="middle" font-size="19" fill="#5f6b7a">「夜間のヘビー利用」×「Ping(遅延)への要求」で4パターンに分かれる</text>
+
+  <!-- 象限の背景 -->
+  <rect x="190" y="130" width="410" height="230" fill="#ffe9d9" stroke="#f0954a" stroke-width="2"/>
+  <rect x="600" y="130" width="410" height="230" fill="#fde3e0" stroke="#e4572e" stroke-width="2"/>
+  <rect x="190" y="360" width="410" height="230" fill="#e6f7ec" stroke="#3fbf7f" stroke-width="2"/>
+  <rect x="600" y="360" width="410" height="230" fill="#fff6e0" stroke="#ffd76a" stroke-width="2"/>
+
+  <!-- 左上:やや向かない -->
+  <g>
+    <text x="395" y="185" text-anchor="middle" font-size="24" font-weight="800" fill="#a85210">やや向かない</text>
+    <text x="395" y="220" text-anchor="middle" font-size="16" fill="#5f4433">対戦ゲーム中心だが</text>
+    <text x="395" y="242" text-anchor="middle" font-size="16" fill="#5f4433">夜のヘビー利用は少ない</text>
+    <text x="395" y="278" text-anchor="middle" font-size="15" font-weight="700" fill="#a85210">→ 置き場所・電波環境次第</text>
+    <text x="395" y="330" text-anchor="middle" font-size="14" fill="#8a6a4a">(例:1人でFPS中心・動画は見ない)</text>
+  </g>
+
+  <!-- 右上:向かない -->
+  <g>
+    <text x="805" y="185" text-anchor="middle" font-size="24" font-weight="800" fill="#b3301c">向かない</text>
+    <text x="805" y="220" text-anchor="middle" font-size="16" fill="#5c2a22">対戦ゲーム・Web会議が多く</text>
+    <text x="805" y="242" text-anchor="middle" font-size="16" fill="#5c2a22">夜も動画・DLでヘビー利用</text>
+    <text x="805" y="278" text-anchor="middle" font-size="15" font-weight="700" fill="#b3301c">→ 光回線を優先候補に</text>
+    <text x="805" y="330" text-anchor="middle" font-size="14" fill="#8a5a52">(例:家族複数人+ゲーム+配信視聴)</text>
+  </g>
+
+  <!-- 左下:向く -->
+  <g>
+    <text x="395" y="415" text-anchor="middle" font-size="24" font-weight="800" fill="#1c8a53">向く</text>
+    <text x="395" y="450" text-anchor="middle" font-size="16" fill="#274b3a">動画・SNS・Web会議中心で</text>
+    <text x="395" y="472" text-anchor="middle" font-size="16" fill="#274b3a">遅延にうるさいゲームもしない</text>
+    <text x="395" y="508" text-anchor="middle" font-size="15" font-weight="700" fill="#1c8a53">→ そのまま使って十分</text>
+    <text x="395" y="560" text-anchor="middle" font-size="14" fill="#4a6b5a">(例:一人暮らし・在宅ワークのみ)</text>
+  </g>
+
+  <!-- 右下:やや向く -->
+  <g>
+    <text x="805" y="415" text-anchor="middle" font-size="24" font-weight="800" fill="#a3820a">やや向く</text>
+    <text x="805" y="450" text-anchor="middle" font-size="16" fill="#5a4a1a">動画配信・大容量DLは多いが</text>
+    <text x="805" y="472" text-anchor="middle" font-size="16" fill="#5a4a1a">対戦ゲームはあまりしない</text>
+    <text x="805" y="508" text-anchor="middle" font-size="15" font-weight="700" fill="#a3820a">→ 混雑時間帯だけ注意</text>
+    <text x="805" y="560" text-anchor="middle" font-size="14" fill="#7a6a3a">(例:夜に配信視聴・大型DLが多い)</text>
+  </g>
+
+  <!-- 軸線 -->
+  <line x1="190" y1="360" x2="1030" y2="360" stroke="#0b2c5f" stroke-width="3"/>
+  <polygon points="1030,360 1014,352 1014,368" fill="#0b2c5f"/>
+  <line x1="600" y1="610" x2="600" y2="110" stroke="#0b2c5f" stroke-width="3"/>
+  <polygon points="600,110 592,126 608,126" fill="#0b2c5f"/>
+
+  <text x="1010" y="388" text-anchor="end" font-size="17" font-weight="700" fill="#0b2c5f">多い</text>
+  <text x="210" y="388" text-anchor="start" font-size="17" font-weight="700" fill="#0b2c5f">少ない</text>
+  <text x="600" y="640" text-anchor="middle" font-size="18" font-weight="800" fill="#0b2c5f">夜間のヘビー利用(動画配信・大容量DL)</text>
+
+  <text x="612" y="130" font-size="17" font-weight="700" fill="#0b2c5f">高い</text>
+  <text x="612" y="600" font-size="17" font-weight="700" fill="#0b2c5f">低い</text>
+  <text x="130" y="360" text-anchor="middle" font-size="18" font-weight="800" fill="#0b2c5f" transform="rotate(-90 130 360)">Ping要求(対戦ゲーム・Web会議)</text>
+</svg>
