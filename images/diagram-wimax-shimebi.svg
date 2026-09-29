@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-label="WiMAX6社の解約締め日カレンダー。GMOとくとくBB・カシモ・5G CONNECTは20日、Broadは25日、BIGLOBEは申込月の末日、UQは手続き日が解約日" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <text x="600" y="50" text-anchor="middle" font-size="34" font-weight="800" fill="#0b2c5f">解約の締め日カレンダー(6社)</text>
+  <text x="600" y="82" text-anchor="middle" font-size="19" fill="#5f6b7a">同じ「月の途中の手続き」でも、窓口によって解約日が1ヶ月ずれる</text>
+
+  <!-- 日付の目盛り -->
+  <g font-size="16" font-weight="700" fill="#5f6b7a" text-anchor="middle">
+    <text x="214" y="140">1日</text>
+    <text x="466" y="140">10日</text>
+    <text x="746" y="140">20日</text>
+    <text x="886" y="140">25日</text>
+    <text x="1054" y="140">月末</text>
+  </g>
+  <line x1="760" y1="150" x2="760" y2="540" stroke="#e4572e" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="900" y1="150" x2="900" y2="540" stroke="#f0954a" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- 行ラベル -->
+  <g font-size="20" font-weight="800" fill="#0b2c5f" text-anchor="end">
+    <text x="186" y="195">GMOとくとくBB</text>
+    <text x="186" y="260">カシモWiMAX</text>
+    <text x="186" y="325">5G CONNECT</text>
+    <text x="186" y="390">Broad WiMAX</text>
+    <text x="186" y="455">BIGLOBE WiMAX</text>
+    <text x="186" y="520">UQ WiMAX</text>
+  </g>
+
+  <!-- GMO -->
+  <rect x="200" y="170" width="560" height="36" rx="6" fill="#3fbf7f"/>
+  <rect x="760" y="170" width="308" height="36" rx="6" fill="#f7b27a"/>
+  <text x="480" y="195" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">20日までの手続き → 当月末で解約</text>
+  <text x="914" y="195" text-anchor="middle" font-size="16" font-weight="700" fill="#5f3310">21日以降 → 翌月末</text>
+  <!-- カシモ -->
+  <rect x="200" y="235" width="560" height="36" rx="6" fill="#3fbf7f"/>
+  <rect x="760" y="235" width="308" height="36" rx="6" fill="#f7b27a"/>
+  <text x="480" y="260" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">20日(Web21時・電話17時)まで → 当月末</text>
+  <text x="914" y="260" text-anchor="middle" font-size="16" font-weight="700" fill="#5f3310">過ぎたら翌月末</text>
+  <!-- 5G CONNECT -->
+  <rect x="200" y="300" width="560" height="36" rx="6" fill="#3fbf7f"/>
+  <rect x="760" y="300" width="308" height="36" rx="6" fill="#f7b27a"/>
+  <text x="480" y="325" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">20日までのフォーム申請 → 当月解約</text>
+  <text x="914" y="325" text-anchor="middle" font-size="16" font-weight="700" fill="#5f3310">20日以降 → 翌月</text>
+  <!-- Broad -->
+  <rect x="200" y="365" width="700" height="36" rx="6" fill="#3fbf7f"/>
+  <rect x="900" y="365" width="168" height="36" rx="6" fill="#f7b27a"/>
+  <text x="550" y="390" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">25日(非営業日は翌営業日)まで → 当月解約</text>
+  <text x="984" y="390" text-anchor="middle" font-size="16" font-weight="700" fill="#5f3310">26日〜 → 翌月</text>
+  <!-- BIGLOBE -->
+  <rect x="200" y="430" width="868" height="36" rx="6" fill="#3fbf7f"/>
+  <text x="634" y="455" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">申し込んだ月の末日で解約(解約月の日割りなし)</text>
+  <!-- UQ -->
+  <rect x="200" y="495" width="868" height="36" rx="6" fill="#1558d6"/>
+  <text x="634" y="520" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Web手続きの完了日が解約日・翌日から通信不可(月途中は日割り)</text>
+
+  <!-- 凡例 -->
+  <g font-size="16" fill="#33404f">
+    <rect x="200" y="566" width="22" height="22" rx="4" fill="#3fbf7f"/>
+    <text x="232" y="583">当月末で解約</text>
+    <rect x="400" y="566" width="22" height="22" rx="4" fill="#f7b27a"/>
+    <text x="432" y="583">翌月末にずれる(1ヶ月分多く払う)</text>
+    <rect x="740" y="566" width="22" height="22" rx="4" fill="#1558d6"/>
+    <text x="772" y="583">即日解約・日割り</text>
+  </g>
+  <text x="600" y="624" text-anchor="middle" font-size="14" fill="#8a94a3">※2026年9月時点の各社公式サイト・FAQの記載をもとに作成。締め時刻や休業日の扱いは契約内容で異なる場合があります</text>
+</svg>
