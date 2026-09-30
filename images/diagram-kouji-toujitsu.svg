@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="光回線の派遣工事の当日の流れ。到着・経路確認、屋外の引き込み、宅内への通線、光コンセント設置、開通確認の5段階で合計1〜2時間が目安" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+<rect width="1200" height="700" fill="#f5f8fe"/>
+<text x="40" y="70" font-size="34" font-weight="800" fill="#0b2c5f">作業員が来てから帰るまで:派遣工事の5ステップ</text>
+<text x="40" y="112" font-size="22" font-weight="600" fill="#4a5f80">所要時間は2026年10月時点の各社公式・一般的な目安。建物の状況で前後します</text>
+<rect x="38" y="150" width="212" height="400" rx="16" fill="#ffffff" stroke="#c3d7f7" stroke-width="3"/>
+<circle cx="144" cy="196" r="28" fill="#1558d6"/>
+<text x="144" y="208" text-anchor="middle" font-size="32" font-weight="800" fill="#ffffff">1</text>
+<text x="144" y="268" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">到着・経路確認</text>
+<rect x="74" y="286" width="140" height="36" rx="18" fill="#ffd76a"/>
+<text x="144" y="311" text-anchor="middle" font-size="20" font-weight="800" fill="#0b2c5f">約10〜15分</text>
+<text x="56" y="370" font-size="20" font-weight="600" fill="#24324a">外観と電柱を確認</text>
+<text x="56" y="410" font-size="20" font-weight="600" fill="#24324a">配管の有無を確認</text>
+<text x="56" y="450" font-size="20" font-weight="600" fill="#24324a">機器の置き場所を</text>
+<text x="56" y="490" font-size="20" font-weight="600" fill="#24324a">立ち会い者と相談</text>
+<path d="M252 350 l12 0 m-6 -7 l7 7 l-7 7" fill="none" stroke="#1558d6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="266" y="150" width="212" height="400" rx="16" fill="#ffffff" stroke="#c3d7f7" stroke-width="3"/>
+<circle cx="372" cy="196" r="28" fill="#1558d6"/>
+<text x="372" y="208" text-anchor="middle" font-size="32" font-weight="800" fill="#ffffff">2</text>
+<text x="372" y="268" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">屋外の引き込み</text>
+<rect x="302" y="286" width="140" height="36" rx="18" fill="#ffd76a"/>
+<text x="372" y="311" text-anchor="middle" font-size="20" font-weight="800" fill="#0b2c5f">約30〜60分</text>
+<text x="284" y="370" font-size="20" font-weight="600" fill="#24324a">電柱から外壁まで</text>
+<text x="284" y="410" font-size="20" font-weight="600" fill="#24324a">光ケーブルを架設</text>
+<text x="284" y="450" font-size="20" font-weight="600" fill="#24324a">外壁に引留め金具</text>
+<text x="284" y="490" font-size="20" font-weight="600" fill="#24324a">(ビス穴が数か所)</text>
+<path d="M480 350 l12 0 m-6 -7 l7 7 l-7 7" fill="none" stroke="#1558d6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="494" y="150" width="212" height="400" rx="16" fill="#ffffff" stroke="#c3d7f7" stroke-width="3"/>
+<circle cx="600" cy="196" r="28" fill="#e4572e"/>
+<text x="600" y="208" text-anchor="middle" font-size="32" font-weight="800" fill="#ffffff">3</text>
+<text x="600" y="268" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">宅内への通線</text>
+<rect x="530" y="286" width="140" height="36" rx="18" fill="#ffd76a"/>
+<text x="600" y="311" text-anchor="middle" font-size="20" font-weight="800" fill="#0b2c5f">約15〜30分</text>
+<text x="512" y="370" font-size="20" font-weight="600" fill="#24324a">①電話線の配管</text>
+<text x="512" y="410" font-size="20" font-weight="600" fill="#24324a">②エアコンダクト</text>
+<text x="512" y="450" font-size="20" font-weight="600" fill="#24324a">③両方だめなら</text>
+<text x="512" y="490" font-size="20" font-weight="600" fill="#24324a">壁に穴(約10mm)</text>
+<path d="M708 350 l12 0 m-6 -7 l7 7 l-7 7" fill="none" stroke="#1558d6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="722" y="150" width="212" height="400" rx="16" fill="#ffffff" stroke="#c3d7f7" stroke-width="3"/>
+<circle cx="828" cy="196" r="28" fill="#1558d6"/>
+<text x="828" y="208" text-anchor="middle" font-size="32" font-weight="800" fill="#ffffff">4</text>
+<text x="828" y="268" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">光コンセント設置</text>
+<rect x="758" y="286" width="140" height="36" rx="18" fill="#ffd76a"/>
+<text x="828" y="311" text-anchor="middle" font-size="20" font-weight="800" fill="#0b2c5f">約15〜20分</text>
+<text x="740" y="370" font-size="20" font-weight="600" fill="#24324a">壁際に小さく固定</text>
+<text x="740" y="410" font-size="20" font-weight="600" fill="#24324a">ONUとつないで</text>
+<text x="740" y="450" font-size="20" font-weight="600" fill="#24324a">信号を確認する</text>
+<text x="740" y="490" font-size="20" font-weight="600" fill="#24324a">電源が1口必要</text>
+<path d="M936 350 l12 0 m-6 -7 l7 7 l-7 7" fill="none" stroke="#1558d6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="950" y="150" width="212" height="400" rx="16" fill="#ffffff" stroke="#c3d7f7" stroke-width="3"/>
+<circle cx="1056" cy="196" r="28" fill="#3fbf7f"/>
+<text x="1056" y="208" text-anchor="middle" font-size="32" font-weight="800" fill="#ffffff">5</text>
+<text x="1056" y="268" text-anchor="middle" font-size="22" font-weight="800" fill="#0b2c5f">開通確認・説明</text>
+<rect x="986" y="286" width="140" height="36" rx="18" fill="#ffd76a"/>
+<text x="1056" y="311" text-anchor="middle" font-size="20" font-weight="800" fill="#0b2c5f">約10〜15分</text>
+<text x="968" y="370" font-size="20" font-weight="600" fill="#24324a">通信の疎通を確認</text>
+<text x="968" y="410" font-size="20" font-weight="600" fill="#24324a">機器の説明を聞く</text>
+<text x="968" y="450" font-size="20" font-weight="600" fill="#24324a">Wi-Fiの設定は</text>
+<text x="968" y="490" font-size="20" font-weight="600" fill="#24324a">原則自分で行う</text>
+<rect x="38" y="580" width="1124" height="90" rx="14" fill="#0b2c5f"/>
+<text x="62" y="617" font-size="21" font-weight="700" fill="#ffffff">合計はおよそ1〜2時間。NTT東西の公式案内は「約2時間」で、状況により1時間程度のことも。</text>
+<text x="62" y="651" font-size="21" font-weight="700" fill="#ffd76a">穴あけになるのは③で配管もエアコンダクトも使えないときだけ。無派遣工事なら作業員は来ません。</text>
+</svg>

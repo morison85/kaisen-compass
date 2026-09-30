@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>光回線の工事は何をする?当日の流れと穴あけなしで済む条件【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-kouji-naiyou</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-kouji-naiyou</guid>
+    <pubDate>Thu, 01 Oct 2026 12:00:00 +0900</pubDate>
+    <description>光回線の開通工事には、作業員が来る派遣工事と来ない無派遣工事があります。派遣工事は到着・経路確認、電柱から外壁への引き込み、宅内への通線、光コンセント設置とONU接続、開通確認の5ステップで、NTT東西の公式案内では約2時間が目安。宅内への通線は電話線の配管→エアコンダクト→壁の穴あけ(直径約10mm)の順に検討されるため、配管かダクトが使える家なら穴あけなしで終わるケースが多数派です。外壁の引留め金具のビス穴との違い、建物タイプ別の作業内容、穴あけを避けるために自分でできる事前チェック6項目、立ち会いの準備、土日祝の工事加算3,300円(フレッツ光)まで整理しました。</description>
+  </item>
   <item>
     <title>WiMAXの解約手順|電話・Webの窓口と締め日・日割りを6社比較【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/wimax-kaiyaku-tetsuzuki</link>
