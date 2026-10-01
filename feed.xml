@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 01 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>光回線のキャッシュバックをもらってすぐ解約できる?返還条件と「2回目」をもらう再契約のルール【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/cashback-tanki-kaiyaku</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/cashback-tanki-kaiyaku</guid>
+    <pubDate>Fri, 02 Oct 2026 12:00:00 +0900</pubDate>
+    <description>光回線のキャッシュバックを受け取ったあとに解約すること自体は可能ですが、損得を決めるのは解約金ではなく、入金が完了したか、代理店の規約に短期解約の返還条項がないか、工事費の分割残債がいくら残っているかの3つです。GMOとくとくBB光(1ギガ・派遣工事)を例に、11ヶ月目の案内メール→12ヶ月目末の振込→13ヶ月目の解約で工事費の残債が約16,700円残り、基本特典5,000円との差で約1.2万円の赤字になる計算を示しました。auひかりはKDDIのサービスを解約しての加入を特典対象外と明記するなど、同じ回線での再契約で2回目をもらうのは原則難しく、別回線へ乗り換えて他社違約金補助で残債を回収する手順を整理しています。</description>
+  </item>
   <item>
     <title>光回線の工事は何をする?当日の流れと穴あけなしで済む条件【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/hikari-kouji-naiyou</link>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-label="GMOとくとくBB光を派遣工事で開通した場合の3つの期限。キャッシュバックは12ヶ月目末の振込で確定、工事費の分割割引は36ヶ月目まで、解約金はいつでも0円" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+<rect width="1200" height="640" fill="#f5f8fe"/>
+<line x1="596.7" y1="130" x2="596.7" y2="500" stroke="#e4572e" stroke-width="3" stroke-dasharray="8 6"/>
+<line x1="988.6" y1="130" x2="988.6" y2="500" stroke="#e4572e" stroke-width="3" stroke-dasharray="8 6"/>
+<line x1="1150.0" y1="130" x2="1150.0" y2="500" stroke="#3fbf7f" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="40" y="64" font-size="32" font-weight="800" fill="#0b2c5f">3つの期限:GMOとくとくBB光(1ギガ・派遣工事)の例</text>
+<text x="40" y="104" font-size="21" font-weight="600" fill="#4a5f80">2026年10月時点の公式ページの条件をもとにした概算。開通月を1ヶ月目として数えます</text>
+<text x="40" y="190" font-size="23" font-weight="800" fill="#0b2c5f">キャッシュバック</text>
+<rect x="320" y="150" width="276.7" height="60" rx="10" fill="#ffd76a"/>
+<text x="458" y="188" font-size="19" font-weight="800" fill="#0b2c5f" text-anchor="middle">受取前の解約で対象外</text>
+<text x="40" y="290" font-size="23" font-weight="800" fill="#0b2c5f">工事費の分割割引</text>
+<rect x="320" y="250" width="830.0" height="60" rx="10" fill="#1558d6"/>
+<text x="735" y="288" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">途中で解約すると残りを一括請求(月726円×残り回数)</text>
+<text x="40" y="390" font-size="23" font-weight="800" fill="#0b2c5f">解約金</text>
+<rect x="320" y="350" width="830.0" height="60" rx="10" fill="#3fbf7f"/>
+<text x="735" y="388" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">いつ解約しても0円</text>
+<text x="611" y="188" font-size="19" font-weight="800" fill="#0b2c5f">12ヶ月目末の振込で確定</text>
+<line x1="320" y1="450" x2="1150" y2="450" stroke="#4a5f80" stroke-width="3"/>
+<line x1="331.5" y1="442" x2="331.5" y2="458" stroke="#4a5f80" stroke-width="3"/>
+<text x="332" y="484" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">1ヶ月目</text>
+<line x1="585.1" y1="442" x2="585.1" y2="458" stroke="#4a5f80" stroke-width="3"/>
+<text x="585" y="484" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">12ヶ月目</text>
+<line x1="861.8" y1="442" x2="861.8" y2="458" stroke="#4a5f80" stroke-width="3"/>
+<text x="862" y="484" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">24ヶ月目</text>
+<line x1="1138.5" y1="442" x2="1138.5" y2="458" stroke="#4a5f80" stroke-width="3"/>
+<text x="1138" y="484" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">36ヶ月目</text>
+<text x="597" y="540" font-size="20" font-weight="800" fill="#e4572e" text-anchor="middle">13ヶ月目〜</text>
+<text x="597" y="570" font-size="19" font-weight="700" fill="#24324a" text-anchor="middle">特典は失わない</text>
+<text x="979" y="540" font-size="20" font-weight="800" fill="#e4572e" text-anchor="end">30ヶ月目〜</text>
+<text x="979" y="570" font-size="19" font-weight="700" fill="#24324a" text-anchor="end">残債&lt;特典5,000円</text>
+<text x="1170" y="540" font-size="20" font-weight="800" fill="#3fbf7f" text-anchor="end">37ヶ月目〜</text>
+<text x="1170" y="570" font-size="19" font-weight="700" fill="#24324a" text-anchor="end">残債0円</text>
+<text x="40" y="618" font-size="17" font-weight="600" fill="#4a5f80">※ 5,000円は全員対象の基本特典。10ギガ・オプションの増額や、無派遣工事(工事費の残債なし)では結果が変わります</text>
+</svg>
