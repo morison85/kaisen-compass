@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 02 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 03 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>格安SIMの乗り換えは月末と月初どっちが得?締め日と解約月・初月の日割りを11社で比較【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/kakuyasu-sim-norikae-timing</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/kakuyasu-sim-norikae-timing</guid>
+    <pubDate>Sat, 03 Oct 2026 12:00:00 +0900</pubDate>
+    <description>格安SIMへの乗り換えの損得は、旧回線の解約月が満額か日割りか、新回線の初月が日割りかの組み合わせで決まります。ドコモ・au・ソフトバンク・ahamo・UQ mobile・LINEMO・IIJmioは解約月が満額、乗り換え先のahamo・LINEMO・UQ mobile・IIJmio・mineoは初月が日割りの会社が多いため、25〜28日ごろの開通が損の少ないタイミングです。旧回線の解約日は申込日ではなく新回線の開通日なので、物理SIMは20日ごろ、eSIMは25日ごろまでに申し込むのが目安。翌月にずれると旧回線の1ヶ月分が増える計算例、ソフトバンクの請求締日(10日・20日・末日)ごとの考え方、mineo・楽天モバイルの例外、端末返却やセット割など日割り以外の要素も整理しました。</description>
+  </item>
   <item>
     <title>光回線のキャッシュバックをもらってすぐ解約できる?返還条件と「2回目」をもらう再契約のルール【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/cashback-tanki-kaiyaku</link>

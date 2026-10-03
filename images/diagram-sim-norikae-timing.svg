@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-label="31日まである月に格安SIMへ乗り換える場合の逆算カレンダー。物理SIMは20日ごろ、eSIMは25日ごろまでに申し込む。29日から末日は余裕がなく、翌月にずれると旧回線の料金が1ヶ月分満額でかかる。旧回線は解約月満額、新回線は開通日から日割りの会社が多い" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+<rect width="1200" height="640" fill="#f5f8fe"/>
+<text x="40" y="60" font-size="32" font-weight="800" fill="#0b2c5f">逆算カレンダー:31日まである月に乗り換える場合</text>
+<text x="40" y="98" font-size="21" font-weight="600" fill="#4a5f80">旧回線の解約日は「申込日」ではなく「新回線の開通(回線切替)日」</text>
+<rect x="1084.7" y="140" width="75.3" height="320" rx="8" fill="#e4572e" opacity=".12"/>
+<text x="1160" y="132" font-size="19" font-weight="800" fill="#e4572e" text-anchor="end">29日〜末日は余裕なし</text>
+<text x="40" y="193" font-size="23" font-weight="800" fill="#0b2c5f">物理SIM</text>
+<text x="40" y="273" font-size="23" font-weight="800" fill="#0b2c5f">eSIM</text>
+<text x="40" y="353" font-size="23" font-weight="800" fill="#0b2c5f">旧回線の請求</text>
+<text x="40" y="433" font-size="23" font-weight="800" fill="#0b2c5f">新回線の請求</text>
+<rect x="312.0" y="160" width="541.7" height="50" rx="10" fill="#1558d6"/>
+<text x="583" y="192" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">申し込み・本人確認を済ませる(20日ごろまで)</text>
+<rect x="865.3" y="160" width="126.7" height="50" rx="10" fill="#9fc1f5"/>
+<text x="929" y="192" font-size="19" font-weight="800" fill="#0b2c5f" text-anchor="middle">配送2〜4日</text>
+<rect x="1003.7" y="160" width="43.7" height="50" rx="10" fill="#3fbf7f"/>
+<text x="1026" y="192" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">開通</text>
+<rect x="312.0" y="240" width="680.0" height="50" rx="10" fill="#1558d6"/>
+<text x="652" y="272" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">申し込み・本人確認(25日ごろまで)</text>
+<rect x="1003.7" y="240" width="71.3" height="50" rx="10" fill="#3fbf7f"/>
+<text x="1039" y="272" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">開通</text>
+<rect x="312.0" y="320" width="846.0" height="50" rx="10" fill="#d97706"/>
+<text x="735" y="352" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">解約月は何日に切り替えても1ヶ月分(満額)の会社が多い</text>
+<rect x="1003.7" y="400" width="154.3" height="50" rx="10" fill="#3fbf7f"/>
+<text x="1081" y="432" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">日割り</text>
+<text x="990" y="432" font-size="19" font-weight="700" fill="#24324a" text-anchor="end">開通日から月末までの日割り(ahamo・LINEMO・UQ mobileなど)</text>
+<line x1="320" y1="480" x2="1150" y2="480" stroke="#4a5f80" stroke-width="3"/>
+<line x1="320.0" y1="472" x2="320.0" y2="488" stroke="#4a5f80" stroke-width="3"/>
+<text x="320" y="514" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">1日</text>
+<line x1="569.0" y1="472" x2="569.0" y2="488" stroke="#4a5f80" stroke-width="3"/>
+<text x="569" y="514" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">10日</text>
+<line x1="845.7" y1="472" x2="845.7" y2="488" stroke="#4a5f80" stroke-width="3"/>
+<text x="846" y="514" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">20日</text>
+<line x1="984.0" y1="472" x2="984.0" y2="488" stroke="#4a5f80" stroke-width="3"/>
+<text x="984" y="514" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">25日</text>
+<line x1="1150.0" y1="472" x2="1150.0" y2="488" stroke="#4a5f80" stroke-width="3"/>
+<text x="1150" y="514" font-size="18" font-weight="600" fill="#4a5f80" text-anchor="middle">末日</text>
+<text x="40" y="560" font-size="20" font-weight="800" fill="#e4572e">不備や配送遅れで翌月にずれると、旧回線の翌月分が満額でかかる</text>
+<text x="40" y="592" font-size="19" font-weight="700" fill="#24324a">→ 目標は「25〜28日ごろに開通」。末日ギリギリは狙わない</text>
+<text x="40" y="626" font-size="16" font-weight="600" fill="#4a5f80">※ 2026年10月時点の各社公式FAQをもとにした目安。配送日数・審査時間・回線切替の受付時間は会社と時期で変わります</text>
+</svg>
