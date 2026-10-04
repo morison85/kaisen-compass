@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 03 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 04 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>光回線の速度測定の正しい方法|測定サイトで数字が違う理由と「遅い」の判定基準【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/hikari-sokudo-sokutei</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/hikari-sokudo-sokutei</guid>
+    <pubDate>Sun, 04 Oct 2026 12:00:00 +0900</pubDate>
+    <description>Speedtest・Fast.com・Googleのスピードテストで数字がずれるのは、相手のサーバー・接続の本数・測定時間がサイトごとに違うためです。総務省の固定ブロードバンド品質測定ガイドライン(2024年9月)が事業者に求める「有線・毎時1回以上・1週間以上・同一エリアのサーバー」の考え方を家庭向けに縮め、朝・昼・夜・深夜の4時間帯×3日で測り、夜の最低値で判断する方法を紹介。下り90Mbps台で止まるならCAT5ケーブルなど100Mbps制限の部品、940Mbps前後なら1Gbpsの上限で正常、といった頭打ちの数字からボトルネックを逆算する早見表、Netflix・Zoomの公式推奨値を使った用途別の目安、みんなのネット回線速度の平均値と比べるときの注意までまとめました。</description>
+  </item>
   <item>
     <title>格安SIMの乗り換えは月末と月初どっちが得?締め日と解約月・初月の日割りを11社で比較【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/kakuyasu-sim-norikae-timing</link>

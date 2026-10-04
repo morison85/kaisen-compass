@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>光回線の速度測定の正しい方法|サイトで数字が違う理由と判定基準 | 回線コンパス</title>
+<meta name="description" content="光回線の速度を正しく測る手順と、結果の読み方をまとめました。Speedtest・Fast.com・Googleで数字が違う理由、総務省ガイドラインを家庭向けに縮めた「3日×4時間帯」の測り方、94Mbpsや940Mbpsで頭打ちになるときのボトルネック早見表、用途別の目安まで。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/hikari-sokudo-sokutei">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="光回線の速度測定の正しい方法|測定サイトで数字が違う理由と「遅い」の判定基準【2026年】">
+<meta property="og:description" content="1回測って「遅い」と決めるのは早すぎます。測定サイトごとの仕組みの違い、時間帯をずらした測り方、頭打ちの数字から原因を逆算する早見表まで。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/hikari-sokudo-sokutei">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-sokudo-sokutei.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-04">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-sokudo-sokutei.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260924a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "光回線の速度測定の正しい方法|測定サイトで数字が違う理由と「遅い」の判定基準【2026年】",
+  "description": "光回線の速度を正しく測る手順、測定サイトごとに数値が違う理由、時間帯をずらした測り方、頭打ちの数値からボトルネックを逆算する方法、用途別の目安をまとめます。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-hikari-sokudo-sokutei.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-10-04",
+  "dateModified": "2026-10-04",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/hikari-sokudo-sokutei"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "どの速度測定サイトがいちばん正確ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "どれが正確というより、測っているものが違います。Speedtestは複数の接続で回線の最大能力を、Googleのスピードテストは1本の接続での速さを、Fast.comは動画配信サーバーからの速さを測ります。回線の実力を比べるならSpeedtestを有線で、同じサーバーを指定して使うのが扱いやすい方法です。比較するときは、日によってサイトを変えないことが大切です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "光回線なのに速度が90Mbps台から上がりません",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "100Mbpsまでしか通さない部品が途中に入っている可能性が高い状態です。CAT5のLANケーブル、古いルーターやハブのLANポート、PCのLANアダプタの設定を確認してください。マンションでVDSL方式の場合も上限が100Mbpsになります。ケーブルをCAT5e以上に替えるだけで改善するケースもあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "1Gbpsの契約なのに940Mbpsくらいしか出ません。異常ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "異常ではありません。1Gbpsの規格では、通信の制御に使う分を差し引くと、実際に流せるデータは900〜940Mbps前後が目安になります。1Gbps契約でこの数字が出ているなら、ほぼ上限まで出ている状態です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "速度測定は何回くらいすればいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "総務省のガイドラインは事業者に毎時1回以上・1週間以上の測定を求めていますが、家庭では朝・昼・夜(20〜23時)・深夜の4つの時間帯を3日ほど測り、合計10回程度を目安にすると傾向がつかめます。判断には平均ではなく、夜の時間帯の一番低い値を使うのがおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pingは何msくらいなら問題ありませんか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Web閲覧や動画視聴ではほとんど気になりません。Web会議やオンラインゲームでは、30ms以下で値のばらつき(ジッター)が小さければ快適なことが多い傾向です。回線に負荷がかかったときだけPingが大きく跳ね上がる場合は、ルーターが通信の渋滞をさばけていない可能性があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "スマホで測った速度はあてになりませんか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "自分のスマホでの使い心地を知る目的なら意味があります。ただし、Wi-Fiの電波状況やスマホの対応規格が結果に混ざるため、回線そのものの実力を測る用途には向きません。回線を評価したり乗り換えを判断したりするときは、ルーターと有線でつないだPCで測るのが確実です。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "速度測定の正しい方法" }
+  ]
+}
+</script>
+<!-- analytics -->
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>速度測定の正しい方法</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">光回線の速度測定の正しい方法|測定サイトで数字が違う理由と「遅い」の判定基準【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-10-04">2026年10月4日</time></span>
+      <span>公開日:<time datetime="2026-10-04">2026年10月4日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-hikari-sokudo-sokutei.svg" alt="光回線の速度測定の正しい方法と結果の見方の解説" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>同じ時間に同じパソコンで測ったのに、Speedtestでは620Mbps、Googleのスピードテストでは380Mbps。こういうズレは珍しくありません。どちらかが壊れているわけではなく、<strong>測定サイトごとに「何を測っているか」が違う</strong>からです。</p>
+    <p>総務省が2024年9月に公表した「固定ブロードバンドサービスの品質測定手法等に関するガイドライン」の検討資料にも、民間の測定アプリについて「アプリによって測定結果が大きく変動」というデメリットが明記されています。国が事業者に求める測り方は、<strong>有線接続・毎時1回以上・1週間以上・同じエリアのサーバー</strong>。スマホのWi-Fiで1回だけ測った数字とは、そもそも土俵が違います。</p>
+    <p>この記事では、主な測定サイト4つの仕組みの違い、ガイドラインの考え方を家庭向けに縮めた「3日×4時間帯」の測り方、そして測った数字が<strong>94Mbps前後や940Mbps前後で頭打ちになるときに、どこが詰まっているかを逆算する早見表</strong>をまとめました。測った後に何をすればいいかまで、一続きで読めるようにしています。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>回線そのものの実力を知りたいなら、<strong>ルーターとPCを有線でつないで、Speedtest(サーバーは近くの同じもの)で測る</strong>のが基本です。<strong>朝・昼・夜(20〜23時)・深夜の4つの時間帯</strong>で、日を変えて合計10回ほど測り、平均ではなく<strong>一番悪い時間帯の値</strong>を見て判断します。結果が<strong>90Mbps台で止まるならLANケーブルや機器の100Mbps制限</strong>、<strong>有線は速いのにWi-Fiだけ遅いならルーターや設置場所</strong>、<strong>夜だけ大きく落ちるなら接続方式(IPv6 IPoE)</strong>を疑う。回線の乗り換えを考えるのは、有線でも夜の値が用途に足りないときだけです。</p>
+    </div>
+
+    <p class="answer-cta answer-cta--pick" data-default="other" data-picks='[{"k":"docomo","t":"ドコモ","label":"GMOとくとくBBのドコモ光を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","beacon":"https://www12.a8.net/0.gif?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"ドコモ光セット割の対象。提携プロバイダの申し込みページで条件を確認できます","head":"ドコモのスマホなら、セット割が効くドコモ光から"},{"k":"au","t":"au・UQ","label":"auひかりの提供エリアを確認する","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6","beacon":"https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6","pr":"PR・エリア判定は無料で、申し込みにはなりません","sub":"auスマートバリュー・UQ自宅セット割の対象。住所を入れるだけ・結果はすぐ表示","head":"au・UQモバイルのスマホなら、セット割が効くauひかりから"},{"k":"sb","t":"ソフトバンク・ワイモバ","label":"ソフトバンク光のキャンペーンを見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","beacon":"https://www15.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","pr":"PR・申し込み前にキャンペーンの適用条件を確認できます","sub":"おうち割 光セットの対象。申込特典と月額割引の条件を確認できます","head":"ソフトバンク・ワイモバイルのスマホなら、おうち割が効くソフトバンク光から"},{"k":"other","t":"格安SIM・その他","label":"測っても遅いままなら:GMOとくとくBB光の条件を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","beacon":"https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"契約期間の縛りなし・v6プラス標準対応。料金と特典の条件を確認できます","head":"セット割がないなら、縛りのないGMOとくとくBB光から","short":"GMOとくとくBB光の料金を見る"}]'><span class="answer-cta__chips" role="group" aria-label="スマホのキャリアで申し込み先を切り替え"><span class="answer-cta__q">スマホはどれ?</span><button type="button" class="answer-cta__chip" data-k="docomo" aria-pressed="false">ドコモ</button><button type="button" class="answer-cta__chip" data-k="au" aria-pressed="false">au・UQ</button><button type="button" class="answer-cta__chip" data-k="sb" aria-pressed="false">ソフトバンク・ワイモバ</button><button type="button" class="answer-cta__chip is-on" data-k="other" aria-pressed="true">格安SIM・その他</button></span><a class="answer-cta__btn" data-cta="answer" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><span>測っても遅いままなら:GMOとくとくBB光の条件を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・申し込み前にキャッシュバックの受け取り条件を確認できます</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/gmohikari-600.webp 600w, ../images/official/gmohikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/gmohikari.jpg" srcset="../images/official/gmohikari-600.jpg 600w, ../images/official/gmohikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="GMOとくとくBB光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://gmobb.jp/service/gmohikari/" rel="nofollow noopener" target="_blank">GMOとくとくBB光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-gmohikari.svg" alt="GMOとくとくBB光のサービス概要(月額・縛りなし)" width="800" height="420" loading="lazy" decoding="async"></div><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#site">測定サイトで数字が違う理由</a></li>
+        <li><a href="#junbi">測る前に整える5つの条件</a></li>
+        <li><a href="#hakarikata">「3日×4時間帯」で測る方法</a></li>
+        <li><a href="#mikata">結果の見方:下り・上り・Ping・負荷時の遅延</a></li>
+        <li><a href="#atama">頭打ちの数字から原因を逆算する早見表</a></li>
+        <li><a href="#heikin">平均速度と比べるときの注意</a></li>
+        <li><a href="#tsugi">測ったあとにやること</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">測った結果、回線の変更も視野に入ってきたら</p>
+      <p>有線でも夜の速度が足りないなら、機器ではなく回線の種類が合っていない可能性があります。住まいのタイプとスマホのセット割から、候補を数社まで絞り込めます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../hikaku">全11サービスを一覧で比較する</a>
+      </div>
+    </div>
+
+    <h2 id="site">測定サイトで数字が違う理由</h2>
+    <p>速度測定は、どこかのサーバーとの間で実際にデータをやり取りして、その速さを数えるだけの仕組みです。違いが出るのは<strong>「どこのサーバーと」「何本の接続で」「どのくらいの時間」</strong>やり取りするかが、サイトごとに違うからです。主なサイトを並べるとこうなります(2026年10月時点の仕様の目安)。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>測定サイト</th><th>相手のサーバー</th><th>測り方の特徴</th><th>向いている用途</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Speedtest(Ookla)</th>
+            <td>世界中に置かれた測定専用サーバー。近い所が自動で選ばれ、手動でも変更できる</td>
+            <td class="best">複数の接続を同時に張って回線を満杯にする方式。アプリでは単一接続にも切り替えられる</td>
+            <td class="best">回線の「最大の実力」を見る。比較の基準にしやすい</td>
+          </tr>
+          <tr>
+            <th>Fast.com(Netflix)</th>
+            <td>Netflixの動画配信サーバー</td>
+            <td>開くとすぐ下りを測る。「詳細を表示」で上り、無負荷時と負荷時の遅延も出る</td>
+            <td>動画の見やすさに近い数字。負荷時の遅延が見られるのも利点</td>
+          </tr>
+          <tr>
+            <th>Googleのスピードテスト</th>
+            <td>Measurement Lab(M-Lab)のサーバー</td>
+            <td>1本の接続で測る方式(NDT)。遅延が大きい経路や混雑時は低めに出やすい</td>
+            <td>手軽な確認。数値は他より控えめに出ることがある</td>
+          </tr>
+          <tr>
+            <th>みんなのネット回線速度(みんそく)</th>
+            <td>独自の測定サーバー</td>
+            <td>測定結果を投稿でき、回線・プロバイダ別の平均と比べられる</td>
+            <td>同じ回線の利用者の中で、自分の位置を知る</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>差が一番大きく出やすいのは、<strong>複数接続のSpeedtestと、1本の接続で測るGoogle</strong>の組み合わせです。シカゴ大学などの研究グループが両者を比べた論文では、多くのケースで差は数%以内に収まる一方、遅延が大きい環境では10%以上、条件によっては半分近くまで差が開くこと、混雑する時間帯には1本接続の測定のほうが数値が下がりやすいことが報告されています。</p>
+    <p>どちらが「正しい」わけでもありません。ブラウザでWebページを開くときやゲームの通信は少数の接続で動き、大きなファイルのダウンロードやアップデートは複数の接続を使うこともあります。大事なのは<strong>比べるときは同じサイト・同じサーバーで揃える</strong>ことです。今日はSpeedtest、明日はGoogleで測って「遅くなった」と判断するのが、一番よくある失敗です。</p>
+
+    <div class="box-point">
+      <div class="box-point__t">✅ 「片方のサイトだけ夜に遅い」はヒントになる</div>
+      <p>IPv6(IPoE)を使える環境なのに、IPv4の通信が古い接続方式(PPPoE)のまま、という家庭は少なくありません。この場合、IPv6で通信する測定先は速く、IPv4で通信する測定先は夜だけ遅い、という差が出ることがあります。測定サイトによって夜の数字が極端に違うなら、回線の故障よりも<strong>接続方式の設定</strong>を疑う価値があります。仕組みは<a href="ipv6-ipoe">IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法</a>で解説しています。</p>
+    </div>
+
+    <h2 id="junbi">測る前に整える5つの条件</h2>
+    <p>ガイドラインが事業者に求めている条件のうち、家庭でもそのまま真似できるものを5つに絞りました。上から順に効き目が大きい項目です。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">ルーターと測定する機器を有線(LANケーブル)でつなぐ</div>
+        <p>ガイドラインの測定条件は「モデム又はルータと測定端末を有線接続した状態」です。Wi-Fiで測ると、電波の状態・ルーターの規格・スマホのアンテナ性能まで混ざり、回線の実力が分からなくなります。有線ポートの無いノートPCなら、USB接続の有線LANアダプタ(1Gbps対応品)で代用できます。</p>
+      </li>
+      <li>
+        <div class="steps__t">ケーブルと機器の「上限」を確認する</div>
+        <p>LANケーブルの側面に印字された規格(CAT5e以上なら1Gbps対応)、ルーターとPCのLANポートが1Gbps(1000BASE-T)対応かを確認します。ガイドラインでも「上限速度に対応するLANケーブル等の周辺機器」の確保が条件になっています。ここが100Mbpsまでの古い規格だと、どれだけ回線が速くても90Mbps台で止まります。</p>
+      </li>
+      <li>
+        <div class="steps__t">家の中のほかの通信を止める</div>
+        <p>家族の動画視聴、ゲーム機やPCのアップデート、クラウドへの写真のバックアップは、測定中も裏で帯域を使っています。完全には止められなくても、<strong>「誰かが4K動画を見ている時間」を避ける</strong>だけで数字は安定します。</p>
+      </li>
+      <li>
+        <div class="steps__t">VPNとブラウザの重い拡張機能を切る</div>
+        <p>VPNを通すと、測定相手は「VPNの出口の近くのサーバー」になり、自宅回線の実力とは別のものを測ることになります。会社支給のPCで常時VPNが入っている場合は、私物の端末で測るほうが正確です。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターとONUは測定の直前に再起動しない</div>
+        <p>再起動直後は機器が通信経路を学習し直している最中で、数字がぶれやすくなります。再起動するなら数分おいてから測定します。逆に、長期間つけっぱなしで調子が悪いなら、測定の前日に再起動しておくのが無難です。</p>
+      </li>
+    </ol>
+
+    <h2 id="hakarikata">「3日×4時間帯」で測る方法</h2>
+    <p>ここがこの記事でいちばん伝えたい部分です。国のガイドラインは事業者に対して、次のような測り方を求めています。</p>
+    <div class="box-memo">
+      <div class="box-memo__t">📝 総務省ガイドラインの測定条件(要点)</div>
+      <ul>
+        <li>ルーター等と測定端末を<strong>有線接続</strong>して測る</li>
+        <li>同じ速度プランは<strong>同じエリアに設置された測定サーバー</strong>で測る</li>
+        <li>測定時間は<strong>毎時1回以上</strong>、期間は<strong>1週間以上</strong></li>
+        <li>戸建てと集合住宅は分けて測る。サンプル数は1,680程度以上(例:毎時1回×1週間×10人)</li>
+        <li>結果は分布(箱ひげ図)と<strong>時間帯別の平均</strong>で示す</li>
+      </ul>
+    </div>
+    <p>1週間・毎時1回は家庭では現実的ではありませんが、考え方は借りられます。ポイントは<strong>「混む時間と空いている時間を両方測る」</strong>ことと、<strong>「1回の数字で判断しない」</strong>ことの2つです。そこで、平日2日と休日1日の計3日、次の4つの時間帯で1回ずつ測る方法をおすすめします。合計12回、1回あたり1分ほどで終わります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>時間帯</th><th>測る理由</th><th>記録する項目</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>朝(7〜9時)</th>
+            <td>出勤・通学前で家庭の利用が増え始める時間</td>
+            <td rowspan="4">日付/時刻/有線か無線か/測定サイトとサーバー名/下り/上り/Ping(負荷時の遅延が出るなら併記)</td>
+          </tr>
+          <tr>
+            <th>昼(12〜14時)</th>
+            <td>比較的空いていることが多い。テレワークの人は業務時間の目安に</td>
+          </tr>
+          <tr>
+            <th class="best">夜(20〜23時)</th>
+            <td class="best">利用が集中しやすく、もっとも落ちやすい。<strong>判断の基準はこの時間帯</strong></td>
+          </tr>
+          <tr>
+            <th>深夜(0〜2時)</th>
+            <td>空いていることが多い。ここで速いなら「回線は速いが夜に混む」と分かる</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>12個の数字が揃ったら、見るのは平均ではなく<strong>夜の3回のうち一番低い値</strong>です。ネットが遅くて困るのは、たいてい一番混んでいる時間だからです。深夜と夜の差が大きいなら混雑(設備や接続方式の問題)、どの時間帯も同じように低いなら機器・配線・建物の設備の問題、という切り分けもこの表だけでできます。</p>
+    <p>記録はスマホのメモでも表計算でも構いません。<strong>測定画面のスクリーンショットも残しておく</strong>と、プロバイダや管理会社に相談するときにそのまま使えます。サポート窓口に「遅い」とだけ伝えるより、「有線・同じサーバーで、夜の21時台に3日とも50Mbpsを下回った」と伝えるほうが、話がずっと早く進みます。</p>
+
+    <h2 id="mikata">結果の見方:下り・上り・Ping・負荷時の遅延</h2>
+    <p>測定結果には複数の数字が並びます。用途によって効く数字が違うので、まず意味を整理します。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>指標</th><th>意味</th><th>効いてくる場面</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>下り(ダウンロード)</th>
+            <td>受け取る速さ。単位はMbps(1秒に何メガビットか)</td>
+            <td>Webページ、動画視聴、アプリやゲームのダウンロード</td>
+          </tr>
+          <tr>
+            <th>上り(アップロード)</th>
+            <td>送り出す速さ</td>
+            <td>Web会議で自分の映像を送る、写真や動画のアップロード、配信</td>
+          </tr>
+          <tr>
+            <th>Ping(レイテンシ)</th>
+            <td>信号が往復するまでの時間。単位はms(ミリ秒)。小さいほど良い</td>
+            <td>オンラインゲーム、Web会議の会話のテンポ</td>
+          </tr>
+          <tr>
+            <th>ジッター</th>
+            <td>Pingのばらつき。小さいほど安定</td>
+            <td>通話の音切れ、ゲームのカクつき</td>
+          </tr>
+          <tr>
+            <th>負荷時の遅延</th>
+            <td>回線に大きな通信が流れている最中のPing</td>
+            <td class="best">「誰かがダウンロードすると会議が固まる」現象の原因が分かる</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>見落とされがちなのが最後の<strong>負荷時の遅延</strong>です。Fast.comの詳細表示では「無負荷時」と「負荷時」の遅延が並んで出ます。無負荷時が15msでも、負荷時が200msを超えるようなら、ルーターが通信の渋滞をさばけていない可能性があります(この現象はバッファブロートと呼ばれます)。下りの数字が十分でも会議やゲームが不安定な家は、ここを確認してみてください。</p>
+    <p>では、どのくらいあれば足りるのか。サービス側が公表している推奨値を並べると、意外なほど小さい数字です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>用途</th><th>公式の推奨値・目安</th><th>家庭で見ておきたい余裕</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>動画(Netflix)</th>
+            <td>HD(720p)3Mbps以上、フルHD 5Mbps以上、4K 15Mbps以上</td>
+            <td>同時に見る人数×推奨値の2倍程度</td>
+          </tr>
+          <tr>
+            <th>Web会議(Zoom)</th>
+            <td>グループ通話・1080pで上り3.8Mbps/下り3.0Mbps</td>
+            <td><strong>上り</strong>が10Mbps以上あると安心</td>
+          </tr>
+          <tr>
+            <th>オンラインゲーム</th>
+            <td>タイトルにより異なる(速度よりPingが重要)</td>
+            <td>Ping 30ms以下・ジッターが小さいこと</td>
+          </tr>
+          <tr>
+            <th>大容量ダウンロード</th>
+            <td>上限なし(速いほど待ち時間が短い)</td>
+            <td>100GBのゲームは、実測100Mbpsで約2時間15分、500Mbpsで約27分が目安</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>つまり、<strong>夜の最低値でも下り100Mbps・上り10Mbps・Ping 30ms以下</strong>あれば、多くの家庭の用途はまかなえます。光回線の「最大1Gbps」と比べて数字が小さく見えても、それだけで不足とは言えません。逆に、ゲームや配信をする人にとってはPingと上りが主役で、下りの数字はあまり当てになりません。ゲーム用途で回線を選ぶなら<a href="online-game-kaisen">オンラインゲームにおすすめの回線</a>で、Pingが下がる条件を詳しく整理しています。</p>
+
+    <h2 id="atama">頭打ちの数字から原因を逆算する早見表</h2>
+    <p>何度測っても<strong>同じあたりの数字で止まる</strong>なら、それは回線の混雑ではなく、途中のどこかに「これ以上は流れない」上限がある合図です。上限の数字には特徴があるので、逆算ができます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>止まる数字(有線)</th><th>疑う場所</th><th>確かめ方・対処</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>下りが90Mbps台で止まる</th>
+            <td>100Mbps(100BASE-TX)までしか出ない部品。CAT5のLANケーブル、古いルーターやハブのLANポート、PC側のLANアダプタ。マンションのVDSL方式も上限が100Mbps</td>
+            <td>ケーブルの印字を確認し、CAT5e以上に交換。PCのネットワーク設定で「リンク速度」が100Mbpsになっていないか確認。建物の配線方式は<a href="mansion-vdsl">マンションのVDSL方式の見分け方</a>へ</td>
+          </tr>
+          <tr>
+            <th>900〜940Mbps前後で止まる</th>
+            <td class="best">1Gbps(1000BASE-T)の上限。通信の制御に使う分を引くと、実際に流せるのはこのあたりが目安</td>
+            <td class="best">1Gbps契約なら<strong>ほぼ満点で正常</strong>。10ギガ契約でこの数字なら、PCやルーター、ハブのどれかが1Gbpsまでの機器</td>
+          </tr>
+          <tr>
+            <th>有線は速いのにWi-Fiだけ遅い</th>
+            <td>ルーターの規格・アンテナ数、設置場所、壁や床、電子レンジなどの干渉、スマホ側の規格</td>
+            <td>ルーターの近くで測り直す。近くで速く離れると遅いなら設置場所か中継の問題。近くでも遅いならルーターの世代</td>
+          </tr>
+          <tr>
+            <th>深夜は速く、夜だけ大きく落ちる</th>
+            <td>接続方式(PPPoE)の混雑、建物内の共有部分の混雑</td>
+            <td>IPv6 IPoE(v6プラスなど)に対応しているか確認。対応済みでも落ちるなら建物か回線側</td>
+          </tr>
+          <tr>
+            <th>どの時間帯も低い(数十Mbps)</th>
+            <td>ルーターの劣化・熱、ONUや配線の不具合、セキュリティソフトの通信チェック</td>
+            <td>ONU直結で測り直す。直結でも低いなら事業者に調査を依頼する</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>とくに多いのが<strong>90Mbps台の頭打ち</strong>です。引越しのときに前の家から持ってきたLANケーブルや、何年も前に買ったハブがそのまま使われているケースは、相談を受けていても繰り返し出てきます。ケーブル1本数百円〜千円台の交換で、測定値が一気に数倍になることもあります。</p>
+    <p>Wi-Fiの数字は、そもそも有線と同じにはなりません。Wi-Fi 5やWi-Fi 6のルーターで「リンク速度866Mbps」「1,201Mbps」などと表示されていても、それは機器同士の接続の速さで、実際に流れるデータ量はその半分程度になるケースが多い傾向です。Wi-Fiで測って「1Gbps出ない」と悩む必要はありません。家の端まで届かないのが問題なら<a href="mesh-wifi-chukeiki">Wi-Fi中継機とメッシュWi-Fiの違い</a>、ルーター自体の買い替えなら<a href="hikari-router-erabikata">光回線のルーターの選び方</a>が参考になります。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">「光回線なのに遅い」という相談で、測定画面の写真を送ってもらうと、驚くほど高い確率で数字が94前後なんです。その時点で、回線より先にケーブルを疑います。逆に940前後なら「それが上限です、回線は正常です」と答えて終わり。数字そのものより、<strong>どこで止まっているか</strong>のほうがずっと多くを語ります。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="heikin">平均速度と比べるときの注意</h2>
+    <p>自分の数字が良いのか悪いのか、ほかの人と比べたくなるのは自然です。参考までに、みんなのネット回線速度が公開している主な光回線の平均値(直近3か月)を並べます。当サイトが2026年9月25日に取得した値です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>回線</th><th>下り平均</th><th>上り平均</th><th>Ping平均</th><th>夜の下り平均</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>NURO光</th><td class="best">946Mbps</td><td class="best">779Mbps</td><td class="best">11.4ms</td><td class="best">1,012Mbps</td></tr>
+          <tr><th>auひかり</th><td>698Mbps</td><td>623Mbps</td><td>16.5ms</td><td>636Mbps</td></tr>
+          <tr><th>ビッグローブ光</th><td>615Mbps</td><td>484Mbps</td><td>17.1ms</td><td>628Mbps</td></tr>
+          <tr><th>GMOとくとくBB光</th><td>583Mbps</td><td>477Mbps</td><td>19.6ms</td><td>583Mbps</td></tr>
+          <tr><th>ソフトバンク光</th><td>577Mbps</td><td>479Mbps</td><td>16.8ms</td><td>592Mbps</td></tr>
+          <tr><th>ドコモ光</th><td>564Mbps</td><td>448Mbps</td><td>21.7ms</td><td>536Mbps</td></tr>
+          <tr><th>楽天ひかり</th><td>326Mbps</td><td>229Mbps</td><td>21.4ms</td><td>286Mbps</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ただし、この平均には<strong>Wi-Fiでの測定、古いケーブル、10ギガ契約の人の測定</strong>がすべて混ざっています。NUROの夜の平均が1Gbpsを超えているのは、10ギガ以上のプランの利用者が平均を押し上げているためと考えられます。投稿は利用者の任意で、不満がある人ほど測って投稿しやすいという偏りもあり得ます。</p>
+    <p>なので、平均との比較は「自分の回線が異常かどうか」の判定には向きません。使い道は2つです。<strong>同じ回線の平均より大幅に低いなら、まず自宅側(機器・配線・建物)を疑う材料</strong>にする。そして<strong>乗り換え先を選ぶときの、回線ごとの傾向</strong>として見る。自分の回線の良し悪しは、前の章の「3日×4時間帯」の結果と、用途の目安を比べて判断するのが確実です。</p>
+
+    <h2 id="tsugi">測ったあとにやること</h2>
+    <p>測定は、それ自体が目的ではありません。結果のパターンごとに、次の一手を表にまとめました。お金がかからない順に並べています。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>測定結果のパターン</th><th>次にやること</th><th>費用の目安</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>夜の最低値でも用途の目安を満たす</th>
+            <td class="best">何もしない。体感が遅いならWi-Fi側か端末側を確認</td>
+            <td class="best">0円</td>
+          </tr>
+          <tr>
+            <th>90Mbps台で頭打ち</th>
+            <td>LANケーブル交換、ハブ・ルーターのポート確認</td>
+            <td>数百円〜数千円</td>
+          </tr>
+          <tr>
+            <th>夜だけ落ちる</th>
+            <td>IPv6 IPoEの申し込み・ルーターの対応確認(多くのプロバイダで無料)</td>
+            <td>0円〜ルーター代</td>
+          </tr>
+          <tr>
+            <th>有線は十分、Wi-Fiが遅い</th>
+            <td>ルーターの設置場所変更→買い替え→メッシュ化の順に検討</td>
+            <td>0円〜数万円</td>
+          </tr>
+          <tr>
+            <th>VDSL方式で上限100Mbps</th>
+            <td>管理会社に光配線方式の導入可否を確認。難しければ別方式の回線を検討</td>
+            <td>回線変更の費用</td>
+          </tr>
+          <tr>
+            <th>有線・IPoE・新しい機器でも夜に用途を下回る</th>
+            <td>事業者に調査を依頼し、改善しなければ乗り換えを検討</td>
+            <td>乗り換え費用(特典で相殺できることも)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>表のとおり、回線の乗り換えは<strong>最後の選択肢</strong>です。機器や設定で直る問題を乗り換えで解決しようとすると、工事や違約金の手間をかけたのに速度が変わらない、という結果になりがちです。遅いときの原因全体を時間帯別に追いたい場合は<a href="hikari-osoi">光回線が遅い原因と直し方</a>もあわせて確認してください。</p>
+    <p>一方で、有線・IPv6 IPoE・新しいルーターという条件を揃えても夜の数字が用途を下回るなら、それは回線や建物の側の限界です。この段階まで来たら乗り換えを検討する意味があります。候補の比較は<a href="hikari-osusume">光回線おすすめ7社比較</a>、乗り換えの手順と違約金の扱いは<a href="hikari-cashback">光回線の乗り換え完全ガイド</a>にまとめています。10ギガへの変更を考えている人は、先に家の機器が1Gbpsを超えられるか確認しておかないと、契約しても940Mbps前後で頭打ちになります。詳しくは<a href="hikari-10giga">10ギガ光回線は必要か</a>で解説しています。</p>
+
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ 測定でやりがちな判断ミス</div>
+      <ul>
+        <li><strong>深夜に1回測って「速い」と安心する</strong>:困るのは混む時間です。夜の値を測らないと実態は分かりません</li>
+        <li><strong>スマホのWi-Fiで測った数字で回線を評価する</strong>:電波の状態が混ざります。回線を評価するなら有線で</li>
+        <li><strong>契約の「最大1Gbps」と比べて不満に思う</strong>:光回線はベストエフォート型のサービスで、最大値は保証値ではありません。比べる相手は用途の目安です</li>
+        <li><strong>測定サイトを日によって変える</strong>:サイトが違えば仕組みも違います。比較は同じサイト・同じサーバーで</li>
+        <li><strong>測定結果だけを根拠に即解約する</strong>:機器や設定で直る原因を潰してからでも遅くありません</li>
+      </ul>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>どの速度測定サイトがいちばん正確ですか?</summary>
+        <div class="faq__a">どれが正確というより、測っているものが違います。Speedtestは複数の接続で回線の最大能力を、Googleのスピードテストは1本の接続での速さを、Fast.comは動画配信サーバーからの速さを測ります。回線の実力を比べるならSpeedtestを有線で、同じサーバーを指定して使うのが扱いやすい方法です。比較するときは、日によってサイトを変えないことが大切です。</div>
+      </details>
+      <details>
+        <summary>光回線なのに速度が90Mbps台から上がりません</summary>
+        <div class="faq__a">100Mbpsまでしか通さない部品が途中に入っている可能性が高い状態です。CAT5のLANケーブル、古いルーターやハブのLANポート、PCのLANアダプタの設定を確認してください。マンションでVDSL方式の場合も上限が100Mbpsになります。ケーブルをCAT5e以上に替えるだけで改善するケースもあります。</div>
+      </details>
+      <details>
+        <summary>1Gbpsの契約なのに940Mbpsくらいしか出ません。異常ですか?</summary>
+        <div class="faq__a">異常ではありません。1Gbpsの規格では、通信の制御に使う分を差し引くと、実際に流せるデータは900〜940Mbps前後が目安になります。1Gbps契約でこの数字が出ているなら、ほぼ上限まで出ている状態です。</div>
+      </details>
+      <details>
+        <summary>速度測定は何回くらいすればいいですか?</summary>
+        <div class="faq__a">総務省のガイドラインは事業者に毎時1回以上・1週間以上の測定を求めていますが、家庭では朝・昼・夜(20〜23時)・深夜の4つの時間帯を3日ほど測り、合計10回程度を目安にすると傾向がつかめます。判断には平均ではなく、夜の時間帯の一番低い値を使うのがおすすめです。</div>
+      </details>
+      <details>
+        <summary>Pingは何msくらいなら問題ありませんか?</summary>
+        <div class="faq__a">Web閲覧や動画視聴ではほとんど気になりません。Web会議やオンラインゲームでは、30ms以下で値のばらつき(ジッター)が小さければ快適なことが多い傾向です。回線に負荷がかかったときだけPingが大きく跳ね上がる場合は、ルーターが通信の渋滞をさばけていない可能性があります。</div>
+      </details>
+      <details>
+        <summary>スマホで測った速度はあてになりませんか?</summary>
+        <div class="faq__a">自分のスマホでの使い心地を知る目的なら意味があります。ただし、Wi-Fiの電波状況やスマホの対応規格が結果に混ざるため、回線そのものの実力を測る用途には向きません。回線を評価したり乗り換えを判断したりするときは、ルーターと有線でつないだPCで測るのが確実です。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:1回の数字ではなく「一番混む時間の値」で決める</h2>
+    <ul>
+      <li>測定サイトごとに<strong>相手のサーバー・接続の本数・測る時間</strong>が違うため、数字がずれるのは普通のこと。比較は同じサイト・同じサーバーで</li>
+      <li>回線の実力を見るなら<strong>有線</strong>。ケーブルと機器が1Gbps対応かも先に確認する</li>
+      <li>総務省ガイドラインの考え方を借りて、<strong>朝・昼・夜・深夜の4時間帯×3日</strong>で測り、<strong>夜の最低値</strong>で判断する</li>
+      <li>夜の最低値でも<strong>下り100Mbps・上り10Mbps・Ping 30ms以下</strong>あれば、多くの家庭の用途は足りる</li>
+      <li><strong>90Mbps台で止まるなら100Mbps制限の部品</strong>、<strong>940Mbps前後なら1Gbpsの上限で正常</strong></li>
+      <li>平均速度との比較は異常の判定ではなく、自宅側を疑う材料と、乗り換え先の傾向として使う</li>
+      <li>乗り換えは、有線・IPv6 IPoE・新しい機器でも夜に足りないときの<strong>最後の選択肢</strong></li>
+    </ul>
+    <p>測定は、遅さに名前をつける作業です。どこで止まっているかが分かれば、数百円のケーブルで済むのか、設定の変更で済むのか、本当に回線を替えるべきなのかが見えてきます。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>総務省「固定ブロードバンドサービスの品質測定手法の確立に関するサブワーキンググループ 報告書・ガイドライン 概要」(令和6年10月)— 測定方法(有線接続)、測定サーバー、測定時間・期間、サンプル数、測定ツールのメリット・デメリット。2026年10月確認</li>
+        <li>総務省「固定ブロードバンドサービスの品質測定手法等に関するガイドライン」(令和6年9月)</li>
+        <li>MacMillan ほか「A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)」(ACM SIGMETRICS 2023)— 複数接続と単一接続の測定値の差</li>
+        <li>Netflix ヘルプセンター「推奨されるインターネット接続速度」— 画質別の推奨速度。2026年10月確認</li>
+        <li>Zoom サポート「Zoom のシステム要件:Windows、macOS、Linux」— ビデオ通話の推奨帯域幅。2026年10月確認</li>
+        <li>みんなのネット回線速度(minsoku.net)— 各光回線の平均速度(直近3か月・時間帯別)。2026年9月25日取得</li>
+        <li>Speedtest by Ookla、Fast.com、Measurement Lab の各公式サイトの測定方法の説明(2026年10月確認)</li>
+      </ul>
+      <p class="micro">※ 本記事の数値は2026年10月時点の目安です。測定サイトの仕様や平均速度は変わることがあります。実際の速度は住まいの設備・機器・時間帯によって大きく異なります。</p>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">有線でも夜に足りないなら、縛りのない回線で試す</div>
+    <p>ケーブル・接続方式・ルーターを見直しても夜の数字が用途に届かないなら、回線側の限界です。GMOとくとくBB光は契約期間の縛りと解約金がなく、IPv6 IPoE(v6プラス)に標準で対応しているため、乗り換えたあとに同じ「3日×4時間帯」で測り直し、合わなければ次を考えるという進め方がしやすい回線です。申し込み前に、キャッシュバックの受け取り条件と工事費の扱いを確認しておいてください。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="GMOとくとくBB光の公式キャンペーンバナー" src="https://www22.a8.net/svt/bgt?aid=260829413162&amp;wid=002&amp;eno=01&amp;mid=s00000000018040038000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" alt=""></div>
+    <a class="btn btn--cv" data-cta="final" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金を見る<small>縛りなし・キャッシュバックの受け取り条件はこちら</small></a>
+    <p class="micro">※ 広告(PR)。申し込み前にキャッシュバックの受け取り条件を確認できます。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、各社公式の料金と「みんなのネット回線速度」の公開集計を突き合わせて回線を比べるのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="hikari-osoi">光回線が遅い原因と直し方|時間帯別のチェックリスト</a></li>
+      <li><a href="ipv6-ipoe">IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法</a></li>
+      <li><a href="hikari-router-erabikata">光回線のルーターの選び方|買い替えの判断基準</a></li>
+      <li><a href="mansion-vdsl">マンションのVDSLを速くする方法|100Mbpsの壁と抜け道</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、各社公式の料金と公開されている実測データの集計に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260924a" defer></script>
+</body>
+</html>
+
