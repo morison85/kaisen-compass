@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="ルーターとONUの再起動の順番。ルーター、ONUの順に電源を抜き、30秒から数分待ってからONU、ルーターの順に挿す" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="600" y="58" text-anchor="middle" font-size="38" font-weight="800" fill="#0b2c5f">電源は「ルーター→ONU」で切り、逆の順で入れる</text>
+  <text x="600" y="96" text-anchor="middle" font-size="23" fill="#5f6b7a">ONUの準備が整ってからルーターをつなぐのがコツ</text>
+
+  <path d="M120 300 H1080" stroke="#c3d7f7" stroke-width="8" stroke-linecap="round"/>
+
+  <g transform="translate(120,0)">
+    <circle cx="0" cy="300" r="34" fill="#1558d6"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">1</text>
+    <rect x="-100" y="150" width="200" height="96" rx="12" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="0" y="190" text-anchor="middle" font-size="20" font-weight="800" fill="#0b2c5f">ルーターを抜く</text>
+    <text x="0" y="222" text-anchor="middle" font-size="17" fill="#5f6b7a">Wi-Fiの親機から</text>
+    <text x="0" y="374" text-anchor="middle" font-size="17" font-weight="700" fill="#1558d6">切る</text>
+  </g>
+  <g transform="translate(360,0)">
+    <circle cx="0" cy="300" r="34" fill="#1558d6"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">2</text>
+    <rect x="-100" y="356" width="200" height="96" rx="12" fill="#eaf1fd" stroke="#c3d7f7" stroke-width="2"/>
+    <text x="0" y="396" text-anchor="middle" font-size="20" font-weight="800" fill="#0b2c5f">ONUを抜く</text>
+    <text x="0" y="428" text-anchor="middle" font-size="17" fill="#5f6b7a">壁側の機器</text>
+    <text x="0" y="262" text-anchor="middle" font-size="17" font-weight="700" fill="#1558d6">切る</text>
+  </g>
+  <g transform="translate(600,0)">
+    <circle cx="0" cy="300" r="34" fill="#f2a81d"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">3</text>
+    <rect x="-100" y="150" width="200" height="96" rx="12" fill="#fff7e2" stroke="#f0c14e" stroke-width="2"/>
+    <text x="0" y="190" text-anchor="middle" font-size="20" font-weight="800" fill="#8a6d1a">待つ</text>
+    <text x="0" y="222" text-anchor="middle" font-size="17" fill="#5f6b7a">30秒〜数分</text>
+    <text x="0" y="374" text-anchor="middle" font-size="17" font-weight="700" fill="#8a6d1a">放電・冷却</text>
+  </g>
+  <g transform="translate(840,0)">
+    <circle cx="0" cy="300" r="34" fill="#2bb673"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">4</text>
+    <rect x="-100" y="356" width="200" height="96" rx="12" fill="#e7f7ef" stroke="#a8e0c3" stroke-width="2"/>
+    <text x="0" y="396" text-anchor="middle" font-size="20" font-weight="800" fill="#17694a">ONUを挿す</text>
+    <text x="0" y="428" text-anchor="middle" font-size="17" fill="#5f6b7a">ランプ安定まで</text>
+    <text x="0" y="262" text-anchor="middle" font-size="17" font-weight="700" fill="#17694a">入れる</text>
+  </g>
+  <g transform="translate(1080,0)">
+    <circle cx="0" cy="300" r="34" fill="#2bb673"/>
+    <text x="0" y="311" text-anchor="middle" font-size="28" font-weight="800" fill="#ffffff">5</text>
+    <rect x="-100" y="150" width="200" height="96" rx="12" fill="#e7f7ef" stroke="#a8e0c3" stroke-width="2"/>
+    <text x="0" y="190" text-anchor="middle" font-size="20" font-weight="800" fill="#17694a">ルーターを挿す</text>
+    <text x="0" y="222" text-anchor="middle" font-size="17" fill="#5f6b7a">5分後に確認</text>
+    <text x="0" y="374" text-anchor="middle" font-size="17" font-weight="700" fill="#17694a">入れる</text>
+  </g>
+
+  <rect x="240" y="490" width="720" height="52" rx="26" fill="#fff7e2" stroke="#f0c14e" stroke-width="2"/>
+  <text x="600" y="524" text-anchor="middle" font-size="21" font-weight="800" fill="#8a6d1a">⚠ 押すのは電源だけ。RESETボタンは初期化になる</text>
+</svg>

@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 04 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>ルーターの再起動に効果はある?正しい順番・待ち時間と、直る不調・直らない不調【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/router-saikidou</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/router-saikidou</guid>
+    <pubDate>Mon, 05 Oct 2026 12:00:00 +0900</pubDate>
+    <description>ルーターの再起動で消えるのは、メモリの詰まり・通信の対応表(NATの接続記録)・回線との接続情報・Wi-Fiのチャネル割り当て・本体の熱の5つ。だから「急に遅い・切れる」不調にはよく効き、毎晩同じ時間の遅さや90Mbps台の頭打ち、ONUの認証ランプ消灯には効きません。NTT東日本の公式コラムが案内する「ルーター→ONUの順に抜き、30秒以上置いてONU→ルーターの順に挿す」手順、ホームルーター・ポケット型・メッシュWi-Fiでの順番、RESETボタン(初期化)との違い、再起動が週1回以上必要なら機器の劣化を疑うといった頻度別の読み方、Atermの時刻指定再起動の設定とファームウェア更新時刻の注意までまとめました。</description>
+  </item>
   <item>
     <title>光回線の速度測定の正しい方法|測定サイトで数字が違う理由と「遅い」の判定基準【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/hikari-sokudo-sokutei</link>

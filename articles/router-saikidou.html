@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>ルーターの再起動に効果はある?正しい順番と直る不調・直らない不調 | 回線コンパス</title>
+<meta name="description" content="ルーターの再起動で直る不調と直らない不調を、ランプと症状で見分ける判定表にまとめました。ONUとルーターの正しい順番と待ち時間、ホームルーター・ポケット型・メッシュWi-Fiでのやり方、RESETボタンとの違い、再起動の頻度から機器の寿命を読む方法、自動再起動の設定まで。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/router-saikidou">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ルーターの再起動に効果はある?正しい順番・待ち時間と、直る不調・直らない不調【2026年】">
+<meta property="og:description" content="再起動は万能ではありません。直る不調と直らない不調の判定表、ONUとルーターの正しい順番、再起動の頻度から機器の寿命を読む方法まで。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/router-saikidou">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-router-saikidou.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-10-05">
+<meta property="article:modified_time" content="2026-10-05">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-router-saikidou.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260924a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ルーターの再起動に効果はある?正しい順番・待ち時間と、直る不調・直らない不調【2026年】",
+  "description": "ルーターの再起動で直る不調と直らない不調の見分け方、ONUとルーターの正しい再起動の順番と待ち時間、機器別のやり方、初期化との違い、再起動の頻度から機器の寿命を判断する方法をまとめます。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-router-saikidou.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-10-05",
+  "dateModified": "2026-10-05",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/router-saikidou"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ルーターの再起動は、どのくらい待てばいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "電源を抜いてから30秒以上待つのが目安です。NTT東日本の公式コラムも30秒以上としています。本体が熱くなっているときは数分置いて冷ますとより効果的です。電源を入れたあとは、ONUのランプが落ち着くまで2〜3分、ルーターを挿してから5分ほど待ってから接続を確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ONUとルーターは、どちらを先に再起動すればいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "電源を切るときはルーター→ONU、入れるときはONU→ルーターの順です。ONUが起動しきる前にルーターが動き出すと、回線側への接続に失敗してつながるまで時間がかかることがあります。メッシュWi-Fiや中継機がある場合は、子機を最初に切り、最後に入れます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ルーターは毎日再起動したほうがいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "正常な機器なら毎日の再起動は不要で、不調のときだけで十分なことが多い傾向です。予防として行うなら、自動再起動機能で週1回程度の深夜に設定する方法があります。毎日再起動しないと保てない状態なら、機器の劣化や性能不足、回線側の問題を疑ってください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "再起動すると設定は消えますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "電源を入れ直すだけの再起動なら、Wi-Fiの名前やパスワード、プロバイダの接続設定は残ります。設定が消えるのは、RESETボタンの長押しなどで初期化した場合です。普段の不調で押すのは電源だけにしてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "再起動しても「インターネットなし」と表示されます",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まずONUの「認証」「光回線」などのランプを確認してください。消えている・赤い場合は回線側の問題で、ルーターの再起動では直りません。公式の障害情報と料金の支払い状況を確認し、それでも分からなければ事業者に連絡します。ランプが正常なら、ルーターの接続設定やケーブルの差し込みを確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ホームルーターも同じ方法で再起動していいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基本は電源アダプターを抜いて挿し直す方法で問題ありません。機種によっては背面に再起動ボタンがあり、ドコモのhome 5G HR01/HR02は「REBOOT」ボタンを1秒以上長押しすると再起動します。「RESET」と書かれたボタンは初期化なので押さないよう注意してください。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "WiFi・ホームルーター", "item": "https://kaisen-compass.com/category/wifi" },
+    { "@type": "ListItem", "position": 3, "name": "ルーター再起動の効果と正しい順番" }
+  ]
+}
+</script>
+<!-- analytics -->
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+    <li>ルーター再起動の効果と正しい順番</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">WiFi・ホームルーター</span>
+    <h1 class="article-title">ルーターの再起動に効果はある?正しい順番・待ち時間と、直る不調・直らない不調【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-10-05">2026年10月5日</time></span>
+      <span>公開日:<time datetime="2026-10-05">2026年10月5日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-router-saikidou.svg" alt="ルーター再起動の効果と、正しい順番・待ち時間の解説" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>「ネットが遅い」「つながらない」と相談すると、まず返ってくるのが「ルーターを再起動してみて」という一言です。実際、NTT東日本の公式コラムも、つながらないときの対処の最初に<strong>「ルーター→ONUの順でコンセントを抜き、30秒以上置いてから、ONU→ルーターの順で挿す」</strong>手順を挙げています。NECのAtermシリーズには、決まった曜日・時刻に自動で再起動する「時刻指定再起動機能」まで用意されています。メーカー自身が、長時間の連続稼働で接続が不安定になることを前提にしているわけです。</p>
+    <p>一方で、再起動では直らない不調もはっきりあります。2024年8月にドコモのホームルーター「home 5G HR02」で圏外表示が続く不具合が起きた際、ドコモが案内した対処は再起動ではなく<strong>ソフトウェア更新</strong>と、つながらない場合の<strong>RESETボタン10秒以上の長押し(初期化)</strong>でした。ONUの「認証」ランプが消えているときも、ルーターを何度再起動しても状況は変わりません。</p>
+    <p>この記事では、再起動がなぜ効くのかを仕組みから整理したうえで、<strong>ランプと症状から「再起動で直る不調か」を見分ける判定表</strong>、順番と待ち時間、機器ごとのやり方、そして<strong>再起動が必要になる頻度から機器の寿命や回線の限界を読む方法</strong>をまとめました。再起動を「おまじない」で終わらせず、次の一手を決める材料に変えるための記事です。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>ルーターの再起動は、<strong>長時間の稼働でたまった一時的な不具合(メモリや接続情報の詰まり、熱、接続の取りこぼし)</strong>をリセットする効果があり、「昨日までは普通だったのに急に遅い・切れる」不調にはよく効きます。正しい手順は<strong>ルーター→ONUの順に電源を抜き、30秒〜数分待って、ONU→ルーターの順に挿す</strong>こと。押すのは電源だけで、<strong>RESETボタン(初期化)は押さない</strong>のが鉄則です。反対に、<strong>ONUの認証・光回線ランプが消えている、毎晩同じ時間に遅い、90Mbps台で頭打ち</strong>といった不調は再起動では直りません。そして<strong>週に何度も再起動しないと保てない</strong>なら、それは機器の寿命か回線の限界のサインです。</p>
+    </div>
+
+    <p class="answer-cta answer-cta--pick" data-default="other" data-picks='[{"k":"docomo","t":"ドコモ","label":"GMOとくとくBBのドコモ光を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","beacon":"https://www12.a8.net/0.gif?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"ドコモ光セット割の対象。提携プロバイダの申し込みページで条件を確認できます","head":"ドコモのスマホなら、セット割が効くドコモ光から"},{"k":"au","t":"au・UQ","label":"auひかりの提供エリアを確認する","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6","beacon":"https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6","pr":"PR・エリア判定は無料で、申し込みにはなりません","sub":"auスマートバリュー・UQ自宅セット割の対象。住所を入れるだけ・結果はすぐ表示","head":"au・UQモバイルのスマホなら、セット割が効くauひかりから"},{"k":"sb","t":"ソフトバンク・ワイモバ","label":"ソフトバンク光のキャンペーンを見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","beacon":"https://www15.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","pr":"PR・申し込み前にキャンペーンの適用条件を確認できます","sub":"おうち割 光セットの対象。申込特典と月額割引の条件を確認できます","head":"ソフトバンク・ワイモバイルのスマホなら、おうち割が効くソフトバンク光から"},{"k":"other","t":"格安SIM・その他","label":"再起動しても直らないなら:GMOとくとくBB光の条件を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","beacon":"https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"契約期間の縛りなし・v6プラス標準対応。料金と特典の条件を確認できます","head":"セット割がないなら、縛りのないGMOとくとくBB光から","short":"GMOとくとくBB光の料金を見る"}]'><span class="answer-cta__chips" role="group" aria-label="スマホのキャリアで申し込み先を切り替え"><span class="answer-cta__q">スマホはどれ?</span><button type="button" class="answer-cta__chip" data-k="docomo" aria-pressed="false">ドコモ</button><button type="button" class="answer-cta__chip" data-k="au" aria-pressed="false">au・UQ</button><button type="button" class="answer-cta__chip" data-k="sb" aria-pressed="false">ソフトバンク・ワイモバ</button><button type="button" class="answer-cta__chip is-on" data-k="other" aria-pressed="true">格安SIM・その他</button></span><a class="answer-cta__btn" data-cta="answer" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><span>再起動しても直らないなら:GMOとくとくBB光の条件を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・申し込み前にキャッシュバックの受け取り条件を確認できます</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/gmohikari-600.webp 600w, ../images/official/gmohikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/gmohikari.jpg" srcset="../images/official/gmohikari-600.jpg 600w, ../images/official/gmohikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="GMOとくとくBB光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://gmobb.jp/service/gmohikari/" rel="nofollow noopener" target="_blank">GMOとくとくBB光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-gmohikari.svg" alt="GMOとくとくBB光のサービス概要(月額・縛りなし)" width="800" height="420" loading="lazy" decoding="async"></div><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#shikumi">再起動で直る理由:リセットされる5つのもの</a></li>
+        <li><a href="#hantei">再起動で直る不調・直らない不調の判定表</a></li>
+        <li><a href="#junban">正しい順番と待ち時間</a></li>
+        <li><a href="#kiki">機器別のやり方(光・ホームルーター・ポケット型・メッシュ)</a></li>
+        <li><a href="#reset">再起動と初期化(リセット)の違い</a></li>
+        <li><a href="#hindo">再起動の頻度で機器と回線の状態を読む</a></li>
+        <li><a href="#jidou">自動で再起動させる設定</a></li>
+        <li><a href="#naoranai">再起動しても直らないときの次の一手</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">再起動しても不調が続き、回線ごと見直したくなったら</p>
+      <p>住まいのタイプとスマホのセット割から、候補を数社まで絞り込めます。乗り換えにかかる総額も、特典込みで試算できます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../sougaku">乗り換えの総額を計算する</a>
+      </div>
+    </div>
+
+    <h2 id="shikumi">再起動で直る理由:リセットされる5つのもの</h2>
+    <p>ルーターは小さなコンピューターです。CPUとメモリを積み、24時間休まずに家じゅうの通信を中継しています。再起動で直るのは、その<strong>「動かし続けたことでたまったもの」</strong>が原因の不調です。具体的には次の5つがリセットされます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>リセットされるもの</th><th>たまると起きること</th><th>再起動後にどうなるか</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>メモリ上の一時データ</th>
+            <td>処理が重くなり、ページの読み込みが遅い・ときどき固まる</td>
+            <td class="best">空の状態から動き直すので、処理の詰まりが解消する</td>
+          </tr>
+          <tr>
+            <th>通信の対応表(NATの接続記録)</th>
+            <td>端末が多い家や、アプリの通信が多い家で、新しい接続が作れず一部のサイトやアプリだけつながらない</td>
+            <td class="best">記録が消えて、新しい接続を作れる状態に戻る</td>
+          </tr>
+          <tr>
+            <th>回線側との接続情報</th>
+            <td>プロバイダとの接続やIPアドレスの更新がうまくいかず、急に外へ出られなくなる</td>
+            <td>接続をやり直し、アドレスを取り直す</td>
+          </tr>
+          <tr>
+            <th>Wi-Fiの電波の割り当て(チャネル)</th>
+            <td>近所のWi-Fiと同じチャネルが混み合い、無線だけ遅い</td>
+            <td>自動選択の設定なら、起動時に空いているチャネルを選び直す機種が多い</td>
+          </tr>
+          <tr>
+            <th>本体の熱</th>
+            <td>夏場や棚の奥で熱がこもり、処理が落ちる・突然切れる</td>
+            <td>電源を抜いて置いている間に温度が下がる(置き場所が同じなら再発しやすい)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>どれも<strong>「時間がたつとたまり、リセットすると消える」</strong>性質のものです。だから再起動は、昨日まで普通だったのに今日だけおかしい、という不調によく効きます。逆に言えば、<strong>いつでも同じように遅い、毎晩同じ時間に遅い</strong>といった不調は、たまったものが原因ではないので、再起動では変わりません。この区別が、次の判定表の土台になります。</p>
+    <p>なお、IPv6 IPoE(v6プラスなど)でIPv4のサイトを見る「IPv4 over IPv6」の環境では、1つのIPv4アドレスを複数の契約者で分け合う方式のため、利用者ごとに使える接続の数(ポート)に上限があります。端末やアプリが多い家で「特定のアプリやゲームだけつながらなくなり、再起動すると戻る」を繰り返すなら、この上限に近づいている可能性があります。接続方式の仕組みは<a href="ipv6-ipoe">IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法</a>で解説しています。</p>
+
+    <h2 id="hantei">再起動で直る不調・直らない不調の判定表</h2>
+    <p>再起動する前に、30秒だけ症状とランプを確認してください。「直らない側」の不調なら、再起動に時間を使うより先にやるべきことがあります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>症状・ランプの状態</th><th>再起動で</th><th>考えられる原因と、先にやること</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>昨日まで普通だったのに、急に遅い・ページが開かない</th>
+            <td class="best">直りやすい</td>
+            <td class="best">メモリや接続情報の詰まり。まず再起動</td>
+          </tr>
+          <tr>
+            <th>Wi-Fiにはつながっているのに「インターネットなし」</th>
+            <td class="best">直りやすい</td>
+            <td>ルーターと回線側の接続が切れている。再起動で戻らなければ障害情報を確認</td>
+          </tr>
+          <tr>
+            <th>特定のアプリ・ゲームだけ急につながらない</th>
+            <td>直ることが多い</td>
+            <td>接続の記録の詰まり。繰り返すなら端末数や接続方式を見直す</td>
+          </tr>
+          <tr>
+            <th>スマホ1台だけつながらない(ほかは正常)</th>
+            <td>ルーターの再起動は不要</td>
+            <td>スマホ側の問題。スマホのWi-Fiを一度オフにする、スマホ自体を再起動する</td>
+          </tr>
+          <tr>
+            <th>毎晩20〜23時だけ遅い</th>
+            <td>直らない</td>
+            <td>回線や接続方式の混雑。IPv6 IPoEに対応しているか確認</td>
+          </tr>
+          <tr>
+            <th>有線でも90Mbps台で頭打ち</th>
+            <td>直らない</td>
+            <td>LANケーブルや機器が100Mbpsまでの規格、またはマンションのVDSL方式</td>
+          </tr>
+          <tr>
+            <th>ONUの「認証」「光回線」ランプが消えている・赤い</th>
+            <td>直らない</td>
+            <td>光の信号が届いていない、または認証できていない。ケーブルの抜けを確認し、障害情報と料金の支払い状況を確認してから事業者へ連絡</td>
+          </tr>
+          <tr>
+            <th>地域全体・同じ回線の知人もつながらない</th>
+            <td>直らない</td>
+            <td>通信障害。公式の障害情報を確認して復旧を待つ</td>
+          </tr>
+          <tr>
+            <th>再起動すると数時間〜数日は直るが、また戻る</th>
+            <td>一時しのぎ</td>
+            <td>熱・機器の劣化・端末数に対する性能不足。設置場所の見直しか買い替えを検討</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>判定のコツは2つです。ひとつは<strong>「急に」なのか「いつも」なのか</strong>。急に起きた不調はたまったものが原因のことが多く、再起動の出番です。いつも同じ条件で起きる不調は、設備や方式の問題です。もうひとつは<strong>ONUのランプ</strong>。光回線のランプが正常なら原因は家の中、消えていたり赤かったりするなら家の外です。ランプの読み方と障害の切り分けは<a href="hikari-shougai">光回線の通信障害の確認方法と切り分けフロー</a>で詳しく解説しています。</p>
+    <p>NTT東日本の公式コラムでは、ONUの認証ランプが消灯しているときは料金未納の可能性が高いとも書かれています。口座振替の残高不足などで支払いが止まっていないかも、念のため確認しておきましょう。</p>
+
+    <h2 id="junban">正しい順番と待ち時間</h2>
+    <figure>
+      <img src="../images/diagram-router-saikidou.svg" alt="ルーターとONUの再起動の順番の図解。ルーター、ONUの順に電源を抜き、30秒から数分待ってから、ONU、ルーターの順に挿す" width="1200" height="560" loading="lazy" decoding="async">
+      <figcaption>切るのは「家の内側の機器」から、入れるのは「壁側の機器」から</figcaption>
+    </figure>
+    <p>光回線の場合、壁の光コンセントにつながっている箱がONU(回線終端装置)、そこからLANケーブルでつながっているWi-Fiの親機がルーターです。順番の考え方はシンプルで、<strong>切るときは内側(ルーター)から、入れるときは外側(ONU)から</strong>。ONUが起動しきる前にルーターが動き出すと、回線側への接続に失敗して、つながるまでに余計な時間がかかることがあるからです。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">ルーターの電源アダプターをコンセントから抜く</div>
+        <p>電源ボタンがある機種でも、アダプターを抜くほうが確実です。テレビやゲーム機などの大事な通信が途中なら、終わってから行います。</p>
+      </li>
+      <li>
+        <div class="steps__t">ONUの電源アダプターを抜く</div>
+        <p>壁側の箱です。プロバイダや事業者から借りている「ひかり電話ルーター(ホームゲートウェイ)」がONUと一体になっている場合は、その機器の電源を抜きます。</p>
+      </li>
+      <li>
+        <div class="steps__t">30秒以上待つ(熱がこもっていたら数分)</div>
+        <p>NTT東日本の公式コラムは「30秒以上」としています。内部の電気が抜けきるまでの時間です。本体が熱いときは、数分置いて冷ますと効果が上がります。</p>
+      </li>
+      <li>
+        <div class="steps__t">ONUの電源を挿し、ランプが落ち着くのを待つ</div>
+        <p>点滅が止まり、「認証」「光回線」などのランプが点灯するまで、目安で2〜3分です。ここで認証ランプがつかないなら、ルーターではなく回線側の問題と分かります。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターの電源を挿し、5分ほど待ってから確認する</div>
+        <p>ルーターも起動に数分かかります。NTT東日本のコラムでは、挿してから5分ほど置いて接続テストをする流れです。IPv4 over IPv6(v6プラスなど)の環境では、IPv6が先につながり、IPv4のサイトが見られるようになるまで少し遅れることがあります。</p>
+      </li>
+    </ol>
+    <p>待ち時間を短くしたくなる気持ちは分かりますが、ここを急ぐと「再起動しても直らない」と誤解しがちです。ルーターを挿して1分でスマホを確認し、まだつながらないのでもう一度抜く、を繰り返すと、毎回起動の途中で止めることになります。<strong>挿したら5分は触らない</strong>と決めておくのが一番の近道です。</p>
+    <p>なお、再起動の直後は機器が通信の経路を整え直している最中で、速度測定の数字がぶれやすくなります。再起動の効果を数字で確かめたいなら、10分ほど置いてから測ってください。測り方は<a href="hikari-sokudo-sokutei">光回線の速度測定の正しい方法</a>にまとめています。</p>
+
+    <h2 id="kiki">機器別のやり方(光・ホームルーター・ポケット型・メッシュ)</h2>
+    <p>家にある機器の組み合わせによって、抜く順番と待ち方が少し変わります。代表的な構成ごとに整理しました(2026年10月時点の各社の案内をもとにした目安)。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>構成</th><th>再起動のやり方</th><th>気をつけること</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>光回線(ONU+市販のWi-Fiルーター)</th>
+            <td>ルーター→ONUの順に抜き、30秒以上待って、ONU→ルーターの順に挿す</td>
+            <td>ONUのランプが落ち着いてからルーターを挿す</td>
+          </tr>
+          <tr>
+            <th>光回線(ONUとルーターが一体の機器)</th>
+            <td>その1台の電源を抜き、30秒以上待って挿す</td>
+            <td>市販ルーターを追加でつないでいるなら、市販ルーターを先に抜き、後から挿す</td>
+          </tr>
+          <tr>
+            <th>ホームルーター(home 5G・ソフトバンクエアー・WiMAXなど)</th>
+            <td>電源アダプターを抜いて挿し直す。機種によっては背面の再起動ボタン(home 5G HR01/HR02は「REBOOT」を1秒以上長押し)</td>
+            <td>「RESET」と書かれたボタンは初期化。再起動後、基地局につながり直すまで数分かかる</td>
+          </tr>
+          <tr>
+            <th>ポケット型Wi-Fi(モバイルルーター)</th>
+            <td>電源ボタンの長押しで電源を切り、少し置いて入れ直す。画面に「再起動」メニューがある機種も</td>
+            <td>電池が膨らんでいる・異常に熱い場合は使用をやめ、事業者に相談</td>
+          </tr>
+          <tr>
+            <th>メッシュWi-Fi・中継機を使っている</th>
+            <td>中継機(子機)→親機→ONUの順に抜き、ONU→親機→子機の順に挿す</td>
+            <td>子機は親機が起動しきってから挿す。順番が逆だと親機を見つけられず、つながるまで時間がかかることがある</td>
+          </tr>
+          <tr>
+            <th>スマホ・PCだけの不調</th>
+            <td>端末のWi-Fiを一度オフにしてオン、だめなら端末自体を再起動</td>
+            <td>ほかの端末が正常なら、ルーターまで再起動する必要はないことが多い</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ホームルーターは、光回線のルーターと違って<strong>再起動のたびに携帯電話の基地局につながり直す</strong>という特徴があります。混雑した電波につかまっていた状態から、つながり直すことで改善するケースがある一方、置き場所の電波がもともと弱いなら、再起動では根本的に変わりません。ホームルーター特有の遅さの原因と対策は<a href="softbank-air-osoi">ソフトバンクエアーが遅いときの対策</a>や<a href="home-router">ホームルーターおすすめ比較</a>で整理しています。</p>
+
+    <h2 id="reset">再起動と初期化(リセット)の違い</h2>
+    <p>ここは間違えると面倒なことになるので、独立した章にしました。<strong>再起動は電源を入れ直すだけで、設定はそのまま残ります。</strong>一方、機器の「RESET」「初期化」ボタンを長押しすると、<strong>Wi-Fiの名前とパスワード、プロバイダの接続設定などがすべて工場出荷時に戻ります</strong>。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ RESETボタンを押す前に確認すること</div>
+      <ul>
+        <li><strong>プロバイダの接続ID・パスワードが手元にあるか</strong>:PPPoE接続の場合、初期化すると入力し直すまでネットにつながりません。開通時の書類に記載されていることが多い</li>
+        <li><strong>家じゅうの端末をつなぎ直す覚悟があるか</strong>:Wi-Fiの名前とパスワードが本体のラベルの初期値に戻ると、スマホ・PC・テレビ・ゲーム機・スマート家電をすべて設定し直すことになります</li>
+        <li><strong>レンタル機器か</strong>:事業者から借りている機器は、初期化の前にサポートに相談したほうが早いことがあります</li>
+      </ul>
+    </div>
+    <p>初期化が必要になるのは、設定画面に入れない、ソフトウェア更新の途中で止まった、事業者から指示された、といった限られた場面です。前述のhome 5G HR02の不具合でも、ドコモの案内は「まずソフトウェア更新、つながらない場合はRESETボタンを10秒以上長押ししてから更新」という順番でした。<strong>普段の不調で押すのは電源だけ</strong>と覚えておけば十分です。</p>
+
+    <h2 id="hindo">再起動の頻度で機器と回線の状態を読む</h2>
+    <p>あまり語られませんが、この記事でいちばん伝えたいのはここです。<strong>「どのくらいの間隔で再起動が必要になるか」は、機器と回線の健康診断になります。</strong>相談を受けていても、「最近、再起動する回数が増えた」という話のあとには、たいてい機器の交換か回線の見直しが控えています。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>再起動が必要になる頻度</th><th>状態の読み方</th><th>やること</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>数か月に1回、またはほぼ不要</th>
+            <td class="best">正常な範囲</td>
+            <td class="best">不調のときだけ再起動すれば十分。ソフトウェアの自動更新が有効か確認しておく</td>
+          </tr>
+          <tr>
+            <th>月に1〜2回</th>
+            <td>やや気になる</td>
+            <td>設置場所(熱がこもる棚の中・家電の近く)を見直す。自動再起動を月1〜週1で設定するのも手</td>
+          </tr>
+          <tr>
+            <th>週に1回以上</th>
+            <td>性能不足か劣化の可能性</td>
+            <td>製造から5年以上・Wi-Fi 5以前の機種なら買い替えを検討。端末が10台を超える家は処理能力が足りていないことも</td>
+          </tr>
+          <tr>
+            <th>毎日、または再起動しても数時間で戻る</th>
+            <td>機器の故障か、回線側の限界</td>
+            <td>ONUに有線で直結して測る。直結でも不安定なら事業者に調査を依頼し、改善しなければ回線の乗り換えを検討</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>頻度が上がってきたときに見るべきなのは、<strong>機器の年式と家の端末数</strong>です。数年前のルーターは、スマホ2〜3台を想定した処理能力の機種も珍しくありません。今はスマホ・PCに加えて、テレビ、ゲーム機、スマートスピーカー、見守りカメラまでつながり、気づけば10台を超えている家庭も多い傾向です。機器が古いうえに端末が増えていれば、詰まりがたまる速さも上がります。買い替えの判断基準は<a href="hikari-router-erabikata">光回線のルーターの選び方</a>にまとめています。</p>
+    <p>ホームルーターやポケット型の場合は、置き場所の電波の強さも頻度に影響します。窓際に移しても毎日のように再起動が必要なら、その場所の電波で使い続けるのは苦しい状態です。<a href="homerouter-mukanai-hito">ホームルーターが向かない人の特徴</a>に当てはまるなら、光回線への切り替えを考える時期と言えます。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">家族や友人から回線の相談を受けると、「毎朝ルーターを抜き差しするのが日課になってる」という話がときどき出てきます。本人は慣れてしまっていて、それが異常だと気づいていないんです。<strong>再起動は症状を一度消すだけで、原因は残ります。</strong>回数が増えてきたら、それ自体を「そろそろ見直す合図」と受け取るのがいいと思っています。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="jidou">自動で再起動させる設定</h2>
+    <p>月に何度か再起動が必要なら、手で抜き差しするより、<strong>ルーターの自動再起動機能</strong>を使うほうが楽です。NECのAtermシリーズの一部の機種には「時刻指定再起動機能」があり、曜日と時刻を指定してシステム全体を自動で再起動できます。公式マニュアルでは、長時間の連続稼働による接続の不安定化や速度低下の予防、セキュリティリスクの軽減が目的として説明されています。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">ルーターの設定画面を開く</div>
+        <p>ブラウザで設定画面のアドレスを開き、管理者パスワードでログインします。アドレスとパスワードは本体のラベルや取扱説明書に書かれています。</p>
+      </li>
+      <li>
+        <div class="steps__t">再起動の項目を探す</div>
+        <p>Atermでは「基本設定」の中の「時刻指定再起動機能」を「ON」にします。ほかのメーカーにも、機種によって同じような機能があります。名称は機種ごとに違うので、取扱説明書で「再起動」「スケジュール」を探すのが早道です。</p>
+      </li>
+      <li>
+        <div class="steps__t">家族が使わない時間帯を指定する</div>
+        <p>深夜3〜5時などが定番です。ただし、Atermのマニュアルでは<strong>ファームウェアの自動更新時刻から3時間以内の設定は避ける</strong>よう案内されています。更新と重なると更新が優先されるためです。</p>
+      </li>
+    </ol>
+    <p>頻度は週1回程度で十分なことが多い傾向です。毎日に設定すると、深夜にゲーム機のダウンロードやPCのバックアップを動かしている家では、それが途中で止まることがあります。自動再起動はあくまで<strong>不調の予防策</strong>で、前の章の「毎日必要」の状態を隠すために使うものではありません。</p>
+
+    <h2 id="naoranai">再起動しても直らないときの次の一手</h2>
+    <p>正しい手順で再起動しても直らない、またはすぐ戻るなら、原因は「たまったもの」ではありません。判定表の結果ごとに、お金のかからない順に次の一手を並べました。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>状況</th><th>次にやること</th><th>詳しい解説</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ONUのランプが異常</th>
+            <td>障害情報の確認→ケーブルの確認→事業者へ連絡</td>
+            <td><a href="hikari-shougai">通信障害の切り分け</a></td>
+          </tr>
+          <tr>
+            <th>夜だけ遅い</th>
+            <td>IPv6 IPoEの申し込み・ルーターの対応確認(多くのプロバイダで無料)</td>
+            <td><a href="ipv6-ipoe">IPv6 IPoEの解説</a></td>
+          </tr>
+          <tr>
+            <th>有線は速いがWi-Fiが遅い</th>
+            <td>置き場所の変更→ルーターの買い替え→メッシュ化</td>
+            <td><a href="mesh-wifi-chukeiki">中継機とメッシュの違い</a></td>
+          </tr>
+          <tr>
+            <th>いつも全体的に遅い</th>
+            <td>時間帯を変えて有線で測り、原因を切り分ける</td>
+            <td><a href="hikari-osoi">光回線が遅い原因と直し方</a></td>
+          </tr>
+          <tr>
+            <th>機器を替えても、有線・IPoEでも夜に足りない</th>
+            <td class="best">回線の乗り換えを検討する</td>
+            <td><a href="hikari-cashback">乗り換えの手順と違約金</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>回線の乗り換えは最後の選択肢です。ただ、ここまで切り分けても改善しないなら、毎朝の抜き差しを続けるより、回線ごと替えたほうが時間の節約になります。乗り換えるなら、契約期間の縛りが無い回線を選んでおくと、合わなかったときに身動きが取りやすくなります。候補の比較は<a href="hikari-osusume">光回線おすすめ7社比較</a>を参考にしてください。</p>
+
+    <div class="box-point">
+      <div class="box-point__t">✅ 事業者に相談するときは「再起動の記録」が役に立つ</div>
+      <p>サポート窓口で最初に聞かれるのは、たいてい「機器を再起動しましたか」です。<strong>いつ・どの順番で再起動したか、そのときONUのランプは何色だったか、直ったなら何時間もったか</strong>をメモしておくと、話が一段飛ばしで進みます。ランプの写真を1枚撮っておくのもおすすめです。</p>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>ルーターの再起動は、どのくらい待てばいいですか?</summary>
+        <div class="faq__a">電源を抜いてから30秒以上待つのが目安です。NTT東日本の公式コラムも30秒以上としています。本体が熱くなっているときは数分置いて冷ますとより効果的です。電源を入れたあとは、ONUのランプが落ち着くまで2〜3分、ルーターを挿してから5分ほど待ってから接続を確認してください。</div>
+      </details>
+      <details>
+        <summary>ONUとルーターは、どちらを先に再起動すればいいですか?</summary>
+        <div class="faq__a">電源を切るときはルーター→ONU、入れるときはONU→ルーターの順です。ONUが起動しきる前にルーターが動き出すと、回線側への接続に失敗してつながるまで時間がかかることがあります。メッシュWi-Fiや中継機がある場合は、子機を最初に切り、最後に入れます。</div>
+      </details>
+      <details>
+        <summary>ルーターは毎日再起動したほうがいいですか?</summary>
+        <div class="faq__a">正常な機器なら毎日の再起動は不要で、不調のときだけで十分なことが多い傾向です。予防として行うなら、自動再起動機能で週1回程度の深夜に設定する方法があります。毎日再起動しないと保てない状態なら、機器の劣化や性能不足、回線側の問題を疑ってください。</div>
+      </details>
+      <details>
+        <summary>再起動すると設定は消えますか?</summary>
+        <div class="faq__a">電源を入れ直すだけの再起動なら、Wi-Fiの名前やパスワード、プロバイダの接続設定は残ります。設定が消えるのは、RESETボタンの長押しなどで初期化した場合です。普段の不調で押すのは電源だけにしてください。</div>
+      </details>
+      <details>
+        <summary>再起動しても「インターネットなし」と表示されます</summary>
+        <div class="faq__a">まずONUの「認証」「光回線」などのランプを確認してください。消えている・赤い場合は回線側の問題で、ルーターの再起動では直りません。公式の障害情報と料金の支払い状況を確認し、それでも分からなければ事業者に連絡します。ランプが正常なら、ルーターの接続設定やケーブルの差し込みを確認します。</div>
+      </details>
+      <details>
+        <summary>ホームルーターも同じ方法で再起動していいですか?</summary>
+        <div class="faq__a">基本は電源アダプターを抜いて挿し直す方法で問題ありません。機種によっては背面に再起動ボタンがあり、ドコモのhome 5G HR01/HR02は「REBOOT」ボタンを1秒以上長押しすると再起動します。「RESET」と書かれたボタンは初期化なので押さないよう注意してください。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:再起動は「直す」より「見分ける」ために使う</h2>
+    <ul>
+      <li>再起動で消えるのは<strong>メモリの詰まり・接続の記録・回線との接続情報・電波の割り当て・熱</strong>。急に起きた不調によく効く</li>
+      <li>順番は<strong>ルーター→ONUで切り、30秒以上待って、ONU→ルーターで入れる</strong>。挿したら5分は触らない</li>
+      <li>押すのは電源だけ。<strong>RESETボタンは初期化</strong>で、設定がすべて消える</li>
+      <li><strong>ONUのランプ異常・毎晩同じ時間の遅さ・90Mbps台の頭打ち</strong>は再起動では直らない</li>
+      <li>再起動が<strong>週1回以上必要なら機器の劣化か性能不足</strong>、毎日なら機器の故障か回線の限界を疑う</li>
+      <li>予防にはAtermの時刻指定再起動などの<strong>自動再起動を週1回程度</strong>。ファームウェア更新の時刻とは離す</li>
+    </ul>
+    <p>再起動は、ネットの不調に対していちばん安く、いちばん早く試せる手段です。そのぶん、効かなかったときに「何が原因ではないか」をはっきり教えてくれます。直ったか直らないか、直ったなら何日もったか。その答えが、設定で済むのか、機器を替えるのか、回線を見直すのかを決める手がかりになります。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>NTT東日本「光回線がつながらない原因3選!7つの対処法と接続を安定させるポイントを紹介」(フレッツ光 公式コラム)— 再起動の順番(ルーター→ONUで抜き、30秒以上置いてONU→ルーターで挿す)、5分後の接続テスト、認証ランプ消灯と料金未納。2026年10月確認</li>
+        <li>NTT東日本 法人向けコラム「光回線がつながらない!ONUの認証ランプがつかない場合の対処法」。2026年10月確認</li>
+        <li>NECプラットフォームズ「Aterm 3000D4AX ユーザーズマニュアル:定期的に再起動する」— 時刻指定再起動機能の目的・設定項目、ファームウェア更新時刻から3時間以内を避ける注意。2026年10月確認</li>
+        <li>NTTドコモ「【お詫び】5G対応ホームルータ『home 5G HR02』で不具合事象が発生した場合の対処方法について」(2024年8月26日)— ソフトウェア更新とRESETボタン10秒以上の長押しによる初期化</li>
+        <li>NTTドコモ「home 5G HR02 取扱説明書」— REBOOTボタンによる再起動。2026年10月確認</li>
+        <li>アイ・オー・データ機器 サポート「ルーターの再起動方法」。2026年10月確認</li>
+      </ul>
+      <p class="micro">※ 本記事の内容は2026年10月時点の各社の案内をもとにした目安です。機器の操作方法は機種によって異なります。お使いの機器の取扱説明書や事業者の案内もあわせてご確認ください。</p>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">再起動が日課になっているなら、縛りのない回線で立て直す</div>
+    <p>ランプも機器も設定も確かめて、それでも毎日のように再起動が必要なら、回線側の限界を疑う段階です。GMOとくとくBB光は契約期間の縛りと解約金がなく、IPv6 IPoE(v6プラス)に標準で対応しているため、乗り換えたあとに再起動の頻度が下がるかを確かめ、合わなければ次を考えるという進め方がしやすい回線です。申し込み前に、キャッシュバックの受け取り条件と工事費の扱いを確認しておいてください。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="GMOとくとくBB光の公式キャンペーンバナー" src="https://www22.a8.net/svt/bgt?aid=260829413162&amp;wid=002&amp;eno=01&amp;mid=s00000000018040038000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" alt=""></div>
+    <a class="btn btn--cv" data-cta="final" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金を見る<small>縛りなし・キャッシュバックの受け取り条件はこちら</small></a>
+    <p class="micro">※ 広告(PR)。申し込み前にキャッシュバックの受け取り条件を確認できます。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、各社公式の料金と「みんなのネット回線速度」の公開集計を突き合わせて回線を比べるのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="hikari-shougai">光回線の通信障害の確認方法|ランプの読み方と切り分けフロー</a></li>
+      <li><a href="hikari-osoi">光回線が遅い原因と直し方|時間帯別のチェックリスト</a></li>
+      <li><a href="hikari-router-erabikata">光回線のルーターの選び方|買い替えの判断基準</a></li>
+      <li><a href="hikari-sokudo-sokutei">光回線の速度測定の正しい方法|数字が違う理由と判定基準</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、各社公式の料金と公開されている実測データの集計に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260924a" defer></script>
+</body>
+</html>
+
