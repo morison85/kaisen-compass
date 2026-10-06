@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="PS5のダウンロードが遅い原因と直し方" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:コントローラーとダウンロードの矢印・進捗バー -->
+  <g transform="translate(900, 320) scale(0.9)">
+    <path d="M110 0 V70" stroke="#ffd76a" stroke-width="14" stroke-linecap="round"/>
+    <polygon points="76,58 144,58 110,100" fill="#ffd76a"/>
+    <path d="M40 140 Q20 140 12 170 L0 238 Q-4 262 18 266 Q34 268 48 248 L70 216 H150 L172 248 Q186 268 202 266 Q224 262 220 238 L208 170 Q200 140 180 140 Z" fill="#ffffff"/>
+    <circle cx="62" cy="182" r="14" fill="#c3d7f7"/>
+    <circle cx="158" cy="172" r="7" fill="#1558d6"/>
+    <circle cx="176" cy="188" r="7" fill="#2bb673"/>
+    <circle cx="140" cy="188" r="7" fill="#ffd76a"/>
+    <circle cx="158" cy="204" r="7" fill="#e5484d"/>
+    <rect x="0" y="290" width="220" height="18" rx="9" fill="#ffffff" opacity=".25"/>
+    <rect x="0" y="290" width="80" height="18" rx="9" fill="#ffd76a"/>
+  </g>
+
+  <rect x="70" y="80" width="380" height="56" rx="28" fill="#ffd76a"/>
+  <text x="260" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">残り時間から原因を逆算</text>
+
+  <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">PS5のダウンロード</text>
+  <text x="70" y="360" font-size="80" font-weight="800" fill="#ffd76a">が遅い原因と直し方</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">3つの工程・判定表・効かない設定</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

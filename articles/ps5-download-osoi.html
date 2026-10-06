@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>PS5のダウンロードが遅い原因と速くする方法|残り時間から詰まりを逆算 | 回線コンパス</title>
+<meta name="description" content="PS5のダウンロードが遅いときに、残り容量と残り時間から実効速度を出し、スマホの速度測定・PS5の接続テストと比べて詰まっている場所を特定する方法を解説。スタンバイモード・有線LAN・IPv6 IPoEなど効く対策と、DNS・MTU・10ギガなど効きにくい対策の見分け方まで。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/ps5-download-osoi">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PS5のダウンロードが遅い原因と速くする方法|残り時間から「どこで詰まっているか」を逆算する【2026年】">
+<meta property="og:description" content="回線のせいとは限りません。3つの工程の見分け方、残り時間からの実効速度の逆算、3つの数字で原因を絞る判定表まで。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/ps5-download-osoi">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-ps5-download-osoi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-06">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-ps5-download-osoi.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260924a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "PS5のダウンロードが遅い原因と速くする方法|残り時間から「どこで詰まっているか」を逆算する【2026年】",
+  "description": "PS5のダウンロードが遅い原因を、ダウンロード・コピー・準備の3工程と、実効速度・PS5の接続テスト・スマホの速度測定の比較から特定し、お金のかからない順に対策を整理します。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-ps5-download-osoi.png",
+  "author": {
+    "@type": "Person",
+    "@id": "https://kaisen-compass.com/about#person",
+    "name": "もりそん",
+    "url": "https://kaisen-compass.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://kaisen-compass.com/#organization",
+    "name": "回線コンパス",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kaisen-compass.com/images/logo-512.png",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "datePublished": "2026-10-06",
+  "dateModified": "2026-10-06",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/ps5-download-osoi"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PS5はスタンバイモードのほうがダウンロードが速いのですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ゲームを起動したままだと本体はゲームの動作を優先するため、ゲームを終了してスタンバイモードでダウンロードさせると進みが速くなるケースが多い傾向です。スタンバイモード中もダウンロードを続けるには、［設定］→［システム］→［省電力］の、スタンバイモード中に使える機能で「インターネットに接続したままにする」を有効にしておきます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "有線LANにすれば必ず速くなりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wi-Fiが原因で遅い場合は大きく改善することが多いですが、回線の混雑や配信側の混雑が原因なら有線にしても変わりません。スマホでの速度測定とPS5の接続テストを比べ、PS5だけが遅いときに効果が出やすい対策です。ケーブルはCAT5e以上を使ってください。CAT5(無印)は最大100Mbpsです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "DNSを変えるとPS5のダウンロードは速くなりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DNSはサーバーの住所を調べる仕組みで、データを運ぶ速さそのものは変わりません。変更によって別の配信サーバーにつながり、結果的に速くなることも遅くなることもあります。試す場合は元の設定をメモしておき、同じ時間帯・同じタイトルの実効速度で効果を比べてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10ギガの光回線にすればPS5のダウンロードは速くなりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PS5の有線LAN端子は初期型・Slim・PS5 Proのいずれも1000BASE-T(最大1Gbps)のため、PS5単体のダウンロードが10倍になるわけではありません。家族が同時に大容量の通信をする家では余裕が生まれますが、PS5のためだけなら1ギガの回線で混雑を避けるほうが効果的なことが多い傾向です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「コピー中」のまま進みません。回線の問題ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "「コピー中」は受け取ったデータを本体のストレージに書き込む工程で、回線の速さはほぼ関係ありません。ストレージの空き容量が少ない、起動中のゲームがある、同時に複数のインストールが動いている、といった本体側の要因を確認してください。長時間まったく進まない場合は、本体の再起動も試してみてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ダウンロードを一時停止して再開すると速くなるのは本当ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "配信サーバーとの接続をやり直すため、受信ペースが戻ることがあります。毎回効くわけではありませんが、数秒で試せて失うものもないので、最初に試す価値はあります。再開後に残り時間が大きく縮むかどうかで、効いたかを判断できます。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://kaisen-compass.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "光回線",
+      "item": "https://kaisen-compass.com/category/hikari"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "PS5のダウンロードが遅い原因と直し方"
+    }
+  ]
+}
+</script>
+<!-- analytics -->
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>PS5のダウンロードが遅い原因と直し方</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">PS5のダウンロードが遅い原因と速くする方法|残り時間から「どこで詰まっているか」を逆算する【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-10-06">2026年10月6日</time></span>
+      <span>公開日:<time datetime="2026-10-06">2026年10月6日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-ps5-download-osoi.svg" alt="PS5のダウンロードが遅い原因と、残り時間から詰まっている場所を逆算する方法の解説" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>PS5の有線LAN端子は、初期型・Slim・PS5 Proのどのモデルも<strong>1000BASE-T(最大1Gbps)</strong>です。無線はPS5とSlimがWi-Fi 6、PS5 ProがWi-Fi 7(IEEE 802.11be)に対応しています。つまり本体側の受け口は、一般的な1ギガの光回線をほぼ使い切れる性能を持っています。それでも「残り5時間」「100GBのアップデートが一晩で終わらない」という相談が絶えないのは、詰まっている場所が回線とは限らないからです。</p>
+    <p>PS5のダウンロードには、データを受け取る<strong>「ダウンロード」</strong>、受け取ったデータを展開して書き込む<strong>「コピー(インストール)」</strong>という別々の工程があり、回線の速さが効くのは最初の工程だけです。さらに、ゲームを起動したままだと本体はゲームの動作を優先し、ストア側が混み合う大型タイトルの発売日やアップデート直後は、家の回線がどれだけ速くても配信側が追いつきません。</p>
+    <p>この記事では、よくある対処法を並べる前に、<strong>PS5の画面に出ている「残り容量」と「残り時間」から実際の速度を逆算し、スマホの速度測定・PS5の接続テストと見比べて、詰まっている場所を1つに絞る方法</strong>を紹介します。原因が分かれば、お金をかけずに直るのか、Wi-Fiやケーブルを替えるべきか、回線ごと見直すべきかが決まります。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>PS5のダウンロードが遅いときは、まず<strong>ゲームを閉じてスタンバイモードでダウンロード</strong>させ、ルーターを再起動します。これで直らなければ、<strong>「残り容量(GB)×8,000÷残り秒数」で実効速度(Mbps)を出し</strong>、同じ場所でのスマホの速度測定と比べてください。スマホは速いのにPS5だけ遅いなら<strong>PS5の接続(Wi-Fi・LANケーブル)</strong>、スマホも夜だけ遅いなら<strong>回線の混雑と接続方式(IPv6 IPoE)</strong>、どちらも速いのに実効速度だけ遅いなら<strong>配信側の混雑か本体の処理</strong>が原因です。DNSやMTUの変更は効かないことが多く、10ギガ回線にしてもPS5単体の上限は1Gbpsのままです。</p>
+    </div>
+
+    <p class="answer-cta answer-cta--pick" data-default="au" data-picks='[{"k":"docomo","t":"ドコモ","label":"GMOとくとくBBのドコモ光を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","beacon":"https://www12.a8.net/0.gif?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"ドコモ光セット割の対象。提携プロバイダの申し込みページで条件を確認できます","head":"ドコモのスマホなら、セット割が効くドコモ光から"},{"k":"au","t":"au・UQ","label":"夜の混雑が原因なら:auひかりの提供エリアを確認する","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6","beacon":"https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6","pr":"PR・エリア判定は無料で、申し込みにはなりません","sub":"auスマートバリュー・UQ自宅セット割の対象。住所を入れるだけ・結果はすぐ表示","head":"au・UQモバイルのスマホなら、セット割が効くauひかりから","short":"auひかりの提供エリアを確認する"},{"k":"sb","t":"ソフトバンク・ワイモバ","label":"ソフトバンク光のキャンペーンを見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","beacon":"https://www15.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","pr":"PR・申し込み前にキャンペーンの適用条件を確認できます","sub":"おうち割 光セットの対象。申込特典と月額割引の条件を確認できます","head":"ソフトバンク・ワイモバイルのスマホなら、おうち割が効くソフトバンク光から"},{"k":"other","t":"格安SIM・その他","label":"GMOとくとくBB光の料金を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","beacon":"https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"契約期間の縛りなし・v6プラス標準対応。料金と特典の条件を確認できます","head":"セット割がないなら、縛りのないGMOとくとくBB光から"}]'><span class="answer-cta__chips" role="group" aria-label="スマホのキャリアで申し込み先を切り替え"><span class="answer-cta__q">スマホはどれ?</span><button type="button" class="answer-cta__chip" data-k="docomo" aria-pressed="false">ドコモ</button><button type="button" class="answer-cta__chip is-on" data-k="au" aria-pressed="true">au・UQ</button><button type="button" class="answer-cta__chip" data-k="sb" aria-pressed="false">ソフトバンク・ワイモバ</button><button type="button" class="answer-cta__chip" data-k="other" aria-pressed="false">格安SIM・その他</button></span><a class="answer-cta__btn" data-cta="answer" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank"><span>夜の混雑が原因なら:auひかりの提供エリアを確認する</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・エリア判定は無料で、申し込みにはなりません</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/auhikari-600.webp 600w, ../images/official/auhikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/auhikari.jpg" srcset="../images/official/auhikari-600.jpg 600w, ../images/official/auhikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="auひかりの公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://www.au.com/internet/auhikari_1g/" rel="nofollow noopener" target="_blank">auひかり公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-auhikari.svg" alt="auひかりのサービス概要(月額・独自回線)" width="800" height="420" loading="lazy" decoding="async"></div><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6" alt="">
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#koutei">PS5のダウンロードは3つの工程に分かれている</a></li>
+        <li><a href="#gyakusan">残り時間から実際の速度を逆算する</a></li>
+        <li><a href="#hantei">3つの数字で詰まっている場所を特定する判定表</a></li>
+        <li><a href="#kyou">今日できる対策(お金のかからない順)</a></li>
+        <li><a href="#setsuzoku">Wi-Fi・LANケーブルの見直し方</a></li>
+        <li><a href="#gokai">効かない・逆効果になりやすい設定(DNS・MTU・10ギガ)</a></li>
+        <li><a href="#yoru">夜だけ遅いなら、回線の接続方式を疑う</a></li>
+        <li><a href="#norikae">回線を替えるべき境界線</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">回線ごと見直すことになったら</p>
+      <p>住まいのタイプとスマホのセット割から、候補を数社まで絞り込めます。乗り換えにかかる総額も、特典込みで試算できます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../sougaku">乗り換えの総額を計算する</a>
+      </div>
+    </div>
+
+    <h2 id="koutei">PS5のダウンロードは3つの工程に分かれている</h2>
+    <p>「ダウンロードが遅い」と一口に言っても、PS5の中では性質の違う処理が順番に動いています。どの工程で時間がかかっているかによって、効く対策がまったく変わります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>工程(画面の表示)</th><th>本体がしていること</th><th>回線の速さの影響</th><th>遅いときに疑う場所</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ダウンロード中</th>
+            <td>ストアの配信サーバーからデータを受け取る</td>
+            <td class="best">大きい</td>
+            <td>回線・Wi-Fi・LANケーブル・配信側の混雑</td>
+          </tr>
+          <tr>
+            <th>コピー中/インストール中</th>
+            <td>受け取ったデータを展開し、本体のストレージに書き込む</td>
+            <td>ほぼ無い</td>
+            <td>ストレージの空き容量、本体の熱、裏で動いているゲーム</td>
+          </tr>
+          <tr>
+            <th>準備中/コピー待機中</th>
+            <td>ほかのダウンロードやインストールの順番待ち、最終確認</td>
+            <td>無い</td>
+            <td>同時に複数のアップデートが走っていないか</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>大型のアップデートでは、ダウンロードは数十分で終わったのに、そのあとの「コピー中」が長く続く、という順番になることがよくあります。この場合、回線を替えても待ち時間はほとんど縮みません。反対に、ダウンロードの段階で何時間もかかっているなら、回線やPS5の接続のどこかが詰まっています。<strong>まずは画面の表示が「ダウンロード中」なのか「コピー中」なのかを確認する</strong>のが、すべての出発点です。</p>
+    <p>ダウンロードの進み具合は、ホーム画面のダウンロード/アップロードの一覧から確認できます。ここには<strong>受け取った容量・全体の容量・残り時間</strong>が表示されるので、次の章の逆算にそのまま使えます。</p>
+
+    <h2 id="gyakusan">残り時間から実際の速度を逆算する</h2>
+    <p>PS5の「残り時間」は、そのときの受信ペースから計算された見込みです。残りの容量と組み合わせると、<strong>いま実際に何Mbpsで受け取れているか(実効速度)</strong>が分かります。速度測定サイトの数字とは別物で、配信サーバーとの間で本当に出ている速さです。</p>
+    <div class="box-memo">
+      <div class="box-memo__t">📝 実効速度の出し方</div>
+      <p><strong>実効速度(Mbps)≒ 残り容量(GB)× 8,000 ÷ 残り時間(秒)</strong></p>
+      <p>例:残り64.8GBで残り2時間(7,200秒)と表示されているなら、64.8×8,000÷7,200=<strong>約72Mbps</strong>。1GB=8,000メガビットとして計算しています(1GBを1,000MBとする場合の概算)。表示はしばらく揺れるので、ダウンロードが始まって数分たってから読むのがコツです。</p>
+    </div>
+    <p>逆に、実効速度ごとにどのくらい時間がかかるかを並べると、次のようになります。ダウンロード工程だけの計算で、このあとのコピー時間は含みません(2026年10月時点の一般的な計算による目安)。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>データ容量</th><th>30Mbps</th><th>100Mbps</th><th>300Mbps</th><th>600Mbps</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>10GB(中規模アップデート)</th>
+            <td>約44分</td>
+            <td>約13分</td>
+            <td>約4分</td>
+            <td class="best">約2分</td>
+          </tr>
+          <tr>
+            <th>50GB(中規模タイトル)</th>
+            <td>約3時間42分</td>
+            <td>約1時間7分</td>
+            <td>約22分</td>
+            <td class="best">約11分</td>
+          </tr>
+          <tr>
+            <th>100GB(大型タイトル)</th>
+            <td>約7時間24分</td>
+            <td>約2時間13分</td>
+            <td>約44分</td>
+            <td class="best">約22分</td>
+          </tr>
+          <tr>
+            <th>150GB(大型タイトル+追加データ)</th>
+            <td>約11時間7分</td>
+            <td>約3時間20分</td>
+            <td>約1時間7分</td>
+            <td class="best">約33分</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>この表から言えるのは、<strong>実効速度が100Mbpsを切ると、大型タイトルは「夜に始めて朝に終わる」ペースになる</strong>ということです。逆に300Mbps前後出ていれば、100GBでも1時間かかりません。自分の実効速度がどの列に近いかで、「我慢すれば済む遅さ」か「どこかが詰まっている遅さ」かの見当がつきます。</p>
+    <p>ひとつ注意したいのは、1ギガの光回線でも実効速度が回線の最大値まで出ることはまずない点です。配信サーバー側の混み具合や、PS5がデータを受け取りながら書き込む処理の都合もあり、<strong>回線の最大値の半分以下でも異常とは限りません</strong>。「契約は1ギガなのに数百Mbpsしか出ない」こと自体は、珍しい状態ではないと考えてください。</p>
+
+    <h2 id="hantei">3つの数字で詰まっている場所を特定する判定表</h2>
+    <p>実効速度が出たら、あと2つの数字を集めます。比べるのは次の3つです。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">A:スマホやPCでの速度測定</div>
+        <p>PS5のすぐ横で、PS5と同じ接続方法(PS5がWi-Fiならスマホも同じWi-Fi)で測ります。家の回線そのものの実力を見る数字です。測り方のコツは<a href="hikari-sokudo-sokutei">光回線の速度測定の正しい方法</a>にまとめています。</p>
+      </li>
+      <li>
+        <div class="steps__t">B:PS5本体の接続テスト</div>
+        <p>［設定］→［ネットワーク］→［接続状況］から、インターネット接続のテストを実行します。PS5本体から見た下り・上りの速度とNATタイプが表示されます。</p>
+      </li>
+      <li>
+        <div class="steps__t">C:ダウンロード中の実効速度</div>
+        <p>前の章の計算式で出した数字です。配信サーバーから実際に受け取れている速さです。</p>
+      </li>
+    </ol>
+    <p>この3つを同じ時間帯にそろえて見比べると、詰まっている場所がほぼ1つに絞れます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>数字の出方</th><th>詰まっている場所</th><th>先にやること</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Aは速い、BとCが遅い</th>
+            <td>PS5の接続(Wi-Fiの電波・LANケーブル・置き場所)</td>
+            <td class="best">有線LANにする、5GHz帯につなぐ、ケーブルの規格を確認する</td>
+          </tr>
+          <tr>
+            <th>AとBは速い、Cだけ遅い</th>
+            <td>配信側の混雑、または本体の処理(起動中のゲーム・空き容量)</td>
+            <td>ゲームを閉じてスタンバイモードへ。発売日・大型アップデート直後なら時間をずらす</td>
+          </tr>
+          <tr>
+            <th>A・B・Cとも夜だけ遅い</th>
+            <td>回線の混雑(とくに接続方式がPPPoEの場合)</td>
+            <td>IPv6 IPoEに対応しているか確認。対応済みでも夜に落ちるなら回線の見直し</td>
+          </tr>
+          <tr>
+            <th>A・B・Cとも、いつも遅い</th>
+            <td>回線そのもの、またはルーターなど宅内の機器</td>
+            <td>ONUに有線で直結して測る。直結でも遅ければ回線側の問題</td>
+          </tr>
+          <tr>
+            <th>有線なのにBが90Mbps台で止まる</th>
+            <td>100Mbpsまでの部品(古いLANケーブル・ハブ・ルーターのポート)</td>
+            <td>LANケーブルをCAT5e以上に替え、途中のハブやルーターのポートも確認</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>判定のポイントは、<strong>AとBの差はPS5までの「家の中の区間」、BとCの差は「家の外(配信側)と本体の処理」</strong>を表していることです。スマホでは速いのにPS5のテストだけ遅いなら、回線を替えても直りません。逆に、3つともそろって遅いなら、PS5の設定をいじっても改善は見込めず、回線か宅内機器に原因があります。</p>
+    <p>配信側の混雑かどうかは、PlayStation公式の<strong>PSNサービスステータスのページ</strong>で障害やメンテナンスが出ていないかも合わせて確認してください。人気タイトルの発売日や大型アップデートの配信直後は、障害が出ていなくても受信ペースが落ちることがあります。</p>
+
+    <h2 id="kyou">今日できる対策(お金のかからない順)</h2>
+    <p>判定表で場所の見当がついたら、費用のかからないものから順に試します。上から順にやれば、多くの場合は途中で答えが出ます。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">起動中のゲーム・アプリを完全に閉じる</div>
+        <p>ゲームを起動したままだと、PS5はゲームの動作を優先します。ホームに戻るだけでなく、コントロールセンターからゲームを終了させます。</p>
+      </li>
+      <li>
+        <div class="steps__t">スタンバイモードでダウンロードさせる</div>
+        <p>［設定］→［システム］→［省電力］の、スタンバイモード中に使える機能で<strong>「インターネットに接続したままにする」</strong>を有効にしておくと、スタンバイモード中もダウンロードが続きます。ゲームと処理を取り合わないぶん、進みが速くなるケースが多い傾向です。</p>
+      </li>
+      <li>
+        <div class="steps__t">ダウンロードを一時停止し、再開する</div>
+        <p>配信サーバーとの接続をつなぎ直すことで、受信ペースが戻ることがあります。毎回効くわけではありませんが、数秒で試せます。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターとONUを正しい順番で再起動する</div>
+        <p>ルーター→ONUの順に電源を抜き、30秒以上待ってONU→ルーターの順に挿します。長時間の稼働でたまった詰まりが原因なら、これで戻ります。詳しくは<a href="router-saikidou">ルーターの再起動の正しい順番と効果</a>で解説しています。</p>
+      </li>
+      <li>
+        <div class="steps__t">家の中のほかの大容量通信を止める</div>
+        <p>動画の視聴、PCのバックアップやアップデートが同時に動いていると、回線を分け合うことになります。ダウンロードは家族が使わない深夜に回すのが確実です。</p>
+      </li>
+      <li>
+        <div class="steps__t">ストレージの空き容量を確保する</div>
+        <p>空きが少ないとコピーやインストールの工程が進まない原因になります。遊んでいないゲームを削除するか、拡張ストレージに移します。</p>
+      </li>
+    </ol>
+    <div class="box-point">
+      <div class="box-point__t">✅ そもそも「待たない」ための設定</div>
+      <p>［設定］→［セーブデータとゲーム/アプリ設定］→［自動アップデート］で自動ダウンロードを有効にし、スタンバイモード中のインターネット接続をオンにしておくと、<strong>遊ぼうとした瞬間にアップデートが始まる</strong>事態を減らせます。スマホのPlayStation Appから購入したゲームを、外出先からPS5にダウンロードさせることもできます。帰宅前に始めておけば、遅い回線でも待ち時間を体感しにくくなります。</p>
+    </div>
+
+    <h2 id="setsuzoku">Wi-Fi・LANケーブルの見直し方</h2>
+    <p>判定表で「Aは速いのにBが遅い」と出たら、原因は家の中の区間です。まずPS5の通信仕様を確認しておきます(2026年10月時点のSIE公表の仕様)。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>モデル</th><th>有線LAN</th><th>Wi-Fi</th><th>見直しのポイント</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>PS5(初期型)</th>
+            <td>1000BASE-T</td>
+            <td>Wi-Fi 6(IEEE 802.11ax)</td>
+            <td>ルーターがWi-Fi 5以前なら、無線はルーター側が上限になる</td>
+          </tr>
+          <tr>
+            <th>PS5(Slim)</th>
+            <td>1000BASE-T</td>
+            <td>Wi-Fi 6(IEEE 802.11ax)</td>
+            <td>初期型と同じ考え方</td>
+          </tr>
+          <tr>
+            <th>PS5 Pro</th>
+            <td>1000BASE-T</td>
+            <td>Wi-Fi 7(IEEE 802.11be)</td>
+            <td>有線の上限はほかのモデルと同じ1Gbps</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>いちばん効果が大きいのは<strong>有線LANへの切り替え</strong>です。Wi-Fiは壁や床、電子レンジ、近所のWi-Fiの影響を受けますが、有線はそれがありません。ケーブルは<strong>CAT5e以上</strong>を選んでください。CAT5(無印)のケーブルは最大100Mbpsなので、古いケーブルを使い回していると、有線にしたのに90Mbps台で止まる原因になります。ケーブルの側面に印字されている規格で確認できます。</p>
+    <p>テレビ台の位置の都合でケーブルを引けない場合は、Wi-Fiの条件を整えます。PS5は<strong>5GHz帯</strong>のネットワークにつなぎ(2.4GHz帯は遠くまで届く代わりに速度が出にくい)、ルーターとの間に壁や家具をできるだけ挟まないようにします。ルーターから離れた部屋なら、中継機よりメッシュWi-Fiのほうが速度を保ちやすい傾向です。違いは<a href="mesh-wifi-chukeiki">中継機とメッシュWi-Fiの違い</a>で、ルーター自体の買い替えの判断は<a href="hikari-router-erabikata">光回線のルーターの選び方</a>で整理しています。</p>
+
+    <h2 id="gokai">効かない・逆効果になりやすい設定(DNS・MTU・10ギガ)</h2>
+    <p>「PS5 ダウンロード 速くする」で調べると必ず出てくる設定変更の中には、効果がはっきりしないものや、かえって不安定になるものが混ざっています。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>よく見る対策</th><th>実際のところ</th><th>試す価値</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>DNSを公開DNS(8.8.8.8など)に変える</th>
+            <td>DNSは「サーバーの住所を調べる」仕組みで、データを運ぶ速さそのものは変わらない。調べた結果、別の配信サーバーにつながって速くも遅くもなりうる</td>
+            <td>低い(試すなら元に戻せるようメモを)</td>
+          </tr>
+          <tr>
+            <th>MTUの値を手動で変える</th>
+            <td>適正値は接続方式(PPPoE・IPoEなど)ごとに違い、合わない値にすると通信が不安定になる。PS5の公式案内も、詳しくない場合はプロバイダに問い合わせるよう求めている</td>
+            <td>低い(自動のままが無難)</td>
+          </tr>
+          <tr>
+            <th>10ギガの光回線に替える</th>
+            <td>PS5の有線LANは全モデル1Gbpsが上限。家族の同時利用が多い家では余裕が生まれるが、PS5単体のダウンロードが10倍になるわけではない</td>
+            <td>PS5のためだけなら低い</td>
+          </tr>
+          <tr>
+            <th>ダウンロードの一時停止と再開</th>
+            <td>配信サーバーへの接続をやり直すため、ペースが戻ることがある</td>
+            <td>高い(数秒で試せる)</td>
+          </tr>
+          <tr>
+            <th>有線LAN(CAT5e以上)にする</th>
+            <td>Wi-Fiの不安定さをまるごと取り除ける</td>
+            <td class="best">高い</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>とくにDNSの変更は「これで倍になった」という体験談が多い一方、その日の配信サーバーの混み具合が変わっただけ、という可能性を切り分けられていないことがほとんどです。設定を変える前と後で、<strong>同じ時間帯・同じタイトルの実効速度</strong>を比べないと、効いたかどうかは判断できません。10ギガ回線の向き不向きは<a href="hikari-10giga">10ギガ光は必要か</a>で詳しく比べています。</p>
+
+    <h2 id="yoru">夜だけ遅いなら、回線の接続方式を疑う</h2>
+    <p>判定表で「3つとも夜だけ遅い」と出たら、家の外、つまり回線の混雑が原因です。NTTのフレッツ光の設備を使う光回線(光コラボを含む)では、従来型の<strong>PPPoE接続</strong>だと、プロバイダとの接続点が夜に混雑して速度が落ちやすい構造になっています。これを避けるのが<strong>IPv6 IPoE(v6プラスなど)</strong>で、多くのプロバイダでは追加料金なしで使えます。</p>
+    <p>確認すべきは2点です。ひとつは<strong>契約しているプロバイダがIPv6 IPoEに対応し、申し込みが済んでいるか</strong>。もうひとつは<strong>ルーターがその方式(v6プラス・transixなど)に対応しているか</strong>です。どちらかが欠けていると、契約上は対応していても実際にはPPPoEのまま、ということが起きます。切り替え方は<a href="ipv6-ipoe">IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法</a>で解説しています。</p>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ IPoEに切り替えたら、NATタイプも確認する</div>
+      <p>IPv6 IPoEでIPv4の通信を通す方式(IPv4 over IPv6)では、1つのIPv4アドレスを複数の契約者で分け合うため、使えるポートに制限があります。ダウンロードは速くなったのに、オンライン対戦のマッチングがつながりにくくなった、というケースもあります。PS5の接続テストでNATタイプが変わっていないかを確認し、困ったら<a href="online-game-kaisen">オンラインゲームにおすすめの回線</a>の、NATタイプの章を参考にしてください。</p>
+    </div>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">PS5のダウンロードの相談を受けると、まず「スマホで測ると何Mbps?」と聞くようにしています。ここが速いのにPS5だけ遅いなら、答えはたいていテレビ台の裏のWi-Fiか古いLANケーブルです。<strong>回線の乗り換えを考えるのは、3つの数字がそろって夜に落ちているときだけ</strong>で十分だと思っています。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="norikae">回線を替えるべき境界線</h2>
+    <p>ここまでの対策をすべて試し、<strong>有線LAN・IPv6 IPoE・家族が使っていない状態</strong>でも夜のPS5の接続テストが低いままなら、回線そのものの見直しを考える段階です。目安として、夜の実効速度が100Mbpsを切る日が続き、大型アップデートのたびに数時間待たされているなら、乗り換えで改善する余地があります。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>乗り換え先のタイプ</th><th>PS5のダウンロードとの相性</th><th>注意点</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>独自回線(auひかり・NURO光など)</th>
+            <td class="best">NTTのフレッツ光の設備とは別の網を使うため、フレッツ系の夜の混雑の影響を受けない</td>
+            <td>提供エリアが限られる。集合住宅は建物の設備次第</td>
+          </tr>
+          <tr>
+            <th>光コラボ+IPv6 IPoE(GMOとくとくBB光など)</th>
+            <td>PPPoEからの切り替えなら改善が見込める。エリアが広い</td>
+            <td>すでにIPoEで遅いなら、同じ方式の光コラボ同士の乗り換えでは差が出にくい</td>
+          </tr>
+          <tr>
+            <th>ホームルーター</th>
+            <td>電波状況で速度が大きく変わる。大容量のダウンロードが多い使い方には不向き</td>
+            <td>工事が要らない代わりに、時間帯や置き場所による波が大きい</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>PS5で大型タイトルを頻繁に入れ替える使い方なら、候補はまず光回線です。ホームルーターでのゲームの向き不向きは<a href="homerouter-game">ホームルーターでゲームはできる?</a>で整理しています。光回線の中で選ぶなら、すでにIPv6 IPoEで遅いのか、まだPPPoEのままなのかで答えが変わります。PPPoEのままなら、まず今の回線でIPoEに切り替えてみる。IPoEでも夜に落ちるなら、網そのものが違う独自回線を検討する、という順番が費用の面でも無駄がありません。auひかりがエリア外だった場合の選択肢は<a href="nurohikari-area-gai">NURO光がエリア外のときの代替回線</a>に、候補の横並び比較は<a href="hikari-osusume">光回線おすすめ7社比較</a>にまとめています。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>PS5はスタンバイモードのほうがダウンロードが速いのですか?</summary>
+        <div class="faq__a">ゲームを起動したままだと本体はゲームの動作を優先するため、ゲームを終了してスタンバイモードでダウンロードさせると進みが速くなるケースが多い傾向です。スタンバイモード中もダウンロードを続けるには、［設定］→［システム］→［省電力］の、スタンバイモード中に使える機能で「インターネットに接続したままにする」を有効にしておきます。</div>
+      </details>
+      <details>
+        <summary>有線LANにすれば必ず速くなりますか?</summary>
+        <div class="faq__a">Wi-Fiが原因で遅い場合は大きく改善することが多いですが、回線の混雑や配信側の混雑が原因なら有線にしても変わりません。スマホでの速度測定とPS5の接続テストを比べ、PS5だけが遅いときに効果が出やすい対策です。ケーブルはCAT5e以上を使ってください。CAT5(無印)は最大100Mbpsです。</div>
+      </details>
+      <details>
+        <summary>DNSを変えるとPS5のダウンロードは速くなりますか?</summary>
+        <div class="faq__a">DNSはサーバーの住所を調べる仕組みで、データを運ぶ速さそのものは変わりません。変更によって別の配信サーバーにつながり、結果的に速くなることも遅くなることもあります。試す場合は元の設定をメモしておき、同じ時間帯・同じタイトルの実効速度で効果を比べてください。</div>
+      </details>
+      <details>
+        <summary>10ギガの光回線にすればPS5のダウンロードは速くなりますか?</summary>
+        <div class="faq__a">PS5の有線LAN端子は初期型・Slim・PS5 Proのいずれも1000BASE-T(最大1Gbps)のため、PS5単体のダウンロードが10倍になるわけではありません。家族が同時に大容量の通信をする家では余裕が生まれますが、PS5のためだけなら1ギガの回線で混雑を避けるほうが効果的なことが多い傾向です。</div>
+      </details>
+      <details>
+        <summary>「コピー中」のまま進みません。回線の問題ですか?</summary>
+        <div class="faq__a">「コピー中」は受け取ったデータを本体のストレージに書き込む工程で、回線の速さはほぼ関係ありません。ストレージの空き容量が少ない、起動中のゲームがある、同時に複数のインストールが動いている、といった本体側の要因を確認してください。長時間まったく進まない場合は、本体の再起動も試してみてください。</div>
+      </details>
+      <details>
+        <summary>ダウンロードを一時停止して再開すると速くなるのは本当ですか?</summary>
+        <div class="faq__a">配信サーバーとの接続をやり直すため、受信ペースが戻ることがあります。毎回効くわけではありませんが、数秒で試せて失うものもないので、最初に試す価値はあります。再開後に残り時間が大きく縮むかどうかで、効いたかを判断できます。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:対策の前に、詰まっている場所を1つに絞る</h2>
+    <ul>
+      <li>PS5のダウンロードは<strong>ダウンロード→コピー(インストール)→準備</strong>の3工程。回線が効くのは最初の工程だけ</li>
+      <li><strong>残り容量(GB)×8,000÷残り秒数</strong>で実効速度が出る。100Mbpsを切ると大型タイトルは数時間かかる</li>
+      <li><strong>スマホの測定・PS5の接続テスト・実効速度</strong>の3つを比べれば、家の中か、回線か、配信側かが分かる</li>
+      <li>お金のかからない対策は<strong>ゲームを閉じる・スタンバイモード・一時停止と再開・ルーター再起動</strong>の順</li>
+      <li>家の中が原因なら<strong>有線LAN(CAT5e以上)</strong>が最も効く。DNS・MTUの変更や10ギガ回線は効果が限られる</li>
+      <li>3つとも夜だけ遅いなら<strong>IPv6 IPoE</strong>を確認し、それでも落ちるなら独自回線への乗り換えを検討する</li>
+    </ul>
+    <p>PS5のダウンロードの遅さは、回線のせいに見えて、実はテレビ台の裏のWi-Fiや古いケーブル、起動しっぱなしのゲームが原因ということがよくあります。残り時間の表示を一度だけ計算に使ってみると、いま何にお金をかけるべきか、あるいはかけなくていいかがはっきりします。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>ソニー・インタラクティブエンタテインメント「PlayStation 5 / PlayStation 5 Pro 仕様」— 通信仕様(Ethernet 10BASE-T/100BASE-TX/1000BASE-T、IEEE 802.11ax/be)。2026年10月確認</li>
+        <li>PlayStation公式サポート「PlayStationでインターネット接続を設定する方法」— 有線・無線の設定手順、DNS・MTUなどの詳細設定はプロバイダに問い合わせる旨の記載。2026年10月確認</li>
+        <li>PlayStation公式サポート「PlayStationで自動ダウンロードと自動アップデートを設定する方法」— 自動アップデートと、スタンバイモード中にインターネットに接続したままにする設定。2026年10月確認</li>
+        <li>PlayStation公式「PSNサービスステータス」(status.playstation.com)。2026年10月確認</li>
+        <li>NTT東日本「IPv6 IPoE接続について」(フレッツ光 公式案内)— PPPoEとIPoEの接続方式の違い。2026年10月確認</li>
+      </ul>
+      <p class="micro">※ 本記事の数値は2026年10月時点の公表仕様と一般的な計算に基づく目安です。PS5のメニュー名はシステムソフトウェアのバージョンによって表記が異なる場合があります。実際の速度は回線・時間帯・配信側の状況によって変わります。</p>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">有線・IPoEでも夜に落ちるなら、網が違う独自回線へ</div>
+    <p>PS5の接続を有線にし、IPv6 IPoEも確認して、それでも夜のダウンロードが遅いなら、詰まっているのは回線の網そのものです。auひかりはNTTのフレッツ光の設備とは別のKDDIの網を使う独自回線で、フレッツ系の夜の混雑とは切り離されています。auやUQ mobileのスマホを使っているならセット割の対象にもなります。まずは住所を入れて、提供エリアに入っているかの確認からです。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="auひかり(正規代理店NEXT)の公式キャンペーンバナー" src="https://www23.a8.net/svt/bgt?aid=260829413164&amp;wid=002&amp;eno=01&amp;mid=s00000014546021006000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H2BC1" alt=""></div>
+    <!-- A8: auひかり(正規代理店NEXT) -->
+    <a class="btn btn--cv" data-cta="final" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6" rel="nofollow sponsored noopener" target="_blank">auひかりの提供エリアを確認する<small>住所を入れるだけ・結果はすぐ表示</small></a>
+    <p class="micro">※ 広告(PR)。エリア判定は無料で、申し込みにはなりません。料金・条件は公式サイトで最新情報をご確認ください。エリア外だった場合の代替は<a href="nurohikari-area-gai">こちら</a>にまとめています。</p>
+  </aside>
+
+<aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、各社公式の料金と「みんなのネット回線速度」の公開集計を突き合わせて回線を比べるのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+    <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="online-game-kaisen">オンラインゲームにおすすめの回線|Pingを3層に分解して選ぶ</a></li>
+      <li><a href="ipv6-ipoe">IPv6(IPoE)とは?夜だけ遅い光回線を速くする方法</a></li>
+      <li><a href="router-saikidou">ルーターの再起動に効果はある?正しい順番と直る不調・直らない不調</a></li>
+      <li><a href="hikari-sokudo-sokutei">光回線の速度測定の正しい方法|数字が違う理由と判定基準</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、各社公式の料金と公開されている実測データの集計に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260924a" defer></script>
+</body>
+</html>
+

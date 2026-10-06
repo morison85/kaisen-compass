@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 05 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>PS5のダウンロードが遅い原因と速くする方法|残り時間から「どこで詰まっているか」を逆算する【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/ps5-download-osoi</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/ps5-download-osoi</guid>
+    <pubDate>Tue, 06 Oct 2026 12:00:00 +0900</pubDate>
+    <description>PS5の有線LANは初期型・Slim・Proとも1000BASE-T(最大1Gbps)。それでもダウンロードが遅いのは、詰まっている場所が回線とは限らないからです。ダウンロード・コピー(インストール)・準備の3工程の見分け方、「残り容量(GB)×8,000÷残り秒数」で実効速度を出す方法と容量×速度の所要時間表、スマホの速度測定・PS5の接続テスト・実効速度の3つを比べて家の中・回線・配信側のどこが原因かを絞る判定表、スタンバイモードや有線LAN(CAT5e以上)など効く対策と、DNS・MTUの変更や10ギガ回線など効果が限られる対策の見分け方、夜だけ遅いときのIPv6 IPoEとNATタイプの注意までまとめました。</description>
+  </item>
   <item>
     <title>ルーターの再起動に効果はある?正しい順番・待ち時間と、直る不調・直らない不調【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/router-saikidou</link>
