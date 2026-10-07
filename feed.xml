@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 06 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>在宅勤務のセキュリティは自宅回線のどこを見る?ルーター設定7項目と、会社PCを家の機器から分ける方法【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/zaitaku-kinmu-security</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/zaitaku-kinmu-security</guid>
+    <pubDate>Wed, 07 Oct 2026 12:00:00 +0900</pubDate>
+    <description>会社のVPNが守るのはPCと社内側まで。自宅のルーターと、同じWi-Fiにいるテレビ・ストリーミング端末・スマート家電は自分の担当になりがちです。警察庁の「家庭用ルーターの不正利用に関する注意喚起」で名指しされたVPN機能・DDNS・外部からの管理画面接続を含む、管理画面で確認する7項目と3か月ごとの点検手順、2026年9月の総務省資料が取り上げたレジデンシャルプロキシ(家庭のIoT機器を経由した攻撃)を踏まえたゲストWi-Fiでの機器の分け方、会社のVPN・市販のVPN・ルーターのVPN機能の違い、マンションの共用型インターネットなど回線の種類別の注意点、サポート終了・暗号化方式・分離機能で見る買い替え判断とJC-STAR★1ラベルの見方、異常を見つけたときの対応の順番までまとめました。</description>
+  </item>
   <item>
     <title>PS5のダウンロードが遅い原因と速くする方法|残り時間から「どこで詰まっているか」を逆算する【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/ps5-download-osoi</link>

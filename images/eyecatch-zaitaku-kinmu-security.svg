@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="在宅勤務のセキュリティ、自宅回線とルーターの確認ポイント" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:ルーターと盾(鍵) -->
+  <g transform="translate(890, 330) scale(0.9)">
+    <path d="M40 150 V90" stroke="#c3d7f7" stroke-width="9" stroke-linecap="round"/>
+    <path d="M150 150 V90" stroke="#c3d7f7" stroke-width="9" stroke-linecap="round"/>
+    <rect x="0" y="150" width="190" height="76" rx="14" fill="#ffffff"/>
+    <circle cx="36" cy="188" r="8" fill="#2bb673"/>
+    <circle cx="66" cy="188" r="8" fill="#2bb673"/>
+    <rect x="96" y="180" width="70" height="16" rx="8" fill="#c3d7f7"/>
+    <path d="M232 20 L300 46 V104 C300 150 270 182 232 198 C194 182 164 150 164 104 V46 Z" fill="#ffd76a"/>
+    <rect x="208" y="96" width="48" height="40" rx="6" fill="#0b2c5f"/>
+    <path d="M216 96 V82 A16 16 0 0 1 248 82 V96" fill="none" stroke="#0b2c5f" stroke-width="8"/>
+    <circle cx="232" cy="114" r="5" fill="#ffd76a"/>
+  </g>
+
+  <rect x="70" y="80" width="360" height="56" rx="28" fill="#ffd76a"/>
+  <text x="250" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">VPNだけでは守れない</text>
+
+  <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">在宅勤務のセキュリティ</text>
+  <text x="70" y="360" font-size="80" font-weight="800" fill="#ffd76a">自宅回線の7つの確認</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">ルーター設定・ゲストWi-Fi・JC-STARラベル</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2c5f">
+<title>在宅勤務のセキュリティは自宅回線のどこを見る?ルーター設定7項目と機器の分け方 | 回線コンパス</title>
+<meta name="description" content="在宅勤務のセキュリティで、会社のVPNが守ってくれない「自宅側」の範囲を整理。ルーター管理画面で確認する7項目(警察庁の注意喚起のVPN・DDNS・外部からの管理画面接続を含む)、会社PCとテレビ・IoT機器をゲストWi-Fiで分ける方法、回線の種類別の注意点、JC-STARラベルとサポート期限で見るルーターの買い替え判断まで。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kaisen-compass.com/articles/zaitaku-kinmu-security">
+<link rel="alternate" type="application/rss+xml" title="回線コンパス 新着記事" href="https://kaisen-compass.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在宅勤務のセキュリティは自宅回線のどこを見る?ルーター設定7項目と、会社PCを家の機器から分ける方法【2026年】">
+<meta property="og:description" content="会社のVPNは自宅のルーターまでは守りません。管理画面で見る7項目、ゲストWi-Fiでの機器の分け方、買い替えの判断基準まで。">
+<meta property="og:url" content="https://kaisen-compass.com/articles/zaitaku-kinmu-security">
+<meta property="og:image" content="https://kaisen-compass.com/images/og/eyecatch-zaitaku-kinmu-security.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="回線コンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-10-07">
+<meta property="article:modified_time" content="2026-10-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-zaitaku-kinmu-security.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&text=%E5%9B%9E%E7%B7%9A%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../css/style.css?v=20260924a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "在宅勤務のセキュリティは自宅回線のどこを見る?ルーター設定7項目と、会社PCを家の機器から分ける方法【2026年】",
+  "description": "在宅勤務で会社のVPNが守らない自宅側の範囲、ルーター管理画面で確認する7項目、会社PCとIoT機器をゲストWi-Fiで分ける方法、回線の種類別の注意点、ルーターの買い替え判断をまとめます。",
+  "image": "https://kaisen-compass.com/images/og/eyecatch-zaitaku-kinmu-security.png",
+  "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
+  "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
+  "datePublished": "2026-10-07",
+  "dateModified": "2026-10-07",
+  "mainEntityOfPage": "https://kaisen-compass.com/articles/zaitaku-kinmu-security"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "会社のVPNを使っていれば、自宅のWi-Fiやルーターの設定は気にしなくていいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VPNが守るのは、会社PCと社内システムの間の通信です。自宅のルーターが乗っ取られて踏み台にされることや、同じWi-Fiにいる家の機器が悪用されることまでは防げません。また、VPNを通らずに直接インターネットへ出る通信がある構成も多いため、ルーターの管理者パスワード、暗号化方式、ファームウェアの確認は自分で行う必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "在宅勤務で、ルーターのどの設定を確認すればいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "管理者パスワードの変更、Wi-Fiの暗号化方式(WPA3またはWPA2のAES)、ファームウェアの更新、インターネット側からの管理画面接続、VPNサーバー機能とそのアカウント、DDNSとポート開放、接続中の端末一覧の7項目が目安です。後半の3つは警察庁の注意喚起で悪用が指摘された機能で、使った覚えがないのに有効になっていたら異常のサインです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会社PCは家族と同じWi-Fiにつないでも大丈夫ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "家族のスマホやPCがOSの更新を続けている端末なら、同じWi-Fiで問題ないことが多い傾向です。一方、テレビやゲーム機、見守りカメラ、スマート家電などは更新の状況が見えにくいため、ルーターのゲスト用Wi-Fiに移し、メインのネットワークと通信できない設定にしておくと安心です。勤務先に有線接続などの指定がある場合はそれに従ってください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WPA2とWPA3はどちらにすればいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ルーターと家の端末がすべてWPA3に対応しているならWPA3が望ましく、古い端末があるなら「WPA2/WPA3」の混在モードが現実的です。総務省の自宅Wi-Fi向けマニュアルも、WPA2またはWPA3を選ぶよう案内しています。WEPやWPA(TKIP)しか選べない機種は、買い替えを検討してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JC-STARの★1ラベルが付いたルーターなら安全ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "★1は、IoT製品に共通して求められる最低限のセキュリティ要件を満たしていることを示すラベルで、あらゆる攻撃を防げるという意味ではありません。初期パスワードの扱いやソフトウェア更新の仕組みなどが確認されている判断材料として使い、購入後も管理者パスワードの変更やファームウェアの更新は自分で続ける必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "マンションの無料インターネットで在宅勤務をしても大丈夫ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "建物全体で同じネットワークを共有する方式の場合、他の部屋の機器と同じネットワークに並ぶことがあります。部屋の差し込み口に自分のルーターを1台挟み、会社PCはその内側につなぐのが最低限の対策です。勤務先の規程で共用回線の利用に制限があることもあるため、あわせて確認してください。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kaisen-compass.com/" },
+    { "@type": "ListItem", "position": 2, "name": "光回線", "item": "https://kaisen-compass.com/category/hikari" },
+    { "@type": "ListItem", "position": 3, "name": "在宅勤務のセキュリティと自宅回線" }
+  ]
+}
+</script>
+<!-- analytics -->
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093713085832648"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="gnav-wrap">
+  <nav class="gnav" aria-label="グローバルナビゲーション">
+    <a href="/" class="brand">
+      <img src="../images/logo.svg" alt="回線コンパス" width="40" height="40">
+      <span class="brand__name">回線コンパス<span class="brand__tag">ネット回線選びの羅針盤</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="gnav__menu">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="../category/hikari">光回線</a></li>
+      <li><a href="../category/wifi">WiFi・ルーター</a></li>
+      <li><a href="../category/sim">格安SIM</a></li>
+      <li><a href="../shindan">回線診断</a></li>
+      <li><a href="../hikaku">比較一覧</a></li><li><a href="../sougaku">総額計算</a></li>
+      <li><a href="../about">運営者情報</a></li>
+      <li><a class="gnav__cta" href="hikari-osusume">光回線を比較する</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="../category/hikari">光回線</a></li>
+    <li>在宅勤務のセキュリティと自宅回線</li>
+  </ol>
+</nav>
+
+<main class="article">
+  <header class="article-head">
+    <span class="card__cat">光回線</span>
+    <h1 class="article-title">在宅勤務のセキュリティは自宅回線のどこを見る?ルーター設定7項目と、会社PCを家の機器から分ける方法【2026年】</h1>
+    <div class="article-meta">
+      <span class="upd">更新日:<time datetime="2026-10-07">2026年10月7日</time></span>
+      <span>公開日:<time datetime="2026-10-07">2026年10月7日</time></span>
+      <span>執筆:<a href="../about">もりそん</a></span>
+    </div>
+  </header>
+
+  <p class="pr-note">ⓘ 本記事にはアフィリエイト広告(プロモーション)が含まれます。評価・解説は<a href="../policy">編集ポリシー</a>に基づいています。</p>
+
+  <figure class="eyecatch">
+    <img src="../images/eyecatch-zaitaku-kinmu-security.svg" alt="在宅勤務のセキュリティで確認する、自宅回線とルーターの7項目" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="article-body">
+    <p>2023年3月、警察庁は「家庭用ルーターの不正利用に関する注意喚起」を出しました。攻撃者が家庭のルーターを外部から操作して<strong>VPN機能などを勝手に有効にし、企業への攻撃の踏み台にする</strong>手口が確認されたという内容で、一度設定を書き換えられると、パスワード変更やファームウェア更新といった従来の対策だけでは不正な状態が解消されない、と書かれています。追加された対策は<strong>「見覚えのない設定変更がないか、定期的に確認する」</strong>でした。</p>
+    <p>家の中の機器が踏み台にされる問題は、その後も続いています。総務省が2026年9月7日の会議で示した資料では、家庭に置かれた動画ストリーミング端末などのIoT機器が知らないうちに攻撃の中継点にされる「レジデンシャルプロキシ」について、2024年のネットバンキング不正送金のうち<strong>少なくとも約44%がこの経由とされる</strong>という警察庁の分析が紹介されています。家庭のLANの中に潜むため、従来の調査では見つけにくいとも書かれています。</p>
+    <p>在宅勤務のセキュリティというと、会社から渡されたPCとVPNの話になりがちです。ただ、<strong>会社が管理しているのはPCとその先の社内システムまで</strong>で、PCがつながっている自宅のルーター、同じWi-Fiにいるテレビやスマート家電は、たいてい誰も管理していません。この記事では、その「誰も見ていない自宅側」に絞って、ルーターの管理画面で確認する7項目、会社PCを家の機器から分ける方法、回線の種類ごとの注意点、ルーターの買い替え判断までを整理しました。</p>
+
+    <div class="answer-first">
+      <span class="answer-first__label">先に結論</span>
+      <p>在宅勤務で自分が守るべきなのは、<strong>会社PCの手前にある「ルーター」と「同じWi-Fiにいる家の機器」</strong>です。まず15分で、ルーターの管理画面で<strong>①管理者パスワード ②Wi-Fiの暗号化方式(WPA2/WPA3) ③ファームウェア ④外部からの管理画面接続 ⑤VPN機能とアカウント ⑥DDNS・ポート開放 ⑦接続中の端末</strong>の7項目を確認します。次に、テレビやストリーミング端末、スマート家電を<strong>ゲスト用Wi-Fiに移して会社PCと分ける</strong>こと。そして、<strong>メーカーのサポート(ファームウェア更新)が終わったルーターは買い替える</strong>こと。買い替えるなら、2025年に始まった国のIoTセキュリティ制度<strong>「JC-STAR」の★1ラベル</strong>が目安になります。</p>
+    </div>
+
+    <p class="answer-cta answer-cta--pick" data-default="other" data-picks='[{"k":"docomo","t":"ドコモ","label":"GMOとくとくBBのドコモ光を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","beacon":"https://www12.a8.net/0.gif?a8mat=4BAI1I+3UQ1I2+50+54KL8Y","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"ドコモ光セット割の対象。提携プロバイダの申し込みページで条件を確認できます","head":"ドコモのスマホなら、セット割が効くドコモ光から"},{"k":"au","t":"au・UQ","label":"auひかりの提供エリアを確認する","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2PN4RE+348K+3H18R6","beacon":"https://www19.a8.net/0.gif?a8mat=4BAH9H+2PN4RE+348K+3H18R6","pr":"PR・エリア判定は無料で、申し込みにはなりません","sub":"auスマートバリュー・UQ自宅セット割の対象。住所を入れるだけ・結果はすぐ表示","head":"au・UQモバイルのスマホなら、セット割が効くauひかりから"},{"k":"sb","t":"ソフトバンク・ワイモバ","label":"ソフトバンク光のキャンペーンを見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","beacon":"https://www15.a8.net/0.gif?a8mat=4BAH9H+2RFFKQ+348K+1BP8ZM","pr":"PR・申し込み前にキャンペーンの適用条件を確認できます","sub":"おうち割 光セットの対象。申込特典と月額割引の条件を確認できます","head":"ソフトバンク・ワイモバイルのスマホなら、おうち割が効くソフトバンク光から"},{"k":"other","t":"格安SIM・その他","label":"共用回線から自分の回線へ:GMOとくとくBB光の条件を見る","href":"https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","beacon":"https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ","pr":"PR・申し込み前にキャッシュバックの受け取り条件を確認できます","sub":"契約期間の縛りなし・v6プラス標準対応。料金と特典の条件を確認できます","head":"セット割がないなら、縛りのないGMOとくとくBB光から","short":"GMOとくとくBB光の料金を見る"}]'><span class="answer-cta__chips" role="group" aria-label="スマホのキャリアで申し込み先を切り替え"><span class="answer-cta__q">スマホはどれ?</span><button type="button" class="answer-cta__chip" data-k="docomo" aria-pressed="false">ドコモ</button><button type="button" class="answer-cta__chip" data-k="au" aria-pressed="false">au・UQ</button><button type="button" class="answer-cta__chip" data-k="sb" aria-pressed="false">ソフトバンク・ワイモバ</button><button type="button" class="answer-cta__chip is-on" data-k="other" aria-pressed="true">格安SIM・その他</button></span><a class="answer-cta__btn" data-cta="answer" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><span>共用回線から自分の回線へ:GMOとくとくBB光の条件を見る</span><span class="answer-cta__go">公式サイトへ →</span></a><span class="answer-cta__pr">PR・申し込み前にキャッシュバックの受け取り条件を確認できます</span></p>
+
+    <div class="svc__banner svc__banner--duo"><figure class="svc__official"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank"><picture><source type="image/webp" srcset="../images/official/gmohikari-600.webp 600w, ../images/official/gmohikari.webp 1200w" sizes="(min-width: 640px) 380px, 100vw"><img src="../images/official/gmohikari.jpg" srcset="../images/official/gmohikari-600.jpg 600w, ../images/official/gmohikari.jpg 1200w" sizes="(min-width: 640px) 380px, 100vw" alt="GMOとくとくBB光の公式サイト(2026年9月時点の画面)" width="1200" height="630" loading="lazy" decoding="async"></picture></a><figcaption>画像出典: <a href="https://gmobb.jp/service/gmohikari/" rel="nofollow noopener" target="_blank">GMOとくとくBB光公式サイト</a>(2026年9月確認)</figcaption></figure><img src="../images/card-gmohikari.svg" alt="GMOとくとくBB光のサービス概要(月額・縛りなし)" width="800" height="420" loading="lazy" decoding="async"></div><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" alt="">
+
+    <div class="toc">
+      <div class="toc__title">📋 この記事でわかること</div>
+      <ol>
+        <li><a href="#hani">会社が守る範囲と、自分が守る範囲</a></li>
+        <li><a href="#check">ルーターの管理画面で確認する7項目</a></li>
+        <li><a href="#bunri">会社PCを家の機器から分ける方法</a></li>
+        <li><a href="#vpn">VPNについてよくある誤解</a></li>
+        <li><a href="#kaisen">回線の種類別の注意点</a></li>
+        <li><a href="#kaikae">ルーターの買い替えを判断する3つの基準</a></li>
+        <li><a href="#ijou">おかしいと思ったときの順番</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ol>
+    </div>
+
+    <div class="toolbox">
+      <p class="toolbox__t">共用のネットや古い機器を、回線ごと見直したくなったら</p>
+      <p>住まいのタイプとスマホのセット割から、候補を数社まで絞り込めます。乗り換えにかかる総額も、特典込みで試算できます。</p>
+      <div class="toolbox__links">
+        <a href="../shindan">6つの質問で診断する</a>
+        <a href="../sougaku">乗り換えの総額を計算する</a>
+      </div>
+    </div>
+
+    <h2 id="hani">会社が守る範囲と、自分が守る範囲</h2>
+    <p>最初に、在宅勤務の通信が通る道筋を分解しておきます。会社PCから社内のシステムやクラウドに届くまでには、<strong>PC → 自宅のWi-Fi/LAN → ルーター → 回線(光・ホームルーターなど) → インターネット → 会社のVPN装置やクラウド</strong>という区間があります。このうち、会社の情報システム部門が設定や監視をしているのは、多くの場合、両端のPCと社内側だけです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>区間</th><th>主に管理しているのは</th><th>起きうること</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>会社PC(OS・ウイルス対策・ディスク暗号化)</th>
+            <td class="best">会社</td>
+            <td>更新を後回しにすると、会社の対策が効かない期間ができる。更新の実行は自分の手で</td>
+          </tr>
+          <tr>
+            <th>会社のVPN・社内システム・クラウド</th>
+            <td class="best">会社</td>
+            <td>接続方法やルールは会社の規程に従う。個人で設定を変えない</td>
+          </tr>
+          <tr>
+            <th>自宅のWi-Fi(暗号化・パスワード)</th>
+            <td>自分</td>
+            <td>暗号化が古い・パスワードが弱いと、近くの第三者に入り込まれる</td>
+          </tr>
+          <tr>
+            <th>ルーター(管理画面・ファームウェア・各種機能)</th>
+            <td>自分(レンタル品は事業者と分担)</td>
+            <td>初期パスワードのまま・更新停止の機種だと、外から設定を書き換えられ、踏み台にされることがある</td>
+          </tr>
+          <tr>
+            <th>同じWi-Fiにいる家の機器(テレビ・ゲーム機・家電・カメラ)</th>
+            <td>自分(家族)</td>
+            <td>出どころの怪しい端末が攻撃の中継点にされる。同じLANにいる機器を探られる</td>
+          </tr>
+          <tr>
+            <th>回線(光回線・ホームルーター・マンションの共用設備)</th>
+            <td>事業者・建物の管理側</td>
+            <td>共用型の無料インターネットでは、建物内の他の部屋と同じネットワークになる方式もある</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>VPNは、PCと会社の間の通信を暗号化するトンネルです。トンネルの中身は守られますが、<strong>トンネルの入口がある自宅のルーターが乗っ取られていたり、同じWi-Fiに怪しい機器がいたりする状態までは直してくれません</strong>。総務省の「テレワークセキュリティガイドライン(第5版)」も、テレワーク端末だけでなく、自宅のネットワーク環境を含めた対策を利用者に求める構成になっています。</p>
+    <p>この記事で扱うのは、表の「自分」の行です。会社PCの設定やVPNの接続方法は、勤務先の規程と情報システム部門の指示が優先します。自分で判断せず、迷ったら会社に確認してください。</p>
+
+    <h2 id="check">ルーターの管理画面で確認する7項目</h2>
+    <p>総務省の「自宅Wi-Fi利用者向け 簡易マニュアル」(2025年2月版)が挙げる5つのポイントと、警察庁・警視庁の注意喚起で追加された確認項目を、管理画面で見る順に7つにまとめました。所要時間は15分ほどです。管理画面の開き方(ブラウザで開くアドレスと初期のログイン情報)は、本体のラベルか取扱説明書に書かれています。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>確認項目</th><th>望ましい状態</th><th>管理画面での探し方の目安</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>① 管理者パスワード</th>
+            <td class="best">初期値から変更済み。Wi-Fiのパスワードとは別の、長く推測されにくいもの</td>
+            <td>「管理者パスワード」「ログインパスワード」「メンテナンス」</td>
+          </tr>
+          <tr>
+            <th>② Wi-Fiの暗号化方式</th>
+            <td class="best">WPA3、または WPA2(AES)。WEPやWPA(TKIP)は使わない</td>
+            <td>「無線設定」「暗号化モード」「セキュリティ」</td>
+          </tr>
+          <tr>
+            <th>③ ファームウェア</th>
+            <td class="best">最新版。自動更新が有効</td>
+            <td>「ファームウェア更新」「自動更新」「バージョン情報」</td>
+          </tr>
+          <tr>
+            <th>④ インターネット側からの管理画面接続</th>
+            <td class="best">無効(使った覚えがないならオフ)</td>
+            <td>「リモート管理」「WAN側からのアクセス」「外部からの設定」</td>
+          </tr>
+          <tr>
+            <th>⑤ VPN機能(VPNサーバー)とそのアカウント</th>
+            <td class="best">使っていないなら無効。見覚えのないアカウントが無い</td>
+            <td>「VPNサーバー」「リモートアクセス」「PPTP」「L2TP/IPsec」</td>
+          </tr>
+          <tr>
+            <th>⑥ DDNS・ポート開放(ポート転送)</th>
+            <td class="best">自分で設定した覚えがあるものだけ</td>
+            <td>「DDNS」「ポート変換」「ポートマッピング」「UPnP」</td>
+          </tr>
+          <tr>
+            <th>⑦ 接続中の端末一覧</th>
+            <td class="best">全部に心当たりがある</td>
+            <td>「端末一覧」「クライアント一覧」「接続中の機器」</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>このうち④⑤⑥は、警察庁の注意喚起で名指しされた項目です。攻撃者は、外から入り込んだルーターの<strong>VPN機能を有効にして自分用のアカウントを追加し、DDNSで居場所を固定して</strong>、そのルーターを経由地として使います。自分で有効にした覚えがないのにオンになっていたら、それ自体が異常のサインです。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">管理画面に入り、まず管理者パスワードを変える</div>
+        <p>本体ラベルの初期値や「admin」「password」のような単純な値のままなら、最初に変更します。家族と共有している紙のメモがあれば、Wi-Fiのパスワードと管理者パスワードを区別して書き直しておきます。</p>
+      </li>
+      <li>
+        <div class="steps__t">暗号化方式とファームウェアを確認する</div>
+        <p>WPA3に対応した機種で、家の端末が全部WPA3に対応しているならWPA3、古い端末があるなら「WPA2/WPA3」の混在モードが現実的です。ファームウェアは手動で最新版を確認し、自動更新があればオンにします。</p>
+      </li>
+      <li>
+        <div class="steps__t">外から入れる機能(④⑤⑥)を一つずつ見る</div>
+        <p>使っていない機能はオフにします。ゲーム機の通信のためにUPnPを使っている家庭は多いので、UPnPは一律に切るより「ポート開放の一覧に見覚えのない項目がないか」を見るほうが実用的です。</p>
+      </li>
+      <li>
+        <div class="steps__t">接続中の端末を数え、心当たりのない機器を確認する</div>
+        <p>機器名が分かりにくい場合は、スマホやテレビのWi-Fiを一度切って一覧から消えるか見ると判別できます。どうしても分からない機器があれば、Wi-Fiのパスワードを変えて全端末をつなぎ直すのが確実です。</p>
+      </li>
+      <li>
+        <div class="steps__t">確認した日付をメモし、3か月に1回くり返す</div>
+        <p>警察庁の注意喚起が求めているのは一度きりの設定ではなく「定期的な確認」です。スマホのカレンダーに入れておくと続きます。</p>
+      </li>
+    </ol>
+    <p>ルーターの電源を入れ直すだけでは、書き換えられた設定は元に戻りません。再起動で直る不調と直らない不調の違いは<a href="router-saikidou">ルーターの再起動に効果はある?</a>で整理しています。</p>
+
+    <h2 id="bunri">会社PCを家の機器から分ける方法</h2>
+    <p>この記事でいちばん伝えたいのはここです。ルーターの設定を固めても、<strong>同じWi-Fiの中に出どころの怪しい機器がいれば、その機器から家の中のネットワークが見えてしまいます</strong>。冒頭の総務省資料が問題にしているのは、まさに「無料で国内外のテレビ番組が見られる」とうたう動画ストリーミング端末のような機器で、利用者が気づかないまま攻撃の中継に使われる例です。</p>
+    <figure>
+      <img src="../images/diagram-zaitaku-kinmu-security.svg" alt="自宅のネットワークを仕事用・家族用・ゲストとIoT用の3つに分ける図。会社PCは有線かメインのWi-Fi、テレビやストリーミング端末、スマート家電はゲスト用Wi-Fiにつなぐ" width="1200" height="620" loading="lazy" decoding="async">
+      <figcaption>ルーターの「ゲスト用Wi-Fi」を使えば、追加の機器を買わずに分けられる</figcaption>
+    </figure>
+    <p>多くの家庭用ルーターには、来客向けの<strong>ゲスト用Wi-Fi(ゲストSSID)</strong>があります。機種によっては、ゲスト側の端末からメインのネットワーク上の機器へ通信できないようにする機能(名称は「ネットワーク分離」「プライバシーセパレーター」「ゲストポート」など機種ごとに違います)があり、これを使うと<strong>テレビや家電からは会社PCが見えない</strong>状態を作れます。どの機器をどこにつなぐかの目安は次のとおりです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>機器</th><th>つなぐ場所</th><th>理由</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>会社PC</th>
+            <td class="best">有線LAN、またはメインのWi-Fi</td>
+            <td>有線は電波を傍受される心配がなく、Web会議も安定しやすい</td>
+          </tr>
+          <tr>
+            <th>家族のスマホ・私用PC</th>
+            <td>メインのWi-Fi</td>
+            <td>OSの更新が続いている端末なら、メイン側で問題ないことが多い</td>
+          </tr>
+          <tr>
+            <th>テレビ・ゲーム機・スマートスピーカー</th>
+            <td>ゲスト用Wi-Fi</td>
+            <td>更新の状況が見えにくく、会社PCと通信する必要もない</td>
+          </tr>
+          <tr>
+            <th>見守りカメラ・スマート家電</th>
+            <td>ゲスト用Wi-Fi</td>
+            <td>初期パスワードのまま使われやすく、NOTICEでも調査対象になる種類の機器</td>
+          </tr>
+          <tr>
+            <th>出どころ不明の格安ストリーミング端末</th>
+            <td>つながない(使うのをやめる)</td>
+            <td>分離しても回線を攻撃の中継に使われることまでは防げない</td>
+          </tr>
+          <tr>
+            <th>来客のスマホ</th>
+            <td>ゲスト用Wi-Fi</td>
+            <td>メインのパスワードを教えずに済む</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box-warn">
+      <div class="box-warn__t">⚠ ゲスト用Wi-Fiで注意すること</div>
+      <ul>
+        <li><strong>分離機能が既定でオフの機種がある</strong>:ゲストSSIDを作っただけでは、メイン側と通信できる設定の機種もあります。取扱説明書で「ゲスト側からLANへのアクセス」の扱いを確認してください</li>
+        <li><strong>スマホのアプリで操作する家電は、スマホと同じWi-Fiにいないと設定できないことがある</strong>:初期設定のときだけスマホをゲスト側につなぐと解決することが多い傾向です</li>
+        <li><strong>ゲスト側の機能に有効期限がある機種がある</strong>:来客用として、一定時間で自動的に止まる設定の機種もあります。常用するなら期限をオフにします</li>
+      </ul>
+    </div>
+    <p>ゲスト用Wi-Fiが無い古い機種や、メッシュWi-Fiの子機でゲスト側が使えない構成もあります。家の広さや機器の数によって、メッシュにするか中継機で足りるかの判断は<a href="mesh-wifi-chukeiki">Wi-Fi中継機とメッシュWi-Fiの違い</a>にまとめています。</p>
+
+    <h2 id="vpn">VPNについてよくある誤解</h2>
+    <p>「VPN」という言葉は、場面によって指しているものがまったく違います。在宅勤務で混同されやすい3種類を並べました。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>種類</th><th>何を守るか</th><th>在宅勤務での扱い</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>会社のVPN(会社PCに入っている接続ソフト)</th>
+            <td>PCと社内システムの間の通信</td>
+            <td class="best">会社の指示どおりに使う。社内システムに入るときの正規の入口</td>
+          </tr>
+          <tr>
+            <th>市販のVPNサービス(個人向けアプリ)</th>
+            <td>端末とVPN事業者の間の通信。公衆Wi-Fiでの盗み見対策など</td>
+            <td>会社PCに個人で入れるのは規程違反になりうる。会社のVPNと競合することも</td>
+          </tr>
+          <tr>
+            <th>ルーターのVPNサーバー機能</th>
+            <td>外出先から自宅のLANに入るための入口</td>
+            <td>使わないなら無効に。警察庁の注意喚起で悪用が指摘された機能</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>もうひとつの誤解は「VPNにつないでいれば、自宅のWi-Fiが弱くても大丈夫」というものです。VPNはトンネルの中を暗号化しますが、VPNにつなぐ前の通信や、VPNを通らない設定になっている通信(会社によってはWeb会議やクラウドサービスを直接インターネットに出す構成があります)は、自宅のWi-Fiとルーターの状態に左右されます。</p>
+    <p>また、自宅の回線の接続方式によっては、会社のVPNが「つながりにくい」「遅い」と感じることがあります。IPv6 IPoE(v6プラスなど)でIPv4の通信をする方式では、使えるポートの数や種類に制約があるため、VPNの方式との組み合わせによっては影響が出るケースがあると案内しているプロバイダもあります。症状が出たら、会社の情報システム部門に回線の接続方式を伝えて相談するのが近道です。接続方式の仕組みは<a href="ipv6-ipoe">IPv6(IPoE)とは?</a>で、Web会議が途切れるときの切り分けは<a href="web-kaigi-taisho">Web会議が止まる・落ちるときの対処法</a>で解説しています。</p>
+
+    <h2 id="kaisen">回線の種類別の注意点</h2>
+    <p>同じ在宅勤務でも、どの回線を使っているかで「自分で見るべきところ」が変わります。2026年10月時点の一般的な構成をもとにした目安です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>回線・環境</th><th>自分で管理できる範囲</th><th>注意点</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>光回線+自分のWi-Fiルーター</th>
+            <td class="best">ルーターの全設定</td>
+            <td class="best">7項目をすべて自分で確認できる。管理しやすさでは最も有利</td>
+          </tr>
+          <tr>
+            <th>光回線+事業者のレンタルルーター</th>
+            <td>Wi-Fiの設定、一部の機能</td>
+            <td>ファームウェアの更新方式と、機種の世代を確認。古い機種なら交換を相談できることも</td>
+          </tr>
+          <tr>
+            <th>マンションの無料インターネット(共用型)</th>
+            <td>部屋に置く機器だけ</td>
+            <td>建物内で同じネットワークを共有する方式がある。自分のルーターを挟み、部屋の機器を建物側から隔てるのが基本</td>
+          </tr>
+          <tr>
+            <th>ホームルーター(5G・WiMAXなど)</th>
+            <td>Wi-Fiの設定、端末一覧など</td>
+            <td>ファームウェアは自動更新の機種が多い。管理画面のパスワードと暗号化方式は自分で確認</td>
+          </tr>
+          <tr>
+            <th>スマホのテザリング</th>
+            <td>テザリングのパスワードのみ</td>
+            <td>つなぐのが会社PCだけなら、家の機器と混ざらない利点がある。通信量の上限に注意</td>
+          </tr>
+          <tr>
+            <th>カフェ・ホテルなどの公衆Wi-Fi</th>
+            <td>なし</td>
+            <td>同じWi-Fiに誰がいるか分からない。会社の規程で禁止されていることも多い</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>見落とされやすいのが、マンションの共用型インターネットです。「無料」「工事不要」で便利な反面、建物全体で1つのネットワークを分け合う方式の場合、同じ建物の他の部屋の機器と同じネットワークに並ぶことがあります。在宅勤務をするなら、部屋の差し込み口に<strong>自分のルーターを1台挟み、会社PCはそのルーターの内側につなぐ</strong>のが最低限の対策です。速度面の悩みも含めた見直し方は<a href="muryou-net-osoi">無料インターネットが遅いときの対策</a>で、建物の設備の種類は<a href="mansion-internet">マンションのネット回線の選び方</a>で解説しています。</p>
+    <p>テザリングは「セキュリティのために」選ぶ人もいますが、毎日の在宅勤務をまかなうには通信量の上限が壁になります。どこまで使えるかの目安は<a href="tethering-kotei-kaisen">テザリングを固定回線の代わりにできる人の条件</a>を参考にしてください。</p>
+
+    <h2 id="kaikae">ルーターの買い替えを判断する3つの基準</h2>
+    <p>7項目の確認をしても、ルーター自体がもう守れない状態のこともあります。次の3つのどれかに当てはまったら、買い替えを考える段階です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>基準</th><th>確認の仕方</th><th>当てはまったら</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>メーカーのサポート(ファームウェア更新)が終了している</th>
+            <td>メーカーの「サポート終了製品」「ファームウェア提供終了」の一覧で型番を探す</td>
+            <td class="best">買い替え。警視庁・総務省とも、更新が止まった機器は使い続けないよう呼びかけている</td>
+          </tr>
+          <tr>
+            <th>WPA2(AES)以上に対応していない</th>
+            <td>管理画面の暗号化方式の選択肢を見る</td>
+            <td class="best">買い替え。WEP・TKIPしか選べない機種は在宅勤務に使わない</td>
+          </tr>
+          <tr>
+            <th>ゲスト用Wi-Fiの分離機能が無い</th>
+            <td>取扱説明書で「ゲスト」「分離」を探す</td>
+            <td>IoT機器が多い家庭なら、買い替えの優先度が上がる</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>買い替えるときの目安として新しく使えるようになったのが、経済産業省が創設し、情報処理推進機構(IPA)が2025年3月25日に運用を始めた<strong>「JC-STAR(セキュリティ要件適合評価及びラベリング制度)」</strong>です。IoT製品が国の定めたセキュリティ要件を満たしているかをラベルで示す制度で、最も基本的な水準が<strong>★1</strong>です。2025年以降、家庭向けWi-Fiルーターでも★1適合の製品が増えており、大手メーカーでは数十型番単位で適合を取得している例もあります。ラベルの二次元コードから、製品のセキュリティ情報を確認できる仕組みです。</p>
+    <div class="box-point">
+      <div class="box-point__t">✅ JC-STARラベルの見方</div>
+      <p>★1は「最低限これだけは満たしている」という水準で、どんな攻撃も防げるという意味ではありません。それでも、<strong>推測されにくい初期パスワード(または初回の変更を求める仕組み)、ソフトウェアを更新できる仕組み</strong>といった、家庭のルーターでつまずきやすい点が要件として確認されており、ラベルの有効期間中はアップデートへの対応も求められる、という判断材料になります。適合製品はIPAのサイトで検索できます。買う前に、ラベルの有無と、メーカーが公表しているサポート期間をあわせて確認してください。</p>
+    </div>
+    <p>規格(Wi-Fi 6・6E・7)の選び方や、買うか借りるかの損得は<a href="hikari-router-erabikata">光回線のルーターの選び方</a>で詳しく比べています。なお、プロバイダの無料レンタルルーターは手軽な反面、届く機種が数年前の型であることも珍しくありません。借りる場合も、型番でメーカーのサポート状況を確かめておくと安心です。</p>
+
+    <div class="voice">
+      <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="voice__body">回線の相談を受けて管理画面を一緒に確認すると、管理者パスワードが本体ラベルの初期値のまま、というケースは今でもよく見かけます。「会社のPCだから会社が守ってくれている」という感覚は自然なんですが、<strong>ルーターだけは誰の持ち物でもない状態</strong>になりがちです。年に数回、ほんの15分でいいので、ルーターを「自分の機器」として見てあげてください。</div>
+        <div class="voice__name">運営者・もりそん</div>
+      </div>
+    </div>
+
+    <h2 id="ijou">おかしいと思ったときの順番</h2>
+    <p>見覚えのない設定やアカウントを見つけた、会社からセキュリティの警告が来た、知らない端末が一覧にいる。そんなときは、慌てて初期化する前に、次の順番で動くと被害の確認と再発防止がしやすくなります。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">会社PCをネットワークから外し、会社に連絡する</div>
+        <p>Wi-Fiを切る、LANケーブルを抜くのが先です。会社PCの扱いは勤務先の規程に従い、自己判断で調べたり初期化したりせず、情報システム部門に状況を伝えます。</p>
+      </li>
+      <li>
+        <div class="steps__t">見つけた設定を写真に撮っておく</div>
+        <p>追加されていたアカウント名、有効になっていた機能、知らない端末の名前を記録します。会社や事業者に説明するときの材料になります。</p>
+      </li>
+      <li>
+        <div class="steps__t">ルーターを初期化し、最新のファームウェアに更新する</div>
+        <p>警視庁の注意喚起も、不正な設定を見つけたら初期化・ファームウェア更新・パスワードの変更を行うよう案内しています。初期化の前に、プロバイダの接続IDとパスワード(PPPoE接続の場合)が手元にあるか確認してください。</p>
+      </li>
+      <li>
+        <div class="steps__t">管理者パスワードとWi-Fiのパスワードを両方変え、7項目を設定し直す</div>
+        <p>以前と同じパスワードに戻すと意味がありません。家の端末はすべてつなぎ直しになります。</p>
+      </li>
+      <li>
+        <div class="steps__t">サポートが終わった機種なら、そのまま買い替える</div>
+        <p>更新が止まった機種は、設定を直しても同じ弱点が残ります。この機会に入れ替えるのが確実です。</p>
+      </li>
+    </ol>
+    <p>また、総務省とNICTの取り組み「NOTICE」では、弱いパスワードやファームウェアの脆弱性がある機器、マルウェアに感染した機器を調査し、契約しているプロバイダを通じて利用者に注意喚起をしています。プロバイダから「ご利用の機器に脆弱性の可能性」といった連絡が来たら、それは自宅の機器の確認を求める正規の案内である可能性があります。ただし、メールやSMSのリンクから設定画面やログイン画面に誘導するものは偽物の可能性もあるため、<strong>プロバイダの公式サイトから自分でたどって内容を確認</strong>してください。</p>
+
+    <div class="box-memo">
+      <div class="box-memo__t">📝 個人事業主・フリーランスの場合</div>
+      <p>会社の情報システム部門がいない個人事業主やフリーランスは、表の「会社」の行も自分の担当になります。総務省の「テレワークセキュリティに関する手引き(チェックリスト)」は中小企業の担当者向けですが、項目が具体的なので自分用の点検表として使えます。仕事用の回線を分けるか、固定IPが要るかといった判断は<a href="kojin-jigyounushi-hikari">個人事業主の光回線は法人契約が必要?</a>にまとめています。</p>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>会社のVPNを使っていれば、自宅のWi-Fiやルーターの設定は気にしなくていいですか?</summary>
+        <div class="faq__a">VPNが守るのは、会社PCと社内システムの間の通信です。自宅のルーターが乗っ取られて踏み台にされることや、同じWi-Fiにいる家の機器が悪用されることまでは防げません。また、VPNを通らずに直接インターネットへ出る通信がある構成も多いため、ルーターの管理者パスワード、暗号化方式、ファームウェアの確認は自分で行う必要があります。</div>
+      </details>
+      <details>
+        <summary>在宅勤務で、ルーターのどの設定を確認すればいいですか?</summary>
+        <div class="faq__a">管理者パスワードの変更、Wi-Fiの暗号化方式(WPA3またはWPA2のAES)、ファームウェアの更新、インターネット側からの管理画面接続、VPNサーバー機能とそのアカウント、DDNSとポート開放、接続中の端末一覧の7項目が目安です。後半の3つは警察庁の注意喚起で悪用が指摘された機能で、使った覚えがないのに有効になっていたら異常のサインです。</div>
+      </details>
+      <details>
+        <summary>会社PCは家族と同じWi-Fiにつないでも大丈夫ですか?</summary>
+        <div class="faq__a">家族のスマホやPCがOSの更新を続けている端末なら、同じWi-Fiで問題ないことが多い傾向です。一方、テレビやゲーム機、見守りカメラ、スマート家電などは更新の状況が見えにくいため、ルーターのゲスト用Wi-Fiに移し、メインのネットワークと通信できない設定にしておくと安心です。勤務先に有線接続などの指定がある場合はそれに従ってください。</div>
+      </details>
+      <details>
+        <summary>WPA2とWPA3はどちらにすればいいですか?</summary>
+        <div class="faq__a">ルーターと家の端末がすべてWPA3に対応しているならWPA3が望ましく、古い端末があるなら「WPA2/WPA3」の混在モードが現実的です。総務省の自宅Wi-Fi向けマニュアルも、WPA2またはWPA3を選ぶよう案内しています。WEPやWPA(TKIP)しか選べない機種は、買い替えを検討してください。</div>
+      </details>
+      <details>
+        <summary>JC-STARの★1ラベルが付いたルーターなら安全ですか?</summary>
+        <div class="faq__a">★1は、IoT製品に共通して求められる最低限のセキュリティ要件を満たしていることを示すラベルで、あらゆる攻撃を防げるという意味ではありません。初期パスワードの扱いやソフトウェア更新の仕組みなどが確認されている判断材料として使い、購入後も管理者パスワードの変更やファームウェアの更新は自分で続ける必要があります。</div>
+      </details>
+      <details>
+        <summary>マンションの無料インターネットで在宅勤務をしても大丈夫ですか?</summary>
+        <div class="faq__a">建物全体で同じネットワークを共有する方式の場合、他の部屋の機器と同じネットワークに並ぶことがあります。部屋の差し込み口に自分のルーターを1台挟み、会社PCはその内側につなぐのが最低限の対策です。勤務先の規程で共用回線の利用に制限があることもあるため、あわせて確認してください。</div>
+      </details>
+    </div>
+
+    <h2 id="matome">まとめ:VPNの手前は自分の担当</h2>
+    <ul>
+      <li>会社が守るのは<strong>PCと社内側</strong>まで。<strong>ルーターと同じWi-Fiにいる家の機器</strong>は自分の担当になりやすい</li>
+      <li>管理画面で<strong>管理者パスワード・暗号化方式・ファームウェア・外部からの管理画面接続・VPN機能・DDNSとポート開放・接続端末</strong>の7項目を、3か月に1回確認する</li>
+      <li>テレビ・ゲーム機・スマート家電は<strong>ゲスト用Wi-Fiに移して会社PCと分ける</strong>。出どころ不明のストリーミング端末は使わない</li>
+      <li>会社のVPN・市販のVPN・ルーターのVPN機能は別物。<strong>ルーターのVPN機能は使わないなら無効</strong>に</li>
+      <li>マンションの共用型インターネットでは、<strong>自分のルーターを挟んで</strong>部屋の機器を建物側から隔てる</li>
+      <li><strong>サポートが終わったルーターは買い替える</strong>。選ぶならJC-STAR★1ラベルとサポート期間を確認する</li>
+    </ul>
+    <p>在宅勤務の環境づくりは、回線の速さに目が行きがちです。ただ、仕事のデータが通る道である以上、その入口にあるルーターの状態は速さと同じくらい大事です。必要な速度や会議が落ちるときの原因の切り分けは<a href="telework-kaisen">在宅勤務におすすめのネット回線</a>で整理しています。速さと安全の両方を見直すときの参考にしてください。</p>
+
+    <div class="sources">
+      <div class="sources__t">📚 参考情報・データの出典</div>
+      <ul>
+        <li>警察庁・警視庁「家庭用ルーターの不正利用に関する注意喚起」(2023年3月28日発表。警視庁サイバー攻撃対策センターのページは2023年4月5日掲載)— VPN機能・DDNS機能・インターネット側からの管理画面接続の確認、見覚えのないVPNアカウント、サポート終了機器の買い替え。2026年10月確認</li>
+        <li>総務省 サイバーセキュリティ統括官室「IoT機器調査(NOTICEプロジェクト)とレジデンシャルプロキシ対策について」(2026年9月7日、会議資料1-3)— 家庭用IoT機器を経由した攻撃、2024年のネットバンキング不正送金の少なくとも約44%がレジデンシャルプロキシ経由とする警察庁の分析の紹介</li>
+        <li>総務省「自宅Wi-Fi利用者向け 簡易マニュアル」(2025年2月版、無線LAN(Wi-Fi)の安全な利用(セキュリティ確保)について)— WPA2またはWPA3の選択、推測されにくいパスワード、サポート期限内の機器、ファームウェアの更新、設定の定期確認</li>
+        <li>総務省「テレワークセキュリティガイドライン(第5版)」(2021年5月)、「テレワークセキュリティに関する手引き(チェックリスト)第3版」(2022年5月)</li>
+        <li>総務省「IoT機器のセキュリティ向上を推進する新しい『NOTICE』を開始」(2024年3月29日)— ファームウェアの脆弱性がある機器・マルウェア感染機器の調査とISPを通じた注意喚起</li>
+        <li>独立行政法人情報処理推進機構(IPA)「セキュリティ要件適合評価及びラベリング制度(JC-STAR)の運用開始」(2025年3月25日)</li>
+        <li>各メーカーのJC-STAR★1適合製品の発表(バッファロー、エレコムほか。2025〜2026年)。2026年10月確認</li>
+      </ul>
+      <p class="micro">※ 本記事の内容は2026年10月時点の公的機関の公表資料と各社の案内をもとにした一般的な目安です。管理画面の項目名や機能の有無は機種によって異なります。会社PCとVPNの扱いは、勤務先の規程と情報システム部門の指示を優先してください。</p>
+    </div>
+  </div>
+
+  <aside class="final-pick">
+    <div class="final-pick__label">🧭 迷ったらこれ</div>
+    <div class="final-pick__t">共用のネットや古い機器のままなら、自分で管理できる回線に替える</div>
+    <p>マンションの共用型インターネットで部屋の機器を隔てにくい、ルーターを自分で管理できない、という状態のまま在宅勤務を続けているなら、自分名義の光回線に替えるのが根本的な対策です。GMOとくとくBB光は契約期間の縛りと解約金がなく、IPv6 IPoE(v6プラス)に標準で対応しているため、在宅勤務に必要な速度と、ルーターを自分で管理できる環境を一度にそろえやすい回線です。Wi-Fiルーターの無料レンタルもありますが、届く機種と自分で用意するルーターのどちらにするかは、この記事の買い替え基準で判断してください。申し込み前に、キャッシュバックの受け取り条件と工事費の扱いを確認しておいてください。</p>
+    <div class="svc__banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" rel="nofollow sponsored noopener" target="_blank"><img width="300" height="250" alt="GMOとくとくBB光の公式キャンペーンバナー" src="https://www22.a8.net/svt/bgt?aid=260829413162&amp;wid=002&amp;eno=01&amp;mid=s00000000018040038000&amp;mc=1" loading="lazy" decoding="async"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6MDJ6P" alt=""></div>
+    <a class="btn btn--cv" data-cta="final" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の料金を見る<small>縛りなし・キャッシュバックの受け取り条件はこちら</small></a>
+    <p class="micro">※ 広告(PR)。申し込み前にキャッシュバックの受け取り条件を確認できます。料金・条件は公式サイトで最新情報をご確認ください。</p>
+  </aside>
+
+  <aside class="author">
+    <div class="author__icon"><img src="../images/avatar.svg" alt="もりそんのアイコン" width="72" height="72" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="author__name">もりそん</div>
+      <div class="author__role">回線コンパス運営者|通信費見直しオタク</div>
+      <p>在宅ワークをきっかけに自宅回線の遅さに悩み、以来、各社公式の料金と「みんなのネット回線速度」の公開集計を突き合わせて回線を比べるのが習慣に。家族と友人の回線相談を何十件も受けるうちに「同じ質問ばかり受ける」ことに気づき、その回答集としてこのサイトを作りました。<a href="../about">詳しいプロフィール</a></p>
+    </div>
+  </aside>
+
+  <section class="related">
+    <h2>あわせて読みたい</h2>
+    <ul>
+      <li><a href="telework-kaisen">在宅勤務におすすめのネット回線|必要な速度と住まい別の構成</a></li>
+      <li><a href="hikari-router-erabikata">光回線のルーターの選び方|買い替えの判断基準</a></li>
+      <li><a href="web-kaigi-taisho">Web会議が止まる・落ちるときの対処法</a></li>
+      <li><a href="router-saikidou">ルーターの再起動に効果はある?正しい順番と直る不調・直らない不調</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <div class="footer__brand"><img src="../images/logo.svg" alt="" width="36" height="36" loading="lazy" decoding="async"><span>回線コンパス</span></div>
+        <p>ネット回線選びの「よくわからない」を無くすために、各社公式の料金と公開されている実測データの集計に基づいた比較情報を発信しています。</p>
+      </div>
+      <div>
+        <h2>カテゴリ</h2>
+        <ul>
+          <li><a href="../category/hikari">光回線</a></li>
+          <li><a href="../category/wifi">WiFi・ホームルーター</a></li>
+          <li><a href="../category/sim">格安SIM・スマホ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>サイト情報</h2>
+        <ul>
+          <li><a href="../about">運営者情報</a></li>
+          <li><a href="../policy">編集ポリシー・広告掲載について</a></li>
+          <li><a href="../privacy">プライバシーポリシー・免責事項</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="sister">
+        <a class="sister__card" href="https://taisyoku-compass.com/">
+          <span class="sister__ico" aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><defs><linearGradient id="sisterGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0e3f38"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#sisterGrad)"/><circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/><g class="sister__needle"><polygon points="32,12 38,32 32,52 26,32" fill="#ffffff"/><polygon points="32,12 38,32 32,32" fill="#ffd76a"/></g></svg></span>
+          <span class="sister__body">
+            <span class="sister__name">退職コンパス<span class="sister__go" aria-hidden="true">→</span></span>
+            <span class="sister__desc">退職代行の比較から、退職後の保険・年金の手続きまで</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <p class="footer__note">当サイトはアフィリエイトプログラムに参加しており、記事内には広告(プロモーション)が含まれます。掲載する情報は編集ポリシーに基づき、広告の有無に関わらず公平な比較を心がけています。料金・キャンペーン情報は執筆時点のものです。最新の条件は必ず各社公式サイトでご確認ください。</p>
+    <p class="footer__copy">&copy; 2026 回線コンパス</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="ページ上部へ戻る">↑</button>
+<script src="../js/main.js?v=20260924a" defer></script>
+</body>
+</html>
