@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="縛りなし光回線の本当の解約コストを比較" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:外れた南京錠と家 -->
+  <g transform="translate(890, 330) scale(0.9)">
+    <path d="M-10 222 C40 175 70 200 100 160" fill="none" stroke="#ffd76a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M100 100 L170 46 L240 100 V222 H100 Z" fill="#ffffff"/>
+    <rect x="135" y="146" width="36" height="76" rx="4" fill="#c3d7f7"/>
+    <rect x="188" y="128" width="34" height="30" rx="4" fill="#c3d7f7"/>
+    <path d="M262 74 V40 C262 16 282 0 304 0 C326 0 346 16 346 40" fill="none" stroke="#ffd76a" stroke-width="12" stroke-linecap="round" transform="rotate(-28 262 74)"/>
+    <rect x="246" y="74" width="116" height="92" rx="12" fill="#ffd76a"/>
+    <circle cx="304" cy="110" r="12" fill="#0b2c5f"/>
+    <rect x="299" y="114" width="10" height="28" rx="4" fill="#0b2c5f"/>
+  </g>
+
+  <rect x="70" y="80" width="330" height="56" rx="28" fill="#ffd76a"/>
+  <text x="235" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">解約金0円の光回線</text>
+
+  <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">縛りなし光回線</text>
+  <text x="70" y="360" font-size="80" font-weight="800" fill="#ffd76a">本当の解約コスト</text>
+  <text x="70" y="436" font-size="31" font-weight="600" fill="#cfe0ff">工事費の残債・事務手数料まで比較</text>
+
+  <g transform="translate(70,530)">
+    <circle cx="24" cy="24" r="24" fill="#ffffff"/>
+    <polygon points="24,8 29,24 24,40 19,24" fill="#1558d6"/>
+    <circle cx="24" cy="24" r="3.5" fill="#0b2c5f"/>
+    <text x="62" y="34" font-size="30" font-weight="800" fill="#ffffff">回線コンパス</text>
+  </g>
+</svg>
