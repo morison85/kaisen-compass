@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 11 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Tue, 13 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>家族のスマホ・PCにセキュリティソフトは必要?OS標準で足りる端末と、有料ソフトが要る端末の分け方【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/kazoku-security-soft</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/kazoku-security-soft</guid>
+    <pubDate>Tue, 13 Oct 2026 12:00:00 +0900</pubDate>
+    <description>家のWi-Fiにつながる家族のスマホ・PCに、有料のセキュリティソフトは要るのか。IPAの「情報セキュリティ10大脅威 2026」個人編に並ぶ脅威ごとにOS標準機能と有料ソフトの守備範囲を比べると、有料ソフトの価値はウイルス検出より偽警告・偽サイトといった「だましの入口」を減らすことに移っています。Windows 11・Windows 10(個人向けESUは2027年10月12日まで)・Mac・Android・iPhoneの端末別の判定表、高齢の親・子ども・ネットバンキングを使う人など使う人別の優先対策、OS標準で済ませるなら最低限やる5つの設定をまとめました。ウイルスバスターとESETの公式ページはいずれもiOSではウイルス対策機能が使えないと案内しているため、台数はWindows・Mac・Androidで数えるのが無駄のない買い方です。2026年10月時点の公式価格では、ESET 5台版が1台あたり年1,470円、ウイルスバスター クラウド 3台版が約2,493円でした。</description>
+  </item>
   <item>
     <title>BBIQ光の評判は?料金・速度・エリアを公式と実測で検証【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/bbiq-hikari</link>
