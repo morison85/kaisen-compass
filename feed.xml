@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 13 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 14 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>スマホを売る前にやること10の順番|乗り換え・機種変更で余った端末は「初期化を最後」に | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/sumaho-baikyaku-junbi</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/sumaho-baikyaku-junbi</guid>
+    <pubDate>Wed, 14 Oct 2026 12:00:00 +0900</pubDate>
+    <description>乗り換えや機種変更で余ったスマホを売るとき、最初に初期化するのは順番が逆です。デジタル庁はスマホ用電子証明書が端末の初期化では削除されないと明記し、iPhoneの「探す」やAndroidのGoogleアカウントも外さずに初期化するとロックが残ります。Apple・デジタル庁・各キャリアの公式案内をもとに、売る前の作業を「手放し方を決める→新端末へ移す→旧端末で解除→最後に初期化」の4段階10ステップに整理しました。初期化で消えるもの・消えないものの一覧、返却プログラムと売却の損得を比べる判定式、ネットワーク利用制限○△×と査定への影響、2021年10月以降の端末はSIMロックが原則ないこと、乗り換えから1〜2週間は旧端末を手放さない理由、宅配買取mmobaの流れ(14時までの申込で当日キット発送・最短翌営業日査定・承諾から最短2営業日入金)までまとめています。</description>
+  </item>
   <item>
     <title>家族のスマホ・PCにセキュリティソフトは必要?OS標準で足りる端末と、有料ソフトが要る端末の分け方【2026年】 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/kazoku-security-soft</link>

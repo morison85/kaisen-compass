@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="スマホを売る前の作業を4段階に分けた順番の図。手放し方を決める、新端末へ移す、旧端末で解除する、最後に初期化する" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="560" fill="#f4f7fc"/>
+  <text x="60" y="58" font-size="28" font-weight="800" fill="#0b2c5f">スマホを売る前の順番(左から右へ進める)</text>
+
+  <g font-size="18" fill="#42557a" text-anchor="middle">
+    <rect x="60" y="90" width="255" height="230" rx="16" fill="#ffffff" stroke="#c8d6ee" stroke-width="2"/>
+    <text x="187" y="138" font-size="20" font-weight="800" fill="#0b2c5f">① 手放し方を決める</text>
+    <text x="187" y="196">返却か売却かを比べる</text>
+    <text x="187" y="236">残債と利用制限を確認</text>
+    <text x="187" y="276">SIMロックの有無</text>
+
+    <rect x="345" y="90" width="255" height="230" rx="16" fill="#ffffff" stroke="#c8d6ee" stroke-width="2"/>
+    <text x="472" y="138" font-size="20" font-weight="800" fill="#0b2c5f">② 新端末へ移す</text>
+    <text x="472" y="196">バックアップと移行</text>
+    <text x="472" y="236">LINE・2段階認証</text>
+    <text x="472" y="276">おサイフの移行</text>
+
+    <rect x="630" y="90" width="255" height="230" rx="16" fill="#ffffff" stroke="#1558d6" stroke-width="3"/>
+    <text x="757" y="138" font-size="20" font-weight="800" fill="#1558d6">③ 旧端末で解除</text>
+    <text x="757" y="196">電子証明書を失効</text>
+    <text x="757" y="236">Watchの連携解除</text>
+    <text x="757" y="276">アカウントを外す</text>
+
+    <rect x="915" y="90" width="255" height="230" rx="16" fill="#0b2c5f"/>
+    <text x="1042" y="138" font-size="20" font-weight="800" fill="#ffd76a">④ 最後に初期化</text>
+    <text x="1042" y="196" fill="#cfe0ff">eSIMもまとめて消去</text>
+    <text x="1042" y="236" fill="#cfe0ff">SIMカードを抜く</text>
+    <text x="1042" y="276" fill="#cfe0ff">ケースを外して梱包</text>
+  </g>
+
+  <g stroke="#0b2c5f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M318 205 h22"/><path d="M332 197 l8 8 l-8 8"/>
+    <path d="M603 205 h22"/><path d="M617 197 l8 8 l-8 8"/>
+    <path d="M888 205 h22"/><path d="M902 197 l8 8 l-8 8"/>
+  </g>
+
+  <rect x="60" y="370" width="1110" height="140" rx="16" fill="#fff4e5" stroke="#f59e0b" stroke-width="2"/>
+  <text x="90" y="414" font-size="22" font-weight="800" fill="#9a3412">順番を逆にすると起きること</text>
+  <text x="90" y="454" font-size="19" fill="#42557a">初期化した後では、旧端末の設定画面からアカウントを外したり証明書を失効させたりできない。</text>
+  <text x="90" y="488" font-size="19" fill="#42557a">アクティベーションロックやGoogleの端末保護が残った端末は、減額や買取不可の原因になる。</text>
+</svg>
