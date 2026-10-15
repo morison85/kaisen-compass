@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 14 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Wi-Fiのパスワード変更方法|メーカー別の手順と、全端末をつなぎ直す段取り【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/wifi-password-henkou</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/wifi-password-henkou</guid>
+    <pubDate>Fri, 16 Oct 2026 12:00:00 +0900</pubDate>
+    <description>Wi-Fiのパスワードを変える操作は設定画面で暗号化キーを書き換えて保存するだけですが、手間がかかるのはその後の全端末のつなぎ直しです。総務省・警視庁の案内とバッファロー・NEC(Aterm)・TP-Link・ソフトバンク光の光BBユニット・auのホームルーターのサポート情報をもとに、管理者パスワードとの違い、変えるべき場面と定期変更が要らない理由、つなぎ直しが必要な端末を手間で4つに分ける棚卸し、「パスワードだけ変える」か「新しいSSIDに順に移る」かの選び方、全メーカー共通の6ステップ、メーカー別の設定画面の開き方、iPhone・Android・Windows・Mac・Switch・PS5・テレビ・プリンター・スマート家電のつなぎ直し方、13〜20文字で記号を控えめにする決め方、変更後につながらないときの症状別の対処までまとめました。</description>
+  </item>
   <item>
     <title>スマホを売る前にやること10の順番|乗り換え・機種変更で余った端末は「初期化を最後」に | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/sumaho-baikyaku-junbi</link>
