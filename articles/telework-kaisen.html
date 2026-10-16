@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="回線コンパス">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-08-30">
-<meta property="article:modified_time" content="2026-08-30">
+<meta property="article:modified_time" content="2026-10-17">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-telework-kaisen.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -53,7 +53,7 @@
     }
   },
   "datePublished": "2026-08-30",
-  "dateModified": "2026-08-30",
+  "dateModified": "2026-10-17",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/telework-kaisen"
 }
 </script>
@@ -100,6 +100,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "在宅勤務目的ならほとんどありません。会議に必要な帯域は10Mbps台で、上限を10倍にしても安定性は変わらないためです。大容量の動画素材を日常的にやり取りするなど、明確な用途がある場合に限られます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会社の在宅勤務手当に税金はかかりますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "毎月決まった額を渡し切りで受け取る手当は、給与として課税されます。業務で使った通信費を計算して実費で精算してもらう場合は、その額は課税されません(国税庁「在宅勤務に係る費用負担等に関するFAQ」)。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "在宅勤務の予備回線は必要ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多くの人はスマホのテザリングで足ります。大事な会議がある人は、PCをテザリングにつなぐ手順と会社のVPNがつながるかを平常時に一度試しておくと、当日は数分で戻れます。"
       }
     }
   ]
@@ -170,7 +186,7 @@
     <span class="card__cat">光回線</span>
     <h1 class="article-title">テレワークの回線おすすめ【2026年】在宅勤務に必要な速度と構成の作り方</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span class="upd">更新日:<time datetime="2026-10-17">2026年10月17日</time></span>
       <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -202,6 +218,7 @@
         <li><a href="#kousei">住まい別のおすすめ構成</a></li>
         <li><a href="#router">ルーターの見直し</a></li>
         <li><a href="#sakeru">避けたほうがいい選択</a></li>
+        <li><a href="#yobi">回線が止まった日のための予備</a></li>
         <li><a href="#keihi">経費と法人契約の考え方</a></li>
         <li><a href="#faq">よくある質問</a></li>
         <li><a href="#matome">まとめ</a></li>
@@ -291,8 +308,34 @@
       <p class="micro">※ 他社と横並びで比べるなら<a href="hikari-osusume">光回線おすすめ7社比較</a>へ</p>
     </div>
 
+    <h2 id="yobi">回線が止まった日のための「予備」を決めておく</h2>
+    <p>在宅勤務の回線で本当に困るのは、遅いことより<strong>大事な会議の直前に止まること</strong>です。光回線でも工事や障害で数時間使えない日はあります。止まってから考えるのでは遅いので、予備の手段を先に決めておきましょう。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>予備の手段</th><th>追加費用</th><th>向いている人</th><th>注意点</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>スマホのテザリング</th><td class="best">0円(データ容量を使う)</td><td>止まるのが年に数回なら十分</td><td>カメラありの会議は1時間で最大2GB前後。テザリングに容量の上限があるプランもある</td></tr>
+          <tr><th>格安SIMのデータ専用回線を1本</th><td>月数百円〜</td><td>スマホの容量を仕事で使いたくない人</td><td>PCに挿せるSIMフリーのモバイルルーターかスマホが必要</td></tr>
+          <tr><th>光回線+ホームルーターの2回線</th><td>月4,000〜5,000円前後</td><td>止まると収入に直結する人、配信・オンライン授業をする人</td><td>費用が倍近くになる。どちらか一方は縛りのない契約にしておく</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>多くの人はテザリングで足ります。大事なのは、<strong>切り替え方を一度試しておくこと</strong>です。PCをスマホのテザリングにつなぐ手順、会議ツールの再接続、会社のVPNがテザリング経由でもつながるかを、平常時に確認しておけば、当日は数分で戻れます。テザリングで使う通信量の目安は<a href="web-kaigi-taisho">Web会議が途切れる原因と対処法</a>の通信量の表で計算できます。</p>
+    <p>障害かどうかを見分けるときは、回線事業者の障害情報ページと、ONU(光回線終端装置)のランプを確認します。見分け方と連絡先は<a href="hikari-shougai">光回線の障害は本当に多い?</a>にまとめています。</p>
+
     <h2 id="keihi">経費と法人契約の考え方</h2>
     <p>在宅勤務の通信費は、会社の規定によって扱いが変わります。個人事業主・フリーランスの場合は、<strong>業務で使った割合分を按分して経費に計上する</strong>のが一般的です。</p>
+    <h3>会社員の場合:手当か実費精算かで税金の扱いが違う</h3>
+    <p>会社から通信費が出る場合、その受け取り方で税金の扱いが変わります。国税庁の「在宅勤務に係る費用負担等に関するFAQ」によると、毎月決まった額を渡し切りで受け取る在宅勤務手当(使わなかった分を返さなくてよいもの)は、給与として課税されます。一方、業務で使った分を計算して精算してもらう方法なら、その額は課税されません。</p>
+    <p>自宅の回線のうち業務で使った分は、FAQで次のような計算方法が示されています。</p>
+    <div class="box-memo">
+      <div class="box-memo__t">📐 業務で使った通信費の計算(国税庁FAQの算式)</div>
+      <p style="margin:0;">1か月の基本使用料・通信料 × その月の在宅勤務日数 ÷ その月の日数 × 1/2<br>例:月5,390円の光回線で、30日の月に20日在宅勤務した場合 → 5,390円 × 20 ÷ 30 × 1/2 ≒ <strong>1,797円</strong>(1円未満切り上げ)</p>
+    </div>
+    <p>最後の1/2は、1日のうち睡眠時間を除いた時間に占める労働時間の割合(8時間÷16時間)から来ています。会社がこの方法で精算してくれるかどうかは就業規則や社内規定によるので、まず総務・人事に確認してください。</p>
+    
     <p>法人契約にすると固定IPオプションが使えるなど選択肢は増えますが、月額は個人向けプランより高くなります。<strong>固定IPが業務要件でないなら、個人向けプランで十分</strong>なことがほとんどです。</p>
     <p>按分の根拠の作り方や、固定IPが本当に必要かの判断、インボイスの扱いは<a href="kojin-jigyounushi-hikari">個人事業主の光回線は法人契約が必要か</a>で詳しく整理しています。</p>
     <p class="micro">※ 経費計上の可否と按分の方法は税務の判断になります。詳細は税理士等の専門家にご確認ください。</p>
@@ -319,6 +362,14 @@
         <summary>10ギガプランにする意味はありますか?</summary>
         <div class="faq__a">在宅勤務目的ならほとんどありません。会議に必要な帯域は10Mbps台で、上限を10倍にしても安定性は変わらないためです。大容量の動画素材を日常的にやり取りするなど、明確な用途がある場合に限られます。</div>
       </details>
+      <details>
+        <summary>会社の在宅勤務手当に税金はかかりますか?</summary>
+        <div class="faq__a">毎月決まった額を渡し切りで受け取る手当は、給与として課税されます。業務で使った通信費を計算して実費で精算してもらう場合は、その額は課税されません(国税庁「在宅勤務に係る費用負担等に関するFAQ」)。</div>
+      </details>
+      <details>
+        <summary>在宅勤務の予備回線は必要ですか?</summary>
+        <div class="faq__a">多くの人はスマホのテザリングで足ります。大事な会議がある人は、PCをテザリングにつなぐ手順と会社のVPNがつながるかを平常時に一度試しておくと、当日は数分で戻れます。</div>
+      </details>
     </div>
 
     <h2 id="matome">まとめ</h2>
@@ -337,6 +388,7 @@
         <li>Zoom / Microsoft Teams / Google Meet の各公式ヘルプ「必要な帯域幅」(2026年8月確認)</li>
         <li>みんなのネット回線速度(ユーザー実測値の集計・2026年8月確認) — 回線種別ごとの上り・Ping</li>
         <li>経費計上の可否・按分の方法は個別の状況によります。税務の判断は専門家にご確認ください</li>
+        <li><a href="https://www.nta.go.jp/publication/pamph/pdf/0020012-080.pdf" rel="noopener" target="_blank">国税庁「在宅勤務に係る費用負担等に関するFAQ(源泉所得税関係)」</a>(問1・問6・問7。2026年10月確認)</li>
       </ul>
     </div>
   </div>
