@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="回線コンパス">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-08-30">
-<meta property="article:modified_time" content="2026-08-30">
+<meta property="article:modified_time" content="2026-10-17">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-homerouter-game.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -53,7 +53,7 @@
     }
   },
   "datePublished": "2026-08-30",
-  "dateModified": "2026-08-30",
+  "dateModified": "2026-10-17",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/homerouter-game"
 }
 </script>
@@ -100,6 +100,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "home 5G・WiMAXのホームルーターにはLANポートがあります。ソフトバンクエアーもモデルによって搭載しています。有線接続はPingと安定性の両方に効くので、ゲーム用途なら必須と考えてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ホームルーターのPingは光回線と比べてどのくらい違いますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "みんなのネット回線速度の直近3か月の平均(2026年9月取得)では、光回線が11〜23ms、ドコモ home 5G・SoftBank Air・WiMAX +5Gが41〜46msで、差はおおむね20〜30msです。上りはホームルーターが14〜28Mbpsと、光回線より大きく下がります。"
       }
     }
   ]
@@ -170,7 +178,7 @@
     <span class="card__cat">WiFi・ホームルーター</span>
     <h1 class="article-title">ホームルーターでゲームはできる?【2026年】Pingの実際とジャンル別の向き不向き</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span class="upd">更新日:<time datetime="2026-10-17">2026年10月17日</time></span>
       <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -235,20 +243,23 @@
     <p>もうひとつ大事なのが<strong>ジッター(Pingの揺れ)</strong>です。平均40msでも、瞬間的に150msまで跳ねる回線は、安定して60msの回線より体感が悪くなります。</p>
 
     <h2 id="jitsuryoku">ホームルーターのPing実測の目安</h2>
-    <p>ホームルーターは携帯電話の電波を使うため、光回線より経路が長くなります。実測の集計値を見ると、次のような傾向になります。</p>
+    <p>ホームルーターは携帯電話の電波を使うため、光回線より経路が長くなります。利用者が投稿した実測値を集計している「みんなのネット回線速度(みんそく)」の直近3か月の平均を並べると、次のとおりです。</p>
     <div class="tbl-wrap">
       <table class="cmp">
-        <thead><tr><th>回線</th><th>Pingの目安</th><th>揺れやすさ</th></tr></thead>
+        <thead><tr><th>回線</th><th>Ping(平均)</th><th>Ping(夜)</th><th>上り(平均)</th></tr></thead>
         <tbody>
-          <tr><th>光回線(IPv6)</th><td class="best">10〜20ms</td><td class="ok">小さい</td></tr>
-          <tr><th>ドコモ home 5G</th><td>30〜50ms</td><td>中</td></tr>
-          <tr><th>WiMAX +5G</th><td>30〜60ms</td><td>中</td></tr>
-          <tr><th>ソフトバンクエアー</th><td>40〜70ms</td><td class="ng">大きめ</td></tr>
+          <tr><th>NURO光</th><td class="best">11.43ms</td><td class="best">12.06ms</td><td>778.79Mbps</td></tr>
+          <tr><th>auひかり</th><td>16.50ms</td><td>16.06ms</td><td>622.96Mbps</td></tr>
+          <tr><th>ソフトバンク光</th><td>16.78ms</td><td>16.88ms</td><td>478.73Mbps</td></tr>
+          <tr><th>ドコモ光</th><td>21.65ms</td><td>22.89ms</td><td>448.31Mbps</td></tr>
+          <tr><th>ドコモ home 5G</th><td>40.81ms</td><td>40.95ms</td><td>22.54Mbps</td></tr>
+          <tr><th>SoftBank Air</th><td>42.93ms</td><td>46.36ms</td><td>14.03Mbps</td></tr>
+          <tr><th>WiMAX +5G(BIGLOBE WiMAX)</th><td>43.57ms</td><td>45.52ms</td><td>27.98Mbps</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="micro">※ 実測の集計値をもとにした執筆時点の目安です。エリア・時間帯・設置場所で大きく変わります</p>
-    <p>光回線との差は<strong>おおむね20〜40ms</strong>。この差が問題になるかどうかが、そのまま向き不向きの境界になります。</p>
+    <p class="micro">※ みんなのネット回線速度(minsoku.net)の直近3か月の平均と、時間帯別の「夜」の平均。2026年9月25日取得。投稿者の環境(有線・無線、機器、地域)が混ざった値で、自宅で同じ数字が出るとは限りません。</p>
+    <p>光回線が11〜23ms、ホームルーターが41〜46msで、<strong>差はおおむね20〜30ms</strong>です。この差が問題になるかどうかが、そのまま向き不向きの境界になります。もう1つ見逃せないのが<strong>上り</strong>で、ホームルーターは14〜28Mbpsと光回線の数十分の一です。プレイしながら配信をする人や、ゲームの録画をアップロードする人には、Pingより上りの差のほうが効いてきます。</p>
 
     <h2 id="genre">ジャンル別の向き不向き</h2>
     <div class="tbl-wrap">
@@ -296,6 +307,24 @@
       <a class="btn btn--cv" data-cta="body" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2W6WEY+50+7LVLZM" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBBホームWi-Fiの条件を見る<small>実質月額と特典を確認できます</small></a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BAH9H+2W6WEY+50+7LVLZM" alt="">
       <p class="micro">※ 窓口ごとの実質月額の比べ方は<a href="wimax-provider">WiMAXプロバイダ比較</a>で解説しています</p>
     </div>
+
+    <h3>NATタイプの警告が出たときの確認順</h3>
+    <p>ゲーム機のネットワーク設定で「NATタイプ」が「厳しい」「タイプ3」「NAT D」などと表示されると、ほかのプレイヤーとつながりにくくなることがあります。ホームルーターで警告が出たときは、次の順に確認してください。</p>
+    <ol class="steps">
+      <li>
+        <div class="steps__t">ルーターを経由する台数を減らす</div>
+        <p>ホームルーターの後ろに別のWi-Fiルーターをつないでいると、変換が二重になってNATが厳しく判定されやすくなります。後ろのルーターは「ブリッジモード(アクセスポイントモード)」に切り替えます。</p>
+      </li>
+      <li>
+        <div class="steps__t">ゲーム機をホームルーターに直接つなぐ</div>
+        <p>LANポートのある機種なら有線で直結し、もう一度NATタイプを判定し直します。</p>
+      </li>
+      <li>
+        <div class="steps__t">それでも改善しなければ回線の仕様を疑う</div>
+        <p>モバイル回線は複数の利用者で同じIPアドレスを共有する構成が多く、自宅側の設定だけではポート開放ができないことがあります。この場合は、光回線に切り替えるのが根本的な解決です。</p>
+      </li>
+    </ol>
+    <p>NATタイプが原因でマッチングに時間がかかっている場合、Pingをいくら改善しても解決しません。症状が「遅い」なのか「つながらない・マッチングしない」なのかで、打つ手が変わります。</p>
 
     <h2 id="sakai">光回線に切り替える境界線</h2>
     <p>次のどれかに当てはまるなら、ホームルーターではなく光回線を検討してください。</p>
@@ -347,6 +376,10 @@
         <summary>ゲーム機を有線でつなげますか?</summary>
         <div class="faq__a">home 5G・WiMAXのホームルーターにはLANポートがあります。ソフトバンクエアーもモデルによって搭載しています。有線接続はPingと安定性の両方に効くので、ゲーム用途なら必須と考えてください。</div>
       </details>
+      <details>
+        <summary>ホームルーターのPingは光回線と比べてどのくらい違いますか?</summary>
+        <div class="faq__a">みんなのネット回線速度の直近3か月の平均(2026年9月取得)では、光回線が11〜23ms、ドコモ home 5G・SoftBank Air・WiMAX +5Gが41〜46msで、差はおおむね20〜30msです。上りはホームルーターが14〜28Mbpsと、光回線より大きく下がります。</div>
+      </details>
     </div>
 
     <h2 id="matome">まとめ</h2>
@@ -365,6 +398,7 @@
         <li>みんなのネット回線速度(ユーザー実測値の集計・2026年8月確認) — 回線種別ごとのPing中央値</li>
         <li>各社公式サイトの端末仕様ページ(2026年8月確認) — LANポートの有無と対応規格</li>
         <li>Ping値の体感区分は一般的な目安であり、ゲームタイトルやサーバーの所在地によって変わります</li>
+        <li><a href="https://minsoku.net/" rel="noopener" target="_blank">みんなのネット回線速度(minsoku.net)</a>の回線別の平均値(直近3か月・夜の時間帯。2026年9月25日取得)</li>
       </ul>
     </div>
   </div>

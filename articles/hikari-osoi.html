@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="回線コンパス">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-08-30">
-<meta property="article:modified_time" content="2026-08-30">
+<meta property="article:modified_time" content="2026-10-17">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-hikari-osoi.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -38,7 +38,7 @@
   "description": "光回線が遅い原因は、回線そのものより「接続方式(PPPoE)」と「ルーター」にあることが大半です。スマホと有線で速度を比べる切り分けから、IPv6 IPoEへの切り替え、ルーターの寿命判断まで、契約を変える前に試せる順番で解説します。",
   "image": "https://kaisen-compass.com/images/og/eyecatch-hikari-osoi.png",
   "datePublished": "2026-08-30",
-  "dateModified": "2026-08-30",
+  "dateModified": "2026-10-17",
   "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん" },
   "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス",
     "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo.svg" } },
@@ -88,6 +88,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "接続台数と間取りで決まります。1LDKで数台なら1万円前後で十分です。3LDK以上や10台以上つなぐなら、メッシュ対応の機種を検討してください。価格より、IPv6 IPoEに対応しているかを先に確認します。中継機とメッシュのどちらを足すかはこちらの比較が参考になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "IPv6 IPoEになっているか、どうやって確認しますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ルーターの管理画面で、接続状態に「v6プラス」「IPv4 over IPv6」「MAP-E」「DS-Lite」などの表示があるかを見ます。「PPPoE」だけなら従来方式のままです。プロバイダの方式とルーターの対応表の方式名が合っているかも確認してください。"
       }
     }
   ]
@@ -144,7 +152,7 @@
     <span class="card__cat">光回線</span>
     <h1 class="article-title">光回線が遅いときの原因と直し方【2026年】5分でできる切り分け手順</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-08-30">2026年8月30日</time></span>
+      <span class="upd">更新日:<time datetime="2026-10-17">2026年10月17日</time></span>
       <span>公開日:<time datetime="2026-08-30">2026年8月30日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -176,6 +184,7 @@
         <li><a href="#router">ルーターの寿命を見分ける</a></li>
         <li><a href="#mansion">マンションだけに起きる遅さ</a></li>
         <li><a href="#norikae">乗り換えを考えるべきケース</a></li>
+        <li><a href="#sodan">それでも遅いとき、事業者に伝えること</a></li>
         <li><a href="#faq">よくある質問</a></li>
         <li><a href="#matome">まとめ</a></li>
       </ol>
@@ -255,6 +264,27 @@
       <div class="btn-area"><a class="btn btn--cv" data-cta="body" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" rel="nofollow sponsored noopener" target="_blank">GMOとくとくBB光の公式ページを見る<small>v6プラス標準対応・契約期間の縛りなし</small></a><img src="https://www16.a8.net/0.gif?a8mat=4BAH9H+2OG9JU+50+6M7QUQ" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
     </div>
 
+    <h3>IPv6 IPoEになっているかを確かめる</h3>
+    <p>申し込んだつもりでも、ルーター側が対応していないと従来方式のまま、ということがあります。確かめ方は2つです。</p>
+    <ul>
+      <li><strong>ルーターの管理画面を見る</strong>:接続状態の欄に「v6プラス」「IPv4 over IPv6」「MAP-E」「DS-Lite」などの表示があれば、新しい方式で通信できています。「PPPoE」だけが表示されているなら従来方式のままです</li>
+      <li><strong>IPv6の接続テストサイトで確認する</strong>:IPv6で通信できているかを判定してくれるサイトで「IPv6が使えます」と出るかを見ます。ただしIPv6が使えていても、IPv4の通信が従来方式のままのことがあるので、管理画面の表示とあわせて確認してください</li>
+    </ul>
+    <p>もう1つ大事なのが、<strong>IPv4 over IPv6の方式名とルーターの相性</strong>です。プロバイダによって使っている方式が違い、ルーターの対応表も方式名で書かれています。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>サービス名の例</th><th>方式</th><th>ルーター選びの注意</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>v6プラス、OCNバーチャルコネクト</th><td>MAP-E</td><td>対応表に「v6プラス」「OCNバーチャルコネクト」の名前があるか確認</td></tr>
+          <tr><th>transix、v6コネクト</th><td>DS-Lite</td><td>「transix」「DS-Lite」対応の記載があるか確認</td></tr>
+          <tr><th>クロスパス(Xpass)</th><td>IPIP系</td><td>「クロスパス」対応の機種は比較的限られる</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>どの方式かは、プロバイダの会員ページやサポートページの「IPv6」の項目に書かれています。迷ったら、プロバイダが貸し出している対応ルーターを使うのがいちばん確実です。仕組みの詳しい解説は<a href="ipv6-ipoe">IPv6(IPoE)とは?</a>にまとめています。</p>
+
     <h2 id="router">ルーターの寿命を見分ける</h2>
     <p>ルーターは消耗品です。<strong>目安は4〜5年</strong>で、それを超えると通信が不安定になります。次のどれかに当てはまるなら買い替えを検討してください。</p>
     <p>なお「遅い」を通り越して<strong>まったくつながらない</strong>状態なら、原因の探し方は別物になります。事業者側の障害なのか自宅側なのかを先に切り分ける必要があるので、<a href="hikari-shougai">光回線がつながらないときの5分切り分け</a>を先に見てください。</p>
@@ -299,6 +329,23 @@
       <div class="btn-area"><a class="btn btn--cv" data-cta="body" href="https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I" rel="nofollow sponsored noopener" target="_blank">BIGLOBE WiMAXの公式ページを見る<small>最低利用期間なし・口座振替に対応</small></a><img src="https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I" width="1" height="1" alt="" style="border:none;position:absolute" loading="lazy"></div>
     </div>
 
+    <h2 id="sodan">それでも遅いとき、事業者に伝えること</h2>
+    <p>ここまで試しても有線で遅い場合は、回線事業者やプロバイダのサポートに相談します。次の情報をそろえておくと、たらい回しにされにくく、話が早く進みます。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>伝えること</th><th>例</th><th>なぜ必要か</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>有線で測った速度と時間帯</th><td>平日21時に下り15Mbps、朝7時は320Mbps(3日分)</td><td>Wi-Fiの問題ではないこと、混雑の時間帯を示せる</td></tr>
+          <tr><th>接続方式</th><td>ルーターの画面で「v6プラス」接続を確認済み</td><td>方式の変更で直るかどうかの判断材料になる</td></tr>
+          <tr><th>機器の型番と使用年数</th><td>ルーター:◯◯(2019年購入)</td><td>機器の交換が必要かを判断できる</td></tr>
+          <tr><th>ONU(回線終端装置)のランプ</th><td>すべて緑で点灯、赤や点滅はなし</td><td>回線の故障かどうかの切り分けになる</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>光回線はベストエフォート型のサービスなので、速度そのものの保証はありません。ただ、設備の不具合や混雑の状況は事業者側でしか分からないことがあるため、記録をそろえて相談する価値はあります。測定のコツと記録のしかたは<a href="hikari-sokudo-sokutei">光回線の速度測定の正しい方法</a>で解説しています。</p>
+
     <h2 id="faq">よくある質問</h2>
     <div class="faq">
       <details>
@@ -320,6 +367,10 @@
       <details>
         <summary>ルーターは高いものを買うべきですか?</summary>
         <div class="faq__a">接続台数と間取りで決まります。<strong>1LDKで数台なら1万円前後で十分</strong>です。3LDK以上や10台以上つなぐなら、メッシュ対応の機種を検討してください。価格より、IPv6 IPoEに対応しているかを先に確認します。中継機とメッシュのどちらを足すかは<a href="mesh-wifi-chukeiki">こちらの比較</a>が参考になります。</div>
+      </details>
+      <details>
+        <summary>IPv6 IPoEになっているか、どうやって確認しますか?</summary>
+        <div class="faq__a">ルーターの管理画面で、接続状態に「v6プラス」「IPv4 over IPv6」「MAP-E」「DS-Lite」などの表示があるかを見ます。「PPPoE」だけなら従来方式のままです。プロバイダの方式とルーターの対応表の方式名が合っているかも確認してください。</div>
       </details>
     </div>
 
