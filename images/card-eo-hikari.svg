@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="eo光のサービス概要" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs><linearGradient id="h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f08c00"/><stop offset="1" stop-color="#d9480f"/></linearGradient></defs>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <rect width="800" height="130" fill="url(#h)"/>
+  <circle cx="740" cy="20" r="90" fill="#ffffff" opacity=".08"/>
+  <text x="40" y="78" font-size="44" font-weight="800" fill="#ffffff">eo光(イオ光)</text>
+  <text x="40" y="112" font-size="19" fill="#fff1d6">オプテージ(関西電力グループ)|関西2府4県と福井県の一部</text>
+  <text x="40" y="185" font-size="17" fill="#5f6b7a">シンプルプラン10ギガ(戸建て・2年目以降)</text>
+  <text x="40" y="240" font-size="38" font-weight="800" fill="#0b2c5f">月額 5,500円</text>
+  <text x="40" y="290" font-size="26" font-weight="700" fill="#26303e">最低利用期間なし</text>
+  <g font-size="20" fill="#26303e">
+    <circle cx="432" cy="188" r="13" fill="#0e9f6e"/><text x="425" y="195" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="196">自社網の独自回線</text>
+    <circle cx="432" cy="248" r="13" fill="#0e9f6e"/><text x="425" y="255" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="256">au・UQのセット割に対応</text>
+    <circle cx="432" cy="308" r="13" fill="#0e9f6e"/><text x="425" y="315" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="316">他社違約金を最大6万円還元</text>
+  </g>
+  <line x1="40" y1="365" x2="760" y2="365" stroke="#e2e6e4" stroke-width="2"/>
+  <text x="40" y="390" font-size="14" fill="#94a3b5">出典:eo光公式(2026年10月確認)。シンプルプランはWeb申込限定・ネットのみ。</text>
+  <text x="40" y="410" font-size="14" fill="#94a3b5">au・UQのセット割はeo光ネット+eo光電話の契約が条件。違約金還元は戸建て・要申請</text>
+</svg>
