@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="回線コンパス">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-08-29">
-<meta property="article:modified_time" content="2026-08-29">
+<meta property="article:modified_time" content="2026-10-17">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-webkaigi.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -40,7 +40,7 @@
   "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
   "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
   "datePublished": "2026-08-29",
-  "dateModified": "2026-08-29",
+  "dateModified": "2026-10-17",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/web-kaigi-taisho"
 }
 </script>
@@ -71,6 +71,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "LANケーブル直結テストの結果次第です。有線で速ければルーター(数千円〜)、有線でも遅ければ回線(乗り換え)。テストせずに買い替えると、お金を無駄にすることがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会社のPCだけWeb会議が途切れます。原因は何ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "私物の端末では快適なら、会社のVPNを経由していることが原因の可能性があります。Microsoftは会議の通信をVPNに通さない「スプリットトンネル」を推奨しています。VPNを自分で切らず、測定結果を添えて情報システム担当に相談してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "テザリングでWeb会議をすると何GB使いますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoomの推奨帯域で計算すると、1時間あたり音声のみで約70MB、グループ会議の標準画質で約0.7GB、720pで約2GBが上限の目安です。毎日使うなら、カメラありで月数十GBになります。"
       }
     }
   ]
@@ -127,7 +143,7 @@
     <span class="card__cat">トラブル解決</span>
     <h1 class="article-title">Web会議が途切れる・固まる原因と対処法|5分でできる切り分け手順</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-08-29">2026年8月29日</time></span>
+      <span class="upd">更新日:<time datetime="2026-10-17">2026年10月17日</time></span>
       <span>公開日:<time datetime="2026-08-29">2026年8月29日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -157,8 +173,11 @@
       <ol>
         <li><a href="#kinkyu">【会議中】30秒でできる応急処置</a></li>
         <li><a href="#hitsuyou">そもそもWeb会議に必要な速度は?</a></li>
+        <li><a href="#shojou">症状から原因の当たりをつける早見表</a></li>
         <li><a href="#kiriwake">【会議後】5分でできる犯人の切り分け</a></li>
         <li><a href="#taisaku">原因別の根本対策</a></li>
+        <li><a href="#vpn">会社のVPN経由で遅いとき</a></li>
+        <li><a href="#tethering">テザリングで乗り切るときの通信量</a></li>
         <li><a href="#faq">よくある質問</a></li>
         <li><a href="#matome">まとめ</a></li>
       </ol>
@@ -189,6 +208,44 @@
     </figure>
     <p>HD画質の会議で上下10〜15Mbpsあれば十分です。つまり<strong>「平均では足りているのに途切れる」=瞬間的な低下や不安定さが犯人</strong>ということ。そしてもう1つ重要なのが、自分の声と映像を送る<strong>上り(アップロード)</strong>。下りは速いのに上りが細い環境(集合住宅のVDSLやモバイル回線)では、「相手の声は聞こえるのに、自分の声だけ途切れて聞こえている」現象が起きます。</p>
 
+    <h3>会議ツール別の推奨帯域(各社公式)</h3>
+    <p>3大ツールの公式ヘルプに載っている数字を並べました。単位はMbps(1Mbps=1,000kbps)で、いずれも参加者1人あたりの目安です。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>ツール</th><th>音声のみ</th><th>ビデオ(720p前後)</th><th>ビデオ(1080p)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Zoom</th><td>0.06〜0.08</td><td>1対1:上下1.2 / グループ:上り2.6・下り1.8</td><td>上り3.8・下り3.0</td></tr>
+          <tr><th>Microsoft Teams</th><td>推奨0.058(最低0.01)</td><td>推奨 1対1:上下1.5 / 会議:上り2.5・下り4.0</td><td>最高品質で上下4.0</td></tr>
+          <tr><th>Google Meet</th><td>上下0.1</td><td>上下 最大1.7</td><td>上下 最大3.6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 2026年10月時点の各社公式ヘルプの記載。Teamsは「推奨」「最高のパフォーマンス」の区分、Meetは小規模な組織・個人向けの上限目安。ツール側は回線が細いと自動で画質を下げるので、実際の消費はこれより少なくなることが多いです。</p>
+    <p>どのツールも、1080pのビデオ会議でも上下4Mbps前後に収まります。それなのに上で「10〜15Mbps」としているのは、<strong>会議中も家族の動画やクラウド同期が同じ回線を使う</strong>ことと、夜の混雑で速度が瞬間的に半分以下へ落ちることを見込んだ余裕です。逆に言えば、測定で上下10Mbps以上出ているのに途切れるなら、足りないのは速さではなく安定性(遅延・ジッター・パケットロス)のほうです。</p>
+    <p>遅延については、Googleが管理者向けヘルプで「Googleとの往復の遅延が100ミリ秒未満で映像品質が最も良くなり、300ミリ秒以上で品質が落ちる」と目安を示しています。速度測定のPing(応答時間)が普段は20〜30ミリ秒なのに、会議の時間帯だけ100ミリ秒を超えるなら、混雑か自宅内のWi-Fiが揺れているサインです。</p>
+
+    <h2 id="shojou">症状から原因の当たりをつける早見表</h2>
+    <p>「途切れる」と一口に言っても、どう途切れるかで疑う場所が変わります。切り分けの前に、自分の症状がどれに近いかを見てください。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>症状</th><th>まず疑う場所</th><th>最初の一手</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>相手の声は聞こえるのに、自分の声だけ途切れると言われる</th><td>上り(アップロード)</td><td>速度測定で上りを確認。VDSLマンションやモバイル回線は上りが細くなりやすい</td></tr>
+          <tr><th>相手の映像が固まる・カクカクする</th><td>下りか、自宅のWi-Fi</td><td>ルーターに近づくか有線でつなぎ、改善するか見る</td></tr>
+          <tr><th>声がロボットのようになる・数秒おきに途切れる</th><td>パケットロス・ジッター(通信の揺れ)</td><td>2.4GHzから5GHzへ。電子レンジや中継機の位置も確認</td></tr>
+          <tr><th>毎日、夜や昼休みなど同じ時間帯だけ悪い</th><td>回線の混雑</td><td>その時間帯に有線で測る。IPv6(IPoE)に対応しているか確認</td></tr>
+          <tr><th>画面共有を始めると落ちる・PCが熱くなる</th><td>PCの処理能力</td><td>タスクマネージャーでCPU使用率を見る。不要なタブとアプリを閉じる</td></tr>
+          <tr><th>会社のPCだけ遅く、私物の端末は快適</th><td>会社のVPN・セキュリティソフト</td><td>下の「会社のVPN経由で遅いとき」へ</td></tr>
+          <tr><th>会議の途中で数十秒〜数分まるごと切れる</th><td>回線の瞬断・ルーターの不調</td><td>ONUとルーターのランプを確認。頻発するなら機器か回線の交換を検討</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>複数の症状が重なっているときは、表の上から順に潰していくと無駄がありません。上りの細さとWi-Fiの揺れが同時に起きている家庭はよくあり、片方だけ直して「変わらなかった」と判断してしまうのがいちばんもったいないパターンです。</p>
+
     <h2 id="kiriwake">【会議後】5分でできる犯人の切り分け</h2>
     <ol class="steps">
       <li>
@@ -204,6 +261,17 @@
         <p>スマホでは快適なのにPCだけ遅いなら、PC側(常駐アプリ・古い無線規格・セキュリティソフト)の問題の可能性が高いです。</p>
       </li>
     </ol>
+
+    <div class="box-point">
+      <div class="box-point__t">✅ 会議ツールの「通信状況」画面も見ておく</div>
+      <p>3つのツールとも、会議中の通信状態を確かめる画面を持っています。速度測定は「その瞬間」の値ですが、こちらは<strong>会議中に実際どうだったか</strong>が分かります。</p>
+      <ul>
+        <li><strong>Zoom</strong>:設定画面の「統計情報」。音声・ビデオごとに遅延、ジッター、パケット損失が表示されます</li>
+        <li><strong>Microsoft Teams</strong>:会議中の「…(その他)」メニューにある「通話の正常性」。ネットワークや音声・ビデオの状態を確認できます</li>
+        <li><strong>Google Meet</strong>:「その他のオプション」の「トラブルシューティングとヘルプ」。ネットワークの安定性とCPU負荷の推移がグラフで出ます</li>
+      </ul>
+      <p>メニュー名はアプリのバージョンで変わることがあります。パケット損失が数%出ている、Meetのグラフでネットワークが赤くなっている、といった記録があれば、回線事業者や社内の情報システム担当に相談するときの材料にもなります。</p>
+    </div>
 
     <h2 id="taisaku">原因別の根本対策</h2>
 
@@ -228,6 +296,34 @@
       <li>クラウド同期(OneDrive・Googleドライブ等)を<strong>会議中は一時停止</strong></li>
       <li>ブラウザ版ではなく<strong>アプリ版</strong>の会議ツールを使う(負荷が軽いことが多い)</li>
     </ul>
+
+    <h2 id="vpn">会社のVPN経由で遅いとき</h2>
+    <p>会社支給のPCでは、通信がいったん会社のVPN(暗号化した専用の経路)を通ってからインターネットに出ていくことがあります。この場合、自宅の回線が速くても、<strong>VPNの出口が混んでいると会議だけ遅くなる</strong>ことがあります。私物のスマホやPCでは快適なのに、会社のPCだけ途切れるなら、まずこれを疑ってください。</p>
+    <p>Microsoftは、Teamsの通話や会議の通信をVPNに通さず直接インターネットへ出す「スプリットトンネル」を推奨しています。VPNはリアルタイムの音声・映像向けに設計されていないことが多く、遠回りの経路で遅延やジッターが増えるためです。</p>
+    <ul>
+      <li><strong>自分でVPNを切らない</strong>:会社の規程違反になることがあります。設定を変えられるのは情報システム担当です</li>
+      <li><strong>伝えるときは事実をそろえる</strong>:「私物の端末では快適」「会社PCは有線でも遅い」「会議ツールの通信状況で遅延やパケット損失が出ている」の3点があると話が早く進みます</li>
+      <li><strong>会議だけブラウザ版・スマホアプリで参加できるか確認する</strong>:社内ルールで許されていれば、当日の応急処置になります</li>
+    </ul>
+    <p>自宅のルーター側で見直すべき項目は、<a href="zaitaku-kinmu-security">在宅勤務のセキュリティで見るルーター設定7項目</a>にまとめています。</p>
+
+    <h2 id="tethering">テザリングで乗り切るときの通信量</h2>
+    <p>応急処置のテザリングは確実ですが、スマホのデータ容量を使います。上の公式の推奨帯域から、1時間あたりの最大量を計算すると次のとおりです(上りと下りの合計。ツールは回線に合わせて画質を下げるので、実際はこれより少なくなることが多いです)。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>参加のしかた(Zoomの推奨帯域で計算)</th><th>上下の合計</th><th>1時間あたり</th><th>月20回(1時間)なら</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>音声のみ</th><td>約0.16Mbps</td><td class="best">約70MB</td><td>約1.4GB</td></tr>
+          <tr><th>グループ会議・標準画質</th><td>約1.6Mbps</td><td>約0.7GB</td><td>約14GB</td></tr>
+          <tr><th>グループ会議・720p</th><td>約4.4Mbps</td><td>約2.0GB</td><td>約40GB</td></tr>
+          <tr><th>1080p</th><td>約6.8Mbps</td><td>約3.1GB</td><td>約61GB</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 計算式:Mbps × 3,600秒 ÷ 8 = MB。Zoom公式の推奨帯域(2026年10月確認)を上限として使った目安です。</p>
+    <p>カメラをオフにして音声だけで参加すれば、1時間でも100MBに届かない計算です。たまの緊急避難なら20GB前後のプランでも十分ですが、<strong>毎日の会議をテザリングで続けると、カメラありで月数十GBになります</strong>。また、無制限プランでもテザリングだけ別の上限が決められていることがあります。続けるなら<a href="tethering-kotei-kaisen">テザリングは固定回線の代わりになるか</a>で条件を確認してから決めてください。動画の視聴も含めた通信量は<a href="douga-tsushinryou">動画の通信量の早見表</a>で計算できます。</p>
 
     <div class="voice">
       <div class="voice__icon"><img src="../images/avatar.svg" alt="もりそん" width="96" height="96" loading="lazy" decoding="async"></div>
@@ -259,6 +355,14 @@
         <summary>ルーターと回線、どちらを先に見直すべき?</summary>
         <div class="faq__a">LANケーブル直結テストの結果次第です。有線で速ければルーター(数千円〜)、有線でも遅ければ回線(乗り換え)。テストせずに買い替えると、お金を無駄にすることがあります。</div>
       </details>
+      <details>
+        <summary>会社のPCだけWeb会議が途切れます。原因は何ですか?</summary>
+        <div class="faq__a">私物の端末では快適なら、会社のVPNを経由していることが原因の可能性があります。Microsoftは会議の通信をVPNに通さない「スプリットトンネル」を推奨しています。VPNを自分で切らず、測定結果を添えて情報システム担当に相談してください。</div>
+      </details>
+      <details>
+        <summary>テザリングでWeb会議をすると何GB使いますか?</summary>
+        <div class="faq__a">Zoomの推奨帯域で計算すると、1時間あたり音声のみで約70MB、グループ会議の標準画質で約0.7GB、720pで約2GBが上限の目安です。毎日使うなら、カメラありで月数十GBになります。</div>
+      </details>
     </div>
 
     <h2 id="matome">まとめ:切り分けてから、お金と時間を使う</h2>
@@ -272,7 +376,11 @@
     <div class="sources">
       <div class="sources__t">📚 参考情報・データの出典</div>
       <ul>
-        <li>Zoom・Microsoft Teams・Google Meet 公式ヘルプの推奨帯域</li>
+        <li>Zoom・Microsoft Teams・Google Meet 公式ヘルプの推奨帯域(下記)</li>
+        <li><a href="https://support.zoom.com/hc/ja/article?id=zm_kb&amp;sysparm_article=KB0060748" rel="noopener" target="_blank">Zoom サポート:Zoom のシステム要件(帯域幅)</a>(2026年10月確認)</li>
+        <li><a href="https://learn.microsoft.com/ja-jp/microsoftteams/prepare-network" rel="noopener" target="_blank">Microsoft Learn:Teams 用に組織のネットワークを準備する(帯域幅要件・スプリットトンネル VPN)</a>(2026年10月確認)</li>
+        <li><a href="https://knowledge.workspace.google.com/admin/meet/prepare-your-network-for-meet-meetings-and-live-streams?hl=ja" rel="noopener" target="_blank">Google Workspace 管理者ヘルプ:Meet のネットワークを準備する</a>(2026年10月確認)</li>
+        <li><a href="https://knowledge.workspace.google.com/admin/support/troubleshooting/troubleshoot-meet-network-audio-and-video-issues?hl=ja" rel="noopener" target="_blank">Google Workspace 管理者ヘルプ:Meet のネットワーク・音声・動画の問題のトラブルシューティング(遅延の目安)</a>(2026年10月確認)</li>
       </ul>
     </div>
   </div>

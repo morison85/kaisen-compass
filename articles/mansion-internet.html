@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="回線コンパス">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-08-29">
-<meta property="article:modified_time" content="2026-08-29">
+<meta property="article:modified_time" content="2026-10-17">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-mansion.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -40,7 +40,7 @@
   "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
   "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
   "datePublished": "2026-08-29",
-  "dateModified": "2026-08-29",
+  "dateModified": "2026-10-17",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/mansion-internet"
 }
 </script>
@@ -79,6 +79,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "管理会社・大家の許可があれば可能です。光コンセントが既にある部屋なら工事なし(無派遣)で開通できることも多いので、まず部屋の壁を確認してみてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "VDSLのマンションから光配線に移ることはできますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "建物に光配線方式の設備が併設されていれば移れる場合があります。NTT西日本は併設建物の移行工事について、2025年1月1日以降の申し込み分の工事費を無料にしています。対象かどうかは116か契約中の事業者に確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "内見のときにネット環境の何を見ればいいですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "壁に光コンセントがあるか、建物にどの回線設備が入っているか、「インターネット無料」なら提供方式と個別契約の可否、工事が必要な場合の条件の4つです。"
       }
     }
   ]
@@ -135,7 +151,7 @@
     <span class="card__cat">光回線</span>
     <h1 class="article-title">マンションのネットが遅い原因と解決策|配線方式の確認から乗り換えまで図解</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-08-29">2026年8月29日</time></span>
+      <span class="upd">更新日:<time datetime="2026-10-17">2026年10月17日</time></span>
       <span>公開日:<time datetime="2026-08-29">2026年8月29日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -167,7 +183,10 @@
         <li><a href="#kiriwake">まず5分:原因の切り分け3ステップ</a></li>
         <li><a href="#haisen">速度を決める「配線方式」を理解する</a></li>
         <li><a href="#shirabe">自分の部屋の配線方式の調べ方</a></li>
+        <li><a href="#ikou">VDSLの物件でも、光配線に移れる場合がある</a></li>
         <li><a href="#taisho">解決策を効果の大きい順に</a></li>
+        <li><a href="#toiawase">管理会社にはこう聞く(問い合わせ文の例)</a></li>
+        <li><a href="#naiken">これから部屋を探すなら:内見で見ておく4つのこと</a></li>
         <li><a href="#norikae">乗り換えるならどの回線?</a></li>
         <li><a href="#faq">よくある質問</a></li>
         <li><a href="#matome">まとめ</a></li>
@@ -208,6 +227,23 @@
     </figure>
     <p>VDSL方式は電話線を使うため、<strong>どんな回線を契約しても理論値100Mbpsが上限</strong>。夜の混雑にも弱く、「遅いマンション」の典型パターンです。築15年以上の物件に多く残っています。</p>
 
+    <h3>3方式の違いを表で見る</h3>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>配線方式</th><th>共用部から部屋まで</th><th>最大速度(フレッツ光の場合)</th><th>部屋で見える機器</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>光配線方式</th><td>光ファイバー</td><td class="best">最大1Gbps(10ギガ対応の建物もある)</td><td>壁の「光コンセント」+ONU</td></tr>
+          <tr><th>VDSL方式</th><td>電話線(銅線)</td><td>最大100Mbps</td><td>電話の差込口につながったVDSL装置</td></tr>
+          <tr><th>LAN配線方式</th><td>LANケーブル</td><td>最大100Mbps</td><td>壁のLANポート(装置なしでつながることも)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ NTT東日本・西日本「フレッツ 光ネクスト マンションタイプ」の技術規格上の最大値。auひかりなど他社設備や、建物独自のインターネット設備では上限が異なります。</p>
+    <p>もう1つ押さえておきたいのが、<strong>マンションタイプは建物までの回線を住人で分け合う仕組み</strong>だということです。NTT東日本の資料でも、マンションタイプは「最大1Gbpsのアクセス区間を複数の利用者で共用する」サービスと説明されています。同じ建物の利用者が一斉に使う夜に遅くなりやすいのはこのためで、配線方式が光でも、夜だけ落ちる物件はあります。その場合に効くのが、後で説明するIPv6(IPoE)への切り替えです。</p>
+    <p>ちなみにフレッツ光を直接契約する場合、マンションタイプの月額は「ミニ」「プラン1」「プラン2」の区分で変わります。区分は同じ建物で見込まれる契約数で決まり(NTT東日本は4・8・16契約、NTT西日本は6・8・16契約が目安)、契約が多い建物ほど1契約あたりが安くなります。ドコモ光などの光コラボは建物の区分に関係なく一律のマンション料金のことが多いので、料金表の区分が分からなくても比べやすいのが利点です。</p>
+
     <h2 id="shirabe">自分の部屋の配線方式の調べ方</h2>
     <ul>
       <li><strong>壁の差込口を見る</strong>:「光コンセント」の表記があれば光配線方式。電話のモジュラージャックにVDSL装置(モデム状の機器)が繋がっていればVDSL。壁にLANポートがあればLAN配線方式</li>
@@ -221,6 +257,23 @@
         <div class="voice__name">運営者・もりそん</div>
       </div>
     </div>
+
+    <h2 id="ikou">VDSLの物件でも、光配線に移れる場合がある</h2>
+    <p>NTTは、VDSL方式・LAN配線方式の設備を少しずつ光配線へ移す方向に動いています。2024年には東西それぞれで次のような発表がありました。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th></th><th>NTT東日本(2024年9月発表)</th><th>NTT西日本(2024年11月発表)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>対象の建物</th><td>VDSL/LAN配線方式の装置だけが置かれていて、利用者がいない集合住宅</td><td>光配線方式とVDSL/LAN方式の装置が併設されている一部の建物と、VDSL/LAN方式の装置だけで利用者がいない建物</td></tr>
+          <tr><th>VDSL/LANの新規受付</th><td>2024年10月24日に終了</td><td>2025年1月31日までに停止</td></tr>
+          <tr><th>その後の申し込み</th><td>光配線方式か戸建て方式で提供(建物によっては提供できない場合あり)</td><td>既存の利用者に案内のうえ、光配線方式への移行工事を受付。2025年1月1日以降に申し込んだ移行工事は工事費無料</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>つまり、<strong>今VDSLで使っている建物でも、すでに光配線の設備が併設されている</strong>ことがあります。NTT西日本エリアで併設の建物なら、移行工事費の負担なく光配線に移れる可能性があります。自分の建物が対象かは、NTTの窓口(局番なしの116)か、契約中の光コラボ事業者に「この建物に光配線方式の設備はありますか」と聞くのが確実です。</p>
+    <p>どちらの発表も「建物の状況によっては提供できない場合がある」としています。光配線の設備がない建物では、下の対策3にある別設備・戸建てタイプ・ホームルーターから選ぶことになります。</p>
 
     <h2 id="taisho">解決策を効果の大きい順に</h2>
 
@@ -240,6 +293,31 @@
 
     <h3>対策4【工事不可なら】ホームルーターに切り替える</h3>
     <p>工事の許可が下りない・引越し予定があるなら、コンセントに挿すだけの<strong>ホームルーター</strong>が現実解。5G対応エリアなら、VDSLより速くなるケースも普通にあります。詳しくは<a href="home-router">工事不要WiFi比較</a>で解説しています。</p>
+
+    <h2 id="toiawase">管理会社にはこう聞く(コピーして使える文面)</h2>
+    <p>配線方式や別設備の有無は、管理会社や大家さんに聞くのがいちばん確実です。ただ「ネットが遅いんですが」と伝えると話が広がりすぎるので、確認したいことを3点に絞って聞くと返事が早くなります。</p>
+    <div class="box-memo">
+      <div class="box-memo__t">📝 問い合わせ文の例</div>
+      <p style="margin:0;">お世話になっております。〇〇号室の△△です。インターネット回線について、次の3点を教えていただけますでしょうか。<br>1. 建物のインターネット設備の配線方式(光配線方式/VDSL方式/LAN配線方式のどれか)<br>2. フレッツ光以外に、auひかりなど別の回線設備が建物に入っているか<br>3. 2の設備がない場合、部屋まで光ファイバーを直接引き込む工事(戸建てタイプ)を相談できるか。可能な場合、穴あけの有無や原状回復の条件<br>工事が必要になる場合は、内容が分かった時点であらためてご相談します。よろしくお願いいたします。</p>
+    </div>
+    <p>3点目まで先に聞いておくと、「VDSLしかない」と分かったときに次の手をすぐ打てます。工事の許可の取り方や、許可が要る工事・要らない工事の線引きは<a href="chintai-hikari-kyoka">賃貸で光回線を勝手に契約していいか</a>で詳しく解説しています。</p>
+
+    <h2 id="naiken">これから部屋を探すなら:内見で見ておく4つのこと</h2>
+    <p>引越し前なら、入居してから悩むより物件選びの段階で見抜くほうがずっと楽です。内見のときに次の4つを確認してください。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>確認すること</th><th>見る場所・聞く相手</th><th>望ましい状態</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>部屋の壁の差込口</th><td>リビングや各部屋の壁</td><td class="best">「光」と書かれた光コンセントがある</td></tr>
+          <tr><th>建物に入っている回線</th><td>不動産会社に聞く/各社の物件検索</td><td>光配線のフレッツ光、または別系統の回線設備がある</td></tr>
+          <tr><th>「インターネット無料」の中身</th><td>不動産会社に提供会社と方式を聞く</td><td>部屋ごとの光回線か、別途自分で契約できるか</td></tr>
+          <tr><th>個人契約・工事の可否</th><td>管理会社・大家さん</td><td>個別契約OK。工事が必要な場合の条件が明確</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>特に「インターネット無料」の物件は、建物全体で1本の回線を分け合っていることがあり、在宅勤務やオンラインゲームには足りないことがあります。無料ネットが遅い理由と、自分で回線を足すときの注意点は<a href="muryou-net-osoi">インターネット無料の賃貸が遅い理由</a>にまとめています。引越しに合わせた回線の手配は<a href="hikkoshi-internet">引越しのネット回線の段取り</a>も参考にしてください。</p>
 
     <h2 id="norikae">乗り換えるならどの回線?</h2>
     <p>マンションでの乗り換え先は「建物対応 × スマホのセット割」で決めます。</p>
@@ -293,6 +371,14 @@
         <summary>賃貸でも光回線の工事はできますか?</summary>
         <div class="faq__a">管理会社・大家の許可があれば可能です。光コンセントが既にある部屋なら工事なし(無派遣)で開通できることも多いので、まず部屋の壁を確認してみてください。</div>
       </details>
+      <details>
+        <summary>VDSLのマンションから光配線に移ることはできますか?</summary>
+        <div class="faq__a">建物に光配線方式の設備が併設されていれば移れる場合があります。NTT西日本は併設建物の移行工事について、2025年1月1日以降の申し込み分の工事費を無料にしています。対象かどうかは116か契約中の事業者に確認してください。</div>
+      </details>
+      <details>
+        <summary>内見のときにネット環境の何を見ればいいですか?</summary>
+        <div class="faq__a">壁に光コンセントがあるか、建物にどの回線設備が入っているか、「インターネット無料」なら提供方式と個別契約の可否、工事が必要な場合の条件の4つです。</div>
+      </details>
     </div>
 
     <h2 id="matome">まとめ:犯人を特定してから、お金を使う</h2>
@@ -309,6 +395,9 @@
       <ul>
         <li>NTT東日本・西日本 公式サイト(マンションの配線方式・提供形態)</li>
         <li>各社公式サイトの物件検索・提供エリア情報(2026年8月確認)</li>
+        <li><a href="https://internet.watch.impress.co.jp/docs/news/1626872.html" rel="noopener" target="_blank">INTERNET Watch:NTT東日本、VDSL/LAN配線方式の一部で新規申込受付を終了(2024年10月1日)</a></li>
+        <li><a href="https://internet.watch.impress.co.jp/docs/news/1643795.html" rel="noopener" target="_blank">INTERNET Watch:NTT西日本、VDSL/LAN方式から光配線方式への移行工事費を無料に(2024年12月6日)</a></li>
+        <li>NTT東日本「フレッツ 光ネクスト マンションタイプ」サービス説明資料(配線方式別の最大速度・アクセス区間の共用)</li>
       </ul>
     </div>
   </div>
