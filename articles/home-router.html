@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="回線コンパス">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-08-29">
-<meta property="article:modified_time" content="2026-09-24">
+<meta property="article:modified_time" content="2026-10-17">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kaisen-compass.com/images/og/eyecatch-homerouter.png">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -40,7 +40,7 @@
   "author": { "@type": "Person", "@id": "https://kaisen-compass.com/about#person", "name": "もりそん", "url": "https://kaisen-compass.com/about" },
   "publisher": { "@type": "Organization", "@id": "https://kaisen-compass.com/#organization", "name": "回線コンパス", "logo": { "@type": "ImageObject", "url": "https://kaisen-compass.com/images/logo-512.png", "width": 512, "height": 512 } },
   "datePublished": "2026-08-29",
-  "dateModified": "2026-09-24",
+  "dateModified": "2026-10-17",
   "mainEntityOfPage": "https://kaisen-compass.com/articles/home-router"
 }
 </script>
@@ -71,6 +71,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "初期契約解除制度(8日以内)が使えます。WiMAXには無料お試し制度(Try WiMAX)もあるので、不安ならまず試すのがおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ホームルーターの2年総額はいくらですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "月額×24か月+事務手数料−セット割で計算すると、BIGLOBE WiMAX +5Gが約9万円(au・UQのセット割で約6.3万円)、ドコモ home 5GとSoftBank Airが約12.2万円です。端末代とキャッシュバックは含めていません。"
       }
     }
   ]
@@ -127,7 +135,7 @@
     <span class="card__cat">WiFi・ホームルーター</span>
     <h1 class="article-title">工事不要WiFiおすすめ比較【2026年】ホームルーター3社と置くだけWiFiの選び方</h1>
     <div class="article-meta">
-      <span class="upd">更新日:<time datetime="2026-09-24">2026年9月24日</time></span>
+      <span class="upd">更新日:<time datetime="2026-10-17">2026年10月17日</time></span>
       <span>公開日:<time datetime="2026-08-29">2026年8月29日</time></span>
       <span>執筆:<a href="../about">もりそん</a></span>
     </div>
@@ -218,7 +226,7 @@
           </tr>
           <tr>
             <th>ソフトバンクエアー</th>
-            <td>5,368円<br>(割引期間は3,000円台)</td>
+            <td>4,950円(24か月目まで。代理店NEXT経由)<br>25か月目以降5,368円</td>
             <td>ソフトバンク 5G/4G</td>
             <td>無制限(公平制御あり)</td>
             <td>SB・ワイモバ最大1,650円/月</td>
@@ -227,6 +235,41 @@
       </table>
     </div>
     <p style="font-size:.82rem;color:var(--c-text-sub);">※「公平制御」=ネットワーク混雑時に速度制限がかかる場合がある、の意。常識的な使い方で制限されることはまれです。</p>
+
+    <h3>実測で比べると:下りは十分、上りとPingは光回線と別物</h3>
+    <p>利用者の実測値を集計している「みんなのネット回線速度(みんそく)」の直近3か月の平均を、3サービスで並べました。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>サービス</th><th>下り(夜)</th><th>上り(平均)</th><th>Ping(夜)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>ドコモ home 5G</th><td class="best">166.68Mbps</td><td>22.54Mbps</td><td class="best">40.95ms</td></tr>
+          <tr><th>WiMAX +5G(BIGLOBE WiMAX)</th><td>139.11Mbps</td><td class="best">27.98Mbps</td><td>45.52ms</td></tr>
+          <tr><th>SoftBank Air</th><td>152.23Mbps</td><td>14.03Mbps</td><td>46.36ms</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ みんなのネット回線速度(minsoku.net)の直近3か月の平均、下りとPingは時間帯別の「夜」の平均。2026年9月25日取得。設置場所や地域で大きく変わります。</p>
+    <p>夜でも下り140〜170Mbps前後出ていれば、動画の視聴やWeb会議には十分です。差が出るのは上りで、3サービスとも14〜28Mbpsと、光回線(450〜780Mbps前後)の数十分の一です。大きなファイルをアップロードする仕事や、配信をする人は光回線を優先してください。Pingは3サービスとも40ms台で、対戦ゲームの向き不向きは<a href="homerouter-game">ホームルーターでオンラインゲームはできる?</a>で詳しく比べています。</p>
+
+    <h3>2年総額で比べると</h3>
+    <p>当サイトの<a href="../sougaku">2年総額シミュレーター</a>と同じ数字で、ホームルーター4機種の2年総額を出しました。セット割は対象のスマホ1台ぶんです。</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>サービス</th><th>月額</th><th>セット割なし</th><th>セット割あり(1台)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>BIGLOBE WiMAX +5G</th><td>3,608円(24か月目まで)</td><td class="best">89,892円</td><td>au・UQ:63,492円</td></tr>
+          <tr><th>ドコモ home 5G</th><td>4,950円</td><td>122,100円</td><td>ドコモ:95,700円</td></tr>
+          <tr><th>SoftBank Air</th><td>4,950円(24か月目まで)</td><td>122,650円</td><td>ソフトバンク:96,250円 / ワイモバイル:83,050円</td></tr>
+          <tr><th>5G CONNECT</th><td>4,980円</td><td>122,820円</td><td>(セット割なし)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="micro">※ 月額×24か月+事務手数料(SoftBank AirはWeb・電話申込の3,850円、ほかは3,300円)−セット割(各社公表の1回線あたり最大額×24か月)。端末代・キャッシュバックは含めていません。料金は2026年9〜10月確認の税込。</p>
+    <p>WiMAXは窓口ごとの割引が大きいぶん、2年総額では頭ひとつ安くなります。ただしBIGLOBE WiMAXは25か月目から月額が上がるので、3年使うなら差は縮みます(3年総額はWiMAXが約15.3万円、home 5Gが約18.2万円)。エリアと速度で迷ったらhome 5G、総額を抑えたいならWiMAX、ワイモバイルのスマホがあるならSoftBank Air、という整理になります。</p>
 
     <h2 id="osusume">3サービスの詳細レビュー</h2>
 
@@ -374,6 +417,10 @@
         <summary>速度が不安。試せますか?</summary>
         <div class="faq__a">初期契約解除制度(8日以内)が使えます。WiMAXには無料お試し制度(Try WiMAX)もあるので、不安ならまず試すのがおすすめです。</div>
       </details>
+      <details>
+        <summary>ホームルーターの2年総額はいくらですか?</summary>
+        <div class="faq__a">月額×24か月+事務手数料−セット割で計算すると、BIGLOBE WiMAX +5Gが約9万円(au・UQのセット割で約6.3万円)、ドコモ home 5GとSoftBank Airが約12.2万円です。端末代とキャッシュバックは含めていません。</div>
+      </details>
     </div>
 
     <h2 id="matome">まとめ:スマホに合わせて選び、8日以内に見極める</h2>
@@ -389,6 +436,8 @@
       <ul>
         <li>各社公式サイトの料金・エリア・端末情報(2026年8月確認)</li>
         <li>総務省「電気通信事業法に基づく初期契約解除制度」の解説ページ</li>
+        <li><a href="https://minsoku.net/" rel="noopener" target="_blank">みんなのネット回線速度(minsoku.net)</a>のサービス別平均(2026年9月25日取得)</li>
+        <li>当サイトの<a href="../sougaku">2年総額シミュレーター</a>の料金データ(js/total.js。事務手数料はドコモ光・ソフトバンク系の改定を反映)</li>
       </ul>
     </div>
   </div>
