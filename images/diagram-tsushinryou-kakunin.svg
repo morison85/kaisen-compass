@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="キャリアのアプリで月の合計を確認し、スマホ本体の画面でアプリ別の内訳を確認する役割分担の図" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1200" height="520" fill="#f4f7fc"/>
+  <text x="600" y="54" text-anchor="middle" font-size="28" font-weight="800" fill="#0b2c5f">合計はキャリア、内訳は本体で見る</text>
+
+  <!-- 左: キャリア(x=60〜560) 最長行「請求・速度制限の判定に使う数字」15×22=330 -->
+  <rect x="60" y="90" width="500" height="250" rx="20" fill="#ffffff" stroke="#1558d6" stroke-width="3"/>
+  <rect x="60" y="90" width="500" height="60" rx="20" fill="#1558d6"/>
+  <rect x="60" y="130" width="500" height="20" fill="#1558d6"/>
+  <text x="310" y="130" text-anchor="middle" font-size="26" font-weight="800" fill="#ffffff">キャリアのアプリ・会員ページ</text>
+  <text x="96" y="196" font-size="22" font-weight="700" fill="#0b2c5f">見るもの:月ごとの合計(GB)</text>
+  <text x="96" y="236" font-size="22" font-weight="700" fill="#0b2c5f">期間:請求の対象月</text>
+  <text x="96" y="276" font-size="22" font-weight="700" fill="#0b2c5f">請求・速度制限の判定に使う数字</text>
+  <text x="96" y="316" font-size="22" font-weight="800" fill="#0e9f6e">→ プランの容量を決める</text>
+
+  <!-- 右: 本体(x=640〜1140) -->
+  <rect x="640" y="90" width="500" height="250" rx="20" fill="#ffffff" stroke="#8fb3f0" stroke-width="3"/>
+  <rect x="640" y="90" width="500" height="60" rx="20" fill="#8fb3f0"/>
+  <rect x="640" y="130" width="500" height="20" fill="#8fb3f0"/>
+  <text x="890" y="130" text-anchor="middle" font-size="26" font-weight="800" fill="#0b2c5f">スマホ本体の設定画面</text>
+  <text x="676" y="196" font-size="22" font-weight="700" fill="#0b2c5f">見るもの:アプリ別の使用量</text>
+  <text x="676" y="236" font-size="22" font-weight="700" fill="#0b2c5f">期間:iPhoneはリセットからの累計</text>
+  <text x="676" y="276" font-size="22" font-weight="700" fill="#0b2c5f">端末が数えた推計</text>
+  <text x="676" y="316" font-size="22" font-weight="800" fill="#c2410c">→ 減らす対象を探す</text>
+
+  <!-- 下: 流れ 4ステップ 各幅240 -->
+  <g font-size="20" font-weight="800" text-anchor="middle">
+    <rect x="60" y="390" width="240" height="80" rx="16" fill="#0b2c5f"/>
+    <text x="180" y="438" fill="#ffffff">①キャリアで合計</text>
+    <rect x="347" y="390" width="240" height="80" rx="16" fill="#ffffff" stroke="#c8d6ee" stroke-width="2"/>
+    <text x="467" y="438" fill="#0b2c5f">②本体で内訳</text>
+    <rect x="634" y="390" width="240" height="80" rx="16" fill="#ffffff" stroke="#c8d6ee" stroke-width="2"/>
+    <text x="754" y="438" fill="#0b2c5f">③設定を直す</text>
+    <rect x="921" y="390" width="219" height="80" rx="16" fill="#ffd76a"/>
+    <text x="1030" y="438" fill="#0b2c5f">④翌月に再確認</text>
+  </g>
+  <g stroke="#1558d6" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M306 430 h34"/><path d="M330 420 l10 10 l-10 10"/>
+    <path d="M593 430 h34"/><path d="M617 420 l10 10 l-10 10"/>
+    <path d="M880 430 h34"/><path d="M904 420 l10 10 l-10 10"/>
+  </g>
+</svg>

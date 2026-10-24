@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 19 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 24 Oct 2026 12:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>スマホの通信量を確認する方法|iPhone・Android・各社アプリの数字がズレる理由とプランの決め方【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/sumaho-tsushinryou-kakunin</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/sumaho-tsushinryou-kakunin</guid>
+    <pubDate>Sat, 24 Oct 2026 12:00:00 +0900</pubDate>
+    <description>スマホの通信量はキャリアのアプリの月ごとの数字で確認します。iPhoneの設定画面は最後にリセットしてからの累計なので、そのままでは月の使用量になりません。iPhone・Androidの確認手順、各社アプリの見る場所、3か月の記録シート、定額か段階制かを決める判定表まで。</description>
+  </item>
   <item>
     <title>ビッグローブ光の事業者変更承諾番号の取り方|電話予約の3枠・当日メール・違約金がかかる月 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/biglobe-hikari-shodaku-bangou</link>
