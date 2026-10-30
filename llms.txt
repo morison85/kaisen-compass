@@ -5,6 +5,7 @@
 ## 主要コンテンツ
 
 <!-- 20261031 -->
+- [【毎日更新】光回線・WiMAX・格安SIMのキャンペーンまとめ](https://kaisen-compass.com/articles/campaign-matome): 各社の公式ページを毎日確認し、今使える特典を締切が近い順にまとめたページ。
 - [ドコモの値上げはいつから?](https://kaisen-compass.com/articles/docomo-neage-2026): 2026年12月1日からeximo +550円、irumo 3〜9GB +330円。ドコモ MAX・miniなどは対象外。ドコモ miniの新規受付は11月30日まで。ahamoや格安SIMへ移った場合の年間差も計算。
 - [ソフトバンク光の値上げはいつから?](https://kaisen-compass.com/articles/sbhikari-neage): 2026年12月以降に月330円の値上げ。2年自動更新は満了月の翌月から。11月30日までは専用窓口(光0800-888-2755/Air 0800-888-2756)で解除料免除。
 - [ahamoの値上げはいつから?](https://kaisen-compass.com/articles/ahamo-neage-2026): 2026年12月1日から40GB 3,135円・60GB 4,125円・120GB 5,115円の段階制。月のギガ別に残るか移るかを計算。
