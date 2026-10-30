@@ -15,12 +15,14 @@
     { id: "sbair", name: "SoftBank Air(代理店NEXT)", cat: "router", price: 4950, price2: 5368, fee: 3850, set: { sb: 1100, ymobile: 1650 }, shibari: "あり", href: "https://px.a8.net/svt/ejp?a8mat=4BAH9H+2YKMU2+348K+2N9KIA", aff: true, beacon: "https://www12.a8.net/0.gif?a8mat=4BAH9H+2YKMU2+348K+2N9KIA", note: "24ヶ月目まで4,950円(以後5,368円)。端末代は含めていません" },
     { id: "biglobewimax", name: "BIGLOBE WiMAX +5G", cat: "router", price: 3608, price2: 5258, set: { au: 1100, uq: 1100 }, shibari: "なし", href: "https://px.a8.net/svt/ejp?a8mat=4BAH9H+198ZIY+B4+2BD44I", aff: true, beacon: "https://www16.a8.net/0.gif?a8mat=4BAH9H+198ZIY+B4+2BD44I", note: "5,258円から24ヶ月目まで1,650円引き(3,608円)で計算" },
     { id: "5gconnect", name: "5G CONNECT", cat: "router", price: 4980, set: {}, shibari: "なし", href: "//af.moshimo.com/af/c/click?a_id=5781568&p_id=4143&pc_id=10502&pl_id=5664", aff: true, beacon: "//i.moshimo.com/af/i/impression?a_id=5781568&p_id=4143&pc_id=10502&pl_id=5664", note: "端末購入プランの月額。レンタルは5,450円" },
-    { id: "home5g", name: "ドコモ home 5G", cat: "router", price: 4950, set: { docomo: 1100 }, shibari: "なし", href: "https://www.docomo.ne.jp/home_5g/", aff: false, note: "端末代(実質無料の条件あり)は含めていません" }
+    { id: "home5g", name: "ドコモ home 5G", cat: "router", price: 5280, fee: 0, set: { docomo: 1100 }, shibari: "なし", href: "https://www.docomo.ne.jp/home_5g/", aff: false, note: "端末代(実質無料の条件あり)は含めていません" }
   ];
   var FEE = 3300;                              // 契約事務手数料の標準。fee がある社はそちらを使う
+  // home 5G はドコモオンラインショップなら事務手数料無料(店舗は4,950円)なので fee: 0(2026-10-31 確認)
   // ドコモ光は2025-09-05から新規4,950円(Webも同額)。SoftBank 光/Air は2025-08-20から4,950円、Web・電話申込は1,100円引きの3,850円(各社公式発表)
   var KOUJI = { home: 22000, mansion: 16500 }; // 光コラボの標準工事費の目安
 
+  function feeOf(s) { return s.fee == null ? FEE : s.fee; }
   function monthly(s, sumai) { return s.cat === "hikari" ? (sumai === "home" ? s.home : s.mansion) : s.price; }
   function byId(id) { for (var i = 0; i < S.length; i++) if (S[i].id === id) return S[i]; return null; }
   function yen(n) { return n.toLocaleString("ja-JP") + "円"; }
@@ -41,7 +43,7 @@
     }
     var per = s.set[o.carrier] || 0;
     var disc = per * lines * months;
-    return { s: s, monthly: m, monthly2: m2, kouji: kouji, per: per, disc: disc, fee: s.fee || FEE, total: base + (s.fee || FEE) + kouji - disc, months: months, lines: lines };
+    return { s: s, monthly: m, monthly2: m2, kouji: kouji, per: per, disc: disc, fee: feeOf(s), total: base + feeOf(s) + kouji - disc, months: months, lines: lines };
   }
   w.KC_TOTAL = { S: S, FEE: FEE, KOUJI: KOUJI, monthly: monthly, byId: byId, calc: calc, yen: yen };
 })(window);
