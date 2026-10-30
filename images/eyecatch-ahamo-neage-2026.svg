@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="ahamoの値上げはいつから。12月の新料金と既存ユーザーの損得" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:段階制の階段 -->
+  <g transform="translate(850, 330)">
+    <rect x="0" y="136" width="94" height="90" rx="10" fill="#ffffff"/>
+    <rect x="100" y="76" width="94" height="150" rx="10" fill="#9fc1f5"/>
+    <rect x="200" y="0" width="94" height="226" rx="10" fill="#ffd76a"/>
+    <text x="47" y="192" text-anchor="middle" font-size="26" font-weight="800" fill="#0b2c5f">40GB</text>
+    <text x="147" y="162" text-anchor="middle" font-size="26" font-weight="800" fill="#0b2c5f">60GB</text>
+    <text x="247" y="124" text-anchor="middle" font-size="24" font-weight="800" fill="#0b2c5f">120GB</text>
+  </g>
+
+  <rect x="70" y="80" width="300" height="56" rx="28" fill="#ffd76a"/>
+  <text x="220" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">12月1日から段階制</text>
+
+  <text x="70" y="248" font-size="84" font-weight="800" fill="#ffffff">ahamoの値上げ</text>
+  <text x="70" y="346" font-size="78" font-weight="800" fill="#ffd76a">既存ユーザーの損得</text>
+  <text x="70" y="426" font-size="34" font-weight="700" fill="#dbe7ff">40GB 3,135円からの新料金</text>
+  <text x="70" y="476" font-size="34" font-weight="700" fill="#dbe7ff">残るか移るかをギガ別に計算</text>
+  <text x="70" y="572" font-size="26" font-weight="700" fill="#9fc1f5">回線コンパス</text>
+</svg>

@@ -20,16 +20,20 @@
     });
   }
 
-  // CTA クリックの計測(2026-09-24)。[data-cta] 付きリンクのクリックを GA4 の gtag があるときだけ送る。
-  // ※ 測定IDは未取得なので gtag タグ自体は入れていない(head の <!-- analytics --> が置き場所)。無いときは何もしない
+  // CTA クリックの計測。data-cta が無いリンクも広告リンクなら拾う(2026-10-31: A8 のクリック333に対し cta_click が6件しかなかったため)
   document.addEventListener("click", function (e) {
     var t = e.target;
-    var a = t && t.closest ? t.closest("[data-cta]") : null;
+    var a = t && t.closest ? t.closest("a[href]") : null;
     if (!a || typeof window.gtag !== "function") return;
+    var href = a.getAttribute("href") || "";
+    var asp = /a8\.net/.test(href) ? "a8" : /moshimo\.com/.test(href) ? "moshimo" : /valuecommerce/.test(href) ? "vc" : "";
+    if (!asp && !a.hasAttribute("data-cta")) return;
     try {
       window.gtag("event", "cta_click", {
-        cta_type: a.getAttribute("data-cta") || "",
-        href: a.getAttribute("href") || "",
+        cta_type: a.getAttribute("data-cta") || "other",
+        cta_label: (a.textContent || "").replace(/\s+/g, " ").trim().slice(0, 60),
+        asp: asp,
+        href: href,
         page_path: location.pathname
       });
     } catch (err) {}

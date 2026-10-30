@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="ソフトバンク光の値上げはいつから。12月の新料金と11月30日までの解約金0円" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:カレンダーと期限 -->
+  <g transform="translate(880, 320)">
+    <rect x="0" y="0" width="240" height="236" rx="16" fill="#ffffff"/>
+    <rect x="0" y="0" width="240" height="58" rx="16" fill="#9fc1f5"/>
+    <rect x="0" y="40" width="240" height="18" fill="#9fc1f5"/>
+    <text x="120" y="42" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">11月</text>
+    <text x="120" y="164" text-anchor="middle" font-size="96" font-weight="800" fill="#0b2c5f">30</text>
+    <rect x="44" y="184" width="152" height="34" rx="8" fill="#ffd76a"/>
+    <text x="120" y="210" text-anchor="middle" font-size="24" font-weight="800" fill="#0b2c5f">解約金0円</text>
+  </g>
+
+  <rect x="70" y="80" width="300" height="56" rx="28" fill="#ffd76a"/>
+  <text x="220" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">12月から +330円</text>
+
+  <text x="70" y="248" font-size="78" font-weight="800" fill="#ffffff">ソフトバンク光の</text>
+  <text x="70" y="346" font-size="78" font-weight="800" fill="#ffd76a">値上げはいつから</text>
+  <text x="70" y="426" font-size="34" font-weight="700" fill="#dbe7ff">上がる時期はプランで違う</text>
+  <text x="70" y="476" font-size="34" font-weight="700" fill="#dbe7ff">解約金が免除される窓口も</text>
+  <text x="70" y="572" font-size="26" font-weight="700" fill="#9fc1f5">回線コンパス</text>
+</svg>
