@@ -2,8 +2,8 @@
  "note": "キャンペーンまとめ(articles/campaign-matome)の元データ。.claude/build_deals.py が記事を生成する。公式で確認できた内容だけを書く。deadline を過ぎた項目は生成時に自動で外れる。watch は公式ページに残っているはずの文言で、毎日の確認に使う。",
  "items": [
   {
-   "id": "ymobile-sale", "cat": "sim", "name": "Y!mobile オンラインストア", "headline": "ハロウィンセール:事務手数料無料・SIM特典増額",
-   "detail": "オンラインストア限定のセールで、新規契約と他社からののりかえが対象です。機種変更は事務手数料無料の対象外です。",
+   "id": "ymobile-sale", "cat": "sim", "name": "Y!mobile オンラインストア", "headline": "ハロウィンセール:事務手数料無料、のりかえでPayPayポイント最大15,000円相当",
+   "detail": "オンラインストア限定のセールで、新規契約と他社からののりかえが対象です。機種変更は事務手数料無料の対象外です。15,000円相当は、他社からのりかえてシンプル3とデータ増量オプション(月550円)に加入した場合の額で、ソフトバンク・LINEMOなどからののりかえは対象外です。",
    "who": "ワイモバイルへ新規・のりかえする人", "deadline": "2026-11-02", "deadline_text": "11月2日 14:59まで",
    "source": "https://www.ymobile.jp/cp/", "watch": ["ハロウィンセール"], "checked": "2026-10-31", "aff": null
   },
@@ -15,9 +15,21 @@
   },
   {
    "id": "iijmio", "cat": "sim", "name": "IIJmio", "headline": "25ギガプランが最大6か月間、30ギガ・月900円",
-   "detail": "ハッピープライスキャンペーンで5ギガ増量し、ハッピースマイルキャンペーンと併用した場合の額です。他社からのりかえでスマホをセット購入する人向けの端末セールも同じ期間です。",
+   "detail": "ハッピープライスキャンペーン+で5ギガ増量し、ハッピースマイルキャンペーン+と併用した場合の額です。音声SIM・音声eSIMが対象で、データ専用とSMSのプランは対象外です。他社からのりかえでスマホをセット購入する人向けの端末セールも同じ期間です。",
    "who": "大容量を安く試したい人", "deadline": "2026-11-04", "deadline_text": "11月4日まで",
    "source": "https://www.iijmio.jp/campaign/", "watch": ["ハッピープライス", "2026/11/4"], "checked": "2026-10-31", "aff": null
+  },
+  {
+   "id": "iijmio-5g", "cat": "sim", "name": "IIJmio", "headline": "5ギガプランが最大3か月間、月550円",
+   "detail": "ハッピースマイルキャンペーン+の月額料金割引です。終了日は未定でしたが、10月22日に11月4日で終了すると公式から案内がありました。",
+   "who": "月5GBくらいで安く始めたい人", "deadline": "2026-11-04", "deadline_text": "11月4日まで",
+   "source": "https://www.iijmio.jp/campaign/", "watch": ["ハッピースマイルキャンペーン", "5ギガ550円"], "checked": "2026-10-31", "aff": null
+  },
+  {
+   "id": "iijmio-esim", "cat": "sim", "name": "IIJmio データeSIM", "headline": "2ギガプランが最大3か月間0円、初期費用は半額",
+   "detail": "eSIMスタート応援キャンペーンで、データ通信専用eSIMの新規申し込みが対象です。月額はドコモ網440円、au網740円が最大3か月間0円になります。初期費用とプロファイル発行手数料の計3,520円は1,650円になり、初期費用の半額は1人1回線までです。eSIMに対応した端末が必要です。",
+   "who": "サブ回線をほしい人、eSIMを試したい人", "deadline": "2026-11-04", "deadline_text": "11月4日まで",
+   "source": "https://www.iijmio.jp/campaign/data-esim/", "watch": ["eSIMスタート応援キャンペーン", "11月4日"], "checked": "2026-10-31", "aff": null
   },
   {
    "id": "sb-kaijo", "cat": "notice", "name": "ソフトバンク光・SoftBank Air", "headline": "値上げを理由にした解約は解除料が免除",
@@ -26,7 +38,7 @@
   },
   {
    "id": "docomo-mini", "cat": "notice", "name": "ドコモ mini", "headline": "新規受付の終了",
-   "detail": "12月1日からは6GB・12GBの2段階制のドコモ mini2 が始まります。契約中の人はそのまま使えます。", "who": "ドコモのまま料金を下げたい人", "deadline": "2026-11-30", "deadline_text": "11月30日まで",
+   "detail": "12月1日からは6GB・12GBの2段階制のドコモ mini2 が始まります。契約中の人はそのまま使えます。11月30日まではデータ増量おためしキャンペーンで4GBが6GB、10GBが12GBになっていて、終了後は通常のデータ量に戻ります。", "who": "ドコモのまま料金を下げたい人", "deadline": "2026-11-30", "deadline_text": "11月30日まで",
    "source": "https://www.docomo.ne.jp/charge/docomo_mini/", "watch": ["新規お申込み受付を終了"], "checked": "2026-10-31", "aff": null, "link": ["docomo-neage-2026", "ドコモの改定額を見る"]
   },
   {
@@ -65,6 +77,13 @@
    "aff": {"mat": "4BAH9H+2RFFKQ+348K+1BP8ZM", "host": 15, "label": "ソフトバンク光のキャンペーンを見る"}
   },
   {
+   "id": "sb-ouen", "cat": "hikari", "name": "ソフトバンク光", "headline": "超おうち応援割:月額を25か月目まで最大880円割引、10ギガは最大1,760円",
+   "detail": "光回線の新規申し込みと同時に申し込み、他社の回線を使っているか、申込月の前後2か月の間に転居することが条件です。おうち割の適用があると、1ギガのファミリータイプは月880円、マンションタイプは月550円、10ギガは月1,760円の割引で、おうち割がないと額は半分です。最大額には指定オプション(月550円〜)の支払いが必要で、7か月目以降の割引には証明書の提出が必要です。自動更新なしプランは対象外です。",
+   "who": "他社から乗り換える人、引っ越す人で、ソフトバンク・ワイモバイルのスマホを使っている人", "deadline": null, "deadline_text": "終了日の記載なし",
+   "source": "https://www.softbank.jp/internet/campaigns/list/sbhikari-1g-2026/", "watch": ["超おうち応援割", "880円割引"], "checked": "2026-10-31",
+   "aff": {"mat": "4BAH9H+2RFFKQ+348K+1BP8ZM", "host": 15, "label": "ソフトバンク光のキャンペーンを見る"}
+  },
+  {
    "id": "biglobe", "cat": "hikari", "name": "ビッグローブ光", "headline": "新規の工事費 最大28,600円が実質0円",
    "detail": "回線新規の場合の特典で、新規工事費の分割払い相当をBIGLOBEが割り引きます。",
    "who": "au・UQ mobileのスマホで、工事なしの乗り換えも考える人", "deadline": null, "deadline_text": "終了日の記載なし",
@@ -92,13 +111,25 @@
   },
   {
    "id": "ymobile-waribiki", "cat": "sim", "name": "Y!mobile", "headline": "シンプル3 M/Lが12か月間、毎月1,100円割引",
-   "detail": "超おトク割です。1人でも、ネットとのセットがなくても使えます。おうち割 光セットなどとは重複できません。",
+   "detail": "超!おトク割です。1人でも、ネットとのセットがなくても使えます。おうち割 光セットなどとは重複できません。",
    "who": "1回線だけ契約する人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://www.ymobile.jp/cp/", "watch": ["超おトク割"], "checked": "2026-10-31", "aff": null
+   "source": "https://www.ymobile.jp/cp/", "watch": ["おトク割"], "checked": "2026-10-31", "aff": null
+  },
+  {
+   "id": "ymobile-trial", "cat": "sim", "name": "Y!mobile オンラインストア", "headline": "シンプル3 M(30GB)が2か月目まで基本料0円、事務手数料も0円",
+   "detail": "eSIMとSIMカードが対象で、専用ページからの申し込みに限ります。無料期間は課金が始まる月から数えて2か月間で、初月の割引は日割りです。3か月目からは自動で月4,378円がかかります。解約の縛りはありません。端末代と通話料は別です。",
+   "who": "乗り換える前に通信品質を試したい人", "deadline": null, "deadline_text": "終了日の記載なし",
+   "source": "https://www.ymobile.jp/store/sp/sim_trial_202610/", "watch": ["2ヵ月目まで0円"], "checked": "2026-10-31", "aff": null
+  },
+  {
+   "id": "ymobile-android", "cat": "sim", "name": "Y!mobile", "headline": "Androidへの機種変更でPayPayポイント10,000円相当",
+   "detail": "超トク!Android 機種変更キャンペーンです。契約日が2025年9月30日以前の人が、Google Pixel 10aかnubia Flip 3へ機種変更してエントリーすると対象になります。ポイントコードは2027年1月下旬以降にMMSで届く予定で、有効期限は2027年2月28日です。",
+   "who": "ワイモバイルを1年以上使っていて、機種変更を考えている人", "deadline": "2027-01-04", "deadline_text": "2027年1月4日まで",
+   "source": "https://www.ymobile.jp/cp/", "watch": ["Android 機種変更キャンペーン", "2027年1月4日"], "checked": "2026-10-31", "aff": null
   },
   {
    "id": "ahamo", "cat": "sim", "name": "ahamo", "headline": "乗り換えでdポイントプレゼント",
-   "detail": "12月1日から40GB 3,135円の段階制に変わります。申し込みから11月30日までは現在のプランが適用されます。ポイントの額と条件は公式のキャンペーンページで確認してください。",
+   "detail": "12月1日から40GB 3,135円の段階制に変わります。申し込みから11月30日までは現在のプランが適用されます。今はデータ増量おためしキャンペーンで、11月30日まで30GBが40GBになっています。ポイントの額と条件は公式のキャンペーンページで確認してください。",
    "who": "月20〜40GB使う人", "deadline": null, "deadline_text": "終了日の記載なし",
    "source": "https://ahamo.com/campaigns", "watch": ["お乗り換えでdポイントプレゼント"], "checked": "2026-10-31",
    "aff": {"mat": "4BAI1I+CF4KUY+4TIO+5YJRM", "host": null, "label": "ahamoの料金と条件を見る"}
@@ -112,6 +143,7 @@
   }
  ],
  "log": [
+  {"date": "2026-10-31", "text": "IIJmioの5ギガ・データeSIM、ワイモバイルの無料お試しとAndroid機種変更、ソフトバンク光の超おうち応援割を追加し、ワイモバイルのセールやドコモ・ahamoのデータ増量の説明を詳しくしました。"},
   {"date": "2026-10-31", "text": "このページを公開しました。光回線6社・ホームルーター2社・スマホ6社の特典を公式サイトで確認しました。"}
  ]
 }

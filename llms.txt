@@ -99,6 +99,7 @@
 - [IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順](https://kaisen-compass.com/articles/ipv6-ipoe): PPPoEは網終端装置を通るため夜間に混雑し、IPv6 IPoE(v6プラス等)は通らないため速い。申込→対応ルーター→自動設定の3手順、MAP-E/DS-Liteのポート制限、IPoE標準の回線(GMOとくとくBB光等)。
 
 ### 格安SIM
+- [家族割から1人だけ抜けるといくら損?残る家族の増額と得になる移り先を人数別に計算](https://kaisen-compass.com/articles/kazokuwari-hitori-nukeru): 家族割から1人抜けたときに残る家族の請求が増える額を、ドコモ・au・ソフトバンクの公式の割引額から人数別に計算。回線数に残る移り先と、ahamoと格安SIMの分かれ目の月額も示す。
 - [ドコモの値上げはいつから?12月の改定額一覧(eximo・irumo)と対象外プラン、乗り換えの損得](https://kaisen-compass.com/articles/docomo-neage-2026): ドコモの2026年12月1日の料金改定。eximo +550円、irumo 3〜9GB +330円、0.5GB +110円。ドコモ MAX・ポイ活 MAX・ポイ活 20・miniは対象外。ドコモ miniの新規受付は11月30日まで。ahamo・格安SIMへ移った場合の年間差。
 - [ahamoの値上げはいつから?12月の新料金と既存ユーザーの損得、ギガ別の乗り換え判定](https://kaisen-compass.com/articles/ahamo-neage-2026): ahamoの2026年12月1日の料金改定。40GB 3,135円・60GB 4,125円・120GB 5,115円の段階制。既存ユーザーは自動切替。11月1日時点の契約者は上限40GB自動設定。月のギガ別にLINEMO・楽天モバイル・NUROモバイルと年間差を比較。
 - [スマホを売る前にやること10の順番](https://kaisen-compass.com/articles/sumaho-baikyaku-junbi): 乗り換え・機種変更で余ったスマホを売る前の10ステップ。初期化で消えない紐付け(アクティベーションロック・FRP・スマホ用電子証明書)、返却プログラムとの損得比較、ネットワーク利用制限、宅配買取の流れ

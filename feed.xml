@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 31 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 18:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>家族割から1人だけ抜けるといくら損?残る家族の増額と得する移り先を計算 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/kazokuwari-hitori-nukeru</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/kazokuwari-hitori-nukeru</guid>
+    <pubDate>Sat, 31 Oct 2026 18:00:00 +0900</pubDate>
+    <description>家族割から1人抜けると残る家族の請求は月いくら上がるのか。4人→3人は0円、3人→2人は月1,100〜1,320円。回線数に残る移り先と、ahamoと格安SIMの分かれ目を公式の割引額から計算しました。</description>
+  </item>
   <item>
     <title>【毎日更新】光回線・WiMAX・格安SIMのキャンペーンまとめ | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/campaign-matome</link>

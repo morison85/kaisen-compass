@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="家族割から1人抜けると残る家族はいくら上がるか、人数別の計算" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:残る2人と抜ける1人 -->
+  <g transform="translate(895, 345)">
+    <circle cx="48" cy="44" r="38" fill="#ffffff"/>
+    <path d="M0 200 v-46 a48 48 0 0 1 96 0 v46 z" fill="#ffffff"/>
+    <circle cx="152" cy="44" r="38" fill="#9fc1f5"/>
+    <path d="M104 200 v-46 a48 48 0 0 1 96 0 v46 z" fill="#9fc1f5"/>
+    <circle cx="268" cy="14" r="30" fill="#ffd76a"/>
+    <path d="M230 150 v-58 a38 38 0 0 1 76 0 v58 z" fill="#ffd76a"/>
+    <path d="M236 182 h46 m-14 -13 l14 13 l-14 13" stroke="#ffd76a" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="70" y="80" width="360" height="56" rx="28" fill="#ffd76a"/>
+  <text x="250" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">3人家族がいちばん痛い</text>
+
+  <text x="70" y="248" font-size="78" font-weight="800" fill="#ffffff">家族割から1人抜ける</text>
+  <text x="70" y="342" font-size="72" font-weight="800" fill="#ffd76a">残る家族の増額は</text>
+  <text x="70" y="426" font-size="34" font-weight="700" fill="#dbe7ff">4人→3人は0円、3人→2人は月1,100円超</text>
+  <text x="70" y="476" font-size="34" font-weight="700" fill="#dbe7ff">ahamoと格安SIMの分かれ目を計算</text>
+  <text x="70" y="572" font-size="26" font-weight="700" fill="#9fc1f5">回線コンパス</text>
+</svg>
