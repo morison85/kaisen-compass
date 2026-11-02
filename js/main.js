@@ -26,7 +26,7 @@
     var a = t && t.closest ? t.closest("a[href]") : null;
     if (!a || typeof window.gtag !== "function") return;
     var href = a.getAttribute("href") || "";
-    var asp = /a8\.net/.test(href) ? "a8" : /moshimo\.com/.test(href) ? "moshimo" : /valuecommerce/.test(href) ? "vc" : "";
+    var asp = /a8\.net/.test(href) ? "a8" : /moshimo\.com/.test(href) ? "moshimo" : /valuecommerce/.test(href) ? "vc" : /accesstrade/.test(href) ? "at" : "";
     if (!asp && !a.hasAttribute("data-cta")) return;
     try {
       window.gtag("event", "cta_click", {

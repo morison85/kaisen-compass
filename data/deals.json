@@ -2,187 +2,563 @@
  "note": "キャンペーンまとめ(articles/campaign-matome)の元データ。.claude/build_deals.py が記事を生成する。公式で確認できた内容だけを書く。deadline を過ぎた項目は生成時に自動で外れる。watch は公式ページに残っているはずの文言で、毎日の確認に使う。",
  "items": [
   {
-   "id": "ymobile-sale", "cat": "sim", "name": "Y!mobile オンラインストア", "headline": "ハロウィンセール:事務手数料無料、のりかえでPayPayポイント最大15,000円相当",
+   "id": "ymobile-sale",
+   "cat": "sim",
+   "name": "Y!mobile オンラインストア",
+   "headline": "ハロウィンセール:事務手数料無料、のりかえでPayPayポイント最大15,000円相当",
    "detail": "オンラインストア限定のセールで、新規契約と他社からののりかえが対象です。機種変更は事務手数料無料の対象外です。15,000円相当は、他社からのりかえてシンプル3とデータ増量オプション(月550円)に加入した場合の額で、ソフトバンク・LINEMOなどからののりかえは対象外です。",
-   "who": "ワイモバイルへ新規・のりかえする人", "deadline": "2026-11-02", "deadline_text": "11月2日 14:59まで",
-   "source": "https://www.ymobile.jp/cp/", "watch": ["ハロウィンセール"], "checked": "2026-11-01", "aff": null
+   "who": "ワイモバイルへ新規・のりかえする人",
+   "deadline": "2026-11-02",
+   "deadline_text": "11月2日 14:59まで",
+   "source": "https://www.ymobile.jp/cp/",
+   "watch": [
+    "ハロウィンセール"
+   ],
+   "checked": "2026-11-01",
+   "aff": null
   },
   {
-   "id": "linemo", "cat": "sim", "name": "LINEMO", "headline": "他社からの乗り換えでPayPayポイント最大20,000円相当+契約事務手数料無料",
+   "id": "linemo",
+   "cat": "sim",
+   "name": "LINEMO",
+   "headline": "他社からの乗り換えでPayPayポイント最大20,000円相当+契約事務手数料無料",
    "detail": "最大額はLINEMOベストプランVへの乗り換えの場合で、通常は12,000円相当です。LINEMOベストプランの乗り換えは14,000円相当(通常10,000円相当)、新しい電話番号での契約はベストプランVが14,000円相当(通常6,000円相当)、ベストプランが7,000円相当(通常3,000円相当)です。契約事務手数料3,850円の無料には開通後のエントリーが必要です。公式には、11月4日から同等のキャンペーンを予定していると書かれています。",
-   "who": "LINEをよく使う人、月30GBまでで安くしたい人", "deadline": "2026-11-03", "deadline_text": "11月3日まで",
-   "source": "https://www.linemo.jp/campaign/", "watch": ["PayPay", "2026/11/3"], "checked": "2026-11-03", "aff": null
+   "who": "LINEをよく使う人、月30GBまでで安くしたい人",
+   "deadline": "2026-11-03",
+   "deadline_text": "11月3日まで",
+   "source": "https://www.linemo.jp/campaign/",
+   "watch": [
+    "PayPay",
+    "2026/11/3"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "linemo-okaeri", "cat": "sim", "name": "LINEMO おかえりだモン", "headline": "過去に契約した人は、他社からの乗り換えでPayPayポイント最大14,000円相当",
+   "id": "linemo-okaeri",
+   "cat": "sim",
+   "name": "LINEMO おかえりだモン",
+   "headline": "過去に契約した人は、他社からの乗り換えでPayPayポイント最大14,000円相当",
    "detail": "LINEMOベストプランは6,000円相当(通常2,000円相当)、LINEMOベストプランVは14,000円相当(通常6,000円相当)と公式に表示されています。このページを経由した申し込みに限ります。新しい電話番号での契約と、ソフトバンク・ワイモバイル・LINEモバイルからの乗り換えは対象外です。ベストプランVの額は、開通月の6か月後までプランを変えないことが条件です。ポイントは開通月の7か月後の上旬に届く予定です。",
-   "who": "以前LINEMOを契約していて、他社から戻る人", "deadline": "2026-11-03", "deadline_text": "増額は11月3日まで",
-   "source": "https://www.linemo.jp/campaign/okaeridamon/", "watch": ["おかえりだモン", "14,000円相当"], "checked": "2026-11-03", "aff": null
+   "who": "以前LINEMOを契約していて、他社から戻る人",
+   "deadline": "2026-11-03",
+   "deadline_text": "増額は11月3日まで",
+   "source": "https://www.linemo.jp/campaign/okaeridamon/",
+   "watch": [
+    "おかえりだモン",
+    "14,000円相当"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "linemo-double", "cat": "sim", "name": "LINEMO 2回線まとめて申し込み", "headline": "2回線目にPayPayポイント最大14,000円相当",
+   "id": "linemo-double",
+   "cat": "sim",
+   "name": "LINEMO 2回線まとめて申し込み",
+   "headline": "2回線目にPayPayポイント最大14,000円相当",
    "detail": "家族の分を同時に申し込むと、2回線目がLINEMOベストプランで10,000円相当、LINEMOベストプランVで14,000円相当(どちらも通常6,000円相当)と公式に表示されています。2回線目は申込月の翌月末までの開通が必要で、ソフトバンク・ワイモバイル・LINEモバイルからの乗り換えは対象外です。同時申し込みではeSIMを選べません。ポイントは開通月の7か月後の上旬に届く予定です。",
-   "who": "家族2人で乗り換える人", "deadline": "2026-11-03", "deadline_text": "増額は11月3日まで",
-   "source": "https://www.linemo.jp/campaign/double_202502/", "watch": ["2回線まとめて", "14,000円相当"], "checked": "2026-11-03", "aff": null
+   "who": "家族2人で乗り換える人",
+   "deadline": "2026-11-03",
+   "deadline_text": "増額は11月3日まで",
+   "source": "https://www.linemo.jp/campaign/double_202502/",
+   "watch": [
+    "2回線まとめて",
+    "14,000円相当"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "iijmio", "cat": "sim", "name": "IIJmio", "headline": "25ギガプランが最大6か月間、30ギガ・月900円",
+   "id": "iijmio",
+   "cat": "sim",
+   "name": "IIJmio",
+   "headline": "25ギガプランが最大6か月間、30ギガ・月900円",
    "detail": "ハッピープライスキャンペーン+で5ギガ増量し、ハッピースマイルキャンペーン+と併用した場合の額です。音声SIM・音声eSIMが対象で、データ専用とSMSのプランは対象外です。他社からのりかえでスマホをセット購入する人向けの端末セールも同じ期間です。",
-   "who": "大容量を安く試したい人", "deadline": "2026-11-04", "deadline_text": "11月4日まで",
-   "source": "https://www.iijmio.jp/campaign/", "watch": ["ハッピープライス", "2026/11/4"], "checked": "2026-11-03", "aff": null
+   "who": "大容量を安く試したい人",
+   "deadline": "2026-11-04",
+   "deadline_text": "11月4日まで",
+   "source": "https://www.iijmio.jp/campaign/",
+   "watch": [
+    "ハッピープライス",
+    "2026/11/4"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "iijmio-5g", "cat": "sim", "name": "IIJmio", "headline": "5ギガプランが最大3か月間、月550円",
+   "id": "iijmio-5g",
+   "cat": "sim",
+   "name": "IIJmio",
+   "headline": "5ギガプランが最大3か月間、月550円",
    "detail": "ハッピースマイルキャンペーン+の月額料金割引です。終了日は未定でしたが、10月22日に11月4日で終了すると公式から案内がありました。",
-   "who": "月5GBくらいで安く始めたい人", "deadline": "2026-11-04", "deadline_text": "11月4日まで",
-   "source": "https://www.iijmio.jp/campaign/", "watch": ["ハッピースマイルキャンペーン", "5ギガ550円"], "checked": "2026-11-03", "aff": null
+   "who": "月5GBくらいで安く始めたい人",
+   "deadline": "2026-11-04",
+   "deadline_text": "11月4日まで",
+   "source": "https://www.iijmio.jp/campaign/",
+   "watch": [
+    "ハッピースマイルキャンペーン",
+    "5ギガ550円"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "iijmio-esim", "cat": "sim", "name": "IIJmio データeSIM", "headline": "2ギガプランが最大3か月間0円、初期費用は半額",
+   "id": "iijmio-esim",
+   "cat": "sim",
+   "name": "IIJmio データeSIM",
+   "headline": "2ギガプランが最大3か月間0円、初期費用は半額",
    "detail": "eSIMスタート応援キャンペーンで、データ通信専用eSIMの新規申し込みが対象です。月額はドコモ網440円、au網740円が最大3か月間0円になります。初期費用とプロファイル発行手数料の計3,520円は1,650円になり、初期費用の半額は1人1回線までです。eSIMに対応した端末が必要です。",
-   "who": "サブ回線をほしい人、eSIMを試したい人", "deadline": "2026-11-04", "deadline_text": "11月4日まで",
-   "source": "https://www.iijmio.jp/campaign/data-esim/", "watch": ["eSIMスタート応援キャンペーン", "11月4日"], "checked": "2026-11-03", "aff": null
+   "who": "サブ回線をほしい人、eSIMを試したい人",
+   "deadline": "2026-11-04",
+   "deadline_text": "11月4日まで",
+   "source": "https://www.iijmio.jp/campaign/data-esim/",
+   "watch": [
+    "eSIMスタート応援キャンペーン",
+    "11月4日"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "iijmio-coupon", "cat": "sim", "name": "IIJmio クーポンカード/デジタル", "headline": "Loppiでの購入分のデータ量が20%増量",
+   "id": "iijmio-coupon",
+   "cat": "sim",
+   "name": "IIJmio クーポンカード/デジタル",
+   "headline": "Loppiでの購入分のデータ量が20%増量",
    "detail": "10GBが12GB、5GBが6GB、2GBが2.4GB、500MBが600MBになります。プリペイドパックと月額料金プランにリチャージできます。IIJmioクーポンカード、クーポンカード/セレクタブル、クーポンカード(デジタルギフトカード)は対象外です。購入から3か月以内をめどにリチャージします。",
-   "who": "IIJmioでデータを買い足す人", "deadline": "2026-11-30", "deadline_text": "11月30日まで",
-   "source": "https://www.iijmio.jp/campaign/loppi/2610.html", "watch": ["20%", "10GB→12GB"], "checked": "2026-11-03", "aff": null
+   "who": "IIJmioでデータを買い足す人",
+   "deadline": "2026-11-30",
+   "deadline_text": "11月30日まで",
+   "source": "https://www.iijmio.jp/campaign/loppi/2610.html",
+   "watch": [
+    "20%",
+    "10GB→12GB"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "sb-kaijo", "cat": "notice", "name": "ソフトバンク光・SoftBank Air", "headline": "値上げを理由にした解約は解除料が免除",
-   "detail": "12月の値上げに伴う特例です。専用窓口での手続きが必要で、工事費の残金は免除の文言に含まれていません。", "who": "ソフトバンク光を解約したい人", "deadline": "2026-11-30", "deadline_text": "11月30日まで",
-   "source": "https://www.softbank.jp/internet/info/service/20260803a/", "watch": ["解除料を免除"], "checked": "2026-11-03", "aff": null, "link": ["sbhikari-neage", "新料金と専用窓口を見る"]
+   "id": "sb-kaijo",
+   "cat": "notice",
+   "name": "ソフトバンク光・SoftBank Air",
+   "headline": "値上げを理由にした解約は解除料が免除",
+   "detail": "12月の値上げに伴う特例です。専用窓口での手続きが必要で、工事費の残金は免除の文言に含まれていません。",
+   "who": "ソフトバンク光を解約したい人",
+   "deadline": "2026-11-30",
+   "deadline_text": "11月30日まで",
+   "source": "https://www.softbank.jp/internet/info/service/20260803a/",
+   "watch": [
+    "解除料を免除"
+   ],
+   "checked": "2026-11-03",
+   "aff": null,
+   "link": [
+    "sbhikari-neage",
+    "新料金と専用窓口を見る"
+   ]
   },
   {
-   "id": "docomo-mini", "cat": "notice", "name": "ドコモ mini", "headline": "新規受付の終了",
-   "detail": "12月1日からは6GB・12GBの2段階制のドコモ mini2 が始まります。契約中の人はそのまま使えます。11月30日まではデータ増量おためしキャンペーンで4GBが6GB、10GBが12GBになっていて、終了後は通常のデータ量に戻ります。", "who": "ドコモのまま料金を下げたい人", "deadline": "2026-11-30", "deadline_text": "11月30日まで",
-   "source": "https://www.docomo.ne.jp/charge/docomo_mini/", "watch": ["新規お申込み受付を終了"], "checked": "2026-11-03", "aff": null, "link": ["docomo-neage-2026", "ドコモの改定額を見る"]
+   "id": "docomo-mini",
+   "cat": "notice",
+   "name": "ドコモ mini",
+   "headline": "新規受付の終了",
+   "detail": "12月1日からは6GB・12GBの2段階制のドコモ mini2 が始まります。契約中の人はそのまま使えます。11月30日まではデータ増量おためしキャンペーンで4GBが6GB、10GBが12GBになっていて、終了後は通常のデータ量に戻ります。",
+   "who": "ドコモのまま料金を下げたい人",
+   "deadline": "2026-11-30",
+   "deadline_text": "11月30日まで",
+   "source": "https://www.docomo.ne.jp/charge/docomo_mini/",
+   "watch": [
+    "新規お申込み受付を終了"
+   ],
+   "checked": "2026-11-03",
+   "aff": null,
+   "link": [
+    "docomo-neage-2026",
+    "ドコモの改定額を見る"
+   ]
   },
   {
-   "id": "gmo-docomo", "cat": "hikari", "name": "ドコモ光(GMOとくとくBB)", "headline": "キャッシュバック最大90,000円、10ギガは20,000円上乗せ",
+   "id": "gmo-docomo",
+   "cat": "hikari",
+   "name": "ドコモ光(GMOとくとくBB)",
+   "headline": "キャッシュバック最大90,000円、10ギガは20,000円上乗せ",
    "detail": "新規工事料相当のdポイントが最大28,600pt。他社からの乗り換えでは解約金・撤去工事費・端末残債をdポイントで最大100,000pt還元します。10ギガの2年定期を新規で申し込むと、最初の6か月は最大35,280円の割引です。特典ごとに条件があります。",
-   "who": "ドコモのスマホを使っている人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://gmobb.jp/service/docomohikari/", "watch": ["90,000", "28,600"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAI1I+3UQ1I2+50+54KL8Y", "host": 12, "label": "GMOとくとくBBのドコモ光を見る"}
+   "who": "ドコモのスマホを使っている人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://gmobb.jp/service/docomohikari/",
+   "watch": [
+    "90,000",
+    "28,600"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAI1I+3UQ1I2+50+54KL8Y",
+    "host": 12,
+    "label": "GMOとくとくBBのドコモ光を見る"
+   }
   },
   {
-   "id": "gmo-hikari", "cat": "hikari", "name": "GMOとくとくBB光", "headline": "全員5,000円キャッシュバック、10ギガは合計25,000円",
+   "id": "gmo-hikari",
+   "cat": "hikari",
+   "name": "GMOとくとくBB光",
+   "headline": "全員5,000円キャッシュバック、10ギガは合計25,000円",
    "detail": "他社の解約違約金は最大60,000円まで補助します。オプションの同時申込で最大42,000円の上乗せがあり、ひかりテレビ・電話で最大23,000円、指定の2オプションで4,000円、でんき・ガスで最大15,000円です。契約期間の縛りと解約違約金はありません。",
-   "who": "セット割が使えない人、縛りを避けたい人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://gmobb.jp/service/gmohikari/", "watch": ["5,000", "60,000"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+2OG9JU+50+6M7QUQ", "host": 16, "label": "GMOとくとくBB光の特典を見る"}
+   "who": "セット割が使えない人、縛りを避けたい人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://gmobb.jp/service/gmohikari/",
+   "watch": [
+    "5,000",
+    "60,000"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+2OG9JU+50+6M7QUQ",
+    "host": 16,
+    "label": "GMOとくとくBB光の特典を見る"
+   }
   },
   {
-   "id": "nuro", "cat": "hikari", "name": "NURO光", "headline": "基本工事費 実質0円、他社の解約費用を最大6万円還元",
+   "id": "nuro",
+   "cat": "hikari",
+   "name": "NURO光",
+   "headline": "基本工事費 実質0円、他社の解約費用を最大6万円還元",
    "detail": "2年割の24か月間は、月の負担が戸建てと39戸以下の集合住宅で3,980円、40戸以上の集合住宅で2,980円からです。ホームゲートウェイ料金550円は2年割の間は割引で0円です。基本工事費55,000円は36回払いで、36か月目まで使うと実質0円になります。契約事務手数料は3,300円(通常6,050円)です。提供エリアが限られるので、先に住所で確認します。",
-   "who": "速度を優先する人、ソフトバンクのスマホの人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://www.nuro.jp/hikari/", "watch": ["最大6万", "3,980"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+2N9ECA+2VMU+63WO2", "host": 10, "label": "NURO光の提供エリアを確認する"}
+   "who": "速度を優先する人、ソフトバンクのスマホの人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://www.nuro.jp/hikari/",
+   "watch": [
+    "最大6万",
+    "3,980"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+2N9ECA+2VMU+63WO2",
+    "host": 10,
+    "label": "NURO光の提供エリアを確認する"
+   }
   },
   {
-   "id": "nuro-cb", "cat": "hikari", "name": "NURO光 期間限定キャッシュバック", "headline": "10ギガは20,000円、通常プランは10,000円のキャッシュバック",
+   "id": "nuro-cb",
+   "cat": "hikari",
+   "name": "NURO光 期間限定キャッシュバック",
+   "headline": "10ギガは20,000円、通常プランは10,000円のキャッシュバック",
    "detail": "2年割かU29応援割を付けて申し込み、12か月後の月末までに開通した人が対象です。受け取りは開通から17か月後で、案内メールが届いてから45日以内にマイページで手続きします。受け取る前に退会やコース変更をすると対象外です。",
-   "who": "NURO光の提供エリアに住んでいて、2年以上使う人", "deadline": "2026-11-08", "deadline_text": "11月8日まで",
-   "source": "https://www.nuro.jp/hikari/", "watch": ["最大20,000円キャッシュバック"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+2N9ECA+2VMU+63WO2", "host": 10, "label": "NURO光の提供エリアを確認する"}
+   "who": "NURO光の提供エリアに住んでいて、2年以上使う人",
+   "deadline": "2026-11-08",
+   "deadline_text": "11月8日まで",
+   "source": "https://www.nuro.jp/hikari/",
+   "watch": [
+    "最大20,000円キャッシュバック"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+2N9ECA+2VMU+63WO2",
+    "host": 10,
+    "label": "NURO光の提供エリアを確認する"
+   }
   },
   {
-   "id": "au", "cat": "hikari", "name": "auひかり", "headline": "乗りかえスタートサポート+自宅セット割で最大10,000円還元",
+   "id": "au",
+   "cat": "hikari",
+   "name": "auひかり",
+   "headline": "乗りかえスタートサポート+自宅セット割で最大10,000円還元",
    "detail": "ホームタイプは初期費用相当額の割引があります。代理店経由の特典は申込ページで確認してください。",
-   "who": "au・UQ mobileのスマホを使っている人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://www.au.com/internet/auhikari_1g/", "watch": ["乗りかえスタートサポート"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+2PN4RE+348K+3H18R6", "host": 19, "label": "auひかりの提供エリアを確認する"}
+   "who": "au・UQ mobileのスマホを使っている人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://www.au.com/internet/auhikari_1g/",
+   "watch": [
+    "乗りかえスタートサポート"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+2PN4RE+348K+3H18R6",
+    "host": 19,
+    "label": "auひかりの提供エリアを確認する"
+   }
   },
   {
-   "id": "sb-hikari", "cat": "hikari", "name": "ソフトバンク光", "headline": "他社の違約金などを最大10万円キャッシュバック",
+   "id": "sb-hikari",
+   "cat": "hikari",
+   "name": "ソフトバンク光",
+   "headline": "他社の違約金などを最大10万円キャッシュバック",
    "detail": "あんしん乗り換えキャンペーンです。モバイルWi-Fiの端末残債は42,000円が上限で、証明書の提出が必要です。新規の回線工事費は月1,980円×24か月(47,520円)の割引があります。12月以降に月額が330円上がる点も見てください。",
-   "who": "ソフトバンク・ワイモバイルのスマホを使っている人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://www.softbank.jp/internet/campaigns/list/anshin-norikae01/", "watch": ["最大 10 万円"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+2RFFKQ+348K+1BP8ZM", "host": 15, "label": "ソフトバンク光のキャンペーンを見る"}
+   "who": "ソフトバンク・ワイモバイルのスマホを使っている人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://www.softbank.jp/internet/campaigns/list/anshin-norikae01/",
+   "watch": [
+    "最大 10 万円"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+2RFFKQ+348K+1BP8ZM",
+    "host": 15,
+    "label": "ソフトバンク光のキャンペーンを見る"
+   }
   },
   {
-   "id": "sb-ouen", "cat": "hikari", "name": "ソフトバンク光", "headline": "超おうち応援割:月額を25か月目まで最大880円割引、10ギガは最大1,760円",
+   "id": "sb-ouen",
+   "cat": "hikari",
+   "name": "ソフトバンク光",
+   "headline": "超おうち応援割:月額を25か月目まで最大880円割引、10ギガは最大1,760円",
    "detail": "光回線の新規申し込みと同時に申し込み、他社の回線を使っているか、申込月の前後2か月の間に転居することが条件です。おうち割の適用があると、1ギガのファミリータイプは月880円、マンションタイプは月550円、10ギガは月1,760円の割引で、おうち割がないと額は半分です。最大額には指定オプション(月550円〜)の支払いが必要で、7か月目以降の割引には証明書の提出が必要です。自動更新なしプランは対象外です。",
-   "who": "他社から乗り換える人、引っ越す人で、ソフトバンク・ワイモバイルのスマホを使っている人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://www.softbank.jp/internet/campaigns/list/sbhikari-1g-2026/", "watch": ["超おうち応援割", "880円割引"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+2RFFKQ+348K+1BP8ZM", "host": 15, "label": "ソフトバンク光のキャンペーンを見る"}
+   "who": "他社から乗り換える人、引っ越す人で、ソフトバンク・ワイモバイルのスマホを使っている人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://www.softbank.jp/internet/campaigns/list/sbhikari-1g-2026/",
+   "watch": [
+    "超おうち応援割",
+    "880円割引"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+2RFFKQ+348K+1BP8ZM",
+    "host": 15,
+    "label": "ソフトバンク光のキャンペーンを見る"
+   }
   },
   {
-   "id": "biglobe", "cat": "hikari", "name": "ビッグローブ光", "headline": "新規の工事費 最大28,600円が実質0円",
+   "id": "biglobe",
+   "cat": "hikari",
+   "name": "ビッグローブ光",
+   "headline": "新規の工事費 最大28,600円が実質0円",
    "detail": "回線新規の場合の特典で、新規工事費の分割払い相当をBIGLOBEが割り引きます。",
-   "who": "au・UQ mobileのスマホで、工事なしの乗り換えも考える人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://join.biglobe.ne.jp/ftth/hikari/", "watch": ["28,600"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+1824BE+3HKU+1BMW42", "host": 10, "label": "ビッグローブ光の特典を見る"}
+   "who": "au・UQ mobileのスマホで、工事なしの乗り換えも考える人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://join.biglobe.ne.jp/ftth/hikari/",
+   "watch": [
+    "28,600"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+1824BE+3HKU+1BMW42",
+    "host": 10,
+    "label": "ビッグローブ光の特典を見る"
+   }
   },
   {
-   "id": "iijmio-hikari-10g", "cat": "hikari", "name": "IIJmioひかり 10ギガ", "headline": "スマホとセットで最大6か月間、月額0円",
+   "id": "biglobe-plus",
+   "cat": "hikari",
+   "name": "BIGLOBE光プラス",
+   "headline": "キャッシュバック最大55,000円、開通前は5G通信が使える",
+   "detail": "12か月目のキャッシュバックは1ギガ45,000円、10ギガ55,000円で、別途受け取りの手続きが必要です。光回線の工事前はホームルーターの5G通信で使え、月額とレンタル料が開通月まで最大3か月無料です。回線新規の工事費は実質0円で、ホーム1ギガは月5,720円の2年契約、ホームルーターのレンタルが月858円かかります。",
+   "who": "工事を待たずに使い始めたい人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://join.biglobe.ne.jp/ftth/hikari/plus/",
+   "watch": [
+    "45,000",
+    "55,000"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "at": "0100q7ix00p1xq",
+    "label": "BIGLOBE光プラスの特典を見る"
+   }
+  },
+  {
+   "id": "iijmio-hikari-10g",
+   "cat": "hikari",
+   "name": "IIJmioひかり 10ギガ",
+   "headline": "スマホとセットで最大6か月間、月額0円",
    "detail": "まとめておトク!ゼロスタートキャンペーンで、月額料金割引5,720円とmio割660円が適用された場合の額です。初期費用3,300円は別にかかります。新規の工事費は8か月目から割引が始まり、21か月目まで使うと実質0円です。土日祝の工事などで28,600円を超えると、実質0円にならない場合があります。10ギガ対応のルーターが必要で、IIJmioひかりでは月550円でレンタルできます。提供エリアは先に確認してください。",
-   "who": "IIJmioのスマホを使っていて、10ギガの光回線にしたい人", "deadline": null, "deadline_text": "終了日未定",
-   "source": "https://www.iijmio.jp/campaign/imh/10g.html", "watch": ["ゼロスタートキャンペーン", "5,720円割引"], "checked": "2026-11-03", "aff": null
+   "who": "IIJmioのスマホを使っていて、10ギガの光回線にしたい人",
+   "deadline": null,
+   "deadline_text": "終了日未定",
+   "source": "https://www.iijmio.jp/campaign/imh/10g.html",
+   "watch": [
+    "ゼロスタートキャンペーン",
+    "5,720円割引"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "gmo-wimax", "cat": "router", "name": "GMOとくとくBB WiMAX", "headline": "特典総額 最大90,072円",
+   "id": "gmo-wimax",
+   "cat": "router",
+   "name": "GMOとくとくBB WiMAX",
+   "headline": "特典総額 最大90,072円",
    "detail": "37か月分の月額値引き50,072円と、他社回線からの乗り換えキャッシュバック最大40,000円の合計です。端末は36回分割相当の割引があり、36か月使うと実質無料になります。",
-   "who": "工事ができない家で長く使う人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://gmobb.jp/wimax/", "watch": ["90,072"], "checked": "2026-11-03", "aff": {"catalog": "gmo-wimax", "label": "GMOとくとくBB WiMAXの特典を見る"}
+   "who": "工事ができない家で長く使う人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://gmobb.jp/wimax/",
+   "watch": [
+    "90,072"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "catalog": "gmo-wimax",
+    "label": "GMOとくとくBB WiMAXの特典を見る"
+   }
   },
   {
-   "id": "biglobe-wimax", "cat": "router", "name": "BIGLOBE WiMAX +5G", "headline": "初月0円、24か月目まで月1,650円値引き",
+   "id": "biglobe-wimax",
+   "cat": "router",
+   "name": "BIGLOBE WiMAX +5G",
+   "headline": "初月0円、24か月目まで月1,650円値引き",
    "detail": "申込手数料3,300円が初月にかかります。値引き特典とキャッシュバックは別の特典なので、対象を確認してください。",
-   "who": "工事ができない家、au・UQ mobileのスマホの人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://join.biglobe.ne.jp/mobile/wimax/5g/", "watch": ["1,650"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAH9H+198ZIY+B4+2BD44I", "host": 16, "label": "BIGLOBE WiMAXの特典を見る"}
+   "who": "工事ができない家、au・UQ mobileのスマホの人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://join.biglobe.ne.jp/mobile/wimax/5g/",
+   "watch": [
+    "1,650"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAH9H+198ZIY+B4+2BD44I",
+    "host": 16,
+    "label": "BIGLOBE WiMAXの特典を見る"
+   }
   },
   {
-   "id": "rakuten-mobile", "cat": "sim", "name": "楽天モバイル", "headline": "乗り換えで10,000ポイント、新規で9,000ポイント",
+   "id": "rakuten-mobile",
+   "cat": "sim",
+   "name": "楽天モバイル",
+   "headline": "乗り換えで10,000ポイント、新規で9,000ポイント",
    "detail": "エントリーが必要です。ポイントの受け取りには条件があるので、キャンペーンルールを確認してください。",
-   "who": "データをよく使う人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://network.mobile.rakuten.co.jp/campaign/", "watch": ["10,000ポイント"], "checked": "2026-11-03", "aff": null
+   "who": "データをよく使う人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://network.mobile.rakuten.co.jp/campaign/",
+   "watch": [
+    "10,000ポイント"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "ymobile-sim", "cat": "sim", "name": "Y!mobile オンラインストア", "headline": "SIM・eSIMのみの契約でPayPayポイント最大15,000円相当",
+   "id": "ymobile-sim",
+   "cat": "sim",
+   "name": "Y!mobile オンラインストア",
+   "headline": "SIM・eSIMのみの契約でPayPayポイント最大15,000円相当",
    "detail": "ワイモバSIM契約キャンペーン5で、11月2日に始まりました。他社からののりかえはシンプル3 M/Lが15,000円相当、Sが5,000円相当で、新規契約はM/Lが5,000円相当(使用者が5〜18歳なら10,000円相当)です。契約と同時にデータ増量オプション(月550円)への加入が必要です。ソフトバンク・LINEMO・LINEモバイル(ソフトバンク回線)とソフトバンク回線のMVNOからののりかえは対象外です。ポイントコードは開通月の翌々月末までにチャージします。",
-   "who": "端末はそのままでワイモバイルへ移る人", "deadline": null, "deadline_text": "終了日未定",
-   "source": "https://www.ymobile.jp/store/sp/sim/", "watch": ["ワイモバSIM契約キャンペーン5", "15,000円相当"], "checked": "2026-11-03", "aff": null
+   "who": "端末はそのままでワイモバイルへ移る人",
+   "deadline": null,
+   "deadline_text": "終了日未定",
+   "source": "https://www.ymobile.jp/store/sp/sim/",
+   "watch": [
+    "ワイモバSIM契約キャンペーン5",
+    "15,000円相当"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "ymobile-waribiki", "cat": "sim", "name": "Y!mobile", "headline": "シンプル3 M/Lが12か月間、毎月1,100円割引",
+   "id": "ymobile-waribiki",
+   "cat": "sim",
+   "name": "Y!mobile",
+   "headline": "シンプル3 M/Lが12か月間、毎月1,100円割引",
    "detail": "超!おトク割です。1人でも、ネットとのセットがなくても使えます。おうち割 光セットなどとは重複できません。",
-   "who": "1回線だけ契約する人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://www.ymobile.jp/cp/", "watch": ["おトク割"], "checked": "2026-11-03", "aff": null
+   "who": "1回線だけ契約する人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://www.ymobile.jp/cp/",
+   "watch": [
+    "おトク割"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "ymobile-trial", "cat": "sim", "name": "Y!mobile オンラインストア", "headline": "シンプル3 M(30GB)が2か月目まで基本料0円、事務手数料も0円",
+   "id": "ymobile-trial",
+   "cat": "sim",
+   "name": "Y!mobile オンラインストア",
+   "headline": "シンプル3 M(30GB)が2か月目まで基本料0円、事務手数料も0円",
    "detail": "eSIMとSIMカードが対象で、専用ページからの申し込みに限ります。無料期間は課金が始まる月から数えて2か月間で、初月の割引は日割りです。3か月目からは自動で月4,378円がかかります。解約の縛りはありません。端末代と通話料は別です。",
-   "who": "乗り換える前に通信品質を試したい人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://www.ymobile.jp/store/sp/sim_trial_202610/", "watch": ["2ヵ月目まで0円"], "checked": "2026-11-03", "aff": null
+   "who": "乗り換える前に通信品質を試したい人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://www.ymobile.jp/store/sp/sim_trial_202610/",
+   "watch": [
+    "2ヵ月目まで0円"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "ymobile-android", "cat": "sim", "name": "Y!mobile", "headline": "Androidへの機種変更でPayPayポイント10,000円相当",
+   "id": "ymobile-android",
+   "cat": "sim",
+   "name": "Y!mobile",
+   "headline": "Androidへの機種変更でPayPayポイント10,000円相当",
    "detail": "超トク!Android 機種変更キャンペーンです。契約日が2025年9月30日以前の人が、Google Pixel 10aかnubia Flip 3へ機種変更してエントリーすると対象になります。ポイントコードは2027年1月下旬以降にMMSで届く予定で、有効期限は2027年2月28日です。",
-   "who": "ワイモバイルを1年以上使っていて、機種変更を考えている人", "deadline": "2027-01-04", "deadline_text": "2027年1月4日まで",
-   "source": "https://www.ymobile.jp/cp/", "watch": ["Android 機種変更キャンペーン", "2027年1月4日"], "checked": "2026-11-03", "aff": null
+   "who": "ワイモバイルを1年以上使っていて、機種変更を考えている人",
+   "deadline": "2027-01-04",
+   "deadline_text": "2027年1月4日まで",
+   "source": "https://www.ymobile.jp/cp/",
+   "watch": [
+    "Android 機種変更キャンペーン",
+    "2027年1月4日"
+   ],
+   "checked": "2026-11-03",
+   "aff": null
   },
   {
-   "id": "ahamo", "cat": "sim", "name": "ahamo", "headline": "乗り換えでdポイント 毎月4,000ポイントを5か月間",
+   "id": "ahamo",
+   "cat": "sim",
+   "name": "ahamo",
+   "headline": "乗り換えでdポイント 毎月4,000ポイントを5か月間",
    "detail": "12月1日から40GB 3,135円の段階制に変わります。申し込みから11月30日までは現在のプランが適用されます。今はデータ増量おためしキャンペーンで、11月30日まで30GBが40GBになっています。ポイントは条件を満たした月の翌々月末から5か月間、毎月4,000ポイントが届きます。エントリーが必要で、適用条件はキャンペーン規約で確認してください。",
-   "who": "月20〜40GB使う人", "deadline": null, "deadline_text": "終了日の記載なし",
-   "source": "https://ahamo.com/campaigns", "watch": ["お乗り換えでdポイントプレゼント"], "checked": "2026-11-03",
-   "aff": {"mat": "4BAI1I+CF4KUY+4TIO+5YJRM", "host": null, "label": "ahamoの料金と条件を見る"}
+   "who": "月20〜40GB使う人",
+   "deadline": null,
+   "deadline_text": "終了日の記載なし",
+   "source": "https://ahamo.com/campaigns",
+   "watch": [
+    "お乗り換えでdポイントプレゼント"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BAI1I+CF4KUY+4TIO+5YJRM",
+    "host": null,
+    "label": "ahamoの料金と条件を見る"
+   }
   },
   {
-   "id": "nuro-mobile", "cat": "sim", "name": "NUROモバイル", "headline": "VM・VLプランの月額が3か月間491円割引",
+   "id": "nuro-mobile",
+   "cat": "sim",
+   "name": "NUROモバイル",
+   "headline": "VM・VLプランの月額が3か月間491円割引",
    "detail": "音声通話付きSIMのお申し込み特典です。NURO光の会員向けには、月額基本料金が3年間491円割引になり、登録事務手数料が半額になる特典があります。",
-   "who": "月10GB以下で安くしたい人", "deadline": null, "deadline_text": "終了日未定",
-   "source": "https://mobile.nuro.jp/campaign/", "watch": ["491円"], "checked": "2026-11-03",
-   "aff": {"mat": "4BEBOX+6RIBYY+3MP0+5YJRM", "host": 12, "label": "NUROモバイルの料金プランを見る"}
+   "who": "月10GB以下で安くしたい人",
+   "deadline": null,
+   "deadline_text": "終了日未定",
+   "source": "https://mobile.nuro.jp/campaign/",
+   "watch": [
+    "491円"
+   ],
+   "checked": "2026-11-03",
+   "aff": {
+    "mat": "4BEBOX+6RIBYY+3MP0+5YJRM",
+    "host": 12,
+    "label": "NUROモバイルの料金プランを見る"
+   }
   }
  ],
  "log": [
-  {"date": "2026-11-03", "text": "NURO光の11月8日までのキャッシュバックとワイモバイルのSIM契約キャンペーンを追加し、NURO光の月額とLINEMO・ahamoの特典額を公式の表記に合わせて直しました。"},
-  {"date": "2026-11-01", "text": "LINEMOのおかえりだモンと2回線まとめて申し込み、IIJmioのクーポン20%増量とIIJmioひかり10ギガを追加し、LINEMOの増額をプラン別の額に書き直しました。"},
-  {"date": "2026-10-31", "text": "IIJmioの5ギガ・データeSIM、ワイモバイルの無料お試しとAndroid機種変更、ソフトバンク光の超おうち応援割を追加し、ワイモバイルのセールやドコモ・ahamoのデータ増量の説明を詳しくしました。"},
-  {"date": "2026-10-31", "text": "このページを公開しました。光回線6社・ホームルーター2社・スマホ6社の特典を公式サイトで確認しました。"}
+  {
+   "date": "2026-11-03",
+   "text": "BIGLOBE光プラスのキャンペーンを追加しました。"
+  },
+  {
+   "date": "2026-11-03",
+   "text": "NURO光の11月8日までのキャッシュバックとワイモバイルのSIM契約キャンペーンを追加し、NURO光の月額とLINEMO・ahamoの特典額を公式の表記に合わせて直しました。"
+  },
+  {
+   "date": "2026-11-01",
+   "text": "LINEMOのおかえりだモンと2回線まとめて申し込み、IIJmioのクーポン20%増量とIIJmioひかり10ギガを追加し、LINEMOの増額をプラン別の額に書き直しました。"
+  },
+  {
+   "date": "2026-10-31",
+   "text": "IIJmioの5ギガ・データeSIM、ワイモバイルの無料お試しとAndroid機種変更、ソフトバンク光の超おうち応援割を追加し、ワイモバイルのセールやドコモ・ahamoのデータ増量の説明を詳しくしました。"
+  },
+  {
+   "date": "2026-10-31",
+   "text": "このページを公開しました。光回線6社・ホームルーター2社・スマホ6社の特典を公式サイトで確認しました。"
+  }
  ]
 }
