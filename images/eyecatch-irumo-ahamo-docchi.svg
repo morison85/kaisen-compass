@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="irumoとahamoどっちが得か。12月からの料金で比較" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:2枚のプランカードと天秤の支点 -->
+  <g transform="translate(880, 330) scale(0.9)">
+    <rect x="0" y="50" width="130" height="170" rx="14" fill="#ffffff"/>
+    <text x="65" y="120" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">irumo</text>
+    <text x="65" y="165" text-anchor="middle" font-size="22" font-weight="700" fill="#5f6b7a">〜9GB</text>
+    <rect x="170" y="10" width="130" height="210" rx="14" fill="#ffd76a"/>
+    <text x="235" y="95" text-anchor="middle" font-size="30" font-weight="800" fill="#0b2c5f">ahamo</text>
+    <text x="235" y="140" text-anchor="middle" font-size="22" font-weight="700" fill="#0b2c5f">40GB</text>
+    <circle cx="150" cy="250" r="16" fill="#9fc1f5"/>
+    <rect x="0" y="240" width="300" height="8" rx="4" fill="#9fc1f5"/>
+  </g>
+
+  <rect x="70" y="80" width="330" height="56" rx="28" fill="#ffd76a"/>
+  <text x="235" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">12月からの料金で比較</text>
+
+  <text x="70" y="248" font-size="80" font-weight="800" fill="#ffffff">irumoとahamo</text>
+  <text x="70" y="346" font-size="78" font-weight="800" fill="#ffd76a">どっちが得?</text>
+  <text x="70" y="426" font-size="34" font-weight="700" fill="#dbe7ff">データ量・セット割・通話で判定</text>
+  <text x="70" y="476" font-size="34" font-weight="700" fill="#dbe7ff">一度出ると戻れない点も確認</text>
+  <text x="70" y="572" font-size="26" font-weight="700" fill="#9fc1f5">回線コンパス</text>
+</svg>

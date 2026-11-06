@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="ドコモ mini2のサービス概要" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <defs><linearGradient id="h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c8102e"/><stop offset="1" stop-color="#7a0a1c"/></linearGradient></defs>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <rect width="800" height="130" fill="url(#h)"/>
+  <circle cx="740" cy="20" r="90" fill="#ffffff" opacity=".08"/>
+  <text x="40" y="78" font-size="46" font-weight="800" fill="#ffffff">ドコモ mini2</text>
+  <text x="40" y="112" font-size="19" fill="#ffd9de">NTTドコモ|2段階制の小容量プラン</text>
+  <text x="40" y="185" font-size="17" fill="#5f6b7a">月額(税込・割引前)</text>
+  <text x="40" y="245" font-size="44" font-weight="800" fill="#0b2c5f">6GB 3,278円</text>
+  <text x="40" y="285" font-size="22" fill="#26303e">12GBまで 4,598円</text>
+  <g font-size="20" fill="#26303e">
+    <circle cx="432" cy="188" r="13" fill="#0e9f6e"/><text x="425" y="195" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="196">割引をすべて適用で858円から</text>
+    <circle cx="432" cy="248" r="13" fill="#0e9f6e"/><text x="425" y="255" font-size="16" fill="#fff">✓</text>
+    <text x="458" y="256">60歳以上はかけ放題990円</text>
+    <circle cx="432" cy="308" r="13" fill="#d97706"/><text x="426" y="315" font-size="16" fill="#fff">!</text>
+    <text x="458" y="316">12GB超は最大128kbps</text>
+  </g>
+  <line x1="40" y1="365" x2="760" y2="365" stroke="#e2e6e4" stroke-width="2"/>
+  <text x="40" y="398" font-size="14" fill="#94a3b5">出典:ドコモ報道発表(2026年9月25日)・2026年12月1日提供開始 ※最新の料金・条件は公式でご確認ください</text>
+</svg>
