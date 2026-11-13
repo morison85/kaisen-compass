@@ -99,6 +99,7 @@
 - [IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順](https://kaisen-compass.com/articles/ipv6-ipoe): PPPoEは網終端装置を通るため夜間に混雑し、IPv6 IPoE(v6プラス等)は通らないため速い。申込→対応ルーター→自動設定の3手順、MAP-E/DS-Liteのポート制限、IPoE標準の回線(GMOとくとくBB光等)。
 
 ### 格安SIM
+- [60代の親のスマホを格安SIMへ乗り換えるなら、通話の長さで選ぶ](https://kaisen-compass.com/articles/oya-sumaho-kakuyasu-sim): 60代の親のスマホを乗り換えるときの選び方。通話の長さとデータ量の4パターンでNUROモバイル・ahamo・ワイモバイル・UQモバイル(60歳以上かけ放題880円)の月額を比較し、店舗サポートの年額差と名義・キャリアメール・支払い方法の確認点を整理
 - [irumoとahamoどっちが得?12月の値上げ後をデータ量・セット割・通話で比較](https://kaisen-compass.com/articles/irumo-ahamo-docchi): 12月以降のirumoとahamoを、セット割・dカード払い・通話の有無で24通り比較。irumoは受付終了で戻れない点、ドコモ mini2が安くなる条件も
 - [家族割から1人だけ抜けるといくら損?残る家族の増額と得になる移り先を人数別に計算](https://kaisen-compass.com/articles/kazokuwari-hitori-nukeru): 家族割から1人抜けたときに残る家族の請求が増える額を、ドコモ・au・ソフトバンクの公式の割引額から人数別に計算。回線数に残る移り先と、ahamoと格安SIMの分かれ目の月額も示す。
 - [ドコモの値上げはいつから?12月の改定額一覧(eximo・irumo)と対象外プラン、乗り換えの損得](https://kaisen-compass.com/articles/docomo-neage-2026): ドコモの2026年12月1日の料金改定。eximo +550円、irumo 3〜9GB +330円、0.5GB +110円。ドコモ MAX・ポイ活 MAX・ポイ活 20・miniは対象外。ドコモ miniの新規受付は11月30日まで。ahamo・格安SIMへ移った場合の年間差。
