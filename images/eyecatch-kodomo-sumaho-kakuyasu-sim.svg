@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="中学生の子どものスマホを格安SIMで持たせるときの月額と3年総額" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2c5f"/>
+      <stop offset=".55" stop-color="#114699"/>
+      <stop offset="1" stop-color="#1558d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1150" cy="30" r="180" fill="#ffffff" opacity=".05"/>
+  <circle cx="1080" cy="600" r="140" fill="#ffffff" opacity=".05"/>
+
+  <!-- 右下:スマホと見守りの盾 -->
+  <g transform="translate(900, 335) scale(0.9)">
+    <rect x="20" y="0" width="150" height="250" rx="22" fill="#ffffff"/>
+    <rect x="34" y="26" width="122" height="180" rx="8" fill="#dbe7ff"/>
+    <circle cx="95" cy="228" r="10" fill="#9fc1f5"/>
+    <path d="M95 60 l40 14 v34 q0 36 -40 56 q-40 -20 -40 -56 v-34 z" fill="#0b2c5f"/>
+    <path d="M77 108 l13 13 l25 -27" fill="none" stroke="#ffd76a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="160" y="-10" width="120" height="70" rx="16" fill="#ffd76a"/>
+    <polygon points="172,58 196,58 176,80" fill="#ffd76a"/>
+    <text x="220" y="38" text-anchor="middle" font-size="34" font-weight="800" fill="#0b2c5f">3GB</text>
+  </g>
+
+  <rect x="70" y="80" width="360" height="56" rx="28" fill="#ffd76a"/>
+  <text x="250" y="119" text-anchor="middle" font-size="29" font-weight="800" fill="#0b2c5f">フィルタリング代込み</text>
+
+  <text x="70" y="248" font-size="74" font-weight="800" fill="#ffffff">中学生の子どものスマホ</text>
+  <text x="70" y="346" font-size="78" font-weight="800" fill="#ffd76a">格安SIMで月いくら?</text>
+  <text x="70" y="426" font-size="34" font-weight="700" fill="#dbe7ff">親名義の契約と3年間の総額を計算</text>
+  <text x="70" y="476" font-size="34" font-weight="700" fill="#dbe7ff">データ量の目安と課金の注意点も</text>
+  <text x="70" y="572" font-size="26" font-weight="700" fill="#9fc1f5">回線コンパス</text>
+</svg>
