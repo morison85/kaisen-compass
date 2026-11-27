@@ -99,6 +99,7 @@
 - [IPv6(IPoE)とは?「夜だけ遅い」光回線が速くなる理由と切り替え手順](https://kaisen-compass.com/articles/ipv6-ipoe): PPPoEは網終端装置を通るため夜間に混雑し、IPv6 IPoE(v6プラス等)は通らないため速い。申込→対応ルーター→自動設定の3手順、MAP-E/DS-Liteのポート制限、IPoE標準の回線(GMOとくとくBB光等)。
 
 ### 格安SIM
+- [サブ回線の格安SIMは年いくらで持てる?副回線サービス終了後の通信障害対策と2台持ちの選び方](https://kaisen-compass.com/articles/sub-kaisen-2daimochi): 通信障害に備えるサブ回線の選び方。副回線サービス終了とJAPANローミングの範囲、メイン回線別の組み合わせ表、povo2.0・NUROモバイル・DTI SIM・日本通信SIM・楽天モバイルの年間維持費
 - [中学生の子どものスマホは格安SIMで月いくら?親名義の契約とフィルタリング代込みの3年総額](https://kaisen-compass.com/articles/kodomo-sumaho-kakuyasu-sim): 中学生の子どもの格安SIM。親名義+利用者登録と本人名義の違い、フィルタリングの義務と月額、フィルタリング込みの月額と3年総額、データ量の目安
 - [通話が多い人の格安SIM、かけ放題は月何分から得?5分・10分・無制限の分かれ目を7社で計算](https://kaisen-compass.com/articles/kakuyasu-sim-kakehodai): 通話が多い人向けの格安SIMの通話定額比較。NUROモバイル・LIBMO・IIJmio・mineo・日本通信SIM・楽天モバイル・ahamoの5分・10分・無制限の月額と通話料の単価から、元が取れる通話時間、5分定額から無制限へ切り替える目安、通話パターン別の月額、0570など対象外の番号の注意点を整理
 - [60代の親のスマホを格安SIMへ乗り換えるなら、通話の長さで選ぶ](https://kaisen-compass.com/articles/oya-sumaho-kakuyasu-sim): 60代の親のスマホを乗り換えるときの選び方。通話の長さとデータ量の4パターンでNUROモバイル・ahamo・ワイモバイル・UQモバイル(60歳以上かけ放題880円)の月額を比較し、店舗サポートの年額差と名義・キャリアメール・支払い方法の確認点を整理

@@ -5,8 +5,15 @@
   <link>https://kaisen-compass.com/</link>
   <description>光回線・ホームルーター・格安SIMを料金と実測データの集計で比較するメディア</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 21 Nov 2026 18:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 18:00:00 +0900</lastBuildDate>
   <atom:link href="https://kaisen-compass.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>サブ回線の格安SIMは年いくらで持てる?副回線サービス終了後の通信障害対策と2台持ちの選び方【2026年】 | 回線コンパス</title>
+    <link>https://kaisen-compass.com/articles/sub-kaisen-2daimochi</link>
+    <guid isPermaLink="true">https://kaisen-compass.com/articles/sub-kaisen-2daimochi</guid>
+    <pubDate>Sat, 28 Nov 2026 18:00:00 +0900</pubDate>
+    <description>au・ドコモの個人向け副回線サービスは2026年8〜9月に終了。メインと別の回線網を選ぶ組み合わせ表、povo2.0・NUROモバイル・DTI SIM・日本通信SIM・楽天モバイルの年間維持費、JAPANローミングで足りるかの判定を公式情報で整理しました。</description>
+  </item>
   <item>
     <title>中学生の子どものスマホは格安SIMで月いくら?親名義の契約とフィルタリング代込みの3年総額 | 回線コンパス</title>
     <link>https://kaisen-compass.com/articles/kodomo-sumaho-kakuyasu-sim</link>
